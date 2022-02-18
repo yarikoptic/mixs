@@ -8,7 +8,7 @@
         
         <link rel="canonical" href="https://genomicsstandardsconsortium.github.io/mixs/WastewaterSludgeMIMARKSSurvey/">
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Class: wastewater_sludge MIMARKS survey - MIxS</title>
+        <title>WastewaterSludgeMIMARKSSurvey - MIxS</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -41,15 +41,15 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../introduction/background/" class="dropdown-item">Background</a>
+    <a href="../introduction/background.md" class="dropdown-item">Background</a>
 </li>
                                     
 <li>
-    <a href="../introduction/citation/" class="dropdown-item">Cite</a>
+    <a href="../introduction/citation.md" class="dropdown-item">Cite</a>
 </li>
                                     
 <li>
-    <a href="../introduction/contents/" class="dropdown-item">Contents</a>
+    <a href="../introduction/contents.md" class="dropdown-item">Contents</a>
 </li>
                                 </ul>
                             </li>
@@ -82,17 +82,21 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#class-wastewater_sludge-mimarks-survey" class="nav-link">Class: wastewater_sludge MIMARKS survey</a>
+            <li class="nav-item" data-level="1"><a href="#wastewatersludgemimarkssurvey" class="nav-link">WastewaterSludgeMIMARKSSurvey</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#parents" class="nav-link">Parents</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#uses-checklist" class="nav-link">Uses Checklist</a>
+            <li class="nav-item" data-level="2"><a href="#inheritance" class="nav-link">Inheritance</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#attributes" class="nav-link">Attributes</a>
+            <li class="nav-item" data-level="2"><a href="#slots" class="nav-link">Slots</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#usages" class="nav-link">Usages</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#identifier-and-mapping-information" class="nav-link">Identifier and Mapping Information</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -103,544 +107,625 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="class-wastewater_sludge-mimarks-survey">Class: wastewater_sludge MIMARKS survey</h1>
+<h1 id="wastewatersludgemimarkssurvey">WastewaterSludgeMIMARKSSurvey</h1>
 <p>Combinatorial checklist Minimal Information about a Marker Specimen: survey with environmental package wastewater_sludge</p>
 <p>URI: <a href="https://w3id.org/mixs/vocab/WastewaterSludgeMIMARKSSurvey">mixs.vocab:WastewaterSludgeMIMARKSSurvey</a></p>
-<p><a href="https://yuml.me/diagram/nofunky;dir:TB/class/[WastewaterSludgeMIMARKSSurvey&#124;samp_taxon_id:string;experimental_factor:string%20%3F;neg_cont_type:neg_cont_type_enum%20%3F;pos_cont_type:string%20%3F;subspecf_gen_lin:string%20%3F;extrachrom_elements:integer%20%3F;source_mat_id:string%20%3F;biotic_relationship:biotic_relationship_enum%20%3F;trophic_level:trophic_level_enum%20%3F;rel_to_oxygen:rel_to_oxygen_enum%20%3F;isol_growth_condt:string;samp_collec_device:string%20%3F;samp_collec_method:string%20%3F;samp_mat_process:string%20%3F;nucl_acid_ext:string%20%3F;nucl_acid_amp:string%20%3F;target_gene:string;target_subfragment:string%20%3F;pcr_primers:string%20%3F;pcr_cond:string%20%3F;seq_meth:string;seq_quality_check:string%20%3F;chimera_check:string%20%3F;associated_resource:string%20%3F;sop:string%20%3F;lat_lon(i):string%20%3F;geo_loc_name(i):string%20%3F;collection_date(i):date%20%3F;env_broad_scale(i):string%20%3F;env_local_scale(i):string%20%3F;env_medium(i):string%20%3F;chem_administration(i):string%20*;emulsions(i):string%20*;gaseous_substances(i):string%20*;inorg_particles(i):string%20*;misc_param(i):string%20*;org_particles(i):string%20*;organism_count(i):organism_count_enum%20*;oxy_stat_samp(i):oxy_stat_samp_enum%20%3F;ph(i):double%20%3F;perturbation(i):string%20*;pre_treatment(i):string%20%3F;primary_treatment(i):string%20%3F;reactor_type(i):string%20%3F;samp_store_dur(i):string%20%3F;samp_store_loc(i):string%20%3F;secondary_treatment(i):string%20%3F;sewage_type(i):string%20%3F;soluble_inorg_mat(i):string%20*;soluble_org_mat(i):string%20*;suspend_solids(i):string%20*;tertiary_treatment(i):string%20%3F;wastewater_type(i):string%20%3F;samp_name(i):string;project_name(i):string]uses%20-.-&gt;[MIMARKSSurvey],[WastewaterSludge]^-[WastewaterSludgeMIMARKSSurvey],[WastewaterSludge],[QuantityValue],[MIMARKSSurvey]"><img alt="img" src="https://yuml.me/diagram/nofunky;dir:TB/class/[WastewaterSludgeMIMARKSSurvey&#124;samp_taxon_id:string;experimental_factor:string%20%3F;neg_cont_type:neg_cont_type_enum%20%3F;pos_cont_type:string%20%3F;subspecf_gen_lin:string%20%3F;extrachrom_elements:integer%20%3F;source_mat_id:string%20%3F;biotic_relationship:biotic_relationship_enum%20%3F;trophic_level:trophic_level_enum%20%3F;rel_to_oxygen:rel_to_oxygen_enum%20%3F;isol_growth_condt:string;samp_collec_device:string%20%3F;samp_collec_method:string%20%3F;samp_mat_process:string%20%3F;nucl_acid_ext:string%20%3F;nucl_acid_amp:string%20%3F;target_gene:string;target_subfragment:string%20%3F;pcr_primers:string%20%3F;pcr_cond:string%20%3F;seq_meth:string;seq_quality_check:string%20%3F;chimera_check:string%20%3F;associated_resource:string%20%3F;sop:string%20%3F;lat_lon(i):string%20%3F;geo_loc_name(i):string%20%3F;collection_date(i):date%20%3F;env_broad_scale(i):string%20%3F;env_local_scale(i):string%20%3F;env_medium(i):string%20%3F;chem_administration(i):string%20*;emulsions(i):string%20*;gaseous_substances(i):string%20*;inorg_particles(i):string%20*;misc_param(i):string%20*;org_particles(i):string%20*;organism_count(i):organism_count_enum%20*;oxy_stat_samp(i):oxy_stat_samp_enum%20%3F;ph(i):double%20%3F;perturbation(i):string%20*;pre_treatment(i):string%20%3F;primary_treatment(i):string%20%3F;reactor_type(i):string%20%3F;samp_store_dur(i):string%20%3F;samp_store_loc(i):string%20%3F;secondary_treatment(i):string%20%3F;sewage_type(i):string%20%3F;soluble_inorg_mat(i):string%20*;soluble_org_mat(i):string%20*;suspend_solids(i):string%20*;tertiary_treatment(i):string%20%3F;wastewater_type(i):string%20%3F;samp_name(i):string;project_name(i):string]uses%20-.-&gt;[MIMARKSSurvey],[WastewaterSludge]^-[WastewaterSludgeMIMARKSSurvey],[WastewaterSludge],[QuantityValue],[MIMARKSSurvey]" /></a></p>
-<h2 id="parents">Parents</h2>
+<h2 id="inheritance">Inheritance</h2>
 <ul>
-<li>is_a: <a href="../WastewaterSludge/">WastewaterSludge</a> - wastewater/sludge</li>
-</ul>
-<h2 id="uses-checklist">Uses Checklist</h2>
-<ul>
-<li>mixin: <a href="../MIMARKSSurvey/">MIMARKSSurvey</a> - Minimal Information about a Marker Specimen: survey</li>
-</ul>
-<h2 id="attributes">Attributes</h2>
-<h3 id="inherited-from-wastewater_sludge">Inherited from wastewater_sludge:</h3>
-<ul>
-<li><a href="../lat_lon/">lat_lon</a>  <sub>0..1</sub><ul>
-<li>Description: The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: 50.586825 6.408977 None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_depth/">wastewater_sludge➞depth</a>  <sub>0..1</sub><ul>
-<li>Description: The vertical distance below local surface, e.g. for sediment or soil samples depth is measured from sediment or soil surface, respectively. Depth can be reported as an interval for subsurface samples.</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 10 meter None</li>
-</ul>
-</li>
-<li><a href="../alt/">alt</a>  <sub>0..1</sub><ul>
-<li>Description: Altitude is a term used to identify heights of objects such as airplanes, space shuttles, rockets, atmospheric balloons and heights of places such as atmospheric layers and clouds. It is used to measure the height of an object which is above the earth's surface. In this context, the altitude measurement is the vertical distance between the earth's surface above sea level and the sampled position in the air</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 100 meter None</li>
-</ul>
-</li>
-<li><a href="../elev/">elev</a>  <sub>0..1</sub><ul>
-<li>Description: Elevation of the sampling site is its height above a fixed reference point, most commonly the mean sea level. Elevation is mainly used when referring to points on the earth's surface, while altitude is used for points above the surface, such as an aircraft in flight or a spacecraft in orbit.</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 100 meter None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_temp/">wastewater_sludge➞temp</a>  <sub>0..1</sub><ul>
-<li>Description: Temperature of the sample at the time of sampling.</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 25 degree Celsius None</li>
-</ul>
-</li>
-<li><a href="../geo_loc_name/">geo_loc_name</a>  <sub>0..1</sub><ul>
-<li>Description: The geographical origin of the sample as defined by the country or sea name followed by specific region name. Country or sea names should be chosen from the INSDC country list (http://insdc.org/country.html), or the GAZ ontology (http://purl.bioontology.org/ontology/GAZ)</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: USA: Maryland, Bethesda None</li>
-</ul>
-</li>
-<li><a href="../collection_date/">collection_date</a>  <sub>0..1</sub><ul>
-<li>Description: The time of sampling, either as an instance (single point in time) or interval. In case no exact time is available, the date/time can be right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant</li>
-<li>Range: <a href="../types/Date/">Date</a></li>
-<li>Example: 2018-05-11T10:00:00+01:00; 2018-05-11 None</li>
-</ul>
-</li>
-<li><a href="../env_broad_scale/">env_broad_scale</a>  <sub>0..1</sub><ul>
-<li>Description: Report the major environmental system the sample or specimen came from. The system(s) identified should have a coarse spatial grain, to provide the general environmental context of where the sampling was done (e.g. in the desert or a rainforest). We recommend using subclasses of EnvO’s biome class:  http://purl.obolibrary.org/obo/ENVO_00000428. EnvO documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: oceanic epipelagic zone biome [ENVO:01000033] for annotating a water sample from the photic zone in middle of the Atlantic Ocean None</li>
-</ul>
-</li>
-<li><a href="../env_local_scale/">env_local_scale</a>  <sub>0..1</sub><ul>
-<li>Description: Report the entity or entities which are in the sample or specimen’s local vicinity and which you believe have significant causal influences on your sample or specimen. We recommend using EnvO terms which are of smaller spatial grain than your entry for env_broad_scale. Terms, such as anatomical sites, from other OBO Library ontologies which interoperate with EnvO (e.g. UBERON) are accepted in this field. EnvO documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: litter layer [ENVO:01000338]; Annotating a pooled sample taken from various vegetation layers in a forest consider: canopy [ENVO:00000047]|herb and fern layer [ENVO:01000337]|litter layer [ENVO:01000338]|understory [01000335]|shrub layer [ENVO:01000336]. None</li>
-</ul>
-</li>
-<li><a href="../env_medium/">env_medium</a>  <sub>0..1</sub><ul>
-<li>Description: Report the environmental material(s) immediately surrounding the sample or specimen at the time of sampling. We recommend using subclasses of 'environmental material' (http://purl.obolibrary.org/obo/ENVO_00010483). EnvO documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS . Terms from other OBO ontologies are permissible as long as they reference mass/volume nouns (e.g. air, water, blood) and not discrete, countable entities (e.g. a tree, a leaf, a table top).</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: soil [ENVO:00001998]; Annotating a fish swimming in the upper 100 m of the Atlantic Ocean, consider: ocean water [ENVO:00002151]. Example: Annotating a duck on a pond consider: pond water [ENVO:00002228]|air [ENVO_00002005] None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_alkalinity/">wastewater_sludge➞alkalinity</a>  <sub>0..1</sub><ul>
-<li>Description: Alkalinity, the ability of a solution to neutralize acids to the equivalence point of carbonate or bicarbonate</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 50 milligram per liter None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_biochem_oxygen_dem/">wastewater_sludge➞biochem_oxygen_dem</a>  <sub>0..1</sub><ul>
-<li>Description: Amount of dissolved oxygen needed by aerobic biological organisms in a body of water to break down organic material present in a given water sample at certain temperature over a specific time period</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_chem_administration/">wastewater_sludge➞chem_administration</a>  <sub>0..*</sub><ul>
-<li>Description: List of chemical compounds administered to the host or site where sampling occurred, and when (e.g. Antibiotics, n fertilizer, air filter); can include multiple compounds. For chemical entities of biological interest ontology (chebi) (v 163), http://purl.bioontology.org/ontology/chebi</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: agar [CHEBI:2509];2018-05-11T20:00Z None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_chem_oxygen_dem/">wastewater_sludge➞chem_oxygen_dem</a>  <sub>0..1</sub><ul>
-<li>Description: A measure of the capacity of water to consume oxygen during the decomposition of organic matter and the oxidation of inorganic chemicals such as ammonia and nitrite</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_efficiency_percent/">wastewater_sludge➞efficiency_percent</a>  <sub>0..1</sub><ul>
-<li>Description: Percentage of volatile solids removed from the anaerobic digestor</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_emulsions/">wastewater_sludge➞emulsions</a>  <sub>0..*</sub><ul>
-<li>Description: Amount or concentration of substances such as paints, adhesives, mayonnaise, hair colorants, emulsified oils, etc.; can include multiple emulsion types</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_gaseous_substances/">wastewater_sludge➞gaseous_substances</a>  <sub>0..*</sub><ul>
-<li>Description: Amount or concentration of substances such as hydrogen sulfide, carbon dioxide, methane, etc.; can include multiple substances</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_indust_eff_percent/">wastewater_sludge➞indust_eff_percent</a>  <sub>0..1</sub><ul>
-<li>Description: Percentage of industrial effluents received by wastewater treatment plant</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_inorg_particles/">wastewater_sludge➞inorg_particles</a>  <sub>0..*</sub><ul>
-<li>Description: Concentration of particles such as sand, grit, metal particles, ceramics, etc.; can include multiple particles</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_misc_param/">wastewater_sludge➞misc_param</a>  <sub>0..*</sub><ul>
-<li>Description: Any other measurement performed or parameter collected, that is not listed here</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: Bicarbonate ion concentration;2075 micromole per kilogram None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_nitrate/">wastewater_sludge➞nitrate</a>  <sub>0..1</sub><ul>
-<li>Description: Concentration of nitrate in the sample</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 65 micromole per liter None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_org_particles/">wastewater_sludge➞org_particles</a>  <sub>0..*</sub><ul>
-<li>Description: Concentration of particles such as faeces, hairs, food, vomit, paper fibers, plant material, humus, etc.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_organism_count/">wastewater_sludge➞organism_count</a>  <sub>0..*</sub><ul>
-<li>Description: Total cell count of any organism (or group of organisms) per gram, volume or area of sample, should include name of organism followed by count. The method that was used for the enumeration (e.g. qPCR, atp, mpn, etc.) Should also be provided. (example: total prokaryotes; 3.5e7 cells per ml; qpcr)</li>
-<li>Range: <a href="../organism_count_enum/">organism_count_enum</a></li>
-<li>Example: total prokaryotes;3.5e7 cells per milliliter;qPCR None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_oxy_stat_samp/">wastewater_sludge➞oxy_stat_samp</a>  <sub>0..1</sub><ul>
-<li>Description: Oxygenation status of sample</li>
-<li>Range: <a href="../oxy_stat_samp_enum/">oxy_stat_samp_enum</a></li>
-<li>Example: aerobic None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_ph/">wastewater_sludge➞ph</a>  <sub>0..1</sub><ul>
-<li>Description: Ph measurement of the sample, or liquid portion of sample, or aqueous phase of the fluid</li>
-<li>Range: <a href="../types/Double/">Double</a></li>
-<li>Example: 7.2 None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_perturbation/">wastewater_sludge➞perturbation</a>  <sub>0..*</sub><ul>
-<li>Description: Type of perturbation, e.g. chemical administration, physical disturbance, etc., coupled with perturbation regimen including how many times the perturbation was repeated, how long each perturbation lasted, and the start and end time of the entire perturbation period; can include multiple perturbation types</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: antibiotic addition;R2/2018-05-11T14:30Z/2018-05-11T19:30Z/P1H30M None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_phosphate/">wastewater_sludge➞phosphate</a>  <sub>0..1</sub><ul>
-<li>Description: Concentration of phosphate</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 0.7 micromole per liter None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_pre_treatment/">wastewater_sludge➞pre_treatment</a>  <sub>0..1</sub><ul>
-<li>Description: The process of pre-treatment removes materials that can be easily collected from the raw wastewater</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_primary_treatment/">wastewater_sludge➞primary_treatment</a>  <sub>0..1</sub><ul>
-<li>Description: The process to produce both a generally homogeneous liquid capable of being treated biologically and a sludge that can be separately treated or processed</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_reactor_type/">wastewater_sludge➞reactor_type</a>  <sub>0..1</sub><ul>
-<li>Description: Anaerobic digesters can be designed and engineered to operate using a number of different process configurations, as batch or continuous, mesophilic, high solid or low solid, and single stage or multistage</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_salinity/">wastewater_sludge➞salinity</a>  <sub>0..1</sub><ul>
-<li>Description: The total concentration of all dissolved salts in a liquid or solid sample. While salinity can be measured by a complete chemical analysis, this method is difficult and time consuming. More often, it is instead derived from the conductivity measurement. This is known as practical salinity. These derivations compare the specific conductance of the sample to a salinity standard such as seawater.</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 25 practical salinity unit None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_samp_store_dur/">wastewater_sludge➞samp_store_dur</a>  <sub>0..1</sub><ul>
-<li>Description: Duration for which the sample was stored</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: P1Y6M None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_samp_store_loc/">wastewater_sludge➞samp_store_loc</a>  <sub>0..1</sub><ul>
-<li>Description: Location at which sample was stored, usually name of a specific freezer/room</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: Freezer no:5 None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_samp_store_temp/">wastewater_sludge➞samp_store_temp</a>  <sub>0..1</sub><ul>
-<li>Description: Temperature at which sample was stored, e.g. -80 degree Celsius</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: -80 degree Celsius None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_secondary_treatment/">wastewater_sludge➞secondary_treatment</a>  <sub>0..1</sub><ul>
-<li>Description: The process for substantially degrading the biological content of the sewage</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_sewage_type/">wastewater_sludge➞sewage_type</a>  <sub>0..1</sub><ul>
-<li>Description: Type of wastewater treatment plant as municipial or industrial</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_sludge_retent_time/">wastewater_sludge➞sludge_retent_time</a>  <sub>0..1</sub><ul>
-<li>Description: The time activated sludge remains in reactor</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_sodium/">wastewater_sludge➞sodium</a>  <sub>0..1</sub><ul>
-<li>Description: Sodium concentration in the sample</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 10.5 milligram per liter None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_soluble_inorg_mat/">wastewater_sludge➞soluble_inorg_mat</a>  <sub>0..*</sub><ul>
-<li>Description: Concentration of substances such as ammonia, road-salt, sea-salt, cyanide, hydrogen sulfide, thiocyanates, thiosulfates, etc.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_soluble_org_mat/">wastewater_sludge➞soluble_org_mat</a>  <sub>0..*</sub><ul>
-<li>Description: Concentration of substances such as urea, fruit sugars, soluble proteins, drugs, pharmaceuticals, etc.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_suspend_solids/">wastewater_sludge➞suspend_solids</a>  <sub>0..*</sub><ul>
-<li>Description: Concentration of substances including a wide variety of material, such as silt, decaying plant and animal matter; can include multiple substances</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_tertiary_treatment/">wastewater_sludge➞tertiary_treatment</a>  <sub>0..1</sub><ul>
-<li>Description: The process providing a final treatment stage to raise the effluent quality before it is discharged to the receiving environment</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_tot_nitro/">wastewater_sludge➞tot_nitro</a>  <sub>0..1</sub><ul>
-<li>Description: Total nitrogen concentration of water samples, calculated by: total nitrogen = total dissolved nitrogen + particulate nitrogen. Can also be measured without filtering, reported as nitrogen</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 50 micromole per liter None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_tot_phosphate/">wastewater_sludge➞tot_phosphate</a>  <sub>0..1</sub><ul>
-<li>Description: Total amount or concentration of phosphate</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_wastewater_type/">wastewater_sludge➞wastewater_type</a>  <sub>0..1</sub><ul>
-<li>Description: The origin of wastewater such as human waste, rainfall, storm drains, etc.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_samp_name/">wastewater_sludge➞samp_name</a>  <sub>1..1</sub><ul>
-<li>Description: A local identifier or name that for the material sample used for extracting nucleic acids, and subsequent sequencing. It can refer either to the original material collected or to any derived sub-samples. It can have any format, but we suggest that you make it concise, unique and consistent within your lab, and as informative as possible. INSDC requires every sample name from a single Submitter to be unique. Use of a globally unique identifier for the field source_mat_id is recommended in addition to sample_name.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: ISDsoil1 None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_project_name/">wastewater_sludge➞project_name</a>  <sub>1..1</sub><ul>
-<li>Description: Name of the project within which the sequencing was organized</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: Forest soil metagenome None</li>
-</ul>
-</li>
-<li><a href="../wastewater_sludge_samp_vol_we_dna_ext/">wastewater_sludge➞samp_vol_we_dna_ext</a>  <sub>0..1</sub><ul>
-<li>Description: Volume (ml) or mass (g) of total collected sample processed for DNA extraction. Note: total sample collected should be entered under the term Sample Size (MIXS:0000001).</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 1500 milliliter None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mimarks-survey">Mixed in from MIMARKS survey:</h3>
-<ul>
-<li><a href="../MIMARKS_survey_samp_taxon_id/">MIMARKS survey➞samp_taxon_id</a>  <sub>1..1</sub><ul>
-<li>Description: NCBI taxon id of the sample.  Maybe be a single taxon or mixed taxa sample. Use 'synthetic metagenome’ for mock community/positive controls, or 'blank sample' for negative controls.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: Gut Metagenome [NCBI:txid749906] None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mimarks-survey_1">Mixed in from MIMARKS survey:</h3>
-<ul>
-<li><a href="../MIMARKS_survey_experimental_factor/">MIMARKS survey➞experimental_factor</a>  <sub>0..1</sub><ul>
-<li>Description: Experimental factors are essentially the variable aspects of an experiment design which can be used to describe an experiment, or set of experiments, in an increasingly detailed manner. This field accepts ontology terms from Experimental Factor Ontology (EFO) and/or Ontology for Biomedical Investigations (OBI). For a browser of EFO (v 2.95) terms, please see http://purl.bioontology.org/ontology/EFO; for a browser of OBI (v 2018-02-12) terms please see http://purl.bioontology.org/ontology/OBI</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: time series design [EFO:EFO_0001779] None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mimarks-survey_2">Mixed in from MIMARKS survey:</h3>
-<ul>
-<li><a href="../MIMARKS_survey_neg_cont_type/">MIMARKS survey➞neg_cont_type</a>  <sub>0..1</sub><ul>
-<li>Description: The substance or equipment used as a negative control in an investigation</li>
-<li>Range: <a href="../neg_cont_type_enum/">neg_cont_type_enum</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mimarks-survey_3">Mixed in from MIMARKS survey:</h3>
-<ul>
-<li><a href="../MIMARKS_survey_pos_cont_type/">MIMARKS survey➞pos_cont_type</a>  <sub>0..1</sub><ul>
-<li>Description: The substance, mixture, product, or apparatus used to verify that a process which is part of an investigation delivers a true positive.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mimarks-survey_4">Mixed in from MIMARKS survey:</h3>
-<ul>
-<li><a href="../MIMARKS_survey_subspecf_gen_lin/">MIMARKS survey➞subspecf_gen_lin</a>  <sub>0..1</sub><ul>
-<li>Description: Information about the genetic distinctness of the sequenced organism below the subspecies level, e.g., serovar, serotype, biotype, ecotype, or any relevant genetic typing schemes like Group I plasmid. Subspecies should not be recorded in this term, but in the NCBI taxonomy. Supply both the lineage name and the lineage rank separated by a colon, e.g., biovar:abc123.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: serovar:Newport None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mimarks-survey_5">Mixed in from MIMARKS survey:</h3>
-<ul>
-<li><a href="../MIMARKS_survey_extrachrom_elements/">MIMARKS survey➞extrachrom_elements</a>  <sub>0..1</sub><ul>
-<li>Description: Do plasmids exist of significant phenotypic consequence (e.g. ones that determine virulence or antibiotic resistance). Megaplasmids? Other plasmids (borrelia has 15+ plasmids)</li>
-<li>Range: <a href="../types/Integer/">Integer</a></li>
-<li>Example: 5 None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mimarks-survey_6">Mixed in from MIMARKS survey:</h3>
-<ul>
-<li><a href="../MIMARKS_survey_source_mat_id/">MIMARKS survey➞source_mat_id</a>  <sub>0..1</sub><ul>
-<li>Description: A unique identifier assigned to a material sample (as defined by http://rs.tdwg.org/dwc/terms/materialSampleID, and as opposed to a particular digital record of a material sample) used for extracting nucleic acids, and subsequent sequencing. The identifier can refer either to the original material collected or to any derived sub-samples. The INSDC qualifiers /specimen_voucher, /bio_material, or /culture_collection may or may not share the same value as the source_mat_id field. For instance, the /specimen_voucher qualifier and source_mat_id may both contain 'UAM:Herps:14' , referring to both the specimen voucher and sampled tissue with the same identifier. However, the /culture_collection qualifier may refer to a value from an initial culture (e.g. ATCC:11775) while source_mat_id would refer to an identifier from some derived culture from which the nucleic acids were extracted (e.g. xatc123 or ark:/2154/R2).</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: MPI012345 None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mimarks-survey_7">Mixed in from MIMARKS survey:</h3>
-<ul>
-<li><a href="../MIMARKS_survey_biotic_relationship/">MIMARKS survey➞biotic_relationship</a>  <sub>0..1</sub><ul>
-<li>Description: Description of relationship(s) between the subject organism and other organism(s) it is associated with. E.g., parasite on species X; mutualist with species Y. The target organism is the subject of the relationship, and the other organism(s) is the object</li>
-<li>Range: <a href="../biotic_relationship_enum/">biotic_relationship_enum</a></li>
-<li>Example: free living None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mimarks-survey_8">Mixed in from MIMARKS survey:</h3>
-<ul>
-<li><a href="../MIMARKS_survey_trophic_level/">MIMARKS survey➞trophic_level</a>  <sub>0..1</sub><ul>
-<li>Description: Trophic levels are the feeding position in a food chain. Microbes can be a range of producers (e.g. chemolithotroph)</li>
-<li>Range: <a href="../trophic_level_enum/">trophic_level_enum</a></li>
-<li>Example: heterotroph None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mimarks-survey_9">Mixed in from MIMARKS survey:</h3>
-<ul>
-<li><a href="../MIMARKS_survey_rel_to_oxygen/">MIMARKS survey➞rel_to_oxygen</a>  <sub>0..1</sub><ul>
-<li>Description: Is this organism an aerobe, anaerobe? Please note that aerobic and anaerobic are valid descriptors for microbial environments</li>
-<li>Range: <a href="../rel_to_oxygen_enum/">rel_to_oxygen_enum</a></li>
-<li>Example: aerobe None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mimarks-survey_10">Mixed in from MIMARKS survey:</h3>
-<ul>
-<li><a href="../MIMARKS_survey_isol_growth_condt/">MIMARKS survey➞isol_growth_condt</a>  <sub>1..1</sub><ul>
-<li>Description: Publication reference in the form of pubmed ID (pmid), digital object identifier (doi) or url for isolation and growth condition specifications of the organism/material</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: doi: 10.1016/j.syapm.2018.01.009 None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mimarks-survey_11">Mixed in from MIMARKS survey:</h3>
-<ul>
-<li><a href="../MIMARKS_survey_samp_collec_device/">MIMARKS survey➞samp_collec_device</a>  <sub>0..1</sub><ul>
-<li>Description: The device used to collect an environmental sample. This field accepts terms listed under environmental sampling device (http://purl.obolibrary.org/obo/ENVO). This field also accepts terms listed under specimen collection device (http://purl.obolibrary.org/obo/GENEPIO_0002094).</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: swab, biopsy, niskin bottle, push core, drag swab [GENEPIO:0002713] None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mimarks-survey_12">Mixed in from MIMARKS survey:</h3>
-<ul>
-<li><a href="../MIMARKS_survey_samp_collec_method/">MIMARKS survey➞samp_collec_method</a>  <sub>0..1</sub><ul>
-<li>Description: The method employed for collecting the sample.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: swabbing None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mimarks-survey_13">Mixed in from MIMARKS survey:</h3>
-<ul>
-<li><a href="../MIMARKS_survey_samp_mat_process/">MIMARKS survey➞samp_mat_process</a>  <sub>0..1</sub><ul>
-<li>Description: A brief description of any processing applied to the sample during or after retrieving the sample from environment, or a link to the relevant protocol(s) performed.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: filtering of seawater, storing samples in ethanol None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mimarks-survey_14">Mixed in from MIMARKS survey:</h3>
-<ul>
-<li><a href="../MIMARKS_survey_samp_size/">MIMARKS survey➞samp_size</a>  <sub>0..1</sub><ul>
-<li>Description: The total amount or size (volume (ml), mass (g) or area (m2) ) of sample collected.</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 5 liter None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mimarks-survey_15">Mixed in from MIMARKS survey:</h3>
-<ul>
-<li><a href="../MIMARKS_survey_nucl_acid_ext/">MIMARKS survey➞nucl_acid_ext</a>  <sub>0..1</sub><ul>
-<li>Description: A link to a literature reference, electronic resource or a standard operating procedure (SOP), that describes the material separation to recover the nucleic acid fraction from a sample</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: https://mobio.com/media/wysiwyg/pdfs/protocols/12888.pdf None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mimarks-survey_16">Mixed in from MIMARKS survey:</h3>
-<ul>
-<li><a href="../MIMARKS_survey_nucl_acid_amp/">MIMARKS survey➞nucl_acid_amp</a>  <sub>0..1</sub><ul>
-<li>Description: A link to a literature reference, electronic resource or a standard operating procedure (SOP), that describes the enzymatic amplification (PCR, TMA, NASBA) of specific nucleic acids</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: https://phylogenomics.me/protocols/16s-pcr-protocol/ None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mimarks-survey_17">Mixed in from MIMARKS survey:</h3>
-<ul>
-<li><a href="../MIMARKS_survey_target_gene/">MIMARKS survey➞target_gene</a>  <sub>1..1</sub><ul>
-<li>Description: Targeted gene or locus name for marker gene studies</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: 16S rRNA, 18S rRNA, nif, amoA, rpo None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mimarks-survey_18">Mixed in from MIMARKS survey:</h3>
-<ul>
-<li><a href="../MIMARKS_survey_target_subfragment/">MIMARKS survey➞target_subfragment</a>  <sub>0..1</sub><ul>
-<li>Description: Name of subfragment of a gene or locus. Important to e.g. identify special regions on marker genes like V6 on 16S rRNA</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: V6, V9, ITS None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mimarks-survey_19">Mixed in from MIMARKS survey:</h3>
-<ul>
-<li><a href="../MIMARKS_survey_pcr_primers/">MIMARKS survey➞pcr_primers</a>  <sub>0..1</sub><ul>
-<li>Description: PCR primers that were used to amplify the sequence of the targeted gene, locus or subfragment. This field should contain all the primers used for a single PCR reaction if multiple forward or reverse primers are present in a single PCR reaction. The primer sequence should be reported in uppercase letters</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: FWD:GTGCCAGCMGCCGCGGTAA;REV:GGACTACHVGGGTWTCTAAT None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mimarks-survey_20">Mixed in from MIMARKS survey:</h3>
-<ul>
-<li><a href="../MIMARKS_survey_pcr_cond/">MIMARKS survey➞pcr_cond</a>  <sub>0..1</sub><ul>
-<li>Description: Description of reaction conditions and components of PCR in the form of 'initial denaturation:94degC_1.5min; annealing=...'</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: initial denaturation:94_3;annealing:50_1;elongation:72_1.5;final elongation:72_10;35 None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mimarks-survey_21">Mixed in from MIMARKS survey:</h3>
-<ul>
-<li><a href="../MIMARKS_survey_seq_meth/">MIMARKS survey➞seq_meth</a>  <sub>1..1</sub><ul>
-<li>Description: Sequencing machine used. Where possible the term should be taken from the OBI list of DNA sequencers (http://purl.obolibrary.org/obo/OBI_0400103).</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: 454 Genome Sequencer FLX [OBI:0000702] None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mimarks-survey_22">Mixed in from MIMARKS survey:</h3>
-<ul>
-<li><a href="../MIMARKS_survey_seq_quality_check/">MIMARKS survey➞seq_quality_check</a>  <sub>0..1</sub><ul>
-<li>Description: Indicate if the sequence has been called by automatic systems (none) or undergone a manual editing procedure (e.g. by inspecting the raw data or chromatograms). Applied only for sequences that are not submitted to SRA,ENA or DRA</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: none None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mimarks-survey_23">Mixed in from MIMARKS survey:</h3>
-<ul>
-<li><a href="../MIMARKS_survey_chimera_check/">MIMARKS survey➞chimera_check</a>  <sub>0..1</sub><ul>
-<li>Description: Tool(s) used for chimera checking, including version number and parameters, to discover and remove chimeric sequences. A chimeric sequence is comprised of two or more phylogenetically distinct parent sequences.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: uchime;v4.1;default parameters None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mimarks-survey_24">Mixed in from MIMARKS survey:</h3>
-<ul>
-<li><a href="../MIMARKS_survey_associated_resource/">MIMARKS survey➞associated resource</a>  <sub>0..1</sub><ul>
-<li>Description: A related resource that is referenced, cited, or otherwise associated to the sequence.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: http://www.earthmicrobiome.org/ None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mimarks-survey_25">Mixed in from MIMARKS survey:</h3>
-<ul>
-<li><a href="../MIMARKS_survey_sop/">MIMARKS survey➞sop</a>  <sub>0..1</sub><ul>
-<li>Description: Standard operating procedures used in assembly and/or annotation of genomes, metagenomes or environmental sequences</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: http://press.igsb.anl.gov/earthmicrobiome/protocols-and-standards/its/ None</li>
-</ul>
-</li>
-</ul></div>
+<li><a href="../WastewaterSludge/">WastewaterSludge</a><ul>
+<li><strong>WastewaterSludgeMIMARKSSurvey</strong> [ MIMARKS survey]</li>
+</ul>
+</li>
+</ul>
+<h2 id="slots">Slots</h2>
+<table>
+<thead>
+<tr>
+<th>MIxS ID</th>
+<th>Name</th>
+<th>Multiplicity</th>
+<th>Description</th>
+<th>Pattern</th>
+<th>Info</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MIXS:0001107</td>
+<td><a href="../samp_name/">samp_name</a></td>
+<td>1..1</td>
+<td>A local identifier or name that for the material sample used for extracting nucleic acids, and subsequent sequencing. It can refer either to the original material collected or to any derived sub-samples. It can have any format, but we suggest that you make it concise, unique and consistent within your lab, and as informative as possible. INSDC requires every sample name from a single Submitter to be unique. Use of a globally unique identifier for the field source_mat_id is recommended in addition to sample_name.</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001320</td>
+<td><a href="../samp_taxon_id/">samp_taxon_id</a></td>
+<td>1..1</td>
+<td>NCBI taxon id of the sample.  Maybe be a single taxon or mixed taxa sample. Use 'synthetic metagenome’ for mock community/positive controls, or 'blank sample' for negative controls.</td>
+<td>{text} [NCBI:txid]</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000092</td>
+<td><a href="../project_name/">project_name</a></td>
+<td>1..1</td>
+<td>Name of the project within which the sequencing was organized</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000008</td>
+<td><a href="../experimental_factor/">experimental_factor</a></td>
+<td>0..1</td>
+<td>Experimental factors are essentially the variable aspects of an experiment design which can be used to describe an experiment, or set of experiments, in an increasingly detailed manner. This field accepts ontology terms from Experimental Factor Ontology (EFO) and/or Ontology for Biomedical Investigations (OBI). For a browser of EFO (v 2.95) terms, please see http://purl.bioontology.org/ontology/EFO; for a browser of OBI (v 2018-02-12) terms please see http://purl.bioontology.org/ontology/OBI</td>
+<td>{termLabel} {[termID]}</td>
+<td>{text}</td>
+</tr>
+<tr>
+<td>MIXS:0000009</td>
+<td><a href="../lat_lon/">lat_lon</a></td>
+<td>1..1</td>
+<td>The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system</td>
+<td>{float} {float}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000010</td>
+<td><a href="../geo_loc_name/">geo_loc_name</a></td>
+<td>1..1</td>
+<td>The geographical origin of the sample as defined by the country or sea name followed by specific region name. Country or sea names should be chosen from the INSDC country list (http://insdc.org/country.html), or the GAZ ontology (http://purl.bioontology.org/ontology/GAZ)</td>
+<td>{term}: {term}, {text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000011</td>
+<td><a href="../collection_date/">collection_date</a></td>
+<td>1..1</td>
+<td>The time of sampling, either as an instance (single point in time) or interval. In case no exact time is available, the date/time can be right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001321</td>
+<td><a href="../neg_cont_type/">neg_cont_type</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>The substance or equipment used as a negative control in an investigation</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001322</td>
+<td><a href="../pos_cont_type/">pos_cont_type</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>The substance, mixture, product, or apparatus used to verify that a process which is part of an investigation delivers a true positive.</td>
+<td>{term} or {text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000012</td>
+<td><a href="../env_broad_scale/">env_broad_scale</a></td>
+<td>1..1</td>
+<td>Report the major environmental system the sample or specimen came from. The system(s) identified should have a coarse spatial grain, to provide the general environmental context of where the sampling was done (e.g. in the desert or a rainforest). We recommend using subclasses of EnvO’s biome class:  http://purl.obolibrary.org/obo/ENVO_00000428. EnvO documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS</td>
+<td>{termLabel} {[termID]}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000013</td>
+<td><a href="../env_local_scale/">env_local_scale</a></td>
+<td>1..1</td>
+<td>Report the entity or entities which are in the sample or specimen’s local vicinity and which you believe have significant causal influences on your sample or specimen. We recommend using EnvO terms which are of smaller spatial grain than your entry for env_broad_scale. Terms, such as anatomical sites, from other OBO Library ontologies which interoperate with EnvO (e.g. UBERON) are accepted in this field. EnvO documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS.</td>
+<td>{termLabel} {[termID]}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000014</td>
+<td><a href="../env_medium/">env_medium</a></td>
+<td>1..1</td>
+<td>Report the environmental material(s) immediately surrounding the sample or specimen at the time of sampling. We recommend using subclasses of 'environmental material' (http://purl.obolibrary.org/obo/ENVO_00010483). EnvO documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS . Terms from other OBO ontologies are permissible as long as they reference mass/volume nouns (e.g. air, water, blood) and not discrete, countable entities (e.g. a tree, a leaf, a table top).</td>
+<td>{termLabel} {[termID]}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000020</td>
+<td><a href="../subspecf_gen_lin/">subspecf_gen_lin</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>Information about the genetic distinctness of the sequenced organism below the subspecies level, e.g., serovar, serotype, biotype, ecotype, or any relevant genetic typing schemes like Group I plasmid. Subspecies should not be recorded in this term, but in the NCBI taxonomy. Supply both the lineage name and the lineage rank separated by a colon, e.g., biovar:abc123.</td>
+<td>{rank name}:{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000023</td>
+<td><a href="../extrachrom_elements/">extrachrom_elements</a></td>
+<td>0..1</td>
+<td>Do plasmids exist of significant phenotypic consequence (e.g. ones that determine virulence or antibiotic resistance). Megaplasmids? Other plasmids (borrelia has 15+ plasmids)</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000026</td>
+<td><a href="../source_mat_id/">source_mat_id</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>A unique identifier assigned to a material sample (as defined by http://rs.tdwg.org/dwc/terms/materialSampleID, and as opposed to a particular digital record of a material sample) used for extracting nucleic acids, and subsequent sequencing. The identifier can refer either to the original material collected or to any derived sub-samples. The INSDC qualifiers /specimen_voucher, /bio_material, or /culture_collection may or may not share the same value as the source_mat_id field. For instance, the /specimen_voucher qualifier and source_mat_id may both contain 'UAM:Herps:14' , referring to both the specimen voucher and sampled tissue with the same identifier. However, the /culture_collection qualifier may refer to a value from an initial culture (e.g. ATCC:11775) while source_mat_id would refer to an identifier from some derived culture from which the nucleic acids were extracted (e.g. xatc123 or ark:/2154/R2).</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000028</td>
+<td><a href="../biotic_relationship/">biotic_relationship</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>Description of relationship(s) between the subject organism and other organism(s) it is associated with. E.g., parasite on species X; mutualist with species Y. The target organism is the subject of the relationship, and the other organism(s) is the object</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000032</td>
+<td><a href="../trophic_level/">trophic_level</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>Trophic levels are the feeding position in a food chain. Microbes can be a range of producers (e.g. chemolithotroph)</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000015</td>
+<td><a href="../rel_to_oxygen/">rel_to_oxygen</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>Is this organism an aerobe, anaerobe? Please note that aerobic and anaerobic are valid descriptors for microbial environments</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000003</td>
+<td><a href="../isol_growth_condt/">isol_growth_condt</a></td>
+<td>1..1</td>
+<td>Publication reference in the form of pubmed ID (pmid), digital object identifier (doi) or url for isolation and growth condition specifications of the organism/material</td>
+<td>{PMID}</td>
+<td>{DOI}</td>
+</tr>
+<tr>
+<td>MIXS:0000002</td>
+<td><a href="../samp_collec_device/">samp_collec_device</a></td>
+<td>0..1</td>
+<td>The device used to collect an environmental sample. This field accepts terms listed under environmental sampling device (http://purl.obolibrary.org/obo/ENVO). This field also accepts terms listed under specimen collection device (http://purl.obolibrary.org/obo/GENEPIO_0002094).</td>
+<td>{termLabel} {[termID]}</td>
+<td>{text}</td>
+</tr>
+<tr>
+<td>MIXS:0001225</td>
+<td><a href="../samp_collec_method/">samp_collec_method</a></td>
+<td>0..1</td>
+<td>The method employed for collecting the sample.</td>
+<td>{PMID}</td>
+<td>{DOI}</td>
+</tr>
+<tr>
+<td>MIXS:0000016</td>
+<td><a href="../samp_mat_process/">samp_mat_process</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>A brief description of any processing applied to the sample during or after retrieving the sample from environment, or a link to the relevant protocol(s) performed.</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000001</td>
+<td><a href="../samp_size/">samp_size</a></td>
+<td>0..1</td>
+<td>The total amount or size (volume (ml), mass (g) or area (m2) ) of sample collected.</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000111</td>
+<td><a href="../samp_vol_we_dna_ext/">samp_vol_we_dna_ext</a></td>
+<td>0..1</td>
+<td>Volume (ml) or mass (g) of total collected sample processed for DNA extraction. Note: total sample collected should be entered under the term Sample Size (MIXS:0000001).</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000037</td>
+<td><a href="../nucl_acid_ext/">nucl_acid_ext</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>A link to a literature reference, electronic resource or a standard operating procedure (SOP), that describes the material separation to recover the nucleic acid fraction from a sample</td>
+<td>{PMID}</td>
+<td>{DOI}</td>
+</tr>
+<tr>
+<td>MIXS:0000038</td>
+<td><a href="../nucl_acid_amp/">nucl_acid_amp</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>A link to a literature reference, electronic resource or a standard operating procedure (SOP), that describes the enzymatic amplification (PCR, TMA, NASBA) of specific nucleic acids</td>
+<td>{PMID}</td>
+<td>{DOI}</td>
+</tr>
+<tr>
+<td>MIXS:0000044</td>
+<td><a href="../target_gene/">target_gene</a></td>
+<td>1..1</td>
+<td>Targeted gene or locus name for marker gene studies</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000045</td>
+<td><a href="../target_subfragment/">target_subfragment</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>Name of subfragment of a gene or locus. Important to e.g. identify special regions on marker genes like V6 on 16S rRNA</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000046</td>
+<td><a href="../pcr_primers/">pcr_primers</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>PCR primers that were used to amplify the sequence of the targeted gene, locus or subfragment. This field should contain all the primers used for a single PCR reaction if multiple forward or reverse primers are present in a single PCR reaction. The primer sequence should be reported in uppercase letters</td>
+<td>FWD:{dna};REV:{dna}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000049</td>
+<td><a href="../pcr_cond/">pcr_cond</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>Description of reaction conditions and components of PCR in the form of 'initial denaturation:94degC_1.5min; annealing=...'</td>
+<td>initial denaturation:degrees_minutes;annealing:degrees_minutes;elongation:degrees_minutes;final elongation:degrees_minutes;total cycles</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000050</td>
+<td><a href="../seq_meth/">seq_meth</a></td>
+<td>1..1</td>
+<td>Sequencing machine used. Where possible the term should be taken from the OBI list of DNA sequencers (http://purl.obolibrary.org/obo/OBI_0400103).</td>
+<td>{termLabel} {[termID]}</td>
+<td>{text}</td>
+</tr>
+<tr>
+<td>MIXS:0000051</td>
+<td><a href="../seq_quality_check/">seq_quality_check</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>Indicate if the sequence has been called by automatic systems (none) or undergone a manual editing procedure (e.g. by inspecting the raw data or chromatograms). Applied only for sequences that are not submitted to SRA,ENA or DRA</td>
+<td>[none</td>
+<td>manually edited]</td>
+</tr>
+<tr>
+<td>MIXS:0000052</td>
+<td><a href="../chimera_check/">chimera_check</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>Tool(s) used for chimera checking, including version number and parameters, to discover and remove chimeric sequences. A chimeric sequence is comprised of two or more phylogenetically distinct parent sequences.</td>
+<td>{software};{version};{parameters}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000091</td>
+<td><a href="../associated_resource/">associated_resource</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>A related resource that is referenced, cited, or otherwise associated to the sequence.</td>
+<td>{PMID}</td>
+<td>{DOI}</td>
+</tr>
+<tr>
+<td>MIXS:0000090</td>
+<td><a href="../sop/">sop</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>Standard operating procedures used in assembly and/or annotation of genomes, metagenomes or environmental sequences</td>
+<td>{PMID}</td>
+<td>{DOI}</td>
+</tr>
+<tr>
+<td>MIXS:0000018</td>
+<td><a href="../depth/">depth</a></td>
+<td>0..1</td>
+<td>The vertical distance below local surface, e.g. for sediment or soil samples depth is measured from sediment or soil surface, respectively. Depth can be reported as an interval for subsurface samples.</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000094</td>
+<td><a href="../alt/">alt</a></td>
+<td>0..1</td>
+<td>Altitude is a term used to identify heights of objects such as airplanes, space shuttles, rockets, atmospheric balloons and heights of places such as atmospheric layers and clouds. It is used to measure the height of an object which is above the earth's surface. In this context, the altitude measurement is the vertical distance between the earth's surface above sea level and the sampled position in the air</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000093</td>
+<td><a href="../elev/">elev</a></td>
+<td>0..1</td>
+<td>Elevation of the sampling site is its height above a fixed reference point, most commonly the mean sea level. Elevation is mainly used when referring to points on the earth's surface, while altitude is used for points above the surface, such as an aircraft in flight or a spacecraft in orbit.</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000113</td>
+<td><a href="../temp/">temp</a></td>
+<td>0..1</td>
+<td>Temperature of the sample at the time of sampling.</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000421</td>
+<td><a href="../alkalinity/">alkalinity</a></td>
+<td>0..1</td>
+<td>Alkalinity, the ability of a solution to neutralize acids to the equivalence point of carbonate or bicarbonate</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000653</td>
+<td><a href="../biochem_oxygen_dem/">biochem_oxygen_dem</a></td>
+<td>0..1</td>
+<td>Amount of dissolved oxygen needed by aerobic biological organisms in a body of water to break down organic material present in a given water sample at certain temperature over a specific time period</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000751</td>
+<td><a href="../chem_administration/">chem_administration</a></td>
+<td>0..*</td>
+<td>List of chemical compounds administered to the host or site where sampling occurred, and when (e.g. Antibiotics, n fertilizer, air filter); can include multiple compounds. For chemical entities of biological interest ontology (chebi) (v 163), http://purl.bioontology.org/ontology/chebi</td>
+<td>{termLabel} {[termID]};{timestamp}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000656</td>
+<td><a href="../chem_oxygen_dem/">chem_oxygen_dem</a></td>
+<td>0..1</td>
+<td>A measure of the capacity of water to consume oxygen during the decomposition of organic matter and the oxidation of inorganic chemicals such as ammonia and nitrite</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000657</td>
+<td><a href="../efficiency_percent/">efficiency_percent</a></td>
+<td>0..1</td>
+<td>Percentage of volatile solids removed from the anaerobic digestor</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000660</td>
+<td><a href="../emulsions/">emulsions</a></td>
+<td>0..*</td>
+<td>Amount or concentration of substances such as paints, adhesives, mayonnaise, hair colorants, emulsified oils, etc.; can include multiple emulsion types</td>
+<td>{text};{float} {unit}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000661</td>
+<td><a href="../gaseous_substances/">gaseous_substances</a></td>
+<td>0..*</td>
+<td>Amount or concentration of substances such as hydrogen sulfide, carbon dioxide, methane, etc.; can include multiple substances</td>
+<td>{text};{float} {unit}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000662</td>
+<td><a href="../indust_eff_percent/">indust_eff_percent</a></td>
+<td>0..1</td>
+<td>Percentage of industrial effluents received by wastewater treatment plant</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000664</td>
+<td><a href="../inorg_particles/">inorg_particles</a></td>
+<td>0..*</td>
+<td>Concentration of particles such as sand, grit, metal particles, ceramics, etc.; can include multiple particles</td>
+<td>{text};{float} {unit}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000752</td>
+<td><a href="../misc_param/">misc_param</a></td>
+<td>0..*</td>
+<td>Any other measurement performed or parameter collected, that is not listed here</td>
+<td>{text};{float} {unit}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000425</td>
+<td><a href="../nitrate/">nitrate</a></td>
+<td>0..1</td>
+<td>Concentration of nitrate in the sample</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000665</td>
+<td><a href="../org_particles/">org_particles</a></td>
+<td>0..*</td>
+<td>Concentration of particles such as faeces, hairs, food, vomit, paper fibers, plant material, humus, etc.</td>
+<td>{text};{float} {unit}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000103</td>
+<td><a href="../organism_count/">organism_count</a></td>
+<td>0..*</td>
+<td>Total cell count of any organism (or group of organisms) per gram, volume or area of sample, should include name of organism followed by count. The method that was used for the enumeration (e.g. qPCR, atp, mpn, etc.) Should also be provided. (example: total prokaryotes; 3.5e7 cells per ml; qpcr)</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000753</td>
+<td><a href="../oxy_stat_samp/">oxy_stat_samp</a></td>
+<td>0..1</td>
+<td>Oxygenation status of sample</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001001</td>
+<td><a href="../ph/">ph</a></td>
+<td>0..1</td>
+<td>Ph measurement of the sample, or liquid portion of sample, or aqueous phase of the fluid</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000754</td>
+<td><a href="../perturbation/">perturbation</a></td>
+<td>0..*</td>
+<td>Type of perturbation, e.g. chemical administration, physical disturbance, etc., coupled with perturbation regimen including how many times the perturbation was repeated, how long each perturbation lasted, and the start and end time of the entire perturbation period; can include multiple perturbation types</td>
+<td>{text};{Rn/start_time/end_time/duration}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000505</td>
+<td><a href="../phosphate/">phosphate</a></td>
+<td>0..1</td>
+<td>Concentration of phosphate</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000348</td>
+<td><a href="../pre_treatment/">pre_treatment</a></td>
+<td>0..1</td>
+<td>The process of pre-treatment removes materials that can be easily collected from the raw wastewater</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000349</td>
+<td><a href="../primary_treatment/">primary_treatment</a></td>
+<td>0..1</td>
+<td>The process to produce both a generally homogeneous liquid capable of being treated biologically and a sludge that can be separately treated or processed</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000350</td>
+<td><a href="../reactor_type/">reactor_type</a></td>
+<td>0..1</td>
+<td>Anaerobic digesters can be designed and engineered to operate using a number of different process configurations, as batch or continuous, mesophilic, high solid or low solid, and single stage or multistage</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000183</td>
+<td><a href="../salinity/">salinity</a></td>
+<td>0..1</td>
+<td>The total concentration of all dissolved salts in a liquid or solid sample. While salinity can be measured by a complete chemical analysis, this method is difficult and time consuming. More often, it is instead derived from the conductivity measurement. This is known as practical salinity. These derivations compare the specific conductance of the sample to a salinity standard such as seawater.</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000116</td>
+<td><a href="../samp_store_dur/">samp_store_dur</a></td>
+<td>0..1</td>
+<td>Duration for which the sample was stored</td>
+<td>{duration}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000755</td>
+<td><a href="../samp_store_loc/">samp_store_loc</a></td>
+<td>0..1</td>
+<td>Location at which sample was stored, usually name of a specific freezer/room</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000110</td>
+<td><a href="../samp_store_temp/">samp_store_temp</a></td>
+<td>0..1</td>
+<td>Temperature at which sample was stored, e.g. -80 degree Celsius</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000351</td>
+<td><a href="../secondary_treatment/">secondary_treatment</a></td>
+<td>0..1</td>
+<td>The process for substantially degrading the biological content of the sewage</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000215</td>
+<td><a href="../sewage_type/">sewage_type</a></td>
+<td>0..1</td>
+<td>Type of wastewater treatment plant as municipial or industrial</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000669</td>
+<td><a href="../sludge_retent_time/">sludge_retent_time</a></td>
+<td>0..1</td>
+<td>The time activated sludge remains in reactor</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000428</td>
+<td><a href="../sodium/">sodium</a></td>
+<td>0..1</td>
+<td>Sodium concentration in the sample</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000672</td>
+<td><a href="../soluble_inorg_mat/">soluble_inorg_mat</a></td>
+<td>0..*</td>
+<td>Concentration of substances such as ammonia, road-salt, sea-salt, cyanide, hydrogen sulfide, thiocyanates, thiosulfates, etc.</td>
+<td>{text};{float} {unit}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000673</td>
+<td><a href="../soluble_org_mat/">soluble_org_mat</a></td>
+<td>0..*</td>
+<td>Concentration of substances such as urea, fruit sugars, soluble proteins, drugs, pharmaceuticals, etc.</td>
+<td>{text};{float} {unit}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000150</td>
+<td><a href="../suspend_solids/">suspend_solids</a></td>
+<td>0..*</td>
+<td>Concentration of substances including a wide variety of material, such as silt, decaying plant and animal matter; can include multiple substances</td>
+<td>{text};{float} {unit}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000352</td>
+<td><a href="../tertiary_treatment/">tertiary_treatment</a></td>
+<td>0..1</td>
+<td>The process providing a final treatment stage to raise the effluent quality before it is discharged to the receiving environment</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000102</td>
+<td><a href="../tot_nitro/">tot_nitro</a></td>
+<td>0..1</td>
+<td>Total nitrogen concentration of water samples, calculated by: total nitrogen = total dissolved nitrogen + particulate nitrogen. Can also be measured without filtering, reported as nitrogen</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000689</td>
+<td><a href="../tot_phosphate/">tot_phosphate</a></td>
+<td>0..1</td>
+<td>Total amount or concentration of phosphate</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000353</td>
+<td><a href="../wastewater_type/">wastewater_type</a></td>
+<td>0..1</td>
+<td>The origin of wastewater such as human waste, rainfall, storm drains, etc.</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="usages">Usages</h2>
+<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2></div>
             </div>
         </div>
 

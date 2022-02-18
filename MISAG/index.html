@@ -8,7 +8,7 @@
         
         <link rel="canonical" href="https://genomicsstandardsconsortium.github.io/mixs/MISAG/">
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Class: MISAG - MIxS</title>
+        <title>MISAG - MIxS</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -41,15 +41,15 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../introduction/background/" class="dropdown-item">Background</a>
+    <a href="../introduction/background.md" class="dropdown-item">Background</a>
 </li>
                                     
 <li>
-    <a href="../introduction/citation/" class="dropdown-item">Cite</a>
+    <a href="../introduction/citation.md" class="dropdown-item">Cite</a>
 </li>
                                     
 <li>
-    <a href="../introduction/contents/" class="dropdown-item">Contents</a>
+    <a href="../introduction/contents.md" class="dropdown-item">Contents</a>
 </li>
                                 </ul>
                             </li>
@@ -82,21 +82,17 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#class-misag" class="nav-link">Class: MISAG</a>
+            <li class="nav-item" data-level="1"><a href="#misag" class="nav-link">MISAG</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#checklist-for" class="nav-link">Checklist for</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#referenced-by-package" class="nav-link">Referenced by Package</a>
+            <li class="nav-item" data-level="2"><a href="#slots" class="nav-link">Slots</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#attributes" class="nav-link">Attributes</a>
+            <li class="nav-item" data-level="2"><a href="#usages" class="nav-link">Usages</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#other-properties" class="nav-link">Other properties</a>
+            <li class="nav-item" data-level="2"><a href="#identifier-and-mapping-information" class="nav-link">Identifier and Mapping Information</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -107,412 +103,500 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="class-misag">Class: MISAG</h1>
+<h1 id="misag">MISAG</h1>
 <p>Minimum Information About a Single Amplified Genome</p>
 <p>URI: <a href="https://w3id.org/mixs/vocab/MISAG">mixs.vocab:MISAG</a></p>
-<p><a href="https://yuml.me/diagram/nofunky;dir:TB/class/[QuantityValue],[QuantityValue]&lt;samp_vol_we_dna_ext%200..1-++[MISAG&#124;samp_name:string;samp_taxon_id:string;project_name:string;experimental_factor:string%20%3F;lat_lon:string;geo_loc_name:string;collection_date:date;neg_cont_type:neg_cont_type_enum%20%3F;pos_cont_type:string%20%3F;env_broad_scale:string;env_local_scale:string;env_medium:string;ref_biomaterial:string%20%3F;source_mat_id:string%20%3F;rel_to_oxygen:rel_to_oxygen_enum%20%3F;samp_collec_device:string%20%3F;samp_collec_method:string%20%3F;samp_mat_process:string%20%3F;size_frac:string%20%3F;nucl_acid_ext:string%20%3F;nucl_acid_amp:string%20%3F;lib_size:integer%20%3F;lib_reads_seqd:integer%20%3F;lib_layout:lib_layout_enum%20%3F;lib_vector:string%20%3F;lib_screen:string%20%3F;mid:string%20%3F;adapters:string%20%3F;seq_meth:string;tax_ident:tax_ident_enum;assembly_qual:assembly_qual_enum;assembly_name:string%20%3F;assembly_software:string;annot:string%20%3F;number_contig:integer%20%3F;feat_pred:string%20%3F;ref_db:string%20%3F;sim_search_meth:string%20%3F;tax_class:string%20%3F;x_16s_recover:string%20%3F;x_16s_recover_software:string%20%3F;trnas:integer%20%3F;trna_ext_software:string%20%3F;compl_score:compl_score_enum;compl_software:string;compl_appr:compl_appr_enum%20%3F;contam_score:string;contam_screen_input:string%20%3F;contam_screen_param:contam_screen_param_enum%20%3F;decontam_software:decontam_software_enum%20%3F;sort_tech:sort_tech_enum;single_cell_lysis_appr:single_cell_lysis_appr_enum;single_cell_lysis_prot:string%20%3F;wga_amp_appr:string;wga_amp_kit:string%20%3F;associated_resource:string%20%3F;sop:string%20%3F],[QuantityValue]&lt;samp_size%200..1-++[MISAG],[WaterMISAG]uses%20-.-&gt;[MISAG],[WastewaterSludgeMISAG]uses%20-.-&gt;[MISAG],[Symbiont-associatedMISAG]uses%20-.-&gt;[MISAG],[SoilMISAG]uses%20-.-&gt;[MISAG],[SedimentMISAG]uses%20-.-&gt;[MISAG],[Plant-associatedMISAG]uses%20-.-&gt;[MISAG],[MiscellaneousNaturalOrArtificialEnvironmentMISAG]uses%20-.-&gt;[MISAG],[MicrobialMatBiofilmMISAG]uses%20-.-&gt;[MISAG],[HydrocarbonResources-fluidsSwabsMISAG]uses%20-.-&gt;[MISAG],[HydrocarbonResources-coresMISAG]uses%20-.-&gt;[MISAG],[Human-vaginalMISAG]uses%20-.-&gt;[MISAG],[Human-skinMISAG]uses%20-.-&gt;[MISAG],[Human-oralMISAG]uses%20-.-&gt;[MISAG],[Human-gutMISAG]uses%20-.-&gt;[MISAG],[Human-associatedMISAG]uses%20-.-&gt;[MISAG],[Host-associatedMISAG]uses%20-.-&gt;[MISAG],[Food-humanFoodsMISAG]uses%20-.-&gt;[MISAG],[Food-foodProductionFacilityMISAG]uses%20-.-&gt;[MISAG],[Food-farmEnvironmentMISAG]uses%20-.-&gt;[MISAG],[Food-animalAndAnimalFeedMISAG]uses%20-.-&gt;[MISAG],[BuiltEnvironmentMISAG]uses%20-.-&gt;[MISAG],[AirMISAG]uses%20-.-&gt;[MISAG],[AgricultureMISAG]uses%20-.-&gt;[MISAG],[WaterMISAG],[WastewaterSludgeMISAG],[Symbiont-associatedMISAG],[SoilMISAG],[SedimentMISAG],[Plant-associatedMISAG],[MiscellaneousNaturalOrArtificialEnvironmentMISAG],[MicrobialMatBiofilmMISAG],[HydrocarbonResources-fluidsSwabsMISAG],[HydrocarbonResources-coresMISAG],[Human-vaginalMISAG],[Human-skinMISAG],[Human-oralMISAG],[Human-gutMISAG],[Human-associatedMISAG],[Host-associatedMISAG],[Food-humanFoodsMISAG],[Food-foodProductionFacilityMISAG],[Food-farmEnvironmentMISAG],[Food-animalAndAnimalFeedMISAG],[BuiltEnvironmentMISAG],[AirMISAG],[AgricultureMISAG]"><img alt="img" src="https://yuml.me/diagram/nofunky;dir:TB/class/[QuantityValue],[QuantityValue]&lt;samp_vol_we_dna_ext%200..1-++[MISAG&#124;samp_name:string;samp_taxon_id:string;project_name:string;experimental_factor:string%20%3F;lat_lon:string;geo_loc_name:string;collection_date:date;neg_cont_type:neg_cont_type_enum%20%3F;pos_cont_type:string%20%3F;env_broad_scale:string;env_local_scale:string;env_medium:string;ref_biomaterial:string%20%3F;source_mat_id:string%20%3F;rel_to_oxygen:rel_to_oxygen_enum%20%3F;samp_collec_device:string%20%3F;samp_collec_method:string%20%3F;samp_mat_process:string%20%3F;size_frac:string%20%3F;nucl_acid_ext:string%20%3F;nucl_acid_amp:string%20%3F;lib_size:integer%20%3F;lib_reads_seqd:integer%20%3F;lib_layout:lib_layout_enum%20%3F;lib_vector:string%20%3F;lib_screen:string%20%3F;mid:string%20%3F;adapters:string%20%3F;seq_meth:string;tax_ident:tax_ident_enum;assembly_qual:assembly_qual_enum;assembly_name:string%20%3F;assembly_software:string;annot:string%20%3F;number_contig:integer%20%3F;feat_pred:string%20%3F;ref_db:string%20%3F;sim_search_meth:string%20%3F;tax_class:string%20%3F;x_16s_recover:string%20%3F;x_16s_recover_software:string%20%3F;trnas:integer%20%3F;trna_ext_software:string%20%3F;compl_score:compl_score_enum;compl_software:string;compl_appr:compl_appr_enum%20%3F;contam_score:string;contam_screen_input:string%20%3F;contam_screen_param:contam_screen_param_enum%20%3F;decontam_software:decontam_software_enum%20%3F;sort_tech:sort_tech_enum;single_cell_lysis_appr:single_cell_lysis_appr_enum;single_cell_lysis_prot:string%20%3F;wga_amp_appr:string;wga_amp_kit:string%20%3F;associated_resource:string%20%3F;sop:string%20%3F],[QuantityValue]&lt;samp_size%200..1-++[MISAG],[WaterMISAG]uses%20-.-&gt;[MISAG],[WastewaterSludgeMISAG]uses%20-.-&gt;[MISAG],[Symbiont-associatedMISAG]uses%20-.-&gt;[MISAG],[SoilMISAG]uses%20-.-&gt;[MISAG],[SedimentMISAG]uses%20-.-&gt;[MISAG],[Plant-associatedMISAG]uses%20-.-&gt;[MISAG],[MiscellaneousNaturalOrArtificialEnvironmentMISAG]uses%20-.-&gt;[MISAG],[MicrobialMatBiofilmMISAG]uses%20-.-&gt;[MISAG],[HydrocarbonResources-fluidsSwabsMISAG]uses%20-.-&gt;[MISAG],[HydrocarbonResources-coresMISAG]uses%20-.-&gt;[MISAG],[Human-vaginalMISAG]uses%20-.-&gt;[MISAG],[Human-skinMISAG]uses%20-.-&gt;[MISAG],[Human-oralMISAG]uses%20-.-&gt;[MISAG],[Human-gutMISAG]uses%20-.-&gt;[MISAG],[Human-associatedMISAG]uses%20-.-&gt;[MISAG],[Host-associatedMISAG]uses%20-.-&gt;[MISAG],[Food-humanFoodsMISAG]uses%20-.-&gt;[MISAG],[Food-foodProductionFacilityMISAG]uses%20-.-&gt;[MISAG],[Food-farmEnvironmentMISAG]uses%20-.-&gt;[MISAG],[Food-animalAndAnimalFeedMISAG]uses%20-.-&gt;[MISAG],[BuiltEnvironmentMISAG]uses%20-.-&gt;[MISAG],[AirMISAG]uses%20-.-&gt;[MISAG],[AgricultureMISAG]uses%20-.-&gt;[MISAG],[WaterMISAG],[WastewaterSludgeMISAG],[Symbiont-associatedMISAG],[SoilMISAG],[SedimentMISAG],[Plant-associatedMISAG],[MiscellaneousNaturalOrArtificialEnvironmentMISAG],[MicrobialMatBiofilmMISAG],[HydrocarbonResources-fluidsSwabsMISAG],[HydrocarbonResources-coresMISAG],[Human-vaginalMISAG],[Human-skinMISAG],[Human-oralMISAG],[Human-gutMISAG],[Human-associatedMISAG],[Host-associatedMISAG],[Food-humanFoodsMISAG],[Food-foodProductionFacilityMISAG],[Food-farmEnvironmentMISAG],[Food-animalAndAnimalFeedMISAG],[BuiltEnvironmentMISAG],[AirMISAG],[AgricultureMISAG]" /></a></p>
-<h2 id="checklist-for">Checklist for</h2>
-<ul>
-<li><a href="../AgricultureMISAG/">AgricultureMISAG</a> (mixin)  - Combinatorial checklist Minimum Information About a Single Amplified Genome with environmental package agriculture</li>
-<li><a href="../AirMISAG/">AirMISAG</a> (mixin)  - Combinatorial checklist Minimum Information About a Single Amplified Genome with environmental package air</li>
-<li><a href="../BuiltEnvironmentMISAG/">BuiltEnvironmentMISAG</a> (mixin)  - Combinatorial checklist Minimum Information About a Single Amplified Genome with environmental package built environment</li>
-<li><a href="../Food-animalAndAnimalFeedMISAG/">Food-animalAndAnimalFeedMISAG</a> (mixin)  - Combinatorial checklist Minimum Information About a Single Amplified Genome with environmental package food-animal and animal feed</li>
-<li><a href="../Food-farmEnvironmentMISAG/">Food-farmEnvironmentMISAG</a> (mixin)  - Combinatorial checklist Minimum Information About a Single Amplified Genome with environmental package food-farm environment</li>
-<li><a href="../Food-foodProductionFacilityMISAG/">Food-foodProductionFacilityMISAG</a> (mixin)  - Combinatorial checklist Minimum Information About a Single Amplified Genome with environmental package food-food production facility</li>
-<li><a href="../Food-humanFoodsMISAG/">Food-humanFoodsMISAG</a> (mixin)  - Combinatorial checklist Minimum Information About a Single Amplified Genome with environmental package food-human foods</li>
-<li><a href="../Host-associatedMISAG/">Host-associatedMISAG</a> (mixin)  - Combinatorial checklist Minimum Information About a Single Amplified Genome with environmental package host-associated</li>
-<li><a href="../Human-associatedMISAG/">Human-associatedMISAG</a> (mixin)  - Combinatorial checklist Minimum Information About a Single Amplified Genome with environmental package human-associated</li>
-<li><a href="../Human-gutMISAG/">Human-gutMISAG</a> (mixin)  - Combinatorial checklist Minimum Information About a Single Amplified Genome with environmental package human-gut</li>
-<li><a href="../Human-oralMISAG/">Human-oralMISAG</a> (mixin)  - Combinatorial checklist Minimum Information About a Single Amplified Genome with environmental package human-oral</li>
-<li><a href="../Human-skinMISAG/">Human-skinMISAG</a> (mixin)  - Combinatorial checklist Minimum Information About a Single Amplified Genome with environmental package human-skin</li>
-<li><a href="../Human-vaginalMISAG/">Human-vaginalMISAG</a> (mixin)  - Combinatorial checklist Minimum Information About a Single Amplified Genome with environmental package human-vaginal</li>
-<li><a href="../HydrocarbonResources-coresMISAG/">HydrocarbonResources-coresMISAG</a> (mixin)  - Combinatorial checklist Minimum Information About a Single Amplified Genome with environmental package hydrocarbon resources-cores</li>
-<li><a href="../HydrocarbonResources-fluidsSwabsMISAG/">HydrocarbonResources-fluidsSwabsMISAG</a> (mixin)  - Combinatorial checklist Minimum Information About a Single Amplified Genome with environmental package hydrocarbon resources-fluids_swabs</li>
-<li><a href="../MicrobialMatBiofilmMISAG/">MicrobialMatBiofilmMISAG</a> (mixin)  - Combinatorial checklist Minimum Information About a Single Amplified Genome with environmental package microbial mat_biofilm</li>
-<li><a href="../MiscellaneousNaturalOrArtificialEnvironmentMISAG/">MiscellaneousNaturalOrArtificialEnvironmentMISAG</a> (mixin)  - Combinatorial checklist Minimum Information About a Single Amplified Genome with environmental package miscellaneous natural or artificial environment</li>
-<li><a href="../Plant-associatedMISAG/">Plant-associatedMISAG</a> (mixin)  - Combinatorial checklist Minimum Information About a Single Amplified Genome with environmental package plant-associated</li>
-<li><a href="../SedimentMISAG/">SedimentMISAG</a> (mixin)  - Combinatorial checklist Minimum Information About a Single Amplified Genome with environmental package sediment</li>
-<li><a href="../SoilMISAG/">SoilMISAG</a> (mixin)  - Combinatorial checklist Minimum Information About a Single Amplified Genome with environmental package soil</li>
-<li><a href="../Symbiont-associatedMISAG/">Symbiont-associatedMISAG</a> (mixin)  - Combinatorial checklist Minimum Information About a Single Amplified Genome with environmental package symbiont-associated</li>
-<li><a href="../WastewaterSludgeMISAG/">WastewaterSludgeMISAG</a> (mixin)  - Combinatorial checklist Minimum Information About a Single Amplified Genome with environmental package wastewater_sludge</li>
-<li><a href="../WaterMISAG/">WaterMISAG</a> (mixin)  - Combinatorial checklist Minimum Information About a Single Amplified Genome with environmental package water</li>
-</ul>
-<h2 id="referenced-by-package">Referenced by Package</h2>
-<h2 id="attributes">Attributes</h2>
-<h3 id="own">Own</h3>
-<ul>
-<li><a href="../MISAG_samp_name/">MISAG➞samp_name</a>  <sub>1..1</sub><ul>
-<li>Description: A local identifier or name that for the material sample used for extracting nucleic acids, and subsequent sequencing. It can refer either to the original material collected or to any derived sub-samples. It can have any format, but we suggest that you make it concise, unique and consistent within your lab, and as informative as possible. INSDC requires every sample name from a single Submitter to be unique. Use of a globally unique identifier for the field source_mat_id is recommended in addition to sample_name.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: ISDsoil1 None</li>
-</ul>
-</li>
-<li><a href="../MISAG_samp_taxon_id/">MISAG➞samp_taxon_id</a>  <sub>1..1</sub><ul>
-<li>Description: NCBI taxon id of the sample.  Maybe be a single taxon or mixed taxa sample. Use 'synthetic metagenome’ for mock community/positive controls, or 'blank sample' for negative controls.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: Gut Metagenome [NCBI:txid749906] None</li>
-</ul>
-</li>
-<li><a href="../MISAG_project_name/">MISAG➞project_name</a>  <sub>1..1</sub><ul>
-<li>Description: Name of the project within which the sequencing was organized</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: Forest soil metagenome None</li>
-</ul>
-</li>
-<li><a href="../MISAG_experimental_factor/">MISAG➞experimental_factor</a>  <sub>0..1</sub><ul>
-<li>Description: Experimental factors are essentially the variable aspects of an experiment design which can be used to describe an experiment, or set of experiments, in an increasingly detailed manner. This field accepts ontology terms from Experimental Factor Ontology (EFO) and/or Ontology for Biomedical Investigations (OBI). For a browser of EFO (v 2.95) terms, please see http://purl.bioontology.org/ontology/EFO; for a browser of OBI (v 2018-02-12) terms please see http://purl.bioontology.org/ontology/OBI</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: time series design [EFO:EFO_0001779] None</li>
-</ul>
-</li>
-<li><a href="../MISAG_lat_lon/">MISAG➞lat_lon</a>  <sub>1..1</sub><ul>
-<li>Description: The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: 50.586825 6.408977 None</li>
-</ul>
-</li>
-<li><a href="../MISAG_geo_loc_name/">MISAG➞geo_loc_name</a>  <sub>1..1</sub><ul>
-<li>Description: The geographical origin of the sample as defined by the country or sea name followed by specific region name. Country or sea names should be chosen from the INSDC country list (http://insdc.org/country.html), or the GAZ ontology (http://purl.bioontology.org/ontology/GAZ)</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: USA: Maryland, Bethesda None</li>
-</ul>
-</li>
-<li><a href="../MISAG_collection_date/">MISAG➞collection_date</a>  <sub>1..1</sub><ul>
-<li>Description: The time of sampling, either as an instance (single point in time) or interval. In case no exact time is available, the date/time can be right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant</li>
-<li>Range: <a href="../types/Date/">Date</a></li>
-<li>Example: 2018-05-11T10:00:00+01:00; 2018-05-11 None</li>
-</ul>
-</li>
-<li><a href="../MISAG_neg_cont_type/">MISAG➞neg_cont_type</a>  <sub>0..1</sub><ul>
-<li>Description: The substance or equipment used as a negative control in an investigation</li>
-<li>Range: <a href="../neg_cont_type_enum/">neg_cont_type_enum</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-<li><a href="../MISAG_pos_cont_type/">MISAG➞pos_cont_type</a>  <sub>0..1</sub><ul>
-<li>Description: The substance, mixture, product, or apparatus used to verify that a process which is part of an investigation delivers a true positive.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-<li><a href="../MISAG_env_broad_scale/">MISAG➞env_broad_scale</a>  <sub>1..1</sub><ul>
-<li>Description: Report the major environmental system the sample or specimen came from. The system(s) identified should have a coarse spatial grain, to provide the general environmental context of where the sampling was done (e.g. in the desert or a rainforest). We recommend using subclasses of EnvO’s biome class:  http://purl.obolibrary.org/obo/ENVO_00000428. EnvO documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: oceanic epipelagic zone biome [ENVO:01000033] for annotating a water sample from the photic zone in middle of the Atlantic Ocean None</li>
-</ul>
-</li>
-<li><a href="../MISAG_env_local_scale/">MISAG➞env_local_scale</a>  <sub>1..1</sub><ul>
-<li>Description: Report the entity or entities which are in the sample or specimen’s local vicinity and which you believe have significant causal influences on your sample or specimen. We recommend using EnvO terms which are of smaller spatial grain than your entry for env_broad_scale. Terms, such as anatomical sites, from other OBO Library ontologies which interoperate with EnvO (e.g. UBERON) are accepted in this field. EnvO documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: litter layer [ENVO:01000338]; Annotating a pooled sample taken from various vegetation layers in a forest consider: canopy [ENVO:00000047]|herb and fern layer [ENVO:01000337]|litter layer [ENVO:01000338]|understory [01000335]|shrub layer [ENVO:01000336]. None</li>
-</ul>
-</li>
-<li><a href="../MISAG_env_medium/">MISAG➞env_medium</a>  <sub>1..1</sub><ul>
-<li>Description: Report the environmental material(s) immediately surrounding the sample or specimen at the time of sampling. We recommend using subclasses of 'environmental material' (http://purl.obolibrary.org/obo/ENVO_00010483). EnvO documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS . Terms from other OBO ontologies are permissible as long as they reference mass/volume nouns (e.g. air, water, blood) and not discrete, countable entities (e.g. a tree, a leaf, a table top).</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: soil [ENVO:00001998]; Annotating a fish swimming in the upper 100 m of the Atlantic Ocean, consider: ocean water [ENVO:00002151]. Example: Annotating a duck on a pond consider: pond water [ENVO:00002228]|air [ENVO_00002005] None</li>
-</ul>
-</li>
-<li><a href="../MISAG_ref_biomaterial/">MISAG➞ref_biomaterial</a>  <sub>0..1</sub><ul>
-<li>Description: Primary publication if isolated before genome publication; otherwise, primary genome report.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: doi:10.1016/j.syapm.2018.01.009 None</li>
-</ul>
-</li>
-<li><a href="../MISAG_source_mat_id/">MISAG➞source_mat_id</a>  <sub>0..1</sub><ul>
-<li>Description: A unique identifier assigned to a material sample (as defined by http://rs.tdwg.org/dwc/terms/materialSampleID, and as opposed to a particular digital record of a material sample) used for extracting nucleic acids, and subsequent sequencing. The identifier can refer either to the original material collected or to any derived sub-samples. The INSDC qualifiers /specimen_voucher, /bio_material, or /culture_collection may or may not share the same value as the source_mat_id field. For instance, the /specimen_voucher qualifier and source_mat_id may both contain 'UAM:Herps:14' , referring to both the specimen voucher and sampled tissue with the same identifier. However, the /culture_collection qualifier may refer to a value from an initial culture (e.g. ATCC:11775) while source_mat_id would refer to an identifier from some derived culture from which the nucleic acids were extracted (e.g. xatc123 or ark:/2154/R2).</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: MPI012345 None</li>
-</ul>
-</li>
-<li><a href="../MISAG_rel_to_oxygen/">MISAG➞rel_to_oxygen</a>  <sub>0..1</sub><ul>
-<li>Description: Is this organism an aerobe, anaerobe? Please note that aerobic and anaerobic are valid descriptors for microbial environments</li>
-<li>Range: <a href="../rel_to_oxygen_enum/">rel_to_oxygen_enum</a></li>
-<li>Example: aerobe None</li>
-</ul>
-</li>
-<li><a href="../MISAG_samp_collec_device/">MISAG➞samp_collec_device</a>  <sub>0..1</sub><ul>
-<li>Description: The device used to collect an environmental sample. This field accepts terms listed under environmental sampling device (http://purl.obolibrary.org/obo/ENVO). This field also accepts terms listed under specimen collection device (http://purl.obolibrary.org/obo/GENEPIO_0002094).</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: swab, biopsy, niskin bottle, push core, drag swab [GENEPIO:0002713] None</li>
-</ul>
-</li>
-<li><a href="../MISAG_samp_collec_method/">MISAG➞samp_collec_method</a>  <sub>0..1</sub><ul>
-<li>Description: The method employed for collecting the sample.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: swabbing None</li>
-</ul>
-</li>
-<li><a href="../MISAG_samp_mat_process/">MISAG➞samp_mat_process</a>  <sub>0..1</sub><ul>
-<li>Description: A brief description of any processing applied to the sample during or after retrieving the sample from environment, or a link to the relevant protocol(s) performed.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: filtering of seawater, storing samples in ethanol None</li>
-</ul>
-</li>
-<li><a href="../MISAG_size_frac/">MISAG➞size_frac</a>  <sub>0..1</sub><ul>
-<li>Description: Filtering pore size used in sample preparation</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: 0-0.22 micrometer None</li>
-</ul>
-</li>
-<li><a href="../MISAG_samp_size/">MISAG➞samp_size</a>  <sub>0..1</sub><ul>
-<li>Description: The total amount or size (volume (ml), mass (g) or area (m2) ) of sample collected.</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 5 liter None</li>
-</ul>
-</li>
-<li><a href="../MISAG_samp_vol_we_dna_ext/">MISAG➞samp_vol_we_dna_ext</a>  <sub>0..1</sub><ul>
-<li>Description: Volume (ml) or mass (g) of total collected sample processed for DNA extraction. Note: total sample collected should be entered under the term Sample Size (MIXS:0000001).</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 1500 milliliter None</li>
-</ul>
-</li>
-<li><a href="../MISAG_nucl_acid_ext/">MISAG➞nucl_acid_ext</a>  <sub>0..1</sub><ul>
-<li>Description: A link to a literature reference, electronic resource or a standard operating procedure (SOP), that describes the material separation to recover the nucleic acid fraction from a sample</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: https://mobio.com/media/wysiwyg/pdfs/protocols/12888.pdf None</li>
-</ul>
-</li>
-<li><a href="../MISAG_nucl_acid_amp/">MISAG➞nucl_acid_amp</a>  <sub>0..1</sub><ul>
-<li>Description: A link to a literature reference, electronic resource or a standard operating procedure (SOP), that describes the enzymatic amplification (PCR, TMA, NASBA) of specific nucleic acids</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: https://phylogenomics.me/protocols/16s-pcr-protocol/ None</li>
-</ul>
-</li>
-<li><a href="../MISAG_lib_size/">MISAG➞lib_size</a>  <sub>0..1</sub><ul>
-<li>Description: Total number of clones in the library prepared for the project</li>
-<li>Range: <a href="../types/Integer/">Integer</a></li>
-<li>Example: 50 None</li>
-</ul>
-</li>
-<li><a href="../MISAG_lib_reads_seqd/">MISAG➞lib_reads_seqd</a>  <sub>0..1</sub><ul>
-<li>Description: Total number of clones sequenced from the library</li>
-<li>Range: <a href="../types/Integer/">Integer</a></li>
-<li>Example: 20 None</li>
-</ul>
-</li>
-<li><a href="../MISAG_lib_layout/">MISAG➞lib_layout</a>  <sub>0..1</sub><ul>
-<li>Description: Specify whether to expect single, paired, or other configuration of reads</li>
-<li>Range: <a href="../lib_layout_enum/">lib_layout_enum</a></li>
-<li>Example: paired None</li>
-</ul>
-</li>
-<li><a href="../MISAG_lib_vector/">MISAG➞lib_vector</a>  <sub>0..1</sub><ul>
-<li>Description: Cloning vector type(s) used in construction of libraries</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: Bacteriophage P1 None</li>
-</ul>
-</li>
-<li><a href="../MISAG_lib_screen/">MISAG➞lib_screen</a>  <sub>0..1</sub><ul>
-<li>Description: Specific enrichment or screening methods applied before and/or after creating libraries</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: enriched, screened, normalized None</li>
-</ul>
-</li>
-<li><a href="../MISAG_mid/">MISAG➞mid</a>  <sub>0..1</sub><ul>
-<li>Description: Molecular barcodes, called Multiplex Identifiers (MIDs), that are used to specifically tag unique samples in a sequencing run. Sequence should be reported in uppercase letters</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: GTGAATAT None</li>
-</ul>
-</li>
-<li><a href="../MISAG_adapters/">MISAG➞adapters</a>  <sub>0..1</sub><ul>
-<li>Description: Adapters provide priming sequences for both amplification and sequencing of the sample-library fragments. Both adapters should be reported; in uppercase letters</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: AATGATACGGCGACCACCGAGATCTACACGCT;CAAGCAGAAGACGGCATACGAGAT None</li>
-</ul>
-</li>
-<li><a href="../MISAG_seq_meth/">MISAG➞seq_meth</a>  <sub>1..1</sub><ul>
-<li>Description: Sequencing machine used. Where possible the term should be taken from the OBI list of DNA sequencers (http://purl.obolibrary.org/obo/OBI_0400103).</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: 454 Genome Sequencer FLX [OBI:0000702] None</li>
-</ul>
-</li>
-<li><a href="../MISAG_tax_ident/">MISAG➞tax_ident</a>  <sub>1..1</sub><ul>
-<li>Description: The phylogenetic marker(s) used to assign an organism name to the SAG or MAG</li>
-<li>Range: <a href="../tax_ident_enum/">tax_ident_enum</a></li>
-<li>Example: other: rpoB gene None</li>
-</ul>
-</li>
-<li><a href="../MISAG_assembly_qual/">MISAG➞assembly_qual</a>  <sub>1..1</sub><ul>
-<li>Description: The assembly quality category is based on sets of criteria outlined for each assembly quality category. For MISAG/MIMAG; Finished: Single, validated, contiguous sequence per replicon without gaps or ambiguities with a consensus error rate equivalent to Q50 or better. High Quality Draft:Multiple fragments where gaps span repetitive regions. Presence of the 23S, 16S and 5S rRNA genes and at least 18 tRNAs. Medium Quality Draft:Many fragments with little to no review of assembly other than reporting of standard assembly statistics. Low Quality Draft:Many fragments with little to no review of assembly other than reporting of standard assembly statistics. Assembly statistics include, but are not limited to total assembly size, number of contigs, contig N50/L50, and maximum contig length. For MIUVIG; Finished: Single, validated, contiguous sequence per replicon without gaps or ambiguities, with extensive manual review and editing to annotate putative gene functions and transcriptional units. High-quality draft genome: One or multiple fragments, totaling ≥ 90% of the expected genome or replicon sequence or predicted complete. Genome fragment(s): One or multiple fragments, totalling &lt; 90% of the expected genome or replicon sequence, or for which no genome size could be estimated</li>
-<li>Range: <a href="../assembly_qual_enum/">assembly_qual_enum</a></li>
-<li>Example: High-quality draft genome None</li>
-</ul>
-</li>
-<li><a href="../MISAG_assembly_name/">MISAG➞assembly_name</a>  <sub>0..1</sub><ul>
-<li>Description: Name/version of the assembly provided by the submitter that is used in the genome browsers and in the community</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: HuRef, JCVI_ISG_i3_1.0 None</li>
-</ul>
-</li>
-<li><a href="../MISAG_assembly_software/">MISAG➞assembly_software</a>  <sub>1..1</sub><ul>
-<li>Description: Tool(s) used for assembly, including version number and parameters</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: metaSPAdes;3.11.0;kmer set 21,33,55,77,99,121, default parameters otherwise None</li>
-</ul>
-</li>
-<li><a href="../MISAG_annot/">MISAG➞annot</a>  <sub>0..1</sub><ul>
-<li>Description: Tool used for annotation, or for cases where annotation was provided by a community jamboree or model organism database rather than by a specific submitter</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: prokka None</li>
-</ul>
-</li>
-<li><a href="../MISAG_number_contig/">MISAG➞number_contig</a>  <sub>0..1</sub><ul>
-<li>Description: Total number of contigs in the cleaned/submitted assembly that makes up a given genome, SAG, MAG, or UViG</li>
-<li>Range: <a href="../types/Integer/">Integer</a></li>
-<li>Example: 40 None</li>
-</ul>
-</li>
-<li><a href="../MISAG_feat_pred/">MISAG➞feat_pred</a>  <sub>0..1</sub><ul>
-<li>Description: Method used to predict UViGs features such as ORFs, integration site, etc.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: Prodigal;2.6.3;default parameters None</li>
-</ul>
-</li>
-<li><a href="../MISAG_ref_db/">MISAG➞ref_db</a>  <sub>0..1</sub><ul>
-<li>Description: List of database(s) used for ORF annotation, along with version number and reference to website or publication</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: pVOGs;5;http://dmk-brain.ecn.uiowa.edu/pVOGs/ Grazziotin et al. 2017 doi:10.1093/nar/gkw975 None</li>
-</ul>
-</li>
-<li><a href="../MISAG_sim_search_meth/">MISAG➞sim_search_meth</a>  <sub>0..1</sub><ul>
-<li>Description: Tool used to compare ORFs with database, along with version and cutoffs used</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: HMMER3;3.1b2;hmmsearch, cutoff of 50 on score None</li>
-</ul>
-</li>
-<li><a href="../MISAG_tax_class/">MISAG➞tax_class</a>  <sub>0..1</sub><ul>
-<li>Description: Method used for taxonomic classification, along with reference database used, classification rank, and thresholds used to classify new genomes</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: vConTACT vContact2 (references from NCBI RefSeq v83, genus rank classification, default parameters) None</li>
-</ul>
-</li>
-<li><a href="../MISAG_x_16s_recover/">MISAG➞x_16s_recover</a>  <sub>0..1</sub><ul>
-<li>Description: Can a 16S gene be recovered from the submitted SAG or MAG?</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: yes None</li>
-</ul>
-</li>
-<li><a href="../MISAG_x_16s_recover_software/">MISAG➞x_16s_recover_software</a>  <sub>0..1</sub><ul>
-<li>Description: Tools used for 16S rRNA gene extraction</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: rambl;v2;default parameters None</li>
-</ul>
-</li>
-<li><a href="../MISAG_trnas/">MISAG➞trnas</a>  <sub>0..1</sub><ul>
-<li>Description: The total number of tRNAs identified from the SAG or MAG</li>
-<li>Range: <a href="../types/Integer/">Integer</a></li>
-<li>Example: 18 None</li>
-</ul>
-</li>
-<li><a href="../MISAG_trna_ext_software/">MISAG➞trna_ext_software</a>  <sub>0..1</sub><ul>
-<li>Description: Tools used for tRNA identification</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: infernal;v2;default parameters None</li>
-</ul>
-</li>
-<li><a href="../MISAG_compl_score/">MISAG➞compl_score</a>  <sub>1..1</sub><ul>
-<li>Description: Completeness score is typically based on either the fraction of markers found as compared to a database or the percent of a genome found as compared to a closely related reference genome. High Quality Draft: &gt;90%, Medium Quality Draft: &gt;50%, and Low Quality Draft: &lt; 50% should have the indicated completeness scores</li>
-<li>Range: <a href="../compl_score_enum/">compl_score_enum</a></li>
-<li>Example: med;60% None</li>
-</ul>
-</li>
-<li><a href="../MISAG_compl_software/">MISAG➞compl_software</a>  <sub>1..1</sub><ul>
-<li>Description: Tools used for completion estimate, i.e. checkm, anvi'o, busco</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: checkm None</li>
-</ul>
-</li>
-<li><a href="../MISAG_compl_appr/">MISAG➞compl_appr</a>  <sub>0..1</sub><ul>
-<li>Description: The approach used to determine the completeness of a given genomic assembly, which would typically make use of a set of conserved marker genes or a closely related reference genome. For UViG completeness, include reference genome or group used, and contig feature suggesting a complete genome</li>
-<li>Range: <a href="../compl_appr_enum/">compl_appr_enum</a></li>
-<li>Example: other: UViG length compared to the average length of reference genomes from the P22virus genus (NCBI RefSeq v83) None</li>
-</ul>
-</li>
-<li><a href="../MISAG_contam_score/">MISAG➞contam_score</a>  <sub>1..1</sub><ul>
-<li>Description: The contamination score is based on the fraction of single-copy genes that are observed more than once in a query genome. The following scores are acceptable for; High Quality Draft: &lt; 5%, Medium Quality Draft: &lt; 10%, Low Quality Draft: &lt; 10%. Contamination must be below 5% for a SAG or MAG to be deposited into any of the public databases</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: 1% None</li>
-</ul>
-</li>
-<li><a href="../MISAG_contam_screen_input/">MISAG➞contam_screen_input</a>  <sub>0..1</sub><ul>
-<li>Description: The type of sequence data used as input</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: contigs None</li>
-</ul>
-</li>
-<li><a href="../MISAG_contam_screen_param/">MISAG➞contam_screen_param</a>  <sub>0..1</sub><ul>
-<li>Description: Specific parameters used in the decontamination sofware, such as reference database, coverage, and kmers. Combinations of these parameters may also be used, i.e. kmer and coverage, or reference database and kmer</li>
-<li>Range: <a href="../contam_screen_param_enum/">contam_screen_param_enum</a></li>
-<li>Example: kmer None</li>
-</ul>
-</li>
-<li><a href="../MISAG_decontam_software/">MISAG➞decontam_software</a>  <sub>0..1</sub><ul>
-<li>Description: Tool(s) used in contamination screening</li>
-<li>Range: <a href="../decontam_software_enum/">decontam_software_enum</a></li>
-<li>Example: anvi'o None</li>
-</ul>
-</li>
-<li><a href="../MISAG_sort_tech/">MISAG➞sort_tech</a>  <sub>1..1</sub><ul>
-<li>Description: Method used to sort/isolate cells or particles of interest</li>
-<li>Range: <a href="../sort_tech_enum/">sort_tech_enum</a></li>
-<li>Example: optical manipulation None</li>
-</ul>
-</li>
-<li><a href="../MISAG_single_cell_lysis_appr/">MISAG➞single_cell_lysis_appr</a>  <sub>1..1</sub><ul>
-<li>Description: Method used to free DNA from interior of the cell(s) or particle(s)</li>
-<li>Range: <a href="../single_cell_lysis_appr_enum/">single_cell_lysis_appr_enum</a></li>
-<li>Example: enzymatic None</li>
-</ul>
-</li>
-<li><a href="../MISAG_single_cell_lysis_prot/">MISAG➞single_cell_lysis_prot</a>  <sub>0..1</sub><ul>
-<li>Description: Name of the kit or standard protocol used for cell(s) or particle(s) lysis</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: ambion single cell lysis kit None</li>
-</ul>
-</li>
-<li><a href="../MISAG_wga_amp_appr/">MISAG➞wga_amp_appr</a>  <sub>1..1</sub><ul>
-<li>Description: Method used to amplify genomic DNA in preparation for sequencing</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: mda based None</li>
-</ul>
-</li>
-<li><a href="../MISAG_wga_amp_kit/">MISAG➞wga_amp_kit</a>  <sub>0..1</sub><ul>
-<li>Description: Kit used to amplify genomic DNA in preparation for sequencing</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: qiagen repli-g None</li>
-</ul>
-</li>
-<li><a href="../MISAG_associated_resource/">MISAG➞associated resource</a>  <sub>0..1</sub><ul>
-<li>Description: A related resource that is referenced, cited, or otherwise associated to the sequence.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: http://www.earthmicrobiome.org/ None</li>
-</ul>
-</li>
-<li><a href="../MISAG_sop/">MISAG➞sop</a>  <sub>0..1</sub><ul>
-<li>Description: Standard operating procedures used in assembly and/or annotation of genomes, metagenomes or environmental sequences</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: http://press.igsb.anl.gov/earthmicrobiome/protocols-and-standards/its/ None</li>
-</ul>
-</li>
-</ul>
-<h2 id="other-properties">Other properties</h2>
+<!-- no inheritance hierarchy -->
+
+<h2 id="slots">Slots</h2>
 <table>
 <thead>
 <tr>
-<th></th>
-<th></th>
-<th></th>
+<th>MIxS ID</th>
+<th>Name</th>
+<th>Multiplicity</th>
+<th>Description</th>
+<th>Pattern</th>
+<th>Info</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Aliases:</strong></td>
-<td></td>
-<td>MISAG</td>
+<td>MIXS:0001107</td>
+<td><a href="../samp_name/">samp_name</a></td>
+<td>1..1</td>
+<td>A local identifier or name that for the material sample used for extracting nucleic acids, and subsequent sequencing. It can refer either to the original material collected or to any derived sub-samples. It can have any format, but we suggest that you make it concise, unique and consistent within your lab, and as informative as possible. INSDC requires every sample name from a single Submitter to be unique. Use of a globally unique identifier for the field source_mat_id is recommended in addition to sample_name.</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001320</td>
+<td><a href="../samp_taxon_id/">samp_taxon_id</a></td>
+<td>1..1</td>
+<td>NCBI taxon id of the sample.  Maybe be a single taxon or mixed taxa sample. Use 'synthetic metagenome’ for mock community/positive controls, or 'blank sample' for negative controls.</td>
+<td>{text} [NCBI:txid]</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000092</td>
+<td><a href="../project_name/">project_name</a></td>
+<td>1..1</td>
+<td>Name of the project within which the sequencing was organized</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000008</td>
+<td><a href="../experimental_factor/">experimental_factor</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>Experimental factors are essentially the variable aspects of an experiment design which can be used to describe an experiment, or set of experiments, in an increasingly detailed manner. This field accepts ontology terms from Experimental Factor Ontology (EFO) and/or Ontology for Biomedical Investigations (OBI). For a browser of EFO (v 2.95) terms, please see http://purl.bioontology.org/ontology/EFO; for a browser of OBI (v 2018-02-12) terms please see http://purl.bioontology.org/ontology/OBI</td>
+<td>{termLabel} {[termID]}</td>
+<td>{text}</td>
+</tr>
+<tr>
+<td>MIXS:0000009</td>
+<td><a href="../lat_lon/">lat_lon</a></td>
+<td>1..1</td>
+<td>The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system</td>
+<td>{float} {float}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000010</td>
+<td><a href="../geo_loc_name/">geo_loc_name</a></td>
+<td>1..1</td>
+<td>The geographical origin of the sample as defined by the country or sea name followed by specific region name. Country or sea names should be chosen from the INSDC country list (http://insdc.org/country.html), or the GAZ ontology (http://purl.bioontology.org/ontology/GAZ)</td>
+<td>{term}: {term}, {text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000011</td>
+<td><a href="../collection_date/">collection_date</a></td>
+<td>1..1</td>
+<td>The time of sampling, either as an instance (single point in time) or interval. In case no exact time is available, the date/time can be right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001321</td>
+<td><a href="../neg_cont_type/">neg_cont_type</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>The substance or equipment used as a negative control in an investigation</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001322</td>
+<td><a href="../pos_cont_type/">pos_cont_type</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>The substance, mixture, product, or apparatus used to verify that a process which is part of an investigation delivers a true positive.</td>
+<td>{term} or {text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000012</td>
+<td><a href="../env_broad_scale/">env_broad_scale</a></td>
+<td>1..1</td>
+<td>Report the major environmental system the sample or specimen came from. The system(s) identified should have a coarse spatial grain, to provide the general environmental context of where the sampling was done (e.g. in the desert or a rainforest). We recommend using subclasses of EnvO’s biome class:  http://purl.obolibrary.org/obo/ENVO_00000428. EnvO documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS</td>
+<td>{termLabel} {[termID]}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000013</td>
+<td><a href="../env_local_scale/">env_local_scale</a></td>
+<td>1..1</td>
+<td>Report the entity or entities which are in the sample or specimen’s local vicinity and which you believe have significant causal influences on your sample or specimen. We recommend using EnvO terms which are of smaller spatial grain than your entry for env_broad_scale. Terms, such as anatomical sites, from other OBO Library ontologies which interoperate with EnvO (e.g. UBERON) are accepted in this field. EnvO documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS.</td>
+<td>{termLabel} {[termID]}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000014</td>
+<td><a href="../env_medium/">env_medium</a></td>
+<td>1..1</td>
+<td>Report the environmental material(s) immediately surrounding the sample or specimen at the time of sampling. We recommend using subclasses of 'environmental material' (http://purl.obolibrary.org/obo/ENVO_00010483). EnvO documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS . Terms from other OBO ontologies are permissible as long as they reference mass/volume nouns (e.g. air, water, blood) and not discrete, countable entities (e.g. a tree, a leaf, a table top).</td>
+<td>{termLabel} {[termID]}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000025</td>
+<td><a href="../ref_biomaterial/">ref_biomaterial</a></td>
+<td>0..1</td>
+<td>Primary publication if isolated before genome publication; otherwise, primary genome report.</td>
+<td>{PMID}</td>
+<td>{DOI}</td>
+</tr>
+<tr>
+<td>MIXS:0000026</td>
+<td><a href="../source_mat_id/">source_mat_id</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>A unique identifier assigned to a material sample (as defined by http://rs.tdwg.org/dwc/terms/materialSampleID, and as opposed to a particular digital record of a material sample) used for extracting nucleic acids, and subsequent sequencing. The identifier can refer either to the original material collected or to any derived sub-samples. The INSDC qualifiers /specimen_voucher, /bio_material, or /culture_collection may or may not share the same value as the source_mat_id field. For instance, the /specimen_voucher qualifier and source_mat_id may both contain 'UAM:Herps:14' , referring to both the specimen voucher and sampled tissue with the same identifier. However, the /culture_collection qualifier may refer to a value from an initial culture (e.g. ATCC:11775) while source_mat_id would refer to an identifier from some derived culture from which the nucleic acids were extracted (e.g. xatc123 or ark:/2154/R2).</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000015</td>
+<td><a href="../rel_to_oxygen/">rel_to_oxygen</a></td>
+<td>0..1</td>
+<td>Is this organism an aerobe, anaerobe? Please note that aerobic and anaerobic are valid descriptors for microbial environments</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000002</td>
+<td><a href="../samp_collec_device/">samp_collec_device</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>The device used to collect an environmental sample. This field accepts terms listed under environmental sampling device (http://purl.obolibrary.org/obo/ENVO). This field also accepts terms listed under specimen collection device (http://purl.obolibrary.org/obo/GENEPIO_0002094).</td>
+<td>{termLabel} {[termID]}</td>
+<td>{text}</td>
+</tr>
+<tr>
+<td>MIXS:0001225</td>
+<td><a href="../samp_collec_method/">samp_collec_method</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>The method employed for collecting the sample.</td>
+<td>{PMID}</td>
+<td>{DOI}</td>
+</tr>
+<tr>
+<td>MIXS:0000016</td>
+<td><a href="../samp_mat_process/">samp_mat_process</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>A brief description of any processing applied to the sample during or after retrieving the sample from environment, or a link to the relevant protocol(s) performed.</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000017</td>
+<td><a href="../size_frac/">size_frac</a></td>
+<td>0..1</td>
+<td>Filtering pore size used in sample preparation</td>
+<td>{float}-{float} {unit}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000001</td>
+<td><a href="../samp_size/">samp_size</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>The total amount or size (volume (ml), mass (g) or area (m2) ) of sample collected.</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000111</td>
+<td><a href="../samp_vol_we_dna_ext/">samp_vol_we_dna_ext</a></td>
+<td>0..1</td>
+<td>Volume (ml) or mass (g) of total collected sample processed for DNA extraction. Note: total sample collected should be entered under the term Sample Size (MIXS:0000001).</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000037</td>
+<td><a href="../nucl_acid_ext/">nucl_acid_ext</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>A link to a literature reference, electronic resource or a standard operating procedure (SOP), that describes the material separation to recover the nucleic acid fraction from a sample</td>
+<td>{PMID}</td>
+<td>{DOI}</td>
+</tr>
+<tr>
+<td>MIXS:0000038</td>
+<td><a href="../nucl_acid_amp/">nucl_acid_amp</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>A link to a literature reference, electronic resource or a standard operating procedure (SOP), that describes the enzymatic amplification (PCR, TMA, NASBA) of specific nucleic acids</td>
+<td>{PMID}</td>
+<td>{DOI}</td>
+</tr>
+<tr>
+<td>MIXS:0000039</td>
+<td><a href="../lib_size/">lib_size</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>Total number of clones in the library prepared for the project</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000040</td>
+<td><a href="../lib_reads_seqd/">lib_reads_seqd</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>Total number of clones sequenced from the library</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000041</td>
+<td><a href="../lib_layout/">lib_layout</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>Specify whether to expect single, paired, or other configuration of reads</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000042</td>
+<td><a href="../lib_vector/">lib_vector</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>Cloning vector type(s) used in construction of libraries</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000043</td>
+<td><a href="../lib_screen/">lib_screen</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>Specific enrichment or screening methods applied before and/or after creating libraries</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000047</td>
+<td><a href="../mid/">mid</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>Molecular barcodes, called Multiplex Identifiers (MIDs), that are used to specifically tag unique samples in a sequencing run. Sequence should be reported in uppercase letters</td>
+<td>{dna}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000048</td>
+<td><a href="../adapters/">adapters</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>Adapters provide priming sequences for both amplification and sequencing of the sample-library fragments. Both adapters should be reported; in uppercase letters</td>
+<td>{dna};{dna}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000050</td>
+<td><a href="../seq_meth/">seq_meth</a></td>
+<td>1..1</td>
+<td>Sequencing machine used. Where possible the term should be taken from the OBI list of DNA sequencers (http://purl.obolibrary.org/obo/OBI_0400103).</td>
+<td>{termLabel} {[termID]}</td>
+<td>{text}</td>
+</tr>
+<tr>
+<td>MIXS:0000053</td>
+<td><a href="../tax_ident/">tax_ident</a></td>
+<td>1..1</td>
+<td>The phylogenetic marker(s) used to assign an organism name to the SAG or MAG</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000056</td>
+<td><a href="../assembly_qual/">assembly_qual</a></td>
+<td>1..1</td>
+<td>The assembly quality category is based on sets of criteria outlined for each assembly quality category. For MISAG/MIMAG; Finished: Single, validated, contiguous sequence per replicon without gaps or ambiguities with a consensus error rate equivalent to Q50 or better. High Quality Draft:Multiple fragments where gaps span repetitive regions. Presence of the 23S, 16S and 5S rRNA genes and at least 18 tRNAs. Medium Quality Draft:Many fragments with little to no review of assembly other than reporting of standard assembly statistics. Low Quality Draft:Many fragments with little to no review of assembly other than reporting of standard assembly statistics. Assembly statistics include, but are not limited to total assembly size, number of contigs, contig N50/L50, and maximum contig length. For MIUVIG; Finished: Single, validated, contiguous sequence per replicon without gaps or ambiguities, with extensive manual review and editing to annotate putative gene functions and transcriptional units. High-quality draft genome: One or multiple fragments, totaling ≥ 90% of the expected genome or replicon sequence or predicted complete. Genome fragment(s): One or multiple fragments, totalling &lt; 90% of the expected genome or replicon sequence, or for which no genome size could be estimated</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000057</td>
+<td><a href="../assembly_name/">assembly_name</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>Name/version of the assembly provided by the submitter that is used in the genome browsers and in the community</td>
+<td>{text} {text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000058</td>
+<td><a href="../assembly_software/">assembly_software</a></td>
+<td>1..1</td>
+<td>Tool(s) used for assembly, including version number and parameters</td>
+<td>{software};{version};{parameters}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000059</td>
+<td><a href="../annot/">annot</a></td>
+<td>0..1</td>
+<td>Tool used for annotation, or for cases where annotation was provided by a community jamboree or model organism database rather than by a specific submitter</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000060</td>
+<td><a href="../number_contig/">number_contig</a></td>
+<td>0..1</td>
+<td>Total number of contigs in the cleaned/submitted assembly that makes up a given genome, SAG, MAG, or UViG</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000061</td>
+<td><a href="../feat_pred/">feat_pred</a></td>
+<td>0..1</td>
+<td>Method used to predict UViGs features such as ORFs, integration site, etc.</td>
+<td>{software};{version};{parameters}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000062</td>
+<td><a href="../ref_db/">ref_db</a></td>
+<td>0..1</td>
+<td>List of database(s) used for ORF annotation, along with version number and reference to website or publication</td>
+<td>{database};{version};{reference}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000063</td>
+<td><a href="../sim_search_meth/">sim_search_meth</a></td>
+<td>0..1</td>
+<td>Tool used to compare ORFs with database, along with version and cutoffs used</td>
+<td>{software};{version};{parameters}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000064</td>
+<td><a href="../tax_class/">tax_class</a></td>
+<td>0..1</td>
+<td>Method used for taxonomic classification, along with reference database used, classification rank, and thresholds used to classify new genomes</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000065</td>
+<td><a href="../x_16s_recover/">x_16s_recover</a></td>
+<td>0..1</td>
+<td>Can a 16S gene be recovered from the submitted SAG or MAG?</td>
+<td>{boolean}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000066</td>
+<td><a href="../x_16s_recover_software/">x_16s_recover_software</a></td>
+<td>0..1</td>
+<td>Tools used for 16S rRNA gene extraction</td>
+<td>{software};{version};{parameters}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000067</td>
+<td><a href="../trnas/">trnas</a></td>
+<td>0..1</td>
+<td>The total number of tRNAs identified from the SAG or MAG</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000068</td>
+<td><a href="../trna_ext_software/">trna_ext_software</a></td>
+<td>0..1</td>
+<td>Tools used for tRNA identification</td>
+<td>{software};{version};{parameters}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000069</td>
+<td><a href="../compl_score/">compl_score</a></td>
+<td>1..1</td>
+<td>Completeness score is typically based on either the fraction of markers found as compared to a database or the percent of a genome found as compared to a closely related reference genome. High Quality Draft: &gt;90%, Medium Quality Draft: &gt;50%, and Low Quality Draft: &lt; 50% should have the indicated completeness scores</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000070</td>
+<td><a href="../compl_software/">compl_software</a></td>
+<td>1..1</td>
+<td>Tools used for completion estimate, i.e. checkm, anvi'o, busco</td>
+<td>{software};{version}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000071</td>
+<td><a href="../compl_appr/">compl_appr</a></td>
+<td>0..1</td>
+<td>The approach used to determine the completeness of a given genomic assembly, which would typically make use of a set of conserved marker genes or a closely related reference genome. For UViG completeness, include reference genome or group used, and contig feature suggesting a complete genome</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000072</td>
+<td><a href="../contam_score/">contam_score</a></td>
+<td>1..1</td>
+<td>The contamination score is based on the fraction of single-copy genes that are observed more than once in a query genome. The following scores are acceptable for; High Quality Draft: &lt; 5%, Medium Quality Draft: &lt; 10%, Low Quality Draft: &lt; 10%. Contamination must be below 5% for a SAG or MAG to be deposited into any of the public databases</td>
+<td>{float} percentage</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000005</td>
+<td><a href="../contam_screen_input/">contam_screen_input</a></td>
+<td>0..1</td>
+<td>The type of sequence data used as input</td>
+<td>[reads</td>
+<td>contigs]</td>
+</tr>
+<tr>
+<td>MIXS:0000073</td>
+<td><a href="../contam_screen_param/">contam_screen_param</a></td>
+<td>0..1</td>
+<td>Specific parameters used in the decontamination sofware, such as reference database, coverage, and kmers. Combinations of these parameters may also be used, i.e. kmer and coverage, or reference database and kmer</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000074</td>
+<td><a href="../decontam_software/">decontam_software</a></td>
+<td>0..1</td>
+<td>Tool(s) used in contamination screening</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000075</td>
+<td><a href="../sort_tech/">sort_tech</a></td>
+<td>1..1</td>
+<td>Method used to sort/isolate cells or particles of interest</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000076</td>
+<td><a href="../single_cell_lysis_appr/">single_cell_lysis_appr</a></td>
+<td>1..1</td>
+<td>Method used to free DNA from interior of the cell(s) or particle(s)</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000054</td>
+<td><a href="../single_cell_lysis_prot/">single_cell_lysis_prot</a></td>
+<td>0..1</td>
+<td>Name of the kit or standard protocol used for cell(s) or particle(s) lysis</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000055</td>
+<td><a href="../wga_amp_appr/">wga_amp_appr</a></td>
+<td>1..1</td>
+<td>Method used to amplify genomic DNA in preparation for sequencing</td>
+<td>[pcr based</td>
+<td>mda based]</td>
+</tr>
+<tr>
+<td>MIXS:0000006</td>
+<td><a href="../wga_amp_kit/">wga_amp_kit</a></td>
+<td>0..1</td>
+<td>Kit used to amplify genomic DNA in preparation for sequencing</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000091</td>
+<td><a href="../associated_resource/">associated_resource</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>A related resource that is referenced, cited, or otherwise associated to the sequence.</td>
+<td>{PMID}</td>
+<td>{DOI}</td>
+</tr>
+<tr>
+<td>MIXS:0000090</td>
+<td><a href="../sop/">sop</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>Standard operating procedures used in assembly and/or annotation of genomes, metagenomes or environmental sequences</td>
+<td>{PMID}</td>
+<td>{DOI}</td>
 </tr>
 </tbody>
-</table></div>
+</table>
+<h2 id="usages">Usages</h2>
+<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2></div>
             </div>
         </div>
 

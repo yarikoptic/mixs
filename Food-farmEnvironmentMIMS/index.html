@@ -8,7 +8,7 @@
         
         <link rel="canonical" href="https://genomicsstandardsconsortium.github.io/mixs/Food-farmEnvironmentMIMS/">
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Class: food-farm environment MIMS - MIxS</title>
+        <title>Food-farmEnvironmentMIMS - MIxS</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -41,15 +41,15 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../introduction/background/" class="dropdown-item">Background</a>
+    <a href="../introduction/background.md" class="dropdown-item">Background</a>
 </li>
                                     
 <li>
-    <a href="../introduction/citation/" class="dropdown-item">Cite</a>
+    <a href="../introduction/citation.md" class="dropdown-item">Cite</a>
 </li>
                                     
 <li>
-    <a href="../introduction/contents/" class="dropdown-item">Contents</a>
+    <a href="../introduction/contents.md" class="dropdown-item">Contents</a>
 </li>
                                 </ul>
                             </li>
@@ -82,17 +82,21 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#class-food-farm-environment-mims" class="nav-link">Class: food-farm environment MIMS</a>
+            <li class="nav-item" data-level="1"><a href="#food-farmenvironmentmims" class="nav-link">Food-farmEnvironmentMIMS</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#parents" class="nav-link">Parents</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#uses-checklist" class="nav-link">Uses Checklist</a>
+            <li class="nav-item" data-level="2"><a href="#inheritance" class="nav-link">Inheritance</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#attributes" class="nav-link">Attributes</a>
+            <li class="nav-item" data-level="2"><a href="#slots" class="nav-link">Slots</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#usages" class="nav-link">Usages</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#identifier-and-mapping-information" class="nav-link">Identifier and Mapping Information</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -103,1168 +107,1433 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="class-food-farm-environment-mims">Class: food-farm environment MIMS</h1>
+<h1 id="food-farmenvironmentmims">Food-farmEnvironmentMIMS</h1>
 <p>Combinatorial checklist Metagenome or Environmental with environmental package food-farm environment</p>
 <p>URI: <a href="https://w3id.org/mixs/vocab/Food-farmEnvironmentMIMS">mixs.vocab:Food-farmEnvironmentMIMS</a></p>
-<p><a href="https://yuml.me/diagram/nofunky;dir:TB/class/[QuantityValue],[Food-farmEnvironmentMIMS&#124;samp_taxon_id:string;experimental_factor:string%20%3F;neg_cont_type:neg_cont_type_enum%20%3F;pos_cont_type:string%20%3F;ref_biomaterial:string%20%3F;source_mat_id:string%20%3F;rel_to_oxygen:rel_to_oxygen_enum%20%3F;samp_collec_device:string%20%3F;samp_collec_method:string%20%3F;samp_mat_process:string%20%3F;size_frac:string%20%3F;nucl_acid_amp:string%20%3F;lib_size:integer%20%3F;lib_reads_seqd:integer%20%3F;lib_layout:lib_layout_enum%20%3F;lib_vector:string%20%3F;lib_screen:string%20%3F;mid:string%20%3F;adapters:string%20%3F;assembly_qual:assembly_qual_enum%20%3F;assembly_name:string%20%3F;assembly_software:string%20%3F;annot:string%20%3F;number_contig:integer%20%3F;feat_pred:string%20%3F;ref_db:string%20%3F;sim_search_meth:string%20%3F;tax_class:string%20%3F;associated_resource:string%20%3F;sop:string%20%3F;lat_lon(i):string;geo_loc_name(i):string;collection_date(i):date;env_broad_scale(i):string;env_local_scale(i):string;env_medium(i):string;samp_collect_device(i):string%20%3F;organism_count(i):organism_count_enum%20*;spikein_count(i):spikein_count_enum%20%3F;samp_stor_dur(i):string%20%3F;previous_land_use(i):string%20%3F;crop_rotation(i):string%20%3F;soil_type_meth(i):string%20%3F;tot_org_c_meth(i):string%20%3F;tot_nitro_cont_meth(i):string%20%3F;salinity_meth(i):string%20%3F;root_med_carbon(i):string%20%3F;root_med_macronutr(i):string%20%3F;root_med_micronutr(i):string%20%3F;ventilation_type(i):string%20%3F;wind_direction(i):string%20%3F;genetic_mod(i):string%20%3F;host_phenotype(i):string%20%3F;ph(i):double%20%3F;ances_data(i):string%20%3F;biotic_regm(i):string;chem_administration(i):string%20%2B;growth_habit(i):growth_habit_enum%20%3F;host_genotype(i):string%20%3F;host_taxid(i):string%20%3F;mechanical_damage(i):string%20*;perturbation(i):string%20*;root_cond(i):string%20%3F;root_med_ph(i):double%20%3F;tillage(i):tillage_enum%20*;ph_meth(i):string%20%3F;growth_medium(i):string%20%3F;season(i):string%20%3F;food_product_type(i):string%20%2B;samp_type(i):string;farm_water_source(i):farm_water_source_enum%20*;plant_water_method(i):string%20%3F;air_PM_concen(i):string%20*;animal_feed_equip(i):string%20*;animal_intrusion(i):string%20*;anim_water_method(i):string%20*;crop_yield(i):string%20%3F;cult_result(i):cult_result_enum%20%3F;cult_result_org(i):string%20*;cult_target(i):string%20*;plant_part_maturity(i):string%20%3F;adjacent_environment(i):string%20*;water_source_adjac(i):string%20*;farm_equip_shared(i):string%20*;farm_equip_san(i):string%20*;farm_equip_san_freq(i):string%20%3F;farm_equip(i):string%20*;fertilizer_admin(i):string%20%3F;fertilizer_date(i):date%20%3F;animal_group_size(i):integer%20%3F;animal_diet(i):string%20*;food_contact_surf(i):string%20*;food_contain_wrap(i):string%20%3F;food_harvest_proc(i):string%20*;food_pack_medium(i):string%20*;food_preserv_proc(i):string%20*;food_prod_char(i):string%20*;prod_label_claims(i):string%20*;food_trav_mode(i):string%20*;food_trav_vehic(i):string%20*;food_source(i):string%20%3F;food_treat_proc(i):string%20*;extr_weather_event(i):extr_weather_event_enum%20*;date_extr_weath(i):date%20*;host_subspecf_genlin(i):string%20*;intended_consumer(i):string%20*;library_prep_kit(i):string%20%3F;air_flow_impede(i):string%20*;lot_number(i):string%20*;part_plant_animal(i):string%20*;plant_growth_med(i):plant_growth_med_enum%20%3F;plant_reprod_crop(i):plant_reprod_crop_enum%20*;samp_purpose(i):samp_purpose_enum%20%3F;repository_name(i):string%20*;samp_pooling(i):string%20*;samp_source_mat_cat(i):string%20%3F;sequencing_kit(i):string%20%3F;sequencing_location(i):string%20%3F;serovar_or_serotype(i):string%20*;soil_cover(i):string%20%3F;soil_pH(i):double%20%3F;rel_location(i):string%20%3F;soil_porosity(i):string%20%3F;soil_temp(i):string%20*;soil_texture_class(i):soil_texture_class_enum%20%3F;soil_texture_meth(i):string%20%3F;soil_type(i):string%20%3F;spikein_org(i):string%20*;spikein_serovar(i):string%20*;spikein_growth_med(i):string%20*;spikein_strain(i):string%20*;spikein_antibiotic(i):string%20*;spikein_metal(i):string%20*;timepoint(i):double%20%3F;water_frequency(i):string%20%3F;water_pH(i):double%20%3F;water_source_shared(i):water_source_shared_enum%20*;enrichment_protocol(i):string%20%3F;food_quality_date(i):food_quality_date_enum%20%3F;IFSAC_category(i):string%20%2B;animal_housing(i):string%20*;cult_isol_date(i):date%20%3F;food_clean_proc(i):food_clean_proc_enum%20*;misc_param(i):string%20*;samp_name(i):string;project_name(i):string;seq_meth(i):string;nucl_acid_ext(i):string%20%3F;host_disease_stat(i):string%20%3F]uses%20-.-&gt;[MIMS],[Food-farmEnvironment]^-[Food-farmEnvironmentMIMS],[Food-farmEnvironment],[MIMS]"><img alt="img" src="https://yuml.me/diagram/nofunky;dir:TB/class/[QuantityValue],[Food-farmEnvironmentMIMS&#124;samp_taxon_id:string;experimental_factor:string%20%3F;neg_cont_type:neg_cont_type_enum%20%3F;pos_cont_type:string%20%3F;ref_biomaterial:string%20%3F;source_mat_id:string%20%3F;rel_to_oxygen:rel_to_oxygen_enum%20%3F;samp_collec_device:string%20%3F;samp_collec_method:string%20%3F;samp_mat_process:string%20%3F;size_frac:string%20%3F;nucl_acid_amp:string%20%3F;lib_size:integer%20%3F;lib_reads_seqd:integer%20%3F;lib_layout:lib_layout_enum%20%3F;lib_vector:string%20%3F;lib_screen:string%20%3F;mid:string%20%3F;adapters:string%20%3F;assembly_qual:assembly_qual_enum%20%3F;assembly_name:string%20%3F;assembly_software:string%20%3F;annot:string%20%3F;number_contig:integer%20%3F;feat_pred:string%20%3F;ref_db:string%20%3F;sim_search_meth:string%20%3F;tax_class:string%20%3F;associated_resource:string%20%3F;sop:string%20%3F;lat_lon(i):string;geo_loc_name(i):string;collection_date(i):date;env_broad_scale(i):string;env_local_scale(i):string;env_medium(i):string;samp_collect_device(i):string%20%3F;organism_count(i):organism_count_enum%20*;spikein_count(i):spikein_count_enum%20%3F;samp_stor_dur(i):string%20%3F;previous_land_use(i):string%20%3F;crop_rotation(i):string%20%3F;soil_type_meth(i):string%20%3F;tot_org_c_meth(i):string%20%3F;tot_nitro_cont_meth(i):string%20%3F;salinity_meth(i):string%20%3F;root_med_carbon(i):string%20%3F;root_med_macronutr(i):string%20%3F;root_med_micronutr(i):string%20%3F;ventilation_type(i):string%20%3F;wind_direction(i):string%20%3F;genetic_mod(i):string%20%3F;host_phenotype(i):string%20%3F;ph(i):double%20%3F;ances_data(i):string%20%3F;biotic_regm(i):string;chem_administration(i):string%20%2B;growth_habit(i):growth_habit_enum%20%3F;host_genotype(i):string%20%3F;host_taxid(i):string%20%3F;mechanical_damage(i):string%20*;perturbation(i):string%20*;root_cond(i):string%20%3F;root_med_ph(i):double%20%3F;tillage(i):tillage_enum%20*;ph_meth(i):string%20%3F;growth_medium(i):string%20%3F;season(i):string%20%3F;food_product_type(i):string%20%2B;samp_type(i):string;farm_water_source(i):farm_water_source_enum%20*;plant_water_method(i):string%20%3F;air_PM_concen(i):string%20*;animal_feed_equip(i):string%20*;animal_intrusion(i):string%20*;anim_water_method(i):string%20*;crop_yield(i):string%20%3F;cult_result(i):cult_result_enum%20%3F;cult_result_org(i):string%20*;cult_target(i):string%20*;plant_part_maturity(i):string%20%3F;adjacent_environment(i):string%20*;water_source_adjac(i):string%20*;farm_equip_shared(i):string%20*;farm_equip_san(i):string%20*;farm_equip_san_freq(i):string%20%3F;farm_equip(i):string%20*;fertilizer_admin(i):string%20%3F;fertilizer_date(i):date%20%3F;animal_group_size(i):integer%20%3F;animal_diet(i):string%20*;food_contact_surf(i):string%20*;food_contain_wrap(i):string%20%3F;food_harvest_proc(i):string%20*;food_pack_medium(i):string%20*;food_preserv_proc(i):string%20*;food_prod_char(i):string%20*;prod_label_claims(i):string%20*;food_trav_mode(i):string%20*;food_trav_vehic(i):string%20*;food_source(i):string%20%3F;food_treat_proc(i):string%20*;extr_weather_event(i):extr_weather_event_enum%20*;date_extr_weath(i):date%20*;host_subspecf_genlin(i):string%20*;intended_consumer(i):string%20*;library_prep_kit(i):string%20%3F;air_flow_impede(i):string%20*;lot_number(i):string%20*;part_plant_animal(i):string%20*;plant_growth_med(i):plant_growth_med_enum%20%3F;plant_reprod_crop(i):plant_reprod_crop_enum%20*;samp_purpose(i):samp_purpose_enum%20%3F;repository_name(i):string%20*;samp_pooling(i):string%20*;samp_source_mat_cat(i):string%20%3F;sequencing_kit(i):string%20%3F;sequencing_location(i):string%20%3F;serovar_or_serotype(i):string%20*;soil_cover(i):string%20%3F;soil_pH(i):double%20%3F;rel_location(i):string%20%3F;soil_porosity(i):string%20%3F;soil_temp(i):string%20*;soil_texture_class(i):soil_texture_class_enum%20%3F;soil_texture_meth(i):string%20%3F;soil_type(i):string%20%3F;spikein_org(i):string%20*;spikein_serovar(i):string%20*;spikein_growth_med(i):string%20*;spikein_strain(i):string%20*;spikein_antibiotic(i):string%20*;spikein_metal(i):string%20*;timepoint(i):double%20%3F;water_frequency(i):string%20%3F;water_pH(i):double%20%3F;water_source_shared(i):water_source_shared_enum%20*;enrichment_protocol(i):string%20%3F;food_quality_date(i):food_quality_date_enum%20%3F;IFSAC_category(i):string%20%2B;animal_housing(i):string%20*;cult_isol_date(i):date%20%3F;food_clean_proc(i):food_clean_proc_enum%20*;misc_param(i):string%20*;samp_name(i):string;project_name(i):string;seq_meth(i):string;nucl_acid_ext(i):string%20%3F;host_disease_stat(i):string%20%3F]uses%20-.-&gt;[MIMS],[Food-farmEnvironment]^-[Food-farmEnvironmentMIMS],[Food-farmEnvironment],[MIMS]" /></a></p>
-<h2 id="parents">Parents</h2>
+<h2 id="inheritance">Inheritance</h2>
 <ul>
-<li>is_a: <a href="../Food-farmEnvironment/">Food-farmEnvironment</a> - food-farm environment</li>
-</ul>
-<h2 id="uses-checklist">Uses Checklist</h2>
-<ul>
-<li>mixin: <a href="../MIMS/">MIMS</a> - Metagenome or Environmental</li>
-</ul>
-<h2 id="attributes">Attributes</h2>
-<h3 id="inherited-from-food-farm-environment">Inherited from food-farm environment:</h3>
-<ul>
-<li><a href="../food_farm_environment_lat_lon/">food-farm environment➞lat_lon</a>  <sub>1..1</sub><ul>
-<li>Description: The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: 50.586825 6.408977 None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_depth/">food-farm environment➞depth</a>  <sub>1..1</sub><ul>
-<li>Description: The vertical distance below local surface, e.g. for sediment or soil samples depth is measured from sediment or soil surface, respectively. Depth can be reported as an interval for subsurface samples.</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 10 meter None</li>
-</ul>
-</li>
-<li><a href="../alt/">alt</a>  <sub>0..1</sub><ul>
-<li>Description: Altitude is a term used to identify heights of objects such as airplanes, space shuttles, rockets, atmospheric balloons and heights of places such as atmospheric layers and clouds. It is used to measure the height of an object which is above the earth's surface. In this context, the altitude measurement is the vertical distance between the earth's surface above sea level and the sampled position in the air</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 100 meter None</li>
-</ul>
-</li>
-<li><a href="../elev/">elev</a>  <sub>0..1</sub><ul>
-<li>Description: Elevation of the sampling site is its height above a fixed reference point, most commonly the mean sea level. Elevation is mainly used when referring to points on the earth's surface, while altitude is used for points above the surface, such as an aircraft in flight or a spacecraft in orbit.</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 100 meter None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_temp/">food-farm environment➞temp</a>  <sub>0..1</sub><ul>
-<li>Description: Temperature of the sample at the time of sampling.</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 25 degree Celsius None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_geo_loc_name/">food-farm environment➞geo_loc_name</a>  <sub>1..1</sub><ul>
-<li>Description: The geographical origin of the sample as defined by the country or sea name followed by specific region name. Country or sea names should be chosen from the INSDC country list (http://insdc.org/country.html), or the GAZ ontology (http://purl.bioontology.org/ontology/GAZ)</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: USA: Maryland, Bethesda None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_collection_date/">food-farm environment➞collection_date</a>  <sub>1..1</sub><ul>
-<li>Description: The time of sampling, either as an instance (single point in time) or interval. In case no exact time is available, the date/time can be right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant</li>
-<li>Range: <a href="../types/Date/">Date</a></li>
-<li>Example: 2018-05-11T10:00:00+01:00; 2018-05-11 None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_env_broad_scale/">food-farm environment➞env_broad_scale</a>  <sub>1..1</sub><ul>
-<li>Description: Report the major environmental system the sample or specimen came from. The system(s) identified should have a coarse spatial grain, to provide the general environmental context of where the sampling was done (e.g. in the desert or a rainforest). We recommend using subclasses of EnvO’s biome class:  http://purl.obolibrary.org/obo/ENVO_00000428. EnvO documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: oceanic epipelagic zone biome [ENVO:01000033] for annotating a water sample from the photic zone in middle of the Atlantic Ocean None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_env_local_scale/">food-farm environment➞env_local_scale</a>  <sub>1..1</sub><ul>
-<li>Description: Report the entity or entities which are in the sample or specimen’s local vicinity and which you believe have significant causal influences on your sample or specimen. We recommend using EnvO terms which are of smaller spatial grain than your entry for env_broad_scale. Terms, such as anatomical sites, from other OBO Library ontologies which interoperate with EnvO (e.g. UBERON) are accepted in this field. EnvO documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: litter layer [ENVO:01000338]; Annotating a pooled sample taken from various vegetation layers in a forest consider: canopy [ENVO:00000047]|herb and fern layer [ENVO:01000337]|litter layer [ENVO:01000338]|understory [01000335]|shrub layer [ENVO:01000336]. None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_env_medium/">food-farm environment➞env_medium</a>  <sub>1..1</sub><ul>
-<li>Description: Report the environmental material(s) immediately surrounding the sample or specimen at the time of sampling. We recommend using subclasses of 'environmental material' (http://purl.obolibrary.org/obo/ENVO_00010483). EnvO documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS . Terms from other OBO ontologies are permissible as long as they reference mass/volume nouns (e.g. air, water, blood) and not discrete, countable entities (e.g. a tree, a leaf, a table top).</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: soil [ENVO:00001998]; Annotating a fish swimming in the upper 100 m of the Atlantic Ocean, consider: ocean water [ENVO:00002151]. Example: Annotating a duck on a pond consider: pond water [ENVO:00002228]|air [ENVO_00002005] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_samp_collect_device/">food-farm environment➞samp_collect_device</a>  <sub>0..1</sub><ul>
-<li>Description: The device used to collect an environmental sample. This field accepts terms listed under environmental sampling device (http://purl.obolibrary.org/obo/ENVO). This field also accepts terms listed under specimen collection device (http://purl.obolibrary.org/obo/GENEPIO_0002094).</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: swab, biopsy, niskin bottle, push core, drag swab [GENEPIO:0002713] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_humidity/">food-farm environment➞humidity</a>  <sub>0..1</sub><ul>
-<li>Description: Amount of water vapour in the air, at the time of sampling</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 25 gram per cubic meter None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_organism_count/">food-farm environment➞organism_count</a>  <sub>0..*</sub><ul>
-<li>Description: Total cell count of any organism (or group of organisms) per gram, volume or area of sample, should include name of organism followed by count. The method that was used for the enumeration (e.g. qPCR, atp, mpn, etc.) Should also be provided. (example: total prokaryotes; 3.5e7 cells per ml; qpcr)</li>
-<li>Range: <a href="../organism_count_enum/">organism_count_enum</a></li>
-<li>Example: total prokaryotes;3.5e7 cells per milliliter;qPCR None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_spikein_count/">food-farm environment➞spikein_count</a>  <sub>0..1</sub><ul>
-<li>Description: Total cell count of any organism (or group of organisms) per gram, volume or area of sample, should include name of organism followed by count. The method that was used for the enumeration (e.g. qPCR, atp, mpn, etc.) should also be provided (example: total prokaryotes; 3.5e7 cells per ml; qPCR).</li>
-<li>Range: <a href="../spikein_count_enum/">spikein_count_enum</a></li>
-<li>Example: total prokaryotes;3.5e7 colony forming units per milliliter;qPCR None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_samp_stor_temp/">food-farm environment➞samp_stor_temp</a>  <sub>0..1</sub><ul>
-<li>Description: Temperature at which sample was stored, e.g. -80 degree Celsius.</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: -80 degree Celsius None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_solar_irradiance/">food-farm environment➞solar_irradiance</a>  <sub>0..1</sub><ul>
-<li>Description: The amount of solar energy that arrives at a specific area of a surface during a specific time interval</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 1.36 kilowatts per square meter per day None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_ventilation_rate/">food-farm environment➞ventilation_rate</a>  <sub>0..1</sub><ul>
-<li>Description: Ventilation rate of the system in the sampled premises</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 750 cubic meter per minute None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_samp_stor_dur/">food-farm environment➞samp_stor_dur</a>  <sub>0..1</sub><ul>
-<li>Description: Duration for which the sample was stored. Indicate the duration for which the sample was stored written in ISO 8601 format.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: P1Y6M None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_wind_speed/">food-farm environment➞wind_speed</a>  <sub>0..1</sub><ul>
-<li>Description: Speed of wind measured at the time of sampling</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 21 kilometer per hour None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_salinity/">food-farm environment➞salinity</a>  <sub>0..1</sub><ul>
-<li>Description: The total concentration of all dissolved salts in a liquid or solid sample. While salinity can be measured by a complete chemical analysis, this method is difficult and time consuming. More often, it is instead derived from the conductivity measurement. This is known as practical salinity. These derivations compare the specific conductance of the sample to a salinity standard such as seawater.</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 25 practical salinity unit None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_previous_land_use/">food-farm environment➞previous_land_use</a>  <sub>0..1</sub><ul>
-<li>Description: Previous land use and dates</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_crop_rotation/">food-farm environment➞crop_rotation</a>  <sub>0..1</sub><ul>
-<li>Description: Whether or not crop is rotated, and if yes, rotation schedule</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: yes;R2/2017-01-01/2018-12-31/P6M None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_soil_type_meth/">food-farm environment➞soil_type_meth</a>  <sub>0..1</sub><ul>
-<li>Description: Reference or method used in determining soil series name or other lower-level classification</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_tot_org_c_meth/">food-farm environment➞tot_org_c_meth</a>  <sub>0..1</sub><ul>
-<li>Description: Reference or method used in determining total organic carbon</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_tot_nitro_cont_meth/">food-farm environment➞tot_nitro_cont_meth</a>  <sub>0..1</sub><ul>
-<li>Description: Reference or method used in determining the total nitrogen</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_salinity_meth/">food-farm environment➞salinity_meth</a>  <sub>0..1</sub><ul>
-<li>Description: Reference or method used in determining salinity</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_host_age/">food-farm environment➞host_age</a>  <sub>0..1</sub><ul>
-<li>Description: Age of host at the time of sampling; relevant scale depends on species and study, e.g. Could be seconds for amoebae or centuries for trees</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 10 days None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_host_dry_mass/">food-farm environment➞host_dry_mass</a>  <sub>0..1</sub><ul>
-<li>Description: Measurement of dry mass</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 500 gram None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_host_height/">food-farm environment➞host_height</a>  <sub>0..1</sub><ul>
-<li>Description: The height of subject</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 0.1 meter None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_host_length/">food-farm environment➞host_length</a>  <sub>0..1</sub><ul>
-<li>Description: The length of subject</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 1 meter None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_host_tot_mass/">food-farm environment➞host_tot_mass</a>  <sub>0..1</sub><ul>
-<li>Description: Total mass of the host at collection, the unit depends on host</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 2500 gram None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_root_med_carbon/">food-farm environment➞root_med_carbon</a>  <sub>0..1</sub><ul>
-<li>Description: Source of organic carbon in the culture rooting medium; e.g. sucrose.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: sucrose None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_root_med_macronutr/">food-farm environment➞root_med_macronutr</a>  <sub>0..1</sub><ul>
-<li>Description: Measurement of the culture rooting medium macronutrients (N,P, K, Ca, Mg, S); e.g. KH2PO4 (170¬†mg/L).</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: KH2PO4;170¬†milligram per liter None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_root_med_micronutr/">food-farm environment➞root_med_micronutr</a>  <sub>0..1</sub><ul>
-<li>Description: Measurement of the culture rooting medium micronutrients (Fe, Mn, Zn, B, Cu, Mo); e.g. H3BO3 (6.2¬†mg/L).</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: H3BO3;6.2¬†milligram per liter None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_season_temp/">food-farm environment➞season_temp</a>  <sub>0..1</sub><ul>
-<li>Description: Mean seasonal temperature</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 18 degree Celsius None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_season_precpt/">food-farm environment➞season_precpt</a>  <sub>0..1</sub><ul>
-<li>Description: The average of all seasonal precipitation values known, or an estimated equivalent value derived by such methods as regional indexes or Isohyetal maps.</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_tot_org_carb/">food-farm environment➞tot_org_carb</a>  <sub>0..1</sub><ul>
-<li>Description: Definition for soil: total organic carbon content of the soil, definition otherwise: total organic carbon content</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_tot_nitro_content/">food-farm environment➞tot_nitro_content</a>  <sub>0..1</sub><ul>
-<li>Description: Total nitrogen content of the sample</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_conduc/">food-farm environment➞conduc</a>  <sub>0..1</sub><ul>
-<li>Description: Electrical conductivity of water</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 10 milliSiemens per centimeter None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_turbidity/">food-farm environment➞turbidity</a>  <sub>0..1</sub><ul>
-<li>Description: Measure of the amount of cloudiness or haziness in water caused by individual particles</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 0.3 nephelometric turbidity units None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_size_frac_low/">food-farm environment➞size_frac_low</a>  <sub>0..1</sub><ul>
-<li>Description: Refers to the mesh/pore size used to pre-filter/pre-sort the sample. Materials larger than the size threshold are excluded from the sample</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 0.2 micrometer None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_size_frac_up/">food-farm environment➞size_frac_up</a>  <sub>0..1</sub><ul>
-<li>Description: Refers to the mesh/pore size used to retain the sample. Materials smaller than the size threshold are excluded from the sample</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 20 micrometer None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_ventilation_type/">food-farm environment➞ventilation_type</a>  <sub>0..1</sub><ul>
-<li>Description: Ventilation system used in the sampled premises</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: Operable windows None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_wind_direction/">food-farm environment➞wind_direction</a>  <sub>0..1</sub><ul>
-<li>Description: Wind direction is the direction from which a wind originates</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: Northwest None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_genetic_mod/">food-farm environment➞genetic_mod</a>  <sub>0..1</sub><ul>
-<li>Description: Genetic modifications of the genome of an organism, which may occur naturally by spontaneous mutation, or be introduced by some experimental means, e.g. specification of a transgene or the gene knocked-out or details of transient transfection</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: aox1A transgenic None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_host_phenotype/">food-farm environment➞host_phenotype</a>  <sub>0..1</sub><ul>
-<li>Description: Phenotype of human or other host. For phenotypic quality ontology (pato) (v 2018-03-27) terms, please see http://purl.bioontology.org/ontology/pato. For Human Phenotype Ontology (HP) (v 2018-06-13) please see http://purl.bioontology.org/ontology/HP</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: elongated [PATO:0001154] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_ph/">food-farm environment➞ph</a>  <sub>0..1</sub><ul>
-<li>Description: Ph measurement of the sample, or liquid portion of sample, or aqueous phase of the fluid</li>
-<li>Range: <a href="../types/Double/">Double</a></li>
-<li>Example: 7.2 None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_ances_data/">food-farm environment➞ances_data</a>  <sub>0..1</sub><ul>
-<li>Description: Information about either pedigree or other ancestral information description (e.g. parental variety in case of mutant or selection), e.g. A/3*B (meaning [(A x B) x B] x B)</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: A/3*B None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_biotic_regm/">food-farm environment➞biotic_regm</a>  <sub>1..1</sub><ul>
-<li>Description: Information about treatment(s) involving use of biotic factors, such as bacteria, viruses or fungi.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: sample inoculated with Rhizobium spp. Culture None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_chem_administration/">food-farm environment➞chem_administration</a>  <sub>1..*</sub><ul>
-<li>Description: List of chemical compounds administered to the host or site where sampling occurred, and when (e.g. Antibiotics, n fertilizer, air filter); can include multiple compounds. For chemical entities of biological interest ontology (chebi) (v 163), http://purl.bioontology.org/ontology/chebi</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: agar [CHEBI:2509];2018-05-11T20:00Z None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_growth_habit/">food-farm environment➞growth_habit</a>  <sub>0..1</sub><ul>
-<li>Description: Characteristic shape, appearance or growth form of a plant species</li>
-<li>Range: <a href="../growth_habit_enum/">growth_habit_enum</a></li>
-<li>Example: spreading None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_host_genotype/">food-farm environment➞host_genotype</a>  <sub>0..1</sub><ul>
-<li>Description: Observed genotype</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: C57BL/6 None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_host_taxid/">food-farm environment➞host_taxid</a>  <sub>0..1</sub><ul>
-<li>Description: NCBI taxon id of the host, e.g. 9606</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: 7955 None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_mechanical_damage/">food-farm environment➞mechanical_damage</a>  <sub>0..*</sub><ul>
-<li>Description: Information about any mechanical damage exerted on the plant; can include multiple damages and sites</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: pruning;bark None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_perturbation/">food-farm environment➞perturbation</a>  <sub>0..*</sub><ul>
-<li>Description: Type of perturbation, e.g. chemical administration, physical disturbance, etc., coupled with perturbation regimen including how many times the perturbation was repeated, how long each perturbation lasted, and the start and end time of the entire perturbation period; can include multiple perturbation types</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: antibiotic addition;R2/2018-05-11T14:30Z/2018-05-11T19:30Z/P1H30M None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_root_cond/">food-farm environment➞root_cond</a>  <sub>0..1</sub><ul>
-<li>Description: Relevant rooting conditions such as field plot size, sowing density, container dimensions, number of plants per container.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: http://himedialabs.com/TD/PT158.pdf None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_root_med_ph/">food-farm environment➞root_med_ph</a>  <sub>0..1</sub><ul>
-<li>Description: pH measurement of the culture rooting medium; e.g. 5.5.</li>
-<li>Range: <a href="../types/Double/">Double</a></li>
-<li>Example: 7.5 None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_tillage/">food-farm environment➞tillage</a>  <sub>0..*</sub><ul>
-<li>Description: Note method(s) used for tilling</li>
-<li>Range: <a href="../tillage_enum/">tillage_enum</a></li>
-<li>Example: chisel None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_ph_meth/">food-farm environment➞ph_meth</a>  <sub>0..1</sub><ul>
-<li>Description: Reference or method used in determining ph</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_growth_medium/">food-farm environment➞growth_medium</a>  <sub>0..1</sub><ul>
-<li>Description: A liquid or gel containing nutrients, salts, and other factors formulated to support the growth of microorganisms, cells, or plants (National Cancer Institute Thesaurus).  The name of the medium used to grow the microorganism.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: LB broth None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_season/">food-farm environment➞season</a>  <sub>0..1</sub><ul>
-<li>Description: The season when sampling occurred. Any of the four periods into which the year is divided by the equinoxes and solstices. This field accepts terms listed under season (http://purl.obolibrary.org/obo/NCIT_C94729).</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: autumn [NCIT:C94733] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_food_product_type/">food-farm environment➞food_product_type</a>  <sub>1..*</sub><ul>
-<li>Description: A food product type is a class of food products that is differentiated by its food composition (e.g., single- or multi-ingredient), processing and/or consumption characteristics. This does not include brand name products but it may include generic food dish categories. This field accepts terms under food product type (http://purl.obolibrary.org/obo/FOODON:03400361). For terms related to food product for an animal, consult food product for animal (http://purl.obolibrary.org/obo/FOODON_03309997). If the proper descriptor is not listed please use text to describe the food type. Multiple terms can be separated by one or more pipes.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: shrimp (peeled, deep-frozen) [FOODON:03317171] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_samp_type/">food-farm environment➞samp_type</a>  <sub>1..1</sub><ul>
-<li>Description: The type of material from which the sample was obtained. For the Hydrocarbon package, samples include types like core, rock trimmings, drill cuttings, piping section, coupon, pigging debris, solid deposit, produced fluid, produced water, injected water, swabs, etc. For the Food Package, samples are usually categorized as food, body products or tissues, or environmental material. This field accepts terms listed under environmental specimen (http://purl.obolibrary.org/obo/GENEPIO_0001246).</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: built environment sample [GENEPIO:0001248] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_farm_water_source/">food-farm environment➞farm_water_source</a>  <sub>0..*</sub><ul>
-<li>Description: Source of water used on the farm for irrigation of crops or watering of livestock.</li>
-<li>Range: <a href="../farm_water_source_enum/">farm_water_source_enum</a></li>
-<li>Example: water well (ENVO:01000002) None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_plant_water_method/">food-farm environment➞plant_water_method</a>  <sub>0..1</sub><ul>
-<li>Description: Description of the equipment or method used to distribute water to crops. This field accepts termed listed under irrigation process (http://purl.obolibrary.org/obo/AGRO_00000006). Multiple terms can be separated by pipes.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: drip irrigation process [AGRO:00000056] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_air_PM_concen/">food-farm environment➞air_PM_concen</a>  <sub>0..*</sub><ul>
-<li>Description: Concentration of substances that remain suspended in the air, and comprise mixtures of organic and inorganic substances (PM10 and PM2.5); can report multiple PM's by entering numeric values preceded by name of PM</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: PM2.5;10 microgram per cubic meter None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_animal_feed_equip/">food-farm environment➞animal_feed_equip</a>  <sub>0..*</sub><ul>
-<li>Description: Description of the feeding equipment used for livestock. This field accepts terms listed under feed delivery (http://opendata.inra.fr/EOL/EOL_0001757). Multiple terms can be separated by one or more pipes.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: self feeding [EOL:0001645]| straight feed trough [EOL:0001661] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_animal_intrusion/">food-farm environment➞animal_intrusion</a>  <sub>0..*</sub><ul>
-<li>Description: Identification of animals intruding on the sample or sample site including invertebrates (such as pests or pollinators) and vertebrates (such as wildlife or domesticated animals). This field accepts terms under organism (http://purl.obolibrary.org/obo/NCIT_C14250). This field also accepts identification numbers from NCBI under https://www.ncbi.nlm.nih.gov/taxonomy. Multiple terms can be separated by pipes.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: Thripidae [NCBITaxon:45053] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_anim_water_method/">food-farm environment➞anim_water_method</a>  <sub>0..*</sub><ul>
-<li>Description: Description of the equipment or method used to distribute water to livestock. This field accepts termed listed under water delivery equipment (http://opendata.inra.fr/EOL/EOL_0001653). Multiple terms can be separated by pipes.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: water trough [EOL:0001618] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_crop_yield/">food-farm environment➞crop_yield</a>  <sub>0..1</sub><ul>
-<li>Description: Amount of crop produced per unit or area of land.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: 570 kilogram per metre square None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_cult_result/">food-farm environment➞cult_result</a>  <sub>0..1</sub><ul>
-<li>Description: Any result of a bacterial culture experiment reported as a binary assessment such as positive/negative, active/inactive.</li>
-<li>Range: <a href="../cult_result_enum/">cult_result_enum</a></li>
-<li>Example: positive None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_cult_result_org/">food-farm environment➞cult_result_org</a>  <sub>0..*</sub><ul>
-<li>Description: Taxonomic information about the cultured organism(s).</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: Listeria monocytogenes [NCIT:C86502] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_cult_target/">food-farm environment➞cult_target</a>  <sub>0..*</sub><ul>
-<li>Description: The target microbial analyte in terms of investigation scope. This field accepts terms under organism (http://purl.obolibrary.org/obo/NCIT_C14250). This field also accepts identification numbers from NCBI under https://www.ncbi.nlm.nih.gov/taxonomy.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: Listeria monocytogenes [NCIT:C86502] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_plant_part_maturity/">food-farm environment➞plant_part_maturity</a>  <sub>0..1</sub><ul>
-<li>Description: A description of the stage of development of a plant or plant part based on maturity or ripeness. This field accepts terms listed under degree of plant maturity (http://purl.obolibrary.org/obo/FOODON_03530050).</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: ripe or mature [FOODON:03530052] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_adjacent_environment/">food-farm environment➞adjacent_environment</a>  <sub>0..*</sub><ul>
-<li>Description: Description of the environmental system or features that are adjacent to the sampling site. This field accepts terms under ecosystem (http://purl.obolibrary.org/obo/ENVO_01001110) and human construction (http://purl.obolibrary.org/obo/ENVO_00000070). Multiple terms can be separated by pipes.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: estuarine biome [ENVO:01000020] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_water_source_adjac/">food-farm environment➞water_source_adjac</a>  <sub>0..*</sub><ul>
-<li>Description: Description of the environmental features that are adjacent to the farm water source. This field accepts terms under ecosystem (http://purl.obolibrary.org/obo/ENVO_01001110) and human construction (http://purl.obolibrary.org/obo/ENVO_00000070). Multiple terms can be separated by pipes.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: feedlot [ENVO:01000627] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_farm_equip_shared/">food-farm environment➞farm_equip_shared</a>  <sub>0..*</sub><ul>
-<li>Description: List of planting, growing or harvesting equipment shared with other farms. This field accepts terms listed under agricultural implement (http://purl.obolibrary.org/obo/AGRO_00000416). Multiple terms can be separated by pipes.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: combine harvester [AGRO:00000473] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_farm_equip_san/">food-farm environment➞farm_equip_san</a>  <sub>0..*</sub><ul>
-<li>Description: Method used to sanitize growing and harvesting equipment. This can including type and concentration of sanitizing solution.  Multiple terms can be separated by one or more pipes.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: hot water pressure wash, hypochlorite solution, 50 parts per million None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_farm_equip_san_freq/">food-farm environment➞farm_equip_san_freq</a>  <sub>0..1</sub><ul>
-<li>Description: The number of times farm equipment is cleaned. Frequency of cleaning might be on a Daily basis, Weekly, Monthly, Quarterly or Annually.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: Biweekly None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_farm_equip/">food-farm environment➞farm_equip</a>  <sub>0..*</sub><ul>
-<li>Description: List of equipment used for planting, fertilization, harvesting, irrigation, land levelling, residue management, weeding or transplanting during the growing season.  This field accepts terms listed under agricultural implement (http://purl.obolibrary.org/obo/AGRO_00000416). Multiple terms can be separated by pipes.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: combine harvester [AGRO:00000473] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_fertilizer_admin/">food-farm environment➞fertilizer_admin</a>  <sub>0..1</sub><ul>
-<li>Description: Type of fertilizer or amendment added to the soil or water for the purpose of improving substrate health and quality for plant growth. This field accepts terms listed under agronomic fertilizer (http://purl.obolibrary.org/obo/AGRO_00002062). Multiple terms may apply and can be separated by pipes, listing in reverse chronological order.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: fish emulsion [AGRO:00000082] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_fertilizer_date/">food-farm environment➞fertilizer_date</a>  <sub>0..1</sub><ul>
-<li>Description: Date of administration of soil amendment or fertilizer. Multiple terms may apply and can be separated by pipes, listing in reverse chronological order.</li>
-<li>Range: <a href="../types/Date/">Date</a></li>
-<li>Example: 2018-05-11T10:00:00+01:00 None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_animal_group_size/">food-farm environment➞animal_group_size</a>  <sub>0..1</sub><ul>
-<li>Description: The number of food animals of the same species that are maintained together as a unit, i.e. a herd or flock.</li>
-<li>Range: <a href="../types/Integer/">Integer</a></li>
-<li>Example: 80 None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_animal_diet/">food-farm environment➞animal_diet</a>  <sub>0..*</sub><ul>
-<li>Description: If the isolate is from a food animal, the type of diet eaten by the food animal.  Please list the main food staple and the setting, if appropriate.  For a list of acceptable animal feed terms or categories, please see http://www.feedipedia.org.  Multiple terms may apply and can be separated by pipes |Food product for animal covers foods intended for consumption by domesticated animals. Consult http://purl.obolibrary.org/obo/FOODON_03309997. If the proper descriptor is not listed please use text to describe the food type. Multiple terms can be separated by one or more pipes. If the proper descriptor is not listed please use text to describe the food product type.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: Hay [FOODON:03301763] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_food_contact_surf/">food-farm environment➞food_contact_surf</a>  <sub>0..*</sub><ul>
-<li>Description: The specific container or coating materials in direct contact with the food. Multiple values can be assigned.  This field accepts terms listed under food contact surface (http://purl.obolibrary.org/obo/FOODON_03500010).</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: cellulose acetate [FOODON:03500034] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_food_contain_wrap/">food-farm environment➞food_contain_wrap</a>  <sub>0..1</sub><ul>
-<li>Description: Type of container or wrapping defined by the main container material, the container form, and the material of the liner lids or ends. Also type of container or wrapping by form; prefer description by material first, then by form. This field accepts terms listed under food container or wrapping (http://purl.obolibrary.org/obo/FOODON_03490100).</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: Plastic shrink-pack [FOODON:03490137] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_food_harvest_proc/">food-farm environment➞food_harvest_proc</a>  <sub>0..*</sub><ul>
-<li>Description: A harvesting process is a process which takes in some food material from an individual or community of plant or animal organisms in a given context and time, and outputs a precursor or consumable food product. This may include a part of an organism or the whole, and may involve killing the organism.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: hand-picked None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_food_pack_medium/">food-farm environment➞food_pack_medium</a>  <sub>0..*</sub><ul>
-<li>Description: The medium in which the food is packed for preservation and handling or the medium surrounding homemade foods, e.g., peaches cooked in sugar syrup. The packing medium may provide a controlled environment for the food. It may also serve to improve palatability and consumer appeal.  This includes edible packing media (e.g. fruit juice), gas other than air (e.g. carbon dioxide), vacuum packed, or packed with aerosol propellant. This field accepts terms under food packing medium (http://purl.obolibrary.org/obo/FOODON_03480020). Multiple terms may apply and can be separated by pipes.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: vacuum-packed[FOODON:03480027] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_food_preserv_proc/">food-farm environment➞food_preserv_proc</a>  <sub>0..*</sub><ul>
-<li>Description: The methods contributing to the prevention or retardation of microbial, enzymatic or oxidative spoilage and thus to the extension of shelf life. This field accepts terms listed under food preservation process (http://purl.obolibrary.org/obo/FOODON_03470107).</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: food slow freezing [FOODON:03470128] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_food_prod_char/">food-farm environment➞food_prod_char</a>  <sub>0..*</sub><ul>
-<li>Description: Descriptors of the food production system such as wild caught, free-range, organic, free-range, industrial, dairy, beef.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: wild caught None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_prod_label_claims/">food-farm environment➞prod_label_claims</a>  <sub>0..*</sub><ul>
-<li>Description: Labeling claims containing descriptors such as wild caught, free-range, organic, free-range, industrial, hormone-free, antibiotic free, cage free. Can include more than one term, separated by ";"</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: free range None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_food_trav_mode/">food-farm environment➞food_trav_mode</a>  <sub>0..*</sub><ul>
-<li>Description: A descriptor for the method of movement of food commodity along the food distribution system.  This field accepts terms listed under travel mode (http://purl.obolibrary.org/obo/GENEPIO_0001064). If the proper descrptor is not listed please use text to describe the mode of travel. Multiple terms can be separated by one or more pipes.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: train travel [GENEPIO:0001060] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_food_trav_vehic/">food-farm environment➞food_trav_vehic</a>  <sub>0..*</sub><ul>
-<li>Description: A descriptor for the mobile machine which is used to transport food commodities along the food distribution system.  This field accepts terms listed under vehicle (http://purl.obolibrary.org/obo/ENVO_01000604). If the proper descrptor is not listed please use text to describe the mode of travel. Multiple terms can be separated by one or more pipes.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: aircraft [ENVO:01001488]|car [ENVO:01000605] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_food_source/">food-farm environment➞food_source</a>  <sub>0..1</sub><ul>
-<li>Description: Type of plant or animal from which the food product or its major ingredient is derived or a chemical food source [FDA CFSAN 1995].</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: giant tiger prawn [FOODON:03412612] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_food_treat_proc/">food-farm environment➞food_treat_proc</a>  <sub>0..*</sub><ul>
-<li>Description: Used to specifically characterize a food product based on the treatment or processes applied to the product or any indexed ingredient. The processes include adding, substituting or removing components or modifying the food or component, e.g., through fermentation. Multiple values can be assigned. This fields accepts terms listed under food treatment process (http://purl.obolibrary.org/obo/FOODON_03460111).</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: gluten removal process [FOODON:03460750] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_extr_weather_event/">food-farm environment➞extr_weather_event</a>  <sub>0..*</sub><ul>
-<li>Description: Unusual weather events that may have affected microbial populations. Multiple terms can be separated by pipes, listed in reverse chronological order.</li>
-<li>Range: <a href="../extr_weather_event_enum/">extr_weather_event_enum</a></li>
-<li>Example: hail None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_date_extr_weath/">food-farm environment➞date_extr_weath</a>  <sub>0..*</sub><ul>
-<li>Description: Date of unusual weather events that may have affected microbial populations. Multiple terms can be separated by pipes, listed in reverse chronological order.</li>
-<li>Range: <a href="../types/Date/">Date</a></li>
-<li>Example: 2018-05-11:T14:30Z None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_host_subspecf_genlin/">food-farm environment➞host_subspecf_genlin</a>  <sub>0..*</sub><ul>
-<li>Description: Information about the genetic distinctness of the host organism below the subspecies level e.g., serovar, serotype, biotype, ecotype, variety, cultivar, or any relevant genetic typing schemes like Group I plasmid. Subspecies should not be recorded in this term, but in the NCBI taxonomy. Supply both the lineage name and the lineage rank separated by a colon, e.g., biovar:abc123.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: serovar:Newport, variety:glabrum, cultivar: Red Delicious None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_intended_consumer/">food-farm environment➞intended_consumer</a>  <sub>0..*</sub><ul>
-<li>Description: Food consumer type, human or animal, for which the food product is produced and marketed. This field accepts terms listed under food consumer group (http://purl.obolibrary.org/obo/FOODON_03510136) or NCBI taxid.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: 9606 o rsenior as food consumer [FOODON:03510254] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_library_prep_kit/">food-farm environment➞library_prep_kit</a>  <sub>0..1</sub><ul>
-<li>Description: Packaged kits (containing adapters, indexes, enzymes, buffers etc.), tailored for specific sequencing workflows, which allow the simplified preparation of sequencing-ready libraries for small genomes, amplicons, and plasmids.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: Illumina DNA Prep None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_air_flow_impede/">food-farm environment➞air_flow_impede</a>  <sub>0..*</sub><ul>
-<li>Description: Presence of objects in the area that would influence or impede air flow through the air filter.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: obstructed;hay bales; 2 m None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_lot_number/">food-farm environment➞lot_number</a>  <sub>0..*</sub><ul>
-<li>Description: A distinctive alpha-numeric identification code assigned by the manufacturer or distributor to a specific quantity of manufactured material or product within a batch. Synonym: Batch Number.  The submitter should provide lot number of the item followed by the item name for which the lot number was provided.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: 1239ABC01A, split Cornish hens None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_season_humidity/">food-farm environment➞season_humidity</a>  <sub>0..1</sub><ul>
-<li>Description: Average humidity of the region throughout the growing season.</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 25% None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_part_plant_animal/">food-farm environment➞part_plant_animal</a>  <sub>0..*</sub><ul>
-<li>Description: The anatomical part of the organism being involved in food production or consumption; e.g., a carrot is the root of the plant (root vegetable). This field accepts terms listed under part of plant or animal (http://purl.obolibrary.org/obo/FOODON_03420116).</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: chuck [FOODON:03530021] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_plant_growth_med/">food-farm environment➞plant_growth_med</a>  <sub>0..1</sub><ul>
-<li>Description: Specification of the media for growing the plants or tissue cultured samples, e.g. soil, aeroponic, hydroponic, in vitro solid culture medium, in vitro liquid culture medium. Recommended value is a specific value from EO:plant growth medium (follow this link for terms http://purl.obolibrary.org/obo/EO_0007147) or other controlled vocabulary</li>
-<li>Range: <a href="../plant_growth_med_enum/">plant_growth_med_enum</a></li>
-<li>Example: hydroponic plant culture media [EO:0007067] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_plant_reprod_crop/">food-farm environment➞plant_reprod_crop</a>  <sub>0..*</sub><ul>
-<li>Description: Plant reproductive part used in the field during planting to start the crop.</li>
-<li>Range: <a href="../plant_reprod_crop_enum/">plant_reprod_crop_enum</a></li>
-<li>Example: seedling None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_samp_purpose/">food-farm environment➞samp_purpose</a>  <sub>0..1</sub><ul>
-<li>Description: The reason that the sample was collected.</li>
-<li>Range: <a href="../samp_purpose_enum/">samp_purpose_enum</a></li>
-<li>Example: field trial None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_repository_name/">food-farm environment➞repository_name</a>  <sub>0..*</sub><ul>
-<li>Description: The name of the institution where the sample or DNA extract is held or "sample not available" if the sample was used in its entirety for analysis or otherwise not retained.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: FDA CFSAN Microbiology Laboratories None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_samp_pooling/">food-farm environment➞samp_pooling</a>  <sub>0..*</sub><ul>
-<li>Description: Physical combination of several instances of like material, e.g. RNA extracted from samples or dishes of cell cultures into one big aliquot of cells. Please provide a short description of the samples that were pooled.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: 5uL of extracted genomic DNA from 5 leaves were pooled None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_samp_source_mat_cat/">food-farm environment➞samp_source_mat_cat</a>  <sub>0..1</sub><ul>
-<li>Description: This is the scientific role or category that the subject organism or material has with respect to an investigation.  This field accepts terms listed under specimen source material category (http://purl.obolibrary.org/obo/GENEPIO_0001237 or http://purl.obolibrary.org/obo/OBI_0100051).</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: environmental (swab or sampling) [GENEPIO:0001732] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_sequencing_kit/">food-farm environment➞sequencing_kit</a>  <sub>0..1</sub><ul>
-<li>Description: Pre-filled, ready-to-use reagent cartridges. Used to produce improved chemistry, cluster density and read length as well as improve quality (Q) scores. Reagent components are encoded to interact with the sequencing system to validate compatibility with user-defined applications. Indicate name of the sequencing kit.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: NextSeq 500/550 High Output Kit v2.5 (75 Cycles) None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_sequencing_location/">food-farm environment➞sequencing_location</a>  <sub>0..1</sub><ul>
-<li>Description: The location the sequencing run was performed. Indicate the name of the lab or core facility where samples were sequenced.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: University of Maryland Genomics Resource Center None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_serovar_or_serotype/">food-farm environment➞serovar_or_serotype</a>  <sub>0..*</sub><ul>
-<li>Description: A characterization of a cell or microorganism based on the antigenic properties of the molecules on its surface. Indicate the name of a serovar or serotype of interest. This field accepts terms under organism (http://purl.obolibrary.org/obo/NCIT_C14250). This field also accepts identification numbers from NCBI under https://www.ncbi.nlm.nih.gov/taxonomy.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: Escherichia coli strain O157:H7 [NCIT:C86883] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_soil_conductivity/">food-farm environment➞soil_conductivity</a>  <sub>0..1</sub><ul>
-<li>Description: Conductivity of soil at time of sampling.</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 10 milliSiemens per centimeter None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_soil_cover/">food-farm environment➞soil_cover</a>  <sub>0..1</sub><ul>
-<li>Description: Description of the material covering the sampled soil. This field accepts terms under ENVO:00010483, environmental material.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: bare soil [ENVO01001616] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_soil_pH/">food-farm environment➞soil_pH</a>  <sub>0..1</sub><ul>
-<li>Description: The pH of soil at time of sampling.</li>
-<li>Range: <a href="../types/Double/">Double</a></li>
-<li>Example: 7.2 None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_rel_location/">food-farm environment➞rel_location</a>  <sub>0..1</sub><ul>
-<li>Description: Location of sampled soil to other parts of the farm e.g. under crop plant, near irrigation ditch, from the dirt road.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: furrow None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_soil_porosity/">food-farm environment➞soil_porosity</a>  <sub>0..1</sub><ul>
-<li>Description: Porosity of soil or deposited sediment is volume of voids divided by the total volume of sample.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: 20% None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_soil_temp/">food-farm environment➞soil_temp</a>  <sub>0..*</sub><ul>
-<li>Description: Temperature of soil at the time of sampling.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: 25 degrees Celsius None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_soil_texture_class/">food-farm environment➞soil_texture_class</a>  <sub>0..1</sub><ul>
-<li>Description: One of the 12 soil texture classes use to describe soil texture based on the relative proportion of different grain sizes  of mineral particles [sand (50 um to 2 mm), silt (2 um to 50 um), and clay (&lt;2 um)] in a soil.</li>
-<li>Range: <a href="../soil_texture_class_enum/">soil_texture_class_enum</a></li>
-<li>Example: silty clay loam None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_soil_texture_meth/">food-farm environment➞soil_texture_meth</a>  <sub>0..1</sub><ul>
-<li>Description: Reference or method used in determining soil texture</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_soil_type/">food-farm environment➞soil_type</a>  <sub>0..1</sub><ul>
-<li>Description: Description of the soil type or classification. This field accepts terms under soil (http://purl.obolibrary.org/obo/ENVO_00001998).  Multiple terms can be separated by pipes.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: plinthosol [ENVO:00002250] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_spikein_org/">food-farm environment➞spikein_org</a>  <sub>0..*</sub><ul>
-<li>Description: Taxonomic information about the spike-in organism(s). This field accepts terms under organism (http://purl.obolibrary.org/obo/NCIT_C14250). This field also accepts identification numbers from NCBI under https://www.ncbi.nlm.nih.gov/taxonomy. Multiple terms can be separated by pipes.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: Listeria monocytogenes [NCIT:C86502]|28901 None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_spikein_serovar/">food-farm environment➞spikein_serovar</a>  <sub>0..*</sub><ul>
-<li>Description: Taxonomic information about the spike-in organism(s) at the serovar or serotype level. This field accepts terms under organism (http://purl.obolibrary.org/obo/NCIT_C14250). This field also accepts identification numbers from NCBI under https://www.ncbi.nlm.nih.gov/taxonomy. Multiple terms can be separated by pipes.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: Escherichia coli strain O157:H7 [NCIT:C86883]|83334 None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_spikein_growth_med/">food-farm environment➞spikein_growth_med</a>  <sub>0..*</sub><ul>
-<li>Description: A liquid or gel containing nutrients, salts, and other factors formulated to support the growth of microorganisms, cells, or plants (National Cancer Institute Thesaurus).  A growth medium is a culture medium which has the disposition to encourage growth of particular bacteria to the exclusion of others in the same growth environment.  In this case, list the culture medium used to propagate the spike-in bacteria during preparation of spike-in inoculum. This field accepts terms listed under microbiological culture medium (http://purl.obolibrary.org/obo/MICRO_0000067). If the proper descriptor is not listed please use text to describe the spike in growth media.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: LB broth [MCO:0000036] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_spikein_strain/">food-farm environment➞spikein_strain</a>  <sub>0..*</sub><ul>
-<li>Description: Taxonomic information about the spike-in organism(s) at the strain level. This field accepts terms under organism (http://purl.obolibrary.org/obo/NCIT_C14250). This field also accepts identification numbers from NCBI under https://www.ncbi.nlm.nih.gov/taxonomy. Multiple terms can be separated by pipes.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: 169963 None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_spikein_antibiotic/">food-farm environment➞spikein_antibiotic</a>  <sub>0..*</sub><ul>
-<li>Description: Antimicrobials used in research study to assess effects of exposure on microbiome of a specific site.  Please list antimicrobial, common name and/or class and concentration used for spike-in.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: Tetracycline at 5 mg/ml None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_spikein_metal/">food-farm environment➞spikein_metal</a>  <sub>0..*</sub><ul>
-<li>Description: Heavy metals used in research study to assess effects of exposure on microbiome of a specific site.  Please list heavy metals and concentration used for spike-in.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: Cd at 20 ppm None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_timepoint/">food-farm environment➞timepoint</a>  <sub>0..1</sub><ul>
-<li>Description: Time point at which a sample or observation is made or taken from a biomaterial as measured from some reference point. Indicate the timepoint written in ISO 8601 format.</li>
-<li>Range: <a href="../types/Double/">Double</a></li>
-<li>Example: P24H None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_water_frequency/">food-farm environment➞water_frequency</a>  <sub>0..1</sub><ul>
-<li>Description: Number of water delivery events within a given period of time.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: 2 per day None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_water_pH/">food-farm environment➞water_pH</a>  <sub>0..1</sub><ul>
-<li>Description: pH measurement of the sample, or liquid portion of sample, or aqueous phase of the fluid.</li>
-<li>Range: <a href="../types/Double/">Double</a></li>
-<li>Example: 7.2 None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_water_source_shared/">food-farm environment➞water_source_shared</a>  <sub>0..*</sub><ul>
-<li>Description: Other users sharing access to the same water source. Multiple terms can be separated by one or more pipes.</li>
-<li>Range: <a href="../water_source_shared_enum/">water_source_shared_enum</a></li>
-<li>Example: no sharing None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_enrichment_protocol/">food-farm environment➞enrichment_protocol</a>  <sub>0..1</sub><ul>
-<li>Description: The microbiological workflow or protocol followed to test for the presence or enumeration of the target microbial analyte(s). Please provide a PubMed or DOI reference for published protocols.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: BAM Chapter 4: Enumeration of Escherichia coli and the Coliform Bacteria None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_food_quality_date/">food-farm environment➞food_quality_date</a>  <sub>0..1</sub><ul>
-<li>Description: The date recommended for the use of the product while at peak quality, this date is not a reflection of safety unless used on infant formula this date is not a reflection of safety and is typically labeled on a food product as "best if used by," best by," "use by," or "freeze by."</li>
-<li>Range: <a href="../food_quality_date_enum/">food_quality_date_enum</a></li>
-<li>Example: best by 2020-05-24 None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_IFSAC_category/">food-farm environment➞IFSAC_category</a>  <sub>1..*</sub><ul>
-<li>Description: The IFSAC food categorization scheme has five distinct levels to which foods can be assigned, depending upon the type of food. First, foods are assigned to one of four food groups (aquatic animals, land animals, plants, and other). Food groups include increasingly specific food categories; dairy, eggs, meat and poultry, and game are in the land animal food group, and the category meat and poultry is further subdivided into more specific categories of meat (beef, pork, other meat) and poultry (chicken, turkey, other poultry). Finally, foods are differentiated by differences in food processing (such as pasteurized fluid dairy products, unpasteurized fluid dairy products, pasteurized solid and semi-solid dairy products, and unpasteurized solid and semi-solid dairy products. An IFSAC food category chart is available from https://www.cdc.gov/foodsafety/ifsac/projects/food-categorization-scheme.html PMID: 28926300.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: Plants:Produce:Vegetables:Herbs:Dried Herbs None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_animal_housing/">food-farm environment➞animal_housing</a>  <sub>0..*</sub><ul>
-<li>Description: Description of the housing system of the livestock. This field accepts terms listed under terrestrial management housing system (http://opendata.inra.fr/EOL/EOL_0001605).</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: pen rearing system [EOL:0001636] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_cult_isol_date/">food-farm environment➞cult_isol_date</a>  <sub>0..1</sub><ul>
-<li>Description: A culture isolation date is a date-time entity marking the end of a process in which a sample yields a positive result for the target microbial analyte(s) in the form of an isolated colony or colonies.</li>
-<li>Range: <a href="../types/Date/">Date</a></li>
-<li>Example: 2018-05-11T10:00:00+01:00 None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_food_clean_proc/">food-farm environment➞food_clean_proc</a>  <sub>0..*</sub><ul>
-<li>Description: The process of cleaning food to separate other environmental materials from the food source. Multiple terms can be separated by pipes.</li>
-<li>Range: <a href="../food_clean_proc_enum/">food_clean_proc_enum</a></li>
-<li>Example: rinsed with water|scrubbed with brush None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_misc_param/">food-farm environment➞misc_param</a>  <sub>0..*</sub><ul>
-<li>Description: Any other measurement performed or parameter collected, that is not listed here</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: Bicarbonate ion concentration;2075 micromole per kilogram None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_samp_name/">food-farm environment➞samp_name</a>  <sub>1..1</sub><ul>
-<li>Description: A local identifier or name that for the material sample used for extracting nucleic acids, and subsequent sequencing. It can refer either to the original material collected or to any derived sub-samples. It can have any format, but we suggest that you make it concise, unique and consistent within your lab, and as informative as possible. INSDC requires every sample name from a single Submitter to be unique. Use of a globally unique identifier for the field source_mat_id is recommended in addition to sample_name.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: ISDsoil1 None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_project_name/">food-farm environment➞project_name</a>  <sub>1..1</sub><ul>
-<li>Description: Name of the project within which the sequencing was organized</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: Forest soil metagenome None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_seq_meth/">food-farm environment➞seq_meth</a>  <sub>1..1</sub><ul>
-<li>Description: Sequencing machine used. Where possible the term should be taken from the OBI list of DNA sequencers (http://purl.obolibrary.org/obo/OBI_0400103).</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: 454 Genome Sequencer FLX [OBI:0000702] None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_samp_size/">food-farm environment➞samp_size</a>  <sub>0..1</sub><ul>
-<li>Description: The total amount or size (volume (ml), mass (g) or area (m2) ) of sample collected.</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 5 liter None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_nucl_acid_ext/">food-farm environment➞nucl_acid_ext</a>  <sub>0..1</sub><ul>
-<li>Description: A link to a literature reference, electronic resource or a standard operating procedure (SOP), that describes the material separation to recover the nucleic acid fraction from a sample</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: https://mobio.com/media/wysiwyg/pdfs/protocols/12888.pdf None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_samp_vol_we_dna_ext/">food-farm environment➞samp_vol_we_dna_ext</a>  <sub>0..1</sub><ul>
-<li>Description: Volume (ml) or mass (g) of total collected sample processed for DNA extraction. Note: total sample collected should be entered under the term Sample Size (MIXS:0000001).</li>
-<li>Range: <a href="../QuantityValue/">QuantityValue</a></li>
-<li>Example: 1500 milliliter None</li>
-</ul>
-</li>
-<li><a href="../food_farm_environment_host_disease_stat/">food-farm environment➞host_disease_stat</a>  <sub>0..1</sub><ul>
-<li>Description: List of diseases with which the host has been diagnosed; can include multiple diagnoses. The value of the field depends on host; for humans the terms should be chosen from the DO (Human Disease Ontology) at https://www.disease-ontology.org, non-human host diseases are free text</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: rabies [DOID:11260] None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mims">Mixed in from MIMS:</h3>
-<ul>
-<li><a href="../MIMS_samp_taxon_id/">MIMS➞samp_taxon_id</a>  <sub>1..1</sub><ul>
-<li>Description: NCBI taxon id of the sample.  Maybe be a single taxon or mixed taxa sample. Use 'synthetic metagenome’ for mock community/positive controls, or 'blank sample' for negative controls.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: Gut Metagenome [NCBI:txid749906] None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mims_1">Mixed in from MIMS:</h3>
-<ul>
-<li><a href="../MIMS_experimental_factor/">MIMS➞experimental_factor</a>  <sub>0..1</sub><ul>
-<li>Description: Experimental factors are essentially the variable aspects of an experiment design which can be used to describe an experiment, or set of experiments, in an increasingly detailed manner. This field accepts ontology terms from Experimental Factor Ontology (EFO) and/or Ontology for Biomedical Investigations (OBI). For a browser of EFO (v 2.95) terms, please see http://purl.bioontology.org/ontology/EFO; for a browser of OBI (v 2018-02-12) terms please see http://purl.bioontology.org/ontology/OBI</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: time series design [EFO:EFO_0001779] None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mims_2">Mixed in from MIMS:</h3>
-<ul>
-<li><a href="../MIMS_neg_cont_type/">MIMS➞neg_cont_type</a>  <sub>0..1</sub><ul>
-<li>Description: The substance or equipment used as a negative control in an investigation</li>
-<li>Range: <a href="../neg_cont_type_enum/">neg_cont_type_enum</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mims_3">Mixed in from MIMS:</h3>
-<ul>
-<li><a href="../MIMS_pos_cont_type/">MIMS➞pos_cont_type</a>  <sub>0..1</sub><ul>
-<li>Description: The substance, mixture, product, or apparatus used to verify that a process which is part of an investigation delivers a true positive.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example:  None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mims_4">Mixed in from MIMS:</h3>
-<ul>
-<li><a href="../MIMS_ref_biomaterial/">MIMS➞ref_biomaterial</a>  <sub>0..1</sub><ul>
-<li>Description: Primary publication if isolated before genome publication; otherwise, primary genome report.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: doi:10.1016/j.syapm.2018.01.009 None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mims_5">Mixed in from MIMS:</h3>
-<ul>
-<li><a href="../MIMS_source_mat_id/">MIMS➞source_mat_id</a>  <sub>0..1</sub><ul>
-<li>Description: A unique identifier assigned to a material sample (as defined by http://rs.tdwg.org/dwc/terms/materialSampleID, and as opposed to a particular digital record of a material sample) used for extracting nucleic acids, and subsequent sequencing. The identifier can refer either to the original material collected or to any derived sub-samples. The INSDC qualifiers /specimen_voucher, /bio_material, or /culture_collection may or may not share the same value as the source_mat_id field. For instance, the /specimen_voucher qualifier and source_mat_id may both contain 'UAM:Herps:14' , referring to both the specimen voucher and sampled tissue with the same identifier. However, the /culture_collection qualifier may refer to a value from an initial culture (e.g. ATCC:11775) while source_mat_id would refer to an identifier from some derived culture from which the nucleic acids were extracted (e.g. xatc123 or ark:/2154/R2).</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: MPI012345 None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mims_6">Mixed in from MIMS:</h3>
-<ul>
-<li><a href="../MIMS_rel_to_oxygen/">MIMS➞rel_to_oxygen</a>  <sub>0..1</sub><ul>
-<li>Description: Is this organism an aerobe, anaerobe? Please note that aerobic and anaerobic are valid descriptors for microbial environments</li>
-<li>Range: <a href="../rel_to_oxygen_enum/">rel_to_oxygen_enum</a></li>
-<li>Example: aerobe None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mims_7">Mixed in from MIMS:</h3>
-<ul>
-<li><a href="../MIMS_samp_collec_device/">MIMS➞samp_collec_device</a>  <sub>0..1</sub><ul>
-<li>Description: The device used to collect an environmental sample. This field accepts terms listed under environmental sampling device (http://purl.obolibrary.org/obo/ENVO). This field also accepts terms listed under specimen collection device (http://purl.obolibrary.org/obo/GENEPIO_0002094).</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: swab, biopsy, niskin bottle, push core, drag swab [GENEPIO:0002713] None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mims_8">Mixed in from MIMS:</h3>
-<ul>
-<li><a href="../MIMS_samp_collec_method/">MIMS➞samp_collec_method</a>  <sub>0..1</sub><ul>
-<li>Description: The method employed for collecting the sample.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: swabbing None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mims_9">Mixed in from MIMS:</h3>
-<ul>
-<li><a href="../MIMS_samp_mat_process/">MIMS➞samp_mat_process</a>  <sub>0..1</sub><ul>
-<li>Description: A brief description of any processing applied to the sample during or after retrieving the sample from environment, or a link to the relevant protocol(s) performed.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: filtering of seawater, storing samples in ethanol None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mims_10">Mixed in from MIMS:</h3>
-<ul>
-<li><a href="../MIMS_size_frac/">MIMS➞size_frac</a>  <sub>0..1</sub><ul>
-<li>Description: Filtering pore size used in sample preparation</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: 0-0.22 micrometer None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mims_11">Mixed in from MIMS:</h3>
-<ul>
-<li><a href="../MIMS_nucl_acid_amp/">MIMS➞nucl_acid_amp</a>  <sub>0..1</sub><ul>
-<li>Description: A link to a literature reference, electronic resource or a standard operating procedure (SOP), that describes the enzymatic amplification (PCR, TMA, NASBA) of specific nucleic acids</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: https://phylogenomics.me/protocols/16s-pcr-protocol/ None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mims_12">Mixed in from MIMS:</h3>
-<ul>
-<li><a href="../MIMS_lib_size/">MIMS➞lib_size</a>  <sub>0..1</sub><ul>
-<li>Description: Total number of clones in the library prepared for the project</li>
-<li>Range: <a href="../types/Integer/">Integer</a></li>
-<li>Example: 50 None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mims_13">Mixed in from MIMS:</h3>
-<ul>
-<li><a href="../MIMS_lib_reads_seqd/">MIMS➞lib_reads_seqd</a>  <sub>0..1</sub><ul>
-<li>Description: Total number of clones sequenced from the library</li>
-<li>Range: <a href="../types/Integer/">Integer</a></li>
-<li>Example: 20 None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mims_14">Mixed in from MIMS:</h3>
-<ul>
-<li><a href="../MIMS_lib_layout/">MIMS➞lib_layout</a>  <sub>0..1</sub><ul>
-<li>Description: Specify whether to expect single, paired, or other configuration of reads</li>
-<li>Range: <a href="../lib_layout_enum/">lib_layout_enum</a></li>
-<li>Example: paired None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mims_15">Mixed in from MIMS:</h3>
-<ul>
-<li><a href="../MIMS_lib_vector/">MIMS➞lib_vector</a>  <sub>0..1</sub><ul>
-<li>Description: Cloning vector type(s) used in construction of libraries</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: Bacteriophage P1 None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mims_16">Mixed in from MIMS:</h3>
-<ul>
-<li><a href="../MIMS_lib_screen/">MIMS➞lib_screen</a>  <sub>0..1</sub><ul>
-<li>Description: Specific enrichment or screening methods applied before and/or after creating libraries</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: enriched, screened, normalized None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mims_17">Mixed in from MIMS:</h3>
-<ul>
-<li><a href="../MIMS_mid/">MIMS➞mid</a>  <sub>0..1</sub><ul>
-<li>Description: Molecular barcodes, called Multiplex Identifiers (MIDs), that are used to specifically tag unique samples in a sequencing run. Sequence should be reported in uppercase letters</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: GTGAATAT None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mims_18">Mixed in from MIMS:</h3>
-<ul>
-<li><a href="../MIMS_adapters/">MIMS➞adapters</a>  <sub>0..1</sub><ul>
-<li>Description: Adapters provide priming sequences for both amplification and sequencing of the sample-library fragments. Both adapters should be reported; in uppercase letters</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: AATGATACGGCGACCACCGAGATCTACACGCT;CAAGCAGAAGACGGCATACGAGAT None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mims_19">Mixed in from MIMS:</h3>
-<ul>
-<li><a href="../MIMS_assembly_qual/">MIMS➞assembly_qual</a>  <sub>0..1</sub><ul>
-<li>Description: The assembly quality category is based on sets of criteria outlined for each assembly quality category. For MISAG/MIMAG; Finished: Single, validated, contiguous sequence per replicon without gaps or ambiguities with a consensus error rate equivalent to Q50 or better. High Quality Draft:Multiple fragments where gaps span repetitive regions. Presence of the 23S, 16S and 5S rRNA genes and at least 18 tRNAs. Medium Quality Draft:Many fragments with little to no review of assembly other than reporting of standard assembly statistics. Low Quality Draft:Many fragments with little to no review of assembly other than reporting of standard assembly statistics. Assembly statistics include, but are not limited to total assembly size, number of contigs, contig N50/L50, and maximum contig length. For MIUVIG; Finished: Single, validated, contiguous sequence per replicon without gaps or ambiguities, with extensive manual review and editing to annotate putative gene functions and transcriptional units. High-quality draft genome: One or multiple fragments, totaling ≥ 90% of the expected genome or replicon sequence or predicted complete. Genome fragment(s): One or multiple fragments, totalling &lt; 90% of the expected genome or replicon sequence, or for which no genome size could be estimated</li>
-<li>Range: <a href="../assembly_qual_enum/">assembly_qual_enum</a></li>
-<li>Example: High-quality draft genome None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mims_20">Mixed in from MIMS:</h3>
-<ul>
-<li><a href="../MIMS_assembly_name/">MIMS➞assembly_name</a>  <sub>0..1</sub><ul>
-<li>Description: Name/version of the assembly provided by the submitter that is used in the genome browsers and in the community</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: HuRef, JCVI_ISG_i3_1.0 None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mims_21">Mixed in from MIMS:</h3>
-<ul>
-<li><a href="../MIMS_assembly_software/">MIMS➞assembly_software</a>  <sub>0..1</sub><ul>
-<li>Description: Tool(s) used for assembly, including version number and parameters</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: metaSPAdes;3.11.0;kmer set 21,33,55,77,99,121, default parameters otherwise None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mims_22">Mixed in from MIMS:</h3>
-<ul>
-<li><a href="../MIMS_annot/">MIMS➞annot</a>  <sub>0..1</sub><ul>
-<li>Description: Tool used for annotation, or for cases where annotation was provided by a community jamboree or model organism database rather than by a specific submitter</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: prokka None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mims_23">Mixed in from MIMS:</h3>
-<ul>
-<li><a href="../MIMS_number_contig/">MIMS➞number_contig</a>  <sub>0..1</sub><ul>
-<li>Description: Total number of contigs in the cleaned/submitted assembly that makes up a given genome, SAG, MAG, or UViG</li>
-<li>Range: <a href="../types/Integer/">Integer</a></li>
-<li>Example: 40 None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mims_24">Mixed in from MIMS:</h3>
-<ul>
-<li><a href="../MIMS_feat_pred/">MIMS➞feat_pred</a>  <sub>0..1</sub><ul>
-<li>Description: Method used to predict UViGs features such as ORFs, integration site, etc.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: Prodigal;2.6.3;default parameters None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mims_25">Mixed in from MIMS:</h3>
-<ul>
-<li><a href="../MIMS_ref_db/">MIMS➞ref_db</a>  <sub>0..1</sub><ul>
-<li>Description: List of database(s) used for ORF annotation, along with version number and reference to website or publication</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: pVOGs;5;http://dmk-brain.ecn.uiowa.edu/pVOGs/ Grazziotin et al. 2017 doi:10.1093/nar/gkw975 None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mims_26">Mixed in from MIMS:</h3>
-<ul>
-<li><a href="../MIMS_sim_search_meth/">MIMS➞sim_search_meth</a>  <sub>0..1</sub><ul>
-<li>Description: Tool used to compare ORFs with database, along with version and cutoffs used</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: HMMER3;3.1b2;hmmsearch, cutoff of 50 on score None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mims_27">Mixed in from MIMS:</h3>
-<ul>
-<li><a href="../MIMS_tax_class/">MIMS➞tax_class</a>  <sub>0..1</sub><ul>
-<li>Description: Method used for taxonomic classification, along with reference database used, classification rank, and thresholds used to classify new genomes</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: vConTACT vContact2 (references from NCBI RefSeq v83, genus rank classification, default parameters) None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mims_28">Mixed in from MIMS:</h3>
-<ul>
-<li><a href="../MIMS_associated_resource/">MIMS➞associated resource</a>  <sub>0..1</sub><ul>
-<li>Description: A related resource that is referenced, cited, or otherwise associated to the sequence.</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: http://www.earthmicrobiome.org/ None</li>
-</ul>
-</li>
-</ul>
-<h3 id="mixed-in-from-mims_29">Mixed in from MIMS:</h3>
-<ul>
-<li><a href="../MIMS_sop/">MIMS➞sop</a>  <sub>0..1</sub><ul>
-<li>Description: Standard operating procedures used in assembly and/or annotation of genomes, metagenomes or environmental sequences</li>
-<li>Range: <a href="../types/String/">String</a></li>
-<li>Example: http://press.igsb.anl.gov/earthmicrobiome/protocols-and-standards/its/ None</li>
-</ul>
-</li>
-</ul></div>
+<li><a href="../Food-farmEnvironment/">Food-farmEnvironment</a><ul>
+<li><strong>Food-farmEnvironmentMIMS</strong> [ MIMS]</li>
+</ul>
+</li>
+</ul>
+<h2 id="slots">Slots</h2>
+<table>
+<thead>
+<tr>
+<th>MIxS ID</th>
+<th>Name</th>
+<th>Multiplicity</th>
+<th>Description</th>
+<th>Pattern</th>
+<th>Info</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MIXS:0001107</td>
+<td><a href="../samp_name/">samp_name</a></td>
+<td>1..1</td>
+<td>A local identifier or name that for the material sample used for extracting nucleic acids, and subsequent sequencing. It can refer either to the original material collected or to any derived sub-samples. It can have any format, but we suggest that you make it concise, unique and consistent within your lab, and as informative as possible. INSDC requires every sample name from a single Submitter to be unique. Use of a globally unique identifier for the field source_mat_id is recommended in addition to sample_name.</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001320</td>
+<td><a href="../samp_taxon_id/">samp_taxon_id</a></td>
+<td>1..1</td>
+<td>NCBI taxon id of the sample.  Maybe be a single taxon or mixed taxa sample. Use 'synthetic metagenome’ for mock community/positive controls, or 'blank sample' for negative controls.</td>
+<td>{text} [NCBI:txid]</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000092</td>
+<td><a href="../project_name/">project_name</a></td>
+<td>1..1</td>
+<td>Name of the project within which the sequencing was organized</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000008</td>
+<td><a href="../experimental_factor/">experimental_factor</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>Experimental factors are essentially the variable aspects of an experiment design which can be used to describe an experiment, or set of experiments, in an increasingly detailed manner. This field accepts ontology terms from Experimental Factor Ontology (EFO) and/or Ontology for Biomedical Investigations (OBI). For a browser of EFO (v 2.95) terms, please see http://purl.bioontology.org/ontology/EFO; for a browser of OBI (v 2018-02-12) terms please see http://purl.bioontology.org/ontology/OBI</td>
+<td>{termLabel} {[termID]}</td>
+<td>{text}</td>
+</tr>
+<tr>
+<td>MIXS:0000009</td>
+<td><a href="../lat_lon/">lat_lon</a></td>
+<td>1..1</td>
+<td>The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system</td>
+<td>{float} {float}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000010</td>
+<td><a href="../geo_loc_name/">geo_loc_name</a></td>
+<td>1..1</td>
+<td>The geographical origin of the sample as defined by the country or sea name followed by specific region name. Country or sea names should be chosen from the INSDC country list (http://insdc.org/country.html), or the GAZ ontology (http://purl.bioontology.org/ontology/GAZ)</td>
+<td>{term}: {term}, {text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000011</td>
+<td><a href="../collection_date/">collection_date</a></td>
+<td>1..1</td>
+<td>The time of sampling, either as an instance (single point in time) or interval. In case no exact time is available, the date/time can be right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001321</td>
+<td><a href="../neg_cont_type/">neg_cont_type</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>The substance or equipment used as a negative control in an investigation</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001322</td>
+<td><a href="../pos_cont_type/">pos_cont_type</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>The substance, mixture, product, or apparatus used to verify that a process which is part of an investigation delivers a true positive.</td>
+<td>{term} or {text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000012</td>
+<td><a href="../env_broad_scale/">env_broad_scale</a></td>
+<td>1..1</td>
+<td>Report the major environmental system the sample or specimen came from. The system(s) identified should have a coarse spatial grain, to provide the general environmental context of where the sampling was done (e.g. in the desert or a rainforest). We recommend using subclasses of EnvO’s biome class:  http://purl.obolibrary.org/obo/ENVO_00000428. EnvO documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS</td>
+<td>{termLabel} {[termID]}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000013</td>
+<td><a href="../env_local_scale/">env_local_scale</a></td>
+<td>1..1</td>
+<td>Report the entity or entities which are in the sample or specimen’s local vicinity and which you believe have significant causal influences on your sample or specimen. We recommend using EnvO terms which are of smaller spatial grain than your entry for env_broad_scale. Terms, such as anatomical sites, from other OBO Library ontologies which interoperate with EnvO (e.g. UBERON) are accepted in this field. EnvO documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS.</td>
+<td>{termLabel} {[termID]}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000014</td>
+<td><a href="../env_medium/">env_medium</a></td>
+<td>1..1</td>
+<td>Report the environmental material(s) immediately surrounding the sample or specimen at the time of sampling. We recommend using subclasses of 'environmental material' (http://purl.obolibrary.org/obo/ENVO_00010483). EnvO documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS . Terms from other OBO ontologies are permissible as long as they reference mass/volume nouns (e.g. air, water, blood) and not discrete, countable entities (e.g. a tree, a leaf, a table top).</td>
+<td>{termLabel} {[termID]}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000025</td>
+<td><a href="../ref_biomaterial/">ref_biomaterial</a></td>
+<td>0..1</td>
+<td>Primary publication if isolated before genome publication; otherwise, primary genome report.</td>
+<td>{PMID}</td>
+<td>{DOI}</td>
+</tr>
+<tr>
+<td>MIXS:0000026</td>
+<td><a href="../source_mat_id/">source_mat_id</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>A unique identifier assigned to a material sample (as defined by http://rs.tdwg.org/dwc/terms/materialSampleID, and as opposed to a particular digital record of a material sample) used for extracting nucleic acids, and subsequent sequencing. The identifier can refer either to the original material collected or to any derived sub-samples. The INSDC qualifiers /specimen_voucher, /bio_material, or /culture_collection may or may not share the same value as the source_mat_id field. For instance, the /specimen_voucher qualifier and source_mat_id may both contain 'UAM:Herps:14' , referring to both the specimen voucher and sampled tissue with the same identifier. However, the /culture_collection qualifier may refer to a value from an initial culture (e.g. ATCC:11775) while source_mat_id would refer to an identifier from some derived culture from which the nucleic acids were extracted (e.g. xatc123 or ark:/2154/R2).</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000015</td>
+<td><a href="../rel_to_oxygen/">rel_to_oxygen</a></td>
+<td>0..1</td>
+<td>Is this organism an aerobe, anaerobe? Please note that aerobic and anaerobic are valid descriptors for microbial environments</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000002</td>
+<td><a href="../samp_collec_device/">samp_collec_device</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>The device used to collect an environmental sample. This field accepts terms listed under environmental sampling device (http://purl.obolibrary.org/obo/ENVO). This field also accepts terms listed under specimen collection device (http://purl.obolibrary.org/obo/GENEPIO_0002094).</td>
+<td>{termLabel} {[termID]}</td>
+<td>{text}</td>
+</tr>
+<tr>
+<td>MIXS:0001225</td>
+<td><a href="../samp_collec_method/">samp_collec_method</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>The method employed for collecting the sample.</td>
+<td>{PMID}</td>
+<td>{DOI}</td>
+</tr>
+<tr>
+<td>MIXS:0000016</td>
+<td><a href="../samp_mat_process/">samp_mat_process</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>A brief description of any processing applied to the sample during or after retrieving the sample from environment, or a link to the relevant protocol(s) performed.</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000017</td>
+<td><a href="../size_frac/">size_frac</a></td>
+<td>0..1</td>
+<td>Filtering pore size used in sample preparation</td>
+<td>{float}-{float} {unit}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000001</td>
+<td><a href="../samp_size/">samp_size</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>The total amount or size (volume (ml), mass (g) or area (m2) ) of sample collected.</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000111</td>
+<td><a href="../samp_vol_we_dna_ext/">samp_vol_we_dna_ext</a></td>
+<td>0..1</td>
+<td>Volume (ml) or mass (g) of total collected sample processed for DNA extraction. Note: total sample collected should be entered under the term Sample Size (MIXS:0000001).</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000037</td>
+<td><a href="../nucl_acid_ext/">nucl_acid_ext</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>A link to a literature reference, electronic resource or a standard operating procedure (SOP), that describes the material separation to recover the nucleic acid fraction from a sample</td>
+<td>{PMID}</td>
+<td>{DOI}</td>
+</tr>
+<tr>
+<td>MIXS:0000038</td>
+<td><a href="../nucl_acid_amp/">nucl_acid_amp</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>A link to a literature reference, electronic resource or a standard operating procedure (SOP), that describes the enzymatic amplification (PCR, TMA, NASBA) of specific nucleic acids</td>
+<td>{PMID}</td>
+<td>{DOI}</td>
+</tr>
+<tr>
+<td>MIXS:0000039</td>
+<td><a href="../lib_size/">lib_size</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>Total number of clones in the library prepared for the project</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000040</td>
+<td><a href="../lib_reads_seqd/">lib_reads_seqd</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>Total number of clones sequenced from the library</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000041</td>
+<td><a href="../lib_layout/">lib_layout</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>Specify whether to expect single, paired, or other configuration of reads</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000042</td>
+<td><a href="../lib_vector/">lib_vector</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>Cloning vector type(s) used in construction of libraries</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000043</td>
+<td><a href="../lib_screen/">lib_screen</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>Specific enrichment or screening methods applied before and/or after creating libraries</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000047</td>
+<td><a href="../mid/">mid</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>Molecular barcodes, called Multiplex Identifiers (MIDs), that are used to specifically tag unique samples in a sequencing run. Sequence should be reported in uppercase letters</td>
+<td>{dna}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000048</td>
+<td><a href="../adapters/">adapters</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>Adapters provide priming sequences for both amplification and sequencing of the sample-library fragments. Both adapters should be reported; in uppercase letters</td>
+<td>{dna};{dna}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000050</td>
+<td><a href="../seq_meth/">seq_meth</a></td>
+<td>1..1</td>
+<td>Sequencing machine used. Where possible the term should be taken from the OBI list of DNA sequencers (http://purl.obolibrary.org/obo/OBI_0400103).</td>
+<td>{termLabel} {[termID]}</td>
+<td>{text}</td>
+</tr>
+<tr>
+<td>MIXS:0000056</td>
+<td><a href="../assembly_qual/">assembly_qual</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>The assembly quality category is based on sets of criteria outlined for each assembly quality category. For MISAG/MIMAG; Finished: Single, validated, contiguous sequence per replicon without gaps or ambiguities with a consensus error rate equivalent to Q50 or better. High Quality Draft:Multiple fragments where gaps span repetitive regions. Presence of the 23S, 16S and 5S rRNA genes and at least 18 tRNAs. Medium Quality Draft:Many fragments with little to no review of assembly other than reporting of standard assembly statistics. Low Quality Draft:Many fragments with little to no review of assembly other than reporting of standard assembly statistics. Assembly statistics include, but are not limited to total assembly size, number of contigs, contig N50/L50, and maximum contig length. For MIUVIG; Finished: Single, validated, contiguous sequence per replicon without gaps or ambiguities, with extensive manual review and editing to annotate putative gene functions and transcriptional units. High-quality draft genome: One or multiple fragments, totaling ≥ 90% of the expected genome or replicon sequence or predicted complete. Genome fragment(s): One or multiple fragments, totalling &lt; 90% of the expected genome or replicon sequence, or for which no genome size could be estimated</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000057</td>
+<td><a href="../assembly_name/">assembly_name</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>Name/version of the assembly provided by the submitter that is used in the genome browsers and in the community</td>
+<td>{text} {text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000058</td>
+<td><a href="../assembly_software/">assembly_software</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>Tool(s) used for assembly, including version number and parameters</td>
+<td>{software};{version};{parameters}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000059</td>
+<td><a href="../annot/">annot</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>Tool used for annotation, or for cases where annotation was provided by a community jamboree or model organism database rather than by a specific submitter</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000060</td>
+<td><a href="../number_contig/">number_contig</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>Total number of contigs in the cleaned/submitted assembly that makes up a given genome, SAG, MAG, or UViG</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000061</td>
+<td><a href="../feat_pred/">feat_pred</a></td>
+<td>0..1</td>
+<td>Method used to predict UViGs features such as ORFs, integration site, etc.</td>
+<td>{software};{version};{parameters}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000062</td>
+<td><a href="../ref_db/">ref_db</a></td>
+<td>0..1</td>
+<td>List of database(s) used for ORF annotation, along with version number and reference to website or publication</td>
+<td>{database};{version};{reference}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000063</td>
+<td><a href="../sim_search_meth/">sim_search_meth</a></td>
+<td>0..1</td>
+<td>Tool used to compare ORFs with database, along with version and cutoffs used</td>
+<td>{software};{version};{parameters}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000064</td>
+<td><a href="../tax_class/">tax_class</a></td>
+<td>0..1</td>
+<td>Method used for taxonomic classification, along with reference database used, classification rank, and thresholds used to classify new genomes</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000091</td>
+<td><a href="../associated_resource/">associated_resource</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>A related resource that is referenced, cited, or otherwise associated to the sequence.</td>
+<td>{PMID}</td>
+<td>{DOI}</td>
+</tr>
+<tr>
+<td>MIXS:0000090</td>
+<td><a href="../sop/">sop</a></td>
+<td>0..1 <em>recommended</em> RECOMMENDED</td>
+<td>Standard operating procedures used in assembly and/or annotation of genomes, metagenomes or environmental sequences</td>
+<td>{PMID}</td>
+<td>{DOI}</td>
+</tr>
+<tr>
+<td>MIXS:0000018</td>
+<td><a href="../depth/">depth</a></td>
+<td>1..1</td>
+<td>The vertical distance below local surface, e.g. for sediment or soil samples depth is measured from sediment or soil surface, respectively. Depth can be reported as an interval for subsurface samples.</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000094</td>
+<td><a href="../alt/">alt</a></td>
+<td>0..1</td>
+<td>Altitude is a term used to identify heights of objects such as airplanes, space shuttles, rockets, atmospheric balloons and heights of places such as atmospheric layers and clouds. It is used to measure the height of an object which is above the earth's surface. In this context, the altitude measurement is the vertical distance between the earth's surface above sea level and the sampled position in the air</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000093</td>
+<td><a href="../elev/">elev</a></td>
+<td>0..1</td>
+<td>Elevation of the sampling site is its height above a fixed reference point, most commonly the mean sea level. Elevation is mainly used when referring to points on the earth's surface, while altitude is used for points above the surface, such as an aircraft in flight or a spacecraft in orbit.</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000113</td>
+<td><a href="../temp/">temp</a></td>
+<td>0..1</td>
+<td>Temperature of the sample at the time of sampling.</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000002</td>
+<td><a href="../samp_collect_device/">samp_collect_device</a></td>
+<td>0..1</td>
+<td>The device used to collect an environmental sample. This field accepts terms listed under environmental sampling device (http://purl.obolibrary.org/obo/ENVO). This field also accepts terms listed under specimen collection device (http://purl.obolibrary.org/obo/GENEPIO_0002094).</td>
+<td>{termLabel} {[termID]}</td>
+<td>{text}</td>
+</tr>
+<tr>
+<td>MIXS:0000100</td>
+<td><a href="../humidity/">humidity</a></td>
+<td>0..1</td>
+<td>Amount of water vapour in the air, at the time of sampling</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000103</td>
+<td><a href="../organism_count/">organism_count</a></td>
+<td>0..*</td>
+<td>Total cell count of any organism (or group of organisms) per gram, volume or area of sample, should include name of organism followed by count. The method that was used for the enumeration (e.g. qPCR, atp, mpn, etc.) Should also be provided. (example: total prokaryotes; 3.5e7 cells per ml; qpcr)</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001335</td>
+<td><a href="../spikein_count/">spikein_count</a></td>
+<td>0..1</td>
+<td>Total cell count of any organism (or group of organisms) per gram, volume or area of sample, should include name of organism followed by count. The method that was used for the enumeration (e.g. qPCR, atp, mpn, etc.) should also be provided (example: total prokaryotes; 3.5e7 cells per ml; qPCR).</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000110</td>
+<td><a href="../samp_stor_temp/">samp_stor_temp</a></td>
+<td>0..1</td>
+<td>Temperature at which sample was stored, e.g. -80 degree Celsius.</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000112</td>
+<td><a href="../solar_irradiance/">solar_irradiance</a></td>
+<td>0..1</td>
+<td>The amount of solar energy that arrives at a specific area of a surface during a specific time interval</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000114</td>
+<td><a href="../ventilation_rate/">ventilation_rate</a></td>
+<td>0..1</td>
+<td>Ventilation rate of the system in the sampled premises</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000116</td>
+<td><a href="../samp_stor_dur/">samp_stor_dur</a></td>
+<td>0..1</td>
+<td>Duration for which the sample was stored. Indicate the duration for which the sample was stored written in ISO 8601 format.</td>
+<td>{duration}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000118</td>
+<td><a href="../wind_speed/">wind_speed</a></td>
+<td>0..1</td>
+<td>Speed of wind measured at the time of sampling</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000183</td>
+<td><a href="../salinity/">salinity</a></td>
+<td>0..1</td>
+<td>The total concentration of all dissolved salts in a liquid or solid sample. While salinity can be measured by a complete chemical analysis, this method is difficult and time consuming. More often, it is instead derived from the conductivity measurement. This is known as practical salinity. These derivations compare the specific conductance of the sample to a salinity standard such as seawater.</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000315</td>
+<td><a href="../previous_land_use/">previous_land_use</a></td>
+<td>0..1</td>
+<td>Previous land use and dates</td>
+<td>{text};{timestamp}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000318</td>
+<td><a href="../crop_rotation/">crop_rotation</a></td>
+<td>0..1</td>
+<td>Whether or not crop is rotated, and if yes, rotation schedule</td>
+<td>{boolean};{Rn/start_time/end_time/duration}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000334</td>
+<td><a href="../soil_type_meth/">soil_type_meth</a></td>
+<td>0..1</td>
+<td>Reference or method used in determining soil series name or other lower-level classification</td>
+<td>{PMID}</td>
+<td>{DOI}</td>
+</tr>
+<tr>
+<td>MIXS:0000337</td>
+<td><a href="../tot_org_c_meth/">tot_org_c_meth</a></td>
+<td>0..1</td>
+<td>Reference or method used in determining total organic carbon</td>
+<td>{PMID}</td>
+<td>{DOI}</td>
+</tr>
+<tr>
+<td>MIXS:0000338</td>
+<td><a href="../tot_nitro_cont_meth/">tot_nitro_cont_meth</a></td>
+<td>0..1</td>
+<td>Reference or method used in determining the total nitrogen</td>
+<td>{PMID}</td>
+<td>{DOI}</td>
+</tr>
+<tr>
+<td>MIXS:0000341</td>
+<td><a href="../salinity_meth/">salinity_meth</a></td>
+<td>0..1</td>
+<td>Reference or method used in determining salinity</td>
+<td>{PMID}</td>
+<td>{DOI}</td>
+</tr>
+<tr>
+<td>MIXS:0000255</td>
+<td><a href="../host_age/">host_age</a></td>
+<td>0..1</td>
+<td>Age of host at the time of sampling; relevant scale depends on species and study, e.g. Could be seconds for amoebae or centuries for trees</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000257</td>
+<td><a href="../host_dry_mass/">host_dry_mass</a></td>
+<td>0..1</td>
+<td>Measurement of dry mass</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000264</td>
+<td><a href="../host_height/">host_height</a></td>
+<td>0..1</td>
+<td>The height of subject</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000256</td>
+<td><a href="../host_length/">host_length</a></td>
+<td>0..1</td>
+<td>The length of subject</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000263</td>
+<td><a href="../host_tot_mass/">host_tot_mass</a></td>
+<td>0..1</td>
+<td>Total mass of the host at collection, the unit depends on host</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000577</td>
+<td><a href="../root_med_carbon/">root_med_carbon</a></td>
+<td>0..1</td>
+<td>Source of organic carbon in the culture rooting medium; e.g. sucrose.</td>
+<td>{text};{float} {unit}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000578</td>
+<td><a href="../root_med_macronutr/">root_med_macronutr</a></td>
+<td>0..1</td>
+<td>Measurement of the culture rooting medium macronutrients (N,P, K, Ca, Mg, S); e.g. KH2PO4 (170¬†mg/L).</td>
+<td>{text};{float} {unit}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000579</td>
+<td><a href="../root_med_micronutr/">root_med_micronutr</a></td>
+<td>0..1</td>
+<td>Measurement of the culture rooting medium micronutrients (Fe, Mn, Zn, B, Cu, Mo); e.g. H3BO3 (6.2¬†mg/L).</td>
+<td>{text};{float} {unit}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000643</td>
+<td><a href="../season_temp/">season_temp</a></td>
+<td>0..1</td>
+<td>Mean seasonal temperature</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000645</td>
+<td><a href="../season_precpt/">season_precpt</a></td>
+<td>0..1</td>
+<td>The average of all seasonal precipitation values known, or an estimated equivalent value derived by such methods as regional indexes or Isohyetal maps.</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000533</td>
+<td><a href="../tot_org_carb/">tot_org_carb</a></td>
+<td>0..1</td>
+<td>Definition for soil: total organic carbon content of the soil, definition otherwise: total organic carbon content</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000530</td>
+<td><a href="../tot_nitro_content/">tot_nitro_content</a></td>
+<td>0..1</td>
+<td>Total nitrogen content of the sample</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000692</td>
+<td><a href="../conduc/">conduc</a></td>
+<td>0..1</td>
+<td>Electrical conductivity of water</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000191</td>
+<td><a href="../turbidity/">turbidity</a></td>
+<td>0..1</td>
+<td>Measure of the amount of cloudiness or haziness in water caused by individual particles</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000735</td>
+<td><a href="../size_frac_low/">size_frac_low</a></td>
+<td>0..1</td>
+<td>Refers to the mesh/pore size used to pre-filter/pre-sort the sample. Materials larger than the size threshold are excluded from the sample</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000736</td>
+<td><a href="../size_frac_up/">size_frac_up</a></td>
+<td>0..1</td>
+<td>Refers to the mesh/pore size used to retain the sample. Materials smaller than the size threshold are excluded from the sample</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000756</td>
+<td><a href="../ventilation_type/">ventilation_type</a></td>
+<td>0..1</td>
+<td>Ventilation system used in the sampled premises</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000757</td>
+<td><a href="../wind_direction/">wind_direction</a></td>
+<td>0..1</td>
+<td>Wind direction is the direction from which a wind originates</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000859</td>
+<td><a href="../genetic_mod/">genetic_mod</a></td>
+<td>0..1</td>
+<td>Genetic modifications of the genome of an organism, which may occur naturally by spontaneous mutation, or be introduced by some experimental means, e.g. specification of a transgene or the gene knocked-out or details of transient transfection</td>
+<td>{PMID}</td>
+<td>{DOI}</td>
+</tr>
+<tr>
+<td>MIXS:0000874</td>
+<td><a href="../host_phenotype/">host_phenotype</a></td>
+<td>0..1</td>
+<td>Phenotype of human or other host. For phenotypic quality ontology (pato) (v 2018-03-27) terms, please see http://purl.bioontology.org/ontology/pato. For Human Phenotype Ontology (HP) (v 2018-06-13) please see http://purl.bioontology.org/ontology/HP</td>
+<td>{termLabel} {[termID]}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001001</td>
+<td><a href="../ph/">ph</a></td>
+<td>0..1</td>
+<td>Ph measurement of the sample, or liquid portion of sample, or aqueous phase of the fluid</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000247</td>
+<td><a href="../ances_data/">ances_data</a></td>
+<td>0..1</td>
+<td>Information about either pedigree or other ancestral information description (e.g. parental variety in case of mutant or selection), e.g. A/3*B (meaning [(A x B) x B] x B)</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001038</td>
+<td><a href="../biotic_regm/">biotic_regm</a></td>
+<td>1..1</td>
+<td>Information about treatment(s) involving use of biotic factors, such as bacteria, viruses or fungi.</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000751</td>
+<td><a href="../chem_administration/">chem_administration</a></td>
+<td>1..*</td>
+<td>List of chemical compounds administered to the host or site where sampling occurred, and when (e.g. Antibiotics, n fertilizer, air filter); can include multiple compounds. For chemical entities of biological interest ontology (chebi) (v 163), http://purl.bioontology.org/ontology/chebi</td>
+<td>{termLabel} {[termID]};{timestamp}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001044</td>
+<td><a href="../growth_habit/">growth_habit</a></td>
+<td>0..1</td>
+<td>Characteristic shape, appearance or growth form of a plant species</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000365</td>
+<td><a href="../host_genotype/">host_genotype</a></td>
+<td>0..1</td>
+<td>Observed genotype</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000250</td>
+<td><a href="../host_taxid/">host_taxid</a></td>
+<td>0..1</td>
+<td>NCBI taxon id of the host, e.g. 9606</td>
+<td>{NCBI taxid}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001052</td>
+<td><a href="../mechanical_damage/">mechanical_damage</a></td>
+<td>0..*</td>
+<td>Information about any mechanical damage exerted on the plant; can include multiple damages and sites</td>
+<td>{text};{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000754</td>
+<td><a href="../perturbation/">perturbation</a></td>
+<td>0..*</td>
+<td>Type of perturbation, e.g. chemical administration, physical disturbance, etc., coupled with perturbation regimen including how many times the perturbation was repeated, how long each perturbation lasted, and the start and end time of the entire perturbation period; can include multiple perturbation types</td>
+<td>{text};{Rn/start_time/end_time/duration}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001061</td>
+<td><a href="../root_cond/">root_cond</a></td>
+<td>0..1</td>
+<td>Relevant rooting conditions such as field plot size, sowing density, container dimensions, number of plants per container.</td>
+<td>{PMID}</td>
+<td>{DOI}</td>
+</tr>
+<tr>
+<td>MIXS:0001062</td>
+<td><a href="../root_med_ph/">root_med_ph</a></td>
+<td>0..1</td>
+<td>pH measurement of the culture rooting medium; e.g. 5.5.</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001081</td>
+<td><a href="../tillage/">tillage</a></td>
+<td>0..*</td>
+<td>Note method(s) used for tilling</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001106</td>
+<td><a href="../ph_meth/">ph_meth</a></td>
+<td>0..1</td>
+<td>Reference or method used in determining ph</td>
+<td>{PMID}</td>
+<td>{DOI}</td>
+</tr>
+<tr>
+<td>MIXS:0001108</td>
+<td><a href="../growth_medium/">growth_medium</a></td>
+<td>0..1</td>
+<td>A liquid or gel containing nutrients, salts, and other factors formulated to support the growth of microorganisms, cells, or plants (National Cancer Institute Thesaurus).  The name of the medium used to grow the microorganism.</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000829</td>
+<td><a href="../season/">season</a></td>
+<td>0..1</td>
+<td>The season when sampling occurred. Any of the four periods into which the year is divided by the equinoxes and solstices. This field accepts terms listed under season (http://purl.obolibrary.org/obo/NCIT_C94729).</td>
+<td>{termLabel} {[termID]}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001184</td>
+<td><a href="../food_product_type/">food_product_type</a></td>
+<td>1..*</td>
+<td>A food product type is a class of food products that is differentiated by its food composition (e.g., single- or multi-ingredient), processing and/or consumption characteristics. This does not include brand name products but it may include generic food dish categories. This field accepts terms under food product type (http://purl.obolibrary.org/obo/FOODON:03400361). For terms related to food product for an animal, consult food product for animal (http://purl.obolibrary.org/obo/FOODON_03309997). If the proper descriptor is not listed please use text to describe the food type. Multiple terms can be separated by one or more pipes.</td>
+<td>{text}</td>
+<td>{termLabel} {[termID]}</td>
+</tr>
+<tr>
+<td>MIXS:0000998</td>
+<td><a href="../samp_type/">samp_type</a></td>
+<td>1..1</td>
+<td>The type of material from which the sample was obtained. For the Hydrocarbon package, samples include types like core, rock trimmings, drill cuttings, piping section, coupon, pigging debris, solid deposit, produced fluid, produced water, injected water, swabs, etc. For the Food Package, samples are usually categorized as food, body products or tissues, or environmental material. This field accepts terms listed under environmental specimen (http://purl.obolibrary.org/obo/GENEPIO_0001246).</td>
+<td>{termLabel} {[termID]}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001110</td>
+<td><a href="../farm_water_source/">farm_water_source</a></td>
+<td>0..*</td>
+<td>Source of water used on the farm for irrigation of crops or watering of livestock.</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001111</td>
+<td><a href="../plant_water_method/">plant_water_method</a></td>
+<td>0..1</td>
+<td>Description of the equipment or method used to distribute water to crops. This field accepts termed listed under irrigation process (http://purl.obolibrary.org/obo/AGRO_00000006). Multiple terms can be separated by pipes.</td>
+<td>{termLabel} {[termID]}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000108</td>
+<td><a href="../air_PM_concen/">air_PM_concen</a></td>
+<td>0..*</td>
+<td>Concentration of substances that remain suspended in the air, and comprise mixtures of organic and inorganic substances (PM10 and PM2.5); can report multiple PM's by entering numeric values preceded by name of PM</td>
+<td>{text};{float} {unit}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001113</td>
+<td><a href="../animal_feed_equip/">animal_feed_equip</a></td>
+<td>0..*</td>
+<td>Description of the feeding equipment used for livestock. This field accepts terms listed under feed delivery (http://opendata.inra.fr/EOL/EOL_0001757). Multiple terms can be separated by one or more pipes.</td>
+<td>{termLabel} {[termID]}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001114</td>
+<td><a href="../animal_intrusion/">animal_intrusion</a></td>
+<td>0..*</td>
+<td>Identification of animals intruding on the sample or sample site including invertebrates (such as pests or pollinators) and vertebrates (such as wildlife or domesticated animals). This field accepts terms under organism (http://purl.obolibrary.org/obo/NCIT_C14250). This field also accepts identification numbers from NCBI under https://www.ncbi.nlm.nih.gov/taxonomy. Multiple terms can be separated by pipes.</td>
+<td>{termLabel} {[termID]}</td>
+<td>{integer}</td>
+</tr>
+<tr>
+<td>MIXS:0001115</td>
+<td><a href="../anim_water_method/">anim_water_method</a></td>
+<td>0..*</td>
+<td>Description of the equipment or method used to distribute water to livestock. This field accepts termed listed under water delivery equipment (http://opendata.inra.fr/EOL/EOL_0001653). Multiple terms can be separated by pipes.</td>
+<td>{termLabel} {[termID]}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001116</td>
+<td><a href="../crop_yield/">crop_yield</a></td>
+<td>0..1</td>
+<td>Amount of crop produced per unit or area of land.</td>
+<td>{float}{unit}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001117</td>
+<td><a href="../cult_result/">cult_result</a></td>
+<td>0..1</td>
+<td>Any result of a bacterial culture experiment reported as a binary assessment such as positive/negative, active/inactive.</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001118</td>
+<td><a href="../cult_result_org/">cult_result_org</a></td>
+<td>0..*</td>
+<td>Taxonomic information about the cultured organism(s).</td>
+<td>{termLabel} {[termID]}</td>
+<td>{integer}</td>
+</tr>
+<tr>
+<td>MIXS:0001119</td>
+<td><a href="../cult_target/">cult_target</a></td>
+<td>0..*</td>
+<td>The target microbial analyte in terms of investigation scope. This field accepts terms under organism (http://purl.obolibrary.org/obo/NCIT_C14250). This field also accepts identification numbers from NCBI under https://www.ncbi.nlm.nih.gov/taxonomy.</td>
+<td>{termLabel} {[termID]}</td>
+<td>{integer}</td>
+</tr>
+<tr>
+<td>MIXS:0001120</td>
+<td><a href="../plant_part_maturity/">plant_part_maturity</a></td>
+<td>0..1</td>
+<td>A description of the stage of development of a plant or plant part based on maturity or ripeness. This field accepts terms listed under degree of plant maturity (http://purl.obolibrary.org/obo/FOODON_03530050).</td>
+<td>{term label}{term ID}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001121</td>
+<td><a href="../adjacent_environment/">adjacent_environment</a></td>
+<td>0..*</td>
+<td>Description of the environmental system or features that are adjacent to the sampling site. This field accepts terms under ecosystem (http://purl.obolibrary.org/obo/ENVO_01001110) and human construction (http://purl.obolibrary.org/obo/ENVO_00000070). Multiple terms can be separated by pipes.</td>
+<td>{termLabel}{[termID]}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001122</td>
+<td><a href="../water_source_adjac/">water_source_adjac</a></td>
+<td>0..*</td>
+<td>Description of the environmental features that are adjacent to the farm water source. This field accepts terms under ecosystem (http://purl.obolibrary.org/obo/ENVO_01001110) and human construction (http://purl.obolibrary.org/obo/ENVO_00000070). Multiple terms can be separated by pipes.</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001123</td>
+<td><a href="../farm_equip_shared/">farm_equip_shared</a></td>
+<td>0..*</td>
+<td>List of planting, growing or harvesting equipment shared with other farms. This field accepts terms listed under agricultural implement (http://purl.obolibrary.org/obo/AGRO_00000416). Multiple terms can be separated by pipes.</td>
+<td>{termLabel} {[termID]}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001124</td>
+<td><a href="../farm_equip_san/">farm_equip_san</a></td>
+<td>0..*</td>
+<td>Method used to sanitize growing and harvesting equipment. This can including type and concentration of sanitizing solution.  Multiple terms can be separated by one or more pipes.</td>
+<td>{text} {float} {unit}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001125</td>
+<td><a href="../farm_equip_san_freq/">farm_equip_san_freq</a></td>
+<td>0..1</td>
+<td>The number of times farm equipment is cleaned. Frequency of cleaning might be on a Daily basis, Weekly, Monthly, Quarterly or Annually.</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001126</td>
+<td><a href="../farm_equip/">farm_equip</a></td>
+<td>0..*</td>
+<td>List of equipment used for planting, fertilization, harvesting, irrigation, land levelling, residue management, weeding or transplanting during the growing season.  This field accepts terms listed under agricultural implement (http://purl.obolibrary.org/obo/AGRO_00000416). Multiple terms can be separated by pipes.</td>
+<td>{termLabel} {[termID]}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001127</td>
+<td><a href="../fertilizer_admin/">fertilizer_admin</a></td>
+<td>0..1</td>
+<td>Type of fertilizer or amendment added to the soil or water for the purpose of improving substrate health and quality for plant growth. This field accepts terms listed under agronomic fertilizer (http://purl.obolibrary.org/obo/AGRO_00002062). Multiple terms may apply and can be separated by pipes, listing in reverse chronological order.</td>
+<td>{termLabel} {[termID]}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001128</td>
+<td><a href="../fertilizer_date/">fertilizer_date</a></td>
+<td>0..1</td>
+<td>Date of administration of soil amendment or fertilizer. Multiple terms may apply and can be separated by pipes, listing in reverse chronological order.</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001129</td>
+<td><a href="../animal_group_size/">animal_group_size</a></td>
+<td>0..1</td>
+<td>The number of food animals of the same species that are maintained together as a unit, i.e. a herd or flock.</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001130</td>
+<td><a href="../animal_diet/">animal_diet</a></td>
+<td>0..*</td>
+<td>If the isolate is from a food animal, the type of diet eaten by the food animal.  Please list the main food staple and the setting, if appropriate.  For a list of acceptable animal feed terms or categories, please see http://www.feedipedia.org.  Multiple terms may apply and can be separated by pipes</td>
+<td>Food product for animal covers foods intended for consumption by domesticated animals. Consult http://purl.obolibrary.org/obo/FOODON_03309997. If the proper descriptor is not listed please use text to describe the food type. Multiple terms can be separated by one or more pipes. If the proper descriptor is not listed please use text to describe the food product type.</td>
+<td>{text}</td>
+</tr>
+<tr>
+<td>MIXS:0001131</td>
+<td><a href="../food_contact_surf/">food_contact_surf</a></td>
+<td>0..*</td>
+<td>The specific container or coating materials in direct contact with the food. Multiple values can be assigned.  This field accepts terms listed under food contact surface (http://purl.obolibrary.org/obo/FOODON_03500010).</td>
+<td>{text}</td>
+<td>{termLabel} {[termID]}</td>
+</tr>
+<tr>
+<td>MIXS:0001132</td>
+<td><a href="../food_contain_wrap/">food_contain_wrap</a></td>
+<td>0..1</td>
+<td>Type of container or wrapping defined by the main container material, the container form, and the material of the liner lids or ends. Also type of container or wrapping by form; prefer description by material first, then by form. This field accepts terms listed under food container or wrapping (http://purl.obolibrary.org/obo/FOODON_03490100).</td>
+<td>{text}</td>
+<td>{termLabel} {[termID]}</td>
+</tr>
+<tr>
+<td>MIXS:0001133</td>
+<td><a href="../food_harvest_proc/">food_harvest_proc</a></td>
+<td>0..*</td>
+<td>A harvesting process is a process which takes in some food material from an individual or community of plant or animal organisms in a given context and time, and outputs a precursor or consumable food product. This may include a part of an organism or the whole, and may involve killing the organism.</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001134</td>
+<td><a href="../food_pack_medium/">food_pack_medium</a></td>
+<td>0..*</td>
+<td>The medium in which the food is packed for preservation and handling or the medium surrounding homemade foods, e.g., peaches cooked in sugar syrup. The packing medium may provide a controlled environment for the food. It may also serve to improve palatability and consumer appeal.  This includes edible packing media (e.g. fruit juice), gas other than air (e.g. carbon dioxide), vacuum packed, or packed with aerosol propellant. This field accepts terms under food packing medium (http://purl.obolibrary.org/obo/FOODON_03480020). Multiple terms may apply and can be separated by pipes.</td>
+<td>{text}</td>
+<td>{termLabel} {[termID]}</td>
+</tr>
+<tr>
+<td>MIXS:0001135</td>
+<td><a href="../food_preserv_proc/">food_preserv_proc</a></td>
+<td>0..*</td>
+<td>The methods contributing to the prevention or retardation of microbial, enzymatic or oxidative spoilage and thus to the extension of shelf life. This field accepts terms listed under food preservation process (http://purl.obolibrary.org/obo/FOODON_03470107).</td>
+<td>{text}</td>
+<td>{termLabel} {[termID]}</td>
+</tr>
+<tr>
+<td>MIXS:0001136</td>
+<td><a href="../food_prod_char/">food_prod_char</a></td>
+<td>0..*</td>
+<td>Descriptors of the food production system such as wild caught, free-range, organic, free-range, industrial, dairy, beef.</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>None</td>
+<td><a href="../prod_label_claims/">prod_label_claims</a></td>
+<td>0..*</td>
+<td>Labeling claims containing descriptors such as wild caught, free-range, organic, free-range, industrial, hormone-free, antibiotic free, cage free. Can include more than one term, separated by ";"</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001137</td>
+<td><a href="../food_trav_mode/">food_trav_mode</a></td>
+<td>0..*</td>
+<td>A descriptor for the method of movement of food commodity along the food distribution system.  This field accepts terms listed under travel mode (http://purl.obolibrary.org/obo/GENEPIO_0001064). If the proper descrptor is not listed please use text to describe the mode of travel. Multiple terms can be separated by one or more pipes.</td>
+<td>{termLabel} {[termID]}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001138</td>
+<td><a href="../food_trav_vehic/">food_trav_vehic</a></td>
+<td>0..*</td>
+<td>A descriptor for the mobile machine which is used to transport food commodities along the food distribution system.  This field accepts terms listed under vehicle (http://purl.obolibrary.org/obo/ENVO_01000604). If the proper descrptor is not listed please use text to describe the mode of travel. Multiple terms can be separated by one or more pipes.</td>
+<td>{text}</td>
+<td>{termLabel} {[termID]}</td>
+</tr>
+<tr>
+<td>MIXS:0001139</td>
+<td><a href="../food_source/">food_source</a></td>
+<td>0..1</td>
+<td>Type of plant or animal from which the food product or its major ingredient is derived or a chemical food source [FDA CFSAN 1995].</td>
+<td>{termLabel} {[termID]}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001140</td>
+<td><a href="../food_treat_proc/">food_treat_proc</a></td>
+<td>0..*</td>
+<td>Used to specifically characterize a food product based on the treatment or processes applied to the product or any indexed ingredient. The processes include adding, substituting or removing components or modifying the food or component, e.g., through fermentation. Multiple values can be assigned. This fields accepts terms listed under food treatment process (http://purl.obolibrary.org/obo/FOODON_03460111).</td>
+<td>{text}</td>
+<td>{termLabel} {[termID]}</td>
+</tr>
+<tr>
+<td>MIXS:0001141</td>
+<td><a href="../extr_weather_event/">extr_weather_event</a></td>
+<td>0..*</td>
+<td>Unusual weather events that may have affected microbial populations. Multiple terms can be separated by pipes, listed in reverse chronological order.</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001142</td>
+<td><a href="../date_extr_weath/">date_extr_weath</a></td>
+<td>0..*</td>
+<td>Date of unusual weather events that may have affected microbial populations. Multiple terms can be separated by pipes, listed in reverse chronological order.</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001318</td>
+<td><a href="../host_subspecf_genlin/">host_subspecf_genlin</a></td>
+<td>0..*</td>
+<td>Information about the genetic distinctness of the host organism below the subspecies level e.g., serovar, serotype, biotype, ecotype, variety, cultivar, or any relevant genetic typing schemes like Group I plasmid. Subspecies should not be recorded in this term, but in the NCBI taxonomy. Supply both the lineage name and the lineage rank separated by a colon, e.g., biovar:abc123.</td>
+<td>{rank name}:{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001144</td>
+<td><a href="../intended_consumer/">intended_consumer</a></td>
+<td>0..*</td>
+<td>Food consumer type, human or animal, for which the food product is produced and marketed. This field accepts terms listed under food consumer group (http://purl.obolibrary.org/obo/FOODON_03510136) or NCBI taxid.</td>
+<td>{integer}</td>
+<td>{termLabel} {[termID]}</td>
+</tr>
+<tr>
+<td>MIXS:0001145</td>
+<td><a href="../library_prep_kit/">library_prep_kit</a></td>
+<td>0..1</td>
+<td>Packaged kits (containing adapters, indexes, enzymes, buffers etc.), tailored for specific sequencing workflows, which allow the simplified preparation of sequencing-ready libraries for small genomes, amplicons, and plasmids.</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001146</td>
+<td><a href="../air_flow_impede/">air_flow_impede</a></td>
+<td>0..*</td>
+<td>Presence of objects in the area that would influence or impede air flow through the air filter.</td>
+<td>[obstructed</td>
+<td>unobstructed]; {text}; {measurement value}</td>
+</tr>
+<tr>
+<td>MIXS:0001147</td>
+<td><a href="../lot_number/">lot_number</a></td>
+<td>0..*</td>
+<td>A distinctive alpha-numeric identification code assigned by the manufacturer or distributor to a specific quantity of manufactured material or product within a batch. Synonym: Batch Number.  The submitter should provide lot number of the item followed by the item name for which the lot number was provided.</td>
+<td>{integer}, {text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001148</td>
+<td><a href="../season_humidity/">season_humidity</a></td>
+<td>0..1</td>
+<td>Average humidity of the region throughout the growing season.</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001149</td>
+<td><a href="../part_plant_animal/">part_plant_animal</a></td>
+<td>0..*</td>
+<td>The anatomical part of the organism being involved in food production or consumption; e.g., a carrot is the root of the plant (root vegetable). This field accepts terms listed under part of plant or animal (http://purl.obolibrary.org/obo/FOODON_03420116).</td>
+<td>{text}</td>
+<td>{termLabel} {[termID]}</td>
+</tr>
+<tr>
+<td>MIXS:0001057</td>
+<td><a href="../plant_growth_med/">plant_growth_med</a></td>
+<td>0..1</td>
+<td>Specification of the media for growing the plants or tissue cultured samples, e.g. soil, aeroponic, hydroponic, in vitro solid culture medium, in vitro liquid culture medium. Recommended value is a specific value from EO:plant growth medium (follow this link for terms http://purl.obolibrary.org/obo/EO_0007147) or other controlled vocabulary</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001150</td>
+<td><a href="../plant_reprod_crop/">plant_reprod_crop</a></td>
+<td>0..*</td>
+<td>Plant reproductive part used in the field during planting to start the crop.</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001151</td>
+<td><a href="../samp_purpose/">samp_purpose</a></td>
+<td>0..1</td>
+<td>The reason that the sample was collected.</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001152</td>
+<td><a href="../repository_name/">repository_name</a></td>
+<td>0..*</td>
+<td>The name of the institution where the sample or DNA extract is held or "sample not available" if the sample was used in its entirety for analysis or otherwise not retained.</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001153</td>
+<td><a href="../samp_pooling/">samp_pooling</a></td>
+<td>0..*</td>
+<td>Physical combination of several instances of like material, e.g. RNA extracted from samples or dishes of cell cultures into one big aliquot of cells. Please provide a short description of the samples that were pooled.</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001154</td>
+<td><a href="../samp_source_mat_cat/">samp_source_mat_cat</a></td>
+<td>0..1</td>
+<td>This is the scientific role or category that the subject organism or material has with respect to an investigation.  This field accepts terms listed under specimen source material category (http://purl.obolibrary.org/obo/GENEPIO_0001237 or http://purl.obolibrary.org/obo/OBI_0100051).</td>
+<td>{termLabel} {[termID]}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001155</td>
+<td><a href="../sequencing_kit/">sequencing_kit</a></td>
+<td>0..1</td>
+<td>Pre-filled, ready-to-use reagent cartridges. Used to produce improved chemistry, cluster density and read length as well as improve quality (Q) scores. Reagent components are encoded to interact with the sequencing system to validate compatibility with user-defined applications. Indicate name of the sequencing kit.</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001156</td>
+<td><a href="../sequencing_location/">sequencing_location</a></td>
+<td>0..1</td>
+<td>The location the sequencing run was performed. Indicate the name of the lab or core facility where samples were sequenced.</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001157</td>
+<td><a href="../serovar_or_serotype/">serovar_or_serotype</a></td>
+<td>0..*</td>
+<td>A characterization of a cell or microorganism based on the antigenic properties of the molecules on its surface. Indicate the name of a serovar or serotype of interest. This field accepts terms under organism (http://purl.obolibrary.org/obo/NCIT_C14250). This field also accepts identification numbers from NCBI under https://www.ncbi.nlm.nih.gov/taxonomy.</td>
+<td>{termLabel} {[termID]}</td>
+<td>{integer}</td>
+</tr>
+<tr>
+<td>MIXS:0001158</td>
+<td><a href="../soil_conductivity/">soil_conductivity</a></td>
+<td>0..1</td>
+<td>Conductivity of soil at time of sampling.</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001159</td>
+<td><a href="../soil_cover/">soil_cover</a></td>
+<td>0..1</td>
+<td>Description of the material covering the sampled soil. This field accepts terms under ENVO:00010483, environmental material.</td>
+<td>{termLabel} {[termID]}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001160</td>
+<td><a href="../soil_pH/">soil_pH</a></td>
+<td>0..1</td>
+<td>The pH of soil at time of sampling.</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001161</td>
+<td><a href="../rel_location/">rel_location</a></td>
+<td>0..1</td>
+<td>Location of sampled soil to other parts of the farm e.g. under crop plant, near irrigation ditch, from the dirt road.</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001162</td>
+<td><a href="../soil_porosity/">soil_porosity</a></td>
+<td>0..1</td>
+<td>Porosity of soil or deposited sediment is volume of voids divided by the total volume of sample.</td>
+<td>{percentage}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001163</td>
+<td><a href="../soil_temp/">soil_temp</a></td>
+<td>0..*</td>
+<td>Temperature of soil at the time of sampling.</td>
+<td>{float}{unit}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001164</td>
+<td><a href="../soil_texture_class/">soil_texture_class</a></td>
+<td>0..1</td>
+<td>One of the 12 soil texture classes use to describe soil texture based on the relative proportion of different grain sizes  of mineral particles [sand (50 um to 2 mm), silt (2 um to 50 um), and clay (&lt;2 um)] in a soil.</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000336</td>
+<td><a href="../soil_texture_meth/">soil_texture_meth</a></td>
+<td>0..1</td>
+<td>Reference or method used in determining soil texture</td>
+<td>{PMID}</td>
+<td>{DOI}</td>
+</tr>
+<tr>
+<td>MIXS:0000332</td>
+<td><a href="../soil_type/">soil_type</a></td>
+<td>0..1</td>
+<td>Description of the soil type or classification. This field accepts terms under soil (http://purl.obolibrary.org/obo/ENVO_00001998).  Multiple terms can be separated by pipes.</td>
+<td>{termLabel} {[termID]}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001167</td>
+<td><a href="../spikein_org/">spikein_org</a></td>
+<td>0..*</td>
+<td>Taxonomic information about the spike-in organism(s). This field accepts terms under organism (http://purl.obolibrary.org/obo/NCIT_C14250). This field also accepts identification numbers from NCBI under https://www.ncbi.nlm.nih.gov/taxonomy. Multiple terms can be separated by pipes.</td>
+<td>{termLabel} {[termID]}</td>
+<td>{integer}</td>
+</tr>
+<tr>
+<td>MIXS:0001168</td>
+<td><a href="../spikein_serovar/">spikein_serovar</a></td>
+<td>0..*</td>
+<td>Taxonomic information about the spike-in organism(s) at the serovar or serotype level. This field accepts terms under organism (http://purl.obolibrary.org/obo/NCIT_C14250). This field also accepts identification numbers from NCBI under https://www.ncbi.nlm.nih.gov/taxonomy. Multiple terms can be separated by pipes.</td>
+<td>{termLabel} {[termID]}</td>
+<td>{integer}</td>
+</tr>
+<tr>
+<td>MIXS:0001169</td>
+<td><a href="../spikein_growth_med/">spikein_growth_med</a></td>
+<td>0..*</td>
+<td>A liquid or gel containing nutrients, salts, and other factors formulated to support the growth of microorganisms, cells, or plants (National Cancer Institute Thesaurus).  A growth medium is a culture medium which has the disposition to encourage growth of particular bacteria to the exclusion of others in the same growth environment.  In this case, list the culture medium used to propagate the spike-in bacteria during preparation of spike-in inoculum. This field accepts terms listed under microbiological culture medium (http://purl.obolibrary.org/obo/MICRO_0000067). If the proper descriptor is not listed please use text to describe the spike in growth media.</td>
+<td>{text}</td>
+<td>{termLabel} {[termID]}</td>
+</tr>
+<tr>
+<td>MIXS:0001170</td>
+<td><a href="../spikein_strain/">spikein_strain</a></td>
+<td>0..*</td>
+<td>Taxonomic information about the spike-in organism(s) at the strain level. This field accepts terms under organism (http://purl.obolibrary.org/obo/NCIT_C14250). This field also accepts identification numbers from NCBI under https://www.ncbi.nlm.nih.gov/taxonomy. Multiple terms can be separated by pipes.</td>
+<td>{termLabel} {[termID]}</td>
+<td>{integer}</td>
+</tr>
+<tr>
+<td>MIXS:0001171</td>
+<td><a href="../spikein_antibiotic/">spikein_antibiotic</a></td>
+<td>0..*</td>
+<td>Antimicrobials used in research study to assess effects of exposure on microbiome of a specific site.  Please list antimicrobial, common name and/or class and concentration used for spike-in.</td>
+<td>{text} {integer}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001172</td>
+<td><a href="../spikein_metal/">spikein_metal</a></td>
+<td>0..*</td>
+<td>Heavy metals used in research study to assess effects of exposure on microbiome of a specific site.  Please list heavy metals and concentration used for spike-in.</td>
+<td>{text} {integer}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001173</td>
+<td><a href="../timepoint/">timepoint</a></td>
+<td>0..1</td>
+<td>Time point at which a sample or observation is made or taken from a biomaterial as measured from some reference point. Indicate the timepoint written in ISO 8601 format.</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001174</td>
+<td><a href="../water_frequency/">water_frequency</a></td>
+<td>0..1</td>
+<td>Number of water delivery events within a given period of time.</td>
+<td>{float}{unit}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001175</td>
+<td><a href="../water_pH/">water_pH</a></td>
+<td>0..1</td>
+<td>pH measurement of the sample, or liquid portion of sample, or aqueous phase of the fluid.</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001176</td>
+<td><a href="../water_source_shared/">water_source_shared</a></td>
+<td>0..*</td>
+<td>Other users sharing access to the same water source. Multiple terms can be separated by one or more pipes.</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001177</td>
+<td><a href="../enrichment_protocol/">enrichment_protocol</a></td>
+<td>0..1</td>
+<td>The microbiological workflow or protocol followed to test for the presence or enumeration of the target microbial analyte(s). Please provide a PubMed or DOI reference for published protocols.</td>
+<td>{PMID}</td>
+<td>{DOI}</td>
+</tr>
+<tr>
+<td>MIXS:0001178</td>
+<td><a href="../food_quality_date/">food_quality_date</a></td>
+<td>0..1</td>
+<td>The date recommended for the use of the product while at peak quality, this date is not a reflection of safety unless used on infant formula this date is not a reflection of safety and is typically labeled on a food product as "best if used by," best by," "use by," or "freeze by."</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001179</td>
+<td><a href="../IFSAC_category/">IFSAC_category</a></td>
+<td>1..*</td>
+<td>The IFSAC food categorization scheme has five distinct levels to which foods can be assigned, depending upon the type of food. First, foods are assigned to one of four food groups (aquatic animals, land animals, plants, and other). Food groups include increasingly specific food categories; dairy, eggs, meat and poultry, and game are in the land animal food group, and the category meat and poultry is further subdivided into more specific categories of meat (beef, pork, other meat) and poultry (chicken, turkey, other poultry). Finally, foods are differentiated by differences in food processing (such as pasteurized fluid dairy products, unpasteurized fluid dairy products, pasteurized solid and semi-solid dairy products, and unpasteurized solid and semi-solid dairy products. An IFSAC food category chart is available from https://www.cdc.gov/foodsafety/ifsac/projects/food-categorization-scheme.html PMID: 28926300.</td>
+<td>{text}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001180</td>
+<td><a href="../animal_housing/">animal_housing</a></td>
+<td>0..*</td>
+<td>Description of the housing system of the livestock. This field accepts terms listed under terrestrial management housing system (http://opendata.inra.fr/EOL/EOL_0001605).</td>
+<td>{termLabel} {[termID]}</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001181</td>
+<td><a href="../cult_isol_date/">cult_isol_date</a></td>
+<td>0..1</td>
+<td>A culture isolation date is a date-time entity marking the end of a process in which a sample yields a positive result for the target microbial analyte(s) in the form of an isolated colony or colonies.</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0001182</td>
+<td><a href="../food_clean_proc/">food_clean_proc</a></td>
+<td>0..*</td>
+<td>The process of cleaning food to separate other environmental materials from the food source. Multiple terms can be separated by pipes.</td>
+<td>None</td>
+<td>.</td>
+</tr>
+<tr>
+<td>MIXS:0000752</td>
+<td><a href="../misc_param/">misc_param</a></td>
+<td>0..*</td>
+<td>Any other measurement performed or parameter collected, that is not listed here</td>
+<td>{text};{float} {unit}</td>
+<td>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="usages">Usages</h2>
+<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2></div>
             </div>
         </div>
 
