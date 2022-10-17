@@ -1,0 +1,3865 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://genomicsstandardsconsortium.github.io/mixs/MimarksCSymbiontAssociated/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.0, mkdocs-material-8.5.6">
+    
+    
+      
+        <title>Class: MimarksCSymbiontAssociated - MIxS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.20d9efc8.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#class-mimarkscsymbiontassociated" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="MIxS" class="md-header__button md-logo" aria-label="MIxS" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MIxS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Class: MimarksCSymbiontAssociated
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/GenomicsStandardsConsortium/mixs/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="MIxS" class="md-nav__button md-logo" aria-label="MIxS" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    MIxS
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/GenomicsStandardsConsortium/mixs/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Reference
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Introduction
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Introduction" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Introduction
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/background/" class="md-nav__link">
+        Background
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/citation/" class="md-nav__link">
+        Cite
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/contents/" class="md-nav__link">
+        Contents
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#inheritance" class="md-nav__link">
+    Inheritance
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slots" class="md-nav__link">
+    Slots
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identifier-and-mapping-information" class="md-nav__link">
+    Identifier and Mapping Information
+  </a>
+  
+    <nav class="md-nav" aria-label="Identifier and Mapping Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-source" class="md-nav__link">
+    Schema Source
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mappings" class="md-nav__link">
+    Mappings
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linkml-specification" class="md-nav__link">
+    LinkML Specification
+  </a>
+  
+    <nav class="md-nav" aria-label="LinkML Specification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#direct" class="md-nav__link">
+    Direct
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#induced" class="md-nav__link">
+    Induced
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <a href="https://github.com/GenomicsStandardsConsortium/mixs/edit/master/docs/MimarksCSymbiontAssociated.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="class-mimarkscsymbiontassociated">Class: MimarksCSymbiontAssociated</h1>
+<p><em>None with environmental package None</em></p>
+<p>URI: <a href="https://w3id.org/mixs/terms/0010009_0016023">MIXS:0010009_0016023</a></p>
+<h2 id="inheritance">Inheritance</h2>
+<ul>
+<li><a href="../EnvPackageClass/">EnvPackageClass</a><ul>
+<li><a href="../SymbiontAssociated/">SymbiontAssociated</a><ul>
+<li><strong>MimarksCSymbiontAssociated</strong> [ <a href="../MimarksC/">MimarksC</a>]</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="slots">Slots</h2>
+<table>
+<thead>
+<tr>
+<th>MIxS ID</th>
+<th>Name</th>
+<th>Cardinality and Range</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../0000094/">0000094</a></td>
+<td>alt</td>
+<td>0..1 <em>recommended</em> <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>Altitude is a term used to identify heights of objects such as airplanes, spa...</td>
+</tr>
+<tr>
+<td><a href="../0000091/">0000091</a></td>
+<td>associated_resource</td>
+<td>0..* <em>recommended</em> <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>A related resource that is referenced, cited, or otherwise associated to the ...</td>
+</tr>
+<tr>
+<td><a href="../0000028/">0000028</a></td>
+<td>biotic_relationship</td>
+<td>0..1 <em>recommended</em> <br/> <a href="../BioticRelationshipEnum/">BioticRelationshipEnum</a></td>
+<td>Description of relationship(s) between the subject organism and other organis...</td>
+</tr>
+<tr>
+<td><a href="../0000052/">0000052</a></td>
+<td>chimera_check</td>
+<td>0..1 <em>recommended</em> <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>Tool(s) used for chimera checking, including version number and parameters, t...</td>
+</tr>
+<tr>
+<td><a href="../0000011/">0000011</a></td>
+<td>collection_date</td>
+<td>1..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>The time of sampling, either as an instance (single point in time) or interva...</td>
+</tr>
+<tr>
+<td><a href="../0000018/">0000018</a></td>
+<td>depth</td>
+<td>0..1 <em>recommended</em> <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>The vertical distance below local surface, e</td>
+</tr>
+<tr>
+<td><a href="../0000093/">0000093</a></td>
+<td>elev</td>
+<td>0..1 <em>recommended</em> <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>Elevation of the sampling site is its height above a fixed reference point, m...</td>
+</tr>
+<tr>
+<td><a href="../0000012/">0000012</a></td>
+<td>env_broad_scale</td>
+<td>1..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>Report the major environmental system the sample or specimen came from</td>
+</tr>
+<tr>
+<td><a href="../0000013/">0000013</a></td>
+<td>env_local_scale</td>
+<td>1..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>Report the entity or entities which are in the sample or specimen’s local vic...</td>
+</tr>
+<tr>
+<td><a href="../0000014/">0000014</a></td>
+<td>env_medium</td>
+<td>1..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>Report the environmental material(s) immediately surrounding the sample or sp...</td>
+</tr>
+<tr>
+<td><a href="../0000008/">0000008</a></td>
+<td>experimental_factor</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>Experimental factors are essentially the variable aspects of an experiment de...</td>
+</tr>
+<tr>
+<td><a href="../0000023/">0000023</a></td>
+<td>extrachrom_elements</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#integer">xsd:integer</a></td>
+<td>Do plasmids exist of significant phenotypic consequence (e</td>
+</tr>
+<tr>
+<td><a href="../0000010/">0000010</a></td>
+<td>geo_loc_name</td>
+<td>1..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>The geographical origin of the sample as defined by the country or sea name f...</td>
+</tr>
+<tr>
+<td><a href="../0000003/">0000003</a></td>
+<td>isol_growth_condt</td>
+<td>1..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>Publication reference in the form of pubmed ID (pmid), digital object identif...</td>
+</tr>
+<tr>
+<td><a href="../0000009/">0000009</a></td>
+<td>lat_lon</td>
+<td>1..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>The geographical origin of the sample as defined by latitude and longitude</td>
+</tr>
+<tr>
+<td><a href="../0001321/">0001321</a></td>
+<td>neg_cont_type</td>
+<td>0..1 <em>recommended</em> <br/> <a href="../NegContTypeEnum/">NegContTypeEnum</a></td>
+<td>The substance or equipment used as a negative control in an investigation</td>
+</tr>
+<tr>
+<td><a href="../0000038/">0000038</a></td>
+<td>nucl_acid_amp</td>
+<td>0..1 <em>recommended</em> <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>A link to a literature reference, electronic resource or a standard operating...</td>
+</tr>
+<tr>
+<td><a href="../0000037/">0000037</a></td>
+<td>nucl_acid_ext</td>
+<td>0..1 <em>recommended</em> <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>A link to a literature reference, electronic resource or a standard operating...</td>
+</tr>
+<tr>
+<td><a href="../0000049/">0000049</a></td>
+<td>pcr_cond</td>
+<td>0..1 <em>recommended</em> <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>Description of reaction conditions and components of PCR in the form of 'init...</td>
+</tr>
+<tr>
+<td><a href="../0000046/">0000046</a></td>
+<td>pcr_primers</td>
+<td>0..1 <em>recommended</em> <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>PCR primers that were used to amplify the sequence of the targeted gene, locu...</td>
+</tr>
+<tr>
+<td><a href="../0001322/">0001322</a></td>
+<td>pos_cont_type</td>
+<td>0..1 <em>recommended</em> <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>The substance, mixture, product, or apparatus used to verify that a process w...</td>
+</tr>
+<tr>
+<td><a href="../0000092/">0000092</a></td>
+<td>project_name</td>
+<td>1..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>Name of the project within which the sequencing was organized</td>
+</tr>
+<tr>
+<td><a href="../0000015/">0000015</a></td>
+<td>rel_to_oxygen</td>
+<td>0..1 <em>recommended</em> <br/> <a href="../RelToOxygenEnum/">RelToOxygenEnum</a></td>
+<td>Is this organism an aerobe, anaerobe? Please note that aerobic and anaerobic ...</td>
+</tr>
+<tr>
+<td><a href="../0000002/">0000002</a></td>
+<td>samp_collec_device</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>The device used to collect an environmental sample</td>
+</tr>
+<tr>
+<td><a href="../0001225/">0001225</a></td>
+<td>samp_collec_method</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>The method employed for collecting the sample</td>
+</tr>
+<tr>
+<td><a href="../0000016/">0000016</a></td>
+<td>samp_mat_process</td>
+<td>0..1 <em>recommended</em> <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>A brief description of any processing applied to the sample during or after r...</td>
+</tr>
+<tr>
+<td><a href="../0001107/">0001107</a></td>
+<td>samp_name</td>
+<td>1..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>A local identifier or name that for the material sample used for extracting n...</td>
+</tr>
+<tr>
+<td><a href="../0000001/">0000001</a></td>
+<td>samp_size</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>The total amount or size (volume (ml), mass (g) or area (m2) ) of sample coll...</td>
+</tr>
+<tr>
+<td><a href="../0001320/">0001320</a></td>
+<td>samp_taxon_id</td>
+<td>1..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>NCBI taxon id of the sample</td>
+</tr>
+<tr>
+<td><a href="../0000111/">0000111</a></td>
+<td>samp_vol_we_dna_ext</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>Volume (ml) or mass (g) of total collected sample processed for DNA extractio...</td>
+</tr>
+<tr>
+<td><a href="../0000050/">0000050</a></td>
+<td>seq_meth</td>
+<td>1..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>Sequencing machine used</td>
+</tr>
+<tr>
+<td><a href="../0000051/">0000051</a></td>
+<td>seq_quality_check</td>
+<td>0..1 <em>recommended</em> <br/> <a href="../SeqQualityCheckEnum/">SeqQualityCheckEnum</a></td>
+<td>Indicate if the sequence has been called by automatic systems (none) or under...</td>
+</tr>
+<tr>
+<td><a href="../0000090/">0000090</a></td>
+<td>sop</td>
+<td>0..* <em>recommended</em> <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>Standard operating procedures used in assembly and/or annotation of genomes, ...</td>
+</tr>
+<tr>
+<td><a href="../0000026/">0000026</a></td>
+<td>source_mat_id</td>
+<td>0..* <em>recommended</em> <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>A unique identifier assigned to a material sample (as defined by http://rs</td>
+</tr>
+<tr>
+<td><a href="../0000020/">0000020</a></td>
+<td>subspecf_gen_lin</td>
+<td>0..1 <em>recommended</em> <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>Information about the genetic distinctness of the sequenced organism below th...</td>
+</tr>
+<tr>
+<td><a href="../0000044/">0000044</a></td>
+<td>target_gene</td>
+<td>1..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>Targeted gene or locus name for marker gene studies</td>
+</tr>
+<tr>
+<td><a href="../0000045/">0000045</a></td>
+<td>target_subfragment</td>
+<td>0..1 <em>recommended</em> <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>Name of subfragment of a gene or locus</td>
+</tr>
+<tr>
+<td><a href="../0000113/">0000113</a></td>
+<td>temp</td>
+<td>0..1 <em>recommended</em> <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>Temperature of the sample at the time of sampling</td>
+</tr>
+<tr>
+<td><a href="../0000032/">0000032</a></td>
+<td>trophic_level</td>
+<td>0..1 <em>recommended</em> <br/> <a href="../TrophicLevelEnum/">TrophicLevelEnum</a></td>
+<td>Trophic levels are the feeding position in a food chain</td>
+</tr>
+<tr>
+<td><a href="../0001299/">0001299</a></td>
+<td>association_duration</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>Time spent in host of the symbiotic organism at the time of sampling; relevan...</td>
+</tr>
+<tr>
+<td><a href="../chem_administration/">chem_administration</a></td>
+<td>chem_administration</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../gravidity/">gravidity</a></td>
+<td>gravidity</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../host_age/">host_age</a></td>
+<td>host_age</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../host_body_habitat/">host_body_habitat</a></td>
+<td>host_body_habitat</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../host_body_product/">host_body_product</a></td>
+<td>host_body_product</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../host_body_site/">host_body_site</a></td>
+<td>host_body_site</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../0001313/">0001313</a></td>
+<td>host_cellular_loc</td>
+<td>0..1 <br/> <a href="../HostCellularLocEnum/">HostCellularLocEnum</a></td>
+<td>The localization of the symbiotic host organism within the host from which it...</td>
+</tr>
+<tr>
+<td><a href="../host_color/">host_color</a></td>
+<td>host_color</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../host_common_name/">host_common_name</a></td>
+<td>host_common_name</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../0001315/">0001315</a></td>
+<td>host_dependence</td>
+<td>0..1 <br/> <a href="../HostDependenceEnum/">HostDependenceEnum</a></td>
+<td>Type of host dependence for the symbiotic host organism to its host</td>
+</tr>
+<tr>
+<td><a href="../host_dry_mass/">host_dry_mass</a></td>
+<td>host_dry_mass</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../host_family_relationship/">host_family_relationship</a></td>
+<td>host_family_relationship</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../host_genotype/">host_genotype</a></td>
+<td>host_genotype</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../host_growth_cond/">host_growth_cond</a></td>
+<td>host_growth_cond</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../host_height/">host_height</a></td>
+<td>host_height</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../0000253/">0000253</a></td>
+<td>host_infra_specific_name</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>Taxonomic information about the host below subspecies level</td>
+</tr>
+<tr>
+<td><a href="../0000254/">0000254</a></td>
+<td>host_infra_specific_rank</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>Taxonomic rank information about the host below subspecies level, such as var...</td>
+</tr>
+<tr>
+<td><a href="../host_length/">host_length</a></td>
+<td>host_length</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../host_life_stage/">host_life_stage</a></td>
+<td>host_life_stage</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../0001305/">0001305</a></td>
+<td>host_number</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>Number of symbiotic host individuals pooled at the time of collection</td>
+</tr>
+<tr>
+<td><a href="../0001310/">0001310</a></td>
+<td>host_of_host_coinf</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>The taxonomic name of any coinfecting organism observed in a symbiotic relati...</td>
+</tr>
+<tr>
+<td><a href="../0001319/">0001319</a></td>
+<td>host_of_host_disease</td>
+<td>0..* <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>List of diseases with which the host of the symbiotic host organism has been ...</td>
+</tr>
+<tr>
+<td><a href="../0001325/">0001325</a></td>
+<td>host_of_host_env_loc</td>
+<td>0..* <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>For a symbiotic host organism the local anatomical environment within its hos...</td>
+</tr>
+<tr>
+<td><a href="../0001326/">0001326</a></td>
+<td>host_of_host_env_med</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>Report the environmental material(s) immediately surrounding the symbiotic ho...</td>
+</tr>
+<tr>
+<td><a href="../0001328/">0001328</a></td>
+<td>host_of_host_fam_rel</td>
+<td>0..* <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>Familial relationship of the host of the symbiotic host organisms to other ho...</td>
+</tr>
+<tr>
+<td><a href="../0001331/">0001331</a></td>
+<td>host_of_host_geno</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>Observed genotype of the host of the symbiotic host organism</td>
+</tr>
+<tr>
+<td><a href="../0001333/">0001333</a></td>
+<td>host_of_host_gravid</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>Whether or not the host of the symbiotic host organism is gravid, and if yes ...</td>
+</tr>
+<tr>
+<td><a href="../0001329/">0001329</a></td>
+<td>host_of_host_infname</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>Taxonomic name information of the host of the symbiotic host organism below s...</td>
+</tr>
+<tr>
+<td><a href="../0001330/">0001330</a></td>
+<td>host_of_host_infrank</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>Taxonomic rank information about the host of the symbiotic host organism belo...</td>
+</tr>
+<tr>
+<td><a href="../0001324/">0001324</a></td>
+<td>host_of_host_name</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>Common name of the host of the symbiotic host organism</td>
+</tr>
+<tr>
+<td><a href="../0001332/">0001332</a></td>
+<td>host_of_host_pheno</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>Phenotype of the host of the symbiotic host organism</td>
+</tr>
+<tr>
+<td><a href="../0001327/">0001327</a></td>
+<td>host_of_host_sub_id</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>A unique identifier by which each host of the symbiotic host organism subject...</td>
+</tr>
+<tr>
+<td><a href="../0001306/">0001306</a></td>
+<td>host_of_host_taxid</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#integer">xsd:integer</a></td>
+<td>NCBI taxon id of the host of the symbiotic host organism</td>
+</tr>
+<tr>
+<td><a href="../0001334/">0001334</a></td>
+<td>host_of_host_totmass</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>Total mass of the host of the symbiotic host organism at collection, the unit...</td>
+</tr>
+<tr>
+<td><a href="../host_phenotype/">host_phenotype</a></td>
+<td>host_phenotype</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../host_sex/">host_sex</a></td>
+<td>host_sex</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../host_shape/">host_shape</a></td>
+<td>host_shape</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../0001308/">0001308</a></td>
+<td>host_specificity</td>
+<td>0..1 <br/> <a href="../HostSpecificityEnum/">HostSpecificityEnum</a></td>
+<td>Level of specificity of symbiont-host interaction: e</td>
+</tr>
+<tr>
+<td><a href="../host_subject_id/">host_subject_id</a></td>
+<td>host_subject_id</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../host_substrate/">host_substrate</a></td>
+<td>host_substrate</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../host_symbiont/">host_symbiont</a></td>
+<td>host_symbiont</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../host_taxid/">host_taxid</a></td>
+<td>host_taxid</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../host_tot_mass/">host_tot_mass</a></td>
+<td>host_tot_mass</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../0000752/">0000752</a></td>
+<td>misc_param</td>
+<td>0..* <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>Any other measurement performed or parameter collected, that is not listed he...</td>
+</tr>
+<tr>
+<td><a href="../0001312/">0001312</a></td>
+<td>mode_transmission</td>
+<td>0..1 <br/> <a href="../ModeTransmissionEnum/">ModeTransmissionEnum</a></td>
+<td>The process through which the symbiotic host organism entered the host from w...</td>
+</tr>
+<tr>
+<td><a href="../organism_count/">organism_count</a></td>
+<td>organism_count</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../oxy_stat_samp/">oxy_stat_samp</a></td>
+<td>oxy_stat_samp</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../perturbation/">perturbation</a></td>
+<td>perturbation</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../0001316/">0001316</a></td>
+<td>route_transmission</td>
+<td>0..1 <br/> <a href="../RouteTransmissionEnum/">RouteTransmissionEnum</a></td>
+<td>Description of path taken by the symbiotic host organism being sampled in ord...</td>
+</tr>
+<tr>
+<td><a href="../samp_salinity/">samp_salinity</a></td>
+<td>samp_salinity</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../samp_store_dur/">samp_store_dur</a></td>
+<td>samp_store_dur</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../samp_store_loc/">samp_store_loc</a></td>
+<td>samp_store_loc</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../0001317/">0001317</a></td>
+<td>samp_store_sol</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td>Solution within which sample was stored, if any</td>
+</tr>
+<tr>
+<td><a href="../samp_store_temp/">samp_store_temp</a></td>
+<td>samp_store_temp</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../sample_name/">sample_name</a></td>
+<td>sample_name</td>
+<td>0..1 <br/> <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../0001300/">0001300</a></td>
+<td>sym_life_cycle_type</td>
+<td>0..1 <br/> <a href="../SymLifeCycleTypeEnum/">SymLifeCycleTypeEnum</a></td>
+<td>Type of life cycle of the symbiotic host species (the thing being sampled)</td>
+</tr>
+<tr>
+<td><a href="../0001303/">0001303</a></td>
+<td>symbiont_host_role</td>
+<td>0..1 <br/> <a href="../SymbiontHostRoleEnum/">SymbiontHostRoleEnum</a></td>
+<td>Role of the host in the life cycle of the symbiotic organism</td>
+</tr>
+<tr>
+<td><a href="../0001307/">0001307</a></td>
+<td>type_of_symbiosis</td>
+<td>0..1 <br/> <a href="../TypeOfSymbiosisEnum/">TypeOfSymbiosisEnum</a></td>
+<td>Type of biological interaction established between the symbiotic host organis...</td>
+</tr>
+</tbody>
+</table>
+<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
+<h3 id="schema-source">Schema Source</h3>
+<ul>
+<li>from schema: https://example.com/mixs</li>
+</ul>
+<h2 id="mappings">Mappings</h2>
+<table>
+<thead>
+<tr>
+<th>Mapping Type</th>
+<th>Mapped Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>self</td>
+<td>['MIXS:0010009_0016023']</td>
+</tr>
+<tr>
+<td>native</td>
+<td>['MIXS:MimarksCSymbiontAssociated']</td>
+</tr>
+</tbody>
+</table>
+<h2 id="linkml-specification">LinkML Specification</h2>
+<h3 id="direct">Direct</h3>
+<details>
+
+<pre><code class="language-yaml">name: MimarksCSymbiontAssociated
+description: None with environmental package None
+from_schema: https://example.com/mixs
+is_a: SymbiontAssociated
+mixins:
+- MimarksC
+class_uri: MIXS:0010009_0016023
+
+</code></pre>
+
+</details>
+
+<h3 id="induced">Induced</h3>
+<details>
+
+<pre><code class="language-yaml">name: MimarksCSymbiontAssociated
+description: None with environmental package None
+from_schema: https://example.com/mixs
+is_a: SymbiontAssociated
+mixins:
+- MimarksC
+attributes:
+  alt:
+    name: alt
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: alt
+      expected_value:
+        tag: expected_value
+        value: measurement value
+      value_syntax:
+        tag: value_syntax
+        value: '{float} {unit}'
+      migs_id:
+        tag: migs_id
+        value: MIGS-4.4
+    description: Altitude is a term used to identify heights of objects such as airplanes,
+      space shuttles, rockets, atmospheric balloons and heights of places such as
+      atmospheric layers and clouds. It is used to measure the height of an object
+      which is above the earth's surface. In this context, the altitude measurement
+      is the vertical distance between the earth's surface above sea level and the
+      sampled position in the air
+    title: altitude
+    examples:
+    - value: 100 meter
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000094
+    alias: alt
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Misag
+    - Miuvig
+    - Mims
+    - Air
+    - HostAssociated
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - SymbiontAssociated
+    slot_group: environment
+    range: string
+    recommended: true
+    pattern: ^[-+]?[0-9]*\.?[0-9]+ +\S.*$
+  associated_resource:
+    name: associated_resource
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: associated resource
+      expected_value:
+        tag: expected_value
+        value: reference to resource
+      value_syntax:
+        tag: value_syntax
+        value: '{PMID} | {DOI} | {URL}'
+    description: A related resource that is referenced, cited, or otherwise associated
+      to the sequence.
+    title: relevant electronic resources
+    examples:
+    - value: http://www.earthmicrobiome.org/
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000091
+    multivalued: true
+    alias: associated_resource
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Misag
+    - Miuvig
+    - Mims
+    slot_group: sequencing
+    range: string
+    recommended: true
+  biotic_relationship:
+    name: biotic_relationship
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: biotic_relationship
+      expected_value:
+        tag: expected_value
+        value: enumeration
+      value_syntax:
+        tag: value_syntax
+        value: '[free living|parasitism|commensalism|symbiotic|mutualism]'
+      migs_id:
+        tag: migs_id
+        value: MIGS-15
+    description: Description of relationship(s) between the subject organism and other
+      organism(s) it is associated with. E.g., parasite on species X; mutualist with
+      species Y. The target organism is the subject of the relationship, and the other
+      organism(s) is the object
+    title: observed biotic relationship
+    examples:
+    - value: free living
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000028
+    alias: biotic_relationship
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsVi
+    - MimarksC
+    - Miuvig
+    - Agriculture
+    slot_group: nucleic acid sequence source
+    range: BioticRelationshipEnum
+    recommended: true
+  chimera_check:
+    name: chimera_check
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: chimera_check
+      expected_value:
+        tag: expected_value
+        value: name and version of software, parameters used
+      value_syntax:
+        tag: value_syntax
+        value: '{software};{version};{parameters}'
+    description: Tool(s) used for chimera checking, including version number and parameters,
+      to discover and remove chimeric sequences. A chimeric sequence is comprised
+      of two or more phylogenetically distinct parent sequences.
+    title: chimera check software
+    examples:
+    - value: uchime;v4.1;default parameters
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000052
+    alias: chimera_check
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MimarksC
+    - MimarksS
+    - Agriculture
+    slot_group: sequencing
+    range: string
+    recommended: true
+  collection_date:
+    name: collection_date
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: collection_date
+      expected_value:
+        tag: expected_value
+        value: date and time
+      value_syntax:
+        tag: value_syntax
+        value: '{timestamp}'
+      migs_id:
+        tag: migs_id
+        value: MIGS-5
+    description: 'The time of sampling, either as an instance (single point in time)
+      or interval. In case no exact time is available, the date/time can be right
+      truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10;
+      2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant'
+    title: collection date
+    examples:
+    - value: 2018-05-11T10:00:00+01:00; 2018-05-11
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000011
+    alias: collection_date
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Misag
+    - Miuvig
+    - Mims
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - SymbiontAssociated
+    slot_group: environment
+    range: string
+    required: true
+  depth:
+    name: depth
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: depth
+      expected_value:
+        tag: expected_value
+        value: measurement value
+      value_syntax:
+        tag: value_syntax
+        value: '{float} {unit}'
+      migs_id:
+        tag: migs_id
+        value: MIGS-4.3
+    description: The vertical distance below local surface, e.g. for sediment or soil
+      samples depth is measured from sediment or soil surface, respectively. Depth
+      can be reported as an interval for subsurface samples.
+    title: depth
+    examples:
+    - value: 10 meter
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000018
+    alias: depth
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Misag
+    - Miuvig
+    - Mims
+    - FoodFarmEnvironment
+    - HostAssociated
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    slot_group: environment
+    range: string
+    recommended: true
+    pattern: ^[-+]?[0-9]*\.?[0-9]+ +\S.*$
+  elev:
+    name: elev
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: elev
+      expected_value:
+        tag: expected_value
+        value: measurement value
+      value_syntax:
+        tag: value_syntax
+        value: '{float} {unit}'
+    description: Elevation of the sampling site is its height above a fixed reference
+      point, most commonly the mean sea level. Elevation is mainly used when referring
+      to points on the earth's surface, while altitude is used for points above the
+      surface, such as an aircraft in flight or a spacecraft in orbit.
+    title: elevation
+    examples:
+    - value: 100 meter
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000093
+    alias: elev
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Misag
+    - Miuvig
+    - Mims
+    - Agriculture
+    - Air
+    - HostAssociated
+    - HydrocarbonResourcesCores
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - Water
+    slot_group: environment
+    range: string
+    recommended: true
+    pattern: ^[-+]?[0-9]*\.?[0-9]+ +\S.*$
+  env_broad_scale:
+    name: env_broad_scale
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: env_broad_scale
+      expected_value:
+        tag: expected_value
+        value: The major environment type(s) where the sample was collected. Recommend
+          subclasses of biome [ENVO:00000428]. Multiple terms can be separated by
+          one or more pipes.
+      value_syntax:
+        tag: value_syntax
+        value: '{termLabel} {[termID]}'
+    description: 'Report the major environmental system the sample or specimen came
+      from. The system(s) identified should have a coarse spatial grain, to provide
+      the general environmental context of where the sampling was done (e.g. in the
+      desert or a rainforest). We recommend using subclasses of EnvO’s biome class:  http://purl.obolibrary.org/obo/ENVO_00000428.
+      EnvO documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS'
+    title: broad-scale environmental context
+    examples:
+    - value: oceanic epipelagic zone biome [ENVO:01000033] for annotating a water
+        sample from the photic zone in middle of the Atlantic Ocean
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000012
+    alias: env_broad_scale
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Misag
+    - Miuvig
+    - Mims
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - SymbiontAssociated
+    slot_group: environment
+    range: string
+    required: true
+    pattern: ^\S+.* \[\S+:\S+]$
+  env_local_scale:
+    name: env_local_scale
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: env_local_scale
+      expected_value:
+        tag: expected_value
+        value: Environmental entities having causal influences upon the entity at
+          time of sampling.
+      value_syntax:
+        tag: value_syntax
+        value: '{termLabel} {[termID]}'
+      migs_id:
+        tag: migs_id
+        value: MIGS-6 (habitat)
+    description: 'Report the entity or entities which are in the sample or specimen’s
+      local vicinity and which you believe have significant causal influences on your
+      sample or specimen. We recommend using EnvO terms which are of smaller spatial
+      grain than your entry for env_broad_scale. Terms, such as anatomical sites,
+      from other OBO Library ontologies which interoperate with EnvO (e.g. UBERON)
+      are accepted in this field. EnvO documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS.'
+    title: local environmental context
+    examples:
+    - value: 'litter layer [ENVO:01000338]; Annotating a pooled sample taken from
+        various vegetation layers in a forest consider: canopy [ENVO:00000047]'
+    - value: herb and fern layer [ENVO:01000337]
+    - value: litter layer [ENVO:01000338]
+    - value: understory [01000335]
+    - value: shrub layer [ENVO:01000336].
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000013
+    alias: env_local_scale
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Misag
+    - Miuvig
+    - Mims
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - SymbiontAssociated
+    slot_group: environment
+    range: string
+    required: true
+    pattern: ^\S+.* \[\S+:\S+]$
+  env_medium:
+    name: env_medium
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: env_medium
+      expected_value:
+        tag: expected_value
+        value: The material displaced by the entity at time of sampling. Recommend
+          subclasses of environmental material [ENVO:00010483].
+      value_syntax:
+        tag: value_syntax
+        value: '{termLabel} {[termID]}'
+    description: 'Report the environmental material(s) immediately surrounding the
+      sample or specimen at the time of sampling. We recommend using subclasses of
+      ''environmental material'' (http://purl.obolibrary.org/obo/ENVO_00010483). EnvO
+      documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS
+      . Terms from other OBO ontologies are permissible as long as they reference
+      mass/volume nouns (e.g. air, water, blood) and not discrete, countable entities
+      (e.g. a tree, a leaf, a table top).'
+    title: environmental medium
+    examples:
+    - value: 'soil [ENVO:00001998]; Annotating a fish swimming in the upper 100 m
+        of the Atlantic Ocean, consider: ocean water [ENVO:00002151]. Example: Annotating
+        a duck on a pond consider: pond water [ENVO:00002228]'
+    - value: air [ENVO_00002005]
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000014
+    alias: env_medium
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Misag
+    - Miuvig
+    - Mims
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - SymbiontAssociated
+    slot_group: environment
+    range: string
+    required: true
+    pattern: ^\S+.* \[\S+:\S+]$
+  experimental_factor:
+    name: experimental_factor
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: experimental_factor
+      expected_value:
+        tag: expected_value
+        value: text or EFO and/or OBI
+      value_syntax:
+        tag: value_syntax
+        value: '{termLabel} {[termID]}|{text}'
+    description: Experimental factors are essentially the variable aspects of an experiment
+      design which can be used to describe an experiment, or set of experiments, in
+      an increasingly detailed manner. This field accepts ontology terms from Experimental
+      Factor Ontology (EFO) and/or Ontology for Biomedical Investigations (OBI). For
+      a browser of EFO (v 2.95) terms, please see http://purl.bioontology.org/ontology/EFO;
+      for a browser of OBI (v 2018-02-12) terms please see http://purl.bioontology.org/ontology/OBI
+    title: experimental factor
+    examples:
+    - value: time series design [EFO:EFO_0001779]
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000008
+    alias: experimental_factor
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Misag
+    - Miuvig
+    - Mims
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    slot_group: investigation
+    range: string
+    required: false
+  extrachrom_elements:
+    name: extrachrom_elements
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: extrachrom_elements
+      expected_value:
+        tag: expected_value
+        value: number of extrachromosmal elements
+      value_syntax:
+        tag: value_syntax
+        value: '{integer}'
+    description: Do plasmids exist of significant phenotypic consequence (e.g. ones
+      that determine virulence or antibiotic resistance). Megaplasmids? Other plasmids
+      (borrelia has 15+ plasmids)
+    title: extrachromosomal elements
+    examples:
+    - value: '5'
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000023
+    alias: extrachrom_elements
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MimarksC
+    slot_group: nucleic acid sequence source
+    range: integer
+    required: false
+  geo_loc_name:
+    name: geo_loc_name
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: geo_loc_name
+      expected_value:
+        tag: expected_value
+        value: 'country or sea name (INSDC or GAZ): region(GAZ), specific location
+          name'
+      value_syntax:
+        tag: value_syntax
+        value: '{term}: {term}, {text}'
+      migs_id:
+        tag: migs_id
+        value: MIGS-4
+    description: The geographical origin of the sample as defined by the country or
+      sea name followed by specific region name. Country or sea names should be chosen
+      from the INSDC country list (http://insdc.org/country.html), or the GAZ ontology
+      (http://purl.bioontology.org/ontology/GAZ)
+    title: geographic location (country and/or sea,region)
+    examples:
+    - value: 'USA: Maryland, Bethesda'
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000010
+    alias: geo_loc_name
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Misag
+    - Miuvig
+    - Mims
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - SymbiontAssociated
+    slot_group: environment
+    range: string
+    required: true
+  isol_growth_condt:
+    name: isol_growth_condt
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: isol_growth_condt
+      expected_value:
+        tag: expected_value
+        value: PMID,DOI or URL
+      value_syntax:
+        tag: value_syntax
+        value: '{PMID}|{DOI}|{URL}'
+      migs_id:
+        tag: migs_id
+        value: MIGS-23
+    description: Publication reference in the form of pubmed ID (pmid), digital object
+      identifier (doi) or url for isolation and growth condition specifications of
+      the organism/material
+    title: isolation and growth condition
+    examples:
+    - value: 'doi: 10.1016/j.syapm.2018.01.009'
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000003
+    alias: isol_growth_condt
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - MimarksC
+    - Agriculture
+    slot_group: nucleic acid sequence source
+    range: string
+    required: true
+  lat_lon:
+    name: lat_lon
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: lat_lon
+      expected_value:
+        tag: expected_value
+        value: decimal degrees,  limit to 8 decimal points
+      value_syntax:
+        tag: value_syntax
+        value: '{float} {float}'
+      migs_id:
+        tag: migs_id
+        value: MIGS-4.1 Latitude. MIGS-4.2 Longitude
+    description: The geographical origin of the sample as defined by latitude and
+      longitude. The values should be reported in decimal degrees and in WGS84 system
+    title: geographic location (latitude and longitude)
+    examples:
+    - value: 50.586825 6.408977
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000009
+    alias: lat_lon
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Misag
+    - Miuvig
+    - Mims
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - SymbiontAssociated
+    slot_group: environment
+    range: string
+    required: true
+    pattern: ^[-+]?[0-9]*\.?[0-9]+ +[-+]?[0-9]*\.?[0-9]+$
+  neg_cont_type:
+    name: neg_cont_type
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: neg_cont_type
+      expected_value:
+        tag: expected_value
+        value: enumeration or text
+      value_syntax:
+        tag: value_syntax
+        value: '[distilled water|phosphate buffer|empty collection device|empty collection
+          tube|DNA-free PCR mix|sterile swab |sterile syringe]'
+    description: The substance or equipment used as a negative control in an investigation
+    title: negative control type
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0001321
+    alias: neg_cont_type
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Misag
+    - Miuvig
+    - Mims
+    slot_group: investigation
+    range: NegContTypeEnum
+    recommended: true
+  nucl_acid_amp:
+    name: nucl_acid_amp
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: nucl_acid_amp
+      expected_value:
+        tag: expected_value
+        value: PMID, DOI or URL
+      value_syntax:
+        tag: value_syntax
+        value: '{PMID}|{DOI}|{URL}'
+      migs_id:
+        tag: migs_id
+        value: MIGS-27
+    description: A link to a literature reference, electronic resource or a standard
+      operating procedure (SOP), that describes the enzymatic amplification (PCR,
+      TMA, NASBA) of specific nucleic acids
+    title: nucleic acid amplification
+    examples:
+    - value: https://phylogenomics.me/protocols/16s-pcr-protocol/
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000038
+    alias: nucl_acid_amp
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Misag
+    - Miuvig
+    - Mims
+    - Agriculture
+    slot_group: sequencing
+    range: string
+    recommended: true
+  nucl_acid_ext:
+    name: nucl_acid_ext
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: nucl_acid_ext
+      expected_value:
+        tag: expected_value
+        value: PMID, DOI or URL
+      value_syntax:
+        tag: value_syntax
+        value: '{PMID}|{DOI}|{URL}'
+    description: A link to a literature reference, electronic resource or a standard
+      operating procedure (SOP), that describes the material separation to recover
+      the nucleic acid fraction from a sample
+    title: nucleic acid extraction
+    examples:
+    - value: https://mobio.com/media/wysiwyg/pdfs/protocols/12888.pdf
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000037
+    alias: nucl_acid_ext
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Misag
+    - Miuvig
+    - Mims
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    slot_group: sequencing
+    range: string
+    recommended: true
+  pcr_cond:
+    name: pcr_cond
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: pcr_cond
+      expected_value:
+        tag: expected_value
+        value: initial denaturation:degrees_minutes;annealing:degrees_minutes;elongation:degrees_minutes;final
+          elongation:degrees_minutes;total cycles
+      value_syntax:
+        tag: value_syntax
+        value: initial denaturation:degrees_minutes;annealing:degrees_minutes;elongation:degrees_minutes;final
+          elongation:degrees_minutes;total cycles
+    description: Description of reaction conditions and components of PCR in the form
+      of 'initial denaturation:94degC_1.5min; annealing=...'
+    title: pcr conditions
+    examples:
+    - value: initial denaturation:94_3;annealing:50_1;elongation:72_1.5;final elongation:72_10;35
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000049
+    alias: pcr_cond
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MimarksC
+    - MimarksS
+    - Agriculture
+    slot_group: sequencing
+    range: string
+    recommended: true
+  pcr_primers:
+    name: pcr_primers
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: pcr_primers
+      expected_value:
+        tag: expected_value
+        value: 'FWD: forward primer sequence;REV:reverse primer sequence'
+      value_syntax:
+        tag: value_syntax
+        value: FWD:{dna};REV:{dna}
+    description: PCR primers that were used to amplify the sequence of the targeted
+      gene, locus or subfragment. This field should contain all the primers used for
+      a single PCR reaction if multiple forward or reverse primers are present in
+      a single PCR reaction. The primer sequence should be reported in uppercase letters
+    title: pcr primers
+    examples:
+    - value: FWD:GTGCCAGCMGCCGCGGTAA;REV:GGACTACHVGGGTWTCTAAT
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000046
+    alias: pcr_primers
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MimarksC
+    - MimarksS
+    - Agriculture
+    slot_group: sequencing
+    range: string
+    recommended: true
+    pattern: ^FWD:[ACGTacgt]+;REV:[ACGTacgt]$
+  pos_cont_type:
+    name: pos_cont_type
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: pos_cont_type
+      value_syntax:
+        tag: value_syntax
+        value: '{term} or {text}'
+    description: The substance, mixture, product, or apparatus used to verify that
+      a process which is part of an investigation delivers a true positive.
+    title: positive control type
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0001322
+    alias: pos_cont_type
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Misag
+    - Miuvig
+    - Mims
+    slot_group: investigation
+    range: string
+    recommended: true
+  project_name:
+    name: project_name
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: project_name
+      value_syntax:
+        tag: value_syntax
+        value: '{text}'
+      migs_id:
+        tag: migs_id
+        value: MIGS-3
+    description: Name of the project within which the sequencing was organized
+    title: project name
+    examples:
+    - value: Forest soil metagenome
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000092
+    alias: project_name
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Misag
+    - Miuvig
+    - Mims
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    slot_group: investigation
+    range: string
+    required: true
+  rel_to_oxygen:
+    name: rel_to_oxygen
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: rel_to_oxygen
+      expected_value:
+        tag: expected_value
+        value: enumeration
+      value_syntax:
+        tag: value_syntax
+        value: '[aerobe|anaerobe|facultative|microaerophilic|microanaerobe|obligate
+          aerobe|obligate anaerobe]'
+      migs_id:
+        tag: migs_id
+        value: MIGS-22
+    description: Is this organism an aerobe, anaerobe? Please note that aerobic and
+      anaerobic are valid descriptors for microbial environments
+    title: relationship to oxygen
+    examples:
+    - value: aerobe
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000015
+    alias: rel_to_oxygen
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MigsBa
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Misag
+    - Mims
+    slot_group: nucleic acid sequence source
+    range: RelToOxygenEnum
+    recommended: true
+  samp_collec_device:
+    name: samp_collec_device
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: samp_collec_device
+      expected_value:
+        tag: expected_value
+        value: device name
+      value_syntax:
+        tag: value_syntax
+        value: '{termLabel} {[termID]}|{text}'
+    description: The device used to collect an environmental sample. This field accepts
+      terms listed under environmental sampling device (http://purl.obolibrary.org/obo/ENVO).
+      This field also accepts terms listed under specimen collection device (http://purl.obolibrary.org/obo/GENEPIO_0002094).
+    title: sample collection device
+    examples:
+    - value: swab, biopsy, niskin bottle, push core, drag swab [GENEPIO:0002713]
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000002
+    alias: samp_collec_device
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Misag
+    - Miuvig
+    - Mims
+    slot_group: nucleic acid sequence source
+    range: string
+    required: false
+  samp_collec_method:
+    name: samp_collec_method
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: samp_collec_method
+      expected_value:
+        tag: expected_value
+        value: PMID,DOI,url , or text
+      value_syntax:
+        tag: value_syntax
+        value: '{PMID}|{DOI}|{URL}|{text}'
+    description: The method employed for collecting the sample.
+    title: sample collection method
+    examples:
+    - value: swabbing
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0001225
+    alias: samp_collec_method
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Misag
+    - Miuvig
+    - Mims
+    slot_group: nucleic acid sequence source
+    range: string
+    required: false
+  samp_mat_process:
+    name: samp_mat_process
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: samp_mat_process
+      expected_value:
+        tag: expected_value
+        value: text
+      value_syntax:
+        tag: value_syntax
+        value: '{text}'
+    description: A brief description of any processing applied to the sample during
+      or after retrieving the sample from environment, or a link to the relevant protocol(s)
+      performed.
+    title: sample material processing
+    examples:
+    - value: filtering of seawater, storing samples in ethanol
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000016
+    alias: samp_mat_process
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Misag
+    - Miuvig
+    - Mims
+    - Agriculture
+    slot_group: nucleic acid sequence source
+    range: string
+    recommended: true
+  samp_name:
+    name: samp_name
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: samp_name
+      expected_value:
+        tag: expected_value
+        value: text
+      value_syntax:
+        tag: value_syntax
+        value: '{text}'
+    description: A local identifier or name that for the material sample used for
+      extracting nucleic acids, and subsequent sequencing. It can refer either to
+      the original material collected or to any derived sub-samples. It can have any
+      format, but we suggest that you make it concise, unique and consistent within
+      your lab, and as informative as possible. INSDC requires every sample name from
+      a single Submitter to be unique. Use of a globally unique identifier for the
+      field source_mat_id is recommended in addition to sample_name.
+    title: sample name
+    examples:
+    - value: ISDsoil1
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0001107
+    alias: samp_name
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Misag
+    - Miuvig
+    - Mims
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - WastewaterSludge
+    - Water
+    slot_group: investigation
+    range: string
+    required: true
+  samp_size:
+    name: samp_size
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: samp_size
+      expected_value:
+        tag: expected_value
+        value: measurement value
+      value_syntax:
+        tag: value_syntax
+        value: '{float} {unit}'
+      preferred_unit:
+        tag: preferred_unit
+        value: millliter, gram, milligram, liter
+    description: The total amount or size (volume (ml), mass (g) or area (m2) ) of
+      sample collected.
+    title: amount or size of sample collected
+    examples:
+    - value: 5 liter
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000001
+    alias: samp_size
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Misag
+    - Miuvig
+    - Mims
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    slot_group: nucleic acid sequence source
+    range: string
+    required: false
+    pattern: ^[-+]?[0-9]*\.?[0-9]+ +\S.*$
+  samp_taxon_id:
+    name: samp_taxon_id
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: samp_taxon_id
+      expected_value:
+        tag: expected_value
+        value: Taxonomy ID
+      value_syntax:
+        tag: value_syntax
+        value: '{text} [NCBI:txid]'
+    description: NCBI taxon id of the sample.  Maybe be a single taxon or mixed taxa
+      sample. Use 'synthetic metagenome’ for mock community/positive controls, or
+      'blank sample' for negative controls.
+    title: Taxonomy ID of DNA sample
+    examples:
+    - value: Gut Metagenome [NCBI:txid749906]
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0001320
+    alias: samp_taxon_id
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Misag
+    - Miuvig
+    - Mims
+    slot_group: investigation
+    range: string
+    required: true
+  samp_vol_we_dna_ext:
+    name: samp_vol_we_dna_ext
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: samp_vol_we_dna_ext
+      expected_value:
+        tag: expected_value
+        value: measurement value
+      value_syntax:
+        tag: value_syntax
+        value: '{float} {unit}'
+      preferred_unit:
+        tag: preferred_unit
+        value: millliter, gram, milligram, square centimeter
+    description: 'Volume (ml) or mass (g) of total collected sample processed for
+      DNA extraction. Note: total sample collected should be entered under the term
+      Sample Size (MIXS:0000001).'
+    title: sample volume or weight for DNA extraction
+    examples:
+    - value: 1500 milliliter
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000111
+    alias: samp_vol_we_dna_ext
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Misag
+    - Miuvig
+    - Mims
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    slot_group: nucleic acid sequence source
+    range: string
+    required: false
+    pattern: ^[-+]?[0-9]*\.?[0-9]+ +\S.*$
+  seq_meth:
+    name: seq_meth
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: seq_meth
+      expected_value:
+        tag: expected_value
+        value: Text or OBI
+      value_syntax:
+        tag: value_syntax
+        value: '{termLabel} {[termID]}|{text}'
+      migs_id:
+        tag: migs_id
+        value: MIGS-29
+    description: Sequencing machine used. Where possible the term should be taken
+      from the OBI list of DNA sequencers (http://purl.obolibrary.org/obo/OBI_0400103).
+    title: sequencing method
+    examples:
+    - value: 454 Genome Sequencer FLX [OBI:0000702]
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000050
+    alias: seq_meth
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Misag
+    - Miuvig
+    - Mims
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    slot_group: sequencing
+    range: string
+    required: true
+  seq_quality_check:
+    name: seq_quality_check
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: seq_quality_check
+      expected_value:
+        tag: expected_value
+        value: none or manually edited
+      value_syntax:
+        tag: value_syntax
+        value: '[none|manually edited]'
+    description: Indicate if the sequence has been called by automatic systems (none)
+      or undergone a manual editing procedure (e.g. by inspecting the raw data or
+      chromatograms). Applied only for sequences that are not submitted to SRA,ENA
+      or DRA
+    title: sequence quality check
+    examples:
+    - value: none
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000051
+    alias: seq_quality_check
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MimarksC
+    - MimarksS
+    - Agriculture
+    slot_group: sequencing
+    range: SeqQualityCheckEnum
+    recommended: true
+  sop:
+    name: sop
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: sop
+      expected_value:
+        tag: expected_value
+        value: reference to SOP
+      value_syntax:
+        tag: value_syntax
+        value: '{PMID}|{DOI}|{URL}'
+    description: Standard operating procedures used in assembly and/or annotation
+      of genomes, metagenomes or environmental sequences
+    title: relevant standard operating procedures
+    examples:
+    - value: http://press.igsb.anl.gov/earthmicrobiome/protocols-and-standards/its/
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000090
+    multivalued: true
+    alias: sop
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Misag
+    - Miuvig
+    - Mims
+    - Agriculture
+    slot_group: sequencing
+    range: string
+    recommended: true
+  source_mat_id:
+    name: source_mat_id
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: source_mat_id
+      expected_value:
+        tag: expected_value
+        value: 'for cultures of microorganisms: identifiers for two culture collections;
+          for other material a unique arbitrary identifer'
+      value_syntax:
+        tag: value_syntax
+        value: '{text}'
+      migs_id:
+        tag: migs_id
+        value: MIGS-13
+    description: A unique identifier assigned to a material sample (as defined by
+      http://rs.tdwg.org/dwc/terms/materialSampleID, and as opposed to a particular
+      digital record of a material sample) used for extracting nucleic acids, and
+      subsequent sequencing. The identifier can refer either to the original material
+      collected or to any derived sub-samples. The INSDC qualifiers /specimen_voucher,
+      /bio_material, or /culture_collection may or may not share the same value as
+      the source_mat_id field. For instance, the /specimen_voucher qualifier and source_mat_id
+      may both contain 'UAM:Herps:14' , referring to both the specimen voucher and
+      sampled tissue with the same identifier. However, the /culture_collection qualifier
+      may refer to a value from an initial culture (e.g. ATCC:11775) while source_mat_id
+      would refer to an identifier from some derived culture from which the nucleic
+      acids were extracted (e.g. xatc123 or ark:/2154/R2).
+    title: source material identifiers
+    examples:
+    - value: MPI012345
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000026
+    multivalued: true
+    alias: source_mat_id
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Misag
+    - Miuvig
+    - Mims
+    - Agriculture
+    - SymbiontAssociated
+    slot_group: nucleic acid sequence source
+    range: string
+    recommended: true
+  subspecf_gen_lin:
+    name: subspecf_gen_lin
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: subspecf_gen_lin
+      expected_value:
+        tag: expected_value
+        value: Genetic lineage below lowest rank of NCBI taxonomy, which is subspecies,
+          e.g. serovar, biotype, ecotype, variety, cultivar.
+      value_syntax:
+        tag: value_syntax
+        value: '{rank name}:{text}'
+    description: Information about the genetic distinctness of the sequenced organism
+      below the subspecies level, e.g., serovar, serotype, biotype, ecotype, or any
+      relevant genetic typing schemes like Group I plasmid. Subspecies should not
+      be recorded in this term, but in the NCBI taxonomy. Supply both the lineage
+      name and the lineage rank separated by a colon, e.g., biovar:abc123.
+    title: subspecific genetic lineage
+    examples:
+    - value: serovar:Newport
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000020
+    alias: subspecf_gen_lin
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - MimarksC
+    - FoodFoodProductionFacility
+    slot_group: nucleic acid sequence source
+    range: string
+    recommended: true
+  target_gene:
+    name: target_gene
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: target_gene
+      expected_value:
+        tag: expected_value
+        value: gene name
+      value_syntax:
+        tag: value_syntax
+        value: '{text}'
+    description: Targeted gene or locus name for marker gene studies
+    title: target gene
+    examples:
+    - value: 16S rRNA, 18S rRNA, nif, amoA, rpo
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000044
+    alias: target_gene
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MimarksC
+    - MimarksS
+    - Agriculture
+    slot_group: sequencing
+    range: string
+    required: true
+  target_subfragment:
+    name: target_subfragment
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: target_subfragment
+      expected_value:
+        tag: expected_value
+        value: gene fragment name
+      value_syntax:
+        tag: value_syntax
+        value: '{text}'
+    description: Name of subfragment of a gene or locus. Important to e.g. identify
+      special regions on marker genes like V6 on 16S rRNA
+    title: target subfragment
+    examples:
+    - value: V6, V9, ITS
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000045
+    alias: target_subfragment
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MimarksC
+    - MimarksS
+    - Agriculture
+    slot_group: sequencing
+    range: string
+    recommended: true
+  temp:
+    name: temp
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: temp
+      expected_value:
+        tag: expected_value
+        value: measurement value
+      value_syntax:
+        tag: value_syntax
+        value: '{float} {unit}'
+      preferred_unit:
+        tag: preferred_unit
+        value: degree Celsius
+    description: Temperature of the sample at the time of sampling.
+    title: temperature
+    examples:
+    - value: 25 degree Celsius
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000113
+    alias: temp
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Misag
+    - Miuvig
+    - Mims
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    slot_group: environment
+    range: string
+    recommended: true
+    pattern: ^[-+]?[0-9]*\.?[0-9]+ +\S.*$
+  trophic_level:
+    name: trophic_level
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: trophic_level
+      expected_value:
+        tag: expected_value
+        value: enumeration
+      value_syntax:
+        tag: value_syntax
+        value: '[autotroph|carboxydotroph|chemoautotroph|chemoheterotroph|chemolithoautotroph|chemolithotroph|chemoorganoheterotroph|chemoorganotroph|chemosynthetic|chemotroph|copiotroph|diazotroph|facultative|autotroph|heterotroph|lithoautotroph|lithoheterotroph|lithotroph|methanotroph|methylotroph|mixotroph|obligate|chemoautolithotroph|oligotroph|organoheterotroph|organotroph|photoautotroph|photoheterotroph|photolithoautotroph|photolithotroph|photosynthetic|phototroph]'
+    description: Trophic levels are the feeding position in a food chain. Microbes
+      can be a range of producers (e.g. chemolithotroph)
+    title: trophic level
+    examples:
+    - value: heterotroph
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000032
+    alias: trophic_level
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MimarksC
+    - Agriculture
+    slot_group: nucleic acid sequence source
+    range: TrophicLevelEnum
+    recommended: true
+  association_duration:
+    name: association_duration
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: association_duration
+      expected_value:
+        tag: expected_value
+        value: value
+      value_syntax:
+        tag: value_syntax
+        value: '{float} {unit}'
+      preferred_unit:
+        tag: preferred_unit
+        value: year, day, hour
+    description: Time spent in host of the symbiotic organism at the time of sampling;
+      relevant scale depends on symbiotic organism and study.
+    title: duration of association with the host
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0001299
+    alias: association_duration
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+  chem_administration:
+    name: chem_administration
+    from_schema: https://example.com/mixs
+    alias: chem_administration
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+  gravidity:
+    name: gravidity
+    from_schema: https://example.com/mixs
+    alias: gravidity
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - HostAssociated
+    - SymbiontAssociated
+    range: string
+  host_age:
+    name: host_age
+    from_schema: https://example.com/mixs
+    alias: host_age
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+  host_body_habitat:
+    name: host_body_habitat
+    from_schema: https://example.com/mixs
+    alias: host_body_habitat
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - HostAssociated
+    - SymbiontAssociated
+    range: string
+  host_body_product:
+    name: host_body_product
+    from_schema: https://example.com/mixs
+    alias: host_body_product
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - SymbiontAssociated
+    range: string
+  host_body_site:
+    name: host_body_site
+    from_schema: https://example.com/mixs
+    alias: host_body_site
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - SymbiontAssociated
+    range: string
+  host_cellular_loc:
+    name: host_cellular_loc
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: host_cellular_loc
+      expected_value:
+        tag: expected_value
+        value: enumeration
+      value_syntax:
+        tag: value_syntax
+        value: '[intracellular|extracellular|not determined]'
+    description: 'The localization of the symbiotic host organism within the host
+      from which it was sampled: e.g. intracellular if the symbiotic host organism
+      is localized within the cells or extracellular if the symbiotic host organism
+      is localized outside of cells.'
+    title: host cellular location
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0001313
+    alias: host_cellular_loc
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: HostCellularLocEnum
+  host_color:
+    name: host_color
+    from_schema: https://example.com/mixs
+    alias: host_color
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - HostAssociated
+    - SymbiontAssociated
+    range: string
+  host_common_name:
+    name: host_common_name
+    from_schema: https://example.com/mixs
+    alias: host_common_name
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - Agriculture
+    - HostAssociated
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+  host_dependence:
+    name: host_dependence
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: host_dependence
+      expected_value:
+        tag: expected_value
+        value: enumeration
+      value_syntax:
+        tag: value_syntax
+        value: '[facultative|obligate]'
+    description: Type of host dependence for the symbiotic host organism to its host.
+    title: host dependence
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0001315
+    alias: host_dependence
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: HostDependenceEnum
+  host_dry_mass:
+    name: host_dry_mass
+    from_schema: https://example.com/mixs
+    alias: host_dry_mass
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+  host_family_relationship:
+    name: host_family_relationship
+    from_schema: https://example.com/mixs
+    alias: host_family_relationship
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+  host_genotype:
+    name: host_genotype
+    from_schema: https://example.com/mixs
+    alias: host_genotype
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+  host_growth_cond:
+    name: host_growth_cond
+    from_schema: https://example.com/mixs
+    alias: host_growth_cond
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - HostAssociated
+    - SymbiontAssociated
+    range: string
+  host_height:
+    name: host_height
+    from_schema: https://example.com/mixs
+    alias: host_height
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+  host_infra_specific_name:
+    name: host_infra_specific_name
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: host_infra_specific_name
+      expected_value:
+        tag: expected_value
+        value: name of the symbiotic organism (host of the samples)
+      value_syntax:
+        tag: value_syntax
+        value: '{text}'
+    description: Taxonomic information about the host below subspecies level.
+    title: host infra-specific name
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000253
+    alias: host_infra_specific_name
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+  host_infra_specific_rank:
+    name: host_infra_specific_rank
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: host_infra_specific_rank
+      expected_value:
+        tag: expected_value
+        value: rank of the symbiotic organism (host of the samples)
+      value_syntax:
+        tag: value_syntax
+        value: '{text}'
+    description: Taxonomic rank information about the host below subspecies level,
+      such as variety, form, rank etc.
+    title: host infra-specific rank
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000254
+    alias: host_infra_specific_rank
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+  host_length:
+    name: host_length
+    from_schema: https://example.com/mixs
+    alias: host_length
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+  host_life_stage:
+    name: host_life_stage
+    from_schema: https://example.com/mixs
+    alias: host_life_stage
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - Agriculture
+    - HostAssociated
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+  host_number:
+    name: host_number
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: host_number
+      expected_value:
+        tag: expected_value
+        value: count
+      value_syntax:
+        tag: value_syntax
+        value: '{float} m'
+    description: Number of symbiotic host individuals pooled at the time of collection.
+    title: host number individual
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0001305
+    alias: host_number
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+  host_of_host_coinf:
+    name: host_of_host_coinf
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: host_of_host_coinf
+      expected_value:
+        tag: expected_value
+        value: species name of coinfecting organism(s)
+      value_syntax:
+        tag: value_syntax
+        value: '{text}'
+    description: The taxonomic name of any coinfecting organism observed in a symbiotic
+      relationship with the host of the sampled host organism. e.g. where a sample
+      collected from a host trematode species (A) which was collected from a host_of_host
+      fish (B) that was also infected with a nematode (C), the value here would be
+      (C) the nematode {species name} or {common name}. Multiple co-infecting species
+      may be added in a comma-separated list. For listing symbiotic organisms associated
+      with the host (A) use the term Observed host symbiont.
+    title: observed coinfecting organisms in host of host
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0001310
+    alias: host_of_host_coinf
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+  host_of_host_disease:
+    name: host_of_host_disease
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: host_of_host_disease
+      expected_value:
+        tag: expected_value
+        value: disease name or Disease Ontology term
+      value_syntax:
+        tag: value_syntax
+        value: '{termLabel} {[termID]}|{text}'
+    description: List of diseases with which the host of the symbiotic host organism
+      has been diagnosed; can include multiple diagnoses. The value of the field depends
+      on host; for humans the terms should be chosen from the DO (Human Disease Ontology)
+      at https://www.disease-ontology.org, non-human host diseases are free text.
+    title: host of the symbiotic host disease status
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0001319
+    multivalued: true
+    alias: host_of_host_disease
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+  host_of_host_env_loc:
+    name: host_of_host_env_loc
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: host_of_host_env_loc
+      expected_value:
+        tag: expected_value
+        value: UBERON term(s), multiple values can be separated by pipes.
+      value_syntax:
+        tag: value_syntax
+        value: '{termLabel} {[termID]}'
+    description: For a symbiotic host organism the local anatomical environment within
+      its host may have causal influences. Report the anatomical entity(s) which are
+      in the direct environment of the symbiotic host organism being sampled and which
+      you believe have significant causal influences on your sample or specimen. For
+      example, if the symbiotic host organism being sampled is an intestinal worm,
+      its local environmental context will be the term for intestine from UBERON (http://uberon.github.io/).
+    title: host of the symbiotic host local environmental context
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0001325
+    multivalued: true
+    alias: host_of_host_env_loc
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+  host_of_host_env_med:
+    name: host_of_host_env_med
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: host_of_host_env_med
+      expected_value:
+        tag: expected_value
+        value: An ontology term for a material such as a tissue type or excreted substance.
+      value_syntax:
+        tag: value_syntax
+        value: '{termLabel} {[termID]}'
+    description: 'Report the environmental material(s) immediately surrounding the
+      symbiotic host organism at the time of sampling. This usually will be a tissue
+      or substance type from the host, but may be another material if the symbiont
+      is external to the host. We recommend using classes from the UBERON ontology,
+      but subclasses of ''environmental material'' (http://purl.obolibrary.org/obo/ENVO_00010483)
+      may also be used. EnvO documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS
+      . Terms from other OBO ontologies are permissible as long as they reference
+      mass/volume nouns (e.g. air, water, blood) and not discrete, countable entities
+      (e.g. intestines, heart).MIxS . Terms from other OBO ontologies are permissible
+      as long as they reference mass/volume nouns (e.g. air, water, blood) and not
+      discrete, countable entities (e.g. intestines, heart).'
+    title: host of the symbiotic host environemental medium
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0001326
+    alias: host_of_host_env_med
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+  host_of_host_fam_rel:
+    name: host_of_host_fam_rel
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: host_of_host_fam_rel
+      expected_value:
+        tag: expected_value
+        value: relationship type;arbitrary identifier
+      value_syntax:
+        tag: value_syntax
+        value: '{text};{text}'
+    description: Familial relationship of the host of the symbiotic host organisms
+      to other hosts of symbiotic host organism in the same study; can include multiple
+      relationships.
+    title: host of the symbiotic host family relationship
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0001328
+    multivalued: true
+    alias: host_of_host_fam_rel
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+  host_of_host_geno:
+    name: host_of_host_geno
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: host_of_host_geno
+      expected_value:
+        tag: expected_value
+        value: genotype
+      value_syntax:
+        tag: value_syntax
+        value: '{text}'
+    description: Observed genotype of the host of the symbiotic host organism.
+    title: host of the symbiotic host genotype
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0001331
+    alias: host_of_host_geno
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+  host_of_host_gravid:
+    name: host_of_host_gravid
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: host_of_host_gravid
+      expected_value:
+        tag: expected_value
+        value: gravidity status;timestamp
+      value_syntax:
+        tag: value_syntax
+        value: '{boolean};{timestamp}'
+    description: Whether or not the host of the symbiotic host organism is gravid,
+      and if yes date due or date post-conception, specifying which is used.
+    title: host of the symbiotic host gravidity
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0001333
+    alias: host_of_host_gravid
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+  host_of_host_infname:
+    name: host_of_host_infname
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: host_of_host_infname
+      expected_value:
+        tag: expected_value
+        value: name
+      value_syntax:
+        tag: value_syntax
+        value: '{text}'
+    description: Taxonomic name information of the host of the symbiotic host organism
+      below subspecies level.
+    title: host of the symbiotic host infra-specific name
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0001329
+    alias: host_of_host_infname
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+  host_of_host_infrank:
+    name: host_of_host_infrank
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: host_of_host_infrank
+      expected_value:
+        tag: expected_value
+        value: rank
+      value_syntax:
+        tag: value_syntax
+        value: '{text}'
+    description: Taxonomic rank information about the host of the symbiotic host organism
+      below subspecies level, such as variety, form, rank etc.
+    title: host of the symbiotic host infra-specific rank
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0001330
+    alias: host_of_host_infrank
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+  host_of_host_name:
+    name: host_of_host_name
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: host_of_host_name
+      expected_value:
+        tag: expected_value
+        value: common name
+      value_syntax:
+        tag: value_syntax
+        value: '{text}'
+    description: Common name of the host of the symbiotic host organism.
+    title: host of the symbiotic host common name
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0001324
+    alias: host_of_host_name
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+  host_of_host_pheno:
+    name: host_of_host_pheno
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: host_of_host_pheno
+      expected_value:
+        tag: expected_value
+        value: phenotype of the host of the symbiotic organism; PATO
+      value_syntax:
+        tag: value_syntax
+        value: '{term}'
+    description: Phenotype of the host of the symbiotic host organism. For phenotypic
+      quality ontology (PATO) terms, see http://purl.bioontology.org/ontology/pato.
+    title: host of the symbiotic host phenotype
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0001332
+    alias: host_of_host_pheno
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+  host_of_host_sub_id:
+    name: host_of_host_sub_id
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: host_of_host_sub_id
+      expected_value:
+        tag: expected_value
+        value: unique identifier
+      value_syntax:
+        tag: value_syntax
+        value: '{text}'
+    description: 'A unique identifier by which each host of the symbiotic host organism
+      subject can be referred to, de-identified, e.g. #H14.'
+    title: host of the symbiotic host subject id
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0001327
+    alias: host_of_host_sub_id
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+  host_of_host_taxid:
+    name: host_of_host_taxid
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: host_of_host_taxid
+      expected_value:
+        tag: expected_value
+        value: NCBI taxon identifier of the host of the symbiotic taxon organism
+      value_syntax:
+        tag: value_syntax
+        value: '{integer}'
+    description: NCBI taxon id of the host of the symbiotic host organism.
+    title: host of the symbiotic host taxon id
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0001306
+    alias: host_of_host_taxid
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: integer
+  host_of_host_totmass:
+    name: host_of_host_totmass
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: host_of_host_totmass
+      expected_value:
+        tag: expected_value
+        value: measurement value
+      value_syntax:
+        tag: value_syntax
+        value: '{float} {unit}'
+    description: Total mass of the host of the symbiotic host organism at collection,
+      the unit depends on the host.
+    title: host of the symbiotic host total mass
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0001334
+    alias: host_of_host_totmass
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+  host_phenotype:
+    name: host_phenotype
+    from_schema: https://example.com/mixs
+    alias: host_phenotype
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+  host_sex:
+    name: host_sex
+    from_schema: https://example.com/mixs
+    alias: host_sex
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - SymbiontAssociated
+    range: string
+  host_shape:
+    name: host_shape
+    from_schema: https://example.com/mixs
+    alias: host_shape
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - HostAssociated
+    - SymbiontAssociated
+    range: string
+  host_specificity:
+    name: host_specificity
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: host_specificity
+      expected_value:
+        tag: expected_value
+        value: enumeration
+      value_syntax:
+        tag: value_syntax
+        value: '[family-specific|generalist||genus-specific|species-specific]'
+    description: 'Level of specificity of symbiont-host interaction: e.g. generalist
+      (symbiont able to establish associations with distantly related hosts) or species-specific.'
+    title: host specificity
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0001308
+    alias: host_specificity
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: HostSpecificityEnum
+  host_subject_id:
+    name: host_subject_id
+    from_schema: https://example.com/mixs
+    alias: host_subject_id
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - SymbiontAssociated
+    range: string
+  host_substrate:
+    name: host_substrate
+    from_schema: https://example.com/mixs
+    alias: host_substrate
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - HostAssociated
+    - SymbiontAssociated
+    range: string
+  host_symbiont:
+    name: host_symbiont
+    from_schema: https://example.com/mixs
+    alias: host_symbiont
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - Agriculture
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+  host_taxid:
+    name: host_taxid
+    from_schema: https://example.com/mixs
+    alias: host_taxid
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+  host_tot_mass:
+    name: host_tot_mass
+    from_schema: https://example.com/mixs
+    alias: host_tot_mass
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+  misc_param:
+    name: misc_param
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: misc_param
+      expected_value:
+        tag: expected_value
+        value: parameter name;measurement value
+      value_syntax:
+        tag: value_syntax
+        value: '{text};{float} {unit}'
+    description: Any other measurement performed or parameter collected, that is not
+      listed here
+    title: miscellaneous parameter
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0000752
+    multivalued: true
+    alias: misc_param
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+  mode_transmission:
+    name: mode_transmission
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: mode_transmission
+      expected_value:
+        tag: expected_value
+        value: enumeration
+      value_syntax:
+        tag: value_syntax
+        value: '[horizontal:castrator|horizontal:directly transmitted|horizontal:micropredator|horizontal:parasitoid|horizontal:trophically
+          transmitted|horizontal:vector transmitted|vertical]'
+    description: The process through which the symbiotic host organism entered the
+      host from which it was sampled.
+    title: mode of transmission
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0001312
+    alias: mode_transmission
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: ModeTransmissionEnum
+  organism_count:
+    name: organism_count
+    from_schema: https://example.com/mixs
+    alias: organism_count
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - Agriculture
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+  oxy_stat_samp:
+    name: oxy_stat_samp
+    from_schema: https://example.com/mixs
+    alias: oxy_stat_samp
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - Agriculture
+    - Air
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+  perturbation:
+    name: perturbation
+    from_schema: https://example.com/mixs
+    alias: perturbation
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+  route_transmission:
+    name: route_transmission
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: route_transmission
+      expected_value:
+        tag: expected_value
+        value: enumeration
+      value_syntax:
+        tag: value_syntax
+        value: '[environmental:faecal-oral|transplacental|vector-borne:vector penetration]'
+    description: Description of path taken by the symbiotic host organism being sampled
+      in order to establish a symbiotic relationship with the host (with which it
+      was observed at the time of sampling) via a mode of transmission (specified
+      in mode_transmission).
+    title: route of transmission
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0001316
+    alias: route_transmission
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: RouteTransmissionEnum
+  samp_salinity:
+    name: samp_salinity
+    from_schema: https://example.com/mixs
+    alias: samp_salinity
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - HumanVaginal
+    - SymbiontAssociated
+    range: string
+  samp_store_dur:
+    name: samp_store_dur
+    from_schema: https://example.com/mixs
+    alias: samp_store_dur
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - Agriculture
+    - Air
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+  samp_store_loc:
+    name: samp_store_loc
+    from_schema: https://example.com/mixs
+    alias: samp_store_loc
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - Agriculture
+    - Air
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+  samp_store_sol:
+    name: samp_store_sol
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: samp_store_sol
+      expected_value:
+        tag: expected_value
+        value: solution name
+      value_syntax:
+        tag: value_syntax
+        value: '{text}'
+    description: Solution within which sample was stored, if any.
+    title: sample storage solution
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0001317
+    alias: samp_store_sol
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+  samp_store_temp:
+    name: samp_store_temp
+    from_schema: https://example.com/mixs
+    alias: samp_store_temp
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - Air
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+  sample_name:
+    name: sample_name
+    from_schema: https://example.com/mixs
+    alias: sample_name
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+  sym_life_cycle_type:
+    name: sym_life_cycle_type
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: sym_life_cycle_type
+      expected_value:
+        tag: expected_value
+        value: type of life cycle of the symbiotic organism (host of the samples)
+      value_syntax:
+        tag: value_syntax
+        value: '[complex life cycle | simple life cycle]'
+    description: Type of life cycle of the symbiotic host species (the thing being
+      sampled). Simple life cycles occur within a single host, complex ones within
+      multiple different hosts over the course of their normal life cycle.
+    title: symbiotic host organism life cycle type
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0001300
+    alias: sym_life_cycle_type
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: SymLifeCycleTypeEnum
+  symbiont_host_role:
+    name: symbiont_host_role
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: symbiont_host_role
+      expected_value:
+        tag: expected_value
+        value: enumeration
+      value_syntax:
+        tag: value_syntax
+        value: '[accidental|dead-end|definitive|intermediate|paratenic|reservoir|single
+          host]'
+    description: Role of the host in the life cycle of the symbiotic organism.
+    title: host of the symbiont role
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0001303
+    alias: symbiont_host_role
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: SymbiontHostRoleEnum
+  type_of_symbiosis:
+    name: type_of_symbiosis
+    annotations:
+      structured_comment_name:
+        tag: structured_comment_name
+        value: type_of_symbiosis
+      expected_value:
+        tag: expected_value
+        value: enumeration
+      value_syntax:
+        tag: value_syntax
+        value: '[commensalistic|mutualistic|parasitic]'
+    description: Type of biological interaction established between the symbiotic
+      host organism being sampled and its respective host
+    title: type of symbiosis
+    from_schema: https://example.com/mixs
+    slot_uri: MIXS:0001307
+    alias: type_of_symbiosis
+    owner: MimarksCSymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: TypeOfSymbiosisEnum
+class_uri: MIXS:0010009_0016023
+
+</code></pre>
+
+</details>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.078830c0.min.js"></script>
+      
+    
+  </body>
+</html>
