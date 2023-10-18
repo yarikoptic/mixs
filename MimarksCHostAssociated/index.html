@@ -18,7 +18,7 @@
     
     
       
-        <title>Combination: MimarksCHostAssociated - mixs</title>
+        <title>Combination: MimarksC combined with HostAssociated (MimarksCHostAssociated) - mixs</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#combination-mimarkschostassociated" class="md-skip">
+        <a href="#combination-mimarksc-combined-with-hostassociated-mimarkschostassociated" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Combination: MimarksCHostAssociated
+              Combination: MimarksC combined with HostAssociated (MimarksCHostAssociated)
             
           </span>
         </div>
@@ -290,8 +290,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#inheritance" class="md-nav__link">
-    Inheritance
+  <a href="#composition" class="md-nav__link">
+    Composition
   </a>
   
 </li>
@@ -300,26 +300,6 @@
   <a href="#terms" class="md-nav__link">
     Terms
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#identifier-and-mapping-information" class="md-nav__link">
-    Identifier and Mapping Information
-  </a>
-  
-    <nav class="md-nav" aria-label="Identifier and Mapping Information">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schema-source" class="md-nav__link">
-    Schema Source
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -368,528 +348,515 @@
   
 
 
-<h1 id="combination-mimarkschostassociated">Combination: MimarksCHostAssociated</h1>
+<h1 id="combination-mimarksc-combined-with-hostassociated-mimarkschostassociated">Combination: MimarksC combined with HostAssociated (MimarksCHostAssociated)</h1>
 <p><em>MIxS data that complies with the MimarksC checklist and the HostAssociated Extension</em></p>
-<h2 id="inheritance">Inheritance</h2>
-<ul>
-<li><a href="../Extension/">Extension</a><ul>
-<li><a href="../HostAssociated/">HostAssociated</a><ul>
-<li><strong>MimarksCHostAssociated</strong> [ <a href="../MimarksC/">MimarksC</a>]</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<h2 id="composition">Composition</h2>
+<p><a href="../HostAssociated/">HostAssociated</a> [Checklist] + <a href="../MimarksC/">MimarksC</a> [Extension]</p>
 <h2 id="terms">Terms</h2>
 <table>
 <thead>
 <tr>
+<th>MIXS ID</th>
 <th>Name</th>
 <th>Cardinality and Range</th>
 <th>Description</th>
-<th>Inheritance</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td><a href="https://w3id.org/mixs/0001107">MIXS:0001107</a></td>
 <td><a href="../0001107/">samp_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>A local identifier or name that for the material sample used for extracting n...</td>
-<td><a href="../MimarksC/">MimarksC</a>, <a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000046">MIXS:0000046</a></td>
 <td><a href="../0000046/">pcr_primers</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>PCR primers that were used to amplify the sequence of the targeted gene, locu...</td>
-<td><a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000038">MIXS:0000038</a></td>
 <td><a href="../0000038/">nucl_acid_amp</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A link to a literature reference, electronic resource or a standard operating...</td>
-<td><a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000045">MIXS:0000045</a></td>
 <td><a href="../0000045/">target_subfragment</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Name of subfragment of a gene or locus</td>
-<td><a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000113">MIXS:0000113</a></td>
 <td><a href="../0000113/">temp</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Temperature of the sample at the time of sampling</td>
-<td><a href="../MimarksC/">MimarksC</a>, <a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000049">MIXS:0000049</a></td>
 <td><a href="../0000049/">pcr_cond</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Description of reaction conditions and components of PCR in the form of 'init...</td>
-<td><a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000037">MIXS:0000037</a></td>
 <td><a href="../0000037/">nucl_acid_ext</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A link to a literature reference, electronic resource or a standard operating...</td>
-<td><a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000001">MIXS:0000001</a></td>
 <td><a href="../0000001/">samp_size</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The total amount or size (volume (ml), mass (g) or area (m2) ) of sample coll...</td>
-<td><a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000003">MIXS:0000003</a></td>
 <td><a href="../0000003/">isol_growth_condt</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Publication reference in the form of pubmed ID (pmid), digital object identif...</td>
-<td><a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000094">MIXS:0000094</a></td>
 <td><a href="../0000094/">alt</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Heights of objects such as airplanes, space shuttles, rockets, atmospheric ba...</td>
-<td><a href="../MimarksC/">MimarksC</a>, <a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000026">MIXS:0000026</a></td>
 <td><a href="../0000026/">source_mat_id</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A unique identifier assigned to a material sample (as defined by http://rs</td>
-<td><a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000023">MIXS:0000023</a></td>
 <td><a href="../0000023/">extrachrom_elements</a></td>
 <td>0..1 <br/> <a href="../Integer/">Integer</a></td>
 <td>Do plasmids exist of significant phenotypic consequence (e</td>
-<td><a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000111">MIXS:0000111</a></td>
 <td><a href="../0000111/">samp_vol_we_dna_ext</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Volume (ml) or mass (g) of total collected sample processed for DNA extractio...</td>
-<td><a href="../MimarksC/">MimarksC</a>, <a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000015">MIXS:0000015</a></td>
 <td><a href="../0000015/">rel_to_oxygen</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../RELTOOXYGENENUM/">RELTOOXYGENENUM</a></td>
 <td>Is this organism an aerobe, anaerobe? Please note that aerobic and anaerobic ...</td>
-<td><a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000002">MIXS:0000002</a></td>
 <td><a href="../0000002/">samp_collect_device</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The device used to collect an environmental sample</td>
-<td><a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000028">MIXS:0000028</a></td>
 <td><a href="../0000028/">biotic_relationship</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../BIOTICRELATIONSHIPENUM/">BIOTICRELATIONSHIPENUM</a></td>
 <td>Description of relationship(s) between the subject organism and other organis...</td>
-<td><a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000051">MIXS:0000051</a></td>
 <td><a href="../0000051/">seq_quality_check</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../SEQQUALITYCHECKENUM/">SEQQUALITYCHECKENUM</a></td>
 <td>Indicate if the sequence has been called by automatic systems (none) or under...</td>
-<td><a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000092">MIXS:0000092</a></td>
 <td><a href="../0000092/">project_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Name of the project within which the sequencing was organized</td>
-<td><a href="../MimarksC/">MimarksC</a>, <a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001321">MIXS:0001321</a></td>
 <td><a href="../0001321/">neg_cont_type</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../NEGCONTTYPEENUM/">NEGCONTTYPEENUM</a></td>
 <td>The substance or equipment used as a negative control in an investigation</td>
-<td><a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000052">MIXS:0000052</a></td>
 <td><a href="../0000052/">chimera_check</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Tool(s) used for chimera checking, including version number and parameters, t...</td>
-<td><a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000032">MIXS:0000032</a></td>
 <td><a href="../0000032/">trophic_level</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../TROPHICLEVELENUM/">TROPHICLEVELENUM</a></td>
 <td>Trophic levels are the feeding position in a food chain</td>
-<td><a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001322">MIXS:0001322</a></td>
 <td><a href="../0001322/">pos_cont_type</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The substance, mixture, product, or apparatus used to verify that a process w...</td>
-<td><a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000020">MIXS:0000020</a></td>
 <td><a href="../0000020/">subspecf_gen_lin</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Information about the genetic distinctness of the sequenced organism below th...</td>
-<td><a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000013">MIXS:0000013</a></td>
 <td><a href="../0000013/">env_local_scale</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Report the entity or entities which are in the sample or specimen s local vic...</td>
-<td><a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000016">MIXS:0000016</a></td>
 <td><a href="../0000016/">samp_mat_process</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A brief description of any processing applied to the sample during or after r...</td>
-<td><a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000018">MIXS:0000018</a></td>
 <td><a href="../0000018/">depth</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The vertical distance below local surface</td>
-<td><a href="../MimarksC/">MimarksC</a>, <a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001225">MIXS:0001225</a></td>
 <td><a href="../0001225/">samp_collect_method</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The method employed for collecting the sample</td>
-<td><a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000014">MIXS:0000014</a></td>
 <td><a href="../0000014/">env_medium</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Report the environmental material(s) immediately surrounding the sample or sp...</td>
-<td><a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001320">MIXS:0001320</a></td>
 <td><a href="../0001320/">samp_taxon_id</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>NCBI taxon id of the sample</td>
-<td><a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000010">MIXS:0000010</a></td>
 <td><a href="../0000010/">geo_loc_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>The geographical origin of the sample as defined by the country or sea name f...</td>
-<td><a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000011">MIXS:0000011</a></td>
 <td><a href="../0000011/">collection_date</a></td>
 <td>1..1 <br/> <a href="../Datetime/">Datetime</a></td>
 <td>The time of sampling, either as an instance (single point in time) or interva...</td>
-<td><a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000050">MIXS:0000050</a></td>
 <td><a href="../0000050/">seq_meth</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Sequencing machine used</td>
-<td><a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000009">MIXS:0000009</a></td>
 <td><a href="../0000009/">lat_lon</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>The geographical origin of the sample as defined by latitude and longitude</td>
-<td><a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000093">MIXS:0000093</a></td>
 <td><a href="../0000093/">elev</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Elevation of the sampling site is its height above a fixed reference point, m...</td>
-<td><a href="../MimarksC/">MimarksC</a>, <a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000012">MIXS:0000012</a></td>
 <td><a href="../0000012/">env_broad_scale</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Report the major environmental system the sample or specimen came from</td>
-<td><a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000008">MIXS:0000008</a></td>
 <td><a href="../0000008/">experimental_factor</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Variable aspects of an experiment design that can be used to describe an expe...</td>
-<td><a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000044">MIXS:0000044</a></td>
 <td><a href="../0000044/">target_gene</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Targeted gene or locus name for marker gene studies</td>
-<td><a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000091">MIXS:0000091</a></td>
 <td><a href="../0000091/">associated_resource</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A related resource that is referenced, cited, or otherwise associated to the ...</td>
-<td><a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000090">MIXS:0000090</a></td>
 <td><a href="../0000090/">sop</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Standard operating procedures used in assembly and/or annotation of genomes, ...</td>
-<td><a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000247">MIXS:0000247</a></td>
 <td><a href="../0000247/">ances_data</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Information about either pedigree or other ancestral information description ...</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000858">MIXS:0000858</a></td>
 <td><a href="../0000858/">biol_stat</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The level of genome modification</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000859">MIXS:0000859</a></td>
 <td><a href="../0000859/">genetic_mod</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Genetic modifications of the genome of an organism, which may occur naturally...</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000248">MIXS:0000248</a></td>
 <td><a href="../0000248/">host_common_name</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Common name of the host</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000860">MIXS:0000860</a></td>
 <td><a href="../0000860/">samp_capt_status</a></td>
 <td>0..1 <br/> <a href="../SAMPCAPTSTATUSENUM/">SAMPCAPTSTATUSENUM</a></td>
 <td>Reason for the sample</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000249">MIXS:0000249</a></td>
 <td><a href="../0000249/">samp_dis_stage</a></td>
 <td>0..1 <br/> <a href="../SAMPDISSTAGEENUM/">SAMPDISSTAGEENUM</a></td>
 <td>Stage of the disease at the time of sample collection, e</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000250">MIXS:0000250</a></td>
 <td><a href="../0000250/">host_taxid</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>NCBI taxon id of the host, e</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000861">MIXS:0000861</a></td>
 <td><a href="../0000861/">host_subject_id</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>A unique identifier by which each subject can be referred to, de-identified</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000255">MIXS:0000255</a></td>
 <td><a href="../0000255/">host_age</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Age of host at the time of sampling; relevant scale depends on species and st...</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000251">MIXS:0000251</a></td>
 <td><a href="../0000251/">host_life_stage</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Description of life stage of host</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000811">MIXS:0000811</a></td>
 <td><a href="../0000811/">host_sex</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Gender or physical sex of the host</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000031">MIXS:0000031</a></td>
 <td><a href="../0000031/">host_disease_stat</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>List of diseases with which the host has been diagnosed; can include multiple...</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000751">MIXS:0000751</a></td>
 <td><a href="../0000751/">chem_administration</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>List of chemical compounds administered to the host or site where sampling oc...</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000866">MIXS:0000866</a></td>
 <td><a href="../0000866/">host_body_habitat</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Original body habitat where the sample was obtained from</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000867">MIXS:0000867</a></td>
 <td><a href="../0000867/">host_body_site</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Name of body site where the sample was obtained from, such as a specific orga...</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000888">MIXS:0000888</a></td>
 <td><a href="../0000888/">host_body_product</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Substance produced by the body, e</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000263">MIXS:0000263</a></td>
 <td><a href="../0000263/">host_tot_mass</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Total mass of the host at collection, the unit depends on host</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000264">MIXS:0000264</a></td>
 <td><a href="../0000264/">host_height</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The height of subject</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000256">MIXS:0000256</a></td>
 <td><a href="../0000256/">host_length</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The length of subject</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000869">MIXS:0000869</a></td>
 <td><a href="../0000869/">host_diet</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Type of diet depending on the host, for animals omnivore, herbivore etc</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000870">MIXS:0000870</a></td>
 <td><a href="../0000870/">host_last_meal</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Content of last meal and time since feeding; can include multiple values</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000871">MIXS:0000871</a></td>
 <td><a href="../0000871/">host_growth_cond</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Literature reference giving growth conditions of the host</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000252">MIXS:0000252</a></td>
 <td><a href="../0000252/">host_substrate</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The growth substrate of the host</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000872">MIXS:0000872</a></td>
 <td><a href="../0000872/">host_fam_rel</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Relationships to other hosts in the same study; can include multiple relation...</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001318">MIXS:0001318</a></td>
 <td><a href="../0001318/">host_subspecf_genlin</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Information about the genetic distinctness of the host organism below the sub...</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000365">MIXS:0000365</a></td>
 <td><a href="../0000365/">host_genotype</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Observed genotype</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000874">MIXS:0000874</a></td>
 <td><a href="../0000874/">host_phenotype</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Phenotype of human or other host</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000274">MIXS:0000274</a></td>
 <td><a href="../0000274/">host_body_temp</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Core body temperature of the host when sample was collected</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000257">MIXS:0000257</a></td>
 <td><a href="../0000257/">host_dry_mass</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Measurement of dry mass</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000258">MIXS:0000258</a></td>
 <td><a href="../0000258/">blood_press_diast</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Resting diastolic blood pressure, measured as mm mercury</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000259">MIXS:0000259</a></td>
 <td><a href="../0000259/">blood_press_syst</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Resting systolic blood pressure, measured as mm mercury</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000260">MIXS:0000260</a></td>
 <td><a href="../0000260/">host_color</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The color of host</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000261">MIXS:0000261</a></td>
 <td><a href="../0000261/">host_shape</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Morphological shape of host</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000875">MIXS:0000875</a></td>
 <td><a href="../0000875/">gravidity</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Whether or not subject is gravid, and if yes date due or date post-conception...</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000754">MIXS:0000754</a></td>
 <td><a href="../0000754/">perturbation</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Type of perturbation, e</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000183">MIXS:0000183</a></td>
 <td><a href="../0000183/">salinity</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The total concentration of all dissolved salts in a liquid or solid sample</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000753">MIXS:0000753</a></td>
 <td><a href="../0000753/">oxy_stat_samp</a></td>
 <td>0..1 <br/> <a href="../OXYSTATSAMPENUM/">OXYSTATSAMPENUM</a></td>
 <td>Oxygenation status of sample</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000103">MIXS:0000103</a></td>
 <td><a href="../0000103/">organism_count</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Total cell count of any organism (or group of organisms) per gram, volume or ...</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000110">MIXS:0000110</a></td>
 <td><a href="../0000110/">samp_store_temp</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Temperature at which sample was stored, e</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000116">MIXS:0000116</a></td>
 <td><a href="../0000116/">samp_store_dur</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Duration for which the sample was stored</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000755">MIXS:0000755</a></td>
 <td><a href="../0000755/">samp_store_loc</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Location at which sample was stored, usually name of a specific freezer/room</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001298">MIXS:0001298</a></td>
 <td><a href="../0001298/">host_symbiont</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>The taxonomic name of the organism(s) found living in mutualistic, commensali...</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000752">MIXS:0000752</a></td>
 <td><a href="../0000752/">misc_param</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Any other measurement performed or parameter collected, that is not listed he...</td>
-<td><a href="../HostAssociated/">HostAssociated</a></td>
 </tr>
 </tbody>
 </table>
-<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://w3id.org/mixs</li>
-</ul>
 <h2 id="linkml-source">LinkML Source</h2>
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
 

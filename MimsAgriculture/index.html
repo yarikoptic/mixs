@@ -18,7 +18,7 @@
     
     
       
-        <title>Combination: MimsAgriculture - mixs</title>
+        <title>Combination: Mims combined with Agriculture (MimsAgriculture) - mixs</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#combination-mimsagriculture" class="md-skip">
+        <a href="#combination-mims-combined-with-agriculture-mimsagriculture" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Combination: MimsAgriculture
+              Combination: Mims combined with Agriculture (MimsAgriculture)
             
           </span>
         </div>
@@ -290,8 +290,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#inheritance" class="md-nav__link">
-    Inheritance
+  <a href="#composition" class="md-nav__link">
+    Composition
   </a>
   
 </li>
@@ -300,26 +300,6 @@
   <a href="#terms" class="md-nav__link">
     Terms
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#identifier-and-mapping-information" class="md-nav__link">
-    Identifier and Mapping Information
-  </a>
-  
-    <nav class="md-nav" aria-label="Identifier and Mapping Information">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schema-source" class="md-nav__link">
-    Schema Source
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -368,1122 +348,1109 @@
   
 
 
-<h1 id="combination-mimsagriculture">Combination: MimsAgriculture</h1>
+<h1 id="combination-mims-combined-with-agriculture-mimsagriculture">Combination: Mims combined with Agriculture (MimsAgriculture)</h1>
 <p><em>MIxS data that complies with the Mims checklist and the Agriculture Extension</em></p>
-<h2 id="inheritance">Inheritance</h2>
-<ul>
-<li><a href="../Extension/">Extension</a><ul>
-<li><a href="../Agriculture/">Agriculture</a><ul>
-<li><strong>MimsAgriculture</strong> [ <a href="../Mims/">Mims</a>]</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<h2 id="composition">Composition</h2>
+<p><a href="../Agriculture/">Agriculture</a> [Checklist] + <a href="../Mims/">Mims</a> [Extension]</p>
 <h2 id="terms">Terms</h2>
 <table>
 <thead>
 <tr>
+<th>MIXS ID</th>
 <th>Name</th>
 <th>Cardinality and Range</th>
 <th>Description</th>
-<th>Inheritance</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td><a href="https://w3id.org/mixs/0001107">MIXS:0001107</a></td>
 <td><a href="../0001107/">samp_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>A local identifier or name that for the material sample used for extracting n...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000017">MIXS:0000017</a></td>
 <td><a href="../0000017/">size_frac</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Filtering pore size used in sample preparation</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000043">MIXS:0000043</a></td>
 <td><a href="../0000043/">lib_screen</a></td>
 <td>1..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Specific enrichment or screening methods applied before and/or after creating...</td>
-<td><a href="../Agriculture/">Agriculture</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000062">MIXS:0000062</a></td>
 <td><a href="../0000062/">ref_db</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>List of database(s) used for ORF annotation, along with version number and re...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000038">MIXS:0000038</a></td>
 <td><a href="../0000038/">nucl_acid_amp</a></td>
 <td>1..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A link to a literature reference, electronic resource or a standard operating...</td>
-<td><a href="../Agriculture/">Agriculture</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000039">MIXS:0000039</a></td>
 <td><a href="../0000039/">lib_size</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../Integer/">Integer</a></td>
 <td>Total number of clones in the library prepared for the project</td>
-<td><a href="../Agriculture/">Agriculture</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000047">MIXS:0000047</a></td>
 <td><a href="../0000047/">mid</a></td>
 <td>1..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Molecular barcodes, called Multiplex Identifiers (MIDs), that are used to spe...</td>
-<td><a href="../Agriculture/">Agriculture</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000057">MIXS:0000057</a></td>
 <td><a href="../0000057/">assembly_name</a></td>
 <td>1..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Name/version of the assembly provided by the submitter that is used in the ge...</td>
-<td><a href="../Agriculture/">Agriculture</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000113">MIXS:0000113</a></td>
 <td><a href="../0000113/">temp</a></td>
 <td>1..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Temperature of the sample at the time of sampling</td>
-<td><a href="../Agriculture/">Agriculture</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000037">MIXS:0000037</a></td>
 <td><a href="../0000037/">nucl_acid_ext</a></td>
 <td>1..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A link to a literature reference, electronic resource or a standard operating...</td>
-<td><a href="../Agriculture/">Agriculture</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000001">MIXS:0000001</a></td>
 <td><a href="../0000001/">samp_size</a></td>
 <td>1..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The total amount or size (volume (ml), mass (g) or area (m2) ) of sample coll...</td>
-<td><a href="../Agriculture/">Agriculture</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000094">MIXS:0000094</a></td>
 <td><a href="../0000094/">alt</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Heights of objects such as airplanes, space shuttles, rockets, atmospheric ba...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000026">MIXS:0000026</a></td>
 <td><a href="../0000026/">source_mat_id</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A unique identifier assigned to a material sample (as defined by http://rs</td>
-<td><a href="../Agriculture/">Agriculture</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000111">MIXS:0000111</a></td>
 <td><a href="../0000111/">samp_vol_we_dna_ext</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Volume (ml) or mass (g) of total collected sample processed for DNA extractio...</td>
-<td><a href="../Agriculture/">Agriculture</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000040">MIXS:0000040</a></td>
 <td><a href="../0000040/">lib_reads_seqd</a></td>
 <td>1..1 <em>recommended</em> <br/> <a href="../Integer/">Integer</a></td>
 <td>Total number of clones sequenced from the library</td>
-<td><a href="../Agriculture/">Agriculture</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000015">MIXS:0000015</a></td>
 <td><a href="../0000015/">rel_to_oxygen</a></td>
 <td>0..1 <br/> <a href="../RELTOOXYGENENUM/">RELTOOXYGENENUM</a></td>
 <td>Is this organism an aerobe, anaerobe? Please note that aerobic and anaerobic ...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000002">MIXS:0000002</a></td>
 <td><a href="../0000002/">samp_collect_device</a></td>
 <td>1..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The device used to collect an environmental sample</td>
-<td><a href="../Agriculture/">Agriculture</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000060">MIXS:0000060</a></td>
 <td><a href="../0000060/">number_contig</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../Integer/">Integer</a></td>
 <td>Total number of contigs in the cleaned/submitted assembly that makes up a giv...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000041">MIXS:0000041</a></td>
 <td><a href="../0000041/">lib_layout</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../LIBLAYOUTENUM/">LIBLAYOUTENUM</a></td>
 <td>Specify whether to expect single, paired, or other configuration of reads</td>
-<td><a href="../Agriculture/">Agriculture</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000056">MIXS:0000056</a></td>
 <td><a href="../0000056/">assembly_qual</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The assembly quality category is based on sets of criteria outlined for each ...</td>
-<td><a href="../Agriculture/">Agriculture</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000025">MIXS:0000025</a></td>
 <td><a href="../0000025/">ref_biomaterial</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Primary publication if isolated before genome publication; otherwise, primary...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000092">MIXS:0000092</a></td>
 <td><a href="../0000092/">project_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Name of the project within which the sequencing was organized</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000042">MIXS:0000042</a></td>
 <td><a href="../0000042/">lib_vector</a></td>
 <td>1..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Cloning vector type(s) used in construction of libraries</td>
-<td><a href="../Agriculture/">Agriculture</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000048">MIXS:0000048</a></td>
 <td><a href="../0000048/">adapters</a></td>
 <td>1..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Adapters provide priming sequences for both amplification and sequencing of t...</td>
-<td><a href="../Agriculture/">Agriculture</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001321">MIXS:0001321</a></td>
 <td><a href="../0001321/">neg_cont_type</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../NEGCONTTYPEENUM/">NEGCONTTYPEENUM</a></td>
 <td>The substance or equipment used as a negative control in an investigation</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000058">MIXS:0000058</a></td>
 <td><a href="../0000058/">assembly_software</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Tool(s) used for assembly, including version number and parameters</td>
-<td><a href="../Agriculture/">Agriculture</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000059">MIXS:0000059</a></td>
 <td><a href="../0000059/">annot</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Tool used for annotation, or for cases where annotation was provided by a com...</td>
-<td><a href="../Agriculture/">Agriculture</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001322">MIXS:0001322</a></td>
 <td><a href="../0001322/">pos_cont_type</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The substance, mixture, product, or apparatus used to verify that a process w...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000061">MIXS:0000061</a></td>
 <td><a href="../0000061/">feat_pred</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Method used to predict UViGs features such as ORFs, integration site, etc</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000013">MIXS:0000013</a></td>
 <td><a href="../0000013/">env_local_scale</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Report the entity or entities which are in the sample or specimen s local vic...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000016">MIXS:0000016</a></td>
 <td><a href="../0000016/">samp_mat_process</a></td>
 <td>1..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A brief description of any processing applied to the sample during or after r...</td>
-<td><a href="../Agriculture/">Agriculture</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000063">MIXS:0000063</a></td>
 <td><a href="../0000063/">sim_search_meth</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Tool used to compare ORFs with database, along with version and cutoffs used</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000018">MIXS:0000018</a></td>
 <td><a href="../0000018/">depth</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The vertical distance below local surface</td>
-<td><a href="../Agriculture/">Agriculture</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001225">MIXS:0001225</a></td>
 <td><a href="../0001225/">samp_collect_method</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The method employed for collecting the sample</td>
-<td><a href="../Agriculture/">Agriculture</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000014">MIXS:0000014</a></td>
 <td><a href="../0000014/">env_medium</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Report the environmental material(s) immediately surrounding the sample or sp...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001320">MIXS:0001320</a></td>
 <td><a href="../0001320/">samp_taxon_id</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>NCBI taxon id of the sample</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000010">MIXS:0000010</a></td>
 <td><a href="../0000010/">geo_loc_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>The geographical origin of the sample as defined by the country or sea name f...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000011">MIXS:0000011</a></td>
 <td><a href="../0000011/">collection_date</a></td>
 <td>1..1 <br/> <a href="../Datetime/">Datetime</a></td>
 <td>The time of sampling, either as an instance (single point in time) or interva...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000050">MIXS:0000050</a></td>
 <td><a href="../0000050/">seq_meth</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Sequencing machine used</td>
-<td><a href="../Agriculture/">Agriculture</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000009">MIXS:0000009</a></td>
 <td><a href="../0000009/">lat_lon</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>The geographical origin of the sample as defined by latitude and longitude</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000093">MIXS:0000093</a></td>
 <td><a href="../0000093/">elev</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Elevation of the sampling site is its height above a fixed reference point, m...</td>
-<td><a href="../Agriculture/">Agriculture</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000012">MIXS:0000012</a></td>
 <td><a href="../0000012/">env_broad_scale</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Report the major environmental system the sample or specimen came from</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000064">MIXS:0000064</a></td>
 <td><a href="../0000064/">tax_class</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Method used for taxonomic classification, along with reference database used,...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000008">MIXS:0000008</a></td>
 <td><a href="../0000008/">experimental_factor</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Variable aspects of an experiment design that can be used to describe an expe...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000091">MIXS:0000091</a></td>
 <td><a href="../0000091/">associated_resource</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A related resource that is referenced, cited, or otherwise associated to the ...</td>
-<td><a href="../Agriculture/">Agriculture</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000090">MIXS:0000090</a></td>
 <td><a href="../0000090/">sop</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Standard operating procedures used in assembly and/or annotation of genomes, ...</td>
-<td><a href="../Agriculture/">Agriculture</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001057">MIXS:0001057</a></td>
 <td><a href="../0001057/">plant_growth_med</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Specification of the media for growing the plants or tissue cultured samples,...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001296">MIXS:0001296</a></td>
 <td><a href="../0001296/">photosynt_activ</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Measurement of photosythetic activity (i</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001336">MIXS:0001336</a></td>
 <td><a href="../0001336/">photosynt_activ_meth</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Reference or method used in measurement of photosythetic activity</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001177">MIXS:0001177</a></td>
 <td><a href="../0001177/">enrichment_protocol</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The microbiological workflow or protocol followed to test for the presence or...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001145">MIXS:0001145</a></td>
 <td><a href="../0001145/">library_prep_kit</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Packaged kits (containing adapters, indexes, enzymes, buffers etc</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001156">MIXS:0001156</a></td>
 <td><a href="../0001156/">sequencing_location</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The location the sequencing run was performed</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001163">MIXS:0001163</a></td>
 <td><a href="../0001163/">soil_temp</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Temperature of soil at the time of sampling</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001160">MIXS:0001160</a></td>
 <td><a href="../0001160/">soil_pH</a></td>
 <td>0..1 <br/> <a href="../Float/">Float</a></td>
 <td>pH of some soil</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001158">MIXS:0001158</a></td>
 <td><a href="../0001158/">soil_conductivity</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Conductivity of some soil</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001161">MIXS:0001161</a></td>
 <td><a href="../0001161/">rel_location</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Location of sampled soil to other parts of the farm e</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001159">MIXS:0001159</a></td>
 <td><a href="../0001159/">soil_cover</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Material covering the sampled soil</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000211">MIXS:0000211</a></td>
 <td><a href="../0000211/">porosity</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Porosity of deposited sediment is volume of voids divided by the total volume...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000335">MIXS:0000335</a></td>
 <td><a href="../0000335/">soil_texture</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The relative proportion of different grain sizes of mineral particles in a so...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000336">MIXS:0000336</a></td>
 <td><a href="../0000336/">soil_texture_meth</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Reference or method used in determining soil texture</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001298">MIXS:0001298</a></td>
 <td><a href="../0001298/">host_symbiont</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>The taxonomic name of the organism(s) found living in mutualistic, commensali...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000031">MIXS:0000031</a></td>
 <td><a href="../0000031/">host_disease_stat</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>List of diseases with which the host has been diagnosed; can include multiple...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000819">MIXS:0000819</a></td>
 <td><a href="../0000819/">pres_animal_insect</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The type and number of animals or insects present in the sampling space</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001111">MIXS:0001111</a></td>
 <td><a href="../0001111/">plant_water_method</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Description of the equipment or method used to distribute water to crops</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001115">MIXS:0001115</a></td>
 <td><a href="../0001115/">anim_water_method</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Description of the equipment or method used to distribute water to livestock</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001110">MIXS:0001110</a></td>
 <td><a href="../0001110/">farm_water_source</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../FARMWATERSOURCEENUM/">FARMWATERSOURCEENUM</a></td>
 <td>Source of water used on the farm for irrigation of crops or watering of lives...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001176">MIXS:0001176</a></td>
 <td><a href="../0001176/">water_source_shared</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Other users sharing access to the same water source</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001175">MIXS:0001175</a></td>
 <td><a href="../0001175/">water_pH</a></td>
 <td>0..1 <br/> <a href="../Float/">Float</a></td>
 <td>The pH measurement of the sample, or liquid portion of sample, or aqueous pha...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000829">MIXS:0000829</a></td>
 <td><a href="../0000829/">season</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The season when sampling occurred</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000112">MIXS:0000112</a></td>
 <td><a href="../0000112/">solar_irradiance</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>The amount of solar energy that arrives at a specific area of a surface durin...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001116">MIXS:0001116</a></td>
 <td><a href="../0001116/">crop_yield</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Amount of crop produced per unit or area of land</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001148">MIXS:0001148</a></td>
 <td><a href="../0001148/">season_humidity</a></td>
 <td>0..1 <br/> <a href="../Float/">Float</a></td>
 <td>Average humidity of the region throughout the growing season</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000100">MIXS:0000100</a></td>
 <td><a href="../0000100/">humidity</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Amount of water vapour in the air, at the time of sampling</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001121">MIXS:0001121</a></td>
 <td><a href="../0001121/">adjacent_environment</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Description of the environmental system or features that are adjacent to the ...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000751">MIXS:0000751</a></td>
 <td><a href="../0000751/">chem_administration</a></td>
 <td>1..* <br/> <a href="../String/">String</a></td>
 <td>List of chemical compounds administered to the host or site where sampling oc...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001211">MIXS:0001211</a></td>
 <td><a href="../0001211/">food_prod</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Descriptors of the food production system or of the agricultural environment ...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001147">MIXS:0001147</a></td>
 <td><a href="../0001147/">lot_number</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>A distinctive alpha-numeric identification code assigned by the manufacturer ...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001127">MIXS:0001127</a></td>
 <td><a href="../0001127/">fertilizer_admin</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Type of fertilizer or amendment added to the soil or water for the purpose of...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000110">MIXS:0000110</a></td>
 <td><a href="../0000110/">samp_store_temp</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Temperature at which sample was stored, e</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001137">MIXS:0001137</a></td>
 <td><a href="../0001137/">food_trav_mode</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>A descriptor for the method of movement of food commodity along the food dist...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001138">MIXS:0001138</a></td>
 <td><a href="../0001138/">food_trav_vehic</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>A descriptor for the mobile machine which is used to transport food commoditi...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001124">MIXS:0001124</a></td>
 <td><a href="../0001124/">farm_equip_san</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Method used to sanitize growing and harvesting equipment</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001126">MIXS:0001126</a></td>
 <td><a href="../0001126/">farm_equip</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>List of equipment used for planting, fertilization, harvesting, irrigation, l...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001123">MIXS:0001123</a></td>
 <td><a href="../0001123/">farm_equip_shared</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>List of planting, growing or harvesting equipment shared with other farms</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001133">MIXS:0001133</a></td>
 <td><a href="../0001133/">food_harvest_proc</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>A harvesting process is a process which takes in some food material from an i...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001060">MIXS:0001060</a></td>
 <td><a href="../0001060/">plant_struc</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Name of plant structure the sample was obtained from; for Plant Ontology (PO)...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000257">MIXS:0000257</a></td>
 <td><a href="../0000257/">host_dry_mass</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Measurement of dry mass</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000247">MIXS:0000247</a></td>
 <td><a href="../0000247/">ances_data</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Information about either pedigree or other ancestral information description ...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000859">MIXS:0000859</a></td>
 <td><a href="../0000859/">genetic_mod</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Genetic modifications of the genome of an organism, which may occur naturally...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001184">MIXS:0001184</a></td>
 <td><a href="../0001184/">food_product_type</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>A food product type is a class of food products that is differentiated by its...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001139">MIXS:0001139</a></td>
 <td><a href="../0001139/">food_source</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Type of plant or animal from which the food product or its major ingredient i...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001170">MIXS:0001170</a></td>
 <td><a href="../0001170/">spikein_strain</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Taxonomic information about the spike-in organism(s) at the strain level</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000103">MIXS:0000103</a></td>
 <td><a href="../0000103/">organism_count</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Total cell count of any organism (or group of organisms) per gram, volume or ...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000735">MIXS:0000735</a></td>
 <td><a href="../0000735/">size_frac_low</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Refers to the mesh/pore size used to pre-filter/pre-sort the sample</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000736">MIXS:0000736</a></td>
 <td><a href="../0000736/">size_frac_up</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Mesh or pore size of the device used to retain the sample</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001181">MIXS:0001181</a></td>
 <td><a href="../0001181/">cult_isol_date</a></td>
 <td>0..1 <br/> <a href="../Datetime/">Datetime</a></td>
 <td>The datetime marking the end of a process in which a sample yields a positive...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001153">MIXS:0001153</a></td>
 <td><a href="../0001153/">samp_pooling</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Physical combination of several instances of like material, e</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000578">MIXS:0000578</a></td>
 <td><a href="../0000578/">root_med_macronutr</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Measurement of the culture rooting medium macronutrients (N,P, K, Ca, Mg, S);...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000577">MIXS:0000577</a></td>
 <td><a href="../0000577/">root_med_carbon</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Source of organic carbon in the culture rooting medium; e</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001062">MIXS:0001062</a></td>
 <td><a href="../0001062/">root_med_ph</a></td>
 <td>0..1 <br/> <a href="../Float/">Float</a></td>
 <td>pH measurement of the culture rooting medium; e</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000029">MIXS:0000029</a></td>
 <td><a href="../0000029/">specific_host</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Report the host's taxonomic name and/or NCBI taxonomy ID</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000027">MIXS:0000027</a></td>
 <td><a href="../0000027/">pathogenicity</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>To what is the entity pathogenic</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000028">MIXS:0000028</a></td>
 <td><a href="../0000028/">biotic_relationship</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../BIOTICRELATIONSHIPENUM/">BIOTICRELATIONSHIPENUM</a></td>
 <td>Description of relationship(s) between the subject organism and other organis...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000590">MIXS:0000590</a></td>
 <td><a href="../0000590/">water_temp_regm</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Information about treatment involving an exposure to water with varying degre...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000591">MIXS:0000591</a></td>
 <td><a href="../0000591/">watering_regm</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Information about treatment involving an exposure to watering frequencies, tr...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001069">MIXS:0001069</a></td>
 <td><a href="../0001069/">standing_water_regm</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Treatment involving an exposure to standing water during a plant's life span,...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000558">MIXS:0000558</a></td>
 <td><a href="../0000558/">gaseous_environment</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Use of conditions with differing gaseous environments; should include the nam...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000557">MIXS:0000557</a></td>
 <td><a href="../0000557/">fungicide_regm</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Information about treatment involving use of fungicides; should include the n...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001040">MIXS:0001040</a></td>
 <td><a href="../0001040/">climate_environment</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Treatment involving an exposure to a particular climate; treatment regimen in...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000561">MIXS:0000561</a></td>
 <td><a href="../0000561/">herbicide_regm</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Information about treatment involving use of herbicides; information about tr...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000571">MIXS:0000571</a></td>
 <td><a href="../0000571/">non_min_nutr_regm</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Information about treatment involving the exposure of plant to non-mineral nu...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000573">MIXS:0000573</a></td>
 <td><a href="../0000573/">pesticide_regm</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Information about treatment involving use of insecticides; should include the...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001056">MIXS:0001056</a></td>
 <td><a href="../0001056/">ph_regm</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Information about treatment involving exposure of plants to varying levels of...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000582">MIXS:0000582</a></td>
 <td><a href="../0000582/">salt_regm</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Information about treatment involving use of salts as supplement to liquid an...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001068">MIXS:0001068</a></td>
 <td><a href="../0001068/">season_environment</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Treatment involving an exposure to a particular season (e</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000754">MIXS:0000754</a></td>
 <td><a href="../0000754/">perturbation</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Type of perturbation, e</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000003">MIXS:0000003</a></td>
 <td><a href="../0000003/">isol_growth_condt</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Publication reference in the form of pubmed ID (pmid), digital object identif...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000116">MIXS:0000116</a></td>
 <td><a href="../0000116/">samp_store_dur</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Duration for which the sample was stored</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000755">MIXS:0000755</a></td>
 <td><a href="../0000755/">samp_store_loc</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Location at which sample was stored, usually name of a specific freezer/room</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000255">MIXS:0000255</a></td>
 <td><a href="../0000255/">host_age</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Age of host at the time of sampling; relevant scale depends on species and st...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000248">MIXS:0000248</a></td>
 <td><a href="../0000248/">host_common_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Common name of the host</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000365">MIXS:0000365</a></td>
 <td><a href="../0000365/">host_genotype</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Observed genotype</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000264">MIXS:0000264</a></td>
 <td><a href="../0000264/">host_height</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>The height of subject</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001318">MIXS:0001318</a></td>
 <td><a href="../0001318/">host_subspecf_genlin</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Information about the genetic distinctness of the host organism below the sub...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000256">MIXS:0000256</a></td>
 <td><a href="../0000256/">host_length</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>The length of subject</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000251">MIXS:0000251</a></td>
 <td><a href="../0000251/">host_life_stage</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Description of life stage of host</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000874">MIXS:0000874</a></td>
 <td><a href="../0000874/">host_phenotype</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Phenotype of human or other host</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000250">MIXS:0000250</a></td>
 <td><a href="../0000250/">host_taxid</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>NCBI taxon id of the host, e</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000263">MIXS:0000263</a></td>
 <td><a href="../0000263/">host_tot_mass</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Total mass of the host at collection, the unit depends on host</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000030">MIXS:0000030</a></td>
 <td><a href="../0000030/">host_spec_range</a></td>
 <td>1..* <br/> <a href="../String/">String</a></td>
 <td>The range and diversity of host species that an organism is capable of infect...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000032">MIXS:0000032</a></td>
 <td><a href="../0000032/">trophic_level</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../TROPHICLEVELENUM/">TROPHICLEVELENUM</a></td>
 <td>Trophic levels are the feeding position in a food chain</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001058">MIXS:0001058</a></td>
 <td><a href="../0001058/">plant_product</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Substance produced by the plant, where the sample was obtained from</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000753">MIXS:0000753</a></td>
 <td><a href="../0000753/">oxy_stat_samp</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../OXYSTATSAMPENUM/">OXYSTATSAMPENUM</a></td>
 <td>Oxygenation status of sample</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000046">MIXS:0000046</a></td>
 <td><a href="../0000046/">pcr_primers</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>PCR primers that were used to amplify the sequence of the targeted gene, locu...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000044">MIXS:0000044</a></td>
 <td><a href="../0000044/">target_gene</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Targeted gene or locus name for marker gene studies</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000045">MIXS:0000045</a></td>
 <td><a href="../0000045/">target_subfragment</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Name of subfragment of a gene or locus</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000049">MIXS:0000049</a></td>
 <td><a href="../0000049/">pcr_cond</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Description of reaction conditions and components of PCR in the form of 'init...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000051">MIXS:0000051</a></td>
 <td><a href="../0000051/">seq_quality_check</a></td>
 <td>0..1 <br/> <a href="../SEQQUALITYCHECKENUM/">SEQQUALITYCHECKENUM</a></td>
 <td>Indicate if the sequence has been called by automatic systems (none) or under...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000052">MIXS:0000052</a></td>
 <td><a href="../0000052/">chimera_check</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Tool(s) used for chimera checking, including version number and parameters, t...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001083">MIXS:0001083</a></td>
 <td><a href="../0001083/">fao_class</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../FAOCLASSENUM/">FAOCLASSENUM</a></td>
 <td>Soil classification from the FAO World Reference Database for Soil Resources</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000330">MIXS:0000330</a></td>
 <td><a href="../0000330/">local_class</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Soil classification based on local soil classification system</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000331">MIXS:0000331</a></td>
 <td><a href="../0000331/">local_class_meth</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Reference or method used in determining the local soil classification</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000332">MIXS:0000332</a></td>
 <td><a href="../0000332/">soil_type</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Description of the soil type or classification</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000334">MIXS:0000334</a></td>
 <td><a href="../0000334/">soil_type_meth</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Reference or method used in determining soil series name or other lower-level...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001082">MIXS:0001082</a></td>
 <td><a href="../0001082/">soil_horizon</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../SOILHORIZONENUM/">SOILHORIZONENUM</a></td>
 <td>Specific layer in the land area which measures parallel to the soil surface a...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000321">MIXS:0000321</a></td>
 <td><a href="../0000321/">horizon_meth</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Reference or method used in determining the horizon</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000329">MIXS:0000329</a></td>
 <td><a href="../0000329/">link_class_info</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Link to digitized soil maps or other soil classification information</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000315">MIXS:0000315</a></td>
 <td><a href="../0000315/">previous_land_use</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Previous land use and dates</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000316">MIXS:0000316</a></td>
 <td><a href="../0000316/">prev_land_use_meth</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Reference or method used in determining previous land use and dates</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000318">MIXS:0000318</a></td>
 <td><a href="../0000318/">crop_rotation</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Whether or not crop is rotated, and if yes, rotation schedule</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000639">MIXS:0000639</a></td>
 <td><a href="../0000639/">agrochem_addition</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Addition of fertilizers, pesticides, etc</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001081">MIXS:0001081</a></td>
 <td><a href="../0001081/">tillage</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../TILLAGEENUM/">TILLAGEENUM</a></td>
 <td>Note method(s) used for tilling</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001086">MIXS:0001086</a></td>
 <td><a href="../0001086/">fire</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../Datetime/">Datetime</a></td>
 <td>Historical and/or physical evidence of fire</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000319">MIXS:0000319</a></td>
 <td><a href="../0000319/">flooding</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../Datetime/">Datetime</a></td>
 <td>Historical and/or physical evidence of flooding</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000320">MIXS:0000320</a></td>
 <td><a href="../0000320/">extreme_event</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../Datetime/">Datetime</a></td>
 <td>Unusual physical events that may have affected microbial populations</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000328">MIXS:0000328</a></td>
 <td><a href="../0000328/">link_climate_info</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Link to climate resource</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000642">MIXS:0000642</a></td>
 <td><a href="../0000642/">annual_temp</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Mean annual temperature</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000643">MIXS:0000643</a></td>
 <td><a href="../0000643/">season_temp</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Mean seasonal temperature</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000644">MIXS:0000644</a></td>
 <td><a href="../0000644/">annual_precpt</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The average of all annual precipitation values known, or an estimated equival...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000645">MIXS:0000645</a></td>
 <td><a href="../0000645/">season_precpt</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The average of all seasonal precipitation values known, or an estimated equiv...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001080">MIXS:0001080</a></td>
 <td><a href="../0001080/">cur_land_use</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Present state of sample site</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000646">MIXS:0000646</a></td>
 <td><a href="../0000646/">slope_gradient</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Commonly called 'slope'</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000647">MIXS:0000647</a></td>
 <td><a href="../0000647/">slope_aspect</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The direction a slope faces</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001084">MIXS:0001084</a></td>
 <td><a href="../0001084/">profile_position</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../PROFILEPOSITIONENUM/">PROFILEPOSITIONENUM</a></td>
 <td>Cross-sectional position in the hillslope where sample was collected</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001085">MIXS:0001085</a></td>
 <td><a href="../0001085/">drainage_class</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../DRAINAGECLASSENUM/">DRAINAGECLASSENUM</a></td>
 <td>Drainage classification from a standard system such as the USDA system</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000327">MIXS:0000327</a></td>
 <td><a href="../0000327/">store_cond</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Explain how and for how long the soil sample was stored before DNA extraction...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001106">MIXS:0001106</a></td>
 <td><a href="../0001106/">ph_meth</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Reference or method used in determining pH</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000312">MIXS:0000312</a></td>
 <td><a href="../0000312/">cur_vegetation</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Vegetation classification from one or more standard classification systems, o...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000314">MIXS:0000314</a></td>
 <td><a href="../0000314/">cur_vegetation_meth</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Reference or method used in vegetation classification</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000533">MIXS:0000533</a></td>
 <td><a href="../0000533/">tot_org_carb</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Total organic carbon content</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000337">MIXS:0000337</a></td>
 <td><a href="../0000337/">tot_org_c_meth</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Reference or method used in determining total organic carbon</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000530">MIXS:0000530</a></td>
 <td><a href="../0000530/">tot_nitro_content</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Total nitrogen content of the sample</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000338">MIXS:0000338</a></td>
 <td><a href="../0000338/">tot_nitro_cont_meth</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Reference or method used in determining the total nitrogen</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000650">MIXS:0000650</a></td>
 <td><a href="../0000650/">microbial_biomass</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>The part of the organic matter in the soil that constitutes living microorgan...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000339">MIXS:0000339</a></td>
 <td><a href="../0000339/">micro_biomass_meth</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Reference or method used in determining microbial biomass</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000343">MIXS:0000343</a></td>
 <td><a href="../0000343/">heavy_metals_meth</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Reference or method used in determining heavy metals</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000525">MIXS:0000525</a></td>
 <td><a href="../0000525/">tot_carb</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Total carbon content</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000689">MIXS:0000689</a></td>
 <td><a href="../0000689/">tot_phosphate</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Total amount or concentration of phosphate</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000322">MIXS:0000322</a></td>
 <td><a href="../0000322/">sieving</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Collection design of pooled samples and/or sieve size and amount of sample si...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000325">MIXS:0000325</a></td>
 <td><a href="../0000325/">pool_dna_extracts</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Indicate whether multiple DNA extractions were mixed</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000752">MIXS:0000752</a></td>
 <td><a href="../0000752/">misc_param</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Any other measurement performed or parameter collected, that is not listed he...</td>
-<td><a href="../Agriculture/">Agriculture</a></td>
 </tr>
 </tbody>
 </table>
-<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://w3id.org/mixs</li>
-</ul>
 <h2 id="linkml-source">LinkML Source</h2>
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
 

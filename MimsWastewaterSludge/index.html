@@ -18,7 +18,7 @@
     
     
       
-        <title>Combination: MimsWastewaterSludge - mixs</title>
+        <title>Combination: Mims combined with WastewaterSludge (MimsWastewaterSludge) - mixs</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#combination-mimswastewatersludge" class="md-skip">
+        <a href="#combination-mims-combined-with-wastewatersludge-mimswastewatersludge" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Combination: MimsWastewaterSludge
+              Combination: Mims combined with WastewaterSludge (MimsWastewaterSludge)
             
           </span>
         </div>
@@ -290,8 +290,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#inheritance" class="md-nav__link">
-    Inheritance
+  <a href="#composition" class="md-nav__link">
+    Composition
   </a>
   
 </li>
@@ -300,26 +300,6 @@
   <a href="#terms" class="md-nav__link">
     Terms
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#identifier-and-mapping-information" class="md-nav__link">
-    Identifier and Mapping Information
-  </a>
-  
-    <nav class="md-nav" aria-label="Identifier and Mapping Information">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schema-source" class="md-nav__link">
-    Schema Source
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -368,522 +348,509 @@
   
 
 
-<h1 id="combination-mimswastewatersludge">Combination: MimsWastewaterSludge</h1>
+<h1 id="combination-mims-combined-with-wastewatersludge-mimswastewatersludge">Combination: Mims combined with WastewaterSludge (MimsWastewaterSludge)</h1>
 <p><em>MIxS data that complies with the Mims checklist and the WastewaterSludge Extension</em></p>
-<h2 id="inheritance">Inheritance</h2>
-<ul>
-<li><a href="../Extension/">Extension</a><ul>
-<li><a href="../WastewaterSludge/">WastewaterSludge</a><ul>
-<li><strong>MimsWastewaterSludge</strong> [ <a href="../Mims/">Mims</a>]</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<h2 id="composition">Composition</h2>
+<p><a href="../WastewaterSludge/">WastewaterSludge</a> [Checklist] + <a href="../Mims/">Mims</a> [Extension]</p>
 <h2 id="terms">Terms</h2>
 <table>
 <thead>
 <tr>
+<th>MIXS ID</th>
 <th>Name</th>
 <th>Cardinality and Range</th>
 <th>Description</th>
-<th>Inheritance</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td><a href="https://w3id.org/mixs/0001107">MIXS:0001107</a></td>
 <td><a href="../0001107/">samp_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>A local identifier or name that for the material sample used for extracting n...</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000017">MIXS:0000017</a></td>
 <td><a href="../0000017/">size_frac</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Filtering pore size used in sample preparation</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000043">MIXS:0000043</a></td>
 <td><a href="../0000043/">lib_screen</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Specific enrichment or screening methods applied before and/or after creating...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000062">MIXS:0000062</a></td>
 <td><a href="../0000062/">ref_db</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>List of database(s) used for ORF annotation, along with version number and re...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000038">MIXS:0000038</a></td>
 <td><a href="../0000038/">nucl_acid_amp</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A link to a literature reference, electronic resource or a standard operating...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000039">MIXS:0000039</a></td>
 <td><a href="../0000039/">lib_size</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../Integer/">Integer</a></td>
 <td>Total number of clones in the library prepared for the project</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000047">MIXS:0000047</a></td>
 <td><a href="../0000047/">mid</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Molecular barcodes, called Multiplex Identifiers (MIDs), that are used to spe...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000057">MIXS:0000057</a></td>
 <td><a href="../0000057/">assembly_name</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Name/version of the assembly provided by the submitter that is used in the ge...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000113">MIXS:0000113</a></td>
 <td><a href="../0000113/">temp</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Temperature of the sample at the time of sampling</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000037">MIXS:0000037</a></td>
 <td><a href="../0000037/">nucl_acid_ext</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A link to a literature reference, electronic resource or a standard operating...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000001">MIXS:0000001</a></td>
 <td><a href="../0000001/">samp_size</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The total amount or size (volume (ml), mass (g) or area (m2) ) of sample coll...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000094">MIXS:0000094</a></td>
 <td><a href="../0000094/">alt</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Heights of objects such as airplanes, space shuttles, rockets, atmospheric ba...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000026">MIXS:0000026</a></td>
 <td><a href="../0000026/">source_mat_id</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A unique identifier assigned to a material sample (as defined by http://rs</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000111">MIXS:0000111</a></td>
 <td><a href="../0000111/">samp_vol_we_dna_ext</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Volume (ml) or mass (g) of total collected sample processed for DNA extractio...</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000040">MIXS:0000040</a></td>
 <td><a href="../0000040/">lib_reads_seqd</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../Integer/">Integer</a></td>
 <td>Total number of clones sequenced from the library</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000015">MIXS:0000015</a></td>
 <td><a href="../0000015/">rel_to_oxygen</a></td>
 <td>0..1 <br/> <a href="../RELTOOXYGENENUM/">RELTOOXYGENENUM</a></td>
 <td>Is this organism an aerobe, anaerobe? Please note that aerobic and anaerobic ...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000002">MIXS:0000002</a></td>
 <td><a href="../0000002/">samp_collect_device</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The device used to collect an environmental sample</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000060">MIXS:0000060</a></td>
 <td><a href="../0000060/">number_contig</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../Integer/">Integer</a></td>
 <td>Total number of contigs in the cleaned/submitted assembly that makes up a giv...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000041">MIXS:0000041</a></td>
 <td><a href="../0000041/">lib_layout</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../LIBLAYOUTENUM/">LIBLAYOUTENUM</a></td>
 <td>Specify whether to expect single, paired, or other configuration of reads</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000056">MIXS:0000056</a></td>
 <td><a href="../0000056/">assembly_qual</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The assembly quality category is based on sets of criteria outlined for each ...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000025">MIXS:0000025</a></td>
 <td><a href="../0000025/">ref_biomaterial</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Primary publication if isolated before genome publication; otherwise, primary...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000092">MIXS:0000092</a></td>
 <td><a href="../0000092/">project_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Name of the project within which the sequencing was organized</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000042">MIXS:0000042</a></td>
 <td><a href="../0000042/">lib_vector</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Cloning vector type(s) used in construction of libraries</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000048">MIXS:0000048</a></td>
 <td><a href="../0000048/">adapters</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Adapters provide priming sequences for both amplification and sequencing of t...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001321">MIXS:0001321</a></td>
 <td><a href="../0001321/">neg_cont_type</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../NEGCONTTYPEENUM/">NEGCONTTYPEENUM</a></td>
 <td>The substance or equipment used as a negative control in an investigation</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000058">MIXS:0000058</a></td>
 <td><a href="../0000058/">assembly_software</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Tool(s) used for assembly, including version number and parameters</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000059">MIXS:0000059</a></td>
 <td><a href="../0000059/">annot</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Tool used for annotation, or for cases where annotation was provided by a com...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001322">MIXS:0001322</a></td>
 <td><a href="../0001322/">pos_cont_type</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The substance, mixture, product, or apparatus used to verify that a process w...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000061">MIXS:0000061</a></td>
 <td><a href="../0000061/">feat_pred</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Method used to predict UViGs features such as ORFs, integration site, etc</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000013">MIXS:0000013</a></td>
 <td><a href="../0000013/">env_local_scale</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Report the entity or entities which are in the sample or specimen s local vic...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000016">MIXS:0000016</a></td>
 <td><a href="../0000016/">samp_mat_process</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A brief description of any processing applied to the sample during or after r...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000063">MIXS:0000063</a></td>
 <td><a href="../0000063/">sim_search_meth</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Tool used to compare ORFs with database, along with version and cutoffs used</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000018">MIXS:0000018</a></td>
 <td><a href="../0000018/">depth</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The vertical distance below local surface</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001225">MIXS:0001225</a></td>
 <td><a href="../0001225/">samp_collect_method</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The method employed for collecting the sample</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000014">MIXS:0000014</a></td>
 <td><a href="../0000014/">env_medium</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Report the environmental material(s) immediately surrounding the sample or sp...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001320">MIXS:0001320</a></td>
 <td><a href="../0001320/">samp_taxon_id</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>NCBI taxon id of the sample</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000010">MIXS:0000010</a></td>
 <td><a href="../0000010/">geo_loc_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>The geographical origin of the sample as defined by the country or sea name f...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000011">MIXS:0000011</a></td>
 <td><a href="../0000011/">collection_date</a></td>
 <td>1..1 <br/> <a href="../Datetime/">Datetime</a></td>
 <td>The time of sampling, either as an instance (single point in time) or interva...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000050">MIXS:0000050</a></td>
 <td><a href="../0000050/">seq_meth</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Sequencing machine used</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000009">MIXS:0000009</a></td>
 <td><a href="../0000009/">lat_lon</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>The geographical origin of the sample as defined by latitude and longitude</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000093">MIXS:0000093</a></td>
 <td><a href="../0000093/">elev</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Elevation of the sampling site is its height above a fixed reference point, m...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000012">MIXS:0000012</a></td>
 <td><a href="../0000012/">env_broad_scale</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Report the major environmental system the sample or specimen came from</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000064">MIXS:0000064</a></td>
 <td><a href="../0000064/">tax_class</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Method used for taxonomic classification, along with reference database used,...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000008">MIXS:0000008</a></td>
 <td><a href="../0000008/">experimental_factor</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Variable aspects of an experiment design that can be used to describe an expe...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000091">MIXS:0000091</a></td>
 <td><a href="../0000091/">associated_resource</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A related resource that is referenced, cited, or otherwise associated to the ...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000090">MIXS:0000090</a></td>
 <td><a href="../0000090/">sop</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Standard operating procedures used in assembly and/or annotation of genomes, ...</td>
-<td><a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000421">MIXS:0000421</a></td>
 <td><a href="../0000421/">alkalinity</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Alkalinity, the ability of a solution to neutralize acids to the equivalence ...</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000653">MIXS:0000653</a></td>
 <td><a href="../0000653/">biochem_oxygen_dem</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Amount of dissolved oxygen needed by aerobic biological organisms in a body o...</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000751">MIXS:0000751</a></td>
 <td><a href="../0000751/">chem_administration</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>List of chemical compounds administered to the host or site where sampling oc...</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000656">MIXS:0000656</a></td>
 <td><a href="../0000656/">chem_oxygen_dem</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>A measure of the capacity of water to consume oxygen during the decomposition...</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000657">MIXS:0000657</a></td>
 <td><a href="../0000657/">efficiency_percent</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Percentage of volatile solids removed from the anaerobic digestor</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000660">MIXS:0000660</a></td>
 <td><a href="../0000660/">emulsions</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Amount or concentration of substances such as paints, adhesives, mayonnaise, ...</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000661">MIXS:0000661</a></td>
 <td><a href="../0000661/">gaseous_substances</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Amount or concentration of substances such as hydrogen sulfide, carbon dioxid...</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000662">MIXS:0000662</a></td>
 <td><a href="../0000662/">indust_eff_percent</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Percentage of industrial effluents received by wastewater treatment plant</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000664">MIXS:0000664</a></td>
 <td><a href="../0000664/">inorg_particles</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Concentration of particles such as sand, grit, metal particles, ceramics, etc</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000752">MIXS:0000752</a></td>
 <td><a href="../0000752/">misc_param</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Any other measurement performed or parameter collected, that is not listed he...</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000425">MIXS:0000425</a></td>
 <td><a href="../0000425/">nitrate</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Concentration of nitrate in the sample</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000665">MIXS:0000665</a></td>
 <td><a href="../0000665/">org_particles</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Concentration of particles such as faeces, hairs, food, vomit, paper fibers, ...</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000103">MIXS:0000103</a></td>
 <td><a href="../0000103/">organism_count</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Total cell count of any organism (or group of organisms) per gram, volume or ...</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000753">MIXS:0000753</a></td>
 <td><a href="../0000753/">oxy_stat_samp</a></td>
 <td>0..1 <br/> <a href="../OXYSTATSAMPENUM/">OXYSTATSAMPENUM</a></td>
 <td>Oxygenation status of sample</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001001">MIXS:0001001</a></td>
 <td><a href="../0001001/">ph</a></td>
 <td>0..1 <br/> <a href="../Float/">Float</a></td>
 <td>Ph measurement of the sample, or liquid portion of sample, or aqueous phase o...</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000754">MIXS:0000754</a></td>
 <td><a href="../0000754/">perturbation</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Type of perturbation, e</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000505">MIXS:0000505</a></td>
 <td><a href="../0000505/">phosphate</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Concentration of phosphate</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000348">MIXS:0000348</a></td>
 <td><a href="../0000348/">pre_treatment</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The process of pre-treatment removes materials that can be easily collected f...</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000349">MIXS:0000349</a></td>
 <td><a href="../0000349/">primary_treatment</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The process to produce both a generally homogeneous liquid capable of being t...</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000350">MIXS:0000350</a></td>
 <td><a href="../0000350/">reactor_type</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Anaerobic digesters can be designed and engineered to operate using a number ...</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000183">MIXS:0000183</a></td>
 <td><a href="../0000183/">salinity</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The total concentration of all dissolved salts in a liquid or solid sample</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000116">MIXS:0000116</a></td>
 <td><a href="../0000116/">samp_store_dur</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Duration for which the sample was stored</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000755">MIXS:0000755</a></td>
 <td><a href="../0000755/">samp_store_loc</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Location at which sample was stored, usually name of a specific freezer/room</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000110">MIXS:0000110</a></td>
 <td><a href="../0000110/">samp_store_temp</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Temperature at which sample was stored, e</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000351">MIXS:0000351</a></td>
 <td><a href="../0000351/">secondary_treatment</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The process for substantially degrading the biological content of the sewage</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000215">MIXS:0000215</a></td>
 <td><a href="../0000215/">sewage_type</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Type of wastewater treatment plant as municipial or industrial</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000669">MIXS:0000669</a></td>
 <td><a href="../0000669/">sludge_retent_time</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The time activated sludge remains in reactor</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000428">MIXS:0000428</a></td>
 <td><a href="../0000428/">sodium</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Sodium concentration in the sample</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000672">MIXS:0000672</a></td>
 <td><a href="../0000672/">soluble_inorg_mat</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Concentration of substances such as ammonia, road-salt, sea-salt, cyanide, hy...</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000673">MIXS:0000673</a></td>
 <td><a href="../0000673/">soluble_org_mat</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Concentration of substances such as urea, fruit sugars, soluble proteins, dru...</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000150">MIXS:0000150</a></td>
 <td><a href="../0000150/">suspend_solids</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Concentration of substances including a wide variety of material, such as sil...</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000352">MIXS:0000352</a></td>
 <td><a href="../0000352/">tertiary_treatment</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The process providing a final treatment stage to raise the effluent quality b...</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000102">MIXS:0000102</a></td>
 <td><a href="../0000102/">tot_nitro</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Total nitrogen concentration of water samples, calculated by: total nitrogen ...</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000689">MIXS:0000689</a></td>
 <td><a href="../0000689/">tot_phosphate</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Total amount or concentration of phosphate</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000353">MIXS:0000353</a></td>
 <td><a href="../0000353/">wastewater_type</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The origin of wastewater such as human waste, rainfall, storm drains, etc</td>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
 </tr>
 </tbody>
 </table>
-<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://w3id.org/mixs</li>
-</ul>
 <h2 id="linkml-source">LinkML Source</h2>
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
 

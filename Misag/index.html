@@ -18,7 +18,7 @@
     
     
       
-        <title>Checklist: Misag - mixs</title>
+        <title>Checklist: Minimum Information About a Single Amplified Genome (Misag) - mixs</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#checklist-misag" class="md-skip">
+        <a href="#checklist-minimum-information-about-a-single-amplified-genome-misag" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Checklist: Misag
+              Checklist: Minimum Information About a Single Amplified Genome (Misag)
             
           </span>
         </div>
@@ -290,13 +290,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#inheritance" class="md-nav__link">
-    Inheritance
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#terms" class="md-nav__link">
     Terms
   </a>
@@ -307,26 +300,6 @@
   <a href="#aliases" class="md-nav__link">
     Aliases
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#identifier-and-mapping-information" class="md-nav__link">
-    Identifier and Mapping Information
-  </a>
-  
-    <nav class="md-nav" aria-label="Identifier and Mapping Information">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schema-source" class="md-nav__link">
-    Schema Source
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -375,414 +348,402 @@
   
 
 
-<h1 id="checklist-misag">Checklist: Misag</h1>
+<h1 id="checklist-minimum-information-about-a-single-amplified-genome-misag">Checklist: Minimum Information About a Single Amplified Genome (Misag)</h1>
 <p><em>Minimum Information About a Single Amplified Genome</em></p>
-<h2 id="inheritance">Inheritance</h2>
-<ul>
-<li><a href="../Checklist/">Checklist</a><ul>
-<li><strong>Misag</strong></li>
-</ul>
-</li>
-</ul>
 <h2 id="terms">Terms</h2>
 <table>
 <thead>
 <tr>
+<th>MIXS ID</th>
 <th>Name</th>
 <th>Cardinality and Range</th>
 <th>Description</th>
-<th>Inheritance</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td><a href="https://w3id.org/mixs/0001107">MIXS:0001107</a></td>
 <td><a href="../0001107/">samp_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>A local identifier or name that for the material sample used for extracting n...</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000017">MIXS:0000017</a></td>
 <td><a href="../0000017/">size_frac</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Filtering pore size used in sample preparation</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000043">MIXS:0000043</a></td>
 <td><a href="../0000043/">lib_screen</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Specific enrichment or screening methods applied before and/or after creating...</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000062">MIXS:0000062</a></td>
 <td><a href="../0000062/">ref_db</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>List of database(s) used for ORF annotation, along with version number and re...</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000038">MIXS:0000038</a></td>
 <td><a href="../0000038/">nucl_acid_amp</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A link to a literature reference, electronic resource or a standard operating...</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000039">MIXS:0000039</a></td>
 <td><a href="../0000039/">lib_size</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../Integer/">Integer</a></td>
 <td>Total number of clones in the library prepared for the project</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000005">MIXS:0000005</a></td>
 <td><a href="../0000005/">contam_screen_input</a></td>
 <td>0..1 <br/> <a href="../CONTAMSCREENINPUTENUM/">CONTAMSCREENINPUTENUM</a></td>
 <td>The type of sequence data used as input</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000047">MIXS:0000047</a></td>
 <td><a href="../0000047/">mid</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Molecular barcodes, called Multiplex Identifiers (MIDs), that are used to spe...</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000057">MIXS:0000057</a></td>
 <td><a href="../0000057/">assembly_name</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Name/version of the assembly provided by the submitter that is used in the ge...</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000113">MIXS:0000113</a></td>
 <td><a href="../0000113/">temp</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Temperature of the sample at the time of sampling</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000069">MIXS:0000069</a></td>
 <td><a href="../0000069/">compl_score</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Completeness score is typically based on either the fraction of markers found...</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000067">MIXS:0000067</a></td>
 <td><a href="../0000067/">trnas</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The total number of tRNAs identified from the SAG or MAG</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000037">MIXS:0000037</a></td>
 <td><a href="../0000037/">nucl_acid_ext</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A link to a literature reference, electronic resource or a standard operating...</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000001">MIXS:0000001</a></td>
 <td><a href="../0000001/">samp_size</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The total amount or size (volume (ml), mass (g) or area (m2) ) of sample coll...</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000094">MIXS:0000094</a></td>
 <td><a href="../0000094/">alt</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Heights of objects such as airplanes, space shuttles, rockets, atmospheric ba...</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000026">MIXS:0000026</a></td>
 <td><a href="../0000026/">source_mat_id</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A unique identifier assigned to a material sample (as defined by http://rs</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000111">MIXS:0000111</a></td>
 <td><a href="../0000111/">samp_vol_we_dna_ext</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Volume (ml) or mass (g) of total collected sample processed for DNA extractio...</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000040">MIXS:0000040</a></td>
 <td><a href="../0000040/">lib_reads_seqd</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../Integer/">Integer</a></td>
 <td>Total number of clones sequenced from the library</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000015">MIXS:0000015</a></td>
 <td><a href="../0000015/">rel_to_oxygen</a></td>
 <td>0..1 <br/> <a href="../RELTOOXYGENENUM/">RELTOOXYGENENUM</a></td>
 <td>Is this organism an aerobe, anaerobe? Please note that aerobic and anaerobic ...</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000006">MIXS:0000006</a></td>
 <td><a href="../0000006/">wga_amp_kit</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Kit used to amplify genomic DNA in preparation for sequencing</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000074">MIXS:0000074</a></td>
 <td><a href="../0000074/">decontam_software</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Tool(s) used in contamination screening</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000002">MIXS:0000002</a></td>
 <td><a href="../0000002/">samp_collect_device</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The device used to collect an environmental sample</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000060">MIXS:0000060</a></td>
 <td><a href="../0000060/">number_contig</a></td>
 <td>0..1 <br/> <a href="../Integer/">Integer</a></td>
 <td>Total number of contigs in the cleaned/submitted assembly that makes up a giv...</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000068">MIXS:0000068</a></td>
 <td><a href="../0000068/">trna_ext_software</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Tools used for tRNA identification</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000054">MIXS:0000054</a></td>
 <td><a href="../0000054/">sc_lysis_method</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Name of the kit or standard protocol used for cell(s) or particle(s) lysis</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000041">MIXS:0000041</a></td>
 <td><a href="../0000041/">lib_layout</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../LIBLAYOUTENUM/">LIBLAYOUTENUM</a></td>
 <td>Specify whether to expect single, paired, or other configuration of reads</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000073">MIXS:0000073</a></td>
 <td><a href="../0000073/">contam_screen_param</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Specific parameters used in the decontamination sofware, such as reference da...</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000056">MIXS:0000056</a></td>
 <td><a href="../0000056/">assembly_qual</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>The assembly quality category is based on sets of criteria outlined for each ...</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000025">MIXS:0000025</a></td>
 <td><a href="../0000025/">ref_biomaterial</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Primary publication if isolated before genome publication; otherwise, primary...</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000092">MIXS:0000092</a></td>
 <td><a href="../0000092/">project_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Name of the project within which the sequencing was organized</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000042">MIXS:0000042</a></td>
 <td><a href="../0000042/">lib_vector</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Cloning vector type(s) used in construction of libraries</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000048">MIXS:0000048</a></td>
 <td><a href="../0000048/">adapters</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Adapters provide priming sequences for both amplification and sequencing of t...</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001321">MIXS:0001321</a></td>
 <td><a href="../0001321/">neg_cont_type</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../NEGCONTTYPEENUM/">NEGCONTTYPEENUM</a></td>
 <td>The substance or equipment used as a negative control in an investigation</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000058">MIXS:0000058</a></td>
 <td><a href="../0000058/">assembly_software</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Tool(s) used for assembly, including version number and parameters</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000053">MIXS:0000053</a></td>
 <td><a href="../0000053/">tax_ident</a></td>
 <td>1..1 <br/> <a href="../TAXIDENTENUM/">TAXIDENTENUM</a></td>
 <td>The phylogenetic marker(s) used to assign an organism name to the SAG or MAG</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000072">MIXS:0000072</a></td>
 <td><a href="../0000072/">contam_score</a></td>
 <td>1..1 <br/> <a href="../Float/">Float</a></td>
 <td>The contamination score is based on the fraction of single-copy genes that ar...</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000059">MIXS:0000059</a></td>
 <td><a href="../0000059/">annot</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Tool used for annotation, or for cases where annotation was provided by a com...</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000066">MIXS:0000066</a></td>
 <td><a href="../0000066/">x16s_recover_software</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Tools used for 16S rRNA gene extraction</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000065">MIXS:0000065</a></td>
 <td><a href="../0000065/">x16s_recover</a></td>
 <td>0..1 <br/> <a href="../Boolean/">Boolean</a></td>
 <td>Can a 16S gene be recovered from the submitted SAG or MAG?</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001322">MIXS:0001322</a></td>
 <td><a href="../0001322/">pos_cont_type</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The substance, mixture, product, or apparatus used to verify that a process w...</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000061">MIXS:0000061</a></td>
 <td><a href="../0000061/">feat_pred</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Method used to predict UViGs features such as ORFs, integration site, etc</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000070">MIXS:0000070</a></td>
 <td><a href="../0000070/">compl_software</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Tools used for completion estimate, i</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000013">MIXS:0000013</a></td>
 <td><a href="../0000013/">env_local_scale</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Report the entity or entities which are in the sample or specimen s local vic...</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000075">MIXS:0000075</a></td>
 <td><a href="../0000075/">sort_tech</a></td>
 <td>1..1 <br/> <a href="../SORTTECHENUM/">SORTTECHENUM</a></td>
 <td>Method used to sort/isolate cells or particles of interest</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000016">MIXS:0000016</a></td>
 <td><a href="../0000016/">samp_mat_process</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A brief description of any processing applied to the sample during or after r...</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000063">MIXS:0000063</a></td>
 <td><a href="../0000063/">sim_search_meth</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Tool used to compare ORFs with database, along with version and cutoffs used</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000018">MIXS:0000018</a></td>
 <td><a href="../0000018/">depth</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The vertical distance below local surface</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001225">MIXS:0001225</a></td>
 <td><a href="../0001225/">samp_collect_method</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The method employed for collecting the sample</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000055">MIXS:0000055</a></td>
 <td><a href="../0000055/">wga_amp_appr</a></td>
 <td>1..1 <br/> <a href="../WGAAMPAPPRENUM/">WGAAMPAPPRENUM</a></td>
 <td>Method used to amplify genomic DNA in preparation for sequencing</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000071">MIXS:0000071</a></td>
 <td><a href="../0000071/">compl_appr</a></td>
 <td>0..1 <br/> <a href="../COMPLAPPRENUM/">COMPLAPPRENUM</a></td>
 <td>The approach used to determine the completeness of a given genomic assembly, ...</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000014">MIXS:0000014</a></td>
 <td><a href="../0000014/">env_medium</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Report the environmental material(s) immediately surrounding the sample or sp...</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001320">MIXS:0001320</a></td>
 <td><a href="../0001320/">samp_taxon_id</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>NCBI taxon id of the sample</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000010">MIXS:0000010</a></td>
 <td><a href="../0000010/">geo_loc_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>The geographical origin of the sample as defined by the country or sea name f...</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000076">MIXS:0000076</a></td>
 <td><a href="../0000076/">sc_lysis_approach</a></td>
 <td>1..1 <br/> <a href="../SCLYSISAPPROACHENUM/">SCLYSISAPPROACHENUM</a></td>
 <td>Method used to free DNA from interior of the cell(s) or particle(s)</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000011">MIXS:0000011</a></td>
 <td><a href="../0000011/">collection_date</a></td>
 <td>1..1 <br/> <a href="../Datetime/">Datetime</a></td>
 <td>The time of sampling, either as an instance (single point in time) or interva...</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000050">MIXS:0000050</a></td>
 <td><a href="../0000050/">seq_meth</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Sequencing machine used</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000009">MIXS:0000009</a></td>
 <td><a href="../0000009/">lat_lon</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>The geographical origin of the sample as defined by latitude and longitude</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000093">MIXS:0000093</a></td>
 <td><a href="../0000093/">elev</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Elevation of the sampling site is its height above a fixed reference point, m...</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000012">MIXS:0000012</a></td>
 <td><a href="../0000012/">env_broad_scale</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Report the major environmental system the sample or specimen came from</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000064">MIXS:0000064</a></td>
 <td><a href="../0000064/">tax_class</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Method used for taxonomic classification, along with reference database used,...</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000008">MIXS:0000008</a></td>
 <td><a href="../0000008/">experimental_factor</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Variable aspects of an experiment design that can be used to describe an expe...</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000091">MIXS:0000091</a></td>
 <td><a href="../0000091/">associated_resource</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A related resource that is referenced, cited, or otherwise associated to the ...</td>
-<td>direct</td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000090">MIXS:0000090</a></td>
 <td><a href="../0000090/">sop</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Standard operating procedures used in assembly and/or annotation of genomes, ...</td>
-<td>direct</td>
 </tr>
 </tbody>
 </table>
 <h2 id="aliases">Aliases</h2>
 <ul>
 <li>misag</li>
-</ul>
-<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://w3id.org/mixs</li>
 </ul>
 <h2 id="linkml-source">LinkML Source</h2>
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->

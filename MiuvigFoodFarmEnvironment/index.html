@@ -18,7 +18,7 @@
     
     
       
-        <title>Combination: MiuvigFoodFarmEnvironment - mixs</title>
+        <title>Combination: Miuvig combined with FoodFarmEnvironment (MiuvigFoodFarmEnvironment) - mixs</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#combination-miuvigfoodfarmenvironment" class="md-skip">
+        <a href="#combination-miuvig-combined-with-foodfarmenvironment-miuvigfoodfarmenvironment" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Combination: MiuvigFoodFarmEnvironment
+              Combination: Miuvig combined with FoodFarmEnvironment (MiuvigFoodFarmEnvironment)
             
           </span>
         </div>
@@ -290,8 +290,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#inheritance" class="md-nav__link">
-    Inheritance
+  <a href="#composition" class="md-nav__link">
+    Composition
   </a>
   
 </li>
@@ -300,26 +300,6 @@
   <a href="#terms" class="md-nav__link">
     Terms
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#identifier-and-mapping-information" class="md-nav__link">
-    Identifier and Mapping Information
-  </a>
-  
-    <nav class="md-nav" aria-label="Identifier and Mapping Information">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schema-source" class="md-nav__link">
-    Schema Source
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -368,1260 +348,1247 @@
   
 
 
-<h1 id="combination-miuvigfoodfarmenvironment">Combination: MiuvigFoodFarmEnvironment</h1>
+<h1 id="combination-miuvig-combined-with-foodfarmenvironment-miuvigfoodfarmenvironment">Combination: Miuvig combined with FoodFarmEnvironment (MiuvigFoodFarmEnvironment)</h1>
 <p><em>MIxS data that complies with the Miuvig checklist and the FoodFarmEnvironment Extension</em></p>
-<h2 id="inheritance">Inheritance</h2>
-<ul>
-<li><a href="../Extension/">Extension</a><ul>
-<li><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a><ul>
-<li><strong>MiuvigFoodFarmEnvironment</strong> [ <a href="../Miuvig/">Miuvig</a>]</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<h2 id="composition">Composition</h2>
+<p><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a> [Checklist] + <a href="../Miuvig/">Miuvig</a> [Extension]</p>
 <h2 id="terms">Terms</h2>
 <table>
 <thead>
 <tr>
+<th>MIXS ID</th>
 <th>Name</th>
 <th>Cardinality and Range</th>
 <th>Description</th>
-<th>Inheritance</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td><a href="https://w3id.org/mixs/0001107">MIXS:0001107</a></td>
 <td><a href="../0001107/">samp_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>A local identifier or name that for the material sample used for extracting n...</td>
-<td><a href="../Miuvig/">Miuvig</a>, <a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000017">MIXS:0000017</a></td>
 <td><a href="../0000017/">size_frac</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Filtering pore size used in sample preparation</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000043">MIXS:0000043</a></td>
 <td><a href="../0000043/">lib_screen</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Specific enrichment or screening methods applied before and/or after creating...</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000035">MIXS:0000035</a></td>
 <td><a href="../0000035/">source_uvig</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Type of dataset from which the UViG was obtained</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000062">MIXS:0000062</a></td>
 <td><a href="../0000062/">ref_db</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>List of database(s) used for ORF annotation, along with version number and re...</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000038">MIXS:0000038</a></td>
 <td><a href="../0000038/">nucl_acid_amp</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A link to a literature reference, electronic resource or a standard operating...</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000039">MIXS:0000039</a></td>
 <td><a href="../0000039/">lib_size</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../Integer/">Integer</a></td>
 <td>Total number of clones in the library prepared for the project</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000047">MIXS:0000047</a></td>
 <td><a href="../0000047/">mid</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Molecular barcodes, called Multiplex Identifiers (MIDs), that are used to spe...</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000057">MIXS:0000057</a></td>
 <td><a href="../0000057/">assembly_name</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Name/version of the assembly provided by the submitter that is used in the ge...</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000113">MIXS:0000113</a></td>
 <td><a href="../0000113/">temp</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Temperature of the sample at the time of sampling</td>
-<td><a href="../Miuvig/">Miuvig</a>, <a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000069">MIXS:0000069</a></td>
 <td><a href="../0000069/">compl_score</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Completeness score is typically based on either the fraction of markers found...</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000067">MIXS:0000067</a></td>
 <td><a href="../0000067/">trnas</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The total number of tRNAs identified from the SAG or MAG</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000037">MIXS:0000037</a></td>
 <td><a href="../0000037/">nucl_acid_ext</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A link to a literature reference, electronic resource or a standard operating...</td>
-<td><a href="../Miuvig/">Miuvig</a>, <a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000001">MIXS:0000001</a></td>
 <td><a href="../0000001/">samp_size</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The total amount or size (volume (ml), mass (g) or area (m2) ) of sample coll...</td>
-<td><a href="../Miuvig/">Miuvig</a>, <a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000094">MIXS:0000094</a></td>
 <td><a href="../0000094/">alt</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Heights of objects such as airplanes, space shuttles, rockets, atmospheric ba...</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000024">MIXS:0000024</a></td>
 <td><a href="../0000024/">estimated_size</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The estimated size of the genome prior to sequencing</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000026">MIXS:0000026</a></td>
 <td><a href="../0000026/">source_mat_id</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A unique identifier assigned to a material sample (as defined by http://rs</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000111">MIXS:0000111</a></td>
 <td><a href="../0000111/">samp_vol_we_dna_ext</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Volume (ml) or mass (g) of total collected sample processed for DNA extractio...</td>
-<td><a href="../Miuvig/">Miuvig</a>, <a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000027">MIXS:0000027</a></td>
 <td><a href="../0000027/">pathogenicity</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>To what is the entity pathogenic</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000040">MIXS:0000040</a></td>
 <td><a href="../0000040/">lib_reads_seqd</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../Integer/">Integer</a></td>
 <td>Total number of clones sequenced from the library</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000002">MIXS:0000002</a></td>
 <td><a href="../0000002/">samp_collect_device</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The device used to collect an environmental sample</td>
-<td><a href="../Miuvig/">Miuvig</a>, <a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000060">MIXS:0000060</a></td>
 <td><a href="../0000060/">number_contig</a></td>
 <td>1..1 <br/> <a href="../Integer/">Integer</a></td>
 <td>Total number of contigs in the cleaned/submitted assembly that makes up a giv...</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000028">MIXS:0000028</a></td>
 <td><a href="../0000028/">biotic_relationship</a></td>
 <td>0..1 <br/> <a href="../BIOTICRELATIONSHIPENUM/">BIOTICRELATIONSHIPENUM</a></td>
 <td>Description of relationship(s) between the subject organism and other organis...</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000068">MIXS:0000068</a></td>
 <td><a href="../0000068/">trna_ext_software</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Tools used for tRNA identification</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000041">MIXS:0000041</a></td>
 <td><a href="../0000041/">lib_layout</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../LIBLAYOUTENUM/">LIBLAYOUTENUM</a></td>
 <td>Specify whether to expect single, paired, or other configuration of reads</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000056">MIXS:0000056</a></td>
 <td><a href="../0000056/">assembly_qual</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>The assembly quality category is based on sets of criteria outlined for each ...</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000025">MIXS:0000025</a></td>
 <td><a href="../0000025/">ref_biomaterial</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Primary publication if isolated before genome publication; otherwise, primary...</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000092">MIXS:0000092</a></td>
 <td><a href="../0000092/">project_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Name of the project within which the sequencing was organized</td>
-<td><a href="../Miuvig/">Miuvig</a>, <a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000042">MIXS:0000042</a></td>
 <td><a href="../0000042/">lib_vector</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Cloning vector type(s) used in construction of libraries</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000030">MIXS:0000030</a></td>
 <td><a href="../0000030/">host_spec_range</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>The range and diversity of host species that an organism is capable of infect...</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001321">MIXS:0001321</a></td>
 <td><a href="../0001321/">neg_cont_type</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../NEGCONTTYPEENUM/">NEGCONTTYPEENUM</a></td>
 <td>The substance or equipment used as a negative control in an investigation</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000036">MIXS:0000036</a></td>
 <td><a href="../0000036/">virus_enrich_appr</a></td>
 <td>1..1 <br/> <a href="../VIRUSENRICHAPPRENUM/">VIRUSENRICHAPPRENUM</a></td>
 <td>List of approaches used to enrich the sample for viruses, if any</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000048">MIXS:0000048</a></td>
 <td><a href="../0000048/">adapters</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Adapters provide priming sequences for both amplification and sequencing of t...</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000058">MIXS:0000058</a></td>
 <td><a href="../0000058/">assembly_software</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Tool(s) used for assembly, including version number and parameters</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000053">MIXS:0000053</a></td>
 <td><a href="../0000053/">tax_ident</a></td>
 <td>0..1 <br/> <a href="../TAXIDENTENUM/">TAXIDENTENUM</a></td>
 <td>The phylogenetic marker(s) used to assign an organism name to the SAG or MAG</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000059">MIXS:0000059</a></td>
 <td><a href="../0000059/">annot</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Tool used for annotation, or for cases where annotation was provided by a com...</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001322">MIXS:0001322</a></td>
 <td><a href="../0001322/">pos_cont_type</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The substance, mixture, product, or apparatus used to verify that a process w...</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000061">MIXS:0000061</a></td>
 <td><a href="../0000061/">feat_pred</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Method used to predict UViGs features such as ORFs, integration site, etc</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000070">MIXS:0000070</a></td>
 <td><a href="../0000070/">compl_software</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Tools used for completion estimate, i</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000013">MIXS:0000013</a></td>
 <td><a href="../0000013/">env_local_scale</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Report the entity or entities which are in the sample or specimen s local vic...</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000016">MIXS:0000016</a></td>
 <td><a href="../0000016/">samp_mat_process</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A brief description of any processing applied to the sample during or after r...</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000063">MIXS:0000063</a></td>
 <td><a href="../0000063/">sim_search_meth</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Tool used to compare ORFs with database, along with version and cutoffs used</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000031">MIXS:0000031</a></td>
 <td><a href="../0000031/">host_disease_stat</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>List of diseases with which the host has been diagnosed; can include multiple...</td>
-<td><a href="../Miuvig/">Miuvig</a>, <a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000018">MIXS:0000018</a></td>
 <td><a href="../0000018/">depth</a></td>
 <td>1..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The vertical distance below local surface</td>
-<td><a href="../Miuvig/">Miuvig</a>, <a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001225">MIXS:0001225</a></td>
 <td><a href="../0001225/">samp_collect_method</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The method employed for collecting the sample</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000071">MIXS:0000071</a></td>
 <td><a href="../0000071/">compl_appr</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../COMPLAPPRENUM/">COMPLAPPRENUM</a></td>
 <td>The approach used to determine the completeness of a given genomic assembly, ...</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000029">MIXS:0000029</a></td>
 <td><a href="../0000029/">specific_host</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Report the host's taxonomic name and/or NCBI taxonomy ID</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000014">MIXS:0000014</a></td>
 <td><a href="../0000014/">env_medium</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Report the environmental material(s) immediately surrounding the sample or sp...</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001320">MIXS:0001320</a></td>
 <td><a href="../0001320/">samp_taxon_id</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>NCBI taxon id of the sample</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000010">MIXS:0000010</a></td>
 <td><a href="../0000010/">geo_loc_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>The geographical origin of the sample as defined by the country or sea name f...</td>
-<td><a href="../Miuvig/">Miuvig</a>, <a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000011">MIXS:0000011</a></td>
 <td><a href="../0000011/">collection_date</a></td>
 <td>1..1 <br/> <a href="../Datetime/">Datetime</a></td>
 <td>The time of sampling, either as an instance (single point in time) or interva...</td>
-<td><a href="../Miuvig/">Miuvig</a>, <a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000050">MIXS:0000050</a></td>
 <td><a href="../0000050/">seq_meth</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Sequencing machine used</td>
-<td><a href="../Miuvig/">Miuvig</a>, <a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000009">MIXS:0000009</a></td>
 <td><a href="../0000009/">lat_lon</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>The geographical origin of the sample as defined by latitude and longitude</td>
-<td><a href="../Miuvig/">Miuvig</a>, <a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000093">MIXS:0000093</a></td>
 <td><a href="../0000093/">elev</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Elevation of the sampling site is its height above a fixed reference point, m...</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000012">MIXS:0000012</a></td>
 <td><a href="../0000012/">env_broad_scale</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Report the major environmental system the sample or specimen came from</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000064">MIXS:0000064</a></td>
 <td><a href="../0000064/">tax_class</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Method used for taxonomic classification, along with reference database used,...</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000008">MIXS:0000008</a></td>
 <td><a href="../0000008/">experimental_factor</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Variable aspects of an experiment design that can be used to describe an expe...</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000075">MIXS:0000075</a></td>
 <td><a href="../0000075/">sort_tech</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../SORTTECHENUM/">SORTTECHENUM</a></td>
 <td>Method used to sort/isolate cells or particles of interest</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000076">MIXS:0000076</a></td>
 <td><a href="../0000076/">sc_lysis_approach</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../SCLYSISAPPROACHENUM/">SCLYSISAPPROACHENUM</a></td>
 <td>Method used to free DNA from interior of the cell(s) or particle(s)</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000054">MIXS:0000054</a></td>
 <td><a href="../0000054/">sc_lysis_method</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Name of the kit or standard protocol used for cell(s) or particle(s) lysis</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000055">MIXS:0000055</a></td>
 <td><a href="../0000055/">wga_amp_appr</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../WGAAMPAPPRENUM/">WGAAMPAPPRENUM</a></td>
 <td>Method used to amplify genomic DNA in preparation for sequencing</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000006">MIXS:0000006</a></td>
 <td><a href="../0000006/">wga_amp_kit</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Kit used to amplify genomic DNA in preparation for sequencing</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000077">MIXS:0000077</a></td>
 <td><a href="../0000077/">bin_param</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../BINPARAMENUM/">BINPARAMENUM</a></td>
 <td>The parameters that have been applied during the extraction of genomes from m...</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000078">MIXS:0000078</a></td>
 <td><a href="../0000078/">bin_software</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Tool(s) used for the extraction of genomes from metagenomic datasets, where p...</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000079">MIXS:0000079</a></td>
 <td><a href="../0000079/">reassembly_bin</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../Boolean/">Boolean</a></td>
 <td>Has an assembly been performed on a genome bin extracted from a metagenomic a...</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000080">MIXS:0000080</a></td>
 <td><a href="../0000080/">mag_cov_software</a></td>
 <td>0..1 <br/> <a href="../MAGCOVSOFTWAREENUM/">MAGCOVSOFTWAREENUM</a></td>
 <td>Tool(s) used to determine the genome coverage if coverage is used as a binnin...</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000081">MIXS:0000081</a></td>
 <td><a href="../0000081/">vir_ident_software</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Tool(s) used for the identification of UViG as a viral genome, software or pr...</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000082">MIXS:0000082</a></td>
 <td><a href="../0000082/">pred_genome_type</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Type of genome predicted for the UViG</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000083">MIXS:0000083</a></td>
 <td><a href="../0000083/">pred_genome_struc</a></td>
 <td>1..1 <br/> <a href="../PREDGENOMESTRUCENUM/">PREDGENOMESTRUCENUM</a></td>
 <td>Expected structure of the viral genome</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000084">MIXS:0000084</a></td>
 <td><a href="../0000084/">detec_type</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Type of UViG detection</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000085">MIXS:0000085</a></td>
 <td><a href="../0000085/">otu_class_appr</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Cutoffs and approach used when clustering  species-level  OTUs</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000086">MIXS:0000086</a></td>
 <td><a href="../0000086/">otu_seq_comp_appr</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Tool and thresholds used to compare sequences when computing "species-level" ...</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000087">MIXS:0000087</a></td>
 <td><a href="../0000087/">otu_db</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Reference database (i</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000088">MIXS:0000088</a></td>
 <td><a href="../0000088/">host_pred_appr</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../HOSTPREDAPPRENUM/">HOSTPREDAPPRENUM</a></td>
 <td>Tool or approach used for host prediction</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000089">MIXS:0000089</a></td>
 <td><a href="../0000089/">host_pred_est_acc</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>For each tool or approach used for host prediction, estimated false discovery...</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000091">MIXS:0000091</a></td>
 <td><a href="../0000091/">associated_resource</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A related resource that is referenced, cited, or otherwise associated to the ...</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000090">MIXS:0000090</a></td>
 <td><a href="../0000090/">sop</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Standard operating procedures used in assembly and/or annotation of genomes, ...</td>
-<td><a href="../Miuvig/">Miuvig</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000100">MIXS:0000100</a></td>
 <td><a href="../0000100/">humidity</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Amount of water vapour in the air, at the time of sampling</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000103">MIXS:0000103</a></td>
 <td><a href="../0000103/">organism_count</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Total cell count of any organism (or group of organisms) per gram, volume or ...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001335">MIXS:0001335</a></td>
 <td><a href="../0001335/">spikein_count</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Total cell count of any organism (or group of organisms) per gram, volume or ...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000110">MIXS:0000110</a></td>
 <td><a href="../0000110/">samp_store_temp</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Temperature at which sample was stored, e</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000112">MIXS:0000112</a></td>
 <td><a href="../0000112/">solar_irradiance</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>The amount of solar energy that arrives at a specific area of a surface durin...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000114">MIXS:0000114</a></td>
 <td><a href="../0000114/">ventilation_rate</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Ventilation rate of the system in the sampled premises</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000116">MIXS:0000116</a></td>
 <td><a href="../0000116/">samp_store_dur</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Duration for which the sample was stored</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000118">MIXS:0000118</a></td>
 <td><a href="../0000118/">wind_speed</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>speed of wind measured at the time of sampling</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000183">MIXS:0000183</a></td>
 <td><a href="../0000183/">salinity</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The total concentration of all dissolved salts in a liquid or solid sample</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000315">MIXS:0000315</a></td>
 <td><a href="../0000315/">previous_land_use</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Previous land use and dates</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000318">MIXS:0000318</a></td>
 <td><a href="../0000318/">crop_rotation</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Whether or not crop is rotated, and if yes, rotation schedule</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000334">MIXS:0000334</a></td>
 <td><a href="../0000334/">soil_type_meth</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Reference or method used in determining soil series name or other lower-level...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000337">MIXS:0000337</a></td>
 <td><a href="../0000337/">tot_org_c_meth</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Reference or method used in determining total organic carbon</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000338">MIXS:0000338</a></td>
 <td><a href="../0000338/">tot_nitro_cont_meth</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Reference or method used in determining the total nitrogen</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000255">MIXS:0000255</a></td>
 <td><a href="../0000255/">host_age</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Age of host at the time of sampling; relevant scale depends on species and st...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000257">MIXS:0000257</a></td>
 <td><a href="../0000257/">host_dry_mass</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Measurement of dry mass</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000264">MIXS:0000264</a></td>
 <td><a href="../0000264/">host_height</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The height of subject</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000256">MIXS:0000256</a></td>
 <td><a href="../0000256/">host_length</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The length of subject</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000263">MIXS:0000263</a></td>
 <td><a href="../0000263/">host_tot_mass</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Total mass of the host at collection, the unit depends on host</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000577">MIXS:0000577</a></td>
 <td><a href="../0000577/">root_med_carbon</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Source of organic carbon in the culture rooting medium; e</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000578">MIXS:0000578</a></td>
 <td><a href="../0000578/">root_med_macronutr</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Measurement of the culture rooting medium macronutrients (N,P, K, Ca, Mg, S);...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000579">MIXS:0000579</a></td>
 <td><a href="../0000579/">root_med_micronutr</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Measurement of the culture rooting medium micronutrients (Fe, Mn, Zn, B, Cu, ...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000643">MIXS:0000643</a></td>
 <td><a href="../0000643/">season_temp</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Mean seasonal temperature</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000645">MIXS:0000645</a></td>
 <td><a href="../0000645/">season_precpt</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The average of all seasonal precipitation values known, or an estimated equiv...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000533">MIXS:0000533</a></td>
 <td><a href="../0000533/">tot_org_carb</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Total organic carbon content</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000530">MIXS:0000530</a></td>
 <td><a href="../0000530/">tot_nitro_content</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Total nitrogen content of the sample</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000692">MIXS:0000692</a></td>
 <td><a href="../0000692/">conduc</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Electrical conductivity of water</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000191">MIXS:0000191</a></td>
 <td><a href="../0000191/">turbidity</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Measure of the amount of cloudiness or haziness in water caused by individual...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000735">MIXS:0000735</a></td>
 <td><a href="../0000735/">size_frac_low</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Refers to the mesh/pore size used to pre-filter/pre-sort the sample</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000736">MIXS:0000736</a></td>
 <td><a href="../0000736/">size_frac_up</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Mesh or pore size of the device used to retain the sample</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000756">MIXS:0000756</a></td>
 <td><a href="../0000756/">ventilation_type</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Ventilation system used in the sampled premises</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000757">MIXS:0000757</a></td>
 <td><a href="../0000757/">wind_direction</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Wind direction is the direction from which a wind originates</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000859">MIXS:0000859</a></td>
 <td><a href="../0000859/">genetic_mod</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Genetic modifications of the genome of an organism, which may occur naturally...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000874">MIXS:0000874</a></td>
 <td><a href="../0000874/">host_phenotype</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Phenotype of human or other host</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001001">MIXS:0001001</a></td>
 <td><a href="../0001001/">ph</a></td>
 <td>0..1 <br/> <a href="../Float/">Float</a></td>
 <td>Ph measurement of the sample, or liquid portion of sample, or aqueous phase o...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000247">MIXS:0000247</a></td>
 <td><a href="../0000247/">ances_data</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Information about either pedigree or other ancestral information description ...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001038">MIXS:0001038</a></td>
 <td><a href="../0001038/">biotic_regm</a></td>
 <td>1..* <br/> <a href="../String/">String</a></td>
 <td>Information about treatment(s) involving use of biotic factors, such as bacte...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000751">MIXS:0000751</a></td>
 <td><a href="../0000751/">chem_administration</a></td>
 <td>1..* <br/> <a href="../String/">String</a></td>
 <td>List of chemical compounds administered to the host or site where sampling oc...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001044">MIXS:0001044</a></td>
 <td><a href="../0001044/">growth_habit</a></td>
 <td>0..1 <br/> <a href="../GROWTHHABITENUM/">GROWTHHABITENUM</a></td>
 <td>Characteristic shape, appearance or growth form of a plant species</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000365">MIXS:0000365</a></td>
 <td><a href="../0000365/">host_genotype</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Observed genotype</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000250">MIXS:0000250</a></td>
 <td><a href="../0000250/">host_taxid</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>NCBI taxon id of the host, e</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001052">MIXS:0001052</a></td>
 <td><a href="../0001052/">mechanical_damage</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Information about any mechanical damage exerted on the plant; can include mul...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000754">MIXS:0000754</a></td>
 <td><a href="../0000754/">perturbation</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Type of perturbation, e</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001061">MIXS:0001061</a></td>
 <td><a href="../0001061/">root_cond</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Relevant rooting conditions such as field plot size, sowing density, containe...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001062">MIXS:0001062</a></td>
 <td><a href="../0001062/">root_med_ph</a></td>
 <td>0..1 <br/> <a href="../Float/">Float</a></td>
 <td>pH measurement of the culture rooting medium; e</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001081">MIXS:0001081</a></td>
 <td><a href="../0001081/">tillage</a></td>
 <td>0..* <br/> <a href="../TILLAGEENUM/">TILLAGEENUM</a></td>
 <td>Note method(s) used for tilling</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001106">MIXS:0001106</a></td>
 <td><a href="../0001106/">ph_meth</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Reference or method used in determining pH</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001108">MIXS:0001108</a></td>
 <td><a href="../0001108/">growth_medium</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>A liquid or gel containing nutrients, salts, and other factors formulated to ...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000829">MIXS:0000829</a></td>
 <td><a href="../0000829/">season</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The season when sampling occurred</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001184">MIXS:0001184</a></td>
 <td><a href="../0001184/">food_product_type</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>A food product type is a class of food products that is differentiated by its...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000998">MIXS:0000998</a></td>
 <td><a href="../0000998/">samp_type</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>The type of material from which the sample was obtained</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001110">MIXS:0001110</a></td>
 <td><a href="../0001110/">farm_water_source</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../FARMWATERSOURCEENUM/">FARMWATERSOURCEENUM</a></td>
 <td>Source of water used on the farm for irrigation of crops or watering of lives...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001111">MIXS:0001111</a></td>
 <td><a href="../0001111/">plant_water_method</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Description of the equipment or method used to distribute water to crops</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000108">MIXS:0000108</a></td>
 <td><a href="../0000108/">air_PM_concen</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Concentration of substances that remain suspended in the air, and comprise mi...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001113">MIXS:0001113</a></td>
 <td><a href="../0001113/">animal_feed_equip</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Description of the feeding equipment used for livestock</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001114">MIXS:0001114</a></td>
 <td><a href="../0001114/">animal_intrusion</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Identification of animals intruding on the sample or sample site including in...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001115">MIXS:0001115</a></td>
 <td><a href="../0001115/">anim_water_method</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Description of the equipment or method used to distribute water to livestock</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001116">MIXS:0001116</a></td>
 <td><a href="../0001116/">crop_yield</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Amount of crop produced per unit or area of land</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001117">MIXS:0001117</a></td>
 <td><a href="../0001117/">cult_result</a></td>
 <td>0..1 <br/> <a href="../CULTRESULTENUM/">CULTRESULTENUM</a></td>
 <td>Any result of a bacterial culture experiment reported as a binary assessment ...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001118">MIXS:0001118</a></td>
 <td><a href="../0001118/">cult_result_org</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Taxonomic information about the cultured organism(s)</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001119">MIXS:0001119</a></td>
 <td><a href="../0001119/">cult_target</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>The target microbial analyte in terms of investigation scope</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001120">MIXS:0001120</a></td>
 <td><a href="../0001120/">plant_part_maturity</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>A description of the stage of development of a plant or plant part based on m...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001121">MIXS:0001121</a></td>
 <td><a href="../0001121/">adjacent_environment</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Description of the environmental system or features that are adjacent to the ...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001122">MIXS:0001122</a></td>
 <td><a href="../0001122/">water_source_adjac</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Description of the environmental features that are adjacent to the farm water...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001123">MIXS:0001123</a></td>
 <td><a href="../0001123/">farm_equip_shared</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>List of planting, growing or harvesting equipment shared with other farms</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001124">MIXS:0001124</a></td>
 <td><a href="../0001124/">farm_equip_san</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Method used to sanitize growing and harvesting equipment</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001125">MIXS:0001125</a></td>
 <td><a href="../0001125/">farm_equip_san_freq</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The number of times farm equipment is cleaned</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001126">MIXS:0001126</a></td>
 <td><a href="../0001126/">farm_equip</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>List of equipment used for planting, fertilization, harvesting, irrigation, l...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001127">MIXS:0001127</a></td>
 <td><a href="../0001127/">fertilizer_admin</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Type of fertilizer or amendment added to the soil or water for the purpose of...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001128">MIXS:0001128</a></td>
 <td><a href="../0001128/">fertilizer_date</a></td>
 <td>0..1 <br/> <a href="../Datetime/">Datetime</a></td>
 <td>Date of administration of soil amendment or fertilizer</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001129">MIXS:0001129</a></td>
 <td><a href="../0001129/">animal_group_size</a></td>
 <td>0..1 <br/> <a href="../Integer/">Integer</a></td>
 <td>The number of food animals of the same species that are maintained together a...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001130">MIXS:0001130</a></td>
 <td><a href="../0001130/">animal_diet</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>If the isolate is from a food animal, the type of diet eaten by the food anim...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001131">MIXS:0001131</a></td>
 <td><a href="../0001131/">food_contact_surf</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>The specific container or coating materials in direct contact with the food</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001132">MIXS:0001132</a></td>
 <td><a href="../0001132/">food_contain_wrap</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Type of container or wrapping defined by the main container material, the con...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001133">MIXS:0001133</a></td>
 <td><a href="../0001133/">food_harvest_proc</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>A harvesting process is a process which takes in some food material from an i...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001134">MIXS:0001134</a></td>
 <td><a href="../0001134/">food_pack_medium</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>The medium in which the food is packed for preservation and handling or the m...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001135">MIXS:0001135</a></td>
 <td><a href="../0001135/">food_preserv_proc</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>The methods contributing to the prevention or retardation of microbial, enzym...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001136">MIXS:0001136</a></td>
 <td><a href="../0001136/">food_prod_char</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Descriptors of the food production system such as wild caught, free-range, or...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/prod_label_claims">MIXS:prod_label_claims</a></td>
 <td><a href="../prod_label_claims/">prod_label_claims</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Labeling claims containing descriptors such as wild caught, free-range, organ...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001137">MIXS:0001137</a></td>
 <td><a href="../0001137/">food_trav_mode</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>A descriptor for the method of movement of food commodity along the food dist...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001138">MIXS:0001138</a></td>
 <td><a href="../0001138/">food_trav_vehic</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>A descriptor for the mobile machine which is used to transport food commoditi...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001139">MIXS:0001139</a></td>
 <td><a href="../0001139/">food_source</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Type of plant or animal from which the food product or its major ingredient i...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001140">MIXS:0001140</a></td>
 <td><a href="../0001140/">food_treat_proc</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Used to specifically characterize a food product based on the treatment or pr...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001141">MIXS:0001141</a></td>
 <td><a href="../0001141/">extr_weather_event</a></td>
 <td>0..* <br/> <a href="../EXTRWEATHEREVENTENUM/">EXTRWEATHEREVENTENUM</a></td>
 <td>Unusual weather events that may have affected microbial populations</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001142">MIXS:0001142</a></td>
 <td><a href="../0001142/">date_extr_weath</a></td>
 <td>0..* <br/> <a href="../Datetime/">Datetime</a></td>
 <td>Date of unusual weather events that may have affected microbial populations</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001318">MIXS:0001318</a></td>
 <td><a href="../0001318/">host_subspecf_genlin</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Information about the genetic distinctness of the host organism below the sub...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001144">MIXS:0001144</a></td>
 <td><a href="../0001144/">intended_consumer</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Food consumer type, human or animal, for which the food product is produced a...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001145">MIXS:0001145</a></td>
 <td><a href="../0001145/">library_prep_kit</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Packaged kits (containing adapters, indexes, enzymes, buffers etc</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001146">MIXS:0001146</a></td>
 <td><a href="../0001146/">air_flow_impede</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Presence of objects in the area that would influence or impede air flow throu...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001147">MIXS:0001147</a></td>
 <td><a href="../0001147/">lot_number</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>A distinctive alpha-numeric identification code assigned by the manufacturer ...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001148">MIXS:0001148</a></td>
 <td><a href="../0001148/">season_humidity</a></td>
 <td>0..1 <br/> <a href="../Float/">Float</a></td>
 <td>Average humidity of the region throughout the growing season</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001149">MIXS:0001149</a></td>
 <td><a href="../0001149/">part_plant_animal</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>The anatomical part of the organism being involved in food production or cons...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001057">MIXS:0001057</a></td>
 <td><a href="../0001057/">plant_growth_med</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Specification of the media for growing the plants or tissue cultured samples,...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001150">MIXS:0001150</a></td>
 <td><a href="../0001150/">plant_reprod_crop</a></td>
 <td>0..* <br/> <a href="../PLANTREPRODCROPENUM/">PLANTREPRODCROPENUM</a></td>
 <td>Plant reproductive part used in the field during planting to start the crop</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001151">MIXS:0001151</a></td>
 <td><a href="../0001151/">samp_purpose</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The reason that the sample was collected</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001152">MIXS:0001152</a></td>
 <td><a href="../0001152/">repository_name</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>The name of the institution where the sample or DNA extract is held or "sampl...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001153">MIXS:0001153</a></td>
 <td><a href="../0001153/">samp_pooling</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Physical combination of several instances of like material, e</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001154">MIXS:0001154</a></td>
 <td><a href="../0001154/">samp_source_mat_cat</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>This is the scientific role or category that the subject organism or material...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001155">MIXS:0001155</a></td>
 <td><a href="../0001155/">sequencing_kit</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Pre-filled, ready-to-use reagent cartridges</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001156">MIXS:0001156</a></td>
 <td><a href="../0001156/">sequencing_location</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The location the sequencing run was performed</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001157">MIXS:0001157</a></td>
 <td><a href="../0001157/">serovar_or_serotype</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>A characterization of a cell or microorganism based on the antigenic properti...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001158">MIXS:0001158</a></td>
 <td><a href="../0001158/">soil_conductivity</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Conductivity of soil at time of sampling</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001159">MIXS:0001159</a></td>
 <td><a href="../0001159/">soil_cover</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Material covering the sampled soil</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001160">MIXS:0001160</a></td>
 <td><a href="../0001160/">soil_pH</a></td>
 <td>0..1 <br/> <a href="../Float/">Float</a></td>
 <td>The pH of soil at time of sampling</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001161">MIXS:0001161</a></td>
 <td><a href="../0001161/">rel_location</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Location of sampled soil to other parts of the farm e</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001162">MIXS:0001162</a></td>
 <td><a href="../0001162/">soil_porosity</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Porosity of soil or deposited sediment is volume of voids divided by the tota...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001163">MIXS:0001163</a></td>
 <td><a href="../0001163/">soil_temp</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Temperature of soil at the time of sampling</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001164">MIXS:0001164</a></td>
 <td><a href="../0001164/">soil_texture_class</a></td>
 <td>0..1 <br/> <a href="../SOILTEXTURECLASSENUM/">SOILTEXTURECLASSENUM</a></td>
 <td>One of the 12 soil texture classes use to describe soil texture based on the ...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000336">MIXS:0000336</a></td>
 <td><a href="../0000336/">soil_texture_meth</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Reference or method used in determining soil texture</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000332">MIXS:0000332</a></td>
 <td><a href="../0000332/">soil_type</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Description of the soil type or classification</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001167">MIXS:0001167</a></td>
 <td><a href="../0001167/">spikein_org</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Taxonomic information about the spike-in organism(s)</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001168">MIXS:0001168</a></td>
 <td><a href="../0001168/">spikein_serovar</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Taxonomic information about the spike-in organism(s) at the serovar or seroty...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001169">MIXS:0001169</a></td>
 <td><a href="../0001169/">spikein_growth_med</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>A liquid or gel containing nutrients, salts, and other factors formulated to ...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001170">MIXS:0001170</a></td>
 <td><a href="../0001170/">spikein_strain</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Taxonomic information about the spike-in organism(s) at the strain level</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001171">MIXS:0001171</a></td>
 <td><a href="../0001171/">spikein_antibiotic</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Antimicrobials used in research study to assess effects of exposure on microb...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001172">MIXS:0001172</a></td>
 <td><a href="../0001172/">spikein_metal</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Heavy metals used in research study to assess effects of exposure on microbio...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001173">MIXS:0001173</a></td>
 <td><a href="../0001173/">timepoint</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Time point at which a sample or observation is made or taken from a biomateri...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001174">MIXS:0001174</a></td>
 <td><a href="../0001174/">water_frequency</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Number of water delivery events within a given period of time</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001175">MIXS:0001175</a></td>
 <td><a href="../0001175/">water_pH</a></td>
 <td>0..1 <br/> <a href="../Float/">Float</a></td>
 <td>pH measurement of the sample, or liquid portion of sample, or aqueous phase o...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001176">MIXS:0001176</a></td>
 <td><a href="../0001176/">water_source_shared</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Other users sharing access to the same water source</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001177">MIXS:0001177</a></td>
 <td><a href="../0001177/">enrichment_protocol</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The microbiological workflow or protocol followed to test for the presence or...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001178">MIXS:0001178</a></td>
 <td><a href="../0001178/">food_quality_date</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The date recommended for the use of the product while at peak quality, this d...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001179">MIXS:0001179</a></td>
 <td><a href="../0001179/">IFSAC_category</a></td>
 <td>1..* <br/> <a href="../String/">String</a></td>
 <td>The IFSAC food categorization scheme has five distinct levels to which foods ...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001180">MIXS:0001180</a></td>
 <td><a href="../0001180/">animal_housing</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Description of the housing system of the livestock</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001181">MIXS:0001181</a></td>
 <td><a href="../0001181/">cult_isol_date</a></td>
 <td>0..1 <br/> <a href="../Datetime/">Datetime</a></td>
 <td>The datetime marking the end of a process in which a sample yields a positive...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001182">MIXS:0001182</a></td>
 <td><a href="../0001182/">food_clean_proc</a></td>
 <td>0..1 <br/> <a href="../FOODCLEANPROCENUM/">FOODCLEANPROCENUM</a></td>
 <td>The process of cleaning food to separate other environmental materials from t...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000752">MIXS:0000752</a></td>
 <td><a href="../0000752/">misc_param</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Any other measurement performed or parameter collected, that is not listed he...</td>
-<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
 </tr>
 </tbody>
 </table>
-<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://w3id.org/mixs</li>
-</ul>
 <h2 id="linkml-source">LinkML Source</h2>
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
 

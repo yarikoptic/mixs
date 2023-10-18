@@ -18,7 +18,7 @@
     
     
       
-        <title>Combination: MigsBaBuiltEnvironment - mixs</title>
+        <title>Combination: MigsBa combined with BuiltEnvironment (MigsBaBuiltEnvironment) - mixs</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#combination-migsbabuiltenvironment" class="md-skip">
+        <a href="#combination-migsba-combined-with-builtenvironment-migsbabuiltenvironment" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Combination: MigsBaBuiltEnvironment
+              Combination: MigsBa combined with BuiltEnvironment (MigsBaBuiltEnvironment)
             
           </span>
         </div>
@@ -290,8 +290,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#inheritance" class="md-nav__link">
-    Inheritance
+  <a href="#composition" class="md-nav__link">
+    Composition
   </a>
   
 </li>
@@ -300,26 +300,6 @@
   <a href="#terms" class="md-nav__link">
     Terms
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#identifier-and-mapping-information" class="md-nav__link">
-    Identifier and Mapping Information
-  </a>
-  
-    <nav class="md-nav" aria-label="Identifier and Mapping Information">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schema-source" class="md-nav__link">
-    Schema Source
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -368,1350 +348,1337 @@
   
 
 
-<h1 id="combination-migsbabuiltenvironment">Combination: MigsBaBuiltEnvironment</h1>
+<h1 id="combination-migsba-combined-with-builtenvironment-migsbabuiltenvironment">Combination: MigsBa combined with BuiltEnvironment (MigsBaBuiltEnvironment)</h1>
 <p><em>MIxS data that complies with the MigsBa checklist and the BuiltEnvironment Extension</em></p>
-<h2 id="inheritance">Inheritance</h2>
-<ul>
-<li><a href="../Extension/">Extension</a><ul>
-<li><a href="../BuiltEnvironment/">BuiltEnvironment</a><ul>
-<li><strong>MigsBaBuiltEnvironment</strong> [ <a href="../MigsBa/">MigsBa</a>]</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<h2 id="composition">Composition</h2>
+<p><a href="../BuiltEnvironment/">BuiltEnvironment</a> [Checklist] + <a href="../MigsBa/">MigsBa</a> [Extension]</p>
 <h2 id="terms">Terms</h2>
 <table>
 <thead>
 <tr>
+<th>MIXS ID</th>
 <th>Name</th>
 <th>Cardinality and Range</th>
 <th>Description</th>
-<th>Inheritance</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td><a href="https://w3id.org/mixs/0001107">MIXS:0001107</a></td>
 <td><a href="../0001107/">samp_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>A local identifier or name that for the material sample used for extracting n...</td>
-<td><a href="../MigsBa/">MigsBa</a>, <a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000043">MIXS:0000043</a></td>
 <td><a href="../0000043/">lib_screen</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Specific enrichment or screening methods applied before and/or after creating...</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000062">MIXS:0000062</a></td>
 <td><a href="../0000062/">ref_db</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>List of database(s) used for ORF annotation, along with version number and re...</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000038">MIXS:0000038</a></td>
 <td><a href="../0000038/">nucl_acid_amp</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A link to a literature reference, electronic resource or a standard operating...</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000039">MIXS:0000039</a></td>
 <td><a href="../0000039/">lib_size</a></td>
 <td>0..1 <br/> <a href="../Integer/">Integer</a></td>
 <td>Total number of clones in the library prepared for the project</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000057">MIXS:0000057</a></td>
 <td><a href="../0000057/">assembly_name</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Name/version of the assembly provided by the submitter that is used in the ge...</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000113">MIXS:0000113</a></td>
 <td><a href="../0000113/">temp</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Temperature of the sample at the time of sampling</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000069">MIXS:0000069</a></td>
 <td><a href="../0000069/">compl_score</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Completeness score is typically based on either the fraction of markers found...</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000037">MIXS:0000037</a></td>
 <td><a href="../0000037/">nucl_acid_ext</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A link to a literature reference, electronic resource or a standard operating...</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000001">MIXS:0000001</a></td>
 <td><a href="../0000001/">samp_size</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The total amount or size (volume (ml), mass (g) or area (m2) ) of sample coll...</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000003">MIXS:0000003</a></td>
 <td><a href="../0000003/">isol_growth_condt</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Publication reference in the form of pubmed ID (pmid), digital object identif...</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000094">MIXS:0000094</a></td>
 <td><a href="../0000094/">alt</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Heights of objects such as airplanes, space shuttles, rockets, atmospheric ba...</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000026">MIXS:0000026</a></td>
 <td><a href="../0000026/">source_mat_id</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A unique identifier assigned to a material sample (as defined by http://rs</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000023">MIXS:0000023</a></td>
 <td><a href="../0000023/">extrachrom_elements</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../Integer/">Integer</a></td>
 <td>Do plasmids exist of significant phenotypic consequence (e</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000024">MIXS:0000024</a></td>
 <td><a href="../0000024/">estimated_size</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The estimated size of the genome prior to sequencing</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000111">MIXS:0000111</a></td>
 <td><a href="../0000111/">samp_vol_we_dna_ext</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Volume (ml) or mass (g) of total collected sample processed for DNA extractio...</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000027">MIXS:0000027</a></td>
 <td><a href="../0000027/">pathogenicity</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>To what is the entity pathogenic</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000040">MIXS:0000040</a></td>
 <td><a href="../0000040/">lib_reads_seqd</a></td>
 <td>0..1 <br/> <a href="../Integer/">Integer</a></td>
 <td>Total number of clones sequenced from the library</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000015">MIXS:0000015</a></td>
 <td><a href="../0000015/">rel_to_oxygen</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../RELTOOXYGENENUM/">RELTOOXYGENENUM</a></td>
 <td>Is this organism an aerobe, anaerobe? Please note that aerobic and anaerobic ...</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000034">MIXS:0000034</a></td>
 <td><a href="../0000034/">encoded_traits</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Should include key traits like antibiotic resistance or xenobiotic degradatio...</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000002">MIXS:0000002</a></td>
 <td><a href="../0000002/">samp_collect_device</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The device used to collect an environmental sample</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000060">MIXS:0000060</a></td>
 <td><a href="../0000060/">number_contig</a></td>
 <td>1..1 <br/> <a href="../Integer/">Integer</a></td>
 <td>Total number of contigs in the cleaned/submitted assembly that makes up a giv...</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000028">MIXS:0000028</a></td>
 <td><a href="../0000028/">biotic_relationship</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../BIOTICRELATIONSHIPENUM/">BIOTICRELATIONSHIPENUM</a></td>
 <td>Description of relationship(s) between the subject organism and other organis...</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000022">MIXS:0000022</a></td>
 <td><a href="../0000022/">num_replicons</a></td>
 <td>1..1 <br/> <a href="../Integer/">Integer</a></td>
 <td>Reports the number of replicons in a nuclear genome of eukaryotes, in the gen...</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000041">MIXS:0000041</a></td>
 <td><a href="../0000041/">lib_layout</a></td>
 <td>0..1 <br/> <a href="../LIBLAYOUTENUM/">LIBLAYOUTENUM</a></td>
 <td>Specify whether to expect single, paired, or other configuration of reads</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000056">MIXS:0000056</a></td>
 <td><a href="../0000056/">assembly_qual</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>The assembly quality category is based on sets of criteria outlined for each ...</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000025">MIXS:0000025</a></td>
 <td><a href="../0000025/">ref_biomaterial</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Primary publication if isolated before genome publication; otherwise, primary...</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000092">MIXS:0000092</a></td>
 <td><a href="../0000092/">project_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Name of the project within which the sequencing was organized</td>
-<td><a href="../MigsBa/">MigsBa</a>, <a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000042">MIXS:0000042</a></td>
 <td><a href="../0000042/">lib_vector</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Cloning vector type(s) used in construction of libraries</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000030">MIXS:0000030</a></td>
 <td><a href="../0000030/">host_spec_range</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>The range and diversity of host species that an organism is capable of infect...</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001321">MIXS:0001321</a></td>
 <td><a href="../0001321/">neg_cont_type</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../NEGCONTTYPEENUM/">NEGCONTTYPEENUM</a></td>
 <td>The substance or equipment used as a negative control in an investigation</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000048">MIXS:0000048</a></td>
 <td><a href="../0000048/">adapters</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Adapters provide priming sequences for both amplification and sequencing of t...</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000058">MIXS:0000058</a></td>
 <td><a href="../0000058/">assembly_software</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Tool(s) used for assembly, including version number and parameters</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000053">MIXS:0000053</a></td>
 <td><a href="../0000053/">tax_ident</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../TAXIDENTENUM/">TAXIDENTENUM</a></td>
 <td>The phylogenetic marker(s) used to assign an organism name to the SAG or MAG</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000059">MIXS:0000059</a></td>
 <td><a href="../0000059/">annot</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Tool used for annotation, or for cases where annotation was provided by a com...</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000032">MIXS:0000032</a></td>
 <td><a href="../0000032/">trophic_level</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../TROPHICLEVELENUM/">TROPHICLEVELENUM</a></td>
 <td>Trophic levels are the feeding position in a food chain</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001322">MIXS:0001322</a></td>
 <td><a href="../0001322/">pos_cont_type</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The substance, mixture, product, or apparatus used to verify that a process w...</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000020">MIXS:0000020</a></td>
 <td><a href="../0000020/">subspecf_gen_lin</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Information about the genetic distinctness of the sequenced organism below th...</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000061">MIXS:0000061</a></td>
 <td><a href="../0000061/">feat_pred</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Method used to predict UViGs features such as ORFs, integration site, etc</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000013">MIXS:0000013</a></td>
 <td><a href="../0000013/">env_local_scale</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Report the entity or entities which are in the sample or specimen s local vic...</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000070">MIXS:0000070</a></td>
 <td><a href="../0000070/">compl_software</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Tools used for completion estimate, i</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000016">MIXS:0000016</a></td>
 <td><a href="../0000016/">samp_mat_process</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>A brief description of any processing applied to the sample during or after r...</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000063">MIXS:0000063</a></td>
 <td><a href="../0000063/">sim_search_meth</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Tool used to compare ORFs with database, along with version and cutoffs used</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000031">MIXS:0000031</a></td>
 <td><a href="../0000031/">host_disease_stat</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>List of diseases with which the host has been diagnosed; can include multiple...</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000018">MIXS:0000018</a></td>
 <td><a href="../0000018/">depth</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The vertical distance below local surface</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001225">MIXS:0001225</a></td>
 <td><a href="../0001225/">samp_collect_method</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The method employed for collecting the sample</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000029">MIXS:0000029</a></td>
 <td><a href="../0000029/">specific_host</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Report the host's taxonomic name and/or NCBI taxonomy ID</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000014">MIXS:0000014</a></td>
 <td><a href="../0000014/">env_medium</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Report the environmental material(s) immediately surrounding the sample or sp...</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001320">MIXS:0001320</a></td>
 <td><a href="../0001320/">samp_taxon_id</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>NCBI taxon id of the sample</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000010">MIXS:0000010</a></td>
 <td><a href="../0000010/">geo_loc_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>The geographical origin of the sample as defined by the country or sea name f...</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000011">MIXS:0000011</a></td>
 <td><a href="../0000011/">collection_date</a></td>
 <td>1..1 <br/> <a href="../Datetime/">Datetime</a></td>
 <td>The time of sampling, either as an instance (single point in time) or interva...</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000050">MIXS:0000050</a></td>
 <td><a href="../0000050/">seq_meth</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Sequencing machine used</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000009">MIXS:0000009</a></td>
 <td><a href="../0000009/">lat_lon</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>The geographical origin of the sample as defined by latitude and longitude</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000093">MIXS:0000093</a></td>
 <td><a href="../0000093/">elev</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Elevation of the sampling site is its height above a fixed reference point, m...</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000012">MIXS:0000012</a></td>
 <td><a href="../0000012/">env_broad_scale</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Report the major environmental system the sample or specimen came from</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000064">MIXS:0000064</a></td>
 <td><a href="../0000064/">tax_class</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Method used for taxonomic classification, along with reference database used,...</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000008">MIXS:0000008</a></td>
 <td><a href="../0000008/">experimental_factor</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Variable aspects of an experiment design that can be used to describe an expe...</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000091">MIXS:0000091</a></td>
 <td><a href="../0000091/">associated_resource</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A related resource that is referenced, cited, or otherwise associated to the ...</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000090">MIXS:0000090</a></td>
 <td><a href="../0000090/">sop</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Standard operating procedures used in assembly and/or annotation of genomes, ...</td>
-<td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000758">MIXS:0000758</a></td>
 <td><a href="../0000758/">surf_material</a></td>
 <td>1..1 <em>recommended</em> <br/> <a href="../SURFMATERIALENUM/">SURFMATERIALENUM</a></td>
 <td>Surface materials at the point of sampling</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000759">MIXS:0000759</a></td>
 <td><a href="../0000759/">surf_air_cont</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../SURFAIRCONTENUM/">SURFAIRCONTENUM</a></td>
 <td>Contaminant identified on surface</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000121">MIXS:0000121</a></td>
 <td><a href="../0000121/">rel_air_humidity</a></td>
 <td>1..1 <br/> <a href="../Float/">Float</a></td>
 <td>Partial vapor and air pressure, density of the vapor and air, or by the actua...</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000122">MIXS:0000122</a></td>
 <td><a href="../0000122/">abs_air_humidity</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Actual mass of water vapor - mh20 - present in the air water vapor mixture</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000123">MIXS:0000123</a></td>
 <td><a href="../0000123/">surf_humidity</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../Float/">Float</a></td>
 <td>Surfaces: water activity as a function of air and material moisture</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000124">MIXS:0000124</a></td>
 <td><a href="../0000124/">air_temp</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Temperature of the air at the time of sampling</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000125">MIXS:0000125</a></td>
 <td><a href="../0000125/">surf_temp</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Temperature of the surface at the time of sampling</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000760">MIXS:0000760</a></td>
 <td><a href="../0000760/">surf_moisture_ph</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../Float/">Float</a></td>
 <td>ph measurement of surface</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000761">MIXS:0000761</a></td>
 <td><a href="../0000761/">build_occup_type</a></td>
 <td>1..* <br/> <a href="../BUILDOCCUPTYPEENUM/">BUILDOCCUPTYPEENUM</a></td>
 <td>The primary function for which a building or discrete part of a building is i...</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000128">MIXS:0000128</a></td>
 <td><a href="../0000128/">surf_moisture</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Water held on a surface</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000129">MIXS:0000129</a></td>
 <td><a href="../0000129/">dew_point</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The temperature to which a given parcel of humid air must be cooled, at const...</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000097">MIXS:0000097</a></td>
 <td><a href="../0000097/">carb_dioxide</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Carbon dioxide (gas) amount or concentration at the time of sampling</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000756">MIXS:0000756</a></td>
 <td><a href="../0000756/">ventilation_type</a></td>
 <td>1..* <br/> <a href="../String/">String</a></td>
 <td>Ventilation system used in the sampled premises</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000103">MIXS:0000103</a></td>
 <td><a href="../0000103/">organism_count</a></td>
 <td>1..* <br/> <a href="../String/">String</a></td>
 <td>Total cell count of any organism (or group of organisms) per gram, volume or ...</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000763">MIXS:0000763</a></td>
 <td><a href="../0000763/">indoor_space</a></td>
 <td>1..1 <br/> <a href="../INDOORSPACEENUM/">INDOORSPACEENUM</a></td>
 <td>A distinguishable space within a structure, the purpose for which discrete ar...</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000764">MIXS:0000764</a></td>
 <td><a href="../0000764/">indoor_surf</a></td>
 <td>1..1 <em>recommended</em> <br/> <a href="../INDOORSURFENUM/">INDOORSURFENUM</a></td>
 <td>Type of indoor surface</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000765">MIXS:0000765</a></td>
 <td><a href="../0000765/">filter_type</a></td>
 <td>1..* <br/> <a href="../FILTERTYPEENUM/">FILTERTYPEENUM</a></td>
 <td>A device which removes solid particulates or airborne molecular contaminants</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000766">MIXS:0000766</a></td>
 <td><a href="../0000766/">heat_cool_type</a></td>
 <td>1..* <br/> <a href="../HEATCOOLTYPEENUM/">HEATCOOLTYPEENUM</a></td>
 <td>Methods of conditioning or heating a room or building</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000767">MIXS:0000767</a></td>
 <td><a href="../0000767/">substructure_type</a></td>
 <td>0..* <br/> <a href="../SUBSTRUCTURETYPEENUM/">SUBSTRUCTURETYPEENUM</a></td>
 <td>The substructure or under building is that largely hidden section of the buil...</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000768">MIXS:0000768</a></td>
 <td><a href="../0000768/">building_setting</a></td>
 <td>1..1 <br/> <a href="../BUILDINGSETTINGENUM/">BUILDINGSETTINGENUM</a></td>
 <td>A location (geography) where a building is set</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000769">MIXS:0000769</a></td>
 <td><a href="../0000769/">light_type</a></td>
 <td>1..* <br/> <a href="../LIGHTTYPEENUM/">LIGHTTYPEENUM</a></td>
 <td>Application of light to achieve some practical or aesthetic effect</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000216">MIXS:0000216</a></td>
 <td><a href="../0000216/">samp_sort_meth</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Method by which samples are sorted; open face filter collecting total suspend...</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000770">MIXS:0000770</a></td>
 <td><a href="../0000770/">space_typ_state</a></td>
 <td>1..1 <br/> <a href="../SPACETYPSTATEENUM/">SPACETYPSTATEENUM</a></td>
 <td>Customary or normal state of the space</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000771">MIXS:0000771</a></td>
 <td><a href="../0000771/">typ_occup_density</a></td>
 <td>1..1 <br/> <a href="../Float/">Float</a></td>
 <td>Customary or normal density of occupants</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000772">MIXS:0000772</a></td>
 <td><a href="../0000772/">occup_samp</a></td>
 <td>1..1 <br/> <a href="../Float/">Float</a></td>
 <td>Number of occupants present at time of sample within the given space</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000217">MIXS:0000217</a></td>
 <td><a href="../0000217/">occup_density_samp</a></td>
 <td>1..1 <br/> <a href="../Float/">Float</a></td>
 <td>Average number of occupants at time of sampling per square footage</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000218">MIXS:0000218</a></td>
 <td><a href="../0000218/">address</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The street name and building number where the sampling occurred</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000219">MIXS:0000219</a></td>
 <td><a href="../0000219/">adj_room</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>List of rooms (room number, room name) immediately adjacent to the sampling r...</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000773">MIXS:0000773</a></td>
 <td><a href="../0000773/">aero_struc</a></td>
 <td>0..1 <br/> <a href="../AEROSTRUCENUM/">AEROSTRUCENUM</a></td>
 <td>Aerospace structures typically consist of thin plates with stiffeners for the...</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000140">MIXS:0000140</a></td>
 <td><a href="../0000140/">amount_light</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The unit of illuminance and luminous emittance, measuring luminous flux per u...</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000774">MIXS:0000774</a></td>
 <td><a href="../0000774/">arch_struc</a></td>
 <td>0..1 <br/> <a href="../ARCHSTRUCENUM/">ARCHSTRUCENUM</a></td>
 <td>An architectural structure is a human-made, free-standing, immobile outdoor c...</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000775">MIXS:0000775</a></td>
 <td><a href="../0000775/">avg_occup</a></td>
 <td>0..1 <br/> <a href="../Float/">Float</a></td>
 <td>Daily average occupancy of room</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000141">MIXS:0000141</a></td>
 <td><a href="../0000141/">avg_dew_point</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The average of dew point measures taken at the beginning of every hour over a...</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000142">MIXS:0000142</a></td>
 <td><a href="../0000142/">avg_temp</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The average of temperatures taken at the beginning of every hour over a 24 ho...</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000776">MIXS:0000776</a></td>
 <td><a href="../0000776/">bathroom_count</a></td>
 <td>0..1 <br/> <a href="../Integer/">Integer</a></td>
 <td>The number of bathrooms in the building</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000777">MIXS:0000777</a></td>
 <td><a href="../0000777/">bedroom_count</a></td>
 <td>0..1 <br/> <a href="../Integer/">Integer</a></td>
 <td>The number of bedrooms in the building</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000145">MIXS:0000145</a></td>
 <td><a href="../0000145/">built_struc_age</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The age of the built structure since construction</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000778">MIXS:0000778</a></td>
 <td><a href="../0000778/">built_struc_set</a></td>
 <td>0..1 <br/> <a href="../BUILTSTRUCSETENUM/">BUILTSTRUCSETENUM</a></td>
 <td>The characterization of the location of the built structure as high or low hu...</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000721">MIXS:0000721</a></td>
 <td><a href="../0000721/">built_struc_type</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>A physical structure that is a body or assemblage of bodies in space to form ...</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000148">MIXS:0000148</a></td>
 <td><a href="../0000148/">ceil_area</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The area of the ceiling space within the room</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000779">MIXS:0000779</a></td>
 <td><a href="../0000779/">ceil_cond</a></td>
 <td>0..1 <br/> <a href="../SHAREDENUM3/">SHAREDENUM3</a></td>
 <td>The physical condition of the ceiling at the time of sampling; photos or vide...</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000780">MIXS:0000780</a></td>
 <td><a href="../0000780/">ceil_finish_mat</a></td>
 <td>0..1 <br/> <a href="../CEILFINISHMATENUM/">CEILFINISHMATENUM</a></td>
 <td>The type of material used to finish a ceiling</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000781">MIXS:0000781</a></td>
 <td><a href="../0000781/">ceil_water_mold</a></td>
 <td>0..1 <br/> <a href="../SHAREDENUM1/">SHAREDENUM1</a></td>
 <td>Signs of the presence of mold or mildew on the ceiling</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000782">MIXS:0000782</a></td>
 <td><a href="../0000782/">ceil_struc</a></td>
 <td>0..1 <br/> <a href="../CEILSTRUCENUM/">CEILSTRUCENUM</a></td>
 <td>The construction format of the ceiling</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000783">MIXS:0000783</a></td>
 <td><a href="../0000783/">ceil_texture</a></td>
 <td>0..1 <br/> <a href="../SHAREDENUM4/">SHAREDENUM4</a></td>
 <td>The feel, appearance, or consistency of a ceiling surface</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000143">MIXS:0000143</a></td>
 <td><a href="../0000143/">ceil_thermal_mass</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The ability of the ceiling to provide inertia against temperature fluctuation...</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000784">MIXS:0000784</a></td>
 <td><a href="../0000784/">ceil_type</a></td>
 <td>0..1 <br/> <a href="../CEILTYPEENUM/">CEILTYPEENUM</a></td>
 <td>The type of ceiling according to the ceiling's appearance or construction</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000785">MIXS:0000785</a></td>
 <td><a href="../0000785/">cool_syst_id</a></td>
 <td>0..1 <br/> <a href="../Integer/">Integer</a></td>
 <td>The cooling system identifier</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000786">MIXS:0000786</a></td>
 <td><a href="../0000786/">date_last_rain</a></td>
 <td>0..1 <br/> <a href="../Datetime/">Datetime</a></td>
 <td>The date of the last time it rained</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000787">MIXS:0000787</a></td>
 <td><a href="../0000787/">build_docs</a></td>
 <td>0..1 <br/> <a href="../BUILDDOCSENUM/">BUILDDOCSENUM</a></td>
 <td>The building design, construction and operation documents</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000158">MIXS:0000158</a></td>
 <td><a href="../0000158/">door_size</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The size of the door</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000788">MIXS:0000788</a></td>
 <td><a href="../0000788/">door_cond</a></td>
 <td>0..1 <br/> <a href="../SHAREDENUM2/">SHAREDENUM2</a></td>
 <td>The phsical condition of the door</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000789">MIXS:0000789</a></td>
 <td><a href="../0000789/">door_direct</a></td>
 <td>0..1 <br/> <a href="../DOORDIRECTENUM/">DOORDIRECTENUM</a></td>
 <td>The direction the door opens</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000790">MIXS:0000790</a></td>
 <td><a href="../0000790/">door_loc</a></td>
 <td>0..1 <br/> <a href="../SHAREDENUM0/">SHAREDENUM0</a></td>
 <td>The relative location of the door in the room</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000791">MIXS:0000791</a></td>
 <td><a href="../0000791/">door_mat</a></td>
 <td>0..1 <br/> <a href="../DOORMATENUM/">DOORMATENUM</a></td>
 <td>The material the door is composed of</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000792">MIXS:0000792</a></td>
 <td><a href="../0000792/">door_move</a></td>
 <td>0..1 <br/> <a href="../DOORMOVEENUM/">DOORMOVEENUM</a></td>
 <td>The type of movement of the door</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000793">MIXS:0000793</a></td>
 <td><a href="../0000793/">door_water_mold</a></td>
 <td>0..1 <br/> <a href="../SHAREDENUM1/">SHAREDENUM1</a></td>
 <td>Signs of the presence of mold or mildew on a door</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000794">MIXS:0000794</a></td>
 <td><a href="../0000794/">door_type</a></td>
 <td>0..1 <br/> <a href="../DOORTYPEENUM/">DOORTYPEENUM</a></td>
 <td>The type of door material</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000795">MIXS:0000795</a></td>
 <td><a href="../0000795/">door_comp_type</a></td>
 <td>0..1 <br/> <a href="../DOORCOMPTYPEENUM/">DOORCOMPTYPEENUM</a></td>
 <td>The composite type of the door</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000796">MIXS:0000796</a></td>
 <td><a href="../0000796/">door_type_metal</a></td>
 <td>0..1 <br/> <a href="../DOORTYPEMETALENUM/">DOORTYPEMETALENUM</a></td>
 <td>The type of metal door</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000797">MIXS:0000797</a></td>
 <td><a href="../0000797/">door_type_wood</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The type of wood door</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000798">MIXS:0000798</a></td>
 <td><a href="../0000798/">drawings</a></td>
 <td>0..1 <br/> <a href="../DRAWINGSENUM/">DRAWINGSENUM</a></td>
 <td>The buildings architectural drawings; if design is chosen, indicate phase-con...</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000799">MIXS:0000799</a></td>
 <td><a href="../0000799/">elevator</a></td>
 <td>0..1 <br/> <a href="../Integer/">Integer</a></td>
 <td>The number of elevators within the built structure</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000800">MIXS:0000800</a></td>
 <td><a href="../0000800/">escalator</a></td>
 <td>0..1 <br/> <a href="../Integer/">Integer</a></td>
 <td>The number of escalators within the built structure</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000144">MIXS:0000144</a></td>
 <td><a href="../0000144/">exp_duct</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The amount of exposed ductwork in the room</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000220">MIXS:0000220</a></td>
 <td><a href="../0000220/">exp_pipe</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The number of exposed pipes in the room</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000170">MIXS:0000170</a></td>
 <td><a href="../0000170/">ext_door</a></td>
 <td>0..1 <br/> <a href="../Integer/">Integer</a></td>
 <td>The number of exterior doors in the built structure</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000802">MIXS:0000802</a></td>
 <td><a href="../0000802/">fireplace_type</a></td>
 <td>0..1 <br/> <a href="../FIREPLACETYPEENUM/">FIREPLACETYPEENUM</a></td>
 <td>A firebox with chimney</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000164">MIXS:0000164</a></td>
 <td><a href="../0000164/">floor_age</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The time period since installment of the carpet or flooring</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000165">MIXS:0000165</a></td>
 <td><a href="../0000165/">floor_area</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The area of the floor space within the room</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000803">MIXS:0000803</a></td>
 <td><a href="../0000803/">floor_cond</a></td>
 <td>0..1 <br/> <a href="../SHAREDENUM3/">SHAREDENUM3</a></td>
 <td>The physical condition of the floor at the time of sampling; photos or video ...</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000225">MIXS:0000225</a></td>
 <td><a href="../0000225/">floor_count</a></td>
 <td>0..1 <br/> <a href="../Integer/">Integer</a></td>
 <td>The number of floors in the building, including basements and mechanical pent...</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000804">MIXS:0000804</a></td>
 <td><a href="../0000804/">floor_finish_mat</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The floor covering type; the finished surface that is walked on</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000805">MIXS:0000805</a></td>
 <td><a href="../0000805/">floor_water_mold</a></td>
 <td>0..1 <br/> <a href="../FLOORWATERMOLDENUM/">FLOORWATERMOLDENUM</a></td>
 <td>Signs of the presence of mold or mildew in a room</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000806">MIXS:0000806</a></td>
 <td><a href="../0000806/">floor_struc</a></td>
 <td>0..1 <br/> <a href="../FLOORSTRUCENUM/">FLOORSTRUCENUM</a></td>
 <td>Refers to the structural elements and subfloor upon which the finish flooring...</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000166">MIXS:0000166</a></td>
 <td><a href="../0000166/">floor_thermal_mass</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The ability of the floor to provide inertia against temperature fluctuations</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000226">MIXS:0000226</a></td>
 <td><a href="../0000226/">freq_clean</a></td>
 <td>0..1 <br/> <a href="../FREQCLEANENUM/">FREQCLEANENUM</a></td>
 <td>The number of times the sample location is cleaned</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000227">MIXS:0000227</a></td>
 <td><a href="../0000227/">freq_cook</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The number of times a meal is cooked per week</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000807">MIXS:0000807</a></td>
 <td><a href="../0000807/">furniture</a></td>
 <td>0..1 <br/> <a href="../FURNITUREENUM/">FURNITUREENUM</a></td>
 <td>The types of furniture present in the sampled room</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000808">MIXS:0000808</a></td>
 <td><a href="../0000808/">gender_restroom</a></td>
 <td>0..1 <br/> <a href="../GENDERRESTROOMENUM/">GENDERRESTROOMENUM</a></td>
 <td>The gender type of the restroom</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000228">MIXS:0000228</a></td>
 <td><a href="../0000228/">hall_count</a></td>
 <td>0..1 <br/> <a href="../Integer/">Integer</a></td>
 <td>The total count of hallways and cooridors in the built structure</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000809">MIXS:0000809</a></td>
 <td><a href="../0000809/">handidness</a></td>
 <td>0..1 <br/> <a href="../HANDIDNESSENUM/">HANDIDNESSENUM</a></td>
 <td>The handidness of the individual sampled</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000810">MIXS:0000810</a></td>
 <td><a href="../0000810/">heat_deliv_loc</a></td>
 <td>0..1 <br/> <a href="../SHAREDENUM0/">SHAREDENUM0</a></td>
 <td>The location of heat delivery within the room</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000812">MIXS:0000812</a></td>
 <td><a href="../0000812/">heat_sys_deliv_meth</a></td>
 <td>0..1 <br/> <a href="../HEATSYSDELIVMETHENUM/">HEATSYSDELIVMETHENUM</a></td>
 <td>The method by which the heat is delivered through the system</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000833">MIXS:0000833</a></td>
 <td><a href="../0000833/">heat_system_id</a></td>
 <td>0..1 <br/> <a href="../Integer/">Integer</a></td>
 <td>The heating system identifier</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000167">MIXS:0000167</a></td>
 <td><a href="../0000167/">height_carper_fiber</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The average carpet fiber height in the indoor environment</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000168">MIXS:0000168</a></td>
 <td><a href="../0000168/">inside_lux</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The recorded value at sampling time (power density)</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000813">MIXS:0000813</a></td>
 <td><a href="../0000813/">int_wall_cond</a></td>
 <td>0..1 <br/> <a href="../SHAREDENUM3/">SHAREDENUM3</a></td>
 <td>The physical condition of the wall at the time of sampling; photos or video p...</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000814">MIXS:0000814</a></td>
 <td><a href="../0000814/">last_clean</a></td>
 <td>0..1 <br/> <a href="../Datetime/">Datetime</a></td>
 <td>The last time the floor was cleaned (swept, mopped, vacuumed)</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000229">MIXS:0000229</a></td>
 <td><a href="../0000229/">max_occup</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The maximum amount of people allowed in the indoor environment</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000815">MIXS:0000815</a></td>
 <td><a href="../0000815/">mech_struc</a></td>
 <td>0..1 <br/> <a href="../MECHSTRUCENUM/">MECHSTRUCENUM</a></td>
 <td>mechanical structure: a moving structure</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000230">MIXS:0000230</a></td>
 <td><a href="../0000230/">number_plants</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The number of plant(s) in the sampling space</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000231">MIXS:0000231</a></td>
 <td><a href="../0000231/">number_pets</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The number of pets residing in the sampled space</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000232">MIXS:0000232</a></td>
 <td><a href="../0000232/">number_resident</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The number of individuals currently occupying in the sampling location</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000816">MIXS:0000816</a></td>
 <td><a href="../0000816/">occup_document</a></td>
 <td>0..1 <br/> <a href="../OCCUPDOCUMENTENUM/">OCCUPDOCUMENTENUM</a></td>
 <td>The type of documentation of occupancy</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000817">MIXS:0000817</a></td>
 <td><a href="../0000817/">ext_wall_orient</a></td>
 <td>0..1 <br/> <a href="../SHAREDENUM0/">SHAREDENUM0</a></td>
 <td>The orientation of the exterior wall</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000818">MIXS:0000818</a></td>
 <td><a href="../0000818/">ext_window_orient</a></td>
 <td>0..1 <br/> <a href="../SHAREDENUM0/">SHAREDENUM0</a></td>
 <td>The compass direction the exterior window of the room is facing</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000188">MIXS:0000188</a></td>
 <td><a href="../0000188/">rel_humidity_out</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The recorded outside relative humidity value at the time of sampling</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000819">MIXS:0000819</a></td>
 <td><a href="../0000819/">pres_animal_insect</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The type and number of animals or insects present in the sampling space</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000820">MIXS:0000820</a></td>
 <td><a href="../0000820/">quad_pos</a></td>
 <td>0..1 <br/> <a href="../QUADPOSENUM/">QUADPOSENUM</a></td>
 <td>The quadrant position of the sampling room within the building</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000821">MIXS:0000821</a></td>
 <td><a href="../0000821/">rel_samp_loc</a></td>
 <td>0..1 <br/> <a href="../RELSAMPLOCENUM/">RELSAMPLOCENUM</a></td>
 <td>The sampling location within the train car</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000169">MIXS:0000169</a></td>
 <td><a href="../0000169/">room_air_exch_rate</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The rate at which outside air replaces indoor air in a given space</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000233">MIXS:0000233</a></td>
 <td><a href="../0000233/">room_architec_elem</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The unique details and component parts that, together, form the architecture ...</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000822">MIXS:0000822</a></td>
 <td><a href="../0000822/">room_condt</a></td>
 <td>0..1 <br/> <a href="../ROOMCONDTENUM/">ROOMCONDTENUM</a></td>
 <td>The condition of the room at the time of sampling</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000234">MIXS:0000234</a></td>
 <td><a href="../0000234/">room_count</a></td>
 <td>0..1 <br/> <a href="../Integer/">Integer</a></td>
 <td>The total count of rooms in the built structure including all room types</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000192">MIXS:0000192</a></td>
 <td><a href="../0000192/">room_dim</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The length, width and height of sampling room</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000193">MIXS:0000193</a></td>
 <td><a href="../0000193/">room_door_dist</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Distance between doors (meters) in the hallway between the sampling room and ...</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000823">MIXS:0000823</a></td>
 <td><a href="../0000823/">room_loc</a></td>
 <td>0..1 <br/> <a href="../ROOMLOCENUM/">ROOMLOCENUM</a></td>
 <td>The position of the room within the building</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000235">MIXS:0000235</a></td>
 <td><a href="../0000235/">room_moist_dam_hist</a></td>
 <td>0..1 <br/> <a href="../Integer/">Integer</a></td>
 <td>The history of moisture damage or mold in the past 12 months</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000194">MIXS:0000194</a></td>
 <td><a href="../0000194/">room_net_area</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The net floor area of sampling room</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000236">MIXS:0000236</a></td>
 <td><a href="../0000236/">room_occup</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Count of room occupancy at time of sampling</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000824">MIXS:0000824</a></td>
 <td><a href="../0000824/">room_samp_pos</a></td>
 <td>0..1 <br/> <a href="../ROOMSAMPPOSENUM/">ROOMSAMPPOSENUM</a></td>
 <td>The horizontal sampling position in the room relative to architectural elemen...</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000825">MIXS:0000825</a></td>
 <td><a href="../0000825/">room_type</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The main purpose or activity of the sampling room</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000195">MIXS:0000195</a></td>
 <td><a href="../0000195/">room_vol</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Volume of sampling room</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000237">MIXS:0000237</a></td>
 <td><a href="../0000237/">room_window_count</a></td>
 <td>0..1 <br/> <a href="../Integer/">Integer</a></td>
 <td>Number of windows in the room</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000826">MIXS:0000826</a></td>
 <td><a href="../0000826/">room_connected</a></td>
 <td>0..1 <br/> <a href="../ROOMCONNECTEDENUM/">ROOMCONNECTEDENUM</a></td>
 <td>List of rooms connected to the sampling room by a doorway</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000238">MIXS:0000238</a></td>
 <td><a href="../0000238/">room_hallway</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>List of room(s) (room number, room name) located in the same hallway as sampl...</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000242">MIXS:0000242</a></td>
 <td><a href="../0000242/">room_door_share</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>List of room(s) (room number, room name) sharing a door with the sampling roo...</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000243">MIXS:0000243</a></td>
 <td><a href="../0000243/">room_wall_share</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>List of room(s) (room number, room name) sharing a wall with the sampling roo...</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000827">MIXS:0000827</a></td>
 <td><a href="../0000827/">samp_weather</a></td>
 <td>0..1 <br/> <a href="../SAMPWEATHERENUM/">SAMPWEATHERENUM</a></td>
 <td>The weather on the sampling day</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000828">MIXS:0000828</a></td>
 <td><a href="../0000828/">samp_floor</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The floor of the building, where the sampling room is located</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000244">MIXS:0000244</a></td>
 <td><a href="../0000244/">samp_room_id</a></td>
 <td>0..1 <br/> <a href="../Integer/">Integer</a></td>
 <td>Sampling room number</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000196">MIXS:0000196</a></td>
 <td><a href="../0000196/">samp_time_out</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The recent and long term history of outside sampling</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000829">MIXS:0000829</a></td>
 <td><a href="../0000829/">season</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The season when sampling occurred</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000830">MIXS:0000830</a></td>
 <td><a href="../0000830/">season_use</a></td>
 <td>0..1 <br/> <a href="../SEASONUSEENUM/">SEASONUSEENUM</a></td>
 <td>The seasons the space is occupied</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000831">MIXS:0000831</a></td>
 <td><a href="../0000831/">shading_device_cond</a></td>
 <td>0..1 <br/> <a href="../SHAREDENUM2/">SHAREDENUM2</a></td>
 <td>The physical condition of the shading device at the time of sampling</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000832">MIXS:0000832</a></td>
 <td><a href="../0000832/">shading_device_loc</a></td>
 <td>0..1 <br/> <a href="../SHADINGDEVICELOCENUM/">SHADINGDEVICELOCENUM</a></td>
 <td>The location of the shading device in relation to the built structure</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000245">MIXS:0000245</a></td>
 <td><a href="../0000245/">shading_device_mat</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The material the shading device is composed of</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000834">MIXS:0000834</a></td>
 <td><a href="../0000834/">shad_dev_water_mold</a></td>
 <td>0..1 <br/> <a href="../SHAREDENUM1/">SHAREDENUM1</a></td>
 <td>Signs of the presence of mold or mildew on the shading device</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000835">MIXS:0000835</a></td>
 <td><a href="../0000835/">shading_device_type</a></td>
 <td>0..1 <br/> <a href="../SHADINGDEVICETYPEENUM/">SHADINGDEVICETYPEENUM</a></td>
 <td>The type of shading device</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000214">MIXS:0000214</a></td>
 <td><a href="../0000214/">specific_humidity</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The mass of water vapour in a unit mass of moist air, usually expressed as gr...</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000836">MIXS:0000836</a></td>
 <td><a href="../0000836/">specific</a></td>
 <td>0..1 <br/> <a href="../SPECIFICENUM/">SPECIFICENUM</a></td>
 <td>The building specifications</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000197">MIXS:0000197</a></td>
 <td><a href="../0000197/">temp_out</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The recorded temperature value at sampling time outside</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000837">MIXS:0000837</a></td>
 <td><a href="../0000837/">train_line</a></td>
 <td>0..1 <br/> <a href="../TRAINLINEENUM/">TRAINLINEENUM</a></td>
 <td>The subway line name</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000838">MIXS:0000838</a></td>
 <td><a href="../0000838/">train_stat_loc</a></td>
 <td>0..1 <br/> <a href="../TRAINSTATLOCENUM/">TRAINSTATLOCENUM</a></td>
 <td>The train station collection location</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000839">MIXS:0000839</a></td>
 <td><a href="../0000839/">train_stop_loc</a></td>
 <td>0..1 <br/> <a href="../TRAINSTOPLOCENUM/">TRAINSTOPLOCENUM</a></td>
 <td>The train stop collection location</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000840">MIXS:0000840</a></td>
 <td><a href="../0000840/">vis_media</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The building visual media</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000198">MIXS:0000198</a></td>
 <td><a href="../0000198/">wall_area</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The total area of the sampled room's walls</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000841">MIXS:0000841</a></td>
 <td><a href="../0000841/">wall_const_type</a></td>
 <td>0..1 <br/> <a href="../WALLCONSTTYPEENUM/">WALLCONSTTYPEENUM</a></td>
 <td>The building class of the wall defined by the composition of the building ele...</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000842">MIXS:0000842</a></td>
 <td><a href="../0000842/">wall_finish_mat</a></td>
 <td>0..1 <br/> <a href="../WALLFINISHMATENUM/">WALLFINISHMATENUM</a></td>
 <td>The material utilized to finish the outer most layer of the wall</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000221">MIXS:0000221</a></td>
 <td><a href="../0000221/">wall_height</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The average height of the walls in the sampled room</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000843">MIXS:0000843</a></td>
 <td><a href="../0000843/">wall_loc</a></td>
 <td>0..1 <br/> <a href="../SHAREDENUM0/">SHAREDENUM0</a></td>
 <td>The relative location of the wall within the room</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000844">MIXS:0000844</a></td>
 <td><a href="../0000844/">wall_water_mold</a></td>
 <td>0..1 <br/> <a href="../SHAREDENUM1/">SHAREDENUM1</a></td>
 <td>Signs of the presence of mold or mildew on a wall</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000845">MIXS:0000845</a></td>
 <td><a href="../0000845/">wall_surf_treatment</a></td>
 <td>0..1 <br/> <a href="../WALLSURFTREATMENTENUM/">WALLSURFTREATMENTENUM</a></td>
 <td>The surface treatment of interior wall</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000846">MIXS:0000846</a></td>
 <td><a href="../0000846/">wall_texture</a></td>
 <td>0..1 <br/> <a href="../SHAREDENUM4/">SHAREDENUM4</a></td>
 <td>The feel, appearance, or consistency of a wall surface</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000222">MIXS:0000222</a></td>
 <td><a href="../0000222/">wall_thermal_mass</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The ability of the wall to provide inertia against temperature fluctuations</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000223">MIXS:0000223</a></td>
 <td><a href="../0000223/">water_feat_size</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The size of the water feature</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000847">MIXS:0000847</a></td>
 <td><a href="../0000847/">water_feat_type</a></td>
 <td>0..1 <br/> <a href="../WATERFEATTYPEENUM/">WATERFEATTYPEENUM</a></td>
 <td>The type of water feature present within the building being sampled</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000848">MIXS:0000848</a></td>
 <td><a href="../0000848/">weekday</a></td>
 <td>0..1 <br/> <a href="../WEEKDAYENUM/">WEEKDAYENUM</a></td>
 <td>The day of the week when sampling occurred</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000224">MIXS:0000224</a></td>
 <td><a href="../0000224/">window_size</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The window's length and width</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000849">MIXS:0000849</a></td>
 <td><a href="../0000849/">window_cond</a></td>
 <td>0..1 <br/> <a href="../SHAREDENUM2/">SHAREDENUM2</a></td>
 <td>The physical condition of the window at the time of sampling</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000850">MIXS:0000850</a></td>
 <td><a href="../0000850/">window_cover</a></td>
 <td>0..1 <br/> <a href="../WINDOWCOVERENUM/">WINDOWCOVERENUM</a></td>
 <td>The type of window covering</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000851">MIXS:0000851</a></td>
 <td><a href="../0000851/">window_horiz_pos</a></td>
 <td>0..1 <br/> <a href="../WINDOWHORIZPOSENUM/">WINDOWHORIZPOSENUM</a></td>
 <td>The horizontal position of the window on the wall</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000852">MIXS:0000852</a></td>
 <td><a href="../0000852/">window_loc</a></td>
 <td>0..1 <br/> <a href="../SHAREDENUM0/">SHAREDENUM0</a></td>
 <td>The relative location of the window within the room</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000853">MIXS:0000853</a></td>
 <td><a href="../0000853/">window_mat</a></td>
 <td>0..1 <br/> <a href="../WINDOWMATENUM/">WINDOWMATENUM</a></td>
 <td>The type of material used to finish a window</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000246">MIXS:0000246</a></td>
 <td><a href="../0000246/">window_open_freq</a></td>
 <td>0..1 <br/> <a href="../Integer/">Integer</a></td>
 <td>The number of times windows are opened per week</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000854">MIXS:0000854</a></td>
 <td><a href="../0000854/">window_water_mold</a></td>
 <td>0..1 <br/> <a href="../SHAREDENUM1/">SHAREDENUM1</a></td>
 <td>Signs of the presence of mold or mildew on the window</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000855">MIXS:0000855</a></td>
 <td><a href="../0000855/">window_status</a></td>
 <td>0..1 <br/> <a href="../WINDOWSTATUSENUM/">WINDOWSTATUSENUM</a></td>
 <td>Defines whether the windows were open or closed during environmental testing</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000856">MIXS:0000856</a></td>
 <td><a href="../0000856/">window_type</a></td>
 <td>0..1 <br/> <a href="../WINDOWTYPEENUM/">WINDOWTYPEENUM</a></td>
 <td>The type of windows</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000857">MIXS:0000857</a></td>
 <td><a href="../0000857/">window_vert_pos</a></td>
 <td>0..1 <br/> <a href="../WINDOWVERTPOSENUM/">WINDOWVERTPOSENUM</a></td>
 <td>The vertical position of the window on the wall</td>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
 </tr>
 </tbody>
 </table>
-<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://w3id.org/mixs</li>
-</ul>
 <h2 id="linkml-source">LinkML Source</h2>
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
 

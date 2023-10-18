@@ -18,7 +18,7 @@
     
     
       
-        <title>Combination: MimagHumanOral - mixs</title>
+        <title>Combination: Mimag combined with HumanOral (MimagHumanOral) - mixs</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#combination-mimaghumanoral" class="md-skip">
+        <a href="#combination-mimag-combined-with-humanoral-mimaghumanoral" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Combination: MimagHumanOral
+              Combination: Mimag combined with HumanOral (MimagHumanOral)
             
           </span>
         </div>
@@ -290,8 +290,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#inheritance" class="md-nav__link">
-    Inheritance
+  <a href="#composition" class="md-nav__link">
+    Composition
   </a>
   
 </li>
@@ -300,26 +300,6 @@
   <a href="#terms" class="md-nav__link">
     Terms
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#identifier-and-mapping-information" class="md-nav__link">
-    Identifier and Mapping Information
-  </a>
-  
-    <nav class="md-nav" aria-label="Identifier and Mapping Information">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schema-source" class="md-nav__link">
-    Schema Source
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -368,600 +348,587 @@
   
 
 
-<h1 id="combination-mimaghumanoral">Combination: MimagHumanOral</h1>
+<h1 id="combination-mimag-combined-with-humanoral-mimaghumanoral">Combination: Mimag combined with HumanOral (MimagHumanOral)</h1>
 <p><em>MIxS data that complies with the Mimag checklist and the HumanOral Extension</em></p>
-<h2 id="inheritance">Inheritance</h2>
-<ul>
-<li><a href="../Extension/">Extension</a><ul>
-<li><a href="../HumanOral/">HumanOral</a><ul>
-<li><strong>MimagHumanOral</strong> [ <a href="../Mimag/">Mimag</a>]</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<h2 id="composition">Composition</h2>
+<p><a href="../HumanOral/">HumanOral</a> [Checklist] + <a href="../Mimag/">Mimag</a> [Extension]</p>
 <h2 id="terms">Terms</h2>
 <table>
 <thead>
 <tr>
+<th>MIXS ID</th>
 <th>Name</th>
 <th>Cardinality and Range</th>
 <th>Description</th>
-<th>Inheritance</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td><a href="https://w3id.org/mixs/0001107">MIXS:0001107</a></td>
 <td><a href="../0001107/">samp_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>A local identifier or name that for the material sample used for extracting n...</td>
-<td><a href="../HumanOral/">HumanOral</a>, <a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000017">MIXS:0000017</a></td>
 <td><a href="../0000017/">size_frac</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Filtering pore size used in sample preparation</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000043">MIXS:0000043</a></td>
 <td><a href="../0000043/">lib_screen</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Specific enrichment or screening methods applied before and/or after creating...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000062">MIXS:0000062</a></td>
 <td><a href="../0000062/">ref_db</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>List of database(s) used for ORF annotation, along with version number and re...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000038">MIXS:0000038</a></td>
 <td><a href="../0000038/">nucl_acid_amp</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A link to a literature reference, electronic resource or a standard operating...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000039">MIXS:0000039</a></td>
 <td><a href="../0000039/">lib_size</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../Integer/">Integer</a></td>
 <td>Total number of clones in the library prepared for the project</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000005">MIXS:0000005</a></td>
 <td><a href="../0000005/">contam_screen_input</a></td>
 <td>0..1 <br/> <a href="../CONTAMSCREENINPUTENUM/">CONTAMSCREENINPUTENUM</a></td>
 <td>The type of sequence data used as input</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000047">MIXS:0000047</a></td>
 <td><a href="../0000047/">mid</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Molecular barcodes, called Multiplex Identifiers (MIDs), that are used to spe...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000057">MIXS:0000057</a></td>
 <td><a href="../0000057/">assembly_name</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Name/version of the assembly provided by the submitter that is used in the ge...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000113">MIXS:0000113</a></td>
 <td><a href="../0000113/">temp</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Temperature of the sample at the time of sampling</td>
-<td><a href="../HumanOral/">HumanOral</a>, <a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000069">MIXS:0000069</a></td>
 <td><a href="../0000069/">compl_score</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Completeness score is typically based on either the fraction of markers found...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000067">MIXS:0000067</a></td>
 <td><a href="../0000067/">trnas</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The total number of tRNAs identified from the SAG or MAG</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000080">MIXS:0000080</a></td>
 <td><a href="../0000080/">mag_cov_software</a></td>
 <td>0..1 <br/> <a href="../MAGCOVSOFTWAREENUM/">MAGCOVSOFTWAREENUM</a></td>
 <td>Tool(s) used to determine the genome coverage if coverage is used as a binnin...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000037">MIXS:0000037</a></td>
 <td><a href="../0000037/">nucl_acid_ext</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A link to a literature reference, electronic resource or a standard operating...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000001">MIXS:0000001</a></td>
 <td><a href="../0000001/">samp_size</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The total amount or size (volume (ml), mass (g) or area (m2) ) of sample coll...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000094">MIXS:0000094</a></td>
 <td><a href="../0000094/">alt</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Heights of objects such as airplanes, space shuttles, rockets, atmospheric ba...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000077">MIXS:0000077</a></td>
 <td><a href="../0000077/">bin_param</a></td>
 <td>1..1 <br/> <a href="../BINPARAMENUM/">BINPARAMENUM</a></td>
 <td>The parameters that have been applied during the extraction of genomes from m...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000078">MIXS:0000078</a></td>
 <td><a href="../0000078/">bin_software</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Tool(s) used for the extraction of genomes from metagenomic datasets, where p...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000026">MIXS:0000026</a></td>
 <td><a href="../0000026/">source_mat_id</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A unique identifier assigned to a material sample (as defined by http://rs</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000111">MIXS:0000111</a></td>
 <td><a href="../0000111/">samp_vol_we_dna_ext</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Volume (ml) or mass (g) of total collected sample processed for DNA extractio...</td>
-<td><a href="../HumanOral/">HumanOral</a>, <a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000040">MIXS:0000040</a></td>
 <td><a href="../0000040/">lib_reads_seqd</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../Integer/">Integer</a></td>
 <td>Total number of clones sequenced from the library</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000015">MIXS:0000015</a></td>
 <td><a href="../0000015/">rel_to_oxygen</a></td>
 <td>0..1 <br/> <a href="../RELTOOXYGENENUM/">RELTOOXYGENENUM</a></td>
 <td>Is this organism an aerobe, anaerobe? Please note that aerobic and anaerobic ...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000079">MIXS:0000079</a></td>
 <td><a href="../0000079/">reassembly_bin</a></td>
 <td>0..1 <br/> <a href="../Boolean/">Boolean</a></td>
 <td>Has an assembly been performed on a genome bin extracted from a metagenomic a...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000074">MIXS:0000074</a></td>
 <td><a href="../0000074/">decontam_software</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Tool(s) used in contamination screening</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000002">MIXS:0000002</a></td>
 <td><a href="../0000002/">samp_collect_device</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The device used to collect an environmental sample</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000060">MIXS:0000060</a></td>
 <td><a href="../0000060/">number_contig</a></td>
 <td>0..1 <br/> <a href="../Integer/">Integer</a></td>
 <td>Total number of contigs in the cleaned/submitted assembly that makes up a giv...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000068">MIXS:0000068</a></td>
 <td><a href="../0000068/">trna_ext_software</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Tools used for tRNA identification</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000041">MIXS:0000041</a></td>
 <td><a href="../0000041/">lib_layout</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../LIBLAYOUTENUM/">LIBLAYOUTENUM</a></td>
 <td>Specify whether to expect single, paired, or other configuration of reads</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000073">MIXS:0000073</a></td>
 <td><a href="../0000073/">contam_screen_param</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Specific parameters used in the decontamination sofware, such as reference da...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000056">MIXS:0000056</a></td>
 <td><a href="../0000056/">assembly_qual</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>The assembly quality category is based on sets of criteria outlined for each ...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000025">MIXS:0000025</a></td>
 <td><a href="../0000025/">ref_biomaterial</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Primary publication if isolated before genome publication; otherwise, primary...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000092">MIXS:0000092</a></td>
 <td><a href="../0000092/">project_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Name of the project within which the sequencing was organized</td>
-<td><a href="../HumanOral/">HumanOral</a>, <a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000042">MIXS:0000042</a></td>
 <td><a href="../0000042/">lib_vector</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Cloning vector type(s) used in construction of libraries</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000048">MIXS:0000048</a></td>
 <td><a href="../0000048/">adapters</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Adapters provide priming sequences for both amplification and sequencing of t...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001321">MIXS:0001321</a></td>
 <td><a href="../0001321/">neg_cont_type</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../NEGCONTTYPEENUM/">NEGCONTTYPEENUM</a></td>
 <td>The substance or equipment used as a negative control in an investigation</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000058">MIXS:0000058</a></td>
 <td><a href="../0000058/">assembly_software</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Tool(s) used for assembly, including version number and parameters</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000053">MIXS:0000053</a></td>
 <td><a href="../0000053/">tax_ident</a></td>
 <td>1..1 <br/> <a href="../TAXIDENTENUM/">TAXIDENTENUM</a></td>
 <td>The phylogenetic marker(s) used to assign an organism name to the SAG or MAG</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000072">MIXS:0000072</a></td>
 <td><a href="../0000072/">contam_score</a></td>
 <td>1..1 <br/> <a href="../Float/">Float</a></td>
 <td>The contamination score is based on the fraction of single-copy genes that ar...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000059">MIXS:0000059</a></td>
 <td><a href="../0000059/">annot</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Tool used for annotation, or for cases where annotation was provided by a com...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000066">MIXS:0000066</a></td>
 <td><a href="../0000066/">x16s_recover_software</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Tools used for 16S rRNA gene extraction</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000065">MIXS:0000065</a></td>
 <td><a href="../0000065/">x16s_recover</a></td>
 <td>0..1 <br/> <a href="../Boolean/">Boolean</a></td>
 <td>Can a 16S gene be recovered from the submitted SAG or MAG?</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001322">MIXS:0001322</a></td>
 <td><a href="../0001322/">pos_cont_type</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The substance, mixture, product, or apparatus used to verify that a process w...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000061">MIXS:0000061</a></td>
 <td><a href="../0000061/">feat_pred</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Method used to predict UViGs features such as ORFs, integration site, etc</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000070">MIXS:0000070</a></td>
 <td><a href="../0000070/">compl_software</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Tools used for completion estimate, i</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000013">MIXS:0000013</a></td>
 <td><a href="../0000013/">env_local_scale</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Report the entity or entities which are in the sample or specimen s local vic...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000016">MIXS:0000016</a></td>
 <td><a href="../0000016/">samp_mat_process</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A brief description of any processing applied to the sample during or after r...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000063">MIXS:0000063</a></td>
 <td><a href="../0000063/">sim_search_meth</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Tool used to compare ORFs with database, along with version and cutoffs used</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000018">MIXS:0000018</a></td>
 <td><a href="../0000018/">depth</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The vertical distance below local surface</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001225">MIXS:0001225</a></td>
 <td><a href="../0001225/">samp_collect_method</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The method employed for collecting the sample</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000071">MIXS:0000071</a></td>
 <td><a href="../0000071/">compl_appr</a></td>
 <td>0..1 <br/> <a href="../COMPLAPPRENUM/">COMPLAPPRENUM</a></td>
 <td>The approach used to determine the completeness of a given genomic assembly, ...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000014">MIXS:0000014</a></td>
 <td><a href="../0000014/">env_medium</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Report the environmental material(s) immediately surrounding the sample or sp...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001320">MIXS:0001320</a></td>
 <td><a href="../0001320/">samp_taxon_id</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>NCBI taxon id of the sample</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000010">MIXS:0000010</a></td>
 <td><a href="../0000010/">geo_loc_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>The geographical origin of the sample as defined by the country or sea name f...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000011">MIXS:0000011</a></td>
 <td><a href="../0000011/">collection_date</a></td>
 <td>1..1 <br/> <a href="../Datetime/">Datetime</a></td>
 <td>The time of sampling, either as an instance (single point in time) or interva...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000050">MIXS:0000050</a></td>
 <td><a href="../0000050/">seq_meth</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Sequencing machine used</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000009">MIXS:0000009</a></td>
 <td><a href="../0000009/">lat_lon</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>The geographical origin of the sample as defined by latitude and longitude</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000093">MIXS:0000093</a></td>
 <td><a href="../0000093/">elev</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Elevation of the sampling site is its height above a fixed reference point, m...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000012">MIXS:0000012</a></td>
 <td><a href="../0000012/">env_broad_scale</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Report the major environmental system the sample or specimen came from</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000064">MIXS:0000064</a></td>
 <td><a href="../0000064/">tax_class</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Method used for taxonomic classification, along with reference database used,...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000008">MIXS:0000008</a></td>
 <td><a href="../0000008/">experimental_factor</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Variable aspects of an experiment design that can be used to describe an expe...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000091">MIXS:0000091</a></td>
 <td><a href="../0000091/">associated_resource</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A related resource that is referenced, cited, or otherwise associated to the ...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000090">MIXS:0000090</a></td>
 <td><a href="../0000090/">sop</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Standard operating procedures used in assembly and/or annotation of genomes, ...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000283">MIXS:0000283</a></td>
 <td><a href="../0000283/">nose_mouth_teeth_throat_disord</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>History of nose/mouth/teeth/throat disorders; can include multiple disorders</td>
-<td><a href="../HumanOral/">HumanOral</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000924">MIXS:0000924</a></td>
 <td><a href="../0000924/">time_last_toothbrush</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Specification of the time since last toothbrushing</td>
-<td><a href="../HumanOral/">HumanOral</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000861">MIXS:0000861</a></td>
 <td><a href="../0000861/">host_subject_id</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>A unique identifier by which each subject can be referred to, de-identified</td>
-<td><a href="../HumanOral/">HumanOral</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000255">MIXS:0000255</a></td>
 <td><a href="../0000255/">host_age</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Age of host at the time of sampling; relevant scale depends on species and st...</td>
-<td><a href="../HumanOral/">HumanOral</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000811">MIXS:0000811</a></td>
 <td><a href="../0000811/">host_sex</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Gender or physical sex of the host</td>
-<td><a href="../HumanOral/">HumanOral</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000031">MIXS:0000031</a></td>
 <td><a href="../0000031/">host_disease_stat</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>List of diseases with which the host has been diagnosed; can include multiple...</td>
-<td><a href="../HumanOral/">HumanOral</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000884">MIXS:0000884</a></td>
 <td><a href="../0000884/">ihmc_medication_code</a></td>
 <td>0..* <br/> <a href="../Integer/">Integer</a></td>
 <td>Can include multiple medication codes</td>
-<td><a href="../HumanOral/">HumanOral</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000751">MIXS:0000751</a></td>
 <td><a href="../0000751/">chem_administration</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>List of chemical compounds administered to the host or site where sampling oc...</td>
-<td><a href="../HumanOral/">HumanOral</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000867">MIXS:0000867</a></td>
 <td><a href="../0000867/">host_body_site</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Name of body site where the sample was obtained from, such as a specific orga...</td>
-<td><a href="../HumanOral/">HumanOral</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000888">MIXS:0000888</a></td>
 <td><a href="../0000888/">host_body_product</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Substance produced by the body, e</td>
-<td><a href="../HumanOral/">HumanOral</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000263">MIXS:0000263</a></td>
 <td><a href="../0000263/">host_tot_mass</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Total mass of the host at collection, the unit depends on host</td>
-<td><a href="../HumanOral/">HumanOral</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000264">MIXS:0000264</a></td>
 <td><a href="../0000264/">host_height</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The height of subject</td>
-<td><a href="../HumanOral/">HumanOral</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000869">MIXS:0000869</a></td>
 <td><a href="../0000869/">host_diet</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Type of diet depending on the host, for animals omnivore, herbivore etc</td>
-<td><a href="../HumanOral/">HumanOral</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000870">MIXS:0000870</a></td>
 <td><a href="../0000870/">host_last_meal</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Content of last meal and time since feeding; can include multiple values</td>
-<td><a href="../HumanOral/">HumanOral</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000872">MIXS:0000872</a></td>
 <td><a href="../0000872/">host_fam_rel</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Relationships to other hosts in the same study; can include multiple relation...</td>
-<td><a href="../HumanOral/">HumanOral</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000365">MIXS:0000365</a></td>
 <td><a href="../0000365/">host_genotype</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Observed genotype</td>
-<td><a href="../HumanOral/">HumanOral</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000874">MIXS:0000874</a></td>
 <td><a href="../0000874/">host_phenotype</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Phenotype of human or other host</td>
-<td><a href="../HumanOral/">HumanOral</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000274">MIXS:0000274</a></td>
 <td><a href="../0000274/">host_body_temp</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Core body temperature of the host when sample was collected</td>
-<td><a href="../HumanOral/">HumanOral</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000317">MIXS:0000317</a></td>
 <td><a href="../0000317/">host_body_mass_index</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Body mass index, calculated as weight/(height)squared</td>
-<td><a href="../HumanOral/">HumanOral</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000895">MIXS:0000895</a></td>
 <td><a href="../0000895/">ethnicity</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>A category of people who identify with each other, usually on the basis of pr...</td>
-<td><a href="../HumanOral/">HumanOral</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000896">MIXS:0000896</a></td>
 <td><a href="../0000896/">host_occupation</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Most frequent job performed by subject</td>
-<td><a href="../HumanOral/">HumanOral</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000897">MIXS:0000897</a></td>
 <td><a href="../0000897/">medic_hist_perform</a></td>
 <td>0..1 <br/> <a href="../Boolean/">Boolean</a></td>
 <td>Whether full medical history was collected</td>
-<td><a href="../HumanOral/">HumanOral</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000333">MIXS:0000333</a></td>
 <td><a href="../0000333/">host_pulse</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Resting pulse, measured as beats per minute</td>
-<td><a href="../HumanOral/">HumanOral</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000754">MIXS:0000754</a></td>
 <td><a href="../0000754/">perturbation</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Type of perturbation, e</td>
-<td><a href="../HumanOral/">HumanOral</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000183">MIXS:0000183</a></td>
 <td><a href="../0000183/">salinity</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The total concentration of all dissolved salts in a liquid or solid sample</td>
-<td><a href="../HumanOral/">HumanOral</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000753">MIXS:0000753</a></td>
 <td><a href="../0000753/">oxy_stat_samp</a></td>
 <td>0..1 <br/> <a href="../OXYSTATSAMPENUM/">OXYSTATSAMPENUM</a></td>
 <td>Oxygenation status of sample</td>
-<td><a href="../HumanOral/">HumanOral</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000103">MIXS:0000103</a></td>
 <td><a href="../0000103/">organism_count</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Total cell count of any organism (or group of organisms) per gram, volume or ...</td>
-<td><a href="../HumanOral/">HumanOral</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000110">MIXS:0000110</a></td>
 <td><a href="../0000110/">samp_store_temp</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Temperature at which sample was stored, e</td>
-<td><a href="../HumanOral/">HumanOral</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000116">MIXS:0000116</a></td>
 <td><a href="../0000116/">samp_store_dur</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Duration for which the sample was stored</td>
-<td><a href="../HumanOral/">HumanOral</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001298">MIXS:0001298</a></td>
 <td><a href="../0001298/">host_symbiont</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>The taxonomic name of the organism(s) found living in mutualistic, commensali...</td>
-<td><a href="../HumanOral/">HumanOral</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000755">MIXS:0000755</a></td>
 <td><a href="../0000755/">samp_store_loc</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Location at which sample was stored, usually name of a specific freezer/room</td>
-<td><a href="../HumanOral/">HumanOral</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000752">MIXS:0000752</a></td>
 <td><a href="../0000752/">misc_param</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Any other measurement performed or parameter collected, that is not listed he...</td>
-<td><a href="../HumanOral/">HumanOral</a></td>
 </tr>
 </tbody>
 </table>
-<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://w3id.org/mixs</li>
-</ul>
 <h2 id="linkml-source">LinkML Source</h2>
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
 

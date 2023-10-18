@@ -18,7 +18,7 @@
     
     
       
-        <title>Combination: MimagSoil - mixs</title>
+        <title>Combination: Mimag combined with Soil (MimagSoil) - mixs</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#combination-mimagsoil" class="md-skip">
+        <a href="#combination-mimag-combined-with-soil-mimagsoil" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Combination: MimagSoil
+              Combination: Mimag combined with Soil (MimagSoil)
             
           </span>
         </div>
@@ -290,8 +290,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#inheritance" class="md-nav__link">
-    Inheritance
+  <a href="#composition" class="md-nav__link">
+    Composition
   </a>
   
 </li>
@@ -300,26 +300,6 @@
   <a href="#terms" class="md-nav__link">
     Terms
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#identifier-and-mapping-information" class="md-nav__link">
-    Identifier and Mapping Information
-  </a>
-  
-    <nav class="md-nav" aria-label="Identifier and Mapping Information">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schema-source" class="md-nav__link">
-    Schema Source
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -368,714 +348,701 @@
   
 
 
-<h1 id="combination-mimagsoil">Combination: MimagSoil</h1>
+<h1 id="combination-mimag-combined-with-soil-mimagsoil">Combination: Mimag combined with Soil (MimagSoil)</h1>
 <p><em>MIxS data that complies with the Mimag checklist and the Soil Extension</em></p>
-<h2 id="inheritance">Inheritance</h2>
-<ul>
-<li><a href="../Extension/">Extension</a><ul>
-<li><a href="../Soil/">Soil</a><ul>
-<li><strong>MimagSoil</strong> [ <a href="../Mimag/">Mimag</a>]</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<h2 id="composition">Composition</h2>
+<p><a href="../Soil/">Soil</a> [Checklist] + <a href="../Mimag/">Mimag</a> [Extension]</p>
 <h2 id="terms">Terms</h2>
 <table>
 <thead>
 <tr>
+<th>MIXS ID</th>
 <th>Name</th>
 <th>Cardinality and Range</th>
 <th>Description</th>
-<th>Inheritance</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td><a href="https://w3id.org/mixs/0001107">MIXS:0001107</a></td>
 <td><a href="../0001107/">samp_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>A local identifier or name that for the material sample used for extracting n...</td>
-<td><a href="../Soil/">Soil</a>, <a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000017">MIXS:0000017</a></td>
 <td><a href="../0000017/">size_frac</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Filtering pore size used in sample preparation</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000043">MIXS:0000043</a></td>
 <td><a href="../0000043/">lib_screen</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Specific enrichment or screening methods applied before and/or after creating...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000062">MIXS:0000062</a></td>
 <td><a href="../0000062/">ref_db</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>List of database(s) used for ORF annotation, along with version number and re...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000038">MIXS:0000038</a></td>
 <td><a href="../0000038/">nucl_acid_amp</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A link to a literature reference, electronic resource or a standard operating...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000039">MIXS:0000039</a></td>
 <td><a href="../0000039/">lib_size</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../Integer/">Integer</a></td>
 <td>Total number of clones in the library prepared for the project</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000005">MIXS:0000005</a></td>
 <td><a href="../0000005/">contam_screen_input</a></td>
 <td>0..1 <br/> <a href="../CONTAMSCREENINPUTENUM/">CONTAMSCREENINPUTENUM</a></td>
 <td>The type of sequence data used as input</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000047">MIXS:0000047</a></td>
 <td><a href="../0000047/">mid</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Molecular barcodes, called Multiplex Identifiers (MIDs), that are used to spe...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000057">MIXS:0000057</a></td>
 <td><a href="../0000057/">assembly_name</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Name/version of the assembly provided by the submitter that is used in the ge...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000113">MIXS:0000113</a></td>
 <td><a href="../0000113/">temp</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Temperature of the sample at the time of sampling</td>
-<td><a href="../Soil/">Soil</a>, <a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000069">MIXS:0000069</a></td>
 <td><a href="../0000069/">compl_score</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Completeness score is typically based on either the fraction of markers found...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000067">MIXS:0000067</a></td>
 <td><a href="../0000067/">trnas</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The total number of tRNAs identified from the SAG or MAG</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000080">MIXS:0000080</a></td>
 <td><a href="../0000080/">mag_cov_software</a></td>
 <td>0..1 <br/> <a href="../MAGCOVSOFTWAREENUM/">MAGCOVSOFTWAREENUM</a></td>
 <td>Tool(s) used to determine the genome coverage if coverage is used as a binnin...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000037">MIXS:0000037</a></td>
 <td><a href="../0000037/">nucl_acid_ext</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A link to a literature reference, electronic resource or a standard operating...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000001">MIXS:0000001</a></td>
 <td><a href="../0000001/">samp_size</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The total amount or size (volume (ml), mass (g) or area (m2) ) of sample coll...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000094">MIXS:0000094</a></td>
 <td><a href="../0000094/">alt</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Heights of objects such as airplanes, space shuttles, rockets, atmospheric ba...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000077">MIXS:0000077</a></td>
 <td><a href="../0000077/">bin_param</a></td>
 <td>1..1 <br/> <a href="../BINPARAMENUM/">BINPARAMENUM</a></td>
 <td>The parameters that have been applied during the extraction of genomes from m...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000078">MIXS:0000078</a></td>
 <td><a href="../0000078/">bin_software</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Tool(s) used for the extraction of genomes from metagenomic datasets, where p...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000026">MIXS:0000026</a></td>
 <td><a href="../0000026/">source_mat_id</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A unique identifier assigned to a material sample (as defined by http://rs</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000111">MIXS:0000111</a></td>
 <td><a href="../0000111/">samp_vol_we_dna_ext</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Volume (ml) or mass (g) of total collected sample processed for DNA extractio...</td>
-<td><a href="../Soil/">Soil</a>, <a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000040">MIXS:0000040</a></td>
 <td><a href="../0000040/">lib_reads_seqd</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../Integer/">Integer</a></td>
 <td>Total number of clones sequenced from the library</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000015">MIXS:0000015</a></td>
 <td><a href="../0000015/">rel_to_oxygen</a></td>
 <td>0..1 <br/> <a href="../RELTOOXYGENENUM/">RELTOOXYGENENUM</a></td>
 <td>Is this organism an aerobe, anaerobe? Please note that aerobic and anaerobic ...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000079">MIXS:0000079</a></td>
 <td><a href="../0000079/">reassembly_bin</a></td>
 <td>0..1 <br/> <a href="../Boolean/">Boolean</a></td>
 <td>Has an assembly been performed on a genome bin extracted from a metagenomic a...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000074">MIXS:0000074</a></td>
 <td><a href="../0000074/">decontam_software</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Tool(s) used in contamination screening</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000002">MIXS:0000002</a></td>
 <td><a href="../0000002/">samp_collect_device</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The device used to collect an environmental sample</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000060">MIXS:0000060</a></td>
 <td><a href="../0000060/">number_contig</a></td>
 <td>0..1 <br/> <a href="../Integer/">Integer</a></td>
 <td>Total number of contigs in the cleaned/submitted assembly that makes up a giv...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000068">MIXS:0000068</a></td>
 <td><a href="../0000068/">trna_ext_software</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Tools used for tRNA identification</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000041">MIXS:0000041</a></td>
 <td><a href="../0000041/">lib_layout</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../LIBLAYOUTENUM/">LIBLAYOUTENUM</a></td>
 <td>Specify whether to expect single, paired, or other configuration of reads</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000073">MIXS:0000073</a></td>
 <td><a href="../0000073/">contam_screen_param</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Specific parameters used in the decontamination sofware, such as reference da...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000056">MIXS:0000056</a></td>
 <td><a href="../0000056/">assembly_qual</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>The assembly quality category is based on sets of criteria outlined for each ...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000025">MIXS:0000025</a></td>
 <td><a href="../0000025/">ref_biomaterial</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Primary publication if isolated before genome publication; otherwise, primary...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000092">MIXS:0000092</a></td>
 <td><a href="../0000092/">project_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Name of the project within which the sequencing was organized</td>
-<td><a href="../Soil/">Soil</a>, <a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000042">MIXS:0000042</a></td>
 <td><a href="../0000042/">lib_vector</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Cloning vector type(s) used in construction of libraries</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000048">MIXS:0000048</a></td>
 <td><a href="../0000048/">adapters</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Adapters provide priming sequences for both amplification and sequencing of t...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001321">MIXS:0001321</a></td>
 <td><a href="../0001321/">neg_cont_type</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../NEGCONTTYPEENUM/">NEGCONTTYPEENUM</a></td>
 <td>The substance or equipment used as a negative control in an investigation</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000058">MIXS:0000058</a></td>
 <td><a href="../0000058/">assembly_software</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Tool(s) used for assembly, including version number and parameters</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000053">MIXS:0000053</a></td>
 <td><a href="../0000053/">tax_ident</a></td>
 <td>1..1 <br/> <a href="../TAXIDENTENUM/">TAXIDENTENUM</a></td>
 <td>The phylogenetic marker(s) used to assign an organism name to the SAG or MAG</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000072">MIXS:0000072</a></td>
 <td><a href="../0000072/">contam_score</a></td>
 <td>1..1 <br/> <a href="../Float/">Float</a></td>
 <td>The contamination score is based on the fraction of single-copy genes that ar...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000059">MIXS:0000059</a></td>
 <td><a href="../0000059/">annot</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Tool used for annotation, or for cases where annotation was provided by a com...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000066">MIXS:0000066</a></td>
 <td><a href="../0000066/">x16s_recover_software</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Tools used for 16S rRNA gene extraction</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000065">MIXS:0000065</a></td>
 <td><a href="../0000065/">x16s_recover</a></td>
 <td>0..1 <br/> <a href="../Boolean/">Boolean</a></td>
 <td>Can a 16S gene be recovered from the submitted SAG or MAG?</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001322">MIXS:0001322</a></td>
 <td><a href="../0001322/">pos_cont_type</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The substance, mixture, product, or apparatus used to verify that a process w...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000061">MIXS:0000061</a></td>
 <td><a href="../0000061/">feat_pred</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Method used to predict UViGs features such as ORFs, integration site, etc</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000070">MIXS:0000070</a></td>
 <td><a href="../0000070/">compl_software</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Tools used for completion estimate, i</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000013">MIXS:0000013</a></td>
 <td><a href="../0000013/">env_local_scale</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Report the entity or entities which are in the sample or specimen s local vic...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000016">MIXS:0000016</a></td>
 <td><a href="../0000016/">samp_mat_process</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A brief description of any processing applied to the sample during or after r...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000063">MIXS:0000063</a></td>
 <td><a href="../0000063/">sim_search_meth</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Tool used to compare ORFs with database, along with version and cutoffs used</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000018">MIXS:0000018</a></td>
 <td><a href="../0000018/">depth</a></td>
 <td>1..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The vertical distance below local surface</td>
-<td><a href="../Soil/">Soil</a>, <a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001225">MIXS:0001225</a></td>
 <td><a href="../0001225/">samp_collect_method</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The method employed for collecting the sample</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000071">MIXS:0000071</a></td>
 <td><a href="../0000071/">compl_appr</a></td>
 <td>0..1 <br/> <a href="../COMPLAPPRENUM/">COMPLAPPRENUM</a></td>
 <td>The approach used to determine the completeness of a given genomic assembly, ...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000014">MIXS:0000014</a></td>
 <td><a href="../0000014/">env_medium</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Report the environmental material(s) immediately surrounding the sample or sp...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001320">MIXS:0001320</a></td>
 <td><a href="../0001320/">samp_taxon_id</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>NCBI taxon id of the sample</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000010">MIXS:0000010</a></td>
 <td><a href="../0000010/">geo_loc_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>The geographical origin of the sample as defined by the country or sea name f...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000011">MIXS:0000011</a></td>
 <td><a href="../0000011/">collection_date</a></td>
 <td>1..1 <br/> <a href="../Datetime/">Datetime</a></td>
 <td>The time of sampling, either as an instance (single point in time) or interva...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000050">MIXS:0000050</a></td>
 <td><a href="../0000050/">seq_meth</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Sequencing machine used</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000009">MIXS:0000009</a></td>
 <td><a href="../0000009/">lat_lon</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>The geographical origin of the sample as defined by latitude and longitude</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000093">MIXS:0000093</a></td>
 <td><a href="../0000093/">elev</a></td>
 <td>1..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Elevation of the sampling site is its height above a fixed reference point, m...</td>
-<td><a href="../Soil/">Soil</a>, <a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000012">MIXS:0000012</a></td>
 <td><a href="../0000012/">env_broad_scale</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Report the major environmental system the sample or specimen came from</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000064">MIXS:0000064</a></td>
 <td><a href="../0000064/">tax_class</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Method used for taxonomic classification, along with reference database used,...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000008">MIXS:0000008</a></td>
 <td><a href="../0000008/">experimental_factor</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Variable aspects of an experiment design that can be used to describe an expe...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000091">MIXS:0000091</a></td>
 <td><a href="../0000091/">associated_resource</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>A related resource that is referenced, cited, or otherwise associated to the ...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000090">MIXS:0000090</a></td>
 <td><a href="../0000090/">sop</a></td>
 <td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Standard operating procedures used in assembly and/or annotation of genomes, ...</td>
-<td><a href="../Mimag/">Mimag</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001080">MIXS:0001080</a></td>
 <td><a href="../0001080/">cur_land_use</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Present state of sample site</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000312">MIXS:0000312</a></td>
 <td><a href="../0000312/">cur_vegetation</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Vegetation classification from one or more standard classification systems, o...</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000314">MIXS:0000314</a></td>
 <td><a href="../0000314/">cur_vegetation_meth</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Reference or method used in vegetation classification</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000315">MIXS:0000315</a></td>
 <td><a href="../0000315/">previous_land_use</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Previous land use and dates</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000316">MIXS:0000316</a></td>
 <td><a href="../0000316/">prev_land_use_meth</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Reference or method used in determining previous land use and dates</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000318">MIXS:0000318</a></td>
 <td><a href="../0000318/">crop_rotation</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Whether or not crop is rotated, and if yes, rotation schedule</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000639">MIXS:0000639</a></td>
 <td><a href="../0000639/">agrochem_addition</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Addition of fertilizers, pesticides, etc</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001081">MIXS:0001081</a></td>
 <td><a href="../0001081/">tillage</a></td>
 <td>0..* <br/> <a href="../TILLAGEENUM/">TILLAGEENUM</a></td>
 <td>Note method(s) used for tilling</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001086">MIXS:0001086</a></td>
 <td><a href="../0001086/">fire</a></td>
 <td>0..1 <br/> <a href="../Datetime/">Datetime</a></td>
 <td>Historical and/or physical evidence of fire</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000319">MIXS:0000319</a></td>
 <td><a href="../0000319/">flooding</a></td>
 <td>0..1 <br/> <a href="../Datetime/">Datetime</a></td>
 <td>Historical and/or physical evidence of flooding</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000320">MIXS:0000320</a></td>
 <td><a href="../0000320/">extreme_event</a></td>
 <td>0..1 <br/> <a href="../Datetime/">Datetime</a></td>
 <td>Unusual physical events that may have affected microbial populations</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001082">MIXS:0001082</a></td>
 <td><a href="../0001082/">soil_horizon</a></td>
 <td>0..1 <br/> <a href="../SOILHORIZONENUM/">SOILHORIZONENUM</a></td>
 <td>Specific layer in the land area which measures parallel to the soil surface a...</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000321">MIXS:0000321</a></td>
 <td><a href="../0000321/">horizon_meth</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Reference or method used in determining the horizon</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000322">MIXS:0000322</a></td>
 <td><a href="../0000322/">sieving</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Collection design of pooled samples and/or sieve size and amount of sample si...</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000185">MIXS:0000185</a></td>
 <td><a href="../0000185/">water_content</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Water content measurement</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000323">MIXS:0000323</a></td>
 <td><a href="../0000323/">water_cont_soil_meth</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Reference or method used in determining the water content of soil</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000325">MIXS:0000325</a></td>
 <td><a href="../0000325/">pool_dna_extracts</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Indicate whether multiple DNA extractions were mixed</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000327">MIXS:0000327</a></td>
 <td><a href="../0000327/">store_cond</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Explain how and for how long the soil sample was stored before DNA extraction...</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000328">MIXS:0000328</a></td>
 <td><a href="../0000328/">link_climate_info</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Link to climate resource</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000642">MIXS:0000642</a></td>
 <td><a href="../0000642/">annual_temp</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Mean annual temperature</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000643">MIXS:0000643</a></td>
 <td><a href="../0000643/">season_temp</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Mean seasonal temperature</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000644">MIXS:0000644</a></td>
 <td><a href="../0000644/">annual_precpt</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The average of all annual precipitation values known, or an estimated equival...</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000645">MIXS:0000645</a></td>
 <td><a href="../0000645/">season_precpt</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The average of all seasonal precipitation values known, or an estimated equiv...</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000329">MIXS:0000329</a></td>
 <td><a href="../0000329/">link_class_info</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Link to digitized soil maps or other soil classification information</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001083">MIXS:0001083</a></td>
 <td><a href="../0001083/">fao_class</a></td>
 <td>0..1 <br/> <a href="../FAOCLASSENUM/">FAOCLASSENUM</a></td>
 <td>Soil classification from the FAO World Reference Database for Soil Resources</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000330">MIXS:0000330</a></td>
 <td><a href="../0000330/">local_class</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Soil classification based on local soil classification system</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000331">MIXS:0000331</a></td>
 <td><a href="../0000331/">local_class_meth</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Reference or method used in determining the local soil classification</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000205">MIXS:0000205</a></td>
 <td><a href="../0000205/">org_nitro</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Concentration of organic nitrogen</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000332">MIXS:0000332</a></td>
 <td><a href="../0000332/">soil_type</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Description of the soil type or classification</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000334">MIXS:0000334</a></td>
 <td><a href="../0000334/">soil_type_meth</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Reference or method used in determining soil series name or other lower-level...</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000646">MIXS:0000646</a></td>
 <td><a href="../0000646/">slope_gradient</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Commonly called 'slope'</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000647">MIXS:0000647</a></td>
 <td><a href="../0000647/">slope_aspect</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The direction a slope faces</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001084">MIXS:0001084</a></td>
 <td><a href="../0001084/">profile_position</a></td>
 <td>0..1 <br/> <a href="../PROFILEPOSITIONENUM/">PROFILEPOSITIONENUM</a></td>
 <td>Cross-sectional position in the hillslope where sample was collected</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001085">MIXS:0001085</a></td>
 <td><a href="../0001085/">drainage_class</a></td>
 <td>0..1 <br/> <a href="../DRAINAGECLASSENUM/">DRAINAGECLASSENUM</a></td>
 <td>Drainage classification from a standard system such as the USDA system</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000335">MIXS:0000335</a></td>
 <td><a href="../0000335/">soil_texture</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The relative proportion of different grain sizes of mineral particles in a so...</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000336">MIXS:0000336</a></td>
 <td><a href="../0000336/">soil_texture_meth</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Reference or method used in determining soil texture</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001001">MIXS:0001001</a></td>
 <td><a href="../0001001/">ph</a></td>
 <td>0..1 <br/> <a href="../Float/">Float</a></td>
 <td>Ph measurement of the sample, or liquid portion of sample, or aqueous phase o...</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0001106">MIXS:0001106</a></td>
 <td><a href="../0001106/">ph_meth</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Reference or method used in determining pH</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000204">MIXS:0000204</a></td>
 <td><a href="../0000204/">org_matter</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Concentration of organic matter</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000533">MIXS:0000533</a></td>
 <td><a href="../0000533/">tot_org_carb</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Total organic carbon content</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000337">MIXS:0000337</a></td>
 <td><a href="../0000337/">tot_org_c_meth</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Reference or method used in determining total organic carbon</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000530">MIXS:0000530</a></td>
 <td><a href="../0000530/">tot_nitro_content</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Total nitrogen content of the sample</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000338">MIXS:0000338</a></td>
 <td><a href="../0000338/">tot_nitro_cont_meth</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Reference or method used in determining the total nitrogen</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000650">MIXS:0000650</a></td>
 <td><a href="../0000650/">microbial_biomass</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The part of the organic matter in the soil that constitutes living microorgan...</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000339">MIXS:0000339</a></td>
 <td><a href="../0000339/">micro_biomass_meth</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Reference or method used in determining microbial biomass</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000340">MIXS:0000340</a></td>
 <td><a href="../0000340/">link_addit_analys</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Link to additional analysis results performed on the sample</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000652">MIXS:0000652</a></td>
 <td><a href="../0000652/">heavy_metals</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Heavy metals present in the sequenced sample and their concentrations</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000343">MIXS:0000343</a></td>
 <td><a href="../0000343/">heavy_metals_meth</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Reference or method used in determining heavy metals</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000607">MIXS:0000607</a></td>
 <td><a href="../0000607/">al_sat</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Aluminum saturation (esp</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000324">MIXS:0000324</a></td>
 <td><a href="../0000324/">al_sat_meth</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Reference or method used in determining Al saturation</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
+<td><a href="https://w3id.org/mixs/0000752">MIXS:0000752</a></td>
 <td><a href="../0000752/">misc_param</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>Any other measurement performed or parameter collected, that is not listed he...</td>
-<td><a href="../Soil/">Soil</a></td>
 </tr>
 </tbody>
 </table>
-<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://w3id.org/mixs</li>
-</ul>
 <h2 id="linkml-source">LinkML Source</h2>
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
 
