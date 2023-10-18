@@ -1218,7 +1218,6 @@ attributes:
     keywords:
     - sample
     slot_uri: MIXS:0001107
-    multivalued: false
     alias: samp_name
     owner: MigsEuPlantAssociated
     domain_of:
@@ -1265,7 +1264,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000043
-    multivalued: false
     alias: lib_screen
     owner: MigsEuPlantAssociated
     domain_of:
@@ -1281,8 +1279,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: string
-    required: false
-    recommended: false
   ref_db:
     name: ref_db
     description: List of database(s) used for ORF annotation, along with version number
@@ -1291,7 +1287,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{database};{version};{reference}'
     slot_uri: MIXS:0000062
-    multivalued: false
     alias: ref_db
     owner: MigsEuPlantAssociated
     domain_of:
@@ -1305,8 +1300,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
   nucl_acid_amp:
     name: nucl_acid_amp
     description: A link to a literature reference, electronic resource or a standard
@@ -1315,7 +1308,6 @@ attributes:
     title: nucleic acid amplification
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000038
-    multivalued: false
     alias: nucl_acid_amp
     owner: MigsEuPlantAssociated
     domain_of:
@@ -1344,7 +1336,6 @@ attributes:
     title: library size
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000039
-    multivalued: false
     alias: lib_size
     owner: MigsEuPlantAssociated
     domain_of:
@@ -1360,8 +1351,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: integer
-    required: false
-    recommended: false
   assembly_name:
     name: assembly_name
     description: Name/version of the assembly provided by the submitter that is used
@@ -1370,7 +1359,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text} {text}'
     slot_uri: MIXS:0000057
-    multivalued: false
     alias: assembly_name
     owner: MigsEuPlantAssociated
     domain_of:
@@ -1392,7 +1380,6 @@ attributes:
     title: temperature
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000113
-    multivalued: false
     alias: temp
     owner: MigsEuPlantAssociated
     domain_of:
@@ -1429,7 +1416,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
     recommended: true
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
@@ -1448,7 +1434,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '[high|med|low];{percentage}'
     slot_uri: MIXS:0000069
-    multivalued: false
     alias: compl_score
     owner: MigsEuPlantAssociated
     domain_of:
@@ -1461,8 +1446,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
   nucl_acid_ext:
     name: nucl_acid_ext
     description: A link to a literature reference, electronic resource or a standard
@@ -1471,7 +1454,6 @@ attributes:
     title: nucleic acid extraction
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000037
-    multivalued: false
     alias: nucl_acid_ext
     owner: MigsEuPlantAssociated
     domain_of:
@@ -1505,7 +1487,6 @@ attributes:
     title: amount or size of sample collected
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000001
-    multivalued: false
     alias: samp_size
     owner: MigsEuPlantAssociated
     domain_of:
@@ -1526,8 +1507,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -1542,7 +1521,6 @@ attributes:
     title: isolation and growth condition
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000003
-    multivalued: false
     alias: isol_growth_condt
     owner: MigsEuPlantAssociated
     domain_of:
@@ -1570,7 +1548,6 @@ attributes:
     title: altitude
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000094
-    multivalued: false
     alias: alt
     owner: MigsEuPlantAssociated
     domain_of:
@@ -1606,7 +1583,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{integer} bp'
     slot_uri: MIXS:0000024
-    multivalued: false
     alias: estimated_size
     owner: MigsEuPlantAssociated
     domain_of:
@@ -1617,8 +1593,6 @@ attributes:
     - MigsVi
     - Miuvig
     range: string
-    required: false
-    recommended: false
   extrachrom_elements:
     name: extrachrom_elements
     description: Do plasmids exist of significant phenotypic consequence (e.g. ones
@@ -1627,7 +1601,6 @@ attributes:
     title: extrachromosomal elements
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000023
-    multivalued: false
     alias: extrachrom_elements
     owner: MigsEuPlantAssociated
     domain_of:
@@ -1636,8 +1609,6 @@ attributes:
     - MigsOrg
     - MimarksC
     range: integer
-    required: false
-    recommended: false
   source_mat_id:
     name: source_mat_id
     description: A unique identifier assigned to a material sample (as defined by
@@ -1683,7 +1654,6 @@ attributes:
     title: sample volume or weight for DNA extraction
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000111
-    multivalued: false
     alias: samp_vol_we_dna_ext
     owner: MigsEuPlantAssociated
     domain_of:
@@ -1721,8 +1691,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -1740,14 +1708,11 @@ attributes:
     title: ploidy
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000021
-    multivalued: false
     alias: ploidy
     owner: MigsEuPlantAssociated
     domain_of:
     - MigsEu
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$
     structured_pattern:
       syntax: ^{termLabel} \[{termID}\]$
@@ -1760,7 +1725,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000027
-    multivalued: false
     alias: pathogenicity
     owner: MigsEuPlantAssociated
     domain_of:
@@ -1777,7 +1741,6 @@ attributes:
     title: library reads sequenced
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000040
-    multivalued: false
     alias: lib_reads_seqd
     owner: MigsEuPlantAssociated
     domain_of:
@@ -1793,8 +1756,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: integer
-    required: false
-    recommended: false
   propagation:
     name: propagation
     description: 'The type of reproduction from the parent stock. Values for this
@@ -1804,7 +1765,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000033
-    multivalued: false
     alias: propagation
     owner: MigsEuPlantAssociated
     domain_of:
@@ -1824,7 +1784,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{termLabel} [{termID}]|{text}'
     slot_uri: MIXS:0000002
-    multivalued: false
     alias: samp_collect_device
     owner: MigsEuPlantAssociated
     domain_of:
@@ -1845,8 +1804,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   number_contig:
     name: number_contig
     description: Total number of contigs in the cleaned/submitted assembly that makes
@@ -1854,7 +1811,6 @@ attributes:
     title: number of contigs
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000060
-    multivalued: false
     alias: number_contig
     owner: MigsEuPlantAssociated
     domain_of:
@@ -1878,7 +1834,6 @@ attributes:
     title: observed biotic relationship
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000028
-    multivalued: false
     alias: biotic_relationship
     owner: MigsEuPlantAssociated
     domain_of:
@@ -1889,8 +1844,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: BIOTIC_RELATIONSHIP_ENUM
-    required: false
-    recommended: false
   num_replicons:
     name: num_replicons
     description: Reports the number of replicons in a nuclear genome of eukaryotes,
@@ -1907,8 +1860,6 @@ attributes:
     - MigsEu
     - MigsVi
     range: integer
-    required: false
-    recommended: false
   lib_layout:
     name: lib_layout
     description: Specify whether to expect single, paired, or other configuration
@@ -1916,7 +1867,6 @@ attributes:
     title: library layout
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000041
-    multivalued: false
     alias: lib_layout
     owner: MigsEuPlantAssociated
     domain_of:
@@ -1932,8 +1882,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: LIB_LAYOUT_ENUM
-    required: false
-    recommended: false
   assembly_qual:
     name: assembly_qual
     description: 'The assembly quality category is based on sets of criteria outlined
@@ -1958,7 +1906,6 @@ attributes:
     string_serialization: '[Finished genome|High-quality draft genome|Medium-quality
       draft genome|Low-quality draft genome|Genome fragment(s)]'
     slot_uri: MIXS:0000056
-    multivalued: false
     alias: assembly_qual
     owner: MigsEuPlantAssociated
     domain_of:
@@ -1981,7 +1928,6 @@ attributes:
     title: reference for biomaterial
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000025
-    multivalued: false
     alias: ref_biomaterial
     owner: MigsEuPlantAssociated
     domain_of:
@@ -1995,8 +1941,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}$
@@ -2014,7 +1958,6 @@ attributes:
     keywords:
     - project
     slot_uri: MIXS:0000092
-    multivalued: false
     alias: project_name
     owner: MigsEuPlantAssociated
     domain_of:
@@ -2060,7 +2003,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000042
-    multivalued: false
     alias: lib_vector
     owner: MigsEuPlantAssociated
     domain_of:
@@ -2076,8 +2018,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: string
-    required: false
-    recommended: false
   host_spec_range:
     name: host_spec_range
     description: The range and diversity of host species that an organism is capable
@@ -2097,8 +2037,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: string
-    required: false
-    recommended: false
   neg_cont_type:
     name: neg_cont_type
     annotations:
@@ -2113,7 +2051,6 @@ attributes:
     keywords:
     - type
     slot_uri: MIXS:0001321
-    multivalued: false
     alias: neg_cont_type
     owner: MigsEuPlantAssociated
     domain_of:
@@ -2139,7 +2076,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{dna};{dna}'
     slot_uri: MIXS:0000048
-    multivalued: false
     alias: adapters
     owner: MigsEuPlantAssociated
     domain_of:
@@ -2162,7 +2098,6 @@ attributes:
     title: assembly software
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000058
-    multivalued: false
     alias: assembly_software
     owner: MigsEuPlantAssociated
     domain_of:
@@ -2213,7 +2148,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000059
-    multivalued: false
     alias: annot
     owner: MigsEuPlantAssociated
     domain_of:
@@ -2236,7 +2170,6 @@ attributes:
     title: trophic level
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000032
-    multivalued: false
     alias: trophic_level
     owner: MigsEuPlantAssociated
     domain_of:
@@ -2258,7 +2191,6 @@ attributes:
     - type
     string_serialization: '{term} or {text}'
     slot_uri: MIXS:0001322
-    multivalued: false
     alias: pos_cont_type
     owner: MigsEuPlantAssociated
     domain_of:
@@ -2286,7 +2218,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{rank name}:{text}'
     slot_uri: MIXS:0000020
-    multivalued: false
     alias: subspecf_gen_lin
     owner: MigsEuPlantAssociated
     domain_of:
@@ -2306,7 +2237,6 @@ attributes:
     title: feature prediction
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000061
-    multivalued: false
     alias: feat_pred
     owner: MigsEuPlantAssociated
     domain_of:
@@ -2320,8 +2250,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+);([^\s-]{1,2}|[^\s-]+.+[^\s-]+);([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{software};{version};{parameters}$
@@ -2352,7 +2280,6 @@ attributes:
     - environmental
     string_serialization: '{termLabel} [{termID}]'
     slot_uri: MIXS:0000013
-    multivalued: false
     alias: env_local_scale
     owner: MigsEuPlantAssociated
     domain_of:
@@ -2376,7 +2303,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{software};{version}'
     slot_uri: MIXS:0000070
-    multivalued: false
     alias: compl_software
     owner: MigsEuPlantAssociated
     domain_of:
@@ -2389,8 +2315,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
   samp_mat_process:
     name: samp_mat_process
     description: A brief description of any processing applied to the sample during
@@ -2399,7 +2323,6 @@ attributes:
     title: sample material processing
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000016
-    multivalued: false
     alias: samp_mat_process
     owner: MigsEuPlantAssociated
     domain_of:
@@ -2416,8 +2339,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: string
-    required: false
-    recommended: false
   sim_search_meth:
     name: sim_search_meth
     description: Tool used to compare ORFs with database, along with version and cutoffs
@@ -2425,7 +2346,6 @@ attributes:
     title: similarity search method
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000063
-    multivalued: false
     alias: sim_search_meth
     owner: MigsEuPlantAssociated
     domain_of:
@@ -2439,8 +2359,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+);([^\s-]{1,2}|[^\s-]+.+[^\s-]+);([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{software};{version};{parameters}$
@@ -2458,7 +2376,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{termLabel} [{termID}]|{text}'
     slot_uri: MIXS:0000031
-    multivalued: false
     alias: host_disease_stat
     owner: MigsEuPlantAssociated
     domain_of:
@@ -2476,8 +2393,6 @@ attributes:
     - HumanVaginal
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   depth:
     name: depth
     description: The vertical distance below local surface. For sediment or soil samples
@@ -2488,7 +2403,6 @@ attributes:
     - value: 10 meter
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000018
-    multivalued: false
     alias: depth
     owner: MigsEuPlantAssociated
     domain_of:
@@ -2530,7 +2444,6 @@ attributes:
     - value: swabbing
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001225
-    multivalued: false
     alias: samp_collect_method
     owner: MigsEuPlantAssociated
     domain_of:
@@ -2550,8 +2463,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$|([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}|{text}$
@@ -2564,7 +2475,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}|{NCBI taxid}'
     slot_uri: MIXS:0000029
-    multivalued: false
     alias: specific_host
     owner: MigsEuPlantAssociated
     domain_of:
@@ -2575,8 +2485,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: string
-    required: false
-    recommended: false
   env_medium:
     name: env_medium
     description: 'Report the environmental material(s) immediately surrounding the
@@ -2595,7 +2503,6 @@ attributes:
     keywords:
     - environmental
     slot_uri: MIXS:0000014
-    multivalued: false
     alias: env_medium
     owner: MigsEuPlantAssociated
     domain_of:
@@ -2634,7 +2541,6 @@ attributes:
     - sample
     - taxon
     slot_uri: MIXS:0001320
-    multivalued: false
     alias: samp_taxon_id
     owner: MigsEuPlantAssociated
     domain_of:
@@ -2672,7 +2578,6 @@ attributes:
     - geographic
     - location
     slot_uri: MIXS:0000010
-    multivalued: false
     alias: geo_loc_name
     owner: MigsEuPlantAssociated
     domain_of:
@@ -2714,7 +2619,6 @@ attributes:
     keywords:
     - date
     slot_uri: MIXS:0000011
-    multivalued: false
     alias: collection_date
     owner: MigsEuPlantAssociated
     domain_of:
@@ -2749,7 +2653,6 @@ attributes:
     keywords:
     - method
     slot_uri: MIXS:0000050
-    multivalued: false
     alias: seq_meth
     owner: MigsEuPlantAssociated
     domain_of:
@@ -2830,7 +2733,6 @@ attributes:
     title: elevation
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000093
-    multivalued: false
     alias: elev
     owner: MigsEuPlantAssociated
     domain_of:
@@ -2881,7 +2783,6 @@ attributes:
     - context
     - environmental
     slot_uri: MIXS:0000012
-    multivalued: false
     alias: env_broad_scale
     owner: MigsEuPlantAssociated
     domain_of:
@@ -2910,7 +2811,6 @@ attributes:
     title: taxonomic classification
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000064
-    multivalued: false
     alias: tax_class
     owner: MigsEuPlantAssociated
     domain_of:
@@ -2924,8 +2824,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
   experimental_factor:
     name: experimental_factor
     description: Variable aspects of an experiment design that can be used to describe
@@ -2955,8 +2853,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^\S+.*\S+ \[[a-zA-Z]{2,}:\d+\]$
   associated_resource:
     name: associated_resource
@@ -3049,8 +2945,6 @@ attributes:
     domain_of:
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   ances_data:
     name: ances_data
     description: Information about either pedigree or other ancestral information
@@ -3061,7 +2955,6 @@ attributes:
     - value: A/3*B
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000247
-    multivalued: false
     alias: ances_data
     owner: MigsEuPlantAssociated
     domain_of:
@@ -3070,8 +2963,6 @@ attributes:
     - HostAssociated
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   antibiotic_regm:
     name: antibiotic_regm
     annotations:
@@ -3100,8 +2991,6 @@ attributes:
     domain_of:
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   biol_stat:
     name: biol_stat
     annotations:
@@ -3118,15 +3007,12 @@ attributes:
     string_serialization: '[wild|natural|semi-natural|inbred line|breeder''s line|hybrid|clonal
       selection|mutant]'
     slot_uri: MIXS:0000858
-    multivalued: false
     alias: biol_stat
     owner: MigsEuPlantAssociated
     domain_of:
     - HostAssociated
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   biotic_regm:
     name: biotic_regm
     description: Information about treatment(s) involving use of biotic factors, such
@@ -3141,8 +3027,6 @@ attributes:
     - FoodFarmEnvironment
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   chem_administration:
     name: chem_administration
     description: List of chemical compounds administered to the host or site where
@@ -3174,8 +3058,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   chem_mutagen:
     name: chem_mutagen
     annotations:
@@ -3201,8 +3083,6 @@ attributes:
     domain_of:
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   climate_environment:
     name: climate_environment
     description: Treatment involving an exposure to a particular climate; treatment
@@ -3220,8 +3100,6 @@ attributes:
     - Agriculture
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   cult_root_med:
     name: cult_root_med
     annotations:
@@ -3240,14 +3118,11 @@ attributes:
     - culture
     string_serialization: '{text}|{PMID}|{DOI}|{URL}'
     slot_uri: MIXS:0001041
-    multivalued: false
     alias: cult_root_med
     owner: MigsEuPlantAssociated
     domain_of:
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   fertilizer_regm:
     name: fertilizer_regm
     annotations:
@@ -3276,8 +3151,6 @@ attributes:
     domain_of:
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   fungicide_regm:
     name: fungicide_regm
     description: Information about treatment involving use of fungicides; should include
@@ -3295,8 +3168,6 @@ attributes:
     - Agriculture
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   gaseous_environment:
     name: gaseous_environment
     description: Use of conditions with differing gaseous environments; should include
@@ -3313,8 +3184,6 @@ attributes:
     - Agriculture
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   genetic_mod:
     name: genetic_mod
     annotations:
@@ -3331,7 +3200,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{PMID}|{DOI}|{URL}'
     slot_uri: MIXS:0000859
-    multivalued: false
     alias: genetic_mod
     owner: MigsEuPlantAssociated
     domain_of:
@@ -3342,8 +3210,6 @@ attributes:
     - HostAssociated
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   gravity:
     name: gravity
     annotations:
@@ -3370,8 +3236,6 @@ attributes:
     domain_of:
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   growth_facil:
     name: growth_facil
     annotations:
@@ -3390,14 +3254,11 @@ attributes:
     - growth
     string_serialization: '{text}|{termLabel} [{termID}]'
     slot_uri: MIXS:0001043
-    multivalued: false
     alias: growth_facil
     owner: MigsEuPlantAssociated
     domain_of:
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   growth_habit:
     name: growth_habit
     description: Characteristic shape, appearance or growth form of a plant species
@@ -3408,15 +3269,12 @@ attributes:
     keywords:
     - growth
     slot_uri: MIXS:0001044
-    multivalued: false
     alias: growth_habit
     owner: MigsEuPlantAssociated
     domain_of:
     - FoodFarmEnvironment
     - PlantAssociated
     range: GROWTH_HABIT_ENUM
-    required: false
-    recommended: false
   growth_hormone_regm:
     name: growth_hormone_regm
     annotations:
@@ -3446,8 +3304,6 @@ attributes:
     domain_of:
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   herbicide_regm:
     name: herbicide_regm
     description: Information about treatment involving use of herbicides; information
@@ -3466,8 +3322,6 @@ attributes:
     - Agriculture
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   host_age:
     name: host_age
     description: Age of host at the time of sampling; relevant scale depends on species
@@ -3477,7 +3331,6 @@ attributes:
     - value: 10 days
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000255
-    multivalued: false
     alias: host_age
     owner: MigsEuPlantAssociated
     domain_of:
@@ -3492,8 +3345,6 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3508,7 +3359,6 @@ attributes:
     - value: rice
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000248
-    multivalued: false
     alias: host_common_name
     owner: MigsEuPlantAssociated
     domain_of:
@@ -3517,8 +3367,6 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    required: false
-    recommended: false
   host_dry_mass:
     name: host_dry_mass
     annotations:
@@ -3536,7 +3384,6 @@ attributes:
     - host.
     - mass
     slot_uri: MIXS:0000257
-    multivalued: false
     alias: host_dry_mass
     owner: MigsEuPlantAssociated
     domain_of:
@@ -3546,8 +3393,6 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3562,7 +3407,6 @@ attributes:
     - value: Ts
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000365
-    multivalued: false
     alias: host_genotype
     owner: MigsEuPlantAssociated
     domain_of:
@@ -3577,8 +3421,6 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    required: false
-    recommended: false
   host_height:
     name: host_height
     description: The height of subject
@@ -3587,7 +3429,6 @@ attributes:
     - value: 1 meter
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000264
-    multivalued: false
     alias: host_height
     owner: MigsEuPlantAssociated
     domain_of:
@@ -3602,8 +3443,6 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3641,15 +3480,12 @@ attributes:
     - HostAssociated
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   host_length:
     name: host_length
     description: The length of subject
     title: host length
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000256
-    multivalued: false
     alias: host_length
     owner: MigsEuPlantAssociated
     domain_of:
@@ -3659,8 +3495,6 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3676,7 +3510,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000251
-    multivalued: false
     alias: host_life_stage
     owner: MigsEuPlantAssociated
     domain_of:
@@ -3685,8 +3518,6 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    required: false
-    recommended: false
   host_phenotype:
     name: host_phenotype
     description: Phenotype of human or other host. Use terms from the phenotypic quality
@@ -3697,7 +3528,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{termLabel} [{termID}]'
     slot_uri: MIXS:0000874
-    multivalued: false
     alias: host_phenotype
     owner: MigsEuPlantAssociated
     domain_of:
@@ -3712,8 +3542,6 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    required: false
-    recommended: false
   host_taxid:
     name: host_taxid
     description: NCBI taxon id of the host, e.g. 9606
@@ -3723,7 +3551,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{NCBI taxid}'
     slot_uri: MIXS:0000250
-    multivalued: false
     alias: host_taxid
     owner: MigsEuPlantAssociated
     domain_of:
@@ -3733,8 +3560,6 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    required: false
-    recommended: false
   host_tot_mass:
     name: host_tot_mass
     description: Total mass of the host at collection, the unit depends on host
@@ -3743,7 +3568,6 @@ attributes:
     - value: 2500 gram
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000263
-    multivalued: false
     alias: host_tot_mass
     owner: MigsEuPlantAssociated
     domain_of:
@@ -3758,8 +3582,6 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3783,14 +3605,11 @@ attributes:
     - mass
     - wet
     slot_uri: MIXS:0000567
-    multivalued: false
     alias: host_wet_mass
     owner: MigsEuPlantAssociated
     domain_of:
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3826,8 +3645,6 @@ attributes:
     domain_of:
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   light_regm:
     name: light_regm
     annotations:
@@ -3848,14 +3665,11 @@ attributes:
     - regimen
     string_serialization: '{text};{float} {unit};{float} {unit}'
     slot_uri: MIXS:0000569
-    multivalued: false
     alias: light_regm
     owner: MigsEuPlantAssociated
     domain_of:
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   mechanical_damage:
     name: mechanical_damage
     annotations:
@@ -3877,8 +3691,6 @@ attributes:
     - FoodFarmEnvironment
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   mineral_nutr_regm:
     name: mineral_nutr_regm
     annotations:
@@ -3910,8 +3722,6 @@ attributes:
     domain_of:
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   misc_param:
     name: misc_param
     annotations:
@@ -3955,8 +3765,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   non_min_nutr_regm:
     name: non_min_nutr_regm
     description: Information about treatment involving the exposure of plant to non-mineral
@@ -3975,8 +3783,6 @@ attributes:
     - Agriculture
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   organism_count:
     name: organism_count
     description: 'Total cell count of any organism (or group of organisms) per gram,
@@ -4016,15 +3822,12 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   oxy_stat_samp:
     name: oxy_stat_samp
     description: Oxygenation status of sample
     title: oxygenation status of sample
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000753
-    multivalued: false
     alias: oxy_stat_samp
     owner: MigsEuPlantAssociated
     domain_of:
@@ -4046,8 +3849,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: OXY_STAT_SAMP_ENUM
-    required: false
-    recommended: false
   ph_regm:
     name: ph_regm
     description: Information about treatment involving exposure of plants to varying
@@ -4065,8 +3866,6 @@ attributes:
     - Agriculture
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   perturbation:
     name: perturbation
     description: Type of perturbation, e.g. chemical administration, physical disturbance,
@@ -4100,8 +3899,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   pesticide_regm:
     name: pesticide_regm
     description: Information about treatment involving use of insecticides; should
@@ -4120,8 +3917,6 @@ attributes:
     - Agriculture
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   plant_growth_med:
     name: plant_growth_med
     description: Specification of the media for growing the plants or tissue cultured
@@ -4136,7 +3931,6 @@ attributes:
     string_serialization: '{termLabel} [{termID}] or [husk|other artificial liquid
       medium|other artificial solid medium|peat moss|perlite|pumice|sand|soil|vermiculite|water]'
     slot_uri: MIXS:0001057
-    multivalued: false
     alias: plant_growth_med
     owner: MigsEuPlantAssociated
     domain_of:
@@ -4144,8 +3938,6 @@ attributes:
     - FoodFarmEnvironment
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   plant_product:
     name: plant_product
     description: Substance produced by the plant, where the sample was obtained from
@@ -4153,15 +3945,12 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0001058
-    multivalued: false
     alias: plant_product
     owner: MigsEuPlantAssociated
     domain_of:
     - Agriculture
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   plant_sex:
     name: plant_sex
     description: Sex of the reproductive parts on the whole plant, e.g. pistillate,
@@ -4173,14 +3962,11 @@ attributes:
     keywords:
     - plant
     slot_uri: MIXS:0001059
-    multivalued: false
     alias: plant_sex
     owner: MigsEuPlantAssociated
     domain_of:
     - PlantAssociated
     range: PLANT_SEX_ENUM
-    required: false
-    recommended: false
   plant_struc:
     name: plant_struc
     description: Name of plant structure the sample was obtained from; for Plant Ontology
@@ -4190,15 +3976,12 @@ attributes:
     title: plant structure
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001060
-    multivalued: false
     alias: plant_struc
     owner: MigsEuPlantAssociated
     domain_of:
     - Agriculture
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$
     structured_pattern:
       syntax: ^{termLabel} \[{termID}\]$
@@ -4232,8 +4015,6 @@ attributes:
     domain_of:
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   rainfall_regm:
     name: rainfall_regm
     annotations:
@@ -4262,8 +4043,6 @@ attributes:
     domain_of:
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   root_cond:
     name: root_cond
     description: Relevant rooting conditions such as field plot size, sowing density,
@@ -4275,15 +4054,12 @@ attributes:
     keywords:
     - condition
     slot_uri: MIXS:0001061
-    multivalued: false
     alias: root_cond
     owner: MigsEuPlantAssociated
     domain_of:
     - FoodFarmEnvironment
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$|([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}|{text}$
@@ -4307,7 +4083,6 @@ attributes:
     - carbon
     string_serialization: '{text};{float} {unit}'
     slot_uri: MIXS:0000577
-    multivalued: false
     alias: root_med_carbon
     owner: MigsEuPlantAssociated
     domain_of:
@@ -4315,8 +4090,6 @@ attributes:
     - FoodFarmEnvironment
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   root_med_macronutr:
     name: root_med_macronutr
     annotations:
@@ -4336,7 +4109,6 @@ attributes:
     - macronutrients
     string_serialization: '{text};{float} {unit}'
     slot_uri: MIXS:0000578
-    multivalued: false
     alias: root_med_macronutr
     owner: MigsEuPlantAssociated
     domain_of:
@@ -4344,8 +4116,6 @@ attributes:
     - FoodFarmEnvironment
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   root_med_micronutr:
     name: root_med_micronutr
     annotations:
@@ -4365,15 +4135,12 @@ attributes:
     - micronutrients
     string_serialization: '{text};{float} {unit}'
     slot_uri: MIXS:0000579
-    multivalued: false
     alias: root_med_micronutr
     owner: MigsEuPlantAssociated
     domain_of:
     - FoodFarmEnvironment
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   root_med_suppl:
     name: root_med_suppl
     annotations:
@@ -4394,14 +4161,11 @@ attributes:
     - organic
     string_serialization: '{text};{float} {unit}'
     slot_uri: MIXS:0000580
-    multivalued: false
     alias: root_med_suppl
     owner: MigsEuPlantAssociated
     domain_of:
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   root_med_ph:
     name: root_med_ph
     description: pH measurement of the culture rooting medium; e.g. 5.5
@@ -4412,7 +4176,6 @@ attributes:
     keywords:
     - ph
     slot_uri: MIXS:0001062
-    multivalued: false
     alias: root_med_ph
     owner: MigsEuPlantAssociated
     domain_of:
@@ -4420,8 +4183,6 @@ attributes:
     - FoodFarmEnvironment
     - PlantAssociated
     range: float
-    required: false
-    recommended: false
   root_med_regl:
     name: root_med_regl
     annotations:
@@ -4439,14 +4200,11 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text};{float} {unit}'
     slot_uri: MIXS:0000581
-    multivalued: false
     alias: root_med_regl
     owner: MigsEuPlantAssociated
     domain_of:
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   root_med_solid:
     name: root_med_solid
     description: Specification of the solidifying agent in the culture rooting medium;
@@ -4456,14 +4214,11 @@ attributes:
     - value: agar
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001063
-    multivalued: false
     alias: root_med_solid
     owner: MigsEuPlantAssociated
     domain_of:
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   salt_regm:
     name: salt_regm
     description: Information about treatment involving use of salts as supplement
@@ -4482,8 +4237,6 @@ attributes:
     - Agriculture
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   samp_capt_status:
     name: samp_capt_status
     description: Reason for the sample
@@ -4495,15 +4248,12 @@ attributes:
     - sample
     - status
     slot_uri: MIXS:0000860
-    multivalued: false
     alias: samp_capt_status
     owner: MigsEuPlantAssociated
     domain_of:
     - HostAssociated
     - PlantAssociated
     range: SAMP_CAPT_STATUS_ENUM
-    required: false
-    recommended: false
   samp_dis_stage:
     name: samp_dis_stage
     description: Stage of the disease at the time of sample collection, e.g. inoculation,
@@ -4516,15 +4266,12 @@ attributes:
     - disease
     - sample
     slot_uri: MIXS:0000249
-    multivalued: false
     alias: samp_dis_stage
     owner: MigsEuPlantAssociated
     domain_of:
     - HostAssociated
     - PlantAssociated
     range: SAMP_DIS_STAGE_ENUM
-    required: false
-    recommended: false
   salinity:
     name: salinity
     annotations:
@@ -4544,7 +4291,6 @@ attributes:
     keywords:
     - salinity
     slot_uri: MIXS:0000183
-    multivalued: false
     alias: salinity
     owner: MigsEuPlantAssociated
     domain_of:
@@ -4566,8 +4312,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4581,7 +4325,6 @@ attributes:
     title: sample storage duration
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000116
-    multivalued: false
     alias: samp_store_dur
     owner: MigsEuPlantAssociated
     domain_of:
@@ -4607,8 +4350,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^P(?:(?:\d+D|\d+M(?:\d+D)?|\d+Y(?:\d+M(?:\d+D)?)?)(?:T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S))?|T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S)|\d+W)$
     structured_pattern:
       syntax: ^{duration}$
@@ -4621,7 +4362,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000755
-    multivalued: false
     alias: samp_store_loc
     owner: MigsEuPlantAssociated
     domain_of:
@@ -4646,8 +4386,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   samp_store_temp:
     name: samp_store_temp
     annotations:
@@ -4664,7 +4402,6 @@ attributes:
     - storage
     - temperature
     slot_uri: MIXS:0000110
-    multivalued: false
     alias: samp_store_temp
     owner: MigsEuPlantAssociated
     domain_of:
@@ -4690,8 +4427,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4715,8 +4450,6 @@ attributes:
     - Agriculture
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   standing_water_regm:
     name: standing_water_regm
     description: Treatment involving an exposure to standing water during a plant's
@@ -4734,8 +4467,6 @@ attributes:
     - Agriculture
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   tiss_cult_growth_med:
     name: tiss_cult_growth_med
     description: Description of plant tissue culture growth media used
@@ -4747,14 +4478,11 @@ attributes:
     - culture
     - growth
     slot_uri: MIXS:0001070
-    multivalued: false
     alias: tiss_cult_growth_med
     owner: MigsEuPlantAssociated
     domain_of:
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$|([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}|{text}$
@@ -4777,8 +4505,6 @@ attributes:
     - Agriculture
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   watering_regm:
     name: watering_regm
     description: Information about treatment involving an exposure to watering frequencies,
@@ -4796,8 +4522,6 @@ attributes:
     - Agriculture
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   host_symbiont:
     name: host_symbiont
     description: The taxonomic name of the organism(s) found living in mutualistic,
@@ -4824,8 +4548,6 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    required: false
-    recommended: false
 class_uri: MIXS:0010002_0016010
 
 </code></pre>

@@ -395,7 +395,7 @@
 <td><a href="../samp_name/">samp_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>A local identifier or name that for the material sample used for extracting n...</td>
-<td><a href="../MigsEu/">MigsEu</a>, <a href="../HydrocarbonResourcesFluidsSwabs/">HydrocarbonResourcesFluidsSwabs</a></td>
+<td><a href="../HydrocarbonResourcesFluidsSwabs/">HydrocarbonResourcesFluidsSwabs</a>, <a href="../MigsEu/">MigsEu</a></td>
 </tr>
 <tr>
 <td><a href="../lib_screen/">lib_screen</a></td>
@@ -431,7 +431,7 @@
 <td><a href="../temp/">temp</a></td>
 <td>1..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Temperature of the sample at the time of sampling</td>
-<td><a href="../MigsEu/">MigsEu</a>, <a href="../HydrocarbonResourcesFluidsSwabs/">HydrocarbonResourcesFluidsSwabs</a></td>
+<td><a href="../HydrocarbonResourcesFluidsSwabs/">HydrocarbonResourcesFluidsSwabs</a>, <a href="../MigsEu/">MigsEu</a></td>
 </tr>
 <tr>
 <td><a href="../compl_score/">compl_score</a></td>
@@ -483,9 +483,9 @@
 </tr>
 <tr>
 <td><a href="../samp_vol_we_dna_ext/">samp_vol_we_dna_ext</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Volume (ml) or mass (g) of total collected sample processed for DNA extractio...</td>
-<td><a href="../MigsEu/">MigsEu</a>, <a href="../HydrocarbonResourcesFluidsSwabs/">HydrocarbonResourcesFluidsSwabs</a></td>
+<td><a href="../HydrocarbonResourcesFluidsSwabs/">HydrocarbonResourcesFluidsSwabs</a>, <a href="../MigsEu/">MigsEu</a></td>
 </tr>
 <tr>
 <td><a href="../ploidy/">ploidy</a></td>
@@ -557,7 +557,7 @@
 <td><a href="../project_name/">project_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Name of the project within which the sequencing was organized</td>
-<td><a href="../MigsEu/">MigsEu</a>, <a href="../HydrocarbonResourcesFluidsSwabs/">HydrocarbonResourcesFluidsSwabs</a></td>
+<td><a href="../HydrocarbonResourcesFluidsSwabs/">HydrocarbonResourcesFluidsSwabs</a>, <a href="../MigsEu/">MigsEu</a></td>
 </tr>
 <tr>
 <td><a href="../lib_vector/">lib_vector</a></td>
@@ -1302,7 +1302,6 @@ attributes:
     keywords:
     - sample
     slot_uri: MIXS:0001107
-    multivalued: false
     alias: samp_name
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -1349,7 +1348,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000043
-    multivalued: false
     alias: lib_screen
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -1365,8 +1363,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: string
-    required: false
-    recommended: false
   ref_db:
     name: ref_db
     description: List of database(s) used for ORF annotation, along with version number
@@ -1375,7 +1371,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{database};{version};{reference}'
     slot_uri: MIXS:0000062
-    multivalued: false
     alias: ref_db
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -1389,8 +1384,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
   nucl_acid_amp:
     name: nucl_acid_amp
     description: A link to a literature reference, electronic resource or a standard
@@ -1399,7 +1392,6 @@ attributes:
     title: nucleic acid amplification
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000038
-    multivalued: false
     alias: nucl_acid_amp
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -1428,7 +1420,6 @@ attributes:
     title: library size
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000039
-    multivalued: false
     alias: lib_size
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -1444,8 +1435,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: integer
-    required: false
-    recommended: false
   assembly_name:
     name: assembly_name
     description: Name/version of the assembly provided by the submitter that is used
@@ -1454,7 +1443,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text} {text}'
     slot_uri: MIXS:0000057
-    multivalued: false
     alias: assembly_name
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -1476,7 +1464,6 @@ attributes:
     title: temperature
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000113
-    multivalued: false
     alias: temp
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -1532,7 +1519,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '[high|med|low];{percentage}'
     slot_uri: MIXS:0000069
-    multivalued: false
     alias: compl_score
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -1545,8 +1531,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
   nucl_acid_ext:
     name: nucl_acid_ext
     description: A link to a literature reference, electronic resource or a standard
@@ -1555,7 +1539,6 @@ attributes:
     title: nucleic acid extraction
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000037
-    multivalued: false
     alias: nucl_acid_ext
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -1589,7 +1572,6 @@ attributes:
     title: amount or size of sample collected
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000001
-    multivalued: false
     alias: samp_size
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -1610,8 +1592,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -1626,7 +1606,6 @@ attributes:
     title: isolation and growth condition
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000003
-    multivalued: false
     alias: isol_growth_condt
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -1654,7 +1633,6 @@ attributes:
     title: altitude
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000094
-    multivalued: false
     alias: alt
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -1690,7 +1668,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{integer} bp'
     slot_uri: MIXS:0000024
-    multivalued: false
     alias: estimated_size
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -1701,8 +1678,6 @@ attributes:
     - MigsVi
     - Miuvig
     range: string
-    required: false
-    recommended: false
   extrachrom_elements:
     name: extrachrom_elements
     description: Do plasmids exist of significant phenotypic consequence (e.g. ones
@@ -1711,7 +1686,6 @@ attributes:
     title: extrachromosomal elements
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000023
-    multivalued: false
     alias: extrachrom_elements
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -1720,8 +1694,6 @@ attributes:
     - MigsOrg
     - MimarksC
     range: integer
-    required: false
-    recommended: false
   source_mat_id:
     name: source_mat_id
     description: A unique identifier assigned to a material sample (as defined by
@@ -1767,7 +1739,6 @@ attributes:
     title: sample volume or weight for DNA extraction
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000111
-    multivalued: false
     alias: samp_vol_we_dna_ext
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -1805,8 +1776,7 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
+    recommended: true
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -1824,14 +1794,11 @@ attributes:
     title: ploidy
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000021
-    multivalued: false
     alias: ploidy
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
     - MigsEu
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$
     structured_pattern:
       syntax: ^{termLabel} \[{termID}\]$
@@ -1844,7 +1811,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000027
-    multivalued: false
     alias: pathogenicity
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -1861,7 +1827,6 @@ attributes:
     title: library reads sequenced
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000040
-    multivalued: false
     alias: lib_reads_seqd
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -1877,8 +1842,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: integer
-    required: false
-    recommended: false
   propagation:
     name: propagation
     description: 'The type of reproduction from the parent stock. Values for this
@@ -1888,7 +1851,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000033
-    multivalued: false
     alias: propagation
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -1908,7 +1870,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{termLabel} [{termID}]|{text}'
     slot_uri: MIXS:0000002
-    multivalued: false
     alias: samp_collect_device
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -1929,8 +1890,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   number_contig:
     name: number_contig
     description: Total number of contigs in the cleaned/submitted assembly that makes
@@ -1938,7 +1897,6 @@ attributes:
     title: number of contigs
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000060
-    multivalued: false
     alias: number_contig
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -1962,7 +1920,6 @@ attributes:
     title: observed biotic relationship
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000028
-    multivalued: false
     alias: biotic_relationship
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -1973,8 +1930,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: BIOTIC_RELATIONSHIP_ENUM
-    required: false
-    recommended: false
   num_replicons:
     name: num_replicons
     description: Reports the number of replicons in a nuclear genome of eukaryotes,
@@ -1991,8 +1946,6 @@ attributes:
     - MigsEu
     - MigsVi
     range: integer
-    required: false
-    recommended: false
   lib_layout:
     name: lib_layout
     description: Specify whether to expect single, paired, or other configuration
@@ -2000,7 +1953,6 @@ attributes:
     title: library layout
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000041
-    multivalued: false
     alias: lib_layout
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -2016,8 +1968,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: LIB_LAYOUT_ENUM
-    required: false
-    recommended: false
   assembly_qual:
     name: assembly_qual
     description: 'The assembly quality category is based on sets of criteria outlined
@@ -2042,7 +1992,6 @@ attributes:
     string_serialization: '[Finished genome|High-quality draft genome|Medium-quality
       draft genome|Low-quality draft genome|Genome fragment(s)]'
     slot_uri: MIXS:0000056
-    multivalued: false
     alias: assembly_qual
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -2065,7 +2014,6 @@ attributes:
     title: reference for biomaterial
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000025
-    multivalued: false
     alias: ref_biomaterial
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -2079,8 +2027,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}$
@@ -2098,7 +2044,6 @@ attributes:
     keywords:
     - project
     slot_uri: MIXS:0000092
-    multivalued: false
     alias: project_name
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -2144,7 +2089,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000042
-    multivalued: false
     alias: lib_vector
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -2160,8 +2104,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: string
-    required: false
-    recommended: false
   host_spec_range:
     name: host_spec_range
     description: The range and diversity of host species that an organism is capable
@@ -2181,8 +2123,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: string
-    required: false
-    recommended: false
   neg_cont_type:
     name: neg_cont_type
     annotations:
@@ -2197,7 +2137,6 @@ attributes:
     keywords:
     - type
     slot_uri: MIXS:0001321
-    multivalued: false
     alias: neg_cont_type
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -2223,7 +2162,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{dna};{dna}'
     slot_uri: MIXS:0000048
-    multivalued: false
     alias: adapters
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -2246,7 +2184,6 @@ attributes:
     title: assembly software
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000058
-    multivalued: false
     alias: assembly_software
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -2297,7 +2234,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000059
-    multivalued: false
     alias: annot
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -2320,7 +2256,6 @@ attributes:
     title: trophic level
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000032
-    multivalued: false
     alias: trophic_level
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -2342,7 +2277,6 @@ attributes:
     - type
     string_serialization: '{term} or {text}'
     slot_uri: MIXS:0001322
-    multivalued: false
     alias: pos_cont_type
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -2370,7 +2304,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{rank name}:{text}'
     slot_uri: MIXS:0000020
-    multivalued: false
     alias: subspecf_gen_lin
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -2390,7 +2323,6 @@ attributes:
     title: feature prediction
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000061
-    multivalued: false
     alias: feat_pred
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -2404,8 +2336,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+);([^\s-]{1,2}|[^\s-]+.+[^\s-]+);([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{software};{version};{parameters}$
@@ -2436,7 +2366,6 @@ attributes:
     - environmental
     string_serialization: '{termLabel} [{termID}]'
     slot_uri: MIXS:0000013
-    multivalued: false
     alias: env_local_scale
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -2460,7 +2389,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{software};{version}'
     slot_uri: MIXS:0000070
-    multivalued: false
     alias: compl_software
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -2473,8 +2401,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
   samp_mat_process:
     name: samp_mat_process
     description: A brief description of any processing applied to the sample during
@@ -2483,7 +2409,6 @@ attributes:
     title: sample material processing
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000016
-    multivalued: false
     alias: samp_mat_process
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -2500,8 +2425,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: string
-    required: false
-    recommended: false
   sim_search_meth:
     name: sim_search_meth
     description: Tool used to compare ORFs with database, along with version and cutoffs
@@ -2509,7 +2432,6 @@ attributes:
     title: similarity search method
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000063
-    multivalued: false
     alias: sim_search_meth
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -2523,8 +2445,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+);([^\s-]{1,2}|[^\s-]+.+[^\s-]+);([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{software};{version};{parameters}$
@@ -2542,7 +2462,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{termLabel} [{termID}]|{text}'
     slot_uri: MIXS:0000031
-    multivalued: false
     alias: host_disease_stat
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -2560,8 +2479,6 @@ attributes:
     - HumanVaginal
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   depth:
     name: depth
     description: The vertical distance below local surface. For sediment or soil samples
@@ -2572,7 +2489,6 @@ attributes:
     - value: 10 meter
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000018
-    multivalued: false
     alias: depth
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -2614,7 +2530,6 @@ attributes:
     - value: swabbing
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001225
-    multivalued: false
     alias: samp_collect_method
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -2634,8 +2549,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$|([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}|{text}$
@@ -2648,7 +2561,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}|{NCBI taxid}'
     slot_uri: MIXS:0000029
-    multivalued: false
     alias: specific_host
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -2659,8 +2571,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: string
-    required: false
-    recommended: false
   env_medium:
     name: env_medium
     description: 'Report the environmental material(s) immediately surrounding the
@@ -2679,7 +2589,6 @@ attributes:
     keywords:
     - environmental
     slot_uri: MIXS:0000014
-    multivalued: false
     alias: env_medium
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -2718,7 +2627,6 @@ attributes:
     - sample
     - taxon
     slot_uri: MIXS:0001320
-    multivalued: false
     alias: samp_taxon_id
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -2756,7 +2664,6 @@ attributes:
     - geographic
     - location
     slot_uri: MIXS:0000010
-    multivalued: false
     alias: geo_loc_name
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -2798,7 +2705,6 @@ attributes:
     keywords:
     - date
     slot_uri: MIXS:0000011
-    multivalued: false
     alias: collection_date
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -2833,7 +2739,6 @@ attributes:
     keywords:
     - method
     slot_uri: MIXS:0000050
-    multivalued: false
     alias: seq_meth
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -2914,7 +2819,6 @@ attributes:
     title: elevation
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000093
-    multivalued: false
     alias: elev
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -2965,7 +2869,6 @@ attributes:
     - context
     - environmental
     slot_uri: MIXS:0000012
-    multivalued: false
     alias: env_broad_scale
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -2994,7 +2897,6 @@ attributes:
     title: taxonomic classification
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000064
-    multivalued: false
     alias: tax_class
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -3008,8 +2910,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
   experimental_factor:
     name: experimental_factor
     description: Variable aspects of an experiment design that can be used to describe
@@ -3039,8 +2939,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^\S+.*\S+ \[[a-zA-Z]{2,}:\d+\]$
   associated_resource:
     name: associated_resource
@@ -3122,7 +3020,6 @@ attributes:
     - resource
     - type
     slot_uri: MIXS:0000988
-    multivalued: false
     alias: hcr
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -3142,7 +3039,6 @@ attributes:
     - hydrocarbon
     - type
     slot_uri: MIXS:0000989
-    multivalued: false
     alias: hc_produced
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -3158,7 +3054,6 @@ attributes:
     - value: Campos
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000290
-    multivalued: false
     alias: basin
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -3172,7 +3067,6 @@ attributes:
     title: field name
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000291
-    multivalued: false
     alias: field
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -3186,7 +3080,6 @@ attributes:
     title: reservoir name
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000303
-    multivalued: false
     alias: reservoir
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -3200,7 +3093,6 @@ attributes:
     title: hydrocarbon resource original temperature
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000393
-    multivalued: false
     alias: hcr_temp
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -3229,15 +3121,12 @@ attributes:
     - resource
     - temperature
     slot_uri: MIXS:0000394
-    multivalued: false
     alias: tvdss_of_hcr_temp
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
     - HydrocarbonResourcesCores
     - HydrocarbonResourcesFluidsSwabs
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3258,15 +3147,12 @@ attributes:
     - pressure
     - resource
     slot_uri: MIXS:0000395
-    multivalued: false
     alias: hcr_pressure
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
     - HydrocarbonResourcesCores
     - HydrocarbonResourcesFluidsSwabs
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+ *- *[-+]?[0-9]*\.?[0-9]+ ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{float} *- *{float} {unit}$
@@ -3288,15 +3174,12 @@ attributes:
     - pressure
     - resource
     slot_uri: MIXS:0000397
-    multivalued: false
     alias: tvdss_of_hcr_press
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
     - HydrocarbonResourcesCores
     - HydrocarbonResourcesFluidsSwabs
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3314,7 +3197,6 @@ attributes:
     keywords:
     - lithology
     slot_uri: MIXS:0000990
-    multivalued: false
     alias: lithology
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -3331,7 +3213,6 @@ attributes:
     - value: Marine - Reef
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000992
-    multivalued: false
     alias: depos_env
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -3352,7 +3233,6 @@ attributes:
     - hydrocarbon
     - resource
     slot_uri: MIXS:0000993
-    multivalued: false
     alias: hcr_geol_age
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -3374,7 +3254,6 @@ attributes:
     - salinity
     - water
     slot_uri: MIXS:0000406
-    multivalued: false
     alias: hcr_fw_salinity
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -3394,7 +3273,6 @@ attributes:
     title: sulfate in formation water
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000407
-    multivalued: false
     alias: sulfate_fw
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -3414,7 +3292,6 @@ attributes:
     title: vfa in formation water
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000408
-    multivalued: false
     alias: vfa_fw
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -3440,7 +3317,6 @@ attributes:
     - production
     - start
     slot_uri: MIXS:0001008
-    multivalued: false
     alias: prod_start_date
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -3460,7 +3336,6 @@ attributes:
     - production
     - rate
     slot_uri: MIXS:0000452
-    multivalued: false
     alias: prod_rate
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -3487,7 +3362,6 @@ attributes:
     - rate
     - water
     slot_uri: MIXS:0000453
-    multivalued: false
     alias: water_prod_rate
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -3583,7 +3457,6 @@ attributes:
     string_serialization: '[Water Injection|Dump Flood|Gas Injection|Wag Immiscible
       Injection|Polymer Addition|Surfactant Addition|Not Applicable|other];{timestamp}'
     slot_uri: MIXS:0001009
-    multivalued: false
     alias: add_recov_method
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -3602,14 +3475,11 @@ attributes:
     - date
     - water
     slot_uri: MIXS:0001010
-    multivalued: false
     alias: iw_bt_date_well
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
     - HydrocarbonResourcesFluidsSwabs
     range: datetime
-    required: false
-    recommended: false
   biocide:
     name: biocide
     annotations:
@@ -3626,7 +3496,6 @@ attributes:
     - administration
     string_serialization: '{text};{text};{timestamp}'
     slot_uri: MIXS:0001011
-    multivalued: false
     alias: biocide
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -3652,7 +3521,6 @@ attributes:
     - method
     string_serialization: '{float} {unit};{Rn/start_time/end_time/duration};{duration}'
     slot_uri: MIXS:0000456
-    multivalued: false
     alias: biocide_admin_method
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -3678,14 +3546,11 @@ attributes:
     - treatment
     string_serialization: '{text};{text};{timestamp}'
     slot_uri: MIXS:0001012
-    multivalued: false
     alias: chem_treatment
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
     - HydrocarbonResourcesFluidsSwabs
     range: string
-    required: false
-    recommended: false
   chem_treat_method:
     name: chem_treat_method
     annotations:
@@ -3705,14 +3570,11 @@ attributes:
     - treatment
     string_serialization: '{float} {unit};{Rn/start_time/end_time/duration};{duration};{duration}'
     slot_uri: MIXS:0000457
-    multivalued: false
     alias: chem_treat_method
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
     - HydrocarbonResourcesFluidsSwabs
     range: string
-    required: false
-    recommended: false
   samp_loc_corr_rate:
     name: samp_loc_corr_rate
     annotations:
@@ -3733,7 +3595,6 @@ attributes:
     - rate
     - sample
     slot_uri: MIXS:0000136
-    multivalued: false
     alias: samp_loc_corr_rate
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -3753,7 +3614,6 @@ attributes:
     keywords:
     - sample
     slot_uri: MIXS:0000296
-    multivalued: false
     alias: samp_well_name
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -3773,7 +3633,6 @@ attributes:
     - identifier
     - number
     slot_uri: MIXS:0000297
-    multivalued: false
     alias: win
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -3797,7 +3656,6 @@ attributes:
     - sample
     - type
     slot_uri: MIXS:0000998
-    multivalued: false
     alias: samp_type
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -3824,7 +3682,6 @@ attributes:
     keywords:
     - sample
     slot_uri: MIXS:0000999
-    multivalued: false
     alias: samp_subtype
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -3844,7 +3701,6 @@ attributes:
     keywords:
     - sample
     slot_uri: MIXS:0001015
-    multivalued: false
     alias: samp_collect_point
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -3865,7 +3721,6 @@ attributes:
     keywords:
     - pressure
     slot_uri: MIXS:0000412
-    multivalued: false
     alias: pressure
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -3876,8 +3731,6 @@ attributes:
     - Sediment
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3890,7 +3743,6 @@ attributes:
     title: oxygenation status of sample
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000753
-    multivalued: false
     alias: oxy_stat_samp
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -3912,8 +3764,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: OXY_STAT_SAMP_ENUM
-    required: false
-    recommended: false
   samp_preserv:
     name: samp_preserv
     annotations:
@@ -3927,14 +3777,11 @@ attributes:
     keywords:
     - sample
     slot_uri: MIXS:0000463
-    multivalued: false
     alias: samp_preserv
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
     - HydrocarbonResourcesFluidsSwabs
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+);[-+]?[0-9]*\.?[0-9]+ ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{name};{float} {unit}$
@@ -3961,15 +3808,12 @@ attributes:
     - transport
     string_serialization: '{float} {unit};{float} {unit}'
     slot_uri: MIXS:0000410
-    multivalued: false
     alias: samp_transport_cond
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
     - HydrocarbonResourcesCores
     - HydrocarbonResourcesFluidsSwabs
     range: string
-    required: false
-    recommended: false
   samp_store_temp:
     name: samp_store_temp
     annotations:
@@ -3986,7 +3830,6 @@ attributes:
     - storage
     - temperature
     slot_uri: MIXS:0000110
-    multivalued: false
     alias: samp_store_temp
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -4012,8 +3855,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4027,7 +3868,6 @@ attributes:
     title: sample storage duration
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000116
-    multivalued: false
     alias: samp_store_dur
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -4053,8 +3893,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^P(?:(?:\d+D|\d+M(?:\d+D)?|\d+Y(?:\d+M(?:\d+D)?)?)(?:T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S))?|T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S)|\d+W)$
     structured_pattern:
       syntax: ^{duration}$
@@ -4067,7 +3905,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000755
-    multivalued: false
     alias: samp_store_loc
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -4092,8 +3929,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   organism_count:
     name: organism_count
     description: 'Total cell count of any organism (or group of organisms) per gram,
@@ -4159,15 +3994,12 @@ attributes:
     string_serialization: '{text};FWD:{dna};REV:{dna};initial denaturation:degrees_minutes;denaturation:degrees_minutes;annealing:degrees_minutes;elongation:degrees_minutes;final
       elongation:degrees_minutes; total cycles'
     slot_uri: MIXS:0000099
-    multivalued: false
     alias: org_count_qpcr_info
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
     - HydrocarbonResourcesCores
     - HydrocarbonResourcesFluidsSwabs
     range: string
-    required: false
-    recommended: false
   ph:
     name: ph
     description: Ph measurement of the sample, or liquid portion of sample, or aqueous
@@ -4175,7 +4007,6 @@ attributes:
     title: pH
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001001
-    multivalued: false
     alias: ph
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -4209,7 +4040,6 @@ attributes:
     keywords:
     - salinity
     slot_uri: MIXS:0000183
-    multivalued: false
     alias: salinity
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -4231,8 +4061,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4254,7 +4082,6 @@ attributes:
     keywords:
     - alkalinity
     slot_uri: MIXS:0000421
-    multivalued: false
     alias: alkalinity
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -4266,8 +4093,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4285,7 +4110,6 @@ attributes:
     - alkalinity
     - method
     slot_uri: MIXS:0000298
-    multivalued: false
     alias: alkalinity_method
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -4293,15 +4117,12 @@ attributes:
     - HydrocarbonResourcesFluidsSwabs
     - Water
     range: string
-    required: false
-    recommended: false
   sulfate:
     name: sulfate
     description: Concentration of sulfate in the sample
     title: sulfate
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000423
-    multivalued: false
     alias: sulfate
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -4325,7 +4146,6 @@ attributes:
     title: sulfide
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000424
-    multivalued: false
     alias: sulfide
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -4356,7 +4176,6 @@ attributes:
     - sulfur
     - total
     slot_uri: MIXS:0000419
-    multivalued: false
     alias: tot_sulfur
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -4376,7 +4195,6 @@ attributes:
     title: nitrate
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000425
-    multivalued: false
     alias: nitrate
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -4401,7 +4219,6 @@ attributes:
     title: nitrite
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000426
-    multivalued: false
     alias: nitrite
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -4425,7 +4242,6 @@ attributes:
     title: ammonium
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000427
-    multivalued: false
     alias: ammonium
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -4461,7 +4277,6 @@ attributes:
     - nitrogen
     - total
     slot_uri: MIXS:0000102
-    multivalued: false
     alias: tot_nitro
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -4470,8 +4285,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4490,7 +4303,6 @@ attributes:
     keywords:
     - dissolved
     slot_uri: MIXS:0000139
-    multivalued: false
     alias: diss_iron
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -4516,7 +4328,6 @@ attributes:
     - value: 10.5 milligram per liter
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000428
-    multivalued: false
     alias: sodium
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -4528,8 +4339,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4548,7 +4357,6 @@ attributes:
     - value: 5000 milligram per liter
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000429
-    multivalued: false
     alias: chloride
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -4559,8 +4367,6 @@ attributes:
     - Sediment
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4579,7 +4385,6 @@ attributes:
     - value: 463 milligram per liter
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000430
-    multivalued: false
     alias: potassium
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -4590,8 +4395,6 @@ attributes:
     - Sediment
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4611,7 +4414,6 @@ attributes:
     - value: 52.8 micromole per kilogram
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000431
-    multivalued: false
     alias: magnesium
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -4621,8 +4423,6 @@ attributes:
     - Sediment
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4641,7 +4441,6 @@ attributes:
     - value: 0.2 micromole per liter
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000432
-    multivalued: false
     alias: calcium
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -4652,8 +4451,6 @@ attributes:
     - Sediment
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4672,7 +4469,6 @@ attributes:
     keywords:
     - total
     slot_uri: MIXS:0000105
-    multivalued: false
     alias: tot_iron
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -4703,7 +4499,6 @@ attributes:
     - dissolved
     - organic
     slot_uri: MIXS:0000433
-    multivalued: false
     alias: diss_org_carb
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -4713,8 +4508,6 @@ attributes:
     - Sediment
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4738,7 +4531,6 @@ attributes:
     - dissolved
     - inorganic
     slot_uri: MIXS:0000434
-    multivalued: false
     alias: diss_inorg_carb
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -4749,8 +4541,6 @@ attributes:
     - Sediment
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4763,7 +4553,6 @@ attributes:
     title: dissolved inorganic phosphorus
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000106
-    multivalued: false
     alias: diss_inorg_phosp
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -4794,7 +4583,6 @@ attributes:
     - phosphorus
     - total
     slot_uri: MIXS:0000117
-    multivalued: false
     alias: tot_phosp
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -4802,8 +4590,6 @@ attributes:
     - HydrocarbonResourcesFluidsSwabs
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4837,8 +4623,6 @@ attributes:
     - HydrocarbonResourcesFluidsSwabs
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
   density:
     name: density
     annotations:
@@ -4854,7 +4638,6 @@ attributes:
     keywords:
     - density
     slot_uri: MIXS:0000435
-    multivalued: false
     alias: density
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -4864,8 +4647,6 @@ attributes:
     - Sediment
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4888,7 +4669,6 @@ attributes:
     - carbon
     - dissolved
     slot_uri: MIXS:0000436
-    multivalued: false
     alias: diss_carb_dioxide
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -4899,8 +4679,6 @@ attributes:
     - Sediment
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4921,15 +4699,12 @@ attributes:
     - dissolved
     - oxygen
     slot_uri: MIXS:0000438
-    multivalued: false
     alias: diss_oxygen_fluid
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
     - HydrocarbonResourcesCores
     - HydrocarbonResourcesFluidsSwabs
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4946,7 +4721,6 @@ attributes:
     title: volatile fatty acids
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000152
-    multivalued: false
     alias: vfa
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -4970,7 +4744,6 @@ attributes:
     title: benzene
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000153
-    multivalued: false
     alias: benzene
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -4994,7 +4767,6 @@ attributes:
     title: toluene
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000154
-    multivalued: false
     alias: toluene
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -5018,7 +4790,6 @@ attributes:
     title: ethylbenzene
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000155
-    multivalued: false
     alias: ethylbenzene
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -5042,7 +4813,6 @@ attributes:
     title: xylene
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000156
-    multivalued: false
     alias: xylene
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -5070,7 +4840,6 @@ attributes:
     - value: 31.1 API
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000157
-    multivalued: false
     alias: api
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -5100,7 +4869,6 @@ attributes:
     - number
     - total
     slot_uri: MIXS:0000120
-    multivalued: false
     alias: tan
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -5129,15 +4897,12 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{float} {unit};{float} {unit}'
     slot_uri: MIXS:0000126
-    multivalued: false
     alias: viscosity
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
     - HydrocarbonResourcesCores
     - HydrocarbonResourcesFluidsSwabs
     range: string
-    required: false
-    recommended: false
   pour_point:
     name: pour_point
     annotations:
@@ -5151,15 +4916,12 @@ attributes:
     title: pour point
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000127
-    multivalued: false
     alias: pour_point
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
     - HydrocarbonResourcesCores
     - HydrocarbonResourcesFluidsSwabs
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -5180,7 +4942,6 @@ attributes:
     title: saturates wt%
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000131
-    multivalued: false
     alias: saturates_pc
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -5207,7 +4968,6 @@ attributes:
     title: aromatics wt%
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000133
-    multivalued: false
     alias: aromatics_pc
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -5234,7 +4994,6 @@ attributes:
     title: resins wt%
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000134
-    multivalued: false
     alias: resins_pc
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -5261,7 +5020,6 @@ attributes:
     title: asphaltenes wt%
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000135
-    multivalued: false
     alias: asphaltenes_pc
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
@@ -5317,8 +5075,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   additional_info:
     name: additional_info
     description: Information that doesn't fit anywhere else. Can also be used to propose
@@ -5328,15 +5084,12 @@ attributes:
     keywords:
     - information
     slot_uri: MIXS:0000300
-    multivalued: false
     alias: additional_info
     owner: MigsEuHydrocarbonResourcesFluidsSwabs
     domain_of:
     - HydrocarbonResourcesCores
     - HydrocarbonResourcesFluidsSwabs
     range: string
-    required: false
-    recommended: false
 class_uri: MIXS:0010002_0016016
 
 </code></pre>

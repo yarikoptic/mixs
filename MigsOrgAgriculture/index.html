@@ -399,7 +399,7 @@
 </tr>
 <tr>
 <td><a href="../lib_screen/">lib_screen</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Specific enrichment or screening methods applied before and/or after creating...</td>
 <td><a href="../MigsOrg/">MigsOrg</a>, <a href="../Agriculture/">Agriculture</a></td>
 </tr>
@@ -447,7 +447,7 @@
 </tr>
 <tr>
 <td><a href="../samp_size/">samp_size</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
 <td>The total amount or size (volume (ml), mass (g) or area (m2) ) of sample coll...</td>
 <td><a href="../MigsOrg/">MigsOrg</a>, <a href="../Agriculture/">Agriculture</a></td>
 </tr>
@@ -483,19 +483,19 @@
 </tr>
 <tr>
 <td><a href="../samp_vol_we_dna_ext/">samp_vol_we_dna_ext</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Volume (ml) or mass (g) of total collected sample processed for DNA extractio...</td>
 <td><a href="../MigsOrg/">MigsOrg</a>, <a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
 <td><a href="../lib_reads_seqd/">lib_reads_seqd</a></td>
-<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td>1..1 <br/> <a href="../Integer/">Integer</a></td>
 <td>Total number of clones sequenced from the library</td>
 <td><a href="../MigsOrg/">MigsOrg</a>, <a href="../Agriculture/">Agriculture</a></td>
 </tr>
 <tr>
 <td><a href="../samp_collect_device/">samp_collect_device</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
 <td>The device used to collect an environmental sample</td>
 <td><a href="../MigsOrg/">MigsOrg</a>, <a href="../Agriculture/">Agriculture</a></td>
 </tr>
@@ -507,7 +507,7 @@
 </tr>
 <tr>
 <td><a href="../lib_layout/">lib_layout</a></td>
-<td>0..1 <br/> <a href="../LIBLAYOUTENUM/">LIBLAYOUTENUM</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../LIBLAYOUTENUM/">LIBLAYOUTENUM</a></td>
 <td>Specify whether to expect single, paired, or other configuration of reads</td>
 <td><a href="../MigsOrg/">MigsOrg</a>, <a href="../Agriculture/">Agriculture</a></td>
 </tr>
@@ -531,7 +531,7 @@
 </tr>
 <tr>
 <td><a href="../lib_vector/">lib_vector</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Cloning vector type(s) used in construction of libraries</td>
 <td><a href="../MigsOrg/">MigsOrg</a>, <a href="../Agriculture/">Agriculture</a></td>
 </tr>
@@ -597,7 +597,7 @@
 </tr>
 <tr>
 <td><a href="../samp_mat_process/">samp_mat_process</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
 <td>A brief description of any processing applied to the sample during or after r...</td>
 <td><a href="../MigsOrg/">MigsOrg</a>, <a href="../Agriculture/">Agriculture</a></td>
 </tr>
@@ -1566,7 +1566,6 @@ attributes:
     keywords:
     - sample
     slot_uri: MIXS:0001107
-    multivalued: false
     alias: samp_name
     owner: MigsOrgAgriculture
     domain_of:
@@ -1613,7 +1612,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000043
-    multivalued: false
     alias: lib_screen
     owner: MigsOrgAgriculture
     domain_of:
@@ -1629,8 +1627,7 @@ attributes:
     - Miuvig
     - Agriculture
     range: string
-    required: false
-    recommended: false
+    required: true
   ref_db:
     name: ref_db
     description: List of database(s) used for ORF annotation, along with version number
@@ -1639,7 +1636,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{database};{version};{reference}'
     slot_uri: MIXS:0000062
-    multivalued: false
     alias: ref_db
     owner: MigsOrgAgriculture
     domain_of:
@@ -1653,8 +1649,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
   nucl_acid_amp:
     name: nucl_acid_amp
     description: A link to a literature reference, electronic resource or a standard
@@ -1663,7 +1657,6 @@ attributes:
     title: nucleic acid amplification
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000038
-    multivalued: false
     alias: nucl_acid_amp
     owner: MigsOrgAgriculture
     domain_of:
@@ -1693,7 +1686,6 @@ attributes:
     title: library size
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000039
-    multivalued: false
     alias: lib_size
     owner: MigsOrgAgriculture
     domain_of:
@@ -1709,8 +1701,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: integer
-    required: false
-    recommended: false
   assembly_name:
     name: assembly_name
     description: Name/version of the assembly provided by the submitter that is used
@@ -1719,7 +1709,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text} {text}'
     slot_uri: MIXS:0000057
-    multivalued: false
     alias: assembly_name
     owner: MigsOrgAgriculture
     domain_of:
@@ -1742,7 +1731,6 @@ attributes:
     title: temperature
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000113
-    multivalued: false
     alias: temp
     owner: MigsOrgAgriculture
     domain_of:
@@ -1798,7 +1786,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '[high|med|low];{percentage}'
     slot_uri: MIXS:0000069
-    multivalued: false
     alias: compl_score
     owner: MigsOrgAgriculture
     domain_of:
@@ -1811,8 +1798,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
   nucl_acid_ext:
     name: nucl_acid_ext
     description: A link to a literature reference, electronic resource or a standard
@@ -1821,7 +1806,6 @@ attributes:
     title: nucleic acid extraction
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000037
-    multivalued: false
     alias: nucl_acid_ext
     owner: MigsOrgAgriculture
     domain_of:
@@ -1856,7 +1840,6 @@ attributes:
     title: amount or size of sample collected
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000001
-    multivalued: false
     alias: samp_size
     owner: MigsOrgAgriculture
     domain_of:
@@ -1877,8 +1860,7 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
+    required: true
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -1893,7 +1875,6 @@ attributes:
     title: isolation and growth condition
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000003
-    multivalued: false
     alias: isol_growth_condt
     owner: MigsOrgAgriculture
     domain_of:
@@ -1906,7 +1887,6 @@ attributes:
     - Agriculture
     range: string
     required: true
-    recommended: false
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}$
@@ -1922,7 +1902,6 @@ attributes:
     title: altitude
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000094
-    multivalued: false
     alias: alt
     owner: MigsOrgAgriculture
     domain_of:
@@ -1985,7 +1964,6 @@ attributes:
     - Agriculture
     - SymbiontAssociated
     range: string
-    required: false
     recommended: true
   extrachrom_elements:
     name: extrachrom_elements
@@ -1995,7 +1973,6 @@ attributes:
     title: extrachromosomal elements
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000023
-    multivalued: false
     alias: extrachrom_elements
     owner: MigsOrgAgriculture
     domain_of:
@@ -2014,7 +1991,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{integer} bp'
     slot_uri: MIXS:0000024
-    multivalued: false
     alias: estimated_size
     owner: MigsOrgAgriculture
     domain_of:
@@ -2025,8 +2001,6 @@ attributes:
     - MigsVi
     - Miuvig
     range: string
-    required: false
-    recommended: false
   samp_vol_we_dna_ext:
     name: samp_vol_we_dna_ext
     description: 'Volume (ml) or mass (g) of total collected sample processed for
@@ -2035,7 +2009,6 @@ attributes:
     title: sample volume or weight for DNA extraction
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000111
-    multivalued: false
     alias: samp_vol_we_dna_ext
     owner: MigsOrgAgriculture
     domain_of:
@@ -2073,8 +2046,7 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
+    required: true
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2087,7 +2059,6 @@ attributes:
     title: library reads sequenced
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000040
-    multivalued: false
     alias: lib_reads_seqd
     owner: MigsOrgAgriculture
     domain_of:
@@ -2103,8 +2074,7 @@ attributes:
     - Miuvig
     - Agriculture
     range: integer
-    required: false
-    recommended: false
+    required: true
   samp_collect_device:
     name: samp_collect_device
     description: The device used to collect an environmental sample. This field accepts
@@ -2116,7 +2086,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{termLabel} [{termID}]|{text}'
     slot_uri: MIXS:0000002
-    multivalued: false
     alias: samp_collect_device
     owner: MigsOrgAgriculture
     domain_of:
@@ -2137,8 +2106,7 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
+    required: true
   number_contig:
     name: number_contig
     description: Total number of contigs in the cleaned/submitted assembly that makes
@@ -2146,7 +2114,6 @@ attributes:
     title: number of contigs
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000060
-    multivalued: false
     alias: number_contig
     owner: MigsOrgAgriculture
     domain_of:
@@ -2160,8 +2127,6 @@ attributes:
     - Misag
     - Miuvig
     range: integer
-    required: false
-    recommended: false
   lib_layout:
     name: lib_layout
     description: Specify whether to expect single, paired, or other configuration
@@ -2169,7 +2134,6 @@ attributes:
     title: library layout
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000041
-    multivalued: false
     alias: lib_layout
     owner: MigsOrgAgriculture
     domain_of:
@@ -2185,8 +2149,7 @@ attributes:
     - Miuvig
     - Agriculture
     range: LIB_LAYOUT_ENUM
-    required: false
-    recommended: false
+    recommended: true
   assembly_qual:
     name: assembly_qual
     description: 'The assembly quality category is based on sets of criteria outlined
@@ -2211,7 +2174,6 @@ attributes:
     string_serialization: '[Finished genome|High-quality draft genome|Medium-quality
       draft genome|Low-quality draft genome|Genome fragment(s)]'
     slot_uri: MIXS:0000056
-    multivalued: false
     alias: assembly_qual
     owner: MigsOrgAgriculture
     domain_of:
@@ -2226,8 +2188,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: string
-    required: false
-    recommended: false
   ref_biomaterial:
     name: ref_biomaterial
     description: Primary publication if isolated before genome publication; otherwise,
@@ -2235,7 +2195,6 @@ attributes:
     title: reference for biomaterial
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000025
-    multivalued: false
     alias: ref_biomaterial
     owner: MigsOrgAgriculture
     domain_of:
@@ -2249,8 +2208,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}$
@@ -2268,7 +2225,6 @@ attributes:
     keywords:
     - project
     slot_uri: MIXS:0000092
-    multivalued: false
     alias: project_name
     owner: MigsOrgAgriculture
     domain_of:
@@ -2314,7 +2270,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000042
-    multivalued: false
     alias: lib_vector
     owner: MigsOrgAgriculture
     domain_of:
@@ -2330,8 +2285,7 @@ attributes:
     - Miuvig
     - Agriculture
     range: string
-    required: false
-    recommended: false
+    required: true
   adapters:
     name: adapters
     description: Adapters provide priming sequences for both amplification and sequencing
@@ -2341,7 +2295,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{dna};{dna}'
     slot_uri: MIXS:0000048
-    multivalued: false
     alias: adapters
     owner: MigsOrgAgriculture
     domain_of:
@@ -2373,7 +2326,6 @@ attributes:
     keywords:
     - type
     slot_uri: MIXS:0001321
-    multivalued: false
     alias: neg_cont_type
     owner: MigsOrgAgriculture
     domain_of:
@@ -2396,7 +2348,6 @@ attributes:
     title: assembly software
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000058
-    multivalued: false
     alias: assembly_software
     owner: MigsOrgAgriculture
     domain_of:
@@ -2447,7 +2398,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000059
-    multivalued: false
     alias: annot
     owner: MigsOrgAgriculture
     domain_of:
@@ -2475,7 +2425,6 @@ attributes:
     - type
     string_serialization: '{term} or {text}'
     slot_uri: MIXS:0001322
-    multivalued: false
     alias: pos_cont_type
     owner: MigsOrgAgriculture
     domain_of:
@@ -2503,7 +2452,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{rank name}:{text}'
     slot_uri: MIXS:0000020
-    multivalued: false
     alias: subspecf_gen_lin
     owner: MigsOrgAgriculture
     domain_of:
@@ -2523,7 +2471,6 @@ attributes:
     title: feature prediction
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000061
-    multivalued: false
     alias: feat_pred
     owner: MigsOrgAgriculture
     domain_of:
@@ -2537,8 +2484,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+);([^\s-]{1,2}|[^\s-]+.+[^\s-]+);([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{software};{version};{parameters}$
@@ -2569,7 +2514,6 @@ attributes:
     - environmental
     string_serialization: '{termLabel} [{termID}]'
     slot_uri: MIXS:0000013
-    multivalued: false
     alias: env_local_scale
     owner: MigsOrgAgriculture
     domain_of:
@@ -2593,7 +2537,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{software};{version}'
     slot_uri: MIXS:0000070
-    multivalued: false
     alias: compl_software
     owner: MigsOrgAgriculture
     domain_of:
@@ -2606,8 +2549,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
   samp_mat_process:
     name: samp_mat_process
     description: A brief description of any processing applied to the sample during
@@ -2616,7 +2557,6 @@ attributes:
     title: sample material processing
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000016
-    multivalued: false
     alias: samp_mat_process
     owner: MigsOrgAgriculture
     domain_of:
@@ -2633,8 +2573,7 @@ attributes:
     - Miuvig
     - Agriculture
     range: string
-    required: false
-    recommended: false
+    required: true
   sim_search_meth:
     name: sim_search_meth
     description: Tool used to compare ORFs with database, along with version and cutoffs
@@ -2642,7 +2581,6 @@ attributes:
     title: similarity search method
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000063
-    multivalued: false
     alias: sim_search_meth
     owner: MigsOrgAgriculture
     domain_of:
@@ -2656,8 +2594,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+);([^\s-]{1,2}|[^\s-]+.+[^\s-]+);([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{software};{version};{parameters}$
@@ -2673,7 +2609,6 @@ attributes:
     - value: 10 meter
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000018
-    multivalued: false
     alias: depth
     owner: MigsOrgAgriculture
     domain_of:
@@ -2715,7 +2650,6 @@ attributes:
     - value: swabbing
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001225
-    multivalued: false
     alias: samp_collect_method
     owner: MigsOrgAgriculture
     domain_of:
@@ -2735,8 +2669,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$|([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}|{text}$
@@ -2760,7 +2692,6 @@ attributes:
     keywords:
     - environmental
     slot_uri: MIXS:0000014
-    multivalued: false
     alias: env_medium
     owner: MigsOrgAgriculture
     domain_of:
@@ -2799,7 +2730,6 @@ attributes:
     - sample
     - taxon
     slot_uri: MIXS:0001320
-    multivalued: false
     alias: samp_taxon_id
     owner: MigsOrgAgriculture
     domain_of:
@@ -2837,7 +2767,6 @@ attributes:
     - geographic
     - location
     slot_uri: MIXS:0000010
-    multivalued: false
     alias: geo_loc_name
     owner: MigsOrgAgriculture
     domain_of:
@@ -2879,7 +2808,6 @@ attributes:
     keywords:
     - date
     slot_uri: MIXS:0000011
-    multivalued: false
     alias: collection_date
     owner: MigsOrgAgriculture
     domain_of:
@@ -2914,7 +2842,6 @@ attributes:
     keywords:
     - method
     slot_uri: MIXS:0000050
-    multivalued: false
     alias: seq_meth
     owner: MigsOrgAgriculture
     domain_of:
@@ -2995,7 +2922,6 @@ attributes:
     title: elevation
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000093
-    multivalued: false
     alias: elev
     owner: MigsOrgAgriculture
     domain_of:
@@ -3022,7 +2948,6 @@ attributes:
     - SymbiontAssociated
     - Water
     range: string
-    required: false
     recommended: true
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
@@ -3047,7 +2972,6 @@ attributes:
     - context
     - environmental
     slot_uri: MIXS:0000012
-    multivalued: false
     alias: env_broad_scale
     owner: MigsOrgAgriculture
     domain_of:
@@ -3076,7 +3000,6 @@ attributes:
     title: taxonomic classification
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000064
-    multivalued: false
     alias: tax_class
     owner: MigsOrgAgriculture
     domain_of:
@@ -3090,8 +3013,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
   experimental_factor:
     name: experimental_factor
     description: Variable aspects of an experiment design that can be used to describe
@@ -3121,8 +3042,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^\S+.*\S+ \[[a-zA-Z]{2,}:\d+\]$
   associated_resource:
     name: associated_resource
@@ -3185,7 +3104,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: string
-    required: false
     recommended: true
   plant_growth_med:
     name: plant_growth_med
@@ -3201,7 +3119,6 @@ attributes:
     string_serialization: '{termLabel} [{termID}] or [husk|other artificial liquid
       medium|other artificial solid medium|peat moss|perlite|pumice|sand|soil|vermiculite|water]'
     slot_uri: MIXS:0001057
-    multivalued: false
     alias: plant_growth_med
     owner: MigsOrgAgriculture
     domain_of:
@@ -3209,8 +3126,6 @@ attributes:
     - FoodFarmEnvironment
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   photosynt_activ:
     name: photosynt_activ
     annotations:
@@ -3267,7 +3182,6 @@ attributes:
     title: enrichment protocol
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001177
-    multivalued: false
     alias: enrichment_protocol
     owner: MigsOrgAgriculture
     domain_of:
@@ -3294,7 +3208,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0001145
-    multivalued: false
     alias: library_prep_kit
     owner: MigsOrgAgriculture
     domain_of:
@@ -3304,8 +3217,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   sequencing_location:
     name: sequencing_location
     description: The location the sequencing run was performed. Indicate the name
@@ -3317,7 +3228,6 @@ attributes:
     keywords:
     - location
     slot_uri: MIXS:0001156
-    multivalued: false
     alias: sequencing_location
     owner: MigsOrgAgriculture
     domain_of:
@@ -3327,23 +3237,18 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   soil_temp:
     name: soil_temp
     description: Temperature of soil at the time of sampling
     title: soil temperature
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001163
-    multivalued: false
     alias: soil_temp
     owner: MigsOrgAgriculture
     domain_of:
     - Agriculture
     - FoodFarmEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3362,23 +3267,18 @@ attributes:
     - Agriculture
     - FoodFarmEnvironment
     range: float
-    required: false
-    recommended: false
   soil_conductivity:
     name: soil_conductivity
     description: Conductivity of some soil.
     title: soil conductivity
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001158
-    multivalued: false
     alias: soil_conductivity
     owner: MigsOrgAgriculture
     domain_of:
     - Agriculture
     - FoodFarmEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3392,7 +3292,6 @@ attributes:
     title: relative location of sample
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001161
-    multivalued: false
     alias: rel_location
     owner: MigsOrgAgriculture
     domain_of:
@@ -3408,7 +3307,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: bare soil [ENVO:01001616]
     slot_uri: MIXS:0001159
-    multivalued: false
     alias: soil_cover
     owner: MigsOrgAgriculture
     domain_of:
@@ -3433,7 +3331,6 @@ attributes:
     - porosity
     string_serialization: '{float} - {float} {unit}'
     slot_uri: MIXS:0000211
-    multivalued: false
     alias: porosity
     owner: MigsOrgAgriculture
     domain_of:
@@ -3441,8 +3338,6 @@ attributes:
     - HydrocarbonResourcesCores
     - Sediment
     range: string
-    required: false
-    recommended: false
   soil_texture:
     name: soil_texture
     description: The relative proportion of different grain sizes of mineral particles
@@ -3455,15 +3350,12 @@ attributes:
     - soil
     - texture
     slot_uri: MIXS:0000335
-    multivalued: false
     alias: soil_texture
     owner: MigsOrgAgriculture
     domain_of:
     - Agriculture
     - Soil
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3482,7 +3374,6 @@ attributes:
     - soil
     - texture
     slot_uri: MIXS:0000336
-    multivalued: false
     alias: soil_texture_meth
     owner: MigsOrgAgriculture
     domain_of:
@@ -3490,8 +3381,6 @@ attributes:
     - FoodFarmEnvironment
     - Soil
     range: string
-    required: false
-    recommended: false
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}$
@@ -3523,8 +3412,6 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    required: false
-    recommended: false
   host_disease_stat:
     name: host_disease_stat
     description: List of diseases with which the host has been diagnosed; can include
@@ -3537,7 +3424,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{termLabel} [{termID}]|{text}'
     slot_uri: MIXS:0000031
-    multivalued: false
     alias: host_disease_stat
     owner: MigsOrgAgriculture
     domain_of:
@@ -3573,15 +3459,12 @@ attributes:
     - presence
     string_serialization: '[cat|dog|rodent|snake|other];{integer}'
     slot_uri: MIXS:0000819
-    multivalued: false
     alias: pres_animal_insect
     owner: MigsOrgAgriculture
     domain_of:
     - Agriculture
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
   plant_water_method:
     name: plant_water_method
     description: Description of the equipment or method used to distribute water to
@@ -3597,7 +3480,6 @@ attributes:
     - plant
     - water
     slot_uri: MIXS:0001111
-    multivalued: false
     alias: plant_water_method
     owner: MigsOrgAgriculture
     domain_of:
@@ -3632,8 +3514,6 @@ attributes:
     - Agriculture
     - FoodFarmEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$
     structured_pattern:
       syntax: ^{termLabel} \[{termID}\]$
@@ -3684,8 +3564,6 @@ attributes:
     - Agriculture
     - FoodFarmEnvironment
     range: string
-    required: false
-    recommended: false
   water_pH:
     name: water_pH
     description: The pH measurement of the sample, or liquid portion of sample, or
@@ -3693,15 +3571,12 @@ attributes:
     title: water pH
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001175
-    multivalued: false
     alias: water_pH
     owner: MigsOrgAgriculture
     domain_of:
     - Agriculture
     - FoodFarmEnvironment
     range: float
-    required: false
-    recommended: false
   season:
     name: season
     annotations:
@@ -3730,8 +3605,6 @@ attributes:
     - BuiltEnvironment
     - FoodFarmEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^\S+.*\S+ \[[a-zA-Z]{2,}:[a-zA-Z0-9]+\]$
   solar_irradiance:
     name: solar_irradiance
@@ -3755,8 +3628,6 @@ attributes:
     - Air
     - FoodFarmEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3777,15 +3648,12 @@ attributes:
     keywords:
     - crop
     slot_uri: MIXS:0001116
-    multivalued: false
     alias: crop_yield
     owner: MigsOrgAgriculture
     domain_of:
     - Agriculture
     - FoodFarmEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3812,8 +3680,6 @@ attributes:
     - Agriculture
     - FoodFarmEnvironment
     range: float
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3828,7 +3694,6 @@ attributes:
     - value: 30% relative humidity
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000100
-    multivalued: false
     alias: humidity
     owner: MigsOrgAgriculture
     domain_of:
@@ -3870,8 +3735,6 @@ attributes:
     - Agriculture
     - FoodFarmEnvironment
     range: string
-    required: false
-    recommended: false
   chem_administration:
     name: chem_administration
     description: List of chemical compounds administered to the host or site where
@@ -3923,8 +3786,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$
     structured_pattern:
       syntax: ^{termLabel} \[{termID}\]$
@@ -3959,8 +3820,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   fertilizer_admin:
     name: fertilizer_admin
     description: Type of fertilizer or amendment added to the soil or water for the
@@ -3975,15 +3834,12 @@ attributes:
     keywords:
     - administration
     slot_uri: MIXS:0001127
-    multivalued: false
     alias: fertilizer_admin
     owner: MigsOrgAgriculture
     domain_of:
     - Agriculture
     - FoodFarmEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$
     structured_pattern:
       syntax: ^{termLabel} \[{termID}\]$
@@ -4005,7 +3861,6 @@ attributes:
     - storage
     - temperature
     slot_uri: MIXS:0000110
-    multivalued: false
     alias: samp_store_temp
     owner: MigsOrgAgriculture
     domain_of:
@@ -4031,8 +3886,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4065,8 +3918,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$
     structured_pattern:
       syntax: ^{termLabel} \[{termID}\]$
@@ -4102,8 +3953,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   farm_equip_san:
     name: farm_equip_san
     annotations:
@@ -4133,8 +3982,6 @@ attributes:
     - Agriculture
     - FoodFarmEnvironment
     range: string
-    required: false
-    recommended: false
   farm_equip:
     name: farm_equip
     description: List of equipment used for planting, fertilization, harvesting, irrigation,
@@ -4157,8 +4004,6 @@ attributes:
     - Agriculture
     - FoodFarmEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$
     structured_pattern:
       syntax: ^{termLabel} \[{termID}\]$
@@ -4184,8 +4029,6 @@ attributes:
     - Agriculture
     - FoodFarmEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$
     structured_pattern:
       syntax: ^{termLabel} \[{termID}\]$
@@ -4212,8 +4055,6 @@ attributes:
     - Agriculture
     - FoodFarmEnvironment
     range: string
-    required: false
-    recommended: false
   plant_struc:
     name: plant_struc
     description: Name of plant structure the sample was obtained from; for Plant Ontology
@@ -4223,7 +4064,6 @@ attributes:
     title: plant structure
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001060
-    multivalued: false
     alias: plant_struc
     owner: MigsOrgAgriculture
     domain_of:
@@ -4253,7 +4093,6 @@ attributes:
     - host.
     - mass
     slot_uri: MIXS:0000257
-    multivalued: false
     alias: host_dry_mass
     owner: MigsOrgAgriculture
     domain_of:
@@ -4263,8 +4102,6 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4281,7 +4118,6 @@ attributes:
     - value: A/3*B
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000247
-    multivalued: false
     alias: ances_data
     owner: MigsOrgAgriculture
     domain_of:
@@ -4290,8 +4126,6 @@ attributes:
     - HostAssociated
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   genetic_mod:
     name: genetic_mod
     annotations:
@@ -4308,7 +4142,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{PMID}|{DOI}|{URL}'
     slot_uri: MIXS:0000859
-    multivalued: false
     alias: genetic_mod
     owner: MigsOrgAgriculture
     domain_of:
@@ -4319,8 +4152,6 @@ attributes:
     - HostAssociated
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   food_product_type:
     name: food_product_type
     description: A food product type is a class of food products that is differentiated
@@ -4337,7 +4168,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}|{termLabel} [{termID}]'
     slot_uri: MIXS:0001184
-    multivalued: false
     alias: food_product_type
     owner: MigsOrgAgriculture
     domain_of:
@@ -4347,8 +4177,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   food_source:
     name: food_source
     description: Type of plant or animal from which the food product or its major
@@ -4359,7 +4187,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{termLabel} [{termID}]'
     slot_uri: MIXS:0001139
-    multivalued: false
     alias: food_source
     owner: MigsOrgAgriculture
     domain_of:
@@ -4398,8 +4225,6 @@ attributes:
     - FoodFarmEnvironment
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   organism_count:
     name: organism_count
     description: 'Total cell count of any organism (or group of organisms) per gram,
@@ -4455,7 +4280,6 @@ attributes:
     keywords:
     - lower
     slot_uri: MIXS:0000735
-    multivalued: false
     alias: size_frac_low
     owner: MigsOrgAgriculture
     domain_of:
@@ -4463,8 +4287,6 @@ attributes:
     - FoodFarmEnvironment
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4486,7 +4308,6 @@ attributes:
     keywords:
     - upper
     slot_uri: MIXS:0000736
-    multivalued: false
     alias: size_frac_up
     owner: MigsOrgAgriculture
     domain_of:
@@ -4494,8 +4315,6 @@ attributes:
     - FoodFarmEnvironment
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4516,7 +4335,6 @@ attributes:
     - date
     - isolation
     slot_uri: MIXS:0001181
-    multivalued: false
     alias: cult_isol_date
     owner: MigsOrgAgriculture
     domain_of:
@@ -4526,8 +4344,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: datetime
-    required: false
-    recommended: false
   samp_pooling:
     name: samp_pooling
     description: Physical combination of several instances of like material, e.g.
@@ -4566,7 +4382,6 @@ attributes:
     - macronutrients
     string_serialization: '{text};{float} {unit}'
     slot_uri: MIXS:0000578
-    multivalued: false
     alias: root_med_macronutr
     owner: MigsOrgAgriculture
     domain_of:
@@ -4574,8 +4389,6 @@ attributes:
     - FoodFarmEnvironment
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   root_med_carbon:
     name: root_med_carbon
     annotations:
@@ -4594,7 +4407,6 @@ attributes:
     - carbon
     string_serialization: '{text};{float} {unit}'
     slot_uri: MIXS:0000577
-    multivalued: false
     alias: root_med_carbon
     owner: MigsOrgAgriculture
     domain_of:
@@ -4602,8 +4414,6 @@ attributes:
     - FoodFarmEnvironment
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   root_med_ph:
     name: root_med_ph
     description: pH measurement of the culture rooting medium; e.g. 5.5
@@ -4614,7 +4424,6 @@ attributes:
     keywords:
     - ph
     slot_uri: MIXS:0001062
-    multivalued: false
     alias: root_med_ph
     owner: MigsOrgAgriculture
     domain_of:
@@ -4622,8 +4431,6 @@ attributes:
     - FoodFarmEnvironment
     - PlantAssociated
     range: float
-    required: false
-    recommended: false
   specific_host:
     name: specific_host
     description: Report the host's taxonomic name and/or NCBI taxonomy ID
@@ -4631,7 +4438,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}|{NCBI taxid}'
     slot_uri: MIXS:0000029
-    multivalued: false
     alias: specific_host
     owner: MigsOrgAgriculture
     domain_of:
@@ -4650,7 +4456,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000027
-    multivalued: false
     alias: pathogenicity
     owner: MigsOrgAgriculture
     domain_of:
@@ -4670,7 +4475,6 @@ attributes:
     title: observed biotic relationship
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000028
-    multivalued: false
     alias: biotic_relationship
     owner: MigsOrgAgriculture
     domain_of:
@@ -4942,7 +4746,6 @@ attributes:
     title: sample storage duration
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000116
-    multivalued: false
     alias: samp_store_dur
     owner: MigsOrgAgriculture
     domain_of:
@@ -4981,7 +4784,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000755
-    multivalued: false
     alias: samp_store_loc
     owner: MigsOrgAgriculture
     domain_of:
@@ -5014,7 +4816,6 @@ attributes:
     title: host age
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000255
-    multivalued: false
     alias: host_age
     owner: MigsOrgAgriculture
     domain_of:
@@ -5042,7 +4843,6 @@ attributes:
     title: host common name
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000248
-    multivalued: false
     alias: host_common_name
     owner: MigsOrgAgriculture
     domain_of:
@@ -5058,7 +4858,6 @@ attributes:
     title: host genotype
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000365
-    multivalued: false
     alias: host_genotype
     owner: MigsOrgAgriculture
     domain_of:
@@ -5080,7 +4879,6 @@ attributes:
     title: host height
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000264
-    multivalued: false
     alias: host_height
     owner: MigsOrgAgriculture
     domain_of:
@@ -5133,15 +4931,12 @@ attributes:
     - HostAssociated
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   host_length:
     name: host_length
     description: The length of subject
     title: host length
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000256
-    multivalued: false
     alias: host_length
     owner: MigsOrgAgriculture
     domain_of:
@@ -5165,7 +4960,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000251
-    multivalued: false
     alias: host_life_stage
     owner: MigsOrgAgriculture
     domain_of:
@@ -5183,7 +4977,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{termLabel} [{termID}]'
     slot_uri: MIXS:0000874
-    multivalued: false
     alias: host_phenotype
     owner: MigsOrgAgriculture
     domain_of:
@@ -5208,7 +5001,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{integer}'
     slot_uri: MIXS:0000250
-    multivalued: false
     alias: host_taxid
     owner: MigsOrgAgriculture
     domain_of:
@@ -5225,7 +5017,6 @@ attributes:
     title: host total mass
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000263
-    multivalued: false
     alias: host_tot_mass
     owner: MigsOrgAgriculture
     domain_of:
@@ -5274,7 +5065,6 @@ attributes:
     title: trophic level
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000032
-    multivalued: false
     alias: trophic_level
     owner: MigsOrgAgriculture
     domain_of:
@@ -5291,7 +5081,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0001058
-    multivalued: false
     alias: plant_product
     owner: MigsOrgAgriculture
     domain_of:
@@ -5305,7 +5094,6 @@ attributes:
     title: oxygenation status of sample
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000753
-    multivalued: false
     alias: oxy_stat_samp
     owner: MigsOrgAgriculture
     domain_of:
@@ -5338,7 +5126,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: FWD:{dna};REV:{dna}
     slot_uri: MIXS:0000046
-    multivalued: false
     alias: pcr_primers
     owner: MigsOrgAgriculture
     domain_of:
@@ -5353,7 +5140,6 @@ attributes:
     title: target gene
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000044
-    multivalued: false
     alias: target_gene
     owner: MigsOrgAgriculture
     domain_of:
@@ -5369,7 +5155,6 @@ attributes:
     title: target subfragment
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000045
-    multivalued: false
     alias: target_subfragment
     owner: MigsOrgAgriculture
     domain_of:
@@ -5386,7 +5171,6 @@ attributes:
     title: multiplex identifiers
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000047
-    multivalued: false
     alias: mid
     owner: MigsOrgAgriculture
     domain_of:
@@ -5412,7 +5196,6 @@ attributes:
     string_serialization: initial denaturation:degrees_minutes;annealing:degrees_minutes;elongation:degrees_minutes;final
       elongation:degrees_minutes;total cycles
     slot_uri: MIXS:0000049
-    multivalued: false
     alias: pcr_cond
     owner: MigsOrgAgriculture
     domain_of:
@@ -5430,7 +5213,6 @@ attributes:
     title: sequence quality check
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000051
-    multivalued: false
     alias: seq_quality_check
     owner: MigsOrgAgriculture
     domain_of:
@@ -5438,8 +5220,6 @@ attributes:
     - MimarksS
     - Agriculture
     range: SEQ_QUALITY_CHECK_ENUM
-    required: false
-    recommended: false
   chimera_check:
     name: chimera_check
     description: Tool(s) used for chimera checking, including version number and parameters,
@@ -5448,7 +5228,6 @@ attributes:
     title: chimera check software
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000052
-    multivalued: false
     alias: chimera_check
     owner: MigsOrgAgriculture
     domain_of:
@@ -5469,7 +5248,6 @@ attributes:
     title: soil_taxonomic/FAO classification
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001083
-    multivalued: false
     alias: fao_class
     owner: MigsOrgAgriculture
     domain_of:
@@ -5484,7 +5262,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000330
-    multivalued: false
     alias: local_class
     owner: MigsOrgAgriculture
     domain_of:
@@ -5498,7 +5275,6 @@ attributes:
     title: soil_taxonomic/local classification method
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000331
-    multivalued: false
     alias: local_class_meth
     owner: MigsOrgAgriculture
     domain_of:
@@ -5520,7 +5296,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000332
-    multivalued: false
     alias: soil_type
     owner: MigsOrgAgriculture
     domain_of:
@@ -5536,7 +5311,6 @@ attributes:
     title: soil type method
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000334
-    multivalued: false
     alias: soil_type_meth
     owner: MigsOrgAgriculture
     domain_of:
@@ -5558,7 +5332,6 @@ attributes:
     title: soil horizon
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001082
-    multivalued: false
     alias: soil_horizon
     owner: MigsOrgAgriculture
     domain_of:
@@ -5572,7 +5345,6 @@ attributes:
     title: horizon method
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000321
-    multivalued: false
     alias: horizon_meth
     owner: MigsOrgAgriculture
     domain_of:
@@ -5600,15 +5372,12 @@ attributes:
     - link
     string_serialization: '{termLabel} [{termID}]'
     slot_uri: MIXS:0000329
-    multivalued: false
     alias: link_class_info
     owner: MigsOrgAgriculture
     domain_of:
     - Agriculture
     - Soil
     range: string
-    required: false
-    recommended: false
   previous_land_use:
     name: previous_land_use
     description: Previous land use and dates
@@ -5616,7 +5385,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text};{timestamp}'
     slot_uri: MIXS:0000315
-    multivalued: false
     alias: previous_land_use
     owner: MigsOrgAgriculture
     domain_of:
@@ -5631,7 +5399,6 @@ attributes:
     title: history/previous land use method
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000316
-    multivalued: false
     alias: prev_land_use_meth
     owner: MigsOrgAgriculture
     domain_of:
@@ -5651,7 +5418,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{boolean};Rn/{timestamp}/{period}'
     slot_uri: MIXS:0000318
-    multivalued: false
     alias: crop_rotation
     owner: MigsOrgAgriculture
     domain_of:
@@ -5685,8 +5451,6 @@ attributes:
     - Agriculture
     - Soil
     range: string
-    required: false
-    recommended: false
   tillage:
     name: tillage
     description: Note method(s) used for tilling
@@ -5708,7 +5472,6 @@ attributes:
     title: history/fire
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001086
-    multivalued: false
     alias: fire
     owner: MigsOrgAgriculture
     domain_of:
@@ -5722,7 +5485,6 @@ attributes:
     title: history/flooding
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000319
-    multivalued: false
     alias: flooding
     owner: MigsOrgAgriculture
     domain_of:
@@ -5736,7 +5498,6 @@ attributes:
     title: history/extreme events
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000320
-    multivalued: false
     alias: extreme_event
     owner: MigsOrgAgriculture
     domain_of:
@@ -5753,15 +5514,12 @@ attributes:
     - information
     - link
     slot_uri: MIXS:0000328
-    multivalued: false
     alias: link_climate_info
     owner: MigsOrgAgriculture
     domain_of:
     - Agriculture
     - Soil
     range: string
-    required: false
-    recommended: false
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}$
@@ -5782,15 +5540,12 @@ attributes:
     - mean
     - temperature
     slot_uri: MIXS:0000642
-    multivalued: false
     alias: annual_temp
     owner: MigsOrgAgriculture
     domain_of:
     - Agriculture
     - Soil
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -5813,7 +5568,6 @@ attributes:
     - season
     - temperature
     slot_uri: MIXS:0000643
-    multivalued: false
     alias: season_temp
     owner: MigsOrgAgriculture
     domain_of:
@@ -5821,8 +5575,6 @@ attributes:
     - FoodFarmEnvironment
     - Soil
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -5842,15 +5594,12 @@ attributes:
     keywords:
     - mean
     slot_uri: MIXS:0000644
-    multivalued: false
     alias: annual_precpt
     owner: MigsOrgAgriculture
     domain_of:
     - Agriculture
     - Soil
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -5864,7 +5613,6 @@ attributes:
     title: mean seasonal precipitation
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000645
-    multivalued: false
     alias: season_precpt
     owner: MigsOrgAgriculture
     domain_of:
@@ -5872,8 +5620,6 @@ attributes:
     - FoodFarmEnvironment
     - Soil
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -5908,15 +5654,12 @@ attributes:
       body dominated by woody plants)|crop trees (nuts,fruit,christmas trees,nursery
       trees)]'
     slot_uri: MIXS:0001080
-    multivalued: false
     alias: cur_land_use
     owner: MigsOrgAgriculture
     domain_of:
     - Agriculture
     - Soil
     range: string
-    required: false
-    recommended: false
   slope_gradient:
     name: slope_gradient
     description: Commonly called 'slope'. The angle between ground surface and a horizontal
@@ -5925,7 +5668,6 @@ attributes:
     title: slope gradient
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000646
-    multivalued: false
     alias: slope_gradient
     owner: MigsOrgAgriculture
     domain_of:
@@ -5948,7 +5690,6 @@ attributes:
     title: slope aspect
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000647
-    multivalued: false
     alias: slope_aspect
     owner: MigsOrgAgriculture
     domain_of:
@@ -5969,7 +5710,6 @@ attributes:
     title: profile position
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001084
-    multivalued: false
     alias: profile_position
     owner: MigsOrgAgriculture
     domain_of:
@@ -5983,7 +5723,6 @@ attributes:
     title: drainage classification
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001085
-    multivalued: false
     alias: drainage_class
     owner: MigsOrgAgriculture
     domain_of:
@@ -5999,7 +5738,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text};{period}'
     slot_uri: MIXS:0000327
-    multivalued: false
     alias: store_cond
     owner: MigsOrgAgriculture
     domain_of:
@@ -6013,7 +5751,6 @@ attributes:
     title: pH method
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001106
-    multivalued: false
     alias: ph_meth
     owner: MigsOrgAgriculture
     domain_of:
@@ -6035,7 +5772,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000312
-    multivalued: false
     alias: cur_vegetation
     owner: MigsOrgAgriculture
     domain_of:
@@ -6049,7 +5785,6 @@ attributes:
     title: current vegetation method
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000314
-    multivalued: false
     alias: cur_vegetation_meth
     owner: MigsOrgAgriculture
     domain_of:
@@ -6068,7 +5803,6 @@ attributes:
     title: total organic carbon
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000533
-    multivalued: false
     alias: tot_org_carb
     owner: MigsOrgAgriculture
     domain_of:
@@ -6091,7 +5825,6 @@ attributes:
     title: total organic carbon method
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000337
-    multivalued: false
     alias: tot_org_c_meth
     owner: MigsOrgAgriculture
     domain_of:
@@ -6111,7 +5844,6 @@ attributes:
     title: total nitrogen content
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000530
-    multivalued: false
     alias: tot_nitro_content
     owner: MigsOrgAgriculture
     domain_of:
@@ -6134,7 +5866,6 @@ attributes:
     title: total nitrogen content method
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000338
-    multivalued: false
     alias: tot_nitro_cont_meth
     owner: MigsOrgAgriculture
     domain_of:
@@ -6156,7 +5887,6 @@ attributes:
     title: microbial biomass
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000650
-    multivalued: false
     alias: microbial_biomass
     owner: MigsOrgAgriculture
     domain_of:
@@ -6195,7 +5925,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{PMID|DOI|URL}'
     slot_uri: MIXS:0000343
-    multivalued: false
     alias: heavy_metals_meth
     owner: MigsOrgAgriculture
     domain_of:
@@ -6214,7 +5943,6 @@ attributes:
     title: total carbon
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000525
-    multivalued: false
     alias: tot_carb
     owner: MigsOrgAgriculture
     domain_of:
@@ -6235,7 +5963,6 @@ attributes:
     title: total phosphate
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000689
-    multivalued: false
     alias: tot_phosphate
     owner: MigsOrgAgriculture
     domain_of:
@@ -6257,7 +5984,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text};{float} {unit}'
     slot_uri: MIXS:0000322
-    multivalued: false
     alias: sieving
     owner: MigsOrgAgriculture
     domain_of:
@@ -6273,7 +5999,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{boolean};{float} {unit}'
     slot_uri: MIXS:0000325
-    multivalued: false
     alias: pool_dna_extracts
     owner: MigsOrgAgriculture
     domain_of:
@@ -6327,8 +6052,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
 class_uri: MIXS:0010006_0016018
 
 </code></pre>

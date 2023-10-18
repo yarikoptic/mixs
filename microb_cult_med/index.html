@@ -399,15 +399,12 @@ keywords:
 - culture
 - microbiological
 slot_uri: MIXS:0001216
-multivalued: false
 alias: microb_cult_med
 domain_of:
 - FoodAnimalAndAnimalFeed
 - FoodFoodProductionFacility
 - FoodHumanFoods
 range: string
-required: false
-recommended: false
 pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+)|(([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\])$
 structured_pattern:
   syntax: ^{text}|({termLabel} \[{termID}\])$

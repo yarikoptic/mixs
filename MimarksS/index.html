@@ -1012,8 +1012,6 @@ slot_usage:
     - MimarksS
     - Mims
     - Misag
-    required: false
-    recommended: false
   samp_collect_device:
     name: samp_collect_device
     examples:
@@ -1129,8 +1127,6 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   seq_quality_check:
     name: seq_quality_check
     domain_of:
@@ -1146,8 +1142,6 @@ slot_usage:
     - Mims
     - Misag
     - Miuvig
-    required: false
-    recommended: false
   sop:
     name: sop
     domain_of:
@@ -1525,8 +1519,6 @@ slot_usage:
     - MimarksS
     - Mims
     - Misag
-    required: false
-    recommended: false
   samp_collect_device:
     name: samp_collect_device
     examples:
@@ -1642,8 +1634,6 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   seq_quality_check:
     name: seq_quality_check
     domain_of:
@@ -1659,8 +1649,6 @@ slot_usage:
     - Mims
     - Misag
     - Miuvig
-    required: false
-    recommended: false
   sop:
     name: sop
     domain_of:
@@ -1767,7 +1755,6 @@ attributes:
     keywords:
     - sample
     slot_uri: MIXS:0001107
-    multivalued: false
     alias: samp_name
     owner: MimarksS
     domain_of:
@@ -1816,7 +1803,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: FWD:{dna};REV:{dna}
     slot_uri: MIXS:0000046
-    multivalued: false
     alias: pcr_primers
     owner: MimarksS
     domain_of:
@@ -1832,7 +1818,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{float}-{float} {unit}'
     slot_uri: MIXS:0000017
-    multivalued: false
     alias: size_frac
     owner: MimarksS
     domain_of:
@@ -1842,8 +1827,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
   lib_screen:
     name: lib_screen
     description: Specific enrichment or screening methods applied before and/or after
@@ -1852,7 +1835,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000043
-    multivalued: false
     alias: lib_screen
     owner: MimarksS
     domain_of:
@@ -1877,7 +1859,6 @@ attributes:
     title: nucleic acid amplification
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000038
-    multivalued: false
     alias: nucl_acid_amp
     owner: MimarksS
     domain_of:
@@ -1906,7 +1887,6 @@ attributes:
     title: library size
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000039
-    multivalued: false
     alias: lib_size
     owner: MimarksS
     domain_of:
@@ -1930,7 +1910,6 @@ attributes:
     title: target subfragment
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000045
-    multivalued: false
     alias: target_subfragment
     owner: MimarksS
     domain_of:
@@ -1947,7 +1926,6 @@ attributes:
     title: multiplex identifiers
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000047
-    multivalued: false
     alias: mid
     owner: MimarksS
     domain_of:
@@ -1970,7 +1948,6 @@ attributes:
     title: temperature
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000113
-    multivalued: false
     alias: temp
     owner: MimarksS
     domain_of:
@@ -2022,7 +1999,6 @@ attributes:
     title: nucleic acid extraction
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000037
-    multivalued: false
     alias: nucl_acid_ext
     owner: MimarksS
     domain_of:
@@ -2056,7 +2032,6 @@ attributes:
     title: amount or size of sample collected
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000001
-    multivalued: false
     alias: samp_size
     owner: MimarksS
     domain_of:
@@ -2094,7 +2069,6 @@ attributes:
     title: altitude
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000094
-    multivalued: false
     alias: alt
     owner: MimarksS
     domain_of:
@@ -2166,7 +2140,6 @@ attributes:
     title: sample volume or weight for DNA extraction
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000111
-    multivalued: false
     alias: samp_vol_we_dna_ext
     owner: MimarksS
     domain_of:
@@ -2204,8 +2177,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2218,7 +2189,6 @@ attributes:
     title: library reads sequenced
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000040
-    multivalued: false
     alias: lib_reads_seqd
     owner: MimarksS
     domain_of:
@@ -2242,7 +2212,6 @@ attributes:
     title: relationship to oxygen
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000015
-    multivalued: false
     alias: rel_to_oxygen
     owner: MimarksS
     domain_of:
@@ -2253,8 +2222,6 @@ attributes:
     - Mims
     - Misag
     range: REL_TO_OXYGEN_ENUM
-    required: false
-    recommended: false
   samp_collect_device:
     name: samp_collect_device
     description: The device used to collect an environmental sample. This field accepts
@@ -2266,7 +2233,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{termLabel} [{termID}]|{text}'
     slot_uri: MIXS:0000002
-    multivalued: false
     alias: samp_collect_device
     owner: MimarksS
     domain_of:
@@ -2297,7 +2263,6 @@ attributes:
     title: sequence quality check
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000051
-    multivalued: false
     alias: seq_quality_check
     owner: MimarksS
     domain_of:
@@ -2313,7 +2278,6 @@ attributes:
     title: library layout
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000041
-    multivalued: false
     alias: lib_layout
     owner: MimarksS
     domain_of:
@@ -2347,7 +2311,6 @@ attributes:
     - context
     - environmental
     slot_uri: MIXS:0000012
-    multivalued: false
     alias: env_broad_scale
     owner: MimarksS
     domain_of:
@@ -2381,7 +2344,6 @@ attributes:
     keywords:
     - project
     slot_uri: MIXS:0000092
-    multivalued: false
     alias: project_name
     owner: MimarksS
     domain_of:
@@ -2427,7 +2389,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000042
-    multivalued: false
     alias: lib_vector
     owner: MimarksS
     domain_of:
@@ -2453,7 +2414,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{dna};{dna}'
     slot_uri: MIXS:0000048
-    multivalued: false
     alias: adapters
     owner: MimarksS
     domain_of:
@@ -2484,7 +2444,6 @@ attributes:
     keywords:
     - type
     slot_uri: MIXS:0001321
-    multivalued: false
     alias: neg_cont_type
     owner: MimarksS
     domain_of:
@@ -2507,7 +2466,6 @@ attributes:
     title: assembly software
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000058
-    multivalued: false
     alias: assembly_software
     owner: MimarksS
     domain_of:
@@ -2537,7 +2495,6 @@ attributes:
     title: chimera check software
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000052
-    multivalued: false
     alias: chimera_check
     owner: MimarksS
     domain_of:
@@ -2563,7 +2520,6 @@ attributes:
     - type
     string_serialization: '{term} or {text}'
     slot_uri: MIXS:0001322
-    multivalued: false
     alias: pos_cont_type
     owner: MimarksS
     domain_of:
@@ -2605,7 +2561,6 @@ attributes:
     - environmental
     string_serialization: '{termLabel} [{termID}]'
     slot_uri: MIXS:0000013
-    multivalued: false
     alias: env_local_scale
     owner: MimarksS
     domain_of:
@@ -2630,7 +2585,6 @@ attributes:
     title: sample material processing
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000016
-    multivalued: false
     alias: samp_mat_process
     owner: MimarksS
     domain_of:
@@ -2658,7 +2612,6 @@ attributes:
     - value: 10 meter
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000018
-    multivalued: false
     alias: depth
     owner: MimarksS
     domain_of:
@@ -2700,7 +2653,6 @@ attributes:
     - value: swabbing
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001225
-    multivalued: false
     alias: samp_collect_method
     owner: MimarksS
     domain_of:
@@ -2744,7 +2696,6 @@ attributes:
     keywords:
     - environmental
     slot_uri: MIXS:0000014
-    multivalued: false
     alias: env_medium
     owner: MimarksS
     domain_of:
@@ -2783,7 +2734,6 @@ attributes:
     - sample
     - taxon
     slot_uri: MIXS:0001320
-    multivalued: false
     alias: samp_taxon_id
     owner: MimarksS
     domain_of:
@@ -2821,7 +2771,6 @@ attributes:
     - geographic
     - location
     slot_uri: MIXS:0000010
-    multivalued: false
     alias: geo_loc_name
     owner: MimarksS
     domain_of:
@@ -2863,7 +2812,6 @@ attributes:
     keywords:
     - date
     slot_uri: MIXS:0000011
-    multivalued: false
     alias: collection_date
     owner: MimarksS
     domain_of:
@@ -2898,7 +2846,6 @@ attributes:
     keywords:
     - method
     slot_uri: MIXS:0000050
-    multivalued: false
     alias: seq_meth
     owner: MimarksS
     domain_of:
@@ -2979,7 +2926,6 @@ attributes:
     title: elevation
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000093
-    multivalued: false
     alias: elev
     owner: MimarksS
     domain_of:
@@ -3022,7 +2968,6 @@ attributes:
     string_serialization: initial denaturation:degrees_minutes;annealing:degrees_minutes;elongation:degrees_minutes;final
       elongation:degrees_minutes;total cycles
     slot_uri: MIXS:0000049
-    multivalued: false
     alias: pcr_cond
     owner: MimarksS
     domain_of:
@@ -3068,7 +3013,6 @@ attributes:
     title: target gene
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000044
-    multivalued: false
     alias: target_gene
     owner: MimarksS
     domain_of:

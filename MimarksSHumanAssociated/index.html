@@ -395,7 +395,7 @@
 <td><a href="../samp_name/">samp_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>A local identifier or name that for the material sample used for extracting n...</td>
-<td><a href="../HumanAssociated/">HumanAssociated</a>, <a href="../MimarksS/">MimarksS</a></td>
+<td><a href="../MimarksS/">MimarksS</a>, <a href="../HumanAssociated/">HumanAssociated</a></td>
 </tr>
 <tr>
 <td><a href="../pcr_primers/">pcr_primers</a></td>
@@ -443,7 +443,7 @@
 <td><a href="../temp/">temp</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Temperature of the sample at the time of sampling</td>
-<td><a href="../HumanAssociated/">HumanAssociated</a>, <a href="../MimarksS/">MimarksS</a></td>
+<td><a href="../MimarksS/">MimarksS</a>, <a href="../HumanAssociated/">HumanAssociated</a></td>
 </tr>
 <tr>
 <td><a href="../nucl_acid_ext/">nucl_acid_ext</a></td>
@@ -473,7 +473,7 @@
 <td><a href="../samp_vol_we_dna_ext/">samp_vol_we_dna_ext</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Volume (ml) or mass (g) of total collected sample processed for DNA extractio...</td>
-<td><a href="../HumanAssociated/">HumanAssociated</a>, <a href="../MimarksS/">MimarksS</a></td>
+<td><a href="../MimarksS/">MimarksS</a>, <a href="../HumanAssociated/">HumanAssociated</a></td>
 </tr>
 <tr>
 <td><a href="../lib_reads_seqd/">lib_reads_seqd</a></td>
@@ -515,7 +515,7 @@
 <td><a href="../project_name/">project_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Name of the project within which the sequencing was organized</td>
-<td><a href="../HumanAssociated/">HumanAssociated</a>, <a href="../MimarksS/">MimarksS</a></td>
+<td><a href="../MimarksS/">MimarksS</a>, <a href="../HumanAssociated/">HumanAssociated</a></td>
 </tr>
 <tr>
 <td><a href="../lib_vector/">lib_vector</a></td>
@@ -1008,7 +1008,6 @@ attributes:
     keywords:
     - sample
     slot_uri: MIXS:0001107
-    multivalued: false
     alias: samp_name
     owner: MimarksSHumanAssociated
     domain_of:
@@ -1057,7 +1056,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: FWD:{dna};REV:{dna}
     slot_uri: MIXS:0000046
-    multivalued: false
     alias: pcr_primers
     owner: MimarksSHumanAssociated
     domain_of:
@@ -1073,7 +1071,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{float}-{float} {unit}'
     slot_uri: MIXS:0000017
-    multivalued: false
     alias: size_frac
     owner: MimarksSHumanAssociated
     domain_of:
@@ -1083,8 +1080,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
   lib_screen:
     name: lib_screen
     description: Specific enrichment or screening methods applied before and/or after
@@ -1093,7 +1088,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000043
-    multivalued: false
     alias: lib_screen
     owner: MimarksSHumanAssociated
     domain_of:
@@ -1118,7 +1112,6 @@ attributes:
     title: nucleic acid amplification
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000038
-    multivalued: false
     alias: nucl_acid_amp
     owner: MimarksSHumanAssociated
     domain_of:
@@ -1147,7 +1140,6 @@ attributes:
     title: library size
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000039
-    multivalued: false
     alias: lib_size
     owner: MimarksSHumanAssociated
     domain_of:
@@ -1171,7 +1163,6 @@ attributes:
     title: target subfragment
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000045
-    multivalued: false
     alias: target_subfragment
     owner: MimarksSHumanAssociated
     domain_of:
@@ -1188,7 +1179,6 @@ attributes:
     title: multiplex identifiers
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000047
-    multivalued: false
     alias: mid
     owner: MimarksSHumanAssociated
     domain_of:
@@ -1211,7 +1201,6 @@ attributes:
     title: temperature
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000113
-    multivalued: false
     alias: temp
     owner: MimarksSHumanAssociated
     domain_of:
@@ -1248,7 +1237,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
     recommended: true
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
@@ -1264,7 +1252,6 @@ attributes:
     title: nucleic acid extraction
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000037
-    multivalued: false
     alias: nucl_acid_ext
     owner: MimarksSHumanAssociated
     domain_of:
@@ -1298,7 +1285,6 @@ attributes:
     title: amount or size of sample collected
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000001
-    multivalued: false
     alias: samp_size
     owner: MimarksSHumanAssociated
     domain_of:
@@ -1336,7 +1322,6 @@ attributes:
     title: altitude
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000094
-    multivalued: false
     alias: alt
     owner: MimarksSHumanAssociated
     domain_of:
@@ -1408,7 +1393,6 @@ attributes:
     title: sample volume or weight for DNA extraction
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000111
-    multivalued: false
     alias: samp_vol_we_dna_ext
     owner: MimarksSHumanAssociated
     domain_of:
@@ -1446,8 +1430,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -1460,7 +1442,6 @@ attributes:
     title: library reads sequenced
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000040
-    multivalued: false
     alias: lib_reads_seqd
     owner: MimarksSHumanAssociated
     domain_of:
@@ -1484,7 +1465,6 @@ attributes:
     title: relationship to oxygen
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000015
-    multivalued: false
     alias: rel_to_oxygen
     owner: MimarksSHumanAssociated
     domain_of:
@@ -1495,8 +1475,6 @@ attributes:
     - Mims
     - Misag
     range: REL_TO_OXYGEN_ENUM
-    required: false
-    recommended: false
   samp_collect_device:
     name: samp_collect_device
     description: The device used to collect an environmental sample. This field accepts
@@ -1508,7 +1486,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{termLabel} [{termID}]|{text}'
     slot_uri: MIXS:0000002
-    multivalued: false
     alias: samp_collect_device
     owner: MimarksSHumanAssociated
     domain_of:
@@ -1539,7 +1516,6 @@ attributes:
     title: sequence quality check
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000051
-    multivalued: false
     alias: seq_quality_check
     owner: MimarksSHumanAssociated
     domain_of:
@@ -1555,7 +1531,6 @@ attributes:
     title: library layout
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000041
-    multivalued: false
     alias: lib_layout
     owner: MimarksSHumanAssociated
     domain_of:
@@ -1589,7 +1564,6 @@ attributes:
     - context
     - environmental
     slot_uri: MIXS:0000012
-    multivalued: false
     alias: env_broad_scale
     owner: MimarksSHumanAssociated
     domain_of:
@@ -1623,7 +1597,6 @@ attributes:
     keywords:
     - project
     slot_uri: MIXS:0000092
-    multivalued: false
     alias: project_name
     owner: MimarksSHumanAssociated
     domain_of:
@@ -1669,7 +1642,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000042
-    multivalued: false
     alias: lib_vector
     owner: MimarksSHumanAssociated
     domain_of:
@@ -1695,7 +1667,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{dna};{dna}'
     slot_uri: MIXS:0000048
-    multivalued: false
     alias: adapters
     owner: MimarksSHumanAssociated
     domain_of:
@@ -1726,7 +1697,6 @@ attributes:
     keywords:
     - type
     slot_uri: MIXS:0001321
-    multivalued: false
     alias: neg_cont_type
     owner: MimarksSHumanAssociated
     domain_of:
@@ -1749,7 +1719,6 @@ attributes:
     title: assembly software
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000058
-    multivalued: false
     alias: assembly_software
     owner: MimarksSHumanAssociated
     domain_of:
@@ -1779,7 +1748,6 @@ attributes:
     title: chimera check software
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000052
-    multivalued: false
     alias: chimera_check
     owner: MimarksSHumanAssociated
     domain_of:
@@ -1805,7 +1773,6 @@ attributes:
     - type
     string_serialization: '{term} or {text}'
     slot_uri: MIXS:0001322
-    multivalued: false
     alias: pos_cont_type
     owner: MimarksSHumanAssociated
     domain_of:
@@ -1847,7 +1814,6 @@ attributes:
     - environmental
     string_serialization: '{termLabel} [{termID}]'
     slot_uri: MIXS:0000013
-    multivalued: false
     alias: env_local_scale
     owner: MimarksSHumanAssociated
     domain_of:
@@ -1872,7 +1838,6 @@ attributes:
     title: sample material processing
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000016
-    multivalued: false
     alias: samp_mat_process
     owner: MimarksSHumanAssociated
     domain_of:
@@ -1900,7 +1865,6 @@ attributes:
     - value: 10 meter
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000018
-    multivalued: false
     alias: depth
     owner: MimarksSHumanAssociated
     domain_of:
@@ -1942,7 +1906,6 @@ attributes:
     - value: swabbing
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001225
-    multivalued: false
     alias: samp_collect_method
     owner: MimarksSHumanAssociated
     domain_of:
@@ -1986,7 +1949,6 @@ attributes:
     keywords:
     - environmental
     slot_uri: MIXS:0000014
-    multivalued: false
     alias: env_medium
     owner: MimarksSHumanAssociated
     domain_of:
@@ -2025,7 +1987,6 @@ attributes:
     - sample
     - taxon
     slot_uri: MIXS:0001320
-    multivalued: false
     alias: samp_taxon_id
     owner: MimarksSHumanAssociated
     domain_of:
@@ -2063,7 +2024,6 @@ attributes:
     - geographic
     - location
     slot_uri: MIXS:0000010
-    multivalued: false
     alias: geo_loc_name
     owner: MimarksSHumanAssociated
     domain_of:
@@ -2105,7 +2065,6 @@ attributes:
     keywords:
     - date
     slot_uri: MIXS:0000011
-    multivalued: false
     alias: collection_date
     owner: MimarksSHumanAssociated
     domain_of:
@@ -2140,7 +2099,6 @@ attributes:
     keywords:
     - method
     slot_uri: MIXS:0000050
-    multivalued: false
     alias: seq_meth
     owner: MimarksSHumanAssociated
     domain_of:
@@ -2221,7 +2179,6 @@ attributes:
     title: elevation
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000093
-    multivalued: false
     alias: elev
     owner: MimarksSHumanAssociated
     domain_of:
@@ -2264,7 +2221,6 @@ attributes:
     string_serialization: initial denaturation:degrees_minutes;annealing:degrees_minutes;elongation:degrees_minutes;final
       elongation:degrees_minutes;total cycles
     slot_uri: MIXS:0000049
-    multivalued: false
     alias: pcr_cond
     owner: MimarksSHumanAssociated
     domain_of:
@@ -2310,7 +2266,6 @@ attributes:
     title: target gene
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000044
-    multivalued: false
     alias: target_gene
     owner: MimarksSHumanAssociated
     domain_of:
@@ -2389,7 +2344,6 @@ attributes:
     - value: MPI123
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000861
-    multivalued: false
     alias: host_subject_id
     owner: MimarksSHumanAssociated
     domain_of:
@@ -2401,8 +2355,6 @@ attributes:
     - HumanVaginal
     - SymbiontAssociated
     range: string
-    required: false
-    recommended: false
   host_age:
     name: host_age
     description: Age of host at the time of sampling; relevant scale depends on species
@@ -2412,7 +2364,6 @@ attributes:
     - value: 30 years
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000255
-    multivalued: false
     alias: host_age
     owner: MimarksSHumanAssociated
     domain_of:
@@ -2427,8 +2378,6 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2465,8 +2414,6 @@ attributes:
     - HumanSkin
     - HumanVaginal
     range: string
-    required: false
-    recommended: false
   host_disease_stat:
     name: host_disease_stat
     description: List of diseases with which the host has been diagnosed; can include
@@ -2479,7 +2426,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{termLabel} [{termID}]|{text}'
     slot_uri: MIXS:0000031
-    multivalued: false
     alias: host_disease_stat
     owner: MimarksSHumanAssociated
     domain_of:
@@ -2497,8 +2443,6 @@ attributes:
     - HumanVaginal
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   ihmc_medication_code:
     name: ihmc_medication_code
     description: Can include multiple medication codes
@@ -2519,8 +2463,6 @@ attributes:
     - HumanSkin
     - HumanVaginal
     range: integer
-    required: false
-    recommended: false
   chem_administration:
     name: chem_administration
     description: List of chemical compounds administered to the host or site where
@@ -2552,8 +2494,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   host_body_site:
     name: host_body_site
     description: Name of body site where the sample was obtained from, such as a specific
@@ -2565,7 +2505,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{termLabel} [{termID}]'
     slot_uri: MIXS:0000867
-    multivalued: false
     alias: host_body_site
     owner: MimarksSHumanAssociated
     domain_of:
@@ -2577,8 +2516,6 @@ attributes:
     - HumanVaginal
     - SymbiontAssociated
     range: string
-    required: false
-    recommended: false
   host_body_product:
     name: host_body_product
     annotations:
@@ -2599,7 +2536,6 @@ attributes:
     - product
     string_serialization: '{termLabel} [{termID}]'
     slot_uri: MIXS:0000888
-    multivalued: false
     alias: host_body_product
     owner: MimarksSHumanAssociated
     domain_of:
@@ -2611,8 +2547,6 @@ attributes:
     - HumanVaginal
     - SymbiontAssociated
     range: string
-    required: false
-    recommended: false
   host_tot_mass:
     name: host_tot_mass
     description: Total mass of the host at collection, the unit depends on host
@@ -2621,7 +2555,6 @@ attributes:
     - value: 65 kilogram
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000263
-    multivalued: false
     alias: host_tot_mass
     owner: MimarksSHumanAssociated
     domain_of:
@@ -2636,8 +2569,6 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2652,7 +2583,6 @@ attributes:
     - value: 1.75 meter
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000264
-    multivalued: false
     alias: host_height
     owner: MimarksSHumanAssociated
     domain_of:
@@ -2667,8 +2597,6 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2695,8 +2623,6 @@ attributes:
     - HumanSkin
     - HumanVaginal
     range: string
-    required: false
-    recommended: false
   host_last_meal:
     name: host_last_meal
     description: Content of last meal and time since feeding; can include multiple
@@ -2718,8 +2644,6 @@ attributes:
     - HumanSkin
     - HumanVaginal
     range: string
-    required: false
-    recommended: false
   host_fam_rel:
     name: host_fam_rel
     description: Relationships to other hosts in the same study; can include multiple
@@ -2742,8 +2666,6 @@ attributes:
     - HumanVaginal
     - SymbiontAssociated
     range: string
-    required: false
-    recommended: false
   host_genotype:
     name: host_genotype
     description: Observed genotype
@@ -2752,7 +2674,6 @@ attributes:
     - value: ST1
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000365
-    multivalued: false
     alias: host_genotype
     owner: MimarksSHumanAssociated
     domain_of:
@@ -2767,8 +2688,6 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    required: false
-    recommended: false
   host_phenotype:
     name: host_phenotype
     description: Phenotype of human or other host. Use terms from the phenotypic quality
@@ -2779,7 +2698,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{termLabel} [{termID}]'
     slot_uri: MIXS:0000874
-    multivalued: false
     alias: host_phenotype
     owner: MimarksSHumanAssociated
     domain_of:
@@ -2794,8 +2712,6 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    required: false
-    recommended: false
   host_body_temp:
     name: host_body_temp
     description: Core body temperature of the host when sample was collected
@@ -2804,7 +2720,6 @@ attributes:
     - value: 36.5 degree Celsius
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000274
-    multivalued: false
     alias: host_body_temp
     owner: MimarksSHumanAssociated
     domain_of:
@@ -2815,8 +2730,6 @@ attributes:
     - HumanSkin
     - HumanVaginal
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2831,14 +2744,11 @@ attributes:
     - value: 'yes'
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000262
-    multivalued: false
     alias: smoker
     owner: MimarksSHumanAssociated
     domain_of:
     - HumanAssociated
     range: boolean
-    required: false
-    recommended: false
   host_hiv_stat:
     name: host_hiv_stat
     annotations:
@@ -2857,14 +2767,11 @@ attributes:
     - status
     string_serialization: '{boolean};{boolean}'
     slot_uri: MIXS:0000265
-    multivalued: false
     alias: host_hiv_stat
     owner: MimarksSHumanAssociated
     domain_of:
     - HumanAssociated
     range: string
-    required: false
-    recommended: false
   drug_usage:
     name: drug_usage
     annotations:
@@ -2888,8 +2795,6 @@ attributes:
     domain_of:
     - HumanAssociated
     range: string
-    required: false
-    recommended: false
   host_body_mass_index:
     name: host_body_mass_index
     annotations:
@@ -2905,7 +2810,6 @@ attributes:
     - host
     - host.
     slot_uri: MIXS:0000317
-    multivalued: false
     alias: host_body_mass_index
     owner: MimarksSHumanAssociated
     domain_of:
@@ -2915,8 +2819,6 @@ attributes:
     - HumanSkin
     - HumanVaginal
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2940,14 +2842,11 @@ attributes:
     - months
     string_serialization: '{boolean};{text}'
     slot_uri: MIXS:0000266
-    multivalued: false
     alias: diet_last_six_month
     owner: MimarksSHumanAssociated
     domain_of:
     - HumanAssociated
     range: string
-    required: false
-    recommended: false
   weight_loss_3_month:
     name: weight_loss_3_month
     annotations:
@@ -2968,14 +2867,11 @@ attributes:
     - weight
     string_serialization: '{boolean};{float} {unit}'
     slot_uri: MIXS:0000295
-    multivalued: false
     alias: weight_loss_3_month
     owner: MimarksSHumanAssociated
     domain_of:
     - HumanAssociated
     range: string
-    required: false
-    recommended: false
   ethnicity:
     name: ethnicity
     annotations:
@@ -3001,8 +2897,6 @@ attributes:
     - HumanSkin
     - HumanVaginal
     range: string
-    required: false
-    recommended: false
   host_occupation:
     name: host_occupation
     description: Most frequent job performed by subject
@@ -3027,8 +2921,6 @@ attributes:
     - HumanSkin
     - HumanVaginal
     range: string
-    required: false
-    recommended: false
   pet_farm_animal:
     name: pet_farm_animal
     annotations:
@@ -3054,8 +2946,6 @@ attributes:
     domain_of:
     - HumanAssociated
     range: string
-    required: false
-    recommended: false
   travel_out_six_month:
     name: travel_out_six_month
     annotations:
@@ -3076,8 +2966,6 @@ attributes:
     domain_of:
     - HumanAssociated
     range: string
-    required: false
-    recommended: false
   twin_sibling:
     name: twin_sibling
     description: Specification of twin sibling presence
@@ -3088,14 +2976,11 @@ attributes:
     keywords:
     - presence
     slot_uri: MIXS:0000326
-    multivalued: false
     alias: twin_sibling
     owner: MimarksSHumanAssociated
     domain_of:
     - HumanAssociated
     range: boolean
-    required: false
-    recommended: false
   medic_hist_perform:
     name: medic_hist_perform
     description: Whether full medical history was collected
@@ -3106,7 +2991,6 @@ attributes:
     keywords:
     - history
     slot_uri: MIXS:0000897
-    multivalued: false
     alias: medic_hist_perform
     owner: MimarksSHumanAssociated
     domain_of:
@@ -3116,8 +3000,6 @@ attributes:
     - HumanSkin
     - HumanVaginal
     range: boolean
-    required: false
-    recommended: false
   study_complt_stat:
     name: study_complt_stat
     annotations:
@@ -3136,14 +3018,11 @@ attributes:
     string_serialization: '{boolean};[adverse event|non-compliance|lost to follow
       up|other-specify]'
     slot_uri: MIXS:0000898
-    multivalued: false
     alias: study_complt_stat
     owner: MimarksSHumanAssociated
     domain_of:
     - HumanAssociated
     range: string
-    required: false
-    recommended: false
   pulmonary_disord:
     name: pulmonary_disord
     description: History of pulmonary disorders; can include multiple disorders. The
@@ -3160,8 +3039,6 @@ attributes:
     domain_of:
     - HumanAssociated
     range: string
-    required: false
-    recommended: false
   nose_throat_disord:
     name: nose_throat_disord
     description: History of nose-throat disorders; can include multiple disorders,  The
@@ -3179,8 +3056,6 @@ attributes:
     domain_of:
     - HumanAssociated
     range: string
-    required: false
-    recommended: false
   blood_blood_disord:
     name: blood_blood_disord
     description: History of blood disorders; can include multiple disorders.  The
@@ -3197,8 +3072,6 @@ attributes:
     domain_of:
     - HumanAssociated
     range: string
-    required: false
-    recommended: false
   host_pulse:
     name: host_pulse
     annotations:
@@ -3214,7 +3087,6 @@ attributes:
     - host
     - host.
     slot_uri: MIXS:0000333
-    multivalued: false
     alias: host_pulse
     owner: MimarksSHumanAssociated
     domain_of:
@@ -3224,8 +3096,6 @@ attributes:
     - HumanSkin
     - HumanVaginal
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3238,14 +3108,11 @@ attributes:
     title: amniotic fluid/gestation state
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000272
-    multivalued: false
     alias: gestation_state
     owner: MimarksSHumanAssociated
     domain_of:
     - HumanAssociated
     range: string
-    required: false
-    recommended: false
   maternal_health_stat:
     name: maternal_health_stat
     description: Specification of the maternal health status
@@ -3254,14 +3121,11 @@ attributes:
     keywords:
     - status
     slot_uri: MIXS:0000273
-    multivalued: false
     alias: maternal_health_stat
     owner: MimarksSHumanAssociated
     domain_of:
     - HumanAssociated
     range: string
-    required: false
-    recommended: false
   foetal_health_stat:
     name: foetal_health_stat
     description: Specification of foetal health status, should also include abortion
@@ -3270,28 +3134,22 @@ attributes:
     keywords:
     - status
     slot_uri: MIXS:0000275
-    multivalued: false
     alias: foetal_health_stat
     owner: MimarksSHumanAssociated
     domain_of:
     - HumanAssociated
     range: string
-    required: false
-    recommended: false
   amniotic_fluid_color:
     name: amniotic_fluid_color
     description: Specification of the color of the amniotic fluid sample
     title: amniotic fluid/color
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000276
-    multivalued: false
     alias: amniotic_fluid_color
     owner: MimarksSHumanAssociated
     domain_of:
     - HumanAssociated
     range: string
-    required: false
-    recommended: false
   kidney_disord:
     name: kidney_disord
     description: History of kidney disorders; can include multiple disorders. The
@@ -3308,8 +3166,6 @@ attributes:
     domain_of:
     - HumanAssociated
     range: string
-    required: false
-    recommended: false
   urogenit_tract_disor:
     name: urogenit_tract_disor
     description: History of urogenital tract disorders; can include multiple disorders.
@@ -3326,8 +3182,6 @@ attributes:
     domain_of:
     - HumanAssociated
     range: string
-    required: false
-    recommended: false
   urine_collect_meth:
     name: urine_collect_meth
     description: Specification of urine collection method
@@ -3338,14 +3192,11 @@ attributes:
     keywords:
     - method
     slot_uri: MIXS:0000899
-    multivalued: false
     alias: urine_collect_meth
     owner: MimarksSHumanAssociated
     domain_of:
     - HumanAssociated
     range: URINE_COLLECT_METH_ENUM
-    required: false
-    recommended: false
   perturbation:
     name: perturbation
     description: Type of perturbation, e.g. chemical administration, physical disturbance,
@@ -3379,8 +3230,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   salinity:
     name: salinity
     annotations:
@@ -3400,7 +3249,6 @@ attributes:
     keywords:
     - salinity
     slot_uri: MIXS:0000183
-    multivalued: false
     alias: salinity
     owner: MimarksSHumanAssociated
     domain_of:
@@ -3422,8 +3270,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3436,7 +3282,6 @@ attributes:
     title: oxygenation status of sample
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000753
-    multivalued: false
     alias: oxy_stat_samp
     owner: MimarksSHumanAssociated
     domain_of:
@@ -3458,8 +3303,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: OXY_STAT_SAMP_ENUM
-    required: false
-    recommended: false
   organism_count:
     name: organism_count
     description: 'Total cell count of any organism (or group of organisms) per gram,
@@ -3499,8 +3342,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   samp_store_temp:
     name: samp_store_temp
     annotations:
@@ -3517,7 +3358,6 @@ attributes:
     - storage
     - temperature
     slot_uri: MIXS:0000110
-    multivalued: false
     alias: samp_store_temp
     owner: MimarksSHumanAssociated
     domain_of:
@@ -3543,8 +3383,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3558,7 +3396,6 @@ attributes:
     title: sample storage duration
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000116
-    multivalued: false
     alias: samp_store_dur
     owner: MimarksSHumanAssociated
     domain_of:
@@ -3584,8 +3421,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^P(?:(?:\d+D|\d+M(?:\d+D)?|\d+Y(?:\d+M(?:\d+D)?)?)(?:T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S))?|T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S)|\d+W)$
     structured_pattern:
       syntax: ^{duration}$
@@ -3617,8 +3452,6 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    required: false
-    recommended: false
   samp_store_loc:
     name: samp_store_loc
     description: Location at which sample was stored, usually name of a specific freezer/room
@@ -3626,7 +3459,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000755
-    multivalued: false
     alias: samp_store_loc
     owner: MimarksSHumanAssociated
     domain_of:
@@ -3651,8 +3483,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   misc_param:
     name: misc_param
     annotations:
@@ -3696,8 +3526,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
 class_uri: MIXS:0010008_0016003
 
 </code></pre>

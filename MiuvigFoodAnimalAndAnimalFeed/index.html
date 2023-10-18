@@ -1446,7 +1446,6 @@ attributes:
     keywords:
     - sample
     slot_uri: MIXS:0001107
-    multivalued: false
     alias: samp_name
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -1492,7 +1491,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{float}-{float} {unit}'
     slot_uri: MIXS:0000017
-    multivalued: false
     alias: size_frac
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -1511,7 +1509,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000043
-    multivalued: false
     alias: lib_screen
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -1539,7 +1536,6 @@ attributes:
       single amplified genome (SAG)|viral single amplified genome (vSAG)|isolate microbial
       genome|other]'
     slot_uri: MIXS:0000035
-    multivalued: false
     alias: source_uvig
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -1554,7 +1550,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{database};{version};{reference}'
     slot_uri: MIXS:0000062
-    multivalued: false
     alias: ref_db
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -1577,7 +1572,6 @@ attributes:
     title: nucleic acid amplification
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000038
-    multivalued: false
     alias: nucl_acid_amp
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -1606,7 +1600,6 @@ attributes:
     title: library size
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000039
-    multivalued: false
     alias: lib_size
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -1631,7 +1624,6 @@ attributes:
     title: multiplex identifiers
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000047
-    multivalued: false
     alias: mid
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -1656,7 +1648,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text} {text}'
     slot_uri: MIXS:0000057
-    multivalued: false
     alias: assembly_name
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -1678,7 +1669,6 @@ attributes:
     title: temperature
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000113
-    multivalued: false
     alias: temp
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -1715,7 +1705,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
     recommended: true
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
@@ -1734,7 +1723,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '[high|med|low];{percentage}'
     slot_uri: MIXS:0000069
-    multivalued: false
     alias: compl_score
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -1755,7 +1743,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{integer}'
     slot_uri: MIXS:0000067
-    multivalued: false
     alias: trnas
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -1763,8 +1750,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
   nucl_acid_ext:
     name: nucl_acid_ext
     description: A link to a literature reference, electronic resource or a standard
@@ -1773,7 +1758,6 @@ attributes:
     title: nucleic acid extraction
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000037
-    multivalued: false
     alias: nucl_acid_ext
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -1794,7 +1778,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
     recommended: true
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$
     structured_pattern:
@@ -1808,7 +1791,6 @@ attributes:
     title: amount or size of sample collected
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000001
-    multivalued: false
     alias: samp_size
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -1829,7 +1811,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
     recommended: true
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
@@ -1847,7 +1828,6 @@ attributes:
     title: altitude
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000094
-    multivalued: false
     alias: alt
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -1883,7 +1863,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{integer} bp'
     slot_uri: MIXS:0000024
-    multivalued: false
     alias: estimated_size
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -1894,8 +1873,6 @@ attributes:
     - MigsVi
     - Miuvig
     range: string
-    required: false
-    recommended: false
   source_mat_id:
     name: source_mat_id
     description: A unique identifier assigned to a material sample (as defined by
@@ -1941,7 +1918,6 @@ attributes:
     title: sample volume or weight for DNA extraction
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000111
-    multivalued: false
     alias: samp_vol_we_dna_ext
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -1979,8 +1955,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -1994,7 +1968,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000027
-    multivalued: false
     alias: pathogenicity
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -2004,15 +1977,12 @@ attributes:
     - Miuvig
     - Agriculture
     range: string
-    required: false
-    recommended: false
   lib_reads_seqd:
     name: lib_reads_seqd
     description: Total number of clones sequenced from the library
     title: library reads sequenced
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000040
-    multivalued: false
     alias: lib_reads_seqd
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -2040,7 +2010,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{termLabel} [{termID}]|{text}'
     slot_uri: MIXS:0000002
-    multivalued: false
     alias: samp_collect_device
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -2061,7 +2030,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
     recommended: true
   number_contig:
     name: number_contig
@@ -2070,7 +2038,6 @@ attributes:
     title: number of contigs
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000060
-    multivalued: false
     alias: number_contig
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -2094,7 +2061,6 @@ attributes:
     title: observed biotic relationship
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000028
-    multivalued: false
     alias: biotic_relationship
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -2105,15 +2071,12 @@ attributes:
     - Miuvig
     - Agriculture
     range: BIOTIC_RELATIONSHIP_ENUM
-    required: false
-    recommended: false
   trna_ext_software:
     name: trna_ext_software
     description: Tools used for tRNA identification
     title: tRNA extraction software
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000068
-    multivalued: false
     alias: trna_ext_software
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -2121,8 +2084,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+);([^\s-]{1,2}|[^\s-]+.+[^\s-]+);([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{software};{version};{parameters}$
@@ -2135,7 +2096,6 @@ attributes:
     title: library layout
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000041
-    multivalued: false
     alias: lib_layout
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -2176,7 +2136,6 @@ attributes:
     string_serialization: '[Finished genome|High-quality draft genome|Medium-quality
       draft genome|Low-quality draft genome|Genome fragment(s)]'
     slot_uri: MIXS:0000056
-    multivalued: false
     alias: assembly_qual
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -2199,7 +2158,6 @@ attributes:
     title: reference for biomaterial
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000025
-    multivalued: false
     alias: ref_biomaterial
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -2213,8 +2171,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}$
@@ -2232,7 +2188,6 @@ attributes:
     keywords:
     - project
     slot_uri: MIXS:0000092
-    multivalued: false
     alias: project_name
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -2278,7 +2233,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000042
-    multivalued: false
     alias: lib_vector
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -2314,8 +2268,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: string
-    required: false
-    recommended: false
   neg_cont_type:
     name: neg_cont_type
     annotations:
@@ -2330,7 +2282,6 @@ attributes:
     keywords:
     - type
     slot_uri: MIXS:0001321
-    multivalued: false
     alias: neg_cont_type
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -2369,7 +2320,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{dna};{dna}'
     slot_uri: MIXS:0000048
-    multivalued: false
     alias: adapters
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -2392,7 +2342,6 @@ attributes:
     title: assembly software
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000058
-    multivalued: false
     alias: assembly_software
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -2433,8 +2382,6 @@ attributes:
     - Misag
     - Miuvig
     range: TAX_IDENT_ENUM
-    required: false
-    recommended: false
   annot:
     name: annot
     description: Tool used for annotation, or for cases where annotation was provided
@@ -2444,7 +2391,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000059
-    multivalued: false
     alias: annot
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -2459,8 +2405,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: string
-    required: false
-    recommended: false
   pos_cont_type:
     name: pos_cont_type
     description: The substance, mixture, product, or apparatus used to verify that
@@ -2473,7 +2417,6 @@ attributes:
     - type
     string_serialization: '{term} or {text}'
     slot_uri: MIXS:0001322
-    multivalued: false
     alias: pos_cont_type
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -2497,7 +2440,6 @@ attributes:
     title: feature prediction
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000061
-    multivalued: false
     alias: feat_pred
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -2524,7 +2466,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{software};{version}'
     slot_uri: MIXS:0000070
-    multivalued: false
     alias: compl_software
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -2537,8 +2478,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
   env_local_scale:
     name: env_local_scale
     annotations:
@@ -2564,7 +2503,6 @@ attributes:
     - environmental
     string_serialization: '{termLabel} [{termID}]'
     slot_uri: MIXS:0000013
-    multivalued: false
     alias: env_local_scale
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -2589,7 +2527,6 @@ attributes:
     title: sample material processing
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000016
-    multivalued: false
     alias: samp_mat_process
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -2614,7 +2551,6 @@ attributes:
     title: similarity search method
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000063
-    multivalued: false
     alias: sim_search_meth
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -2646,7 +2582,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{termLabel} [{termID}]|{text}'
     slot_uri: MIXS:0000031
-    multivalued: false
     alias: host_disease_stat
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -2675,7 +2610,6 @@ attributes:
     - value: 10 meter
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000018
-    multivalued: false
     alias: depth
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -2717,7 +2651,6 @@ attributes:
     - value: swabbing
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001225
-    multivalued: false
     alias: samp_collect_method
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -2737,7 +2670,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
     recommended: true
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$|([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2768,7 +2700,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}|{NCBI taxid}'
     slot_uri: MIXS:0000029
-    multivalued: false
     alias: specific_host
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -2779,8 +2710,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: string
-    required: false
-    recommended: false
   env_medium:
     name: env_medium
     description: 'Report the environmental material(s) immediately surrounding the
@@ -2799,7 +2728,6 @@ attributes:
     keywords:
     - environmental
     slot_uri: MIXS:0000014
-    multivalued: false
     alias: env_medium
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -2838,7 +2766,6 @@ attributes:
     - sample
     - taxon
     slot_uri: MIXS:0001320
-    multivalued: false
     alias: samp_taxon_id
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -2876,7 +2803,6 @@ attributes:
     - geographic
     - location
     slot_uri: MIXS:0000010
-    multivalued: false
     alias: geo_loc_name
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -2918,7 +2844,6 @@ attributes:
     keywords:
     - date
     slot_uri: MIXS:0000011
-    multivalued: false
     alias: collection_date
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -2953,7 +2878,6 @@ attributes:
     keywords:
     - method
     slot_uri: MIXS:0000050
-    multivalued: false
     alias: seq_meth
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -3034,7 +2958,6 @@ attributes:
     title: elevation
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000093
-    multivalued: false
     alias: elev
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -3085,7 +3008,6 @@ attributes:
     - context
     - environmental
     slot_uri: MIXS:0000012
-    multivalued: false
     alias: env_broad_scale
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -3114,7 +3036,6 @@ attributes:
     title: taxonomic classification
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000064
-    multivalued: false
     alias: tax_class
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -3158,7 +3079,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
     recommended: true
     pattern: ^\S+.*\S+ \[[a-zA-Z]{2,}:\d+\]$
   sort_tech:
@@ -3167,7 +3087,6 @@ attributes:
     title: sorting technology
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000075
-    multivalued: false
     alias: sort_tech
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -3181,7 +3100,6 @@ attributes:
     title: single cell or viral particle lysis approach
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000076
-    multivalued: false
     alias: sc_lysis_approach
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -3197,7 +3115,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000054
-    multivalued: false
     alias: sc_lysis_method
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -3211,7 +3128,6 @@ attributes:
     title: WGA amplification approach
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000055
-    multivalued: false
     alias: wga_amp_appr
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -3226,7 +3142,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000006
-    multivalued: false
     alias: wga_amp_kit
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -3256,7 +3171,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{software};{version}{PID}'
     slot_uri: MIXS:0000078
-    multivalued: false
     alias: bin_software
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -3271,7 +3185,6 @@ attributes:
     title: reassembly post binning
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000079
-    multivalued: false
     alias: reassembly_bin
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -3286,15 +3199,12 @@ attributes:
     title: MAG coverage software
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000080
-    multivalued: false
     alias: mag_cov_software
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
     - Mimag
     - Miuvig
     range: MAG_COV_SOFTWARE_ENUM
-    required: false
-    recommended: false
   vir_ident_software:
     name: vir_ident_software
     description: Tool(s) used for the identification of UViG as a viral genome, software
@@ -3303,7 +3213,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{software};{version};{parameters}'
     slot_uri: MIXS:0000081
-    multivalued: false
     alias: vir_ident_software
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -3317,7 +3226,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '[DNA|dsDNA|ssDNA|RNA|dsRNA|ssRNA|ssRNA (+)|ssRNA (-)|mixed|uncharacterized]'
     slot_uri: MIXS:0000082
-    multivalued: false
     alias: pred_genome_type
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -3330,7 +3238,6 @@ attributes:
     title: predicted genome structure
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000083
-    multivalued: false
     alias: pred_genome_struc
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -3344,7 +3251,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '[independent sequence (UViG)|provirus (UpViG)]'
     slot_uri: MIXS:0000084
-    multivalued: false
     alias: detec_type
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -3361,7 +3267,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{ANI cutoff};{AF cutoff};{clustering method}'
     slot_uri: MIXS:0000085
-    multivalued: false
     alias: otu_class_appr
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -3376,7 +3281,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{software};{version};{parameters}'
     slot_uri: MIXS:0000086
-    multivalued: false
     alias: otu_seq_comp_appr
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -3391,7 +3295,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{database};{version}'
     slot_uri: MIXS:0000087
-    multivalued: false
     alias: otu_db
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -3404,7 +3307,6 @@ attributes:
     title: host prediction approach
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000088
-    multivalued: false
     alias: host_pred_appr
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -3418,7 +3320,6 @@ attributes:
     title: host prediction estimated accuracy
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000089
-    multivalued: false
     alias: host_pred_est_acc
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -3526,8 +3427,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   spikein_count:
     name: spikein_count
     annotations:
@@ -3552,7 +3451,6 @@ attributes:
     - spike
     string_serialization: '{text};{float} {unit};[ATP|MPN|qPCR|other]'
     slot_uri: MIXS:0001335
-    multivalued: false
     alias: spikein_count
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -3560,8 +3458,6 @@ attributes:
     - FoodFarmEnvironment
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   samp_store_temp:
     name: samp_store_temp
     annotations:
@@ -3578,7 +3474,6 @@ attributes:
     - storage
     - temperature
     slot_uri: MIXS:0000110
-    multivalued: false
     alias: samp_store_temp
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -3604,8 +3499,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3619,7 +3512,6 @@ attributes:
     title: sample storage duration
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000116
-    multivalued: false
     alias: samp_store_dur
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -3645,8 +3537,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^P(?:(?:\d+D|\d+M(?:\d+D)?|\d+Y(?:\d+M(?:\d+D)?)?)(?:T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S))?|T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S)|\d+W)$
     structured_pattern:
       syntax: ^{duration}$
@@ -3660,7 +3550,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{boolean},{integer}'
     slot_uri: MIXS:0000325
-    multivalued: false
     alias: pool_dna_extracts
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -3670,8 +3559,6 @@ attributes:
     - FoodHumanFoods
     - Soil
     range: string
-    required: false
-    recommended: false
   samp_store_loc:
     name: samp_store_loc
     description: Location at which sample was stored, usually name of a specific freezer/room
@@ -3679,7 +3566,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000755
-    multivalued: false
     alias: samp_store_loc
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -3704,8 +3590,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   samp_transport_cont:
     name: samp_transport_cont
     description: Conatiner in which the sample was stored during transport. Indicate
@@ -3718,7 +3602,6 @@ attributes:
     - sample
     - transport
     slot_uri: MIXS:0001230
-    multivalued: false
     alias: samp_transport_cont
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -3726,8 +3609,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: SAMP_TRANSPORT_CONT_ENUM
-    required: false
-    recommended: false
   perturbation:
     name: perturbation
     description: Type of perturbation, e.g. chemical administration, physical disturbance,
@@ -3761,8 +3642,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   coll_site_geo_feat:
     name: coll_site_geo_feat
     annotations:
@@ -3785,7 +3664,6 @@ attributes:
     - site
     string_serialization: '{text}|{termLabel} [{termID}]'
     slot_uri: MIXS:0001183
-    multivalued: false
     alias: coll_site_geo_feat
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -3803,7 +3681,6 @@ attributes:
     title: food product origin geographic location
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001207
-    multivalued: false
     alias: food_origin
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -3858,7 +3735,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}|{termLabel} [{termID}]'
     slot_uri: MIXS:0001184
-    multivalued: false
     alias: food_product_type
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -3879,7 +3755,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{termLabel} [{termID}]'
     slot_uri: MIXS:0001139
-    multivalued: false
     alias: food_source
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -3889,8 +3764,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   IFSAC_category:
     name: IFSAC_category
     annotations:
@@ -3957,7 +3830,6 @@ attributes:
       sample|passive surveillance|population based studies|research|research and development]
       or {text}'
     slot_uri: MIXS:0001151
-    multivalued: false
     alias: samp_purpose
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -3980,14 +3852,11 @@ attributes:
     - antimicrobial
     - food
     slot_uri: MIXS:0001243
-    multivalued: false
     alias: animal_am
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
     - FoodAnimalAndAnimalFeed
     range: string
-    required: false
-    recommended: false
   animal_am_dur:
     name: animal_am_dur
     annotations:
@@ -4008,14 +3877,11 @@ attributes:
     - period
     string_serialization: '{float} {day}'
     slot_uri: MIXS:0001244
-    multivalued: false
     alias: animal_am_dur
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
     - FoodAnimalAndAnimalFeed
     range: string
-    required: false
-    recommended: false
   animal_am_freq:
     name: animal_am_freq
     description: The frequency per day that the antimicrobial was adminstered to the
@@ -4035,8 +3901,6 @@ attributes:
     domain_of:
     - FoodAnimalAndAnimalFeed
     range: float
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4058,14 +3922,11 @@ attributes:
     - food
     - route
     slot_uri: MIXS:0001246
-    multivalued: false
     alias: animal_am_route
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
     - FoodAnimalAndAnimalFeed
     range: string
-    required: false
-    recommended: false
   animal_am_use:
     name: animal_am_use
     description: The prescribed intended use of or the condition treated by the antimicrobial
@@ -4080,14 +3941,11 @@ attributes:
     - food
     - use
     slot_uri: MIXS:0001247
-    multivalued: false
     alias: animal_am_use
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
     - FoodAnimalAndAnimalFeed
     range: string
-    required: false
-    recommended: false
   animal_body_cond:
     name: animal_body_cond
     description: Body condition scoring is a production management tool used to evaluate
@@ -4103,14 +3961,11 @@ attributes:
     - condition
     - food
     slot_uri: MIXS:0001248
-    multivalued: false
     alias: animal_body_cond
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
     - FoodAnimalAndAnimalFeed
     range: ANIMAL_BODY_COND_ENUM
-    required: false
-    recommended: false
   animal_diet:
     name: animal_diet
     annotations:
@@ -4143,8 +3998,6 @@ attributes:
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     range: string
-    required: false
-    recommended: false
   animal_feed_equip:
     name: animal_feed_equip
     annotations:
@@ -4170,8 +4023,6 @@ attributes:
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     range: string
-    required: false
-    recommended: false
   animal_group_size:
     name: animal_group_size
     description: The number of food animals of the same species that are maintained
@@ -4185,15 +4036,12 @@ attributes:
     - food
     - size
     slot_uri: MIXS:0001129
-    multivalued: false
     alias: animal_group_size
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     range: integer
-    required: false
-    recommended: false
   animal_housing:
     name: animal_housing
     description: Description of the housing system of the livestock. This field accepts
@@ -4212,8 +4060,6 @@ attributes:
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$
     structured_pattern:
       syntax: ^{termLabel} \[{termID}\]$
@@ -4231,14 +4077,11 @@ attributes:
     - food
     - source
     slot_uri: MIXS:0001249
-    multivalued: false
     alias: animal_sex
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
     - FoodAnimalAndAnimalFeed
     range: ANIMAL_SEX_ENUM
-    required: false
-    recommended: false
   bacterial_density:
     name: bacterial_density
     annotations:
@@ -4254,7 +4097,6 @@ attributes:
     keywords:
     - density
     slot_uri: MIXS:0001194
-    multivalued: false
     alias: bacterial_density
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -4262,8 +4104,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4289,15 +4129,12 @@ attributes:
     - food
     - storage
     slot_uri: MIXS:0001195
-    multivalued: false
     alias: cons_food_stor_dur
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
     - FoodAnimalAndAnimalFeed
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^P(?:(?:\d+D|\d+M(?:\d+D)?|\d+Y(?:\d+M(?:\d+D)?)?)(?:T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S))?|T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S)|\d+W)$
     structured_pattern:
       syntax: ^{duration}$
@@ -4325,15 +4162,12 @@ attributes:
     - temperature
     string_serialization: '{float} {unit}|{text}'
     slot_uri: MIXS:0001196
-    multivalued: false
     alias: cons_food_stor_temp
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
     - FoodAnimalAndAnimalFeed
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   cons_purch_date:
     name: cons_purch_date
     description: The date a food product was purchased by consumer
@@ -4344,15 +4178,12 @@ attributes:
     keywords:
     - date
     slot_uri: MIXS:0001197
-    multivalued: false
     alias: cons_purch_date
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
     - FoodAnimalAndAnimalFeed
     - FoodHumanFoods
     range: datetime
-    required: false
-    recommended: false
   cons_qty_purchased:
     name: cons_qty_purchased
     description: The quantity of food purchased by consumer
@@ -4363,15 +4194,12 @@ attributes:
     keywords:
     - quantity
     slot_uri: MIXS:0001198
-    multivalued: false
     alias: cons_qty_purchased
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
     - FoodAnimalAndAnimalFeed
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^[1-9][0-9]* ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{integer} {text}$
@@ -4391,7 +4219,6 @@ attributes:
     - date
     - isolation
     slot_uri: MIXS:0001181
-    multivalued: false
     alias: cult_isol_date
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -4401,8 +4228,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: datetime
-    required: false
-    recommended: false
   cult_result:
     name: cult_result
     description: Any result of a bacterial culture experiment reported as a binary
@@ -4414,7 +4239,6 @@ attributes:
     keywords:
     - culture
     slot_uri: MIXS:0001117
-    multivalued: false
     alias: cult_result
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -4423,8 +4247,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: CULT_RESULT_ENUM
-    required: false
-    recommended: false
   cult_result_org:
     name: cult_result_org
     description: Taxonomic information about the cultured organism(s)
@@ -4445,8 +4267,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^(([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\])|[1-9][0-9]*$
     structured_pattern:
       syntax: ^({termLabel} \[{termID}\])|{integer}$
@@ -4480,8 +4300,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   enrichment_protocol:
     name: enrichment_protocol
     description: The microbiological workflow or protocol followed to test for the
@@ -4490,7 +4308,6 @@ attributes:
     title: enrichment protocol
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001177
-    multivalued: false
     alias: enrichment_protocol
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -4500,8 +4317,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$|([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}|{text}$
@@ -4535,8 +4350,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   food_contact_surf:
     name: food_contact_surf
     description: The specific container or coating materials in direct contact with
@@ -4555,8 +4368,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   food_contain_wrap:
     name: food_contain_wrap
     annotations:
@@ -4575,7 +4386,6 @@ attributes:
     - food
     string_serialization: '{text}|{termLabel} [{termID}]'
     slot_uri: MIXS:0001132
-    multivalued: false
     alias: food_contain_wrap
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -4584,8 +4394,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   food_cooking_proc:
     name: food_cooking_proc
     annotations:
@@ -4611,8 +4419,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   food_dis_point:
     name: food_dis_point
     description: 'A reference to a place on the Earth, by its name or by its geographical
@@ -4638,8 +4444,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: '^([^\s-]{1,2}|[^\s-]+.+[^\s-]+): ([^\s-]{1,2}|[^\s-]+.+[^\s-]+), ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$'
     structured_pattern:
       syntax: '^{text}: {text}, {text}$'
@@ -4674,8 +4478,6 @@ attributes:
     - FoodAnimalAndAnimalFeed
     - FoodFoodProductionFacility
     range: string
-    required: false
-    recommended: false
   food_ingredient:
     name: food_ingredient
     annotations:
@@ -4704,8 +4506,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   food_pack_capacity:
     name: food_pack_capacity
     annotations:
@@ -4721,7 +4521,6 @@ attributes:
     - food
     - package
     slot_uri: MIXS:0001208
-    multivalued: false
     alias: food_pack_capacity
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -4729,8 +4528,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4762,8 +4559,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   food_pack_medium:
     name: food_pack_medium
     description: The medium in which the food is packed for preservation and handling
@@ -4789,8 +4584,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   food_preserv_proc:
     name: food_preserv_proc
     annotations:
@@ -4818,8 +4611,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   food_prior_contact:
     name: food_prior_contact
     annotations:
@@ -4849,8 +4640,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   food_prod_synonym:
     name: food_prod_synonym
     description: Other names by which the food product is known by (e.g., regional
@@ -4871,8 +4660,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   food_product_qual:
     name: food_product_qual
     description: Descriptors for describing food visually or via other senses, which
@@ -4883,7 +4670,6 @@ attributes:
     title: food product by quality
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001213
-    multivalued: false
     alias: food_product_qual
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -4891,8 +4677,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$
     structured_pattern:
       syntax: ^{termLabel} \[{termID}\]$
@@ -4918,7 +4702,6 @@ attributes:
     - quality
     string_serialization: '[best by|best if used by|freeze by|use by]; date'
     slot_uri: MIXS:0001178
-    multivalued: false
     alias: food_quality_date
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -4927,8 +4710,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   food_source_age:
     name: food_source_age
     annotations:
@@ -4953,8 +4734,6 @@ attributes:
     domain_of:
     - FoodAnimalAndAnimalFeed
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4978,7 +4757,6 @@ attributes:
     keywords:
     - food
     slot_uri: MIXS:0001214
-    multivalued: false
     alias: food_trace_list
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -4986,8 +4764,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: FOOD_TRACE_LIST_ENUM
-    required: false
-    recommended: false
   food_trav_mode:
     name: food_trav_mode
     description: A descriptor for the method of movement of food commodity along the
@@ -5014,8 +4790,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$
     structured_pattern:
       syntax: ^{termLabel} \[{termID}\]$
@@ -5051,8 +4825,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   food_treat_proc:
     name: food_treat_proc
     annotations:
@@ -5083,8 +4855,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   HACCP_term:
     name: HACCP_term
     description: Hazard Analysis Critical Control Points (HACCP) food safety terms;
@@ -5105,8 +4875,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$
     structured_pattern:
       syntax: ^{termLabel} \[{termID}\]$
@@ -5123,7 +4891,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0001145
-    multivalued: false
     alias: library_prep_kit
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -5133,8 +4900,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   lot_number:
     name: lot_number
     annotations:
@@ -5164,8 +4929,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   microb_cult_med:
     name: microb_cult_med
     description: A culture medium used to select for, grow, and maintain prokaryotic
@@ -5181,7 +4944,6 @@ attributes:
     - culture
     - microbiological
     slot_uri: MIXS:0001216
-    multivalued: false
     alias: microb_cult_med
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -5189,8 +4951,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+)|(([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\])$
     structured_pattern:
       syntax: ^{text}|({termLabel} \[{termID}\])$
@@ -5223,8 +4983,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   repository_name:
     name: repository_name
     annotations:
@@ -5249,8 +5007,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   samp_pooling:
     name: samp_pooling
     description: Physical combination of several instances of like material, e.g.
@@ -5269,8 +5025,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   samp_rep_biol:
     name: samp_rep_biol
     description: Measurements of biologically distinct samples that show biological
@@ -5282,7 +5036,6 @@ attributes:
     keywords:
     - sample
     slot_uri: MIXS:0001226
-    multivalued: false
     alias: samp_rep_biol
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -5290,8 +5043,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -5309,7 +5060,6 @@ attributes:
     keywords:
     - sample
     slot_uri: MIXS:0001227
-    multivalued: false
     alias: samp_rep_tech
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -5317,8 +5067,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -5335,7 +5083,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{termLabel} [{termID}]'
     slot_uri: MIXS:0001154
-    multivalued: false
     alias: samp_source_mat_cat
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -5344,8 +5091,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   samp_stor_device:
     name: samp_stor_device
     description: The container used to store the  sample. This field accepts terms
@@ -5355,7 +5100,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}|{termLabel} [{termID}]'
     slot_uri: MIXS:0001228
-    multivalued: false
     alias: samp_stor_device
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -5363,8 +5107,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   samp_stor_media:
     name: samp_stor_media
     description: The liquid that is added to the sample collection device prior to
@@ -5376,7 +5118,6 @@ attributes:
     title: sample storage media
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001229
-    multivalued: false
     alias: samp_stor_media
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -5384,8 +5125,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+)|(([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\])$
     structured_pattern:
       syntax: ^{text}|({termLabel} \[{termID}\])$
@@ -5409,7 +5148,6 @@ attributes:
     - sample
     - transport
     slot_uri: MIXS:0001231
-    multivalued: false
     alias: samp_transport_dur
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -5417,8 +5155,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^P(?:(?:\d+D|\d+M(?:\d+D)?|\d+Y(?:\d+M(?:\d+D)?)?)(?:T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S))?|T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S)|\d+W)$
     structured_pattern:
       syntax: ^{duration}$
@@ -5445,7 +5181,6 @@ attributes:
     - transport
     string_serialization: '{float} {unit} {text}'
     slot_uri: MIXS:0001232
-    multivalued: false
     alias: samp_transport_temp
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -5453,8 +5188,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   sequencing_kit:
     name: sequencing_kit
     annotations:
@@ -5474,7 +5207,6 @@ attributes:
     - kit
     string_serialization: '{text}'
     slot_uri: MIXS:0001155
-    multivalued: false
     alias: sequencing_kit
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -5483,8 +5215,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   sequencing_location:
     name: sequencing_location
     description: The location the sequencing run was performed. Indicate the name
@@ -5496,7 +5226,6 @@ attributes:
     keywords:
     - location
     slot_uri: MIXS:0001156
-    multivalued: false
     alias: sequencing_location
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -5506,8 +5235,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   serovar_or_serotype:
     name: serovar_or_serotype
     description: A characterization of a cell or microorganism based on the antigenic
@@ -5527,8 +5254,6 @@ attributes:
     - FoodFarmEnvironment
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^(([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\])|[1-9][0-9]*$
     structured_pattern:
       syntax: ^({termLabel} \[{termID}\])|{integer}$
@@ -5560,8 +5285,6 @@ attributes:
     - FoodAnimalAndAnimalFeed
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   spikein_antibiotic:
     name: spikein_antibiotic
     annotations:
@@ -5587,8 +5310,6 @@ attributes:
     - FoodFarmEnvironment
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   spikein_growth_med:
     name: spikein_growth_med
     description: A liquid or gel containing nutrients, salts, and other factors formulated
@@ -5616,8 +5337,6 @@ attributes:
     - FoodFarmEnvironment
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+)|(([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\])$
     structured_pattern:
       syntax: ^{text}|({termLabel} \[{termID}\])$
@@ -5649,8 +5368,6 @@ attributes:
     - FoodFarmEnvironment
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   spikein_org:
     name: spikein_org
     description: Taxonomic information about the spike-in organism(s). This field
@@ -5673,8 +5390,6 @@ attributes:
     - FoodFarmEnvironment
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^(([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\])|[1-9][0-9]*$
     structured_pattern:
       syntax: ^({termLabel} \[{termID}\])|{integer}$
@@ -5706,8 +5421,6 @@ attributes:
     - FoodFarmEnvironment
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   spikein_strain:
     name: spikein_strain
     annotations:
@@ -5736,8 +5449,6 @@ attributes:
     - FoodFarmEnvironment
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   study_design:
     name: study_design
     annotations:
@@ -5764,8 +5475,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   study_inc_dur:
     name: study_inc_dur
     annotations:
@@ -5783,7 +5492,6 @@ attributes:
     - incubation
     - period
     slot_uri: MIXS:0001237
-    multivalued: false
     alias: study_inc_dur
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -5791,8 +5499,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^P(?:(?:\d+D|\d+M(?:\d+D)?|\d+Y(?:\d+M(?:\d+D)?)?)(?:T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S))?|T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S)|\d+W)$
     structured_pattern:
       syntax: ^{duration}$
@@ -5814,7 +5520,6 @@ attributes:
     - incubation
     - temperature
     slot_uri: MIXS:0001238
-    multivalued: false
     alias: study_inc_temp
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -5822,8 +5527,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -5847,7 +5550,6 @@ attributes:
     - period
     - time
     slot_uri: MIXS:0001239
-    multivalued: false
     alias: study_timecourse
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -5855,8 +5557,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -5891,8 +5591,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   timepoint:
     name: timepoint
     annotations:
@@ -5909,7 +5607,6 @@ attributes:
     keywords:
     - time
     slot_uri: MIXS:0001173
-    multivalued: false
     alias: timepoint
     owner: MiuvigFoodAnimalAndAnimalFeed
     domain_of:
@@ -5918,8 +5615,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^P(?:(?:\d+D|\d+M(?:\d+D)?|\d+Y(?:\d+M(?:\d+D)?)?)(?:T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S))?|T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S)|\d+W)$
     structured_pattern:
       syntax: ^{duration}$
@@ -5968,8 +5663,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
 class_uri: MIXS:0010012_0016019
 
 </code></pre>

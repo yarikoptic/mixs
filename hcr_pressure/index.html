@@ -401,14 +401,11 @@ keywords:
 - pressure
 - resource
 slot_uri: MIXS:0000395
-multivalued: false
 alias: hcr_pressure
 domain_of:
 - HydrocarbonResourcesCores
 - HydrocarbonResourcesFluidsSwabs
 range: string
-required: false
-recommended: false
 pattern: ^[-+]?[0-9]*\.?[0-9]+ *- *[-+]?[0-9]*\.?[0-9]+ ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
 structured_pattern:
   syntax: ^{float} *- *{float} {unit}$

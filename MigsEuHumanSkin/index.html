@@ -395,7 +395,7 @@
 <td><a href="../samp_name/">samp_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>A local identifier or name that for the material sample used for extracting n...</td>
-<td><a href="../MigsEu/">MigsEu</a>, <a href="../HumanSkin/">HumanSkin</a></td>
+<td><a href="../HumanSkin/">HumanSkin</a>, <a href="../MigsEu/">MigsEu</a></td>
 </tr>
 <tr>
 <td><a href="../lib_screen/">lib_screen</a></td>
@@ -431,7 +431,7 @@
 <td><a href="../temp/">temp</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Temperature of the sample at the time of sampling</td>
-<td><a href="../MigsEu/">MigsEu</a>, <a href="../HumanSkin/">HumanSkin</a></td>
+<td><a href="../HumanSkin/">HumanSkin</a>, <a href="../MigsEu/">MigsEu</a></td>
 </tr>
 <tr>
 <td><a href="../compl_score/">compl_score</a></td>
@@ -485,7 +485,7 @@
 <td><a href="../samp_vol_we_dna_ext/">samp_vol_we_dna_ext</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Volume (ml) or mass (g) of total collected sample processed for DNA extractio...</td>
-<td><a href="../MigsEu/">MigsEu</a>, <a href="../HumanSkin/">HumanSkin</a></td>
+<td><a href="../HumanSkin/">HumanSkin</a>, <a href="../MigsEu/">MigsEu</a></td>
 </tr>
 <tr>
 <td><a href="../ploidy/">ploidy</a></td>
@@ -557,7 +557,7 @@
 <td><a href="../project_name/">project_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Name of the project within which the sequencing was organized</td>
-<td><a href="../MigsEu/">MigsEu</a>, <a href="../HumanSkin/">HumanSkin</a></td>
+<td><a href="../HumanSkin/">HumanSkin</a>, <a href="../MigsEu/">MigsEu</a></td>
 </tr>
 <tr>
 <td><a href="../lib_vector/">lib_vector</a></td>
@@ -653,7 +653,7 @@
 <td><a href="../host_disease_stat/">host_disease_stat</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>List of diseases with which the host has been diagnosed; can include multiple...</td>
-<td><a href="../MigsEu/">MigsEu</a>, <a href="../HumanSkin/">HumanSkin</a></td>
+<td><a href="../HumanSkin/">HumanSkin</a>, <a href="../MigsEu/">MigsEu</a></td>
 </tr>
 <tr>
 <td><a href="../depth/">depth</a></td>
@@ -1000,7 +1000,6 @@ attributes:
     keywords:
     - sample
     slot_uri: MIXS:0001107
-    multivalued: false
     alias: samp_name
     owner: MigsEuHumanSkin
     domain_of:
@@ -1047,7 +1046,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000043
-    multivalued: false
     alias: lib_screen
     owner: MigsEuHumanSkin
     domain_of:
@@ -1063,8 +1061,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: string
-    required: false
-    recommended: false
   ref_db:
     name: ref_db
     description: List of database(s) used for ORF annotation, along with version number
@@ -1073,7 +1069,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{database};{version};{reference}'
     slot_uri: MIXS:0000062
-    multivalued: false
     alias: ref_db
     owner: MigsEuHumanSkin
     domain_of:
@@ -1087,8 +1082,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
   nucl_acid_amp:
     name: nucl_acid_amp
     description: A link to a literature reference, electronic resource or a standard
@@ -1097,7 +1090,6 @@ attributes:
     title: nucleic acid amplification
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000038
-    multivalued: false
     alias: nucl_acid_amp
     owner: MigsEuHumanSkin
     domain_of:
@@ -1126,7 +1118,6 @@ attributes:
     title: library size
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000039
-    multivalued: false
     alias: lib_size
     owner: MigsEuHumanSkin
     domain_of:
@@ -1142,8 +1133,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: integer
-    required: false
-    recommended: false
   assembly_name:
     name: assembly_name
     description: Name/version of the assembly provided by the submitter that is used
@@ -1152,7 +1141,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text} {text}'
     slot_uri: MIXS:0000057
-    multivalued: false
     alias: assembly_name
     owner: MigsEuHumanSkin
     domain_of:
@@ -1174,7 +1162,6 @@ attributes:
     title: temperature
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000113
-    multivalued: false
     alias: temp
     owner: MigsEuHumanSkin
     domain_of:
@@ -1211,7 +1198,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
     recommended: true
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
@@ -1230,7 +1216,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '[high|med|low];{percentage}'
     slot_uri: MIXS:0000069
-    multivalued: false
     alias: compl_score
     owner: MigsEuHumanSkin
     domain_of:
@@ -1243,8 +1228,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
   nucl_acid_ext:
     name: nucl_acid_ext
     description: A link to a literature reference, electronic resource or a standard
@@ -1253,7 +1236,6 @@ attributes:
     title: nucleic acid extraction
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000037
-    multivalued: false
     alias: nucl_acid_ext
     owner: MigsEuHumanSkin
     domain_of:
@@ -1287,7 +1269,6 @@ attributes:
     title: amount or size of sample collected
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000001
-    multivalued: false
     alias: samp_size
     owner: MigsEuHumanSkin
     domain_of:
@@ -1308,8 +1289,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -1324,7 +1303,6 @@ attributes:
     title: isolation and growth condition
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000003
-    multivalued: false
     alias: isol_growth_condt
     owner: MigsEuHumanSkin
     domain_of:
@@ -1352,7 +1330,6 @@ attributes:
     title: altitude
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000094
-    multivalued: false
     alias: alt
     owner: MigsEuHumanSkin
     domain_of:
@@ -1388,7 +1365,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{integer} bp'
     slot_uri: MIXS:0000024
-    multivalued: false
     alias: estimated_size
     owner: MigsEuHumanSkin
     domain_of:
@@ -1399,8 +1375,6 @@ attributes:
     - MigsVi
     - Miuvig
     range: string
-    required: false
-    recommended: false
   extrachrom_elements:
     name: extrachrom_elements
     description: Do plasmids exist of significant phenotypic consequence (e.g. ones
@@ -1409,7 +1383,6 @@ attributes:
     title: extrachromosomal elements
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000023
-    multivalued: false
     alias: extrachrom_elements
     owner: MigsEuHumanSkin
     domain_of:
@@ -1418,8 +1391,6 @@ attributes:
     - MigsOrg
     - MimarksC
     range: integer
-    required: false
-    recommended: false
   source_mat_id:
     name: source_mat_id
     description: A unique identifier assigned to a material sample (as defined by
@@ -1465,7 +1436,6 @@ attributes:
     title: sample volume or weight for DNA extraction
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000111
-    multivalued: false
     alias: samp_vol_we_dna_ext
     owner: MigsEuHumanSkin
     domain_of:
@@ -1503,8 +1473,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -1522,14 +1490,11 @@ attributes:
     title: ploidy
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000021
-    multivalued: false
     alias: ploidy
     owner: MigsEuHumanSkin
     domain_of:
     - MigsEu
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$
     structured_pattern:
       syntax: ^{termLabel} \[{termID}\]$
@@ -1542,7 +1507,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000027
-    multivalued: false
     alias: pathogenicity
     owner: MigsEuHumanSkin
     domain_of:
@@ -1559,7 +1523,6 @@ attributes:
     title: library reads sequenced
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000040
-    multivalued: false
     alias: lib_reads_seqd
     owner: MigsEuHumanSkin
     domain_of:
@@ -1575,8 +1538,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: integer
-    required: false
-    recommended: false
   propagation:
     name: propagation
     description: 'The type of reproduction from the parent stock. Values for this
@@ -1586,7 +1547,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000033
-    multivalued: false
     alias: propagation
     owner: MigsEuHumanSkin
     domain_of:
@@ -1606,7 +1566,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{termLabel} [{termID}]|{text}'
     slot_uri: MIXS:0000002
-    multivalued: false
     alias: samp_collect_device
     owner: MigsEuHumanSkin
     domain_of:
@@ -1627,8 +1586,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   number_contig:
     name: number_contig
     description: Total number of contigs in the cleaned/submitted assembly that makes
@@ -1636,7 +1593,6 @@ attributes:
     title: number of contigs
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000060
-    multivalued: false
     alias: number_contig
     owner: MigsEuHumanSkin
     domain_of:
@@ -1660,7 +1616,6 @@ attributes:
     title: observed biotic relationship
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000028
-    multivalued: false
     alias: biotic_relationship
     owner: MigsEuHumanSkin
     domain_of:
@@ -1671,8 +1626,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: BIOTIC_RELATIONSHIP_ENUM
-    required: false
-    recommended: false
   num_replicons:
     name: num_replicons
     description: Reports the number of replicons in a nuclear genome of eukaryotes,
@@ -1689,8 +1642,6 @@ attributes:
     - MigsEu
     - MigsVi
     range: integer
-    required: false
-    recommended: false
   lib_layout:
     name: lib_layout
     description: Specify whether to expect single, paired, or other configuration
@@ -1698,7 +1649,6 @@ attributes:
     title: library layout
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000041
-    multivalued: false
     alias: lib_layout
     owner: MigsEuHumanSkin
     domain_of:
@@ -1714,8 +1664,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: LIB_LAYOUT_ENUM
-    required: false
-    recommended: false
   assembly_qual:
     name: assembly_qual
     description: 'The assembly quality category is based on sets of criteria outlined
@@ -1740,7 +1688,6 @@ attributes:
     string_serialization: '[Finished genome|High-quality draft genome|Medium-quality
       draft genome|Low-quality draft genome|Genome fragment(s)]'
     slot_uri: MIXS:0000056
-    multivalued: false
     alias: assembly_qual
     owner: MigsEuHumanSkin
     domain_of:
@@ -1763,7 +1710,6 @@ attributes:
     title: reference for biomaterial
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000025
-    multivalued: false
     alias: ref_biomaterial
     owner: MigsEuHumanSkin
     domain_of:
@@ -1777,8 +1723,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}$
@@ -1796,7 +1740,6 @@ attributes:
     keywords:
     - project
     slot_uri: MIXS:0000092
-    multivalued: false
     alias: project_name
     owner: MigsEuHumanSkin
     domain_of:
@@ -1842,7 +1785,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000042
-    multivalued: false
     alias: lib_vector
     owner: MigsEuHumanSkin
     domain_of:
@@ -1858,8 +1800,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: string
-    required: false
-    recommended: false
   host_spec_range:
     name: host_spec_range
     description: The range and diversity of host species that an organism is capable
@@ -1879,8 +1819,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: string
-    required: false
-    recommended: false
   neg_cont_type:
     name: neg_cont_type
     annotations:
@@ -1895,7 +1833,6 @@ attributes:
     keywords:
     - type
     slot_uri: MIXS:0001321
-    multivalued: false
     alias: neg_cont_type
     owner: MigsEuHumanSkin
     domain_of:
@@ -1921,7 +1858,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{dna};{dna}'
     slot_uri: MIXS:0000048
-    multivalued: false
     alias: adapters
     owner: MigsEuHumanSkin
     domain_of:
@@ -1944,7 +1880,6 @@ attributes:
     title: assembly software
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000058
-    multivalued: false
     alias: assembly_software
     owner: MigsEuHumanSkin
     domain_of:
@@ -1995,7 +1930,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000059
-    multivalued: false
     alias: annot
     owner: MigsEuHumanSkin
     domain_of:
@@ -2018,7 +1952,6 @@ attributes:
     title: trophic level
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000032
-    multivalued: false
     alias: trophic_level
     owner: MigsEuHumanSkin
     domain_of:
@@ -2040,7 +1973,6 @@ attributes:
     - type
     string_serialization: '{term} or {text}'
     slot_uri: MIXS:0001322
-    multivalued: false
     alias: pos_cont_type
     owner: MigsEuHumanSkin
     domain_of:
@@ -2068,7 +2000,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{rank name}:{text}'
     slot_uri: MIXS:0000020
-    multivalued: false
     alias: subspecf_gen_lin
     owner: MigsEuHumanSkin
     domain_of:
@@ -2088,7 +2019,6 @@ attributes:
     title: feature prediction
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000061
-    multivalued: false
     alias: feat_pred
     owner: MigsEuHumanSkin
     domain_of:
@@ -2102,8 +2032,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+);([^\s-]{1,2}|[^\s-]+.+[^\s-]+);([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{software};{version};{parameters}$
@@ -2134,7 +2062,6 @@ attributes:
     - environmental
     string_serialization: '{termLabel} [{termID}]'
     slot_uri: MIXS:0000013
-    multivalued: false
     alias: env_local_scale
     owner: MigsEuHumanSkin
     domain_of:
@@ -2158,7 +2085,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{software};{version}'
     slot_uri: MIXS:0000070
-    multivalued: false
     alias: compl_software
     owner: MigsEuHumanSkin
     domain_of:
@@ -2171,8 +2097,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
   samp_mat_process:
     name: samp_mat_process
     description: A brief description of any processing applied to the sample during
@@ -2181,7 +2105,6 @@ attributes:
     title: sample material processing
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000016
-    multivalued: false
     alias: samp_mat_process
     owner: MigsEuHumanSkin
     domain_of:
@@ -2198,8 +2121,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: string
-    required: false
-    recommended: false
   sim_search_meth:
     name: sim_search_meth
     description: Tool used to compare ORFs with database, along with version and cutoffs
@@ -2207,7 +2128,6 @@ attributes:
     title: similarity search method
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000063
-    multivalued: false
     alias: sim_search_meth
     owner: MigsEuHumanSkin
     domain_of:
@@ -2221,8 +2141,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+);([^\s-]{1,2}|[^\s-]+.+[^\s-]+);([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{software};{version};{parameters}$
@@ -2240,7 +2158,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{termLabel} [{termID}]|{text}'
     slot_uri: MIXS:0000031
-    multivalued: false
     alias: host_disease_stat
     owner: MigsEuHumanSkin
     domain_of:
@@ -2258,8 +2175,6 @@ attributes:
     - HumanVaginal
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   depth:
     name: depth
     description: The vertical distance below local surface. For sediment or soil samples
@@ -2270,7 +2185,6 @@ attributes:
     - value: 10 meter
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000018
-    multivalued: false
     alias: depth
     owner: MigsEuHumanSkin
     domain_of:
@@ -2312,7 +2226,6 @@ attributes:
     - value: swabbing
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001225
-    multivalued: false
     alias: samp_collect_method
     owner: MigsEuHumanSkin
     domain_of:
@@ -2332,8 +2245,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$|([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}|{text}$
@@ -2346,7 +2257,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}|{NCBI taxid}'
     slot_uri: MIXS:0000029
-    multivalued: false
     alias: specific_host
     owner: MigsEuHumanSkin
     domain_of:
@@ -2357,8 +2267,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: string
-    required: false
-    recommended: false
   env_medium:
     name: env_medium
     description: 'Report the environmental material(s) immediately surrounding the
@@ -2377,7 +2285,6 @@ attributes:
     keywords:
     - environmental
     slot_uri: MIXS:0000014
-    multivalued: false
     alias: env_medium
     owner: MigsEuHumanSkin
     domain_of:
@@ -2416,7 +2323,6 @@ attributes:
     - sample
     - taxon
     slot_uri: MIXS:0001320
-    multivalued: false
     alias: samp_taxon_id
     owner: MigsEuHumanSkin
     domain_of:
@@ -2454,7 +2360,6 @@ attributes:
     - geographic
     - location
     slot_uri: MIXS:0000010
-    multivalued: false
     alias: geo_loc_name
     owner: MigsEuHumanSkin
     domain_of:
@@ -2496,7 +2401,6 @@ attributes:
     keywords:
     - date
     slot_uri: MIXS:0000011
-    multivalued: false
     alias: collection_date
     owner: MigsEuHumanSkin
     domain_of:
@@ -2531,7 +2435,6 @@ attributes:
     keywords:
     - method
     slot_uri: MIXS:0000050
-    multivalued: false
     alias: seq_meth
     owner: MigsEuHumanSkin
     domain_of:
@@ -2612,7 +2515,6 @@ attributes:
     title: elevation
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000093
-    multivalued: false
     alias: elev
     owner: MigsEuHumanSkin
     domain_of:
@@ -2663,7 +2565,6 @@ attributes:
     - context
     - environmental
     slot_uri: MIXS:0000012
-    multivalued: false
     alias: env_broad_scale
     owner: MigsEuHumanSkin
     domain_of:
@@ -2692,7 +2593,6 @@ attributes:
     title: taxonomic classification
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000064
-    multivalued: false
     alias: tax_class
     owner: MigsEuHumanSkin
     domain_of:
@@ -2706,8 +2606,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
   experimental_factor:
     name: experimental_factor
     description: Variable aspects of an experiment design that can be used to describe
@@ -2737,8 +2635,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^\S+.*\S+ \[[a-zA-Z]{2,}:\d+\]$
   associated_resource:
     name: associated_resource
@@ -2818,8 +2714,6 @@ attributes:
     domain_of:
     - HumanSkin
     range: string
-    required: false
-    recommended: false
   time_since_last_wash:
     name: time_since_last_wash
     description: Specification of the time since last wash
@@ -2830,14 +2724,11 @@ attributes:
     keywords:
     - time
     slot_uri: MIXS:0000943
-    multivalued: false
     alias: time_since_last_wash
     owner: MigsEuHumanSkin
     domain_of:
     - HumanSkin
     range: string
-    required: false
-    recommended: false
     pattern: ^P(?:(?:\d+D|\d+M(?:\d+D)?|\d+Y(?:\d+M(?:\d+D)?)?)(?:T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S))?|T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S)|\d+W)$
     structured_pattern:
       syntax: ^{duration}$
@@ -2851,14 +2742,11 @@ attributes:
     - value: right
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000944
-    multivalued: false
     alias: dominant_hand
     owner: MigsEuHumanSkin
     domain_of:
     - HumanSkin
     range: DOMINANT_HAND_ENUM
-    required: false
-    recommended: false
   host_subject_id:
     name: host_subject_id
     description: A unique identifier by which each subject can be referred to, de-identified
@@ -2867,7 +2755,6 @@ attributes:
     - value: MPI123
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000861
-    multivalued: false
     alias: host_subject_id
     owner: MigsEuHumanSkin
     domain_of:
@@ -2879,8 +2766,6 @@ attributes:
     - HumanVaginal
     - SymbiontAssociated
     range: string
-    required: false
-    recommended: false
   host_age:
     name: host_age
     description: Age of host at the time of sampling; relevant scale depends on species
@@ -2890,7 +2775,6 @@ attributes:
     - value: 30 years
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000255
-    multivalued: false
     alias: host_age
     owner: MigsEuHumanSkin
     domain_of:
@@ -2905,8 +2789,6 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2943,8 +2825,6 @@ attributes:
     - HumanSkin
     - HumanVaginal
     range: string
-    required: false
-    recommended: false
   ihmc_medication_code:
     name: ihmc_medication_code
     description: Can include multiple medication codes
@@ -2965,8 +2845,6 @@ attributes:
     - HumanSkin
     - HumanVaginal
     range: integer
-    required: false
-    recommended: false
   chem_administration:
     name: chem_administration
     description: List of chemical compounds administered to the host or site where
@@ -2998,8 +2876,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   host_body_site:
     name: host_body_site
     description: Name of body site where the sample was obtained from, such as a specific
@@ -3011,7 +2887,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{termLabel} [{termID}]'
     slot_uri: MIXS:0000867
-    multivalued: false
     alias: host_body_site
     owner: MigsEuHumanSkin
     domain_of:
@@ -3023,8 +2898,6 @@ attributes:
     - HumanVaginal
     - SymbiontAssociated
     range: string
-    required: false
-    recommended: false
   host_body_product:
     name: host_body_product
     annotations:
@@ -3045,7 +2918,6 @@ attributes:
     - product
     string_serialization: '{termLabel} [{termID}]'
     slot_uri: MIXS:0000888
-    multivalued: false
     alias: host_body_product
     owner: MigsEuHumanSkin
     domain_of:
@@ -3057,8 +2929,6 @@ attributes:
     - HumanVaginal
     - SymbiontAssociated
     range: string
-    required: false
-    recommended: false
   host_tot_mass:
     name: host_tot_mass
     description: Total mass of the host at collection, the unit depends on host
@@ -3067,7 +2937,6 @@ attributes:
     - value: 65 kilogram
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000263
-    multivalued: false
     alias: host_tot_mass
     owner: MigsEuHumanSkin
     domain_of:
@@ -3082,8 +2951,6 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3098,7 +2965,6 @@ attributes:
     - value: 1.75 meter
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000264
-    multivalued: false
     alias: host_height
     owner: MigsEuHumanSkin
     domain_of:
@@ -3113,8 +2979,6 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3141,8 +3005,6 @@ attributes:
     - HumanSkin
     - HumanVaginal
     range: string
-    required: false
-    recommended: false
   host_last_meal:
     name: host_last_meal
     description: Content of last meal and time since feeding; can include multiple
@@ -3164,8 +3026,6 @@ attributes:
     - HumanSkin
     - HumanVaginal
     range: string
-    required: false
-    recommended: false
   host_fam_rel:
     name: host_fam_rel
     description: Relationships to other hosts in the same study; can include multiple
@@ -3188,8 +3048,6 @@ attributes:
     - HumanVaginal
     - SymbiontAssociated
     range: string
-    required: false
-    recommended: false
   host_genotype:
     name: host_genotype
     description: Observed genotype
@@ -3198,7 +3056,6 @@ attributes:
     - value: ST1
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000365
-    multivalued: false
     alias: host_genotype
     owner: MigsEuHumanSkin
     domain_of:
@@ -3213,8 +3070,6 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    required: false
-    recommended: false
   host_phenotype:
     name: host_phenotype
     description: Phenotype of human or other host. Use terms from the phenotypic quality
@@ -3225,7 +3080,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{termLabel} [{termID}]'
     slot_uri: MIXS:0000874
-    multivalued: false
     alias: host_phenotype
     owner: MigsEuHumanSkin
     domain_of:
@@ -3240,8 +3094,6 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    required: false
-    recommended: false
   host_body_temp:
     name: host_body_temp
     description: Core body temperature of the host when sample was collected
@@ -3250,7 +3102,6 @@ attributes:
     - value: 36.5 degree Celsius
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000274
-    multivalued: false
     alias: host_body_temp
     owner: MigsEuHumanSkin
     domain_of:
@@ -3261,8 +3112,6 @@ attributes:
     - HumanSkin
     - HumanVaginal
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3284,7 +3133,6 @@ attributes:
     - host
     - host.
     slot_uri: MIXS:0000317
-    multivalued: false
     alias: host_body_mass_index
     owner: MigsEuHumanSkin
     domain_of:
@@ -3294,8 +3142,6 @@ attributes:
     - HumanSkin
     - HumanVaginal
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3327,8 +3173,6 @@ attributes:
     - HumanSkin
     - HumanVaginal
     range: string
-    required: false
-    recommended: false
   host_occupation:
     name: host_occupation
     description: Most frequent job performed by subject
@@ -3353,8 +3197,6 @@ attributes:
     - HumanSkin
     - HumanVaginal
     range: string
-    required: false
-    recommended: false
   medic_hist_perform:
     name: medic_hist_perform
     description: Whether full medical history was collected
@@ -3365,7 +3207,6 @@ attributes:
     keywords:
     - history
     slot_uri: MIXS:0000897
-    multivalued: false
     alias: medic_hist_perform
     owner: MigsEuHumanSkin
     domain_of:
@@ -3375,8 +3216,6 @@ attributes:
     - HumanSkin
     - HumanVaginal
     range: boolean
-    required: false
-    recommended: false
   host_pulse:
     name: host_pulse
     annotations:
@@ -3392,7 +3231,6 @@ attributes:
     - host
     - host.
     slot_uri: MIXS:0000333
-    multivalued: false
     alias: host_pulse
     owner: MigsEuHumanSkin
     domain_of:
@@ -3402,8 +3240,6 @@ attributes:
     - HumanSkin
     - HumanVaginal
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3443,8 +3279,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   salinity:
     name: salinity
     annotations:
@@ -3464,7 +3298,6 @@ attributes:
     keywords:
     - salinity
     slot_uri: MIXS:0000183
-    multivalued: false
     alias: salinity
     owner: MigsEuHumanSkin
     domain_of:
@@ -3486,8 +3319,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3500,7 +3331,6 @@ attributes:
     title: oxygenation status of sample
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000753
-    multivalued: false
     alias: oxy_stat_samp
     owner: MigsEuHumanSkin
     domain_of:
@@ -3522,8 +3352,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: OXY_STAT_SAMP_ENUM
-    required: false
-    recommended: false
   organism_count:
     name: organism_count
     description: 'Total cell count of any organism (or group of organisms) per gram,
@@ -3563,8 +3391,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   samp_store_temp:
     name: samp_store_temp
     annotations:
@@ -3581,7 +3407,6 @@ attributes:
     - storage
     - temperature
     slot_uri: MIXS:0000110
-    multivalued: false
     alias: samp_store_temp
     owner: MigsEuHumanSkin
     domain_of:
@@ -3607,8 +3432,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3622,7 +3445,6 @@ attributes:
     title: sample storage duration
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000116
-    multivalued: false
     alias: samp_store_dur
     owner: MigsEuHumanSkin
     domain_of:
@@ -3648,8 +3470,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^P(?:(?:\d+D|\d+M(?:\d+D)?|\d+Y(?:\d+M(?:\d+D)?)?)(?:T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S))?|T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S)|\d+W)$
     structured_pattern:
       syntax: ^{duration}$
@@ -3662,7 +3482,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000755
-    multivalued: false
     alias: samp_store_loc
     owner: MigsEuHumanSkin
     domain_of:
@@ -3687,8 +3506,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   host_symbiont:
     name: host_symbiont
     description: The taxonomic name of the organism(s) found living in mutualistic,
@@ -3715,8 +3532,6 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    required: false
-    recommended: false
   misc_param:
     name: misc_param
     annotations:
@@ -3760,8 +3575,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
 class_uri: MIXS:0010002_0016006
 
 </code></pre>

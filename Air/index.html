@@ -653,8 +653,6 @@ slot_usage:
     domain_of:
     - Air
     - BuiltEnvironment
-    required: false
-    recommended: false
   chem_administration:
     name: chem_administration
     domain_of:
@@ -674,8 +672,6 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   elev:
     name: elev
     domain_of:
@@ -710,8 +706,6 @@ slot_usage:
     - Agriculture
     - Air
     - FoodFarmEnvironment
-    required: false
-    recommended: false
   methane:
     name: methane
     examples:
@@ -747,8 +741,6 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   oxy_stat_samp:
     name: oxy_stat_samp
     domain_of:
@@ -769,8 +761,6 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   perturbation:
     name: perturbation
     domain_of:
@@ -792,8 +782,6 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   samp_store_dur:
     name: samp_store_dur
     domain_of:
@@ -818,8 +806,6 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   samp_store_loc:
     name: samp_store_loc
     domain_of:
@@ -843,8 +829,6 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   samp_vol_we_dna_ext:
     name: samp_vol_we_dna_ext
     domain_of:
@@ -881,8 +865,6 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   temp:
     name: temp
     domain_of:
@@ -918,16 +900,12 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   ventilation_type:
     name: ventilation_type
     domain_of:
     - Air
     - BuiltEnvironment
     - FoodFarmEnvironment
-    required: false
-    recommended: false
   wind_direction:
     name: wind_direction
     examples:
@@ -986,8 +964,6 @@ slot_usage:
     domain_of:
     - Air
     - BuiltEnvironment
-    required: false
-    recommended: false
   chem_administration:
     name: chem_administration
     domain_of:
@@ -1007,8 +983,6 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   elev:
     name: elev
     domain_of:
@@ -1043,8 +1017,6 @@ slot_usage:
     - Agriculture
     - Air
     - FoodFarmEnvironment
-    required: false
-    recommended: false
   methane:
     name: methane
     examples:
@@ -1080,8 +1052,6 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   oxy_stat_samp:
     name: oxy_stat_samp
     domain_of:
@@ -1102,8 +1072,6 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   perturbation:
     name: perturbation
     domain_of:
@@ -1125,8 +1093,6 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   samp_store_dur:
     name: samp_store_dur
     domain_of:
@@ -1151,8 +1117,6 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   samp_store_loc:
     name: samp_store_loc
     domain_of:
@@ -1176,8 +1140,6 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   samp_vol_we_dna_ext:
     name: samp_vol_we_dna_ext
     domain_of:
@@ -1214,8 +1176,6 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   temp:
     name: temp
     domain_of:
@@ -1251,16 +1211,12 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   ventilation_type:
     name: ventilation_type
     domain_of:
     - Air
     - BuiltEnvironment
     - FoodFarmEnvironment
-    required: false
-    recommended: false
   wind_direction:
     name: wind_direction
     examples:
@@ -1298,7 +1254,6 @@ attributes:
     keywords:
     - sample
     slot_uri: MIXS:0001107
-    multivalued: false
     alias: samp_name
     owner: Air
     domain_of:
@@ -1349,7 +1304,6 @@ attributes:
     keywords:
     - project
     slot_uri: MIXS:0000092
-    multivalued: false
     alias: project_name
     owner: Air
     domain_of:
@@ -1398,7 +1352,6 @@ attributes:
     title: altitude
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000094
-    multivalued: false
     alias: alt
     owner: Air
     domain_of:
@@ -1434,7 +1387,6 @@ attributes:
     title: elevation
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000093
-    multivalued: false
     alias: elev
     owner: Air
     domain_of:
@@ -1483,14 +1435,11 @@ attributes:
     keywords:
     - pressure
     slot_uri: MIXS:0000096
-    multivalued: false
     alias: barometric_press
     owner: Air
     domain_of:
     - Air
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -1503,15 +1452,12 @@ attributes:
     title: carbon dioxide
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000097
-    multivalued: false
     alias: carb_dioxide
     owner: Air
     domain_of:
     - Air
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -1532,14 +1478,11 @@ attributes:
     keywords:
     - carbon
     slot_uri: MIXS:0000098
-    multivalued: false
     alias: carb_monoxide
     owner: Air
     domain_of:
     - Air
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -1577,8 +1520,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   humidity:
     name: humidity
     description: Amount of water vapour in the air, at the time of sampling
@@ -1587,7 +1528,6 @@ attributes:
     - value: 25 gram per cubic meter
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000100
-    multivalued: false
     alias: humidity
     owner: Air
     domain_of:
@@ -1595,8 +1535,6 @@ attributes:
     - Air
     - FoodFarmEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -1611,7 +1549,6 @@ attributes:
     - value: 1800 parts per billion
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000101
-    multivalued: false
     alias: methane
     owner: Air
     domain_of:
@@ -1619,8 +1556,6 @@ attributes:
     - MicrobialMatBiofilm
     - Sediment
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -1666,8 +1601,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   oxygen:
     name: oxygen
     annotations:
@@ -1682,14 +1615,11 @@ attributes:
     keywords:
     - oxygen
     slot_uri: MIXS:0000104
-    multivalued: false
     alias: oxygen
     owner: Air
     domain_of:
     - Air
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -1702,7 +1632,6 @@ attributes:
     title: oxygenation status of sample
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000753
-    multivalued: false
     alias: oxy_stat_samp
     owner: Air
     domain_of:
@@ -1724,8 +1653,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: OXY_STAT_SAMP_ENUM
-    required: false
-    recommended: false
   perturbation:
     name: perturbation
     description: Type of perturbation, e.g. chemical administration, physical disturbance,
@@ -1759,8 +1686,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   pollutants:
     name: pollutants
     annotations:
@@ -1785,8 +1710,6 @@ attributes:
     domain_of:
     - Air
     range: string
-    required: false
-    recommended: false
   air_PM_concen:
     name: air_PM_concen
     description: Concentration of substances that remain suspended in the air, and
@@ -1803,8 +1726,6 @@ attributes:
     - Air
     - FoodFarmEnvironment
     range: string
-    required: false
-    recommended: false
   salinity:
     name: salinity
     annotations:
@@ -1824,7 +1745,6 @@ attributes:
     keywords:
     - salinity
     slot_uri: MIXS:0000183
-    multivalued: false
     alias: salinity
     owner: Air
     domain_of:
@@ -1846,8 +1766,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -1861,7 +1779,6 @@ attributes:
     title: sample storage duration
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000116
-    multivalued: false
     alias: samp_store_dur
     owner: Air
     domain_of:
@@ -1887,8 +1804,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^P(?:(?:\d+D|\d+M(?:\d+D)?|\d+Y(?:\d+M(?:\d+D)?)?)(?:T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S))?|T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S)|\d+W)$
     structured_pattern:
       syntax: ^{duration}$
@@ -1901,7 +1816,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000755
-    multivalued: false
     alias: samp_store_loc
     owner: Air
     domain_of:
@@ -1926,8 +1840,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   samp_store_temp:
     name: samp_store_temp
     annotations:
@@ -1944,7 +1856,6 @@ attributes:
     - storage
     - temperature
     slot_uri: MIXS:0000110
-    multivalued: false
     alias: samp_store_temp
     owner: Air
     domain_of:
@@ -1970,8 +1881,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -1986,7 +1895,6 @@ attributes:
     title: sample volume or weight for DNA extraction
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000111
-    multivalued: false
     alias: samp_vol_we_dna_ext
     owner: Air
     domain_of:
@@ -2024,8 +1932,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2054,8 +1960,6 @@ attributes:
     - Air
     - FoodFarmEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2068,7 +1972,6 @@ attributes:
     title: temperature
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000113
-    multivalued: false
     alias: temp
     owner: Air
     domain_of:
@@ -2105,8 +2008,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2127,15 +2028,12 @@ attributes:
     keywords:
     - rate
     slot_uri: MIXS:0000114
-    multivalued: false
     alias: ventilation_rate
     owner: Air
     domain_of:
     - Air
     - FoodFarmEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2157,8 +2055,6 @@ attributes:
     - BuiltEnvironment
     - FoodFarmEnvironment
     range: string
-    required: false
-    recommended: false
   volatile_org_comp:
     name: volatile_org_comp
     annotations:
@@ -2185,8 +2081,6 @@ attributes:
     domain_of:
     - Air
     range: string
-    required: false
-    recommended: false
   wind_direction:
     name: wind_direction
     description: Wind direction is the direction from which a wind originates
@@ -2195,15 +2089,12 @@ attributes:
     - value: Northwest
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000757
-    multivalued: false
     alias: wind_direction
     owner: Air
     domain_of:
     - Air
     - FoodFarmEnvironment
     range: string
-    required: false
-    recommended: false
   wind_speed:
     name: wind_speed
     description: speed of wind measured at the time of sampling
@@ -2212,15 +2103,12 @@ attributes:
     - value: 21 kilometer per hour
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000118
-    multivalued: false
     alias: wind_speed
     owner: Air
     domain_of:
     - Air
     - FoodFarmEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2270,8 +2158,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
 class_uri: MIXS:0016000
 
 </code></pre>

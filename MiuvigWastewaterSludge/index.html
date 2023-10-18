@@ -1128,7 +1128,6 @@ attributes:
     keywords:
     - sample
     slot_uri: MIXS:0001107
-    multivalued: false
     alias: samp_name
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -1174,7 +1173,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{float}-{float} {unit}'
     slot_uri: MIXS:0000017
-    multivalued: false
     alias: size_frac
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -1193,7 +1191,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000043
-    multivalued: false
     alias: lib_screen
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -1221,7 +1218,6 @@ attributes:
       single amplified genome (SAG)|viral single amplified genome (vSAG)|isolate microbial
       genome|other]'
     slot_uri: MIXS:0000035
-    multivalued: false
     alias: source_uvig
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -1236,7 +1232,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{database};{version};{reference}'
     slot_uri: MIXS:0000062
-    multivalued: false
     alias: ref_db
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -1259,7 +1254,6 @@ attributes:
     title: nucleic acid amplification
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000038
-    multivalued: false
     alias: nucl_acid_amp
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -1288,7 +1282,6 @@ attributes:
     title: library size
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000039
-    multivalued: false
     alias: lib_size
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -1313,7 +1306,6 @@ attributes:
     title: multiplex identifiers
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000047
-    multivalued: false
     alias: mid
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -1338,7 +1330,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text} {text}'
     slot_uri: MIXS:0000057
-    multivalued: false
     alias: assembly_name
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -1360,7 +1351,6 @@ attributes:
     title: temperature
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000113
-    multivalued: false
     alias: temp
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -1397,7 +1387,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
     recommended: true
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
@@ -1416,7 +1405,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '[high|med|low];{percentage}'
     slot_uri: MIXS:0000069
-    multivalued: false
     alias: compl_score
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -1437,7 +1425,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{integer}'
     slot_uri: MIXS:0000067
-    multivalued: false
     alias: trnas
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -1445,8 +1432,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
   nucl_acid_ext:
     name: nucl_acid_ext
     description: A link to a literature reference, electronic resource or a standard
@@ -1455,7 +1440,6 @@ attributes:
     title: nucleic acid extraction
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000037
-    multivalued: false
     alias: nucl_acid_ext
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -1489,7 +1473,6 @@ attributes:
     title: amount or size of sample collected
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000001
-    multivalued: false
     alias: samp_size
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -1527,7 +1510,6 @@ attributes:
     title: altitude
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000094
-    multivalued: false
     alias: alt
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -1563,7 +1545,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{integer} bp'
     slot_uri: MIXS:0000024
-    multivalued: false
     alias: estimated_size
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -1574,8 +1555,6 @@ attributes:
     - MigsVi
     - Miuvig
     range: string
-    required: false
-    recommended: false
   source_mat_id:
     name: source_mat_id
     description: A unique identifier assigned to a material sample (as defined by
@@ -1621,7 +1600,6 @@ attributes:
     title: sample volume or weight for DNA extraction
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000111
-    multivalued: false
     alias: samp_vol_we_dna_ext
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -1659,8 +1637,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -1674,7 +1650,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000027
-    multivalued: false
     alias: pathogenicity
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -1684,15 +1659,12 @@ attributes:
     - Miuvig
     - Agriculture
     range: string
-    required: false
-    recommended: false
   lib_reads_seqd:
     name: lib_reads_seqd
     description: Total number of clones sequenced from the library
     title: library reads sequenced
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000040
-    multivalued: false
     alias: lib_reads_seqd
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -1720,7 +1692,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{termLabel} [{termID}]|{text}'
     slot_uri: MIXS:0000002
-    multivalued: false
     alias: samp_collect_device
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -1749,7 +1720,6 @@ attributes:
     title: number of contigs
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000060
-    multivalued: false
     alias: number_contig
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -1773,7 +1743,6 @@ attributes:
     title: observed biotic relationship
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000028
-    multivalued: false
     alias: biotic_relationship
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -1784,15 +1753,12 @@ attributes:
     - Miuvig
     - Agriculture
     range: BIOTIC_RELATIONSHIP_ENUM
-    required: false
-    recommended: false
   trna_ext_software:
     name: trna_ext_software
     description: Tools used for tRNA identification
     title: tRNA extraction software
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000068
-    multivalued: false
     alias: trna_ext_software
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -1800,8 +1766,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+);([^\s-]{1,2}|[^\s-]+.+[^\s-]+);([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{software};{version};{parameters}$
@@ -1814,7 +1778,6 @@ attributes:
     title: library layout
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000041
-    multivalued: false
     alias: lib_layout
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -1855,7 +1818,6 @@ attributes:
     string_serialization: '[Finished genome|High-quality draft genome|Medium-quality
       draft genome|Low-quality draft genome|Genome fragment(s)]'
     slot_uri: MIXS:0000056
-    multivalued: false
     alias: assembly_qual
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -1878,7 +1840,6 @@ attributes:
     title: reference for biomaterial
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000025
-    multivalued: false
     alias: ref_biomaterial
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -1892,8 +1853,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}$
@@ -1911,7 +1870,6 @@ attributes:
     keywords:
     - project
     slot_uri: MIXS:0000092
-    multivalued: false
     alias: project_name
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -1957,7 +1915,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000042
-    multivalued: false
     alias: lib_vector
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -1993,8 +1950,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: string
-    required: false
-    recommended: false
   neg_cont_type:
     name: neg_cont_type
     annotations:
@@ -2009,7 +1964,6 @@ attributes:
     keywords:
     - type
     slot_uri: MIXS:0001321
-    multivalued: false
     alias: neg_cont_type
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -2048,7 +2002,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{dna};{dna}'
     slot_uri: MIXS:0000048
-    multivalued: false
     alias: adapters
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -2071,7 +2024,6 @@ attributes:
     title: assembly software
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000058
-    multivalued: false
     alias: assembly_software
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -2112,8 +2064,6 @@ attributes:
     - Misag
     - Miuvig
     range: TAX_IDENT_ENUM
-    required: false
-    recommended: false
   annot:
     name: annot
     description: Tool used for annotation, or for cases where annotation was provided
@@ -2123,7 +2073,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000059
-    multivalued: false
     alias: annot
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -2138,8 +2087,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: string
-    required: false
-    recommended: false
   pos_cont_type:
     name: pos_cont_type
     description: The substance, mixture, product, or apparatus used to verify that
@@ -2152,7 +2099,6 @@ attributes:
     - type
     string_serialization: '{term} or {text}'
     slot_uri: MIXS:0001322
-    multivalued: false
     alias: pos_cont_type
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -2176,7 +2122,6 @@ attributes:
     title: feature prediction
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000061
-    multivalued: false
     alias: feat_pred
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -2203,7 +2148,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{software};{version}'
     slot_uri: MIXS:0000070
-    multivalued: false
     alias: compl_software
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -2216,8 +2160,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
   env_local_scale:
     name: env_local_scale
     annotations:
@@ -2243,7 +2185,6 @@ attributes:
     - environmental
     string_serialization: '{termLabel} [{termID}]'
     slot_uri: MIXS:0000013
-    multivalued: false
     alias: env_local_scale
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -2268,7 +2209,6 @@ attributes:
     title: sample material processing
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000016
-    multivalued: false
     alias: samp_mat_process
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -2293,7 +2233,6 @@ attributes:
     title: similarity search method
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000063
-    multivalued: false
     alias: sim_search_meth
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -2325,7 +2264,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{termLabel} [{termID}]|{text}'
     slot_uri: MIXS:0000031
-    multivalued: false
     alias: host_disease_stat
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -2354,7 +2292,6 @@ attributes:
     - value: 10 meter
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000018
-    multivalued: false
     alias: depth
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -2396,7 +2333,6 @@ attributes:
     - value: swabbing
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001225
-    multivalued: false
     alias: samp_collect_method
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -2446,7 +2382,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}|{NCBI taxid}'
     slot_uri: MIXS:0000029
-    multivalued: false
     alias: specific_host
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -2457,8 +2392,6 @@ attributes:
     - Miuvig
     - Agriculture
     range: string
-    required: false
-    recommended: false
   env_medium:
     name: env_medium
     description: 'Report the environmental material(s) immediately surrounding the
@@ -2477,7 +2410,6 @@ attributes:
     keywords:
     - environmental
     slot_uri: MIXS:0000014
-    multivalued: false
     alias: env_medium
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -2516,7 +2448,6 @@ attributes:
     - sample
     - taxon
     slot_uri: MIXS:0001320
-    multivalued: false
     alias: samp_taxon_id
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -2554,7 +2485,6 @@ attributes:
     - geographic
     - location
     slot_uri: MIXS:0000010
-    multivalued: false
     alias: geo_loc_name
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -2596,7 +2526,6 @@ attributes:
     keywords:
     - date
     slot_uri: MIXS:0000011
-    multivalued: false
     alias: collection_date
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -2631,7 +2560,6 @@ attributes:
     keywords:
     - method
     slot_uri: MIXS:0000050
-    multivalued: false
     alias: seq_meth
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -2712,7 +2640,6 @@ attributes:
     title: elevation
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000093
-    multivalued: false
     alias: elev
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -2763,7 +2690,6 @@ attributes:
     - context
     - environmental
     slot_uri: MIXS:0000012
-    multivalued: false
     alias: env_broad_scale
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -2792,7 +2718,6 @@ attributes:
     title: taxonomic classification
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000064
-    multivalued: false
     alias: tax_class
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -2844,7 +2769,6 @@ attributes:
     title: sorting technology
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000075
-    multivalued: false
     alias: sort_tech
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -2858,7 +2782,6 @@ attributes:
     title: single cell or viral particle lysis approach
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000076
-    multivalued: false
     alias: sc_lysis_approach
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -2874,7 +2797,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000054
-    multivalued: false
     alias: sc_lysis_method
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -2888,7 +2810,6 @@ attributes:
     title: WGA amplification approach
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000055
-    multivalued: false
     alias: wga_amp_appr
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -2903,7 +2824,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000006
-    multivalued: false
     alias: wga_amp_kit
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -2933,7 +2853,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{software};{version}{PID}'
     slot_uri: MIXS:0000078
-    multivalued: false
     alias: bin_software
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -2948,7 +2867,6 @@ attributes:
     title: reassembly post binning
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000079
-    multivalued: false
     alias: reassembly_bin
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -2963,15 +2881,12 @@ attributes:
     title: MAG coverage software
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000080
-    multivalued: false
     alias: mag_cov_software
     owner: MiuvigWastewaterSludge
     domain_of:
     - Mimag
     - Miuvig
     range: MAG_COV_SOFTWARE_ENUM
-    required: false
-    recommended: false
   vir_ident_software:
     name: vir_ident_software
     description: Tool(s) used for the identification of UViG as a viral genome, software
@@ -2980,7 +2895,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{software};{version};{parameters}'
     slot_uri: MIXS:0000081
-    multivalued: false
     alias: vir_ident_software
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -2994,7 +2908,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '[DNA|dsDNA|ssDNA|RNA|dsRNA|ssRNA|ssRNA (+)|ssRNA (-)|mixed|uncharacterized]'
     slot_uri: MIXS:0000082
-    multivalued: false
     alias: pred_genome_type
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -3007,7 +2920,6 @@ attributes:
     title: predicted genome structure
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000083
-    multivalued: false
     alias: pred_genome_struc
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -3021,7 +2933,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '[independent sequence (UViG)|provirus (UpViG)]'
     slot_uri: MIXS:0000084
-    multivalued: false
     alias: detec_type
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -3038,7 +2949,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{ANI cutoff};{AF cutoff};{clustering method}'
     slot_uri: MIXS:0000085
-    multivalued: false
     alias: otu_class_appr
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -3053,7 +2963,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{software};{version};{parameters}'
     slot_uri: MIXS:0000086
-    multivalued: false
     alias: otu_seq_comp_appr
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -3068,7 +2977,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{database};{version}'
     slot_uri: MIXS:0000087
-    multivalued: false
     alias: otu_db
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -3081,7 +2989,6 @@ attributes:
     title: host prediction approach
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000088
-    multivalued: false
     alias: host_pred_appr
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -3095,7 +3002,6 @@ attributes:
     title: host prediction estimated accuracy
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000089
-    multivalued: false
     alias: host_pred_est_acc
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -3179,7 +3085,6 @@ attributes:
     keywords:
     - alkalinity
     slot_uri: MIXS:0000421
-    multivalued: false
     alias: alkalinity
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -3191,8 +3096,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3213,14 +3116,11 @@ attributes:
     keywords:
     - oxygen
     slot_uri: MIXS:0000653
-    multivalued: false
     alias: biochem_oxygen_dem
     owner: MiuvigWastewaterSludge
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3258,8 +3158,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   chem_oxygen_dem:
     name: chem_oxygen_dem
     annotations:
@@ -3274,14 +3172,11 @@ attributes:
     keywords:
     - oxygen
     slot_uri: MIXS:0000656
-    multivalued: false
     alias: chem_oxygen_dem
     owner: MiuvigWastewaterSludge
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3300,14 +3195,11 @@ attributes:
     keywords:
     - percent
     slot_uri: MIXS:0000657
-    multivalued: false
     alias: efficiency_percent
     owner: MiuvigWastewaterSludge
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3336,8 +3228,6 @@ attributes:
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
   gaseous_substances:
     name: gaseous_substances
     annotations:
@@ -3359,8 +3249,6 @@ attributes:
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
   indust_eff_percent:
     name: indust_eff_percent
     annotations:
@@ -3374,14 +3262,11 @@ attributes:
     keywords:
     - percent
     slot_uri: MIXS:0000662
-    multivalued: false
     alias: indust_eff_percent
     owner: MiuvigWastewaterSludge
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3412,8 +3297,6 @@ attributes:
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
   misc_param:
     name: misc_param
     annotations:
@@ -3457,15 +3340,12 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   nitrate:
     name: nitrate
     description: Concentration of nitrate in the sample
     title: nitrate
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000425
-    multivalued: false
     alias: nitrate
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -3477,8 +3357,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3509,8 +3387,6 @@ attributes:
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
   organism_count:
     name: organism_count
     description: 'Total cell count of any organism (or group of organisms) per gram,
@@ -3550,15 +3426,12 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   oxy_stat_samp:
     name: oxy_stat_samp
     description: Oxygenation status of sample
     title: oxygenation status of sample
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000753
-    multivalued: false
     alias: oxy_stat_samp
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -3580,8 +3453,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: OXY_STAT_SAMP_ENUM
-    required: false
-    recommended: false
   ph:
     name: ph
     description: Ph measurement of the sample, or liquid portion of sample, or aqueous
@@ -3589,7 +3460,6 @@ attributes:
     title: pH
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001001
-    multivalued: false
     alias: ph
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -3603,8 +3473,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: float
-    required: false
-    recommended: false
   perturbation:
     name: perturbation
     description: Type of perturbation, e.g. chemical administration, physical disturbance,
@@ -3638,8 +3506,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   phosphate:
     name: phosphate
     annotations:
@@ -3654,7 +3520,6 @@ attributes:
     keywords:
     - phosphate
     slot_uri: MIXS:0000505
-    multivalued: false
     alias: phosphate
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -3664,8 +3529,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3684,14 +3547,11 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000348
-    multivalued: false
     alias: pre_treatment
     owner: MiuvigWastewaterSludge
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
   primary_treatment:
     name: primary_treatment
     annotations:
@@ -3708,14 +3568,11 @@ attributes:
     - treatment
     string_serialization: '{text}'
     slot_uri: MIXS:0000349
-    multivalued: false
     alias: primary_treatment
     owner: MiuvigWastewaterSludge
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
   reactor_type:
     name: reactor_type
     annotations:
@@ -3731,14 +3588,11 @@ attributes:
     - type
     string_serialization: '{text}'
     slot_uri: MIXS:0000350
-    multivalued: false
     alias: reactor_type
     owner: MiuvigWastewaterSludge
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
   salinity:
     name: salinity
     annotations:
@@ -3758,7 +3612,6 @@ attributes:
     keywords:
     - salinity
     slot_uri: MIXS:0000183
-    multivalued: false
     alias: salinity
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -3780,8 +3633,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3795,7 +3646,6 @@ attributes:
     title: sample storage duration
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000116
-    multivalued: false
     alias: samp_store_dur
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -3821,8 +3671,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^P(?:(?:\d+D|\d+M(?:\d+D)?|\d+Y(?:\d+M(?:\d+D)?)?)(?:T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S))?|T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S)|\d+W)$
     structured_pattern:
       syntax: ^{duration}$
@@ -3835,7 +3683,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000755
-    multivalued: false
     alias: samp_store_loc
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -3860,8 +3707,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   samp_store_temp:
     name: samp_store_temp
     annotations:
@@ -3878,7 +3723,6 @@ attributes:
     - storage
     - temperature
     slot_uri: MIXS:0000110
-    multivalued: false
     alias: samp_store_temp
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -3904,8 +3748,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3927,14 +3769,11 @@ attributes:
     - treatment
     string_serialization: '{text}'
     slot_uri: MIXS:0000351
-    multivalued: false
     alias: secondary_treatment
     owner: MiuvigWastewaterSludge
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
   sewage_type:
     name: sewage_type
     annotations:
@@ -3948,14 +3787,11 @@ attributes:
     - type
     string_serialization: '{text}'
     slot_uri: MIXS:0000215
-    multivalued: false
     alias: sewage_type
     owner: MiuvigWastewaterSludge
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
   sludge_retent_time:
     name: sludge_retent_time
     annotations:
@@ -3968,14 +3804,11 @@ attributes:
     keywords:
     - time
     slot_uri: MIXS:0000669
-    multivalued: false
     alias: sludge_retent_time
     owner: MiuvigWastewaterSludge
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3994,7 +3827,6 @@ attributes:
     - value: 10.5 milligram per liter
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000428
-    multivalued: false
     alias: sodium
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -4006,8 +3838,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4039,8 +3869,6 @@ attributes:
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
   soluble_org_mat:
     name: soluble_org_mat
     annotations:
@@ -4066,8 +3894,6 @@ attributes:
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
   suspend_solids:
     name: suspend_solids
     annotations:
@@ -4095,8 +3921,6 @@ attributes:
     - HydrocarbonResourcesFluidsSwabs
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
   tertiary_treatment:
     name: tertiary_treatment
     annotations:
@@ -4111,14 +3935,11 @@ attributes:
     - treatment
     string_serialization: '{text}'
     slot_uri: MIXS:0000352
-    multivalued: false
     alias: tertiary_treatment
     owner: MiuvigWastewaterSludge
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
   tot_nitro:
     name: tot_nitro
     annotations:
@@ -4137,7 +3958,6 @@ attributes:
     - nitrogen
     - total
     slot_uri: MIXS:0000102
-    multivalued: false
     alias: tot_nitro
     owner: MiuvigWastewaterSludge
     domain_of:
@@ -4146,8 +3966,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4160,15 +3978,12 @@ attributes:
     title: total phosphate
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000689
-    multivalued: false
     alias: tot_phosphate
     owner: MiuvigWastewaterSludge
     domain_of:
     - Agriculture
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4189,14 +4004,11 @@ attributes:
     - type
     string_serialization: '{text}'
     slot_uri: MIXS:0000353
-    multivalued: false
     alias: wastewater_type
     owner: MiuvigWastewaterSludge
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
 class_uri: MIXS:0010012_0016013
 
 </code></pre>

@@ -395,7 +395,7 @@
 <td><a href="../samp_name/">samp_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>A local identifier or name that for the material sample used for extracting n...</td>
-<td><a href="../Soil/">Soil</a>, <a href="../MimarksS/">MimarksS</a></td>
+<td><a href="../MimarksS/">MimarksS</a>, <a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
 <td><a href="../pcr_primers/">pcr_primers</a></td>
@@ -443,7 +443,7 @@
 <td><a href="../temp/">temp</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Temperature of the sample at the time of sampling</td>
-<td><a href="../Soil/">Soil</a>, <a href="../MimarksS/">MimarksS</a></td>
+<td><a href="../MimarksS/">MimarksS</a>, <a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
 <td><a href="../nucl_acid_ext/">nucl_acid_ext</a></td>
@@ -473,7 +473,7 @@
 <td><a href="../samp_vol_we_dna_ext/">samp_vol_we_dna_ext</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Volume (ml) or mass (g) of total collected sample processed for DNA extractio...</td>
-<td><a href="../Soil/">Soil</a>, <a href="../MimarksS/">MimarksS</a></td>
+<td><a href="../MimarksS/">MimarksS</a>, <a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
 <td><a href="../lib_reads_seqd/">lib_reads_seqd</a></td>
@@ -515,7 +515,7 @@
 <td><a href="../project_name/">project_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Name of the project within which the sequencing was organized</td>
-<td><a href="../Soil/">Soil</a>, <a href="../MimarksS/">MimarksS</a></td>
+<td><a href="../MimarksS/">MimarksS</a>, <a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
 <td><a href="../lib_vector/">lib_vector</a></td>
@@ -569,7 +569,7 @@
 <td><a href="../depth/">depth</a></td>
 <td>1..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The vertical distance below local surface</td>
-<td><a href="../Soil/">Soil</a>, <a href="../MimarksS/">MimarksS</a></td>
+<td><a href="../MimarksS/">MimarksS</a>, <a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
 <td><a href="../samp_collect_method/">samp_collect_method</a></td>
@@ -617,7 +617,7 @@
 <td><a href="../elev/">elev</a></td>
 <td>1..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Elevation of the sampling site is its height above a fixed reference point, m...</td>
-<td><a href="../Soil/">Soil</a>, <a href="../MimarksS/">MimarksS</a></td>
+<td><a href="../MimarksS/">MimarksS</a>, <a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
 <td><a href="../pcr_cond/">pcr_cond</a></td>
@@ -1018,7 +1018,6 @@ attributes:
     keywords:
     - sample
     slot_uri: MIXS:0001107
-    multivalued: false
     alias: samp_name
     owner: MimarksSSoil
     domain_of:
@@ -1067,7 +1066,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: FWD:{dna};REV:{dna}
     slot_uri: MIXS:0000046
-    multivalued: false
     alias: pcr_primers
     owner: MimarksSSoil
     domain_of:
@@ -1083,7 +1081,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{float}-{float} {unit}'
     slot_uri: MIXS:0000017
-    multivalued: false
     alias: size_frac
     owner: MimarksSSoil
     domain_of:
@@ -1093,8 +1090,6 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    required: false
-    recommended: false
   lib_screen:
     name: lib_screen
     description: Specific enrichment or screening methods applied before and/or after
@@ -1103,7 +1098,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000043
-    multivalued: false
     alias: lib_screen
     owner: MimarksSSoil
     domain_of:
@@ -1128,7 +1122,6 @@ attributes:
     title: nucleic acid amplification
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000038
-    multivalued: false
     alias: nucl_acid_amp
     owner: MimarksSSoil
     domain_of:
@@ -1157,7 +1150,6 @@ attributes:
     title: library size
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000039
-    multivalued: false
     alias: lib_size
     owner: MimarksSSoil
     domain_of:
@@ -1181,7 +1173,6 @@ attributes:
     title: target subfragment
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000045
-    multivalued: false
     alias: target_subfragment
     owner: MimarksSSoil
     domain_of:
@@ -1198,7 +1189,6 @@ attributes:
     title: multiplex identifiers
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000047
-    multivalued: false
     alias: mid
     owner: MimarksSSoil
     domain_of:
@@ -1221,7 +1211,6 @@ attributes:
     title: temperature
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000113
-    multivalued: false
     alias: temp
     owner: MimarksSSoil
     domain_of:
@@ -1258,7 +1247,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
     recommended: true
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
@@ -1274,7 +1262,6 @@ attributes:
     title: nucleic acid extraction
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000037
-    multivalued: false
     alias: nucl_acid_ext
     owner: MimarksSSoil
     domain_of:
@@ -1308,7 +1295,6 @@ attributes:
     title: amount or size of sample collected
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000001
-    multivalued: false
     alias: samp_size
     owner: MimarksSSoil
     domain_of:
@@ -1346,7 +1332,6 @@ attributes:
     title: altitude
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000094
-    multivalued: false
     alias: alt
     owner: MimarksSSoil
     domain_of:
@@ -1418,7 +1403,6 @@ attributes:
     title: sample volume or weight for DNA extraction
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000111
-    multivalued: false
     alias: samp_vol_we_dna_ext
     owner: MimarksSSoil
     domain_of:
@@ -1456,8 +1440,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -1470,7 +1452,6 @@ attributes:
     title: library reads sequenced
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000040
-    multivalued: false
     alias: lib_reads_seqd
     owner: MimarksSSoil
     domain_of:
@@ -1494,7 +1475,6 @@ attributes:
     title: relationship to oxygen
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000015
-    multivalued: false
     alias: rel_to_oxygen
     owner: MimarksSSoil
     domain_of:
@@ -1505,8 +1485,6 @@ attributes:
     - Mims
     - Misag
     range: REL_TO_OXYGEN_ENUM
-    required: false
-    recommended: false
   samp_collect_device:
     name: samp_collect_device
     description: The device used to collect an environmental sample. This field accepts
@@ -1518,7 +1496,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{termLabel} [{termID}]|{text}'
     slot_uri: MIXS:0000002
-    multivalued: false
     alias: samp_collect_device
     owner: MimarksSSoil
     domain_of:
@@ -1549,7 +1526,6 @@ attributes:
     title: sequence quality check
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000051
-    multivalued: false
     alias: seq_quality_check
     owner: MimarksSSoil
     domain_of:
@@ -1565,7 +1541,6 @@ attributes:
     title: library layout
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000041
-    multivalued: false
     alias: lib_layout
     owner: MimarksSSoil
     domain_of:
@@ -1599,7 +1574,6 @@ attributes:
     - context
     - environmental
     slot_uri: MIXS:0000012
-    multivalued: false
     alias: env_broad_scale
     owner: MimarksSSoil
     domain_of:
@@ -1633,7 +1607,6 @@ attributes:
     keywords:
     - project
     slot_uri: MIXS:0000092
-    multivalued: false
     alias: project_name
     owner: MimarksSSoil
     domain_of:
@@ -1679,7 +1652,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000042
-    multivalued: false
     alias: lib_vector
     owner: MimarksSSoil
     domain_of:
@@ -1705,7 +1677,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{dna};{dna}'
     slot_uri: MIXS:0000048
-    multivalued: false
     alias: adapters
     owner: MimarksSSoil
     domain_of:
@@ -1736,7 +1707,6 @@ attributes:
     keywords:
     - type
     slot_uri: MIXS:0001321
-    multivalued: false
     alias: neg_cont_type
     owner: MimarksSSoil
     domain_of:
@@ -1759,7 +1729,6 @@ attributes:
     title: assembly software
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000058
-    multivalued: false
     alias: assembly_software
     owner: MimarksSSoil
     domain_of:
@@ -1789,7 +1758,6 @@ attributes:
     title: chimera check software
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000052
-    multivalued: false
     alias: chimera_check
     owner: MimarksSSoil
     domain_of:
@@ -1815,7 +1783,6 @@ attributes:
     - type
     string_serialization: '{term} or {text}'
     slot_uri: MIXS:0001322
-    multivalued: false
     alias: pos_cont_type
     owner: MimarksSSoil
     domain_of:
@@ -1857,7 +1824,6 @@ attributes:
     - environmental
     string_serialization: '{termLabel} [{termID}]'
     slot_uri: MIXS:0000013
-    multivalued: false
     alias: env_local_scale
     owner: MimarksSSoil
     domain_of:
@@ -1882,7 +1848,6 @@ attributes:
     title: sample material processing
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000016
-    multivalued: false
     alias: samp_mat_process
     owner: MimarksSSoil
     domain_of:
@@ -1910,7 +1875,6 @@ attributes:
     - value: 10 meter
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000018
-    multivalued: false
     alias: depth
     owner: MimarksSSoil
     domain_of:
@@ -1953,7 +1917,6 @@ attributes:
     - value: swabbing
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001225
-    multivalued: false
     alias: samp_collect_method
     owner: MimarksSSoil
     domain_of:
@@ -1997,7 +1960,6 @@ attributes:
     keywords:
     - environmental
     slot_uri: MIXS:0000014
-    multivalued: false
     alias: env_medium
     owner: MimarksSSoil
     domain_of:
@@ -2036,7 +1998,6 @@ attributes:
     - sample
     - taxon
     slot_uri: MIXS:0001320
-    multivalued: false
     alias: samp_taxon_id
     owner: MimarksSSoil
     domain_of:
@@ -2074,7 +2035,6 @@ attributes:
     - geographic
     - location
     slot_uri: MIXS:0000010
-    multivalued: false
     alias: geo_loc_name
     owner: MimarksSSoil
     domain_of:
@@ -2116,7 +2076,6 @@ attributes:
     keywords:
     - date
     slot_uri: MIXS:0000011
-    multivalued: false
     alias: collection_date
     owner: MimarksSSoil
     domain_of:
@@ -2151,7 +2110,6 @@ attributes:
     keywords:
     - method
     slot_uri: MIXS:0000050
-    multivalued: false
     alias: seq_meth
     owner: MimarksSSoil
     domain_of:
@@ -2232,7 +2190,6 @@ attributes:
     title: elevation
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000093
-    multivalued: false
     alias: elev
     owner: MimarksSSoil
     domain_of:
@@ -2276,7 +2233,6 @@ attributes:
     string_serialization: initial denaturation:degrees_minutes;annealing:degrees_minutes;elongation:degrees_minutes;final
       elongation:degrees_minutes;total cycles
     slot_uri: MIXS:0000049
-    multivalued: false
     alias: pcr_cond
     owner: MimarksSSoil
     domain_of:
@@ -2322,7 +2278,6 @@ attributes:
     title: target gene
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000044
-    multivalued: false
     alias: target_gene
     owner: MimarksSSoil
     domain_of:
@@ -2421,15 +2376,12 @@ attributes:
       body dominated by woody plants)|crop trees (nuts,fruit,christmas trees,nursery
       trees)]'
     slot_uri: MIXS:0001080
-    multivalued: false
     alias: cur_land_use
     owner: MimarksSSoil
     domain_of:
     - Agriculture
     - Soil
     range: string
-    required: false
-    recommended: false
   cur_vegetation:
     name: cur_vegetation
     description: Vegetation classification from one or more standard classification
@@ -2438,30 +2390,24 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000312
-    multivalued: false
     alias: cur_vegetation
     owner: MimarksSSoil
     domain_of:
     - Agriculture
     - Soil
     range: string
-    required: false
-    recommended: false
   cur_vegetation_meth:
     name: cur_vegetation_meth
     description: Reference or method used in vegetation classification
     title: current vegetation method
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000314
-    multivalued: false
     alias: cur_vegetation_meth
     owner: MimarksSSoil
     domain_of:
     - Agriculture
     - Soil
     range: string
-    required: false
-    recommended: false
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}$
@@ -2474,7 +2420,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text};{timestamp}'
     slot_uri: MIXS:0000315
-    multivalued: false
     alias: previous_land_use
     owner: MimarksSSoil
     domain_of:
@@ -2482,23 +2427,18 @@ attributes:
     - FoodFarmEnvironment
     - Soil
     range: string
-    required: false
-    recommended: false
   prev_land_use_meth:
     name: prev_land_use_meth
     description: Reference or method used in determining previous land use and dates
     title: history/previous land use method
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000316
-    multivalued: false
     alias: prev_land_use_meth
     owner: MimarksSSoil
     domain_of:
     - Agriculture
     - Soil
     range: string
-    required: false
-    recommended: false
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}$
@@ -2511,7 +2451,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{boolean};{Rn/start_time/end_time/duration}'
     slot_uri: MIXS:0000318
-    multivalued: false
     alias: crop_rotation
     owner: MimarksSSoil
     domain_of:
@@ -2519,8 +2458,6 @@ attributes:
     - FoodFarmEnvironment
     - Soil
     range: string
-    required: false
-    recommended: false
   agrochem_addition:
     name: agrochem_addition
     annotations:
@@ -2546,8 +2483,6 @@ attributes:
     - Agriculture
     - Soil
     range: string
-    required: false
-    recommended: false
   tillage:
     name: tillage
     description: Note method(s) used for tilling
@@ -2562,53 +2497,42 @@ attributes:
     - FoodFarmEnvironment
     - Soil
     range: TILLAGE_ENUM
-    required: false
-    recommended: false
   fire:
     name: fire
     description: Historical and/or physical evidence of fire
     title: history/fire
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001086
-    multivalued: false
     alias: fire
     owner: MimarksSSoil
     domain_of:
     - Agriculture
     - Soil
     range: datetime
-    required: false
-    recommended: false
   flooding:
     name: flooding
     description: Historical and/or physical evidence of flooding
     title: history/flooding
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000319
-    multivalued: false
     alias: flooding
     owner: MimarksSSoil
     domain_of:
     - Agriculture
     - Soil
     range: datetime
-    required: false
-    recommended: false
   extreme_event:
     name: extreme_event
     description: Unusual physical events that may have affected microbial populations
     title: history/extreme events
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000320
-    multivalued: false
     alias: extreme_event
     owner: MimarksSSoil
     domain_of:
     - Agriculture
     - Soil
     range: datetime
-    required: false
-    recommended: false
   soil_horizon:
     name: soil_horizon
     description: Specific layer in the land area which measures parallel to the soil
@@ -2617,30 +2541,24 @@ attributes:
     title: soil horizon
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001082
-    multivalued: false
     alias: soil_horizon
     owner: MimarksSSoil
     domain_of:
     - Agriculture
     - Soil
     range: SOIL_HORIZON_ENUM
-    required: false
-    recommended: false
   horizon_meth:
     name: horizon_meth
     description: Reference or method used in determining the horizon
     title: horizon method
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000321
-    multivalued: false
     alias: horizon_meth
     owner: MimarksSSoil
     domain_of:
     - Agriculture
     - Soil
     range: string
-    required: false
-    recommended: false
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}$
@@ -2654,15 +2572,12 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text};{float} {unit}'
     slot_uri: MIXS:0000322
-    multivalued: false
     alias: sieving
     owner: MimarksSSoil
     domain_of:
     - Agriculture
     - Soil
     range: string
-    required: false
-    recommended: false
   water_content:
     name: water_content
     description: Water content measurement
@@ -2670,7 +2585,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{float}'
     slot_uri: MIXS:0000185
-    multivalued: false
     alias: water_content
     owner: MimarksSSoil
     domain_of:
@@ -2678,8 +2592,6 @@ attributes:
     - Sediment
     - Soil
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2696,14 +2608,11 @@ attributes:
     - method
     - water
     slot_uri: MIXS:0000323
-    multivalued: false
     alias: water_cont_soil_meth
     owner: MimarksSSoil
     domain_of:
     - Soil
     range: string
-    required: false
-    recommended: false
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}$
@@ -2717,7 +2626,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{boolean};{integer}'
     slot_uri: MIXS:0000325
-    multivalued: false
     alias: pool_dna_extracts
     owner: MimarksSSoil
     domain_of:
@@ -2727,8 +2635,6 @@ attributes:
     - FoodHumanFoods
     - Soil
     range: string
-    required: false
-    recommended: false
   store_cond:
     name: store_cond
     description: Explain how and for how long the soil sample was stored before DNA
@@ -2737,15 +2643,12 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text};{period}'
     slot_uri: MIXS:0000327
-    multivalued: false
     alias: store_cond
     owner: MimarksSSoil
     domain_of:
     - Agriculture
     - Soil
     range: string
-    required: false
-    recommended: false
   link_climate_info:
     name: link_climate_info
     description: Link to climate resource
@@ -2755,15 +2658,12 @@ attributes:
     - information
     - link
     slot_uri: MIXS:0000328
-    multivalued: false
     alias: link_climate_info
     owner: MimarksSSoil
     domain_of:
     - Agriculture
     - Soil
     range: string
-    required: false
-    recommended: false
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}$
@@ -2784,15 +2684,12 @@ attributes:
     - mean
     - temperature
     slot_uri: MIXS:0000642
-    multivalued: false
     alias: annual_temp
     owner: MimarksSSoil
     domain_of:
     - Agriculture
     - Soil
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2815,7 +2712,6 @@ attributes:
     - season
     - temperature
     slot_uri: MIXS:0000643
-    multivalued: false
     alias: season_temp
     owner: MimarksSSoil
     domain_of:
@@ -2823,8 +2719,6 @@ attributes:
     - FoodFarmEnvironment
     - Soil
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2844,15 +2738,12 @@ attributes:
     keywords:
     - mean
     slot_uri: MIXS:0000644
-    multivalued: false
     alias: annual_precpt
     owner: MimarksSSoil
     domain_of:
     - Agriculture
     - Soil
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2866,7 +2757,6 @@ attributes:
     title: mean seasonal precipitation
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000645
-    multivalued: false
     alias: season_precpt
     owner: MimarksSSoil
     domain_of:
@@ -2874,8 +2764,6 @@ attributes:
     - FoodFarmEnvironment
     - Soil
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2897,15 +2785,12 @@ attributes:
     - link
     string_serialization: '{termLabel} [{termID}]'
     slot_uri: MIXS:0000329
-    multivalued: false
     alias: link_class_info
     owner: MimarksSSoil
     domain_of:
     - Agriculture
     - Soil
     range: string
-    required: false
-    recommended: false
   fao_class:
     name: fao_class
     description: Soil classification from the FAO World Reference Database for Soil
@@ -2913,15 +2798,12 @@ attributes:
     title: soil_taxonomic/FAO classification
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001083
-    multivalued: false
     alias: fao_class
     owner: MimarksSSoil
     domain_of:
     - Agriculture
     - Soil
     range: FAO_CLASS_ENUM
-    required: false
-    recommended: false
   local_class:
     name: local_class
     description: Soil classification based on local soil classification system
@@ -2929,30 +2811,24 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000330
-    multivalued: false
     alias: local_class
     owner: MimarksSSoil
     domain_of:
     - Agriculture
     - Soil
     range: string
-    required: false
-    recommended: false
   local_class_meth:
     name: local_class_meth
     description: Reference or method used in determining the local soil classification
     title: soil_taxonomic/local classification method
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000331
-    multivalued: false
     alias: local_class_meth
     owner: MimarksSSoil
     domain_of:
     - Agriculture
     - Soil
     range: string
-    required: false
-    recommended: false
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}$
@@ -2964,7 +2840,6 @@ attributes:
     title: organic nitrogen
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000205
-    multivalued: false
     alias: org_nitro
     owner: MimarksSSoil
     domain_of:
@@ -2974,8 +2849,6 @@ attributes:
     - Soil
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2993,7 +2866,6 @@ attributes:
 
       '
     slot_uri: MIXS:0000332
-    multivalued: false
     alias: soil_type
     owner: MimarksSSoil
     domain_of:
@@ -3001,8 +2873,6 @@ attributes:
     - FoodFarmEnvironment
     - Soil
     range: string
-    required: false
-    recommended: false
   soil_type_meth:
     name: soil_type_meth
     description: Reference or method used in determining soil series name or other
@@ -3010,7 +2880,6 @@ attributes:
     title: soil type method
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000334
-    multivalued: false
     alias: soil_type_meth
     owner: MimarksSSoil
     domain_of:
@@ -3018,8 +2887,6 @@ attributes:
     - FoodFarmEnvironment
     - Soil
     range: string
-    required: false
-    recommended: false
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}$
@@ -3033,15 +2900,12 @@ attributes:
     title: slope gradient
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000646
-    multivalued: false
     alias: slope_gradient
     owner: MimarksSSoil
     domain_of:
     - Agriculture
     - Soil
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3057,15 +2921,12 @@ attributes:
     title: slope aspect
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000647
-    multivalued: false
     alias: slope_aspect
     owner: MimarksSSoil
     domain_of:
     - Agriculture
     - Soil
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3079,30 +2940,24 @@ attributes:
     title: profile position
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001084
-    multivalued: false
     alias: profile_position
     owner: MimarksSSoil
     domain_of:
     - Agriculture
     - Soil
     range: PROFILE_POSITION_ENUM
-    required: false
-    recommended: false
   drainage_class:
     name: drainage_class
     description: Drainage classification from a standard system such as the USDA system
     title: drainage classification
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001085
-    multivalued: false
     alias: drainage_class
     owner: MimarksSSoil
     domain_of:
     - Agriculture
     - Soil
     range: DRAINAGE_CLASS_ENUM
-    required: false
-    recommended: false
   soil_texture:
     name: soil_texture
     description: The relative proportion of different grain sizes of mineral particles
@@ -3115,15 +2970,12 @@ attributes:
     - soil
     - texture
     slot_uri: MIXS:0000335
-    multivalued: false
     alias: soil_texture
     owner: MimarksSSoil
     domain_of:
     - Agriculture
     - Soil
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3142,7 +2994,6 @@ attributes:
     - soil
     - texture
     slot_uri: MIXS:0000336
-    multivalued: false
     alias: soil_texture_meth
     owner: MimarksSSoil
     domain_of:
@@ -3150,8 +3001,6 @@ attributes:
     - FoodFarmEnvironment
     - Soil
     range: string
-    required: false
-    recommended: false
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}$
@@ -3164,7 +3013,6 @@ attributes:
     title: pH
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001001
-    multivalued: false
     alias: ph
     owner: MimarksSSoil
     domain_of:
@@ -3178,15 +3026,12 @@ attributes:
     - WastewaterSludge
     - Water
     range: float
-    required: false
-    recommended: false
   ph_meth:
     name: ph_meth
     description: Reference or method used in determining pH
     title: pH method
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001106
-    multivalued: false
     alias: ph_meth
     owner: MimarksSSoil
     domain_of:
@@ -3194,8 +3039,6 @@ attributes:
     - FoodFarmEnvironment
     - Soil
     range: string
-    required: false
-    recommended: false
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}$
@@ -3215,7 +3058,6 @@ attributes:
     keywords:
     - organic
     slot_uri: MIXS:0000204
-    multivalued: false
     alias: org_matter
     owner: MimarksSSoil
     domain_of:
@@ -3225,8 +3067,6 @@ attributes:
     - Soil
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3239,7 +3079,6 @@ attributes:
     title: total organic carbon
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000533
-    multivalued: false
     alias: tot_org_carb
     owner: MimarksSSoil
     domain_of:
@@ -3249,8 +3088,6 @@ attributes:
     - Sediment
     - Soil
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3263,7 +3100,6 @@ attributes:
     title: total organic carbon method
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000337
-    multivalued: false
     alias: tot_org_c_meth
     owner: MimarksSSoil
     domain_of:
@@ -3271,8 +3107,6 @@ attributes:
     - FoodFarmEnvironment
     - Soil
     range: string
-    required: false
-    recommended: false
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}$
@@ -3284,7 +3118,6 @@ attributes:
     title: total nitrogen content
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000530
-    multivalued: false
     alias: tot_nitro_content
     owner: MimarksSSoil
     domain_of:
@@ -3294,8 +3127,6 @@ attributes:
     - Sediment
     - Soil
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3308,7 +3139,6 @@ attributes:
     title: total nitrogen content method
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000338
-    multivalued: false
     alias: tot_nitro_cont_meth
     owner: MimarksSSoil
     domain_of:
@@ -3316,8 +3146,6 @@ attributes:
     - FoodFarmEnvironment
     - Soil
     range: string
-    required: false
-    recommended: false
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}$
@@ -3331,15 +3159,12 @@ attributes:
     title: microbial biomass
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000650
-    multivalued: false
     alias: microbial_biomass
     owner: MimarksSSoil
     domain_of:
     - Agriculture
     - Soil
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3358,8 +3183,6 @@ attributes:
     - Agriculture
     - Soil
     range: string
-    required: false
-    recommended: false
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}$
@@ -3373,14 +3196,11 @@ attributes:
     keywords:
     - link
     slot_uri: MIXS:0000340
-    multivalued: false
     alias: link_addit_analys
     owner: MimarksSSoil
     domain_of:
     - Soil
     range: string
-    required: false
-    recommended: false
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}$
@@ -3413,8 +3233,6 @@ attributes:
     domain_of:
     - Soil
     range: string
-    required: false
-    recommended: false
   heavy_metals_meth:
     name: heavy_metals_meth
     description: Reference or method used in determining heavy metals
@@ -3422,15 +3240,12 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{PMID}|{DOI}|{URL}'
     slot_uri: MIXS:0000343
-    multivalued: false
     alias: heavy_metals_meth
     owner: MimarksSSoil
     domain_of:
     - Agriculture
     - Soil
     range: string
-    required: false
-    recommended: false
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}$
@@ -3451,14 +3266,11 @@ attributes:
     - saturation
     - unusual
     slot_uri: MIXS:0000607
-    multivalued: false
     alias: al_sat
     owner: MimarksSSoil
     domain_of:
     - Soil
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3477,14 +3289,11 @@ attributes:
     - saturation
     - unusual
     slot_uri: MIXS:0000324
-    multivalued: false
     alias: al_sat_meth
     owner: MimarksSSoil
     domain_of:
     - Soil
     range: string
-    required: false
-    recommended: false
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}$
@@ -3533,8 +3342,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
 class_uri: MIXS:0010008_0016012
 
 </code></pre>

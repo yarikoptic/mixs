@@ -1218,7 +1218,6 @@ attributes:
     keywords:
     - sample
     slot_uri: MIXS:0001107
-    multivalued: false
     alias: samp_name
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -1267,7 +1266,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: FWD:{dna};REV:{dna}
     slot_uri: MIXS:0000046
-    multivalued: false
     alias: pcr_primers
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -1284,7 +1282,6 @@ attributes:
     title: nucleic acid amplification
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000038
-    multivalued: false
     alias: nucl_acid_amp
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -1314,7 +1311,6 @@ attributes:
     title: target subfragment
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000045
-    multivalued: false
     alias: target_subfragment
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -1329,7 +1325,6 @@ attributes:
     title: temperature
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000113
-    multivalued: false
     alias: temp
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -1382,7 +1377,6 @@ attributes:
     string_serialization: initial denaturation:degrees_minutes;annealing:degrees_minutes;elongation:degrees_minutes;final
       elongation:degrees_minutes;total cycles
     slot_uri: MIXS:0000049
-    multivalued: false
     alias: pcr_cond
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -1399,7 +1393,6 @@ attributes:
     title: nucleic acid extraction
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000037
-    multivalued: false
     alias: nucl_acid_ext
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -1420,7 +1413,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
     recommended: true
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$
     structured_pattern:
@@ -1434,7 +1426,6 @@ attributes:
     title: amount or size of sample collected
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000001
-    multivalued: false
     alias: samp_size
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -1455,8 +1446,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -1471,7 +1460,6 @@ attributes:
     title: isolation and growth condition
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000003
-    multivalued: false
     alias: isol_growth_condt
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -1499,7 +1487,6 @@ attributes:
     title: altitude
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000094
-    multivalued: false
     alias: alt
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -1571,7 +1558,6 @@ attributes:
     title: extrachromosomal elements
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000023
-    multivalued: false
     alias: extrachrom_elements
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -1580,8 +1566,6 @@ attributes:
     - MigsOrg
     - MimarksC
     range: integer
-    required: false
-    recommended: false
   samp_vol_we_dna_ext:
     name: samp_vol_we_dna_ext
     description: 'Volume (ml) or mass (g) of total collected sample processed for
@@ -1590,7 +1574,6 @@ attributes:
     title: sample volume or weight for DNA extraction
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000111
-    multivalued: false
     alias: samp_vol_we_dna_ext
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -1628,8 +1611,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -1643,7 +1624,6 @@ attributes:
     title: relationship to oxygen
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000015
-    multivalued: false
     alias: rel_to_oxygen
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -1666,7 +1646,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{termLabel} [{termID}]|{text}'
     slot_uri: MIXS:0000002
-    multivalued: false
     alias: samp_collect_device
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -1687,8 +1666,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   biotic_relationship:
     name: biotic_relationship
     description: Description of relationship(s) between the subject organism and other
@@ -1698,7 +1675,6 @@ attributes:
     title: observed biotic relationship
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000028
-    multivalued: false
     alias: biotic_relationship
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -1719,7 +1695,6 @@ attributes:
     title: sequence quality check
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000051
-    multivalued: false
     alias: seq_quality_check
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -1740,7 +1715,6 @@ attributes:
     keywords:
     - project
     slot_uri: MIXS:0000092
-    multivalued: false
     alias: project_name
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -1793,7 +1767,6 @@ attributes:
     keywords:
     - type
     slot_uri: MIXS:0001321
-    multivalued: false
     alias: neg_cont_type
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -1818,7 +1791,6 @@ attributes:
     title: chimera check software
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000052
-    multivalued: false
     alias: chimera_check
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -1839,7 +1811,6 @@ attributes:
     title: trophic level
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000032
-    multivalued: false
     alias: trophic_level
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -1861,7 +1832,6 @@ attributes:
     - type
     string_serialization: '{term} or {text}'
     slot_uri: MIXS:0001322
-    multivalued: false
     alias: pos_cont_type
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -1889,7 +1859,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{rank name}:{text}'
     slot_uri: MIXS:0000020
-    multivalued: false
     alias: subspecf_gen_lin
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -1927,7 +1896,6 @@ attributes:
     - environmental
     string_serialization: '{termLabel} [{termID}]'
     slot_uri: MIXS:0000013
-    multivalued: false
     alias: env_local_scale
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -1952,7 +1920,6 @@ attributes:
     title: sample material processing
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000016
-    multivalued: false
     alias: samp_mat_process
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -1980,7 +1947,6 @@ attributes:
     - value: 10 meter
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000018
-    multivalued: false
     alias: depth
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -2022,7 +1988,6 @@ attributes:
     - value: swabbing
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001225
-    multivalued: false
     alias: samp_collect_method
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -2042,8 +2007,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$|([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}|{text}$
@@ -2067,7 +2030,6 @@ attributes:
     keywords:
     - environmental
     slot_uri: MIXS:0000014
-    multivalued: false
     alias: env_medium
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -2106,7 +2068,6 @@ attributes:
     - sample
     - taxon
     slot_uri: MIXS:0001320
-    multivalued: false
     alias: samp_taxon_id
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -2144,7 +2105,6 @@ attributes:
     - geographic
     - location
     slot_uri: MIXS:0000010
-    multivalued: false
     alias: geo_loc_name
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -2186,7 +2146,6 @@ attributes:
     keywords:
     - date
     slot_uri: MIXS:0000011
-    multivalued: false
     alias: collection_date
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -2221,7 +2180,6 @@ attributes:
     keywords:
     - method
     slot_uri: MIXS:0000050
-    multivalued: false
     alias: seq_meth
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -2302,7 +2260,6 @@ attributes:
     title: elevation
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000093
-    multivalued: false
     alias: elev
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -2353,7 +2310,6 @@ attributes:
     - context
     - environmental
     slot_uri: MIXS:0000012
-    multivalued: false
     alias: env_broad_scale
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -2404,8 +2360,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^\S+.*\S+ \[[a-zA-Z]{2,}:\d+\]$
   target_gene:
     name: target_gene
@@ -2413,7 +2367,6 @@ attributes:
     title: target gene
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000044
-    multivalued: false
     alias: target_gene
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -2523,8 +2476,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   samp_store_temp:
     name: samp_store_temp
     annotations:
@@ -2541,7 +2492,6 @@ attributes:
     - storage
     - temperature
     slot_uri: MIXS:0000110
-    multivalued: false
     alias: samp_store_temp
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -2567,8 +2517,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2582,7 +2530,6 @@ attributes:
     title: sample storage duration
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000116
-    multivalued: false
     alias: samp_store_dur
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -2608,8 +2555,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^P(?:(?:\d+D|\d+M(?:\d+D)?|\d+Y(?:\d+M(?:\d+D)?)?)(?:T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S))?|T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S)|\d+W)$
     structured_pattern:
       syntax: ^{duration}$
@@ -2623,15 +2568,12 @@ attributes:
     - value: 4 degree Celsius
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000124
-    multivalued: false
     alias: air_temp
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
     - BuiltEnvironment
     - FoodFoodProductionFacility
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2657,15 +2599,12 @@ attributes:
     - room
     string_serialization: '{integer} {unit} x {integer} {unit} x {integer} {unit}'
     slot_uri: MIXS:0000192
-    multivalued: false
     alias: room_dim
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
     - BuiltEnvironment
     - FoodFoodProductionFacility
     range: string
-    required: false
-    recommended: false
   freq_clean:
     name: freq_clean
     description: The number of times the sample location is cleaned. Frequency of
@@ -2674,15 +2613,12 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000226
-    multivalued: false
     alias: freq_clean
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
     - BuiltEnvironment
     - FoodFoodProductionFacility
     range: FREQ_CLEAN_ENUM
-    required: false
-    recommended: false
   samp_room_id:
     name: samp_room_id
     description: Sampling room number. This ID should be consistent with the designations
@@ -2693,15 +2629,12 @@ attributes:
     - identifier
     - room
     slot_uri: MIXS:0000244
-    multivalued: false
     alias: samp_room_id
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
     - BuiltEnvironment
     - FoodFoodProductionFacility
     range: integer
-    required: false
-    recommended: false
   pool_dna_extracts:
     name: pool_dna_extracts
     description: Indicate whether multiple DNA extractions were mixed. If the answer
@@ -2710,7 +2643,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{boolean},{integer}'
     slot_uri: MIXS:0000325
-    multivalued: false
     alias: pool_dna_extracts
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -2720,8 +2652,6 @@ attributes:
     - FoodHumanFoods
     - Soil
     range: string
-    required: false
-    recommended: false
   samp_store_loc:
     name: samp_store_loc
     description: Location at which sample was stored, usually name of a specific freezer/room
@@ -2729,7 +2659,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000755
-    multivalued: false
     alias: samp_store_loc
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -2754,38 +2683,30 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   surf_material:
     name: surf_material
     description: Surface materials at the point of sampling
     title: surface material
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000758
-    multivalued: false
     alias: surf_material
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
     - BuiltEnvironment
     - FoodFoodProductionFacility
     range: SURF_MATERIAL_ENUM
-    required: false
-    recommended: false
   indoor_surf:
     name: indoor_surf
     description: Type of indoor surface
     title: indoor surface
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000764
-    multivalued: false
     alias: indoor_surf
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
     - BuiltEnvironment
     - FoodFoodProductionFacility
     range: INDOOR_SURF_ENUM
-    required: false
-    recommended: false
   avg_occup:
     name: avg_occup
     description: Daily average occupancy of room. Indicate the number of person(s)
@@ -2795,15 +2716,12 @@ attributes:
     - value: '6'
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000775
-    multivalued: false
     alias: avg_occup
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
     - BuiltEnvironment
     - FoodFoodProductionFacility
     range: float
-    required: false
-    recommended: false
   samp_floor:
     name: samp_floor
     annotations:
@@ -2819,15 +2737,12 @@ attributes:
     - floor
     string_serialization: '[1st floor|2nd floor|{integer} floor|basement|lobby]'
     slot_uri: MIXS:0000828
-    multivalued: false
     alias: samp_floor
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
     - BuiltEnvironment
     - FoodFoodProductionFacility
     range: string
-    required: false
-    recommended: false
   genetic_mod:
     name: genetic_mod
     annotations:
@@ -2844,7 +2759,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{PMID}|{DOI}|{URL}'
     slot_uri: MIXS:0000859
-    multivalued: false
     alias: genetic_mod
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -2855,8 +2769,6 @@ attributes:
     - HostAssociated
     - PlantAssociated
     range: string
-    required: false
-    recommended: false
   coll_site_geo_feat:
     name: coll_site_geo_feat
     annotations:
@@ -2879,7 +2791,6 @@ attributes:
     - site
     string_serialization: '{text}|{termLabel} [{termID}]'
     slot_uri: MIXS:0001183
-    multivalued: false
     alias: coll_site_geo_feat
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -2898,7 +2809,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{termLabel} [{termID}]'
     slot_uri: MIXS:0001154
-    multivalued: false
     alias: samp_source_mat_cat
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -2924,7 +2834,6 @@ attributes:
     - sample
     - type
     slot_uri: MIXS:0000998
-    multivalued: false
     alias: samp_type
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -2950,7 +2859,6 @@ attributes:
     title: sample storage media
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001229
-    multivalued: false
     alias: samp_stor_media
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -2973,7 +2881,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}|{termLabel} [{termID}]'
     slot_uri: MIXS:0001228
-    multivalued: false
     alias: samp_stor_device
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -2998,7 +2905,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}|{termLabel} [{termID}]'
     slot_uri: MIXS:0001184
-    multivalued: false
     alias: food_product_type
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -3055,7 +2961,6 @@ attributes:
     title: food product by quality
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001213
-    multivalued: false
     alias: food_product_qual
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -3106,8 +3011,6 @@ attributes:
     domain_of:
     - FoodFoodProductionFacility
     range: FACILITY_TYPE_ENUM
-    required: false
-    recommended: false
   food_trav_mode:
     name: food_trav_mode
     description: A descriptor for the method of movement of food commodity along the
@@ -3134,8 +3037,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$
     structured_pattern:
       syntax: ^{termLabel} \[{termID}\]$
@@ -3171,8 +3072,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   samp_transport_dur:
     name: samp_transport_dur
     annotations:
@@ -3191,7 +3090,6 @@ attributes:
     - sample
     - transport
     slot_uri: MIXS:0001231
-    multivalued: false
     alias: samp_transport_dur
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -3199,8 +3097,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^P(?:(?:\d+D|\d+M(?:\d+D)?|\d+Y(?:\d+M(?:\d+D)?)?)(?:T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S))?|T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S)|\d+W)$
     structured_pattern:
       syntax: ^{duration}$
@@ -3227,7 +3123,6 @@ attributes:
     - transport
     string_serialization: '{float} {unit} {text}'
     slot_uri: MIXS:0001232
-    multivalued: false
     alias: samp_transport_temp
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -3235,8 +3130,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   num_samp_collect:
     name: num_samp_collect
     description: The number of samples collected during the current sampling event
@@ -3248,15 +3141,12 @@ attributes:
     - number
     - sample
     slot_uri: MIXS:0001224
-    multivalued: false
     alias: num_samp_collect
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3292,8 +3182,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   hygienic_area:
     name: hygienic_area
     annotations:
@@ -3315,14 +3203,11 @@ attributes:
     - production
     string_serialization: '{text}'
     slot_uri: MIXS:0001253
-    multivalued: false
     alias: hygienic_area
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
     - FoodFoodProductionFacility
     range: string
-    required: false
-    recommended: false
   env_monitoring_zone:
     name: env_monitoring_zone
     annotations:
@@ -3346,14 +3231,11 @@ attributes:
     - production
     string_serialization: '{text}'
     slot_uri: MIXS:0001254
-    multivalued: false
     alias: env_monitoring_zone
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
     - FoodFoodProductionFacility
     range: string
-    required: false
-    recommended: false
   area_samp_size:
     name: area_samp_size
     annotations:
@@ -3375,14 +3257,11 @@ attributes:
     - size
     string_serialization: '{integer} {unit} x {integer} {unit}'
     slot_uri: MIXS:0001255
-    multivalued: false
     alias: area_samp_size
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
     - FoodFoodProductionFacility
     range: string
-    required: false
-    recommended: false
   samp_surf_moisture:
     name: samp_surf_moisture
     description: Degree of water held on a sampled surface.  If present, user can
@@ -3403,8 +3282,6 @@ attributes:
     domain_of:
     - FoodFoodProductionFacility
     range: SAMP_SURF_MOISTURE_ENUM
-    required: false
-    recommended: false
   samp_loc_condition:
     name: samp_loc_condition
     description: The condition of the sample location at the time of sampling
@@ -3417,14 +3294,11 @@ attributes:
     - location
     - sample
     slot_uri: MIXS:0001257
-    multivalued: false
     alias: samp_loc_condition
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
     - FoodFoodProductionFacility
     range: SAMP_LOC_CONDITION_ENUM
-    required: false
-    recommended: false
   biocide_used:
     name: biocide_used
     annotations:
@@ -3450,8 +3324,6 @@ attributes:
     domain_of:
     - FoodFoodProductionFacility
     range: string
-    required: false
-    recommended: false
   ster_meth_samp_room:
     name: ster_meth_samp_room
     annotations:
@@ -3477,8 +3349,6 @@ attributes:
     domain_of:
     - FoodFoodProductionFacility
     range: string
-    required: false
-    recommended: false
   enrichment_protocol:
     name: enrichment_protocol
     description: The microbiological workflow or protocol followed to test for the
@@ -3487,7 +3357,6 @@ attributes:
     title: enrichment protocol
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001177
-    multivalued: false
     alias: enrichment_protocol
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -3497,8 +3366,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$|([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}|{text}$
@@ -3532,8 +3399,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   microb_cult_med:
     name: microb_cult_med
     description: A culture medium used to select for, grow, and maintain prokaryotic
@@ -3549,7 +3414,6 @@ attributes:
     - culture
     - microbiological
     slot_uri: MIXS:0001216
-    multivalued: false
     alias: microb_cult_med
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -3557,8 +3421,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+)|(([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\])$
     structured_pattern:
       syntax: ^{text}|({termLabel} \[{termID}\])$
@@ -3580,7 +3442,6 @@ attributes:
     keywords:
     - time
     slot_uri: MIXS:0001173
-    multivalued: false
     alias: timepoint
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -3589,8 +3450,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^P(?:(?:\d+D|\d+M(?:\d+D)?|\d+Y(?:\d+M(?:\d+D)?)?)(?:T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S))?|T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S)|\d+W)$
     structured_pattern:
       syntax: ^{duration}$
@@ -3611,7 +3470,6 @@ attributes:
     keywords:
     - density
     slot_uri: MIXS:0001194
-    multivalued: false
     alias: bacterial_density
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -3619,8 +3477,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3641,7 +3497,6 @@ attributes:
     - date
     - isolation
     slot_uri: MIXS:0001181
-    multivalued: false
     alias: cult_isol_date
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -3651,8 +3506,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: datetime
-    required: false
-    recommended: false
   cult_result:
     name: cult_result
     description: Any result of a bacterial culture experiment reported as a binary
@@ -3664,7 +3517,6 @@ attributes:
     keywords:
     - culture
     slot_uri: MIXS:0001117
-    multivalued: false
     alias: cult_result
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -3673,8 +3525,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: CULT_RESULT_ENUM
-    required: false
-    recommended: false
   cult_result_org:
     name: cult_result_org
     description: Taxonomic information about the cultured organism(s)
@@ -3695,8 +3545,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^(([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\])|[1-9][0-9]*$
     structured_pattern:
       syntax: ^({termLabel} \[{termID}\])|{integer}$
@@ -3720,8 +3568,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   samp_purpose:
     name: samp_purpose
     description: The reason that the sample was collected
@@ -3733,7 +3579,6 @@ attributes:
       sample|passive surveillance|population based studies|research|research and development]
       or {text}'
     slot_uri: MIXS:0001151
-    multivalued: false
     alias: samp_purpose
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -3742,8 +3587,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   samp_rep_tech:
     name: samp_rep_tech
     description: Repeated measurements of the same sample that show independent measures
@@ -3755,7 +3598,6 @@ attributes:
     keywords:
     - sample
     slot_uri: MIXS:0001227
-    multivalued: false
     alias: samp_rep_tech
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -3763,8 +3605,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3782,7 +3622,6 @@ attributes:
     keywords:
     - sample
     slot_uri: MIXS:0001226
-    multivalued: false
     alias: samp_rep_biol
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -3790,8 +3629,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3810,7 +3647,6 @@ attributes:
     - sample
     - transport
     slot_uri: MIXS:0001230
-    multivalued: false
     alias: samp_transport_cont
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -3818,8 +3654,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: SAMP_TRANSPORT_CONT_ENUM
-    required: false
-    recommended: false
   study_design:
     name: study_design
     annotations:
@@ -3846,8 +3680,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   nucl_acid_ext_kit:
     name: nucl_acid_ext_kit
     annotations:
@@ -3871,8 +3703,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   library_prep_kit:
     name: library_prep_kit
     description: Packaged kits (containing adapters, indexes, enzymes, buffers etc.),
@@ -3884,7 +3714,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0001145
-    multivalued: false
     alias: library_prep_kit
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -3894,8 +3723,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   sequencing_kit:
     name: sequencing_kit
     annotations:
@@ -3915,7 +3742,6 @@ attributes:
     - kit
     string_serialization: '{text}'
     slot_uri: MIXS:0001155
-    multivalued: false
     alias: sequencing_kit
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -3924,8 +3750,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   sequencing_location:
     name: sequencing_location
     description: The location the sequencing run was performed. Indicate the name
@@ -3937,7 +3761,6 @@ attributes:
     keywords:
     - location
     slot_uri: MIXS:0001156
-    multivalued: false
     alias: sequencing_location
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -3947,8 +3770,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   study_inc_temp:
     name: study_inc_temp
     annotations:
@@ -3965,7 +3786,6 @@ attributes:
     - incubation
     - temperature
     slot_uri: MIXS:0001238
-    multivalued: false
     alias: study_inc_temp
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -3973,8 +3793,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3998,7 +3816,6 @@ attributes:
     - incubation
     - period
     slot_uri: MIXS:0001237
-    multivalued: false
     alias: study_inc_dur
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -4006,8 +3823,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^P(?:(?:\d+D|\d+M(?:\d+D)?|\d+Y(?:\d+M(?:\d+D)?)?)(?:T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S))?|T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S)|\d+W)$
     structured_pattern:
       syntax: ^{duration}$
@@ -4030,7 +3845,6 @@ attributes:
     - period
     - time
     slot_uri: MIXS:0001239
-    multivalued: false
     alias: study_timecourse
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -4038,8 +3852,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4074,8 +3886,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   food_source:
     name: food_source
     description: Type of plant or animal from which the food product or its major
@@ -4086,7 +3896,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{termLabel} [{termID}]'
     slot_uri: MIXS:0001139
-    multivalued: false
     alias: food_source
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -4096,8 +3905,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   food_dis_point:
     name: food_dis_point
     description: 'A reference to a place on the Earth, by its name or by its geographical
@@ -4123,8 +3930,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: '^([^\s-]{1,2}|[^\s-]+.+[^\s-]+): ([^\s-]{1,2}|[^\s-]+.+[^\s-]+), ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$'
     structured_pattern:
       syntax: '^{text}: {text}, {text}$'
@@ -4159,8 +3964,6 @@ attributes:
     - FoodAnimalAndAnimalFeed
     - FoodFoodProductionFacility
     range: string
-    required: false
-    recommended: false
   food_origin:
     name: food_origin
     description: A reference to a place on the Earth, by its name or by its geographical
@@ -4170,7 +3973,6 @@ attributes:
     title: food product origin geographic location
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001207
-    multivalued: false
     alias: food_origin
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -4178,8 +3980,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: '^([^\s-]{1,2}|[^\s-]+.+[^\s-]+): ([^\s-]{1,2}|[^\s-]+.+[^\s-]+), ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$'
     structured_pattern:
       syntax: '^{text}: {text}, {text}$'
@@ -4205,8 +4005,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   food_additive:
     name: food_additive
     annotations:
@@ -4235,8 +4033,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   food_trace_list:
     name: food_trace_list
     description: The FDA is proposing to establish additional traceability recordkeeping
@@ -4254,7 +4050,6 @@ attributes:
     keywords:
     - food
     slot_uri: MIXS:0001214
-    multivalued: false
     alias: food_trace_list
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -4262,8 +4057,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: FOOD_TRACE_LIST_ENUM
-    required: false
-    recommended: false
   part_plant_animal:
     name: part_plant_animal
     annotations:
@@ -4291,8 +4084,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   food_ingredient:
     name: food_ingredient
     annotations:
@@ -4321,8 +4112,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   spec_intended_cons:
     name: spec_intended_cons
     description: Food consumer type, human or animal, for which the food product is
@@ -4341,8 +4130,6 @@ attributes:
     domain_of:
     - FoodFoodProductionFacility
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$
     structured_pattern:
       syntax: ^{termLabel} \[{termID}\]$
@@ -4368,8 +4155,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$
     structured_pattern:
       syntax: ^{termLabel} \[{termID}\]$
@@ -4403,8 +4188,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   food_allergen_label:
     name: food_allergen_label
     annotations:
@@ -4428,8 +4211,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   food_prod_char:
     name: food_prod_char
     description: Descriptors of the food production system such as wild caught, free-range,
@@ -4449,8 +4230,6 @@ attributes:
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
     range: string
-    required: false
-    recommended: false
   prod_label_claims:
     name: prod_label_claims
     description: Labeling claims containing descriptors such as wild caught, free-range,
@@ -4470,8 +4249,6 @@ attributes:
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
     range: string
-    required: false
-    recommended: false
   food_name_status:
     name: food_name_status
     description: A datum indicating that use of a food product name is regulated in
@@ -4486,15 +4263,12 @@ attributes:
     - product
     - status
     slot_uri: MIXS:0001206
-    multivalued: false
     alias: food_name_status
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$
     structured_pattern:
       syntax: ^{termLabel} \[{termID}\]$
@@ -4527,8 +4301,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   food_cooking_proc:
     name: food_cooking_proc
     annotations:
@@ -4554,8 +4326,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   food_treat_proc:
     name: food_treat_proc
     annotations:
@@ -4586,8 +4356,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   food_contain_wrap:
     name: food_contain_wrap
     annotations:
@@ -4606,7 +4374,6 @@ attributes:
     - food
     string_serialization: '{text}|{termLabel} [{termID}]'
     slot_uri: MIXS:0001132
-    multivalued: false
     alias: food_contain_wrap
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -4615,8 +4382,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   food_pack_capacity:
     name: food_pack_capacity
     annotations:
@@ -4632,7 +4397,6 @@ attributes:
     - food
     - package
     slot_uri: MIXS:0001208
-    multivalued: false
     alias: food_pack_capacity
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -4640,8 +4404,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4673,8 +4435,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   food_prior_contact:
     name: food_prior_contact
     annotations:
@@ -4704,8 +4464,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   food_prod:
     name: food_prod
     description: Descriptors of the food production system or of the agricultural
@@ -4725,8 +4483,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$
     structured_pattern:
       syntax: ^{termLabel} \[{termID}\]$
@@ -4752,7 +4508,6 @@ attributes:
     - quality
     string_serialization: '[best by|best if used by|freeze by|use by]; date'
     slot_uri: MIXS:0001178
-    multivalued: false
     alias: food_quality_date
     owner: MimarksCFoodFoodProductionFacility
     domain_of:
@@ -4761,8 +4516,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   repository_name:
     name: repository_name
     annotations:
@@ -4787,8 +4540,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   intended_consumer:
     name: intended_consumer
     description: Food consumer type, human or animal, for which the food product is
@@ -4807,8 +4558,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   food_pack_integrity:
     name: food_pack_integrity
     annotations:
@@ -4834,8 +4583,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   misc_param:
     name: misc_param
     annotations:
@@ -4879,8 +4626,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
 class_uri: MIXS:0010009_0016021
 
 </code></pre>

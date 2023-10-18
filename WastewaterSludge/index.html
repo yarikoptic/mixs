@@ -720,8 +720,6 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   depth:
     name: depth
     examples:
@@ -760,8 +758,6 @@ slot_usage:
     - Sediment
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   organism_count:
     name: organism_count
     examples:
@@ -789,8 +785,6 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   oxy_stat_samp:
     name: oxy_stat_samp
     domain_of:
@@ -811,8 +805,6 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   perturbation:
     name: perturbation
     domain_of:
@@ -834,8 +826,6 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   ph:
     name: ph
     domain_of:
@@ -848,8 +838,6 @@ slot_usage:
     - Soil
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   samp_store_dur:
     name: samp_store_dur
     domain_of:
@@ -874,8 +862,6 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   samp_store_loc:
     name: samp_store_loc
     domain_of:
@@ -899,8 +885,6 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   samp_vol_we_dna_ext:
     name: samp_vol_we_dna_ext
     domain_of:
@@ -937,8 +921,6 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   temp:
     name: temp
     domain_of:
@@ -974,15 +956,11 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   tot_phosphate:
     name: tot_phosphate
     domain_of:
     - Agriculture
     - WastewaterSludge
-    required: false
-    recommended: false
 class_uri: MIXS:0016013
 
 </code></pre>
@@ -1017,8 +995,6 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   depth:
     name: depth
     examples:
@@ -1057,8 +1033,6 @@ slot_usage:
     - Sediment
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   organism_count:
     name: organism_count
     examples:
@@ -1086,8 +1060,6 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   oxy_stat_samp:
     name: oxy_stat_samp
     domain_of:
@@ -1108,8 +1080,6 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   perturbation:
     name: perturbation
     domain_of:
@@ -1131,8 +1101,6 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   ph:
     name: ph
     domain_of:
@@ -1145,8 +1113,6 @@ slot_usage:
     - Soil
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   samp_store_dur:
     name: samp_store_dur
     domain_of:
@@ -1171,8 +1137,6 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   samp_store_loc:
     name: samp_store_loc
     domain_of:
@@ -1196,8 +1160,6 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   samp_vol_we_dna_ext:
     name: samp_vol_we_dna_ext
     domain_of:
@@ -1234,8 +1196,6 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   temp:
     name: temp
     domain_of:
@@ -1271,15 +1231,11 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    required: false
-    recommended: false
   tot_phosphate:
     name: tot_phosphate
     domain_of:
     - Agriculture
     - WastewaterSludge
-    required: false
-    recommended: false
 attributes:
   samp_name:
     name: samp_name
@@ -1303,7 +1259,6 @@ attributes:
     keywords:
     - sample
     slot_uri: MIXS:0001107
-    multivalued: false
     alias: samp_name
     owner: WastewaterSludge
     domain_of:
@@ -1354,7 +1309,6 @@ attributes:
     keywords:
     - project
     slot_uri: MIXS:0000092
-    multivalued: false
     alias: project_name
     owner: WastewaterSludge
     domain_of:
@@ -1403,7 +1357,6 @@ attributes:
     - value: 10 meter
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000018
-    multivalued: false
     alias: depth
     owner: WastewaterSludge
     domain_of:
@@ -1452,7 +1405,6 @@ attributes:
     keywords:
     - alkalinity
     slot_uri: MIXS:0000421
-    multivalued: false
     alias: alkalinity
     owner: WastewaterSludge
     domain_of:
@@ -1464,8 +1416,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -1486,14 +1436,11 @@ attributes:
     keywords:
     - oxygen
     slot_uri: MIXS:0000653
-    multivalued: false
     alias: biochem_oxygen_dem
     owner: WastewaterSludge
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -1531,8 +1478,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   chem_oxygen_dem:
     name: chem_oxygen_dem
     annotations:
@@ -1547,14 +1492,11 @@ attributes:
     keywords:
     - oxygen
     slot_uri: MIXS:0000656
-    multivalued: false
     alias: chem_oxygen_dem
     owner: WastewaterSludge
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -1573,14 +1515,11 @@ attributes:
     keywords:
     - percent
     slot_uri: MIXS:0000657
-    multivalued: false
     alias: efficiency_percent
     owner: WastewaterSludge
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -1609,8 +1548,6 @@ attributes:
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
   gaseous_substances:
     name: gaseous_substances
     annotations:
@@ -1632,8 +1569,6 @@ attributes:
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
   indust_eff_percent:
     name: indust_eff_percent
     annotations:
@@ -1647,14 +1582,11 @@ attributes:
     keywords:
     - percent
     slot_uri: MIXS:0000662
-    multivalued: false
     alias: indust_eff_percent
     owner: WastewaterSludge
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -1685,8 +1617,6 @@ attributes:
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
   misc_param:
     name: misc_param
     annotations:
@@ -1730,15 +1660,12 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   nitrate:
     name: nitrate
     description: Concentration of nitrate in the sample
     title: nitrate
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000425
-    multivalued: false
     alias: nitrate
     owner: WastewaterSludge
     domain_of:
@@ -1750,8 +1677,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -1782,8 +1707,6 @@ attributes:
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
   organism_count:
     name: organism_count
     description: 'Total cell count of any organism (or group of organisms) per gram,
@@ -1823,15 +1746,12 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   oxy_stat_samp:
     name: oxy_stat_samp
     description: Oxygenation status of sample
     title: oxygenation status of sample
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000753
-    multivalued: false
     alias: oxy_stat_samp
     owner: WastewaterSludge
     domain_of:
@@ -1853,8 +1773,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: OXY_STAT_SAMP_ENUM
-    required: false
-    recommended: false
   ph:
     name: ph
     description: Ph measurement of the sample, or liquid portion of sample, or aqueous
@@ -1862,7 +1780,6 @@ attributes:
     title: pH
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001001
-    multivalued: false
     alias: ph
     owner: WastewaterSludge
     domain_of:
@@ -1876,8 +1793,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: float
-    required: false
-    recommended: false
   perturbation:
     name: perturbation
     description: Type of perturbation, e.g. chemical administration, physical disturbance,
@@ -1911,8 +1826,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   phosphate:
     name: phosphate
     annotations:
@@ -1927,7 +1840,6 @@ attributes:
     keywords:
     - phosphate
     slot_uri: MIXS:0000505
-    multivalued: false
     alias: phosphate
     owner: WastewaterSludge
     domain_of:
@@ -1937,8 +1849,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -1957,14 +1867,11 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000348
-    multivalued: false
     alias: pre_treatment
     owner: WastewaterSludge
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
   primary_treatment:
     name: primary_treatment
     annotations:
@@ -1981,14 +1888,11 @@ attributes:
     - treatment
     string_serialization: '{text}'
     slot_uri: MIXS:0000349
-    multivalued: false
     alias: primary_treatment
     owner: WastewaterSludge
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
   reactor_type:
     name: reactor_type
     annotations:
@@ -2004,14 +1908,11 @@ attributes:
     - type
     string_serialization: '{text}'
     slot_uri: MIXS:0000350
-    multivalued: false
     alias: reactor_type
     owner: WastewaterSludge
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
   salinity:
     name: salinity
     annotations:
@@ -2031,7 +1932,6 @@ attributes:
     keywords:
     - salinity
     slot_uri: MIXS:0000183
-    multivalued: false
     alias: salinity
     owner: WastewaterSludge
     domain_of:
@@ -2053,8 +1953,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2068,7 +1966,6 @@ attributes:
     title: sample storage duration
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000116
-    multivalued: false
     alias: samp_store_dur
     owner: WastewaterSludge
     domain_of:
@@ -2094,8 +1991,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^P(?:(?:\d+D|\d+M(?:\d+D)?|\d+Y(?:\d+M(?:\d+D)?)?)(?:T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S))?|T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S)|\d+W)$
     structured_pattern:
       syntax: ^{duration}$
@@ -2108,7 +2003,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000755
-    multivalued: false
     alias: samp_store_loc
     owner: WastewaterSludge
     domain_of:
@@ -2133,8 +2027,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   samp_store_temp:
     name: samp_store_temp
     annotations:
@@ -2151,7 +2043,6 @@ attributes:
     - storage
     - temperature
     slot_uri: MIXS:0000110
-    multivalued: false
     alias: samp_store_temp
     owner: WastewaterSludge
     domain_of:
@@ -2177,8 +2068,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2193,7 +2082,6 @@ attributes:
     title: sample volume or weight for DNA extraction
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000111
-    multivalued: false
     alias: samp_vol_we_dna_ext
     owner: WastewaterSludge
     domain_of:
@@ -2231,8 +2119,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2254,14 +2140,11 @@ attributes:
     - treatment
     string_serialization: '{text}'
     slot_uri: MIXS:0000351
-    multivalued: false
     alias: secondary_treatment
     owner: WastewaterSludge
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
   sewage_type:
     name: sewage_type
     annotations:
@@ -2275,14 +2158,11 @@ attributes:
     - type
     string_serialization: '{text}'
     slot_uri: MIXS:0000215
-    multivalued: false
     alias: sewage_type
     owner: WastewaterSludge
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
   sludge_retent_time:
     name: sludge_retent_time
     annotations:
@@ -2295,14 +2175,11 @@ attributes:
     keywords:
     - time
     slot_uri: MIXS:0000669
-    multivalued: false
     alias: sludge_retent_time
     owner: WastewaterSludge
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2321,7 +2198,6 @@ attributes:
     - value: 10.5 milligram per liter
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000428
-    multivalued: false
     alias: sodium
     owner: WastewaterSludge
     domain_of:
@@ -2333,8 +2209,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2366,8 +2240,6 @@ attributes:
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
   soluble_org_mat:
     name: soluble_org_mat
     annotations:
@@ -2393,8 +2265,6 @@ attributes:
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
   suspend_solids:
     name: suspend_solids
     annotations:
@@ -2422,15 +2292,12 @@ attributes:
     - HydrocarbonResourcesFluidsSwabs
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
   temp:
     name: temp
     description: Temperature of the sample at the time of sampling
     title: temperature
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000113
-    multivalued: false
     alias: temp
     owner: WastewaterSludge
     domain_of:
@@ -2467,8 +2334,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2489,14 +2354,11 @@ attributes:
     - treatment
     string_serialization: '{text}'
     slot_uri: MIXS:0000352
-    multivalued: false
     alias: tertiary_treatment
     owner: WastewaterSludge
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
   tot_nitro:
     name: tot_nitro
     annotations:
@@ -2515,7 +2377,6 @@ attributes:
     - nitrogen
     - total
     slot_uri: MIXS:0000102
-    multivalued: false
     alias: tot_nitro
     owner: WastewaterSludge
     domain_of:
@@ -2524,8 +2385,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2538,15 +2397,12 @@ attributes:
     title: total phosphate
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000689
-    multivalued: false
     alias: tot_phosphate
     owner: WastewaterSludge
     domain_of:
     - Agriculture
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2567,14 +2423,11 @@ attributes:
     - type
     string_serialization: '{text}'
     slot_uri: MIXS:0000353
-    multivalued: false
     alias: wastewater_type
     owner: WastewaterSludge
     domain_of:
     - WastewaterSludge
     range: string
-    required: false
-    recommended: false
 class_uri: MIXS:0016013
 
 </code></pre>

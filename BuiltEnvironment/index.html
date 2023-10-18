@@ -1745,7 +1745,6 @@ attributes:
     keywords:
     - sample
     slot_uri: MIXS:0001107
-    multivalued: false
     alias: samp_name
     owner: BuiltEnvironment
     domain_of:
@@ -1796,7 +1795,6 @@ attributes:
     keywords:
     - project
     slot_uri: MIXS:0000092
-    multivalued: false
     alias: project_name
     owner: BuiltEnvironment
     domain_of:
@@ -1841,7 +1839,6 @@ attributes:
     title: surface material
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000758
-    multivalued: false
     alias: surf_material
     owner: BuiltEnvironment
     domain_of:
@@ -1913,7 +1910,6 @@ attributes:
     - air
     - humidity
     slot_uri: MIXS:0000122
-    multivalued: false
     alias: abs_air_humidity
     owner: BuiltEnvironment
     domain_of:
@@ -1963,7 +1959,6 @@ attributes:
     - value: 20 degree Celsius
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000124
-    multivalued: false
     alias: air_temp
     owner: BuiltEnvironment
     domain_of:
@@ -1992,7 +1987,6 @@ attributes:
     - surface
     - temperature
     slot_uri: MIXS:0000125
-    multivalued: false
     alias: surf_temp
     owner: BuiltEnvironment
     domain_of:
@@ -2017,7 +2011,6 @@ attributes:
     - ph
     - surface
     slot_uri: MIXS:0000760
-    multivalued: false
     alias: surf_moisture_ph
     owner: BuiltEnvironment
     domain_of:
@@ -2057,7 +2050,6 @@ attributes:
     - moisture
     - surface
     slot_uri: MIXS:0000128
-    multivalued: false
     alias: surf_moisture
     owner: BuiltEnvironment
     domain_of:
@@ -2083,14 +2075,11 @@ attributes:
     - value: 22 degree Celsius
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000129
-    multivalued: false
     alias: dew_point
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2103,7 +2092,6 @@ attributes:
     title: carbon dioxide
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000097
-    multivalued: false
     alias: carb_dioxide
     owner: BuiltEnvironment
     domain_of:
@@ -2184,7 +2172,6 @@ attributes:
     keywords:
     - indoor
     slot_uri: MIXS:0000763
-    multivalued: false
     alias: indoor_space
     owner: BuiltEnvironment
     domain_of:
@@ -2197,7 +2184,6 @@ attributes:
     title: indoor surface
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000764
-    multivalued: false
     alias: indoor_surf
     owner: BuiltEnvironment
     domain_of:
@@ -2258,8 +2244,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: SUBSTRUCTURE_TYPE_ENUM
-    required: false
-    recommended: false
   building_setting:
     name: building_setting
     description: A location (geography) where a building is set
@@ -2268,7 +2252,6 @@ attributes:
     - value: rural
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000768
-    multivalued: false
     alias: building_setting
     owner: BuiltEnvironment
     domain_of:
@@ -2315,8 +2298,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
   space_typ_state:
     name: space_typ_state
     description: Customary or normal state of the space
@@ -2325,7 +2306,6 @@ attributes:
     - value: typically occupied
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000770
-    multivalued: false
     alias: space_typ_state
     owner: BuiltEnvironment
     domain_of:
@@ -2342,7 +2322,6 @@ attributes:
     keywords:
     - density
     slot_uri: MIXS:0000771
-    multivalued: false
     alias: typ_occup_density
     owner: BuiltEnvironment
     domain_of:
@@ -2378,7 +2357,6 @@ attributes:
     keywords:
     - density
     slot_uri: MIXS:0000217
-    multivalued: false
     alias: occup_density_samp
     owner: BuiltEnvironment
     domain_of:
@@ -2396,14 +2374,11 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{integer}{text}'
     slot_uri: MIXS:0000218
-    multivalued: false
     alias: address
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
   adj_room:
     name: adj_room
     description: List of rooms (room number, room name) immediately adjacent to the
@@ -2414,14 +2389,11 @@ attributes:
     - adjacent
     - room
     slot_uri: MIXS:0000219
-    multivalued: false
     alias: adj_room
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+);[1-9][0-9]*$
     structured_pattern:
       syntax: ^{room_name};{room_number}$
@@ -2437,14 +2409,11 @@ attributes:
     - value: plane
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000773
-    multivalued: false
     alias: aero_struc
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: AERO_STRUC_ENUM
-    required: false
-    recommended: false
   amount_light:
     name: amount_light
     annotations:
@@ -2458,14 +2427,11 @@ attributes:
     keywords:
     - light
     slot_uri: MIXS:0000140
-    multivalued: false
     alias: amount_light
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2481,14 +2447,11 @@ attributes:
     - value: shed
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000774
-    multivalued: false
     alias: arch_struc
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: ARCH_STRUC_ENUM
-    required: false
-    recommended: false
   avg_occup:
     name: avg_occup
     description: Daily average occupancy of room. Indicate the number of person(s)
@@ -2498,15 +2461,12 @@ attributes:
     - value: '2'
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000775
-    multivalued: false
     alias: avg_occup
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     - FoodFoodProductionFacility
     range: float
-    required: false
-    recommended: false
   avg_dew_point:
     name: avg_dew_point
     annotations:
@@ -2522,14 +2482,11 @@ attributes:
     keywords:
     - average
     slot_uri: MIXS:0000141
-    multivalued: false
     alias: avg_dew_point
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2552,14 +2509,11 @@ attributes:
     - average
     - temperature
     slot_uri: MIXS:0000142
-    multivalued: false
     alias: avg_temp
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2576,14 +2530,11 @@ attributes:
     keywords:
     - count
     slot_uri: MIXS:0000776
-    multivalued: false
     alias: bathroom_count
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: integer
-    required: false
-    recommended: false
   bedroom_count:
     name: bedroom_count
     description: The number of bedrooms in the building
@@ -2594,14 +2545,11 @@ attributes:
     keywords:
     - count
     slot_uri: MIXS:0000777
-    multivalued: false
     alias: bedroom_count
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: integer
-    required: false
-    recommended: false
   built_struc_age:
     name: built_struc_age
     annotations:
@@ -2616,14 +2564,11 @@ attributes:
     keywords:
     - age
     slot_uri: MIXS:0000145
-    multivalued: false
     alias: built_struc_age
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2639,14 +2584,11 @@ attributes:
     - value: rural
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000778
-    multivalued: false
     alias: built_struc_set
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: BUILT_STRUC_SET_ENUM
-    required: false
-    recommended: false
   built_struc_type:
     name: built_struc_type
     description: A physical structure that is a body or assemblage of bodies in space
@@ -2656,14 +2598,11 @@ attributes:
     keywords:
     - type
     slot_uri: MIXS:0000721
-    multivalued: false
     alias: built_struc_type
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
   ceil_area:
     name: ceil_area
     annotations:
@@ -2679,14 +2618,11 @@ attributes:
     - area
     - ceiling
     slot_uri: MIXS:0000148
-    multivalued: false
     alias: ceil_area
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2705,14 +2641,11 @@ attributes:
     - ceiling
     - condition
     slot_uri: MIXS:0000779
-    multivalued: false
     alias: ceil_cond
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: SHARED_ENUM_3
-    required: false
-    recommended: false
   ceil_finish_mat:
     name: ceil_finish_mat
     description: The type of material used to finish a ceiling
@@ -2724,14 +2657,11 @@ attributes:
     - ceiling
     - material
     slot_uri: MIXS:0000780
-    multivalued: false
     alias: ceil_finish_mat
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: CEIL_FINISH_MAT_ENUM
-    required: false
-    recommended: false
   ceil_water_mold:
     name: ceil_water_mold
     description: Signs of the presence of mold or mildew on the ceiling
@@ -2742,14 +2672,11 @@ attributes:
     keywords:
     - ceiling
     slot_uri: MIXS:0000781
-    multivalued: false
     alias: ceil_water_mold
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: SHARED_ENUM_1
-    required: false
-    recommended: false
   ceil_struc:
     name: ceil_struc
     description: The construction format of the ceiling
@@ -2760,14 +2687,11 @@ attributes:
     keywords:
     - ceiling
     slot_uri: MIXS:0000782
-    multivalued: false
     alias: ceil_struc
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: CEIL_STRUC_ENUM
-    required: false
-    recommended: false
   ceil_texture:
     name: ceil_texture
     description: The feel, appearance, or consistency of a ceiling surface
@@ -2779,14 +2703,11 @@ attributes:
     - ceiling
     - texture
     slot_uri: MIXS:0000783
-    multivalued: false
     alias: ceil_texture
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: SHARED_ENUM_4
-    required: false
-    recommended: false
   ceil_thermal_mass:
     name: ceil_thermal_mass
     annotations:
@@ -2803,14 +2724,11 @@ attributes:
     - ceiling
     - mass
     slot_uri: MIXS:0000143
-    multivalued: false
     alias: ceil_thermal_mass
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2828,14 +2746,11 @@ attributes:
     - ceiling
     - type
     slot_uri: MIXS:0000784
-    multivalued: false
     alias: ceil_type
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: CEIL_TYPE_ENUM
-    required: false
-    recommended: false
   cool_syst_id:
     name: cool_syst_id
     description: The cooling system identifier
@@ -2846,14 +2761,11 @@ attributes:
     keywords:
     - identifier
     slot_uri: MIXS:0000785
-    multivalued: false
     alias: cool_syst_id
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: integer
-    required: false
-    recommended: false
   date_last_rain:
     name: date_last_rain
     description: The date of the last time it rained
@@ -2865,14 +2777,11 @@ attributes:
     - date
     - rain
     slot_uri: MIXS:0000786
-    multivalued: false
     alias: date_last_rain
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: datetime
-    required: false
-    recommended: false
   build_docs:
     name: build_docs
     description: The building design, construction and operation documents
@@ -2883,14 +2792,11 @@ attributes:
     keywords:
     - documents
     slot_uri: MIXS:0000787
-    multivalued: false
     alias: build_docs
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: BUILD_DOCS_ENUM
-    required: false
-    recommended: false
   door_size:
     name: door_size
     annotations:
@@ -2907,14 +2813,11 @@ attributes:
     - door
     - size
     slot_uri: MIXS:0000158
-    multivalued: false
     alias: door_size
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2932,14 +2835,11 @@ attributes:
     - condition
     - door
     slot_uri: MIXS:0000788
-    multivalued: false
     alias: door_cond
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: SHARED_ENUM_2
-    required: false
-    recommended: false
   door_direct:
     name: door_direct
     description: The direction the door opens
@@ -2951,14 +2851,11 @@ attributes:
     - direction
     - door
     slot_uri: MIXS:0000789
-    multivalued: false
     alias: door_direct
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: DOOR_DIRECT_ENUM
-    required: false
-    recommended: false
   door_loc:
     name: door_loc
     description: The relative location of the door in the room
@@ -2970,14 +2867,11 @@ attributes:
     - door
     - location
     slot_uri: MIXS:0000790
-    multivalued: false
     alias: door_loc
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: SHARED_ENUM_0
-    required: false
-    recommended: false
   door_mat:
     name: door_mat
     description: The material the door is composed of
@@ -2989,14 +2883,11 @@ attributes:
     - door
     - material
     slot_uri: MIXS:0000791
-    multivalued: false
     alias: door_mat
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: DOOR_MAT_ENUM
-    required: false
-    recommended: false
   door_move:
     name: door_move
     description: The type of movement of the door
@@ -3007,14 +2898,11 @@ attributes:
     keywords:
     - door
     slot_uri: MIXS:0000792
-    multivalued: false
     alias: door_move
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: DOOR_MOVE_ENUM
-    required: false
-    recommended: false
   door_water_mold:
     name: door_water_mold
     description: Signs of the presence of mold or mildew on a door
@@ -3025,14 +2913,11 @@ attributes:
     keywords:
     - door
     slot_uri: MIXS:0000793
-    multivalued: false
     alias: door_water_mold
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: SHARED_ENUM_1
-    required: false
-    recommended: false
   door_type:
     name: door_type
     description: The type of door material
@@ -3044,14 +2929,11 @@ attributes:
     - door
     - type
     slot_uri: MIXS:0000794
-    multivalued: false
     alias: door_type
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: DOOR_TYPE_ENUM
-    required: false
-    recommended: false
   door_comp_type:
     name: door_comp_type
     description: The composite type of the door
@@ -3063,14 +2945,11 @@ attributes:
     - door
     - type
     slot_uri: MIXS:0000795
-    multivalued: false
     alias: door_comp_type
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: DOOR_COMP_TYPE_ENUM
-    required: false
-    recommended: false
   door_type_metal:
     name: door_type_metal
     description: The type of metal door
@@ -3082,14 +2961,11 @@ attributes:
     - door
     - type
     slot_uri: MIXS:0000796
-    multivalued: false
     alias: door_type_metal
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: DOOR_TYPE_METAL_ENUM
-    required: false
-    recommended: false
   door_type_wood:
     name: door_type_wood
     annotations:
@@ -3108,14 +2984,11 @@ attributes:
       and framed|battened|ledged, braced and frame|framed and paneled|glashed or sash|flush|louvered|wire
       gauged]'
     slot_uri: MIXS:0000797
-    multivalued: false
     alias: door_type_wood
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
   drawings:
     name: drawings
     description: The buildings architectural drawings; if design is chosen, indicate
@@ -3127,14 +3000,11 @@ attributes:
     keywords:
     - drawings
     slot_uri: MIXS:0000798
-    multivalued: false
     alias: drawings
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: DRAWINGS_ENUM
-    required: false
-    recommended: false
   elevator:
     name: elevator
     description: The number of elevators within the built structure
@@ -3145,14 +3015,11 @@ attributes:
     keywords:
     - count
     slot_uri: MIXS:0000799
-    multivalued: false
     alias: elevator
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: integer
-    required: false
-    recommended: false
   escalator:
     name: escalator
     description: The number of escalators within the built structure
@@ -3163,14 +3030,11 @@ attributes:
     keywords:
     - count
     slot_uri: MIXS:0000800
-    multivalued: false
     alias: escalator
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: integer
-    required: false
-    recommended: false
   exp_duct:
     name: exp_duct
     annotations:
@@ -3181,14 +3045,11 @@ attributes:
     title: exposed ductwork
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000144
-    multivalued: false
     alias: exp_duct
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3203,14 +3064,11 @@ attributes:
     keywords:
     - pipes
     slot_uri: MIXS:0000220
-    multivalued: false
     alias: exp_pipe
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[1-9][0-9]* ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{integer} {text}$
@@ -3226,14 +3084,11 @@ attributes:
     - door
     - exterior
     slot_uri: MIXS:0000170
-    multivalued: false
     alias: ext_door
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: integer
-    required: false
-    recommended: false
   fireplace_type:
     name: fireplace_type
     description: A firebox with chimney
@@ -3244,14 +3099,11 @@ attributes:
     keywords:
     - type
     slot_uri: MIXS:0000802
-    multivalued: false
     alias: fireplace_type
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: FIREPLACE_TYPE_ENUM
-    required: false
-    recommended: false
   floor_age:
     name: floor_age
     annotations:
@@ -3265,14 +3117,11 @@ attributes:
     - age
     - floor
     slot_uri: MIXS:0000164
-    multivalued: false
     alias: floor_age
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3292,14 +3141,11 @@ attributes:
     - area
     - floor
     slot_uri: MIXS:0000165
-    multivalued: false
     alias: floor_area
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3318,14 +3164,11 @@ attributes:
     - condition
     - floor
     slot_uri: MIXS:0000803
-    multivalued: false
     alias: floor_cond
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: SHARED_ENUM_3
-    required: false
-    recommended: false
   floor_count:
     name: floor_count
     description: The number of floors in the building, including basements and mechanical
@@ -3336,14 +3179,11 @@ attributes:
     - count
     - floor
     slot_uri: MIXS:0000225
-    multivalued: false
     alias: floor_count
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: integer
-    required: false
-    recommended: false
   floor_finish_mat:
     name: floor_finish_mat
     annotations:
@@ -3362,14 +3202,11 @@ attributes:
       composition tile|sheet vinyl|stone|bamboo|cork|terrazo|concrete|none;specify
       unfinished|sealed|clear finish|paint]'
     slot_uri: MIXS:0000804
-    multivalued: false
     alias: floor_finish_mat
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
   floor_water_mold:
     name: floor_water_mold
     description: Signs of the presence of mold or mildew in a room
@@ -3380,14 +3217,11 @@ attributes:
     keywords:
     - floor
     slot_uri: MIXS:0000805
-    multivalued: false
     alias: floor_water_mold
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: FLOOR_WATER_MOLD_ENUM
-    required: false
-    recommended: false
   floor_struc:
     name: floor_struc
     description: Refers to the structural elements and subfloor upon which the finish
@@ -3399,14 +3233,11 @@ attributes:
     keywords:
     - floor
     slot_uri: MIXS:0000806
-    multivalued: false
     alias: floor_struc
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: FLOOR_STRUC_ENUM
-    required: false
-    recommended: false
   floor_thermal_mass:
     name: floor_thermal_mass
     annotations:
@@ -3420,14 +3251,11 @@ attributes:
     - floor
     - mass
     slot_uri: MIXS:0000166
-    multivalued: false
     alias: floor_thermal_mass
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3442,15 +3270,12 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '[ Daily| Weekly| Monthly| Quarterly | Annually| other]'
     slot_uri: MIXS:0000226
-    multivalued: false
     alias: freq_clean
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     - FoodFoodProductionFacility
     range: FREQ_CLEAN_ENUM
-    required: false
-    recommended: false
   freq_cook:
     name: freq_cook
     description: The number of times a meal is cooked per week
@@ -3459,14 +3284,11 @@ attributes:
     keywords:
     - frequency
     slot_uri: MIXS:0000227
-    multivalued: false
     alias: freq_cook
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[1-9][0-9]* ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{integer} {text}$
@@ -3480,14 +3302,11 @@ attributes:
     - value: chair
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000807
-    multivalued: false
     alias: furniture
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: FURNITURE_ENUM
-    required: false
-    recommended: false
   gender_restroom:
     name: gender_restroom
     description: The gender type of the restroom
@@ -3496,14 +3315,11 @@ attributes:
     - value: male
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000808
-    multivalued: false
     alias: gender_restroom
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: GENDER_RESTROOM_ENUM
-    required: false
-    recommended: false
   hall_count:
     name: hall_count
     description: The total count of hallways and cooridors in the built structure
@@ -3514,14 +3330,11 @@ attributes:
     - count
     - hallway
     slot_uri: MIXS:0000228
-    multivalued: false
     alias: hall_count
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: integer
-    required: false
-    recommended: false
   handidness:
     name: handidness
     description: The handidness of the individual sampled
@@ -3530,14 +3343,11 @@ attributes:
     - value: right handedness
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000809
-    multivalued: false
     alias: handidness
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: HANDIDNESS_ENUM
-    required: false
-    recommended: false
   heat_deliv_loc:
     name: heat_deliv_loc
     description: The location of heat delivery within the room
@@ -3550,14 +3360,11 @@ attributes:
     - location
     - locations
     slot_uri: MIXS:0000810
-    multivalued: false
     alias: heat_deliv_loc
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: SHARED_ENUM_0
-    required: false
-    recommended: false
   heat_sys_deliv_meth:
     name: heat_sys_deliv_meth
     description: The method by which the heat is delivered through the system
@@ -3569,14 +3376,11 @@ attributes:
     - delivery
     - method
     slot_uri: MIXS:0000812
-    multivalued: false
     alias: heat_sys_deliv_meth
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: HEAT_SYS_DELIV_METH_ENUM
-    required: false
-    recommended: false
   heat_system_id:
     name: heat_system_id
     description: The heating system identifier
@@ -3585,14 +3389,11 @@ attributes:
     keywords:
     - identifier
     slot_uri: MIXS:0000833
-    multivalued: false
     alias: heat_system_id
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: integer
-    required: false
-    recommended: false
   height_carper_fiber:
     name: height_carper_fiber
     annotations:
@@ -3605,14 +3406,11 @@ attributes:
     keywords:
     - height
     slot_uri: MIXS:0000167
-    multivalued: false
     alias: height_carper_fiber
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3632,14 +3430,11 @@ attributes:
     - inside
     - light
     slot_uri: MIXS:0000168
-    multivalued: false
     alias: inside_lux
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3659,14 +3454,11 @@ attributes:
     - interior
     - wall
     slot_uri: MIXS:0000813
-    multivalued: false
     alias: int_wall_cond
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: SHARED_ENUM_3
-    required: false
-    recommended: false
   last_clean:
     name: last_clean
     description: The last time the floor was cleaned (swept, mopped, vacuumed)
@@ -3677,14 +3469,11 @@ attributes:
     keywords:
     - time
     slot_uri: MIXS:0000814
-    multivalued: false
     alias: last_clean
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: datetime
-    required: false
-    recommended: false
   max_occup:
     name: max_occup
     description: The maximum amount of people allowed in the indoor environment
@@ -3693,14 +3482,11 @@ attributes:
     keywords:
     - maximum
     slot_uri: MIXS:0000229
-    multivalued: false
     alias: max_occup
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[1-9][0-9]* ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{integer} {text}$
@@ -3714,14 +3500,11 @@ attributes:
     - value: elevator
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000815
-    multivalued: false
     alias: mech_struc
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: MECH_STRUC_ENUM
-    required: false
-    recommended: false
   number_plants:
     name: number_plants
     description: The number of plant(s) in the sampling space
@@ -3730,14 +3513,11 @@ attributes:
     keywords:
     - number
     slot_uri: MIXS:0000230
-    multivalued: false
     alias: number_plants
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[1-9][0-9]* ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{integer} {text}$
@@ -3751,14 +3531,11 @@ attributes:
     keywords:
     - number
     slot_uri: MIXS:0000231
-    multivalued: false
     alias: number_pets
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[1-9][0-9]* ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{integer} {text}$
@@ -3772,14 +3549,11 @@ attributes:
     keywords:
     - number
     slot_uri: MIXS:0000232
-    multivalued: false
     alias: number_resident
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[1-9][0-9]* ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{integer} {text}$
@@ -3795,14 +3569,11 @@ attributes:
     keywords:
     - documentation
     slot_uri: MIXS:0000816
-    multivalued: false
     alias: occup_document
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: OCCUP_DOCUMENT_ENUM
-    required: false
-    recommended: false
   ext_wall_orient:
     name: ext_wall_orient
     description: The orientation of the exterior wall
@@ -3814,14 +3585,11 @@ attributes:
     - exterior
     - wall
     slot_uri: MIXS:0000817
-    multivalued: false
     alias: ext_wall_orient
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: SHARED_ENUM_0
-    required: false
-    recommended: false
   ext_window_orient:
     name: ext_window_orient
     description: The compass direction the exterior window of the room is facing
@@ -3833,14 +3601,11 @@ attributes:
     - exterior
     - window
     slot_uri: MIXS:0000818
-    multivalued: false
     alias: ext_window_orient
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: SHARED_ENUM_0
-    required: false
-    recommended: false
   rel_humidity_out:
     name: rel_humidity_out
     annotations:
@@ -3856,14 +3621,11 @@ attributes:
     - humidity
     - relative
     slot_uri: MIXS:0000188
-    multivalued: false
     alias: rel_humidity_out
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3887,15 +3649,12 @@ attributes:
     - presence
     string_serialization: '[cat|dog|rodent|snake|other];{integer}'
     slot_uri: MIXS:0000819
-    multivalued: false
     alias: pres_animal_insect
     owner: BuiltEnvironment
     domain_of:
     - Agriculture
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
   quad_pos:
     name: quad_pos
     description: The quadrant position of the sampling room within the building
@@ -3904,14 +3663,11 @@ attributes:
     - value: West side
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000820
-    multivalued: false
     alias: quad_pos
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: QUAD_POS_ENUM
-    required: false
-    recommended: false
   rel_samp_loc:
     name: rel_samp_loc
     description: The sampling location within the train car
@@ -3923,14 +3679,11 @@ attributes:
     - location
     - relative
     slot_uri: MIXS:0000821
-    multivalued: false
     alias: rel_samp_loc
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: REL_SAMP_LOC_ENUM
-    required: false
-    recommended: false
   room_air_exch_rate:
     name: room_air_exch_rate
     annotations:
@@ -3945,14 +3698,11 @@ attributes:
     - rate
     - room
     slot_uri: MIXS:0000169
-    multivalued: false
     alias: room_air_exch_rate
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3968,14 +3718,11 @@ attributes:
     keywords:
     - room
     slot_uri: MIXS:0000233
-    multivalued: false
     alias: room_architec_elem
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
   room_condt:
     name: room_condt
     description: The condition of the room at the time of sampling
@@ -3987,14 +3734,11 @@ attributes:
     - condition
     - room
     slot_uri: MIXS:0000822
-    multivalued: false
     alias: room_condt
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: ROOM_CONDT_ENUM
-    required: false
-    recommended: false
   room_count:
     name: room_count
     description: The total count of rooms in the built structure including all room
@@ -4005,14 +3749,11 @@ attributes:
     - count
     - room
     slot_uri: MIXS:0000234
-    multivalued: false
     alias: room_count
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: integer
-    required: false
-    recommended: false
   room_dim:
     name: room_dim
     annotations:
@@ -4032,15 +3773,12 @@ attributes:
     - room
     string_serialization: '{integer} {unit} x {integer} {unit} x {integer} {unit}'
     slot_uri: MIXS:0000192
-    multivalued: false
     alias: room_dim
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     - FoodFoodProductionFacility
     range: string
-    required: false
-    recommended: false
   room_door_dist:
     name: room_door_dist
     annotations:
@@ -4056,14 +3794,11 @@ attributes:
     - door
     - room
     slot_uri: MIXS:0000193
-    multivalued: false
     alias: room_door_dist
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[1-9][0-9]* ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{integer} {text}$
@@ -4080,14 +3815,11 @@ attributes:
     - location
     - room
     slot_uri: MIXS:0000823
-    multivalued: false
     alias: room_loc
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: ROOM_LOC_ENUM
-    required: false
-    recommended: false
   room_moist_dam_hist:
     name: room_moist_dam_hist
     description: The history of moisture damage or mold in the past 12 months. Number
@@ -4099,14 +3831,11 @@ attributes:
     - moisture
     - room
     slot_uri: MIXS:0000235
-    multivalued: false
     alias: room_moist_dam_hist
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: integer
-    required: false
-    recommended: false
   room_net_area:
     name: room_net_area
     annotations:
@@ -4120,14 +3849,11 @@ attributes:
     - area
     - room
     slot_uri: MIXS:0000194
-    multivalued: false
     alias: room_net_area
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[1-9][0-9]* ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{integer} {text}$
@@ -4141,14 +3867,11 @@ attributes:
     keywords:
     - room
     slot_uri: MIXS:0000236
-    multivalued: false
     alias: room_occup
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[1-9][0-9]* ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{integer} {text}$
@@ -4165,14 +3888,11 @@ attributes:
     keywords:
     - room
     slot_uri: MIXS:0000824
-    multivalued: false
     alias: room_samp_pos
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: ROOM_SAMP_POS_ENUM
-    required: false
-    recommended: false
   room_type:
     name: room_type
     annotations:
@@ -4192,14 +3912,11 @@ attributes:
       room|hallway|kitchen|mail room|private office|open office|stairwell|,restroom|lobby|vestibule|mechanical
       or electrical room|data center|laboratory_wet|laboratory_dry|gymnasium|natatorium|auditorium|lockers|cafe|warehouse]'
     slot_uri: MIXS:0000825
-    multivalued: false
     alias: room_type
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
   room_vol:
     name: room_vol
     annotations:
@@ -4213,14 +3930,11 @@ attributes:
     - room
     - volume
     slot_uri: MIXS:0000195
-    multivalued: false
     alias: room_vol
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[1-9][0-9]* ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{integer} {text}$
@@ -4236,14 +3950,11 @@ attributes:
     - room
     - window
     slot_uri: MIXS:0000237
-    multivalued: false
     alias: room_window_count
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: integer
-    required: false
-    recommended: false
   room_connected:
     name: room_connected
     description: List of rooms connected to the sampling room by a doorway
@@ -4255,14 +3966,11 @@ attributes:
     - doorway
     - room
     slot_uri: MIXS:0000826
-    multivalued: false
     alias: room_connected
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: ROOM_CONNECTED_ENUM
-    required: false
-    recommended: false
   room_hallway:
     name: room_hallway
     description: List of room(s) (room number, room name) located in the same hallway
@@ -4273,14 +3981,11 @@ attributes:
     - hallway
     - room
     slot_uri: MIXS:0000238
-    multivalued: false
     alias: room_hallway
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+);[1-9][0-9]*$
     structured_pattern:
       syntax: ^{room_name};{room_number}$
@@ -4296,14 +4001,11 @@ attributes:
     - door
     - room
     slot_uri: MIXS:0000242
-    multivalued: false
     alias: room_door_share
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+);[1-9][0-9]*$
     structured_pattern:
       syntax: ^{room_name};{room_number}$
@@ -4319,14 +4021,11 @@ attributes:
     - room
     - wall
     slot_uri: MIXS:0000243
-    multivalued: false
     alias: room_wall_share
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+);[1-9][0-9]*$
     structured_pattern:
       syntax: ^{room_name};{room_number}$
@@ -4343,14 +4042,11 @@ attributes:
     - day
     - weather
     slot_uri: MIXS:0000827
-    multivalued: false
     alias: samp_weather
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: SAMP_WEATHER_ENUM
-    required: false
-    recommended: false
   samp_floor:
     name: samp_floor
     annotations:
@@ -4366,15 +4062,12 @@ attributes:
     - floor
     string_serialization: '[1st floor|2nd floor|{integer} floor|basement|lobby]'
     slot_uri: MIXS:0000828
-    multivalued: false
     alias: samp_floor
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     - FoodFoodProductionFacility
     range: string
-    required: false
-    recommended: false
   samp_room_id:
     name: samp_room_id
     description: Sampling room number. This ID should be consistent with the designations
@@ -4385,15 +4078,12 @@ attributes:
     - identifier
     - room
     slot_uri: MIXS:0000244
-    multivalued: false
     alias: samp_room_id
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     - FoodFoodProductionFacility
     range: integer
-    required: false
-    recommended: false
   samp_time_out:
     name: samp_time_out
     annotations:
@@ -4410,14 +4100,11 @@ attributes:
     - time
     string_serialization: '{float}'
     slot_uri: MIXS:0000196
-    multivalued: false
     alias: samp_time_out
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
   season:
     name: season
     annotations:
@@ -4446,8 +4133,6 @@ attributes:
     - BuiltEnvironment
     - FoodFarmEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^\S+.*\S+ \[[a-zA-Z]{2,}:[a-zA-Z0-9]+\]$
   season_use:
     name: season_use
@@ -4460,14 +4145,11 @@ attributes:
     - season
     - use
     slot_uri: MIXS:0000830
-    multivalued: false
     alias: season_use
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: SEASON_USE_ENUM
-    required: false
-    recommended: false
   shading_device_cond:
     name: shading_device_cond
     description: The physical condition of the shading device at the time of sampling
@@ -4479,14 +4161,11 @@ attributes:
     - condition
     - device
     slot_uri: MIXS:0000831
-    multivalued: false
     alias: shading_device_cond
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: SHARED_ENUM_2
-    required: false
-    recommended: false
   shading_device_loc:
     name: shading_device_loc
     description: The location of the shading device in relation to the built structure
@@ -4498,14 +4177,11 @@ attributes:
     - device
     - location
     slot_uri: MIXS:0000832
-    multivalued: false
     alias: shading_device_loc
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: SHADING_DEVICE_LOC_ENUM
-    required: false
-    recommended: false
   shading_device_mat:
     name: shading_device_mat
     annotations:
@@ -4520,14 +4196,11 @@ attributes:
     - material
     string_serialization: '{text}'
     slot_uri: MIXS:0000245
-    multivalued: false
     alias: shading_device_mat
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
   shad_dev_water_mold:
     name: shad_dev_water_mold
     description: Signs of the presence of mold or mildew on the shading device
@@ -4538,14 +4211,11 @@ attributes:
     keywords:
     - device
     slot_uri: MIXS:0000834
-    multivalued: false
     alias: shad_dev_water_mold
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: SHARED_ENUM_1
-    required: false
-    recommended: false
   shading_device_type:
     name: shading_device_type
     description: The type of shading device
@@ -4563,8 +4233,6 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: SHADING_DEVICE_TYPE_ENUM
-    required: false
-    recommended: false
   specific_humidity:
     name: specific_humidity
     annotations:
@@ -4581,14 +4249,11 @@ attributes:
     keywords:
     - humidity
     slot_uri: MIXS:0000214
-    multivalued: false
     alias: specific_humidity
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4604,14 +4269,11 @@ attributes:
     - value: construction
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000836
-    multivalued: false
     alias: specific
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: SPECIFIC_ENUM
-    required: false
-    recommended: false
   temp_out:
     name: temp_out
     annotations:
@@ -4627,14 +4289,11 @@ attributes:
     - house
     - temperature
     slot_uri: MIXS:0000197
-    multivalued: false
     alias: temp_out
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4651,14 +4310,11 @@ attributes:
     keywords:
     - train
     slot_uri: MIXS:0000837
-    multivalued: false
     alias: train_line
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: TRAIN_LINE_ENUM
-    required: false
-    recommended: false
   train_stat_loc:
     name: train_stat_loc
     description: The train station collection location
@@ -4670,14 +4326,11 @@ attributes:
     - location
     - train
     slot_uri: MIXS:0000838
-    multivalued: false
     alias: train_stat_loc
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: TRAIN_STAT_LOC_ENUM
-    required: false
-    recommended: false
   train_stop_loc:
     name: train_stop_loc
     description: The train stop collection location
@@ -4690,14 +4343,11 @@ attributes:
     - stop
     - train
     slot_uri: MIXS:0000839
-    multivalued: false
     alias: train_stop_loc
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: TRAIN_STOP_LOC_ENUM
-    required: false
-    recommended: false
   vis_media:
     name: vis_media
     annotations:
@@ -4712,14 +4362,11 @@ attributes:
     string_serialization: '[photos|videos|commonly of the building|site context (adjacent
       buildings, vegetation, terrain, streets)|interiors|equipment|3D scans]'
     slot_uri: MIXS:0000840
-    multivalued: false
     alias: vis_media
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
   wall_area:
     name: wall_area
     annotations:
@@ -4733,14 +4380,11 @@ attributes:
     - area
     - wall
     slot_uri: MIXS:0000198
-    multivalued: false
     alias: wall_area
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4759,14 +4403,11 @@ attributes:
     - type
     - wall
     slot_uri: MIXS:0000841
-    multivalued: false
     alias: wall_const_type
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: WALL_CONST_TYPE_ENUM
-    required: false
-    recommended: false
   wall_finish_mat:
     name: wall_finish_mat
     description: The material utilized to finish the outer most layer of the wall
@@ -4778,14 +4419,11 @@ attributes:
     - material
     - wall
     slot_uri: MIXS:0000842
-    multivalued: false
     alias: wall_finish_mat
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: WALL_FINISH_MAT_ENUM
-    required: false
-    recommended: false
   wall_height:
     name: wall_height
     annotations:
@@ -4799,14 +4437,11 @@ attributes:
     - height
     - wall
     slot_uri: MIXS:0000221
-    multivalued: false
     alias: wall_height
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4824,14 +4459,11 @@ attributes:
     - location
     - wall
     slot_uri: MIXS:0000843
-    multivalued: false
     alias: wall_loc
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: SHARED_ENUM_0
-    required: false
-    recommended: false
   wall_water_mold:
     name: wall_water_mold
     description: Signs of the presence of mold or mildew on a wall
@@ -4842,14 +4474,11 @@ attributes:
     keywords:
     - wall
     slot_uri: MIXS:0000844
-    multivalued: false
     alias: wall_water_mold
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: SHARED_ENUM_1
-    required: false
-    recommended: false
   wall_surf_treatment:
     name: wall_surf_treatment
     description: The surface treatment of interior wall
@@ -4862,14 +4491,11 @@ attributes:
     - treatment
     - wall
     slot_uri: MIXS:0000845
-    multivalued: false
     alias: wall_surf_treatment
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: WALL_SURF_TREATMENT_ENUM
-    required: false
-    recommended: false
   wall_texture:
     name: wall_texture
     description: The feel, appearance, or consistency of a wall surface
@@ -4881,14 +4507,11 @@ attributes:
     - texture
     - wall
     slot_uri: MIXS:0000846
-    multivalued: false
     alias: wall_texture
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: SHARED_ENUM_4
-    required: false
-    recommended: false
   wall_thermal_mass:
     name: wall_thermal_mass
     annotations:
@@ -4904,14 +4527,11 @@ attributes:
     - mass
     - wall
     slot_uri: MIXS:0000222
-    multivalued: false
     alias: wall_thermal_mass
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4932,14 +4552,11 @@ attributes:
     - size
     - water
     slot_uri: MIXS:0000223
-    multivalued: false
     alias: water_feat_size
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -4958,14 +4575,11 @@ attributes:
     - type
     - water
     slot_uri: MIXS:0000847
-    multivalued: false
     alias: water_feat_type
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: WATER_FEAT_TYPE_ENUM
-    required: false
-    recommended: false
   weekday:
     name: weekday
     description: The day of the week when sampling occurred
@@ -4974,14 +4588,11 @@ attributes:
     - value: Sunday
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000848
-    multivalued: false
     alias: weekday
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: WEEKDAY_ENUM
-    required: false
-    recommended: false
   window_size:
     name: window_size
     annotations:
@@ -4998,14 +4609,11 @@ attributes:
     - window
     string_serialization: '{float} {unit} x {float} {unit}'
     slot_uri: MIXS:0000224
-    multivalued: false
     alias: window_size
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: string
-    required: false
-    recommended: false
   window_cond:
     name: window_cond
     description: The physical condition of the window at the time of sampling
@@ -5017,14 +4625,11 @@ attributes:
     - condition
     - window
     slot_uri: MIXS:0000849
-    multivalued: false
     alias: window_cond
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: SHARED_ENUM_2
-    required: false
-    recommended: false
   window_cover:
     name: window_cover
     description: The type of window covering
@@ -5035,14 +4640,11 @@ attributes:
     keywords:
     - window
     slot_uri: MIXS:0000850
-    multivalued: false
     alias: window_cover
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: WINDOW_COVER_ENUM
-    required: false
-    recommended: false
   window_horiz_pos:
     name: window_horiz_pos
     description: The horizontal position of the window on the wall
@@ -5053,14 +4655,11 @@ attributes:
     keywords:
     - window
     slot_uri: MIXS:0000851
-    multivalued: false
     alias: window_horiz_pos
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: WINDOW_HORIZ_POS_ENUM
-    required: false
-    recommended: false
   window_loc:
     name: window_loc
     description: The relative location of the window within the room
@@ -5072,14 +4671,11 @@ attributes:
     - location
     - window
     slot_uri: MIXS:0000852
-    multivalued: false
     alias: window_loc
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: SHARED_ENUM_0
-    required: false
-    recommended: false
   window_mat:
     name: window_mat
     description: The type of material used to finish a window
@@ -5091,14 +4687,11 @@ attributes:
     - material
     - window
     slot_uri: MIXS:0000853
-    multivalued: false
     alias: window_mat
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: WINDOW_MAT_ENUM
-    required: false
-    recommended: false
   window_open_freq:
     name: window_open_freq
     description: The number of times windows are opened per week
@@ -5108,14 +4701,11 @@ attributes:
     - frequency
     - window
     slot_uri: MIXS:0000246
-    multivalued: false
     alias: window_open_freq
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: integer
-    required: false
-    recommended: false
   window_water_mold:
     name: window_water_mold
     description: Signs of the presence of mold or mildew on the window
@@ -5126,14 +4716,11 @@ attributes:
     keywords:
     - window
     slot_uri: MIXS:0000854
-    multivalued: false
     alias: window_water_mold
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: SHARED_ENUM_1
-    required: false
-    recommended: false
   window_status:
     name: window_status
     description: Defines whether the windows were open or closed during environmental
@@ -5146,14 +4733,11 @@ attributes:
     - status
     - window
     slot_uri: MIXS:0000855
-    multivalued: false
     alias: window_status
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: WINDOW_STATUS_ENUM
-    required: false
-    recommended: false
   window_type:
     name: window_type
     description: The type of windows
@@ -5165,14 +4749,11 @@ attributes:
     - type
     - window
     slot_uri: MIXS:0000856
-    multivalued: false
     alias: window_type
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: WINDOW_TYPE_ENUM
-    required: false
-    recommended: false
   window_vert_pos:
     name: window_vert_pos
     description: The vertical position of the window on the wall
@@ -5183,14 +4764,11 @@ attributes:
     keywords:
     - window
     slot_uri: MIXS:0000857
-    multivalued: false
     alias: window_vert_pos
     owner: BuiltEnvironment
     domain_of:
     - BuiltEnvironment
     range: WINDOW_VERT_POS_ENUM
-    required: false
-    recommended: false
 class_uri: MIXS:0016001
 
 </code></pre>

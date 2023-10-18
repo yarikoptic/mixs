@@ -395,7 +395,7 @@
 <td><a href="../samp_name/">samp_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>A local identifier or name that for the material sample used for extracting n...</td>
-<td><a href="../MimarksC/">MimarksC</a>, <a href="../MiscellaneousNaturalOrArtificialEnvironment/">MiscellaneousNaturalOrArtificialEnvironment</a></td>
+<td><a href="../MiscellaneousNaturalOrArtificialEnvironment/">MiscellaneousNaturalOrArtificialEnvironment</a>, <a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
 <td><a href="../pcr_primers/">pcr_primers</a></td>
@@ -419,7 +419,7 @@
 <td><a href="../temp/">temp</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Temperature of the sample at the time of sampling</td>
-<td><a href="../MimarksC/">MimarksC</a>, <a href="../MiscellaneousNaturalOrArtificialEnvironment/">MiscellaneousNaturalOrArtificialEnvironment</a></td>
+<td><a href="../MiscellaneousNaturalOrArtificialEnvironment/">MiscellaneousNaturalOrArtificialEnvironment</a>, <a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
 <td><a href="../pcr_cond/">pcr_cond</a></td>
@@ -449,7 +449,7 @@
 <td><a href="../alt/">alt</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Heights of objects such as airplanes, space shuttles, rockets, atmospheric ba...</td>
-<td><a href="../MimarksC/">MimarksC</a>, <a href="../MiscellaneousNaturalOrArtificialEnvironment/">MiscellaneousNaturalOrArtificialEnvironment</a></td>
+<td><a href="../MiscellaneousNaturalOrArtificialEnvironment/">MiscellaneousNaturalOrArtificialEnvironment</a>, <a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
 <td><a href="../source_mat_id/">source_mat_id</a></td>
@@ -467,7 +467,7 @@
 <td><a href="../samp_vol_we_dna_ext/">samp_vol_we_dna_ext</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Volume (ml) or mass (g) of total collected sample processed for DNA extractio...</td>
-<td><a href="../MimarksC/">MimarksC</a>, <a href="../MiscellaneousNaturalOrArtificialEnvironment/">MiscellaneousNaturalOrArtificialEnvironment</a></td>
+<td><a href="../MiscellaneousNaturalOrArtificialEnvironment/">MiscellaneousNaturalOrArtificialEnvironment</a>, <a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
 <td><a href="../rel_to_oxygen/">rel_to_oxygen</a></td>
@@ -497,7 +497,7 @@
 <td><a href="../project_name/">project_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>Name of the project within which the sequencing was organized</td>
-<td><a href="../MimarksC/">MimarksC</a>, <a href="../MiscellaneousNaturalOrArtificialEnvironment/">MiscellaneousNaturalOrArtificialEnvironment</a></td>
+<td><a href="../MiscellaneousNaturalOrArtificialEnvironment/">MiscellaneousNaturalOrArtificialEnvironment</a>, <a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
 <td><a href="../neg_cont_type/">neg_cont_type</a></td>
@@ -545,7 +545,7 @@
 <td><a href="../depth/">depth</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>The vertical distance below local surface</td>
-<td><a href="../MimarksC/">MimarksC</a>, <a href="../MiscellaneousNaturalOrArtificialEnvironment/">MiscellaneousNaturalOrArtificialEnvironment</a></td>
+<td><a href="../MiscellaneousNaturalOrArtificialEnvironment/">MiscellaneousNaturalOrArtificialEnvironment</a>, <a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
 <td><a href="../samp_collect_method/">samp_collect_method</a></td>
@@ -593,7 +593,7 @@
 <td><a href="../elev/">elev</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td>Elevation of the sampling site is its height above a fixed reference point, m...</td>
-<td><a href="../MimarksC/">MimarksC</a>, <a href="../MiscellaneousNaturalOrArtificialEnvironment/">MiscellaneousNaturalOrArtificialEnvironment</a></td>
+<td><a href="../MiscellaneousNaturalOrArtificialEnvironment/">MiscellaneousNaturalOrArtificialEnvironment</a>, <a href="../MimarksC/">MimarksC</a></td>
 </tr>
 <tr>
 <td><a href="../env_broad_scale/">env_broad_scale</a></td>
@@ -924,7 +924,6 @@ attributes:
     keywords:
     - sample
     slot_uri: MIXS:0001107
-    multivalued: false
     alias: samp_name
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -973,7 +972,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: FWD:{dna};REV:{dna}
     slot_uri: MIXS:0000046
-    multivalued: false
     alias: pcr_primers
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -990,7 +988,6 @@ attributes:
     title: nucleic acid amplification
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000038
-    multivalued: false
     alias: nucl_acid_amp
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -1020,7 +1017,6 @@ attributes:
     title: target subfragment
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000045
-    multivalued: false
     alias: target_subfragment
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -1035,7 +1031,6 @@ attributes:
     title: temperature
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000113
-    multivalued: false
     alias: temp
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -1072,7 +1067,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
     recommended: true
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
@@ -1089,7 +1083,6 @@ attributes:
     string_serialization: initial denaturation:degrees_minutes;annealing:degrees_minutes;elongation:degrees_minutes;final
       elongation:degrees_minutes;total cycles
     slot_uri: MIXS:0000049
-    multivalued: false
     alias: pcr_cond
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -1106,7 +1099,6 @@ attributes:
     title: nucleic acid extraction
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000037
-    multivalued: false
     alias: nucl_acid_ext
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -1140,7 +1132,6 @@ attributes:
     title: amount or size of sample collected
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000001
-    multivalued: false
     alias: samp_size
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -1161,8 +1152,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -1177,7 +1166,6 @@ attributes:
     title: isolation and growth condition
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000003
-    multivalued: false
     alias: isol_growth_condt
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -1205,7 +1193,6 @@ attributes:
     title: altitude
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000094
-    multivalued: false
     alias: alt
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -1277,7 +1264,6 @@ attributes:
     title: extrachromosomal elements
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000023
-    multivalued: false
     alias: extrachrom_elements
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -1286,8 +1272,6 @@ attributes:
     - MigsOrg
     - MimarksC
     range: integer
-    required: false
-    recommended: false
   samp_vol_we_dna_ext:
     name: samp_vol_we_dna_ext
     description: 'Volume (ml) or mass (g) of total collected sample processed for
@@ -1296,7 +1280,6 @@ attributes:
     title: sample volume or weight for DNA extraction
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000111
-    multivalued: false
     alias: samp_vol_we_dna_ext
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -1334,8 +1317,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -1349,7 +1330,6 @@ attributes:
     title: relationship to oxygen
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000015
-    multivalued: false
     alias: rel_to_oxygen
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -1372,7 +1352,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{termLabel} [{termID}]|{text}'
     slot_uri: MIXS:0000002
-    multivalued: false
     alias: samp_collect_device
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -1393,8 +1372,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
   biotic_relationship:
     name: biotic_relationship
     description: Description of relationship(s) between the subject organism and other
@@ -1404,7 +1381,6 @@ attributes:
     title: observed biotic relationship
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000028
-    multivalued: false
     alias: biotic_relationship
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -1425,7 +1401,6 @@ attributes:
     title: sequence quality check
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000051
-    multivalued: false
     alias: seq_quality_check
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -1446,7 +1421,6 @@ attributes:
     keywords:
     - project
     slot_uri: MIXS:0000092
-    multivalued: false
     alias: project_name
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -1499,7 +1473,6 @@ attributes:
     keywords:
     - type
     slot_uri: MIXS:0001321
-    multivalued: false
     alias: neg_cont_type
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -1524,7 +1497,6 @@ attributes:
     title: chimera check software
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000052
-    multivalued: false
     alias: chimera_check
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -1545,7 +1517,6 @@ attributes:
     title: trophic level
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000032
-    multivalued: false
     alias: trophic_level
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -1567,7 +1538,6 @@ attributes:
     - type
     string_serialization: '{term} or {text}'
     slot_uri: MIXS:0001322
-    multivalued: false
     alias: pos_cont_type
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -1595,7 +1565,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{rank name}:{text}'
     slot_uri: MIXS:0000020
-    multivalued: false
     alias: subspecf_gen_lin
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -1633,7 +1602,6 @@ attributes:
     - environmental
     string_serialization: '{termLabel} [{termID}]'
     slot_uri: MIXS:0000013
-    multivalued: false
     alias: env_local_scale
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -1658,7 +1626,6 @@ attributes:
     title: sample material processing
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000016
-    multivalued: false
     alias: samp_mat_process
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -1686,7 +1653,6 @@ attributes:
     - value: 10 meter
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000018
-    multivalued: false
     alias: depth
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -1728,7 +1694,6 @@ attributes:
     - value: swabbing
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001225
-    multivalued: false
     alias: samp_collect_method
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -1748,8 +1713,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$|([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
       syntax: ^{PMID}|{DOI}|{URL}|{text}$
@@ -1773,7 +1736,6 @@ attributes:
     keywords:
     - environmental
     slot_uri: MIXS:0000014
-    multivalued: false
     alias: env_medium
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -1812,7 +1774,6 @@ attributes:
     - sample
     - taxon
     slot_uri: MIXS:0001320
-    multivalued: false
     alias: samp_taxon_id
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -1850,7 +1811,6 @@ attributes:
     - geographic
     - location
     slot_uri: MIXS:0000010
-    multivalued: false
     alias: geo_loc_name
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -1892,7 +1852,6 @@ attributes:
     keywords:
     - date
     slot_uri: MIXS:0000011
-    multivalued: false
     alias: collection_date
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -1927,7 +1886,6 @@ attributes:
     keywords:
     - method
     slot_uri: MIXS:0000050
-    multivalued: false
     alias: seq_meth
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -2008,7 +1966,6 @@ attributes:
     title: elevation
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000093
-    multivalued: false
     alias: elev
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -2059,7 +2016,6 @@ attributes:
     - context
     - environmental
     slot_uri: MIXS:0000012
-    multivalued: false
     alias: env_broad_scale
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -2110,8 +2066,6 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    required: false
-    recommended: false
     pattern: ^\S+.*\S+ \[[a-zA-Z]{2,}:\d+\]$
   target_gene:
     name: target_gene
@@ -2119,7 +2073,6 @@ attributes:
     title: target gene
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000044
-    multivalued: false
     alias: target_gene
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -2205,7 +2158,6 @@ attributes:
     keywords:
     - alkalinity
     slot_uri: MIXS:0000421
-    multivalued: false
     alias: alkalinity
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -2217,8 +2169,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2231,7 +2181,6 @@ attributes:
     title: ammonium
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000427
-    multivalued: false
     alias: ammonium
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -2242,8 +2191,6 @@ attributes:
     - Sediment
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2278,8 +2225,6 @@ attributes:
     - Sediment
     - Water
     range: string
-    required: false
-    recommended: false
   bromide:
     name: bromide
     annotations:
@@ -2292,7 +2237,6 @@ attributes:
     - value: 0.05 parts per million
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000176
-    multivalued: false
     alias: bromide
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -2301,8 +2245,6 @@ attributes:
     - Sediment
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2321,7 +2263,6 @@ attributes:
     - value: 0.2 micromole per liter
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000432
-    multivalued: false
     alias: calcium
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -2332,8 +2273,6 @@ attributes:
     - Sediment
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2371,8 +2310,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   chloride:
     name: chloride
     annotations:
@@ -2385,7 +2322,6 @@ attributes:
     - value: 5000 milligram per liter
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000429
-    multivalued: false
     alias: chloride
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -2396,8 +2332,6 @@ attributes:
     - Sediment
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2416,7 +2350,6 @@ attributes:
     - value: 5 milligram per cubic meter
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000177
-    multivalued: false
     alias: chlorophyll
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -2425,8 +2358,6 @@ attributes:
     - Sediment
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2448,7 +2379,6 @@ attributes:
     keywords:
     - density
     slot_uri: MIXS:0000435
-    multivalued: false
     alias: density
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -2458,8 +2388,6 @@ attributes:
     - Sediment
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2492,8 +2420,6 @@ attributes:
     - Sediment
     - Water
     range: string
-    required: false
-    recommended: false
   diss_carb_dioxide:
     name: diss_carb_dioxide
     annotations:
@@ -2510,7 +2436,6 @@ attributes:
     - carbon
     - dissolved
     slot_uri: MIXS:0000436
-    multivalued: false
     alias: diss_carb_dioxide
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -2521,8 +2446,6 @@ attributes:
     - Sediment
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2543,7 +2466,6 @@ attributes:
     keywords:
     - dissolved
     slot_uri: MIXS:0000179
-    multivalued: false
     alias: diss_hydrogen
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -2552,8 +2474,6 @@ attributes:
     - Sediment
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2577,7 +2497,6 @@ attributes:
     - dissolved
     - inorganic
     slot_uri: MIXS:0000434
-    multivalued: false
     alias: diss_inorg_carb
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -2588,8 +2507,6 @@ attributes:
     - Sediment
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2603,7 +2520,6 @@ attributes:
     title: dissolved organic nitrogen
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000162
-    multivalued: false
     alias: diss_org_nitro
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -2612,8 +2528,6 @@ attributes:
     - Sediment
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2635,7 +2549,6 @@ attributes:
     - dissolved
     - oxygen
     slot_uri: MIXS:0000119
-    multivalued: false
     alias: diss_oxygen
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -2644,8 +2557,6 @@ attributes:
     - Sediment
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2695,15 +2606,12 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   nitrate:
     name: nitrate
     description: Concentration of nitrate in the sample
     title: nitrate
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000425
-    multivalued: false
     alias: nitrate
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -2715,8 +2623,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2729,7 +2635,6 @@ attributes:
     title: nitrite
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000426
-    multivalued: false
     alias: nitrite
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -2740,8 +2645,6 @@ attributes:
     - Sediment
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2762,7 +2665,6 @@ attributes:
     keywords:
     - nitrogen
     slot_uri: MIXS:0000504
-    multivalued: false
     alias: nitro
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -2771,8 +2673,6 @@ attributes:
     - Sediment
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2785,7 +2685,6 @@ attributes:
     title: organic carbon
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000508
-    multivalued: false
     alias: org_carb
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -2794,8 +2693,6 @@ attributes:
     - Sediment
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2816,7 +2713,6 @@ attributes:
     keywords:
     - organic
     slot_uri: MIXS:0000204
-    multivalued: false
     alias: org_matter
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -2826,8 +2722,6 @@ attributes:
     - Soil
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2840,7 +2734,6 @@ attributes:
     title: organic nitrogen
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000205
-    multivalued: false
     alias: org_nitro
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -2850,8 +2743,6 @@ attributes:
     - Soil
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -2897,15 +2788,12 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   oxy_stat_samp:
     name: oxy_stat_samp
     description: Oxygenation status of sample
     title: oxygenation status of sample
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000753
-    multivalued: false
     alias: oxy_stat_samp
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -2927,8 +2815,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: OXY_STAT_SAMP_ENUM
-    required: false
-    recommended: false
   ph:
     name: ph
     description: Ph measurement of the sample, or liquid portion of sample, or aqueous
@@ -2936,7 +2822,6 @@ attributes:
     title: pH
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0001001
-    multivalued: false
     alias: ph
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -2950,8 +2835,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: float
-    required: false
-    recommended: false
   perturbation:
     name: perturbation
     description: Type of perturbation, e.g. chemical administration, physical disturbance,
@@ -2985,8 +2868,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   phosphate:
     name: phosphate
     annotations:
@@ -3001,7 +2882,6 @@ attributes:
     keywords:
     - phosphate
     slot_uri: MIXS:0000505
-    multivalued: false
     alias: phosphate
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -3011,8 +2891,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3035,8 +2913,6 @@ attributes:
     - Sediment
     - Water
     range: string
-    required: false
-    recommended: false
   potassium:
     name: potassium
     annotations:
@@ -3049,7 +2925,6 @@ attributes:
     - value: 463 milligram per liter
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000430
-    multivalued: false
     alias: potassium
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -3060,8 +2935,6 @@ attributes:
     - Sediment
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3082,7 +2955,6 @@ attributes:
     keywords:
     - pressure
     slot_uri: MIXS:0000412
-    multivalued: false
     alias: pressure
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -3093,8 +2965,6 @@ attributes:
     - Sediment
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3120,7 +2990,6 @@ attributes:
     keywords:
     - salinity
     slot_uri: MIXS:0000183
-    multivalued: false
     alias: salinity
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -3142,8 +3011,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3157,7 +3024,6 @@ attributes:
     title: sample storage duration
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000116
-    multivalued: false
     alias: samp_store_dur
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -3183,8 +3049,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^P(?:(?:\d+D|\d+M(?:\d+D)?|\d+Y(?:\d+M(?:\d+D)?)?)(?:T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S))?|T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S)|\d+W)$
     structured_pattern:
       syntax: ^{duration}$
@@ -3197,7 +3061,6 @@ attributes:
     from_schema: https://w3id.org/mixs
     string_serialization: '{text}'
     slot_uri: MIXS:0000755
-    multivalued: false
     alias: samp_store_loc
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -3222,8 +3085,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
   samp_store_temp:
     name: samp_store_temp
     annotations:
@@ -3240,7 +3101,6 @@ attributes:
     - storage
     - temperature
     slot_uri: MIXS:0000110
-    multivalued: false
     alias: samp_store_temp
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -3266,8 +3126,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3286,7 +3144,6 @@ attributes:
     - value: 0.05 micromole per liter
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000184
-    multivalued: false
     alias: silicate
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -3295,8 +3152,6 @@ attributes:
     - Sediment
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3315,7 +3170,6 @@ attributes:
     - value: 10.5 milligram per liter
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000428
-    multivalued: false
     alias: sodium
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -3327,8 +3181,6 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3341,7 +3193,6 @@ attributes:
     title: sulfate
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000423
-    multivalued: false
     alias: sulfate
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -3352,8 +3203,6 @@ attributes:
     - Sediment
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3366,7 +3215,6 @@ attributes:
     title: sulfide
     from_schema: https://w3id.org/mixs
     slot_uri: MIXS:0000424
-    multivalued: false
     alias: sulfide
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
@@ -3377,8 +3225,6 @@ attributes:
     - Sediment
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
@@ -3399,15 +3245,12 @@ attributes:
     keywords:
     - water
     slot_uri: MIXS:0000203
-    multivalued: false
     alias: water_current
     owner: MimarksCMiscellaneousNaturalOrArtificialEnvironment
     domain_of:
     - MiscellaneousNaturalOrArtificialEnvironment
     - Water
     range: string
-    required: false
-    recommended: false
     pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
       *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
     structured_pattern:
