@@ -14,7 +14,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.6">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.7">
     
     
       
@@ -22,7 +22,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.35e1ed30.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.4b4a2bd9.min.css">
       
       
 
@@ -349,7 +349,7 @@
 
 
 <h1 id="combination-mims-combined-with-microbialmatbiofilm-mimsmicrobialmatbiofilm">Combination: Mims combined with MicrobialMatBiofilm (MimsMicrobialMatBiofilm)</h1>
-<p><em>MIxS data that complies with the Mims checklist and the MicrobialMatBiofilm Extension</em></p>
+<p><em>MIxS Data that comply with the Mims checklist and the MicrobialMatBiofilm Extension</em></p>
 <h2 id="composition">Composition</h2>
 <p><a href="../Mims/">Mims</a> [Checklist] + <a href="../MicrobialMatBiofilm/">MicrobialMatBiofilm</a> [Extension]</p>
 <h2 id="terms">Terms</h2>
@@ -456,7 +456,7 @@
 <tr>
 <td><a href="https://w3id.org/mixs/0000015">MIXS:0000015</a></td>
 <td><a href="../0000015/">rel_to_oxygen</a></td>
-<td>0..1 <br/> <a href="../RELTOOXYGENENUM/">RELTOOXYGENENUM</a></td>
+<td>0..1 <br/> <a href="../RelToOxygenEnum/">RelToOxygenEnum</a></td>
 <td>Is this organism an aerobe, anaerobe? Please note that aerobic and anaerobic ...</td>
 </tr>
 <tr>
@@ -474,7 +474,7 @@
 <tr>
 <td><a href="https://w3id.org/mixs/0000041">MIXS:0000041</a></td>
 <td><a href="../0000041/">lib_layout</a></td>
-<td>0..1 <em>recommended</em> <br/> <a href="../LIBLAYOUTENUM/">LIBLAYOUTENUM</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../LibLayoutEnum/">LibLayoutEnum</a></td>
 <td>Specify whether to expect single, paired, or other configuration of reads</td>
 </tr>
 <tr>
@@ -510,7 +510,7 @@
 <tr>
 <td><a href="https://w3id.org/mixs/0001321">MIXS:0001321</a></td>
 <td><a href="../0001321/">neg_cont_type</a></td>
-<td>0..1 <em>recommended</em> <br/> <a href="../NEGCONTTYPEENUM/">NEGCONTTYPEENUM</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../NegContTypeEnum/">NegContTypeEnum</a></td>
 <td>The substance or equipment used as a negative control in an investigation</td>
 </tr>
 <tr>
@@ -846,7 +846,7 @@
 <tr>
 <td><a href="https://w3id.org/mixs/0000753">MIXS:0000753</a></td>
 <td><a href="../0000753/">oxy_stat_samp</a></td>
-<td>0..1 <br/> <a href="../OXYSTATSAMPENUM/">OXYSTATSAMPENUM</a></td>
+<td>0..1 <br/> <a href="../OxyStatSampEnum/">OxyStatSampEnum</a></td>
 <td>Oxygenation status of sample</td>
 </tr>
 <tr>
@@ -996,7 +996,7 @@
 <details>
 
 <pre><code class="language-yaml">name: MimsMicrobialMatBiofilm
-description: MIxS data that complies with the Mims checklist and the MicrobialMatBiofilm
+description: MIxS Data that comply with the Mims checklist and the MicrobialMatBiofilm
   Extension
 title: Mims combined with MicrobialMatBiofilm
 in_subset:
@@ -1015,7 +1015,7 @@ class_uri: MIXS:0010007_0016008
 <details>
 
 <pre><code class="language-yaml">name: MimsMicrobialMatBiofilm
-description: MIxS data that complies with the Mims checklist and the MicrobialMatBiofilm
+description: MIxS Data that comply with the Mims checklist and the MicrobialMatBiofilm
   Extension
 title: Mims combined with MicrobialMatBiofilm
 in_subset:
@@ -1524,7 +1524,7 @@ attributes:
     - MimarksS
     - Mims
     - Misag
-    range: REL_TO_OXYGEN_ENUM
+    range: RelToOxygenEnum
   samp_collect_device:
     name: samp_collect_device
     description: The device used to collect an environmental sample. This field accepts
@@ -1599,7 +1599,7 @@ attributes:
     - Misag
     - Miuvig
     - Agriculture
-    range: LIB_LAYOUT_ENUM
+    range: LibLayoutEnum
     recommended: true
   assembly_qual:
     name: assembly_qual
@@ -1791,7 +1791,7 @@ attributes:
     - Mims
     - Misag
     - Miuvig
-    range: NEG_CONT_TYPE_ENUM
+    range: NegContTypeEnum
     recommended: true
   assembly_software:
     name: assembly_software
@@ -3427,7 +3427,7 @@ attributes:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    range: OXY_STAT_SAMP_ENUM
+    range: OxyStatSampEnum
   ph:
     name: ph
     description: Ph measurement of the sample, or liquid portion of sample, or aqueous
