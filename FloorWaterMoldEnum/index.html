@@ -324,11 +324,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#terms" class="md-nav__link">
+  <a href="#slots" class="md-nav__link">
     <span class="md-ellipsis">
-      Terms
+      Slots
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identifier-and-mapping-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identifier and Mapping Information
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Identifier and Mapping Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schema Source
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -366,49 +390,59 @@
 <thead>
 <tr>
 <th>Value</th>
+<th>Meaning</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>bulging walls</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
 <td>ceiling discoloration</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
 <td>condensation</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
 <td>floor discoloration</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
 <td>mold odor</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
 <td>peeling paint or wallpaper</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
 <td>wall discoloration</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
 <td>water stains</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
 <td>wet floor</td>
+<td>None</td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<h2 id="terms">Terms</h2>
+<h2 id="slots">Slots</h2>
 <table>
 <thead>
 <tr>
@@ -418,16 +452,22 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../0000805/">floor_water_mold</a></td>
+<td><a href="../floor_water_mold/">floor_water_mold</a></td>
 <td>Signs of the presence of mold or mildew in a room</td>
 </tr>
 </tbody>
 </table>
+<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
+<h3 id="schema-source">Schema Source</h3>
+<ul>
+<li>from schema: <a href="https://w3id.org/mixs">https://w3id.org/mixs</a></li>
+</ul>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
 <pre><code class="language-yaml">name: FloorWaterMoldEnum
 from_schema: https://w3id.org/mixs
+rank: 1000
 permissible_values:
   bulging walls:
     text: bulging walls

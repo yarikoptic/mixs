@@ -18,7 +18,7 @@
     
     
       
-        <title>Term: MimarksCWastewaterSludge data (mimarks_c_wastewater_sludge_data) - mixs</title>
+        <title>Slot: MimarksCWastewaterSludge data (mimarks_c_wastewater_sludge_data) - mixs</title>
       
     
     
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#term-mimarkscwastewatersludge-data-mimarks_c_wastewater_sludge_data" class="md-skip">
+        <a href="#slot-mimarkscwastewatersludge-data-mimarks_c_wastewater_sludge_data" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Term: MimarksCWastewaterSludge data (mimarks_c_wastewater_sludge_data)
+              Slot: MimarksCWastewaterSludge data (mimarks_c_wastewater_sludge_data)
             
           </span>
         </div>
@@ -315,9 +315,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#applicable-checklists-and-extensions" class="md-nav__link">
+  <a href="#applicable-classes" class="md-nav__link">
     <span class="md-ellipsis">
-      Applicable Checklists and Extensions
+      Applicable Classes
     </span>
   </a>
   
@@ -329,6 +329,30 @@
       Properties
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identifier-and-mapping-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identifier and Mapping Information
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Identifier and Mapping Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schema Source
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -359,33 +383,41 @@
   
 
 
-<h1 id="term-mimarkscwastewatersludge-data-mimarks_c_wastewater_sludge_data">Term: MimarksCWastewaterSludge data (mimarks_c_wastewater_sludge_data)</h1>
+<h1 id="slot-mimarkscwastewatersludge-data-mimarks_c_wastewater_sludge_data">Slot: MimarksCWastewaterSludge data (mimarks_c_wastewater_sludge_data)</h1>
 <p><em>Data that comply with MimarksC combined with WastewaterSludge</em></p>
 <p>URI: <a href="https://w3id.org/mixs/mimarks_c_wastewater_sludge_data">MIXS:mimarks_c_wastewater_sludge_data</a></p>
 <!-- no inheritance hierarchy -->
 
-<h2 id="applicable-checklists-and-extensions">Applicable <a href="../#checklists">Checklists</a> and <a href="../#extensions">Extensions</a></h2>
-<p><b>NOTE:</b> does not include <a href="../combinations/">Combinations</a> (of checklists and extensions) that use mimarks_c_wastewater_sludge_data.</p>
+<h2 id="applicable-classes">Applicable Classes</h2>
 <table>
 <thead>
 <tr>
 <th>Name</th>
 <th>Description</th>
-<th>Checklist/Extension</th>
+<th>Modifies Slot</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="../MixsCompliantData/">MixsCompliantData</a></td>
 <td>A collection of Data that comply with some combination of a MIxS checklist an...</td>
-<td>-</td>
+<td>no</td>
 </tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>Range: <a href="../0010009_0016013/">MimarksCWastewaterSludge</a></li>
-<li>Cardinality: *</li>
+<li>
+<p>Range: <a href="../MimarksCWastewaterSludge/">MimarksCWastewaterSludge</a></p>
+</li>
+<li>
+<p>Multivalued: True</p>
+</li>
+</ul>
+<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
+<h3 id="schema-source">Schema Source</h3>
+<ul>
+<li>from schema: <a href="https://w3id.org/mixs">https://w3id.org/mixs</a></li>
 </ul>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
@@ -394,6 +426,7 @@
 description: Data that comply with MimarksC combined with WastewaterSludge
 title: MimarksCWastewaterSludge data
 from_schema: https://w3id.org/mixs
+rank: 1000
 domain: MixsCompliantData
 slot_uri: MIXS:mimarks_c_wastewater_sludge_data
 multivalued: true

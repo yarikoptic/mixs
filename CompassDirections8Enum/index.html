@@ -324,11 +324,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#terms" class="md-nav__link">
+  <a href="#slots" class="md-nav__link">
     <span class="md-ellipsis">
-      Terms
+      Slots
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identifier-and-mapping-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identifier and Mapping Information
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Identifier and Mapping Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schema Source
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -366,45 +390,54 @@
 <thead>
 <tr>
 <th>Value</th>
+<th>Meaning</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>east</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
 <td>north</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
 <td>northeast</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
 <td>northwest</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
 <td>south</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
 <td>southeast</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
 <td>southwest</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
 <td>west</td>
+<td>None</td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<h2 id="terms">Terms</h2>
+<h2 id="slots">Slots</h2>
 <table>
 <thead>
 <tr>
@@ -414,36 +447,42 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../0000790/">door_loc</a></td>
+<td><a href="../door_loc/">door_loc</a></td>
 <td>The relative location of the door in the room</td>
 </tr>
 <tr>
-<td><a href="../0000817/">ext_wall_orient</a></td>
+<td><a href="../ext_wall_orient/">ext_wall_orient</a></td>
 <td>The orientation of the exterior wall</td>
 </tr>
 <tr>
-<td><a href="../0000818/">ext_window_orient</a></td>
+<td><a href="../ext_window_orient/">ext_window_orient</a></td>
 <td>The compass direction the exterior window of the room is facing</td>
 </tr>
 <tr>
-<td><a href="../0000810/">heat_deliv_loc</a></td>
+<td><a href="../heat_deliv_loc/">heat_deliv_loc</a></td>
 <td>The location of heat delivery within the room</td>
 </tr>
 <tr>
-<td><a href="../0000843/">wall_loc</a></td>
+<td><a href="../wall_loc/">wall_loc</a></td>
 <td>The relative location of the wall within the room</td>
 </tr>
 <tr>
-<td><a href="../0000852/">window_loc</a></td>
+<td><a href="../window_loc/">window_loc</a></td>
 <td>The relative location of the window within the room</td>
 </tr>
 </tbody>
 </table>
+<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
+<h3 id="schema-source">Schema Source</h3>
+<ul>
+<li>from schema: <a href="https://w3id.org/mixs">https://w3id.org/mixs</a></li>
+</ul>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
 <pre><code class="language-yaml">name: CompassDirections8Enum
 from_schema: https://w3id.org/mixs
+rank: 1000
 permissible_values:
   east:
     text: east
